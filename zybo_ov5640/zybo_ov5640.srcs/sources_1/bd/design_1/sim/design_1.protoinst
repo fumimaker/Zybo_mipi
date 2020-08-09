@@ -27,6 +27,19 @@
 						"WVALID": { "actual": "csirxss_s_axi_wvalid"}
 					}
 				},
+				"/mipi_csi2_rx_subsyst_0/video_out": {
+					"interface": "xilinx.com:interface:axis:1.0",
+					"ports": {
+						"ACLK": { "actual": "video_aclk"},
+						"ARESETN": { "actual": "video_aresetn"},
+						"TDATA": { "actual": "video_out_tdata"},
+						"TDEST": { "actual": "video_out_tdest"},
+						"TLAST": { "actual": "video_out_tlast"},
+						"TREADY": { "actual": "video_out_tready"},
+						"TUSER": { "actual": "video_out_tuser"},
+						"TVALID": { "actual": "video_out_tvalid"}
+					}
+				},
 				"/processing_system7_0/M_AXI_GP0": {
 					"interface": "xilinx.com:interface:aximm:1.0",
 					"ports": {

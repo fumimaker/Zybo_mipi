@@ -1,7 +1,7 @@
 //Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
 //--------------------------------------------------------------------------------
 //Tool Version: Vivado v.2019.2 (win64) Build 2708876 Wed Nov  6 21:40:23 MST 2019
-//Date        : Fri Aug  7 23:59:09 2020
+//Date        : Mon Aug 10 01:28:10 2020
 //Host        : LAPTOP-AG87OV99 running 64-bit major release  (build 9200)
 //Command     : generate_target design_1.bd
 //Design      : design_1
@@ -9,9 +9,10 @@
 //--------------------------------------------------------------------------------
 `timescale 1 ps / 1 ps
 
-(* CORE_GENERATION_INFO = "design_1,IP_Integrator,{x_ipVendor=xilinx.com,x_ipLibrary=BlockDiagram,x_ipName=design_1,x_ipVersion=1.00.a,x_ipLanguage=VERILOG,numBlks=7,numReposBlks=5,numNonXlnxBlks=0,numHierBlks=2,maxHierDepth=0,numSysgenBlks=0,numHlsBlks=0,numHdlrefBlks=0,numPkgbdBlks=0,bdsource=USER,da_axi4_cnt=1,da_board_cnt=2,da_clkrst_cnt=1,da_ps7_cnt=1,synth_mode=OOC_per_IP}" *) (* HW_HANDOFF = "design_1.hwdef" *) 
+(* CORE_GENERATION_INFO = "design_1,IP_Integrator,{x_ipVendor=xilinx.com,x_ipLibrary=BlockDiagram,x_ipName=design_1,x_ipVersion=1.00.a,x_ipLanguage=VERILOG,numBlks=9,numReposBlks=7,numNonXlnxBlks=0,numHierBlks=2,maxHierDepth=0,numSysgenBlks=0,numHlsBlks=0,numHdlrefBlks=0,numPkgbdBlks=0,bdsource=USER,da_axi4_cnt=5,da_board_cnt=4,da_clkrst_cnt=10,da_ps7_cnt=3,synth_mode=OOC_per_IP}" *) (* HW_HANDOFF = "design_1.hwdef" *) 
 module design_1
-   (DDR_addr,
+   (CLK,
+    DDR_addr,
     DDR_ba,
     DDR_cas_n,
     DDR_ck_n,
@@ -32,8 +33,22 @@ module design_1
     FIXED_IO_ps_clk,
     FIXED_IO_ps_porb,
     FIXED_IO_ps_srstb,
-    reset_rtl,
-    sys_clock);
+    IIC_0_0_scl_i,
+    IIC_0_0_scl_o,
+    IIC_0_0_scl_t,
+    IIC_0_0_sda_i,
+    IIC_0_0_sda_o,
+    IIC_0_0_sda_t,
+    mipi_phy_if_0_clk_hs_n,
+    mipi_phy_if_0_clk_hs_p,
+    mipi_phy_if_0_clk_lp_n,
+    mipi_phy_if_0_clk_lp_p,
+    mipi_phy_if_0_data_hs_n,
+    mipi_phy_if_0_data_hs_p,
+    mipi_phy_if_0_data_lp_n,
+    mipi_phy_if_0_data_lp_p,
+    reset_rtl);
+  input CLK;
   (* X_INTERFACE_INFO = "xilinx.com:interface:ddrx:1.0 DDR ADDR" *) (* X_INTERFACE_PARAMETER = "XIL_INTERFACENAME DDR, AXI_ARBITRATION_SCHEME TDM, BURST_LENGTH 8, CAN_DEBUG false, CAS_LATENCY 11, CAS_WRITE_LATENCY 11, CS_ENABLED true, DATA_MASK_ENABLED true, DATA_WIDTH 8, MEMORY_TYPE COMPONENTS, MEM_ADDR_MAP ROW_COLUMN_BANK, SLOT Single, TIMEPERIOD_PS 1250" *) inout [14:0]DDR_addr;
   (* X_INTERFACE_INFO = "xilinx.com:interface:ddrx:1.0 DDR BA" *) inout [2:0]DDR_ba;
   (* X_INTERFACE_INFO = "xilinx.com:interface:ddrx:1.0 DDR CAS_N" *) inout DDR_cas_n;
@@ -55,10 +70,41 @@ module design_1
   (* X_INTERFACE_INFO = "xilinx.com:display_processing_system7:fixedio:1.0 FIXED_IO PS_CLK" *) inout FIXED_IO_ps_clk;
   (* X_INTERFACE_INFO = "xilinx.com:display_processing_system7:fixedio:1.0 FIXED_IO PS_PORB" *) inout FIXED_IO_ps_porb;
   (* X_INTERFACE_INFO = "xilinx.com:display_processing_system7:fixedio:1.0 FIXED_IO PS_SRSTB" *) inout FIXED_IO_ps_srstb;
+  (* X_INTERFACE_INFO = "xilinx.com:interface:iic:1.0 IIC_0_0 SCL_I" *) input IIC_0_0_scl_i;
+  (* X_INTERFACE_INFO = "xilinx.com:interface:iic:1.0 IIC_0_0 SCL_O" *) output IIC_0_0_scl_o;
+  (* X_INTERFACE_INFO = "xilinx.com:interface:iic:1.0 IIC_0_0 SCL_T" *) output IIC_0_0_scl_t;
+  (* X_INTERFACE_INFO = "xilinx.com:interface:iic:1.0 IIC_0_0 SDA_I" *) input IIC_0_0_sda_i;
+  (* X_INTERFACE_INFO = "xilinx.com:interface:iic:1.0 IIC_0_0 SDA_O" *) output IIC_0_0_sda_o;
+  (* X_INTERFACE_INFO = "xilinx.com:interface:iic:1.0 IIC_0_0 SDA_T" *) output IIC_0_0_sda_t;
+  (* X_INTERFACE_INFO = "xilinx.com:interface:mipi_phy:1.0 mipi_phy_if_0 CLK_HS_N" *) input mipi_phy_if_0_clk_hs_n;
+  (* X_INTERFACE_INFO = "xilinx.com:interface:mipi_phy:1.0 mipi_phy_if_0 CLK_HS_P" *) input mipi_phy_if_0_clk_hs_p;
+  (* X_INTERFACE_INFO = "xilinx.com:interface:mipi_phy:1.0 mipi_phy_if_0 CLK_LP_N" *) input mipi_phy_if_0_clk_lp_n;
+  (* X_INTERFACE_INFO = "xilinx.com:interface:mipi_phy:1.0 mipi_phy_if_0 CLK_LP_P" *) input mipi_phy_if_0_clk_lp_p;
+  (* X_INTERFACE_INFO = "xilinx.com:interface:mipi_phy:1.0 mipi_phy_if_0 DATA_HS_N" *) input [1:0]mipi_phy_if_0_data_hs_n;
+  (* X_INTERFACE_INFO = "xilinx.com:interface:mipi_phy:1.0 mipi_phy_if_0 DATA_HS_P" *) input [1:0]mipi_phy_if_0_data_hs_p;
+  (* X_INTERFACE_INFO = "xilinx.com:interface:mipi_phy:1.0 mipi_phy_if_0 DATA_LP_N" *) input [1:0]mipi_phy_if_0_data_lp_n;
+  (* X_INTERFACE_INFO = "xilinx.com:interface:mipi_phy:1.0 mipi_phy_if_0 DATA_LP_P" *) input [1:0]mipi_phy_if_0_data_lp_p;
   (* X_INTERFACE_INFO = "xilinx.com:signal:reset:1.0 RST.RESET_RTL RST" *) (* X_INTERFACE_PARAMETER = "XIL_INTERFACENAME RST.RESET_RTL, INSERT_VIP 0, POLARITY ACTIVE_HIGH" *) input reset_rtl;
-  (* X_INTERFACE_INFO = "xilinx.com:signal:clock:1.0 CLK.SYS_CLOCK CLK" *) (* X_INTERFACE_PARAMETER = "XIL_INTERFACENAME CLK.SYS_CLOCK, CLK_DOMAIN design_1_sys_clock, FREQ_HZ 125000000, INSERT_VIP 0, PHASE 0.000" *) input sys_clock;
 
+  wire CLK_1;
   wire clk_wiz_0_clk_out1;
+  wire clk_wiz_0_locked;
+  wire mipi_csi2_rx_subsyst_0_csirxss_csi_irq;
+  wire mipi_csi2_rx_subsyst_0_rxbyteclkhs;
+  wire mipi_csi2_rx_subsyst_0_system_rst_out;
+  (* CONN_BUS_INFO = "mipi_csi2_rx_subsyst_0_video_out xilinx.com:interface:axis:1.0 None TDATA" *) (* DONT_TOUCH *) wire [63:0]mipi_csi2_rx_subsyst_0_video_out_TDATA;
+  (* CONN_BUS_INFO = "mipi_csi2_rx_subsyst_0_video_out xilinx.com:interface:axis:1.0 None TDEST" *) (* DONT_TOUCH *) wire [9:0]mipi_csi2_rx_subsyst_0_video_out_TDEST;
+  (* CONN_BUS_INFO = "mipi_csi2_rx_subsyst_0_video_out xilinx.com:interface:axis:1.0 None TLAST" *) (* DONT_TOUCH *) wire mipi_csi2_rx_subsyst_0_video_out_TLAST;
+  (* CONN_BUS_INFO = "mipi_csi2_rx_subsyst_0_video_out xilinx.com:interface:axis:1.0 None TUSER" *) (* DONT_TOUCH *) wire [0:0]mipi_csi2_rx_subsyst_0_video_out_TUSER;
+  (* CONN_BUS_INFO = "mipi_csi2_rx_subsyst_0_video_out xilinx.com:interface:axis:1.0 None TVALID" *) (* DONT_TOUCH *) wire mipi_csi2_rx_subsyst_0_video_out_TVALID;
+  wire mipi_phy_if_0_1_CLK_HS_N;
+  wire mipi_phy_if_0_1_CLK_HS_P;
+  wire mipi_phy_if_0_1_CLK_LP_N;
+  wire mipi_phy_if_0_1_CLK_LP_P;
+  wire [1:0]mipi_phy_if_0_1_DATA_HS_N;
+  wire [1:0]mipi_phy_if_0_1_DATA_HS_P;
+  wire [1:0]mipi_phy_if_0_1_DATA_LP_N;
+  wire [1:0]mipi_phy_if_0_1_DATA_LP_P;
   wire [14:0]processing_system7_0_DDR_ADDR;
   wire [2:0]processing_system7_0_DDR_BA;
   wire processing_system7_0_DDR_CAS_N;
@@ -75,13 +121,18 @@ module design_1
   wire processing_system7_0_DDR_RESET_N;
   wire processing_system7_0_DDR_WE_N;
   wire processing_system7_0_FCLK_CLK0;
-  wire processing_system7_0_FCLK_RESET0_N;
   wire processing_system7_0_FIXED_IO_DDR_VRN;
   wire processing_system7_0_FIXED_IO_DDR_VRP;
   wire [53:0]processing_system7_0_FIXED_IO_MIO;
   wire processing_system7_0_FIXED_IO_PS_CLK;
   wire processing_system7_0_FIXED_IO_PS_PORB;
   wire processing_system7_0_FIXED_IO_PS_SRSTB;
+  wire processing_system7_0_IIC_0_SCL_I;
+  wire processing_system7_0_IIC_0_SCL_O;
+  wire processing_system7_0_IIC_0_SCL_T;
+  wire processing_system7_0_IIC_0_SDA_I;
+  wire processing_system7_0_IIC_0_SDA_O;
+  wire processing_system7_0_IIC_0_SDA_T;
   wire [31:0]processing_system7_0_M_AXI_GP0_ARADDR;
   wire [1:0]processing_system7_0_M_AXI_GP0_ARBURST;
   wire [3:0]processing_system7_0_M_AXI_GP0_ARCACHE;
@@ -138,17 +189,37 @@ module design_1
   wire [3:0]ps7_0_axi_periph_M00_AXI_WSTRB;
   wire ps7_0_axi_periph_M00_AXI_WVALID;
   wire reset_rtl_1;
-  wire [0:0]rst_ps7_0_50M_peripheral_aresetn;
-  wire sys_clock_1;
+  wire [0:0]rst_clk_wiz_0_100M_peripheral_aresetn;
 
+  assign CLK_1 = CLK;
+  assign IIC_0_0_scl_o = processing_system7_0_IIC_0_SCL_O;
+  assign IIC_0_0_scl_t = processing_system7_0_IIC_0_SCL_T;
+  assign IIC_0_0_sda_o = processing_system7_0_IIC_0_SDA_O;
+  assign IIC_0_0_sda_t = processing_system7_0_IIC_0_SDA_T;
+  assign mipi_phy_if_0_1_CLK_HS_N = mipi_phy_if_0_clk_hs_n;
+  assign mipi_phy_if_0_1_CLK_HS_P = mipi_phy_if_0_clk_hs_p;
+  assign mipi_phy_if_0_1_CLK_LP_N = mipi_phy_if_0_clk_lp_n;
+  assign mipi_phy_if_0_1_CLK_LP_P = mipi_phy_if_0_clk_lp_p;
+  assign mipi_phy_if_0_1_DATA_HS_N = mipi_phy_if_0_data_hs_n[1:0];
+  assign mipi_phy_if_0_1_DATA_HS_P = mipi_phy_if_0_data_hs_p[1:0];
+  assign mipi_phy_if_0_1_DATA_LP_N = mipi_phy_if_0_data_lp_n[1:0];
+  assign mipi_phy_if_0_1_DATA_LP_P = mipi_phy_if_0_data_lp_p[1:0];
+  assign processing_system7_0_IIC_0_SCL_I = IIC_0_0_scl_i;
+  assign processing_system7_0_IIC_0_SDA_I = IIC_0_0_sda_i;
   assign reset_rtl_1 = reset_rtl;
-  assign sys_clock_1 = sys_clock;
   design_1_clk_wiz_0_0 clk_wiz_0
-       (.clk_in1(sys_clock_1),
+       (.clk_in1(CLK_1),
         .clk_out1(clk_wiz_0_clk_out1),
+        .locked(clk_wiz_0_locked),
         .reset(reset_rtl_1));
-  design_1_mipi_csi2_rx_subsyst_0_0 mipi_csi2_rx_subsyst_0
-       (.csirxss_s_axi_araddr(ps7_0_axi_periph_M00_AXI_ARADDR[7:0]),
+  design_1_ila_0_0 ila_0
+       (.clk(processing_system7_0_FCLK_CLK0),
+        .probe0(mipi_csi2_rx_subsyst_0_system_rst_out),
+        .probe1(mipi_csi2_rx_subsyst_0_csirxss_csi_irq),
+        .probe2(mipi_csi2_rx_subsyst_0_rxbyteclkhs));
+  design_1_mipi_csi2_rx_subsyst_0_1 mipi_csi2_rx_subsyst_0
+       (.csirxss_csi_irq(mipi_csi2_rx_subsyst_0_csirxss_csi_irq),
+        .csirxss_s_axi_araddr(ps7_0_axi_periph_M00_AXI_ARADDR[7:0]),
         .csirxss_s_axi_arready(ps7_0_axi_periph_M00_AXI_ARREADY),
         .csirxss_s_axi_arvalid(ps7_0_axi_periph_M00_AXI_ARVALID),
         .csirxss_s_axi_awaddr(ps7_0_axi_periph_M00_AXI_AWADDR[7:0]),
@@ -167,19 +238,26 @@ module design_1
         .csirxss_s_axi_wvalid(ps7_0_axi_periph_M00_AXI_WVALID),
         .dphy_clk_200M(clk_wiz_0_clk_out1),
         .lite_aclk(processing_system7_0_FCLK_CLK0),
-        .lite_aresetn(rst_ps7_0_50M_peripheral_aresetn),
-        .mipi_phy_if_clk_hs_n(1'b0),
-        .mipi_phy_if_clk_hs_p(1'b0),
-        .mipi_phy_if_clk_lp_n(1'b0),
-        .mipi_phy_if_clk_lp_p(1'b0),
-        .mipi_phy_if_data_hs_n({1'b0,1'b0}),
-        .mipi_phy_if_data_hs_p({1'b0,1'b0}),
-        .mipi_phy_if_data_lp_n({1'b0,1'b0}),
-        .mipi_phy_if_data_lp_p({1'b0,1'b0}),
+        .lite_aresetn(rst_clk_wiz_0_100M_peripheral_aresetn),
+        .mipi_phy_if_clk_hs_n(mipi_phy_if_0_1_CLK_HS_N),
+        .mipi_phy_if_clk_hs_p(mipi_phy_if_0_1_CLK_HS_P),
+        .mipi_phy_if_clk_lp_n(mipi_phy_if_0_1_CLK_LP_N),
+        .mipi_phy_if_clk_lp_p(mipi_phy_if_0_1_CLK_LP_P),
+        .mipi_phy_if_data_hs_n(mipi_phy_if_0_1_DATA_HS_N),
+        .mipi_phy_if_data_hs_p(mipi_phy_if_0_1_DATA_HS_P),
+        .mipi_phy_if_data_lp_n(mipi_phy_if_0_1_DATA_LP_N),
+        .mipi_phy_if_data_lp_p(mipi_phy_if_0_1_DATA_LP_P),
+        .rxbyteclkhs(mipi_csi2_rx_subsyst_0_rxbyteclkhs),
+        .system_rst_out(mipi_csi2_rx_subsyst_0_system_rst_out),
         .video_aclk(processing_system7_0_FCLK_CLK0),
-        .video_aresetn(rst_ps7_0_50M_peripheral_aresetn),
-        .video_out_tready(1'b1));
-  design_1_processing_system7_0_0 processing_system7_0
+        .video_aresetn(rst_clk_wiz_0_100M_peripheral_aresetn),
+        .video_out_tdata(mipi_csi2_rx_subsyst_0_video_out_TDATA),
+        .video_out_tdest(mipi_csi2_rx_subsyst_0_video_out_TDEST),
+        .video_out_tlast(mipi_csi2_rx_subsyst_0_video_out_TLAST),
+        .video_out_tready(1'b1),
+        .video_out_tuser(mipi_csi2_rx_subsyst_0_video_out_TUSER),
+        .video_out_tvalid(mipi_csi2_rx_subsyst_0_video_out_TVALID));
+  design_1_processing_system7_0_1 processing_system7_0
        (.DDR_Addr(DDR_addr[14:0]),
         .DDR_BankAddr(DDR_ba[2:0]),
         .DDR_CAS_n(DDR_cas_n),
@@ -198,7 +276,12 @@ module design_1
         .DDR_VRP(FIXED_IO_ddr_vrp),
         .DDR_WEB(DDR_we_n),
         .FCLK_CLK0(processing_system7_0_FCLK_CLK0),
-        .FCLK_RESET0_N(processing_system7_0_FCLK_RESET0_N),
+        .I2C0_SCL_I(processing_system7_0_IIC_0_SCL_I),
+        .I2C0_SCL_O(processing_system7_0_IIC_0_SCL_O),
+        .I2C0_SCL_T(processing_system7_0_IIC_0_SCL_T),
+        .I2C0_SDA_I(processing_system7_0_IIC_0_SDA_I),
+        .I2C0_SDA_O(processing_system7_0_IIC_0_SDA_O),
+        .I2C0_SDA_T(processing_system7_0_IIC_0_SDA_T),
         .MIO(FIXED_IO_mio[53:0]),
         .M_AXI_GP0_ACLK(processing_system7_0_FCLK_CLK0),
         .M_AXI_GP0_ARADDR(processing_system7_0_M_AXI_GP0_ARADDR),
@@ -243,11 +326,11 @@ module design_1
         .PS_PORB(FIXED_IO_ps_porb),
         .PS_SRSTB(FIXED_IO_ps_srstb),
         .USB0_VBUS_PWRFAULT(1'b0));
-  design_1_ps7_0_axi_periph_0 ps7_0_axi_periph
+  design_1_ps7_0_axi_periph_1 ps7_0_axi_periph
        (.ACLK(processing_system7_0_FCLK_CLK0),
-        .ARESETN(rst_ps7_0_50M_peripheral_aresetn),
+        .ARESETN(rst_clk_wiz_0_100M_peripheral_aresetn),
         .M00_ACLK(processing_system7_0_FCLK_CLK0),
-        .M00_ARESETN(rst_ps7_0_50M_peripheral_aresetn),
+        .M00_ARESETN(rst_clk_wiz_0_100M_peripheral_aresetn),
         .M00_AXI_araddr(ps7_0_axi_periph_M00_AXI_ARADDR),
         .M00_AXI_arready(ps7_0_axi_periph_M00_AXI_ARREADY),
         .M00_AXI_arvalid(ps7_0_axi_periph_M00_AXI_ARVALID),
@@ -266,7 +349,7 @@ module design_1
         .M00_AXI_wstrb(ps7_0_axi_periph_M00_AXI_WSTRB),
         .M00_AXI_wvalid(ps7_0_axi_periph_M00_AXI_WVALID),
         .S00_ACLK(processing_system7_0_FCLK_CLK0),
-        .S00_ARESETN(rst_ps7_0_50M_peripheral_aresetn),
+        .S00_ARESETN(rst_clk_wiz_0_100M_peripheral_aresetn),
         .S00_AXI_araddr(processing_system7_0_M_AXI_GP0_ARADDR),
         .S00_AXI_arburst(processing_system7_0_M_AXI_GP0_ARBURST),
         .S00_AXI_arcache(processing_system7_0_M_AXI_GP0_ARCACHE),
@@ -305,16 +388,25 @@ module design_1
         .S00_AXI_wready(processing_system7_0_M_AXI_GP0_WREADY),
         .S00_AXI_wstrb(processing_system7_0_M_AXI_GP0_WSTRB),
         .S00_AXI_wvalid(processing_system7_0_M_AXI_GP0_WVALID));
-  design_1_rst_ps7_0_50M_0 rst_ps7_0_50M
+  design_1_rst_clk_wiz_0_100M_0 rst_clk_wiz_0_100M
        (.aux_reset_in(1'b1),
-        .dcm_locked(1'b1),
-        .ext_reset_in(processing_system7_0_FCLK_RESET0_N),
+        .dcm_locked(clk_wiz_0_locked),
+        .ext_reset_in(reset_rtl_1),
         .mb_debug_sys_rst(1'b0),
-        .peripheral_aresetn(rst_ps7_0_50M_peripheral_aresetn),
+        .peripheral_aresetn(rst_clk_wiz_0_100M_peripheral_aresetn),
         .slowest_sync_clk(processing_system7_0_FCLK_CLK0));
+  design_1_system_ila_0_0 system_ila_0
+       (.SLOT_0_AXIS_tdata(mipi_csi2_rx_subsyst_0_video_out_TDATA),
+        .SLOT_0_AXIS_tdest(mipi_csi2_rx_subsyst_0_video_out_TDEST),
+        .SLOT_0_AXIS_tlast(mipi_csi2_rx_subsyst_0_video_out_TLAST),
+        .SLOT_0_AXIS_tready(1'b1),
+        .SLOT_0_AXIS_tuser(mipi_csi2_rx_subsyst_0_video_out_TUSER),
+        .SLOT_0_AXIS_tvalid(mipi_csi2_rx_subsyst_0_video_out_TVALID),
+        .clk(processing_system7_0_FCLK_CLK0),
+        .resetn(rst_clk_wiz_0_100M_peripheral_aresetn));
 endmodule
 
-module design_1_ps7_0_axi_periph_0
+module design_1_ps7_0_axi_periph_1
    (ACLK,
     ARESETN,
     M00_ACLK,

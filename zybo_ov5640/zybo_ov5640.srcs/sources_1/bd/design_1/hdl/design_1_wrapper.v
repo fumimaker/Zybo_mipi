@@ -1,7 +1,7 @@
 //Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
 //--------------------------------------------------------------------------------
 //Tool Version: Vivado v.2019.2 (win64) Build 2708876 Wed Nov  6 21:40:23 MST 2019
-//Date        : Fri Aug  7 23:59:09 2020
+//Date        : Mon Aug 10 01:28:11 2020
 //Host        : LAPTOP-AG87OV99 running 64-bit major release  (build 9200)
 //Command     : generate_target design_1_wrapper.bd
 //Design      : design_1_wrapper
@@ -10,7 +10,8 @@
 `timescale 1 ps / 1 ps
 
 module design_1_wrapper
-   (DDR_addr,
+   (CLK,
+    DDR_addr,
     DDR_ba,
     DDR_cas_n,
     DDR_ck_n,
@@ -31,8 +32,18 @@ module design_1_wrapper
     FIXED_IO_ps_clk,
     FIXED_IO_ps_porb,
     FIXED_IO_ps_srstb,
-    reset_rtl,
-    sys_clock);
+    IIC_0_0_scl_io,
+    IIC_0_0_sda_io,
+    mipi_phy_if_0_clk_hs_n,
+    mipi_phy_if_0_clk_hs_p,
+    mipi_phy_if_0_clk_lp_n,
+    mipi_phy_if_0_clk_lp_p,
+    mipi_phy_if_0_data_hs_n,
+    mipi_phy_if_0_data_hs_p,
+    mipi_phy_if_0_data_lp_n,
+    mipi_phy_if_0_data_lp_p,
+    reset_rtl);
+  input CLK;
   inout [14:0]DDR_addr;
   inout [2:0]DDR_ba;
   inout DDR_cas_n;
@@ -54,9 +65,19 @@ module design_1_wrapper
   inout FIXED_IO_ps_clk;
   inout FIXED_IO_ps_porb;
   inout FIXED_IO_ps_srstb;
+  inout IIC_0_0_scl_io;
+  inout IIC_0_0_sda_io;
+  input mipi_phy_if_0_clk_hs_n;
+  input mipi_phy_if_0_clk_hs_p;
+  input mipi_phy_if_0_clk_lp_n;
+  input mipi_phy_if_0_clk_lp_p;
+  input [1:0]mipi_phy_if_0_data_hs_n;
+  input [1:0]mipi_phy_if_0_data_hs_p;
+  input [1:0]mipi_phy_if_0_data_lp_n;
+  input [1:0]mipi_phy_if_0_data_lp_p;
   input reset_rtl;
-  input sys_clock;
 
+  wire CLK;
   wire [14:0]DDR_addr;
   wire [2:0]DDR_ba;
   wire DDR_cas_n;
@@ -78,11 +99,37 @@ module design_1_wrapper
   wire FIXED_IO_ps_clk;
   wire FIXED_IO_ps_porb;
   wire FIXED_IO_ps_srstb;
+  wire IIC_0_0_scl_i;
+  wire IIC_0_0_scl_io;
+  wire IIC_0_0_scl_o;
+  wire IIC_0_0_scl_t;
+  wire IIC_0_0_sda_i;
+  wire IIC_0_0_sda_io;
+  wire IIC_0_0_sda_o;
+  wire IIC_0_0_sda_t;
+  wire mipi_phy_if_0_clk_hs_n;
+  wire mipi_phy_if_0_clk_hs_p;
+  wire mipi_phy_if_0_clk_lp_n;
+  wire mipi_phy_if_0_clk_lp_p;
+  wire [1:0]mipi_phy_if_0_data_hs_n;
+  wire [1:0]mipi_phy_if_0_data_hs_p;
+  wire [1:0]mipi_phy_if_0_data_lp_n;
+  wire [1:0]mipi_phy_if_0_data_lp_p;
   wire reset_rtl;
-  wire sys_clock;
 
+  IOBUF IIC_0_0_scl_iobuf
+       (.I(IIC_0_0_scl_o),
+        .IO(IIC_0_0_scl_io),
+        .O(IIC_0_0_scl_i),
+        .T(IIC_0_0_scl_t));
+  IOBUF IIC_0_0_sda_iobuf
+       (.I(IIC_0_0_sda_o),
+        .IO(IIC_0_0_sda_io),
+        .O(IIC_0_0_sda_i),
+        .T(IIC_0_0_sda_t));
   design_1 design_1_i
-       (.DDR_addr(DDR_addr),
+       (.CLK(CLK),
+        .DDR_addr(DDR_addr),
         .DDR_ba(DDR_ba),
         .DDR_cas_n(DDR_cas_n),
         .DDR_ck_n(DDR_ck_n),
@@ -103,6 +150,19 @@ module design_1_wrapper
         .FIXED_IO_ps_clk(FIXED_IO_ps_clk),
         .FIXED_IO_ps_porb(FIXED_IO_ps_porb),
         .FIXED_IO_ps_srstb(FIXED_IO_ps_srstb),
-        .reset_rtl(reset_rtl),
-        .sys_clock(sys_clock));
+        .IIC_0_0_scl_i(IIC_0_0_scl_i),
+        .IIC_0_0_scl_o(IIC_0_0_scl_o),
+        .IIC_0_0_scl_t(IIC_0_0_scl_t),
+        .IIC_0_0_sda_i(IIC_0_0_sda_i),
+        .IIC_0_0_sda_o(IIC_0_0_sda_o),
+        .IIC_0_0_sda_t(IIC_0_0_sda_t),
+        .mipi_phy_if_0_clk_hs_n(mipi_phy_if_0_clk_hs_n),
+        .mipi_phy_if_0_clk_hs_p(mipi_phy_if_0_clk_hs_p),
+        .mipi_phy_if_0_clk_lp_n(mipi_phy_if_0_clk_lp_n),
+        .mipi_phy_if_0_clk_lp_p(mipi_phy_if_0_clk_lp_p),
+        .mipi_phy_if_0_data_hs_n(mipi_phy_if_0_data_hs_n),
+        .mipi_phy_if_0_data_hs_p(mipi_phy_if_0_data_hs_p),
+        .mipi_phy_if_0_data_lp_n(mipi_phy_if_0_data_lp_n),
+        .mipi_phy_if_0_data_lp_p(mipi_phy_if_0_data_lp_p),
+        .reset_rtl(reset_rtl));
 endmodule

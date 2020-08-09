@@ -31,6 +31,8 @@ set_property XPM_LIBRARIES {XPM_CDC XPM_FIFO XPM_MEMORY} [current_project]
 set_property default_lib xil_defaultlib [current_project]
 set_property target_language Verilog [current_project]
 set_property board_part digilentinc.com:zybo-z7-20:part0:1.0 [current_project]
+set_property ip_repo_paths c:/Users/ivr/Downloads/vivado-library-master/vivado-library-master [current_project]
+update_ip_catalog
 set_property ip_output_repo c:/Users/ivr/Documents/GitHub/Zybo_mipi/zybo_ov5640/zybo_ov5640.cache/ip [current_project]
 set_property ip_cache_permissions {read write} [current_project]
 read_ip -quiet c:/Users/ivr/Documents/GitHub/Zybo_mipi/zybo_ov5640/zybo_ov5640.srcs/sources_1/bd/design_1/ip/design_1_mipi_csi2_rx_subsyst_0_0_1/bd_0/ip/ip_3/bd_d10d_vfb_0_0.xci
