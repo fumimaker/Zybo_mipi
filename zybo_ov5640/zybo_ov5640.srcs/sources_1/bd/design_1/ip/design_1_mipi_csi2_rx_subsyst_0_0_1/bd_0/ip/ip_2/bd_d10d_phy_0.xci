@@ -105,7 +105,7 @@
         <spirit:configurableElementValue spirit:referenceId="BUSIFPARAM_VALUE.RXBYTECLKHS.ASSOCIATED_BUSIF"/>
         <spirit:configurableElementValue spirit:referenceId="BUSIFPARAM_VALUE.RXBYTECLKHS.ASSOCIATED_RESET"/>
         <spirit:configurableElementValue spirit:referenceId="BUSIFPARAM_VALUE.RXBYTECLKHS.CLK_DOMAIN">bd_d10d_phy_0_rxbyteclkhs</spirit:configurableElementValue>
-        <spirit:configurableElementValue spirit:referenceId="BUSIFPARAM_VALUE.RXBYTECLKHS.FREQ_HZ">125000000.0</spirit:configurableElementValue>
+        <spirit:configurableElementValue spirit:referenceId="BUSIFPARAM_VALUE.RXBYTECLKHS.FREQ_HZ">62500000.0</spirit:configurableElementValue>
         <spirit:configurableElementValue spirit:referenceId="BUSIFPARAM_VALUE.RXBYTECLKHS.INSERT_VIP">0</spirit:configurableElementValue>
         <spirit:configurableElementValue spirit:referenceId="BUSIFPARAM_VALUE.RXBYTECLKHS.PHASE">0</spirit:configurableElementValue>
         <spirit:configurableElementValue spirit:referenceId="BUSIFPARAM_VALUE.SPLTDL0_RXBYTECLKHS.ASSOCIATED_BUSIF"/>
@@ -283,8 +283,8 @@
         <spirit:configurableElementValue spirit:referenceId="MODELPARAM_VALUE.C_DATA_LANE5_IO_POSITION">51</spirit:configurableElementValue>
         <spirit:configurableElementValue spirit:referenceId="MODELPARAM_VALUE.C_DATA_LANE6_IO_POSITION">51</spirit:configurableElementValue>
         <spirit:configurableElementValue spirit:referenceId="MODELPARAM_VALUE.C_DATA_LANE7_IO_POSITION">51</spirit:configurableElementValue>
-        <spirit:configurableElementValue spirit:referenceId="MODELPARAM_VALUE.C_DDR_CLK_PERIOD">2.000</spirit:configurableElementValue>
-        <spirit:configurableElementValue spirit:referenceId="MODELPARAM_VALUE.C_DIV4_CLK_PERIOD">8.000</spirit:configurableElementValue>
+        <spirit:configurableElementValue spirit:referenceId="MODELPARAM_VALUE.C_DDR_CLK_PERIOD">4.000</spirit:configurableElementValue>
+        <spirit:configurableElementValue spirit:referenceId="MODELPARAM_VALUE.C_DIV4_CLK_PERIOD">16.000</spirit:configurableElementValue>
         <spirit:configurableElementValue spirit:referenceId="MODELPARAM_VALUE.C_DL0_IO_SWAP">0</spirit:configurableElementValue>
         <spirit:configurableElementValue spirit:referenceId="MODELPARAM_VALUE.C_DL1_IO_SWAP">0</spirit:configurableElementValue>
         <spirit:configurableElementValue spirit:referenceId="MODELPARAM_VALUE.C_DL2_IO_SWAP">0</spirit:configurableElementValue>
@@ -320,8 +320,8 @@
         <spirit:configurableElementValue spirit:referenceId="MODELPARAM_VALUE.C_ESC_TIMEOUT">25600</spirit:configurableElementValue>
         <spirit:configurableElementValue spirit:referenceId="MODELPARAM_VALUE.C_EXAMPLE_SIMULATION">0</spirit:configurableElementValue>
         <spirit:configurableElementValue spirit:referenceId="MODELPARAM_VALUE.C_FIFO_RD_EN_CONTROL">true</spirit:configurableElementValue>
-        <spirit:configurableElementValue spirit:referenceId="MODELPARAM_VALUE.C_HS_LINE_RATE">1000</spirit:configurableElementValue>
-        <spirit:configurableElementValue spirit:referenceId="MODELPARAM_VALUE.C_HS_SETTLE_NS">145</spirit:configurableElementValue>
+        <spirit:configurableElementValue spirit:referenceId="MODELPARAM_VALUE.C_HS_LINE_RATE">500</spirit:configurableElementValue>
+        <spirit:configurableElementValue spirit:referenceId="MODELPARAM_VALUE.C_HS_SETTLE_NS">155</spirit:configurableElementValue>
         <spirit:configurableElementValue spirit:referenceId="MODELPARAM_VALUE.C_HS_TIMEOUT">65541</spirit:configurableElementValue>
         <spirit:configurableElementValue spirit:referenceId="MODELPARAM_VALUE.C_IDLY_TAP">0</spirit:configurableElementValue>
         <spirit:configurableElementValue spirit:referenceId="MODELPARAM_VALUE.C_INIT">100000</spirit:configurableElementValue>
@@ -430,8 +430,8 @@
         <spirit:configurableElementValue spirit:referenceId="PARAM_VALUE.C_ESC_TIMEOUT">25600</spirit:configurableElementValue>
         <spirit:configurableElementValue spirit:referenceId="PARAM_VALUE.C_EXAMPLE_SIMULATION">false</spirit:configurableElementValue>
         <spirit:configurableElementValue spirit:referenceId="PARAM_VALUE.C_FIFO_RD_EN_CONTROL">true</spirit:configurableElementValue>
-        <spirit:configurableElementValue spirit:referenceId="PARAM_VALUE.C_HS_LINE_RATE">1000</spirit:configurableElementValue>
-        <spirit:configurableElementValue spirit:referenceId="PARAM_VALUE.C_HS_SETTLE_NS">145</spirit:configurableElementValue>
+        <spirit:configurableElementValue spirit:referenceId="PARAM_VALUE.C_HS_LINE_RATE">500</spirit:configurableElementValue>
+        <spirit:configurableElementValue spirit:referenceId="PARAM_VALUE.C_HS_SETTLE_NS">155</spirit:configurableElementValue>
         <spirit:configurableElementValue spirit:referenceId="PARAM_VALUE.C_HS_TIMEOUT">65541</spirit:configurableElementValue>
         <spirit:configurableElementValue spirit:referenceId="PARAM_VALUE.C_IDLY_GROUP_NAME">mipi_csi2rx_idly_group</spirit:configurableElementValue>
         <spirit:configurableElementValue spirit:referenceId="PARAM_VALUE.C_IDLY_TAP">1</spirit:configurableElementValue>
