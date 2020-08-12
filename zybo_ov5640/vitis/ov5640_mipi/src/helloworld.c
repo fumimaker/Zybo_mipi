@@ -8,7 +8,7 @@
 // I2C parameters
 #define IIC_SCLK_RATE       100000  // clock 100KHz
 //#define CAMERA_ADDRESS      0x21    // 7bit address 0bit=1:write 0:read
-#define CAMERA_ADDRESS      (0x78>>1)    //=0x3C 7bit address + 0bit=1:write 0:read
+#define CAMERA_ADDRESS      (0x3c)    //=0x3C 7bit address + 0bit=1:write 0:read
 #define IIC_DEVICE_ID       XPAR_XIICPS_0_DEVICE_ID
 uint8_t const dev_ID_h_ = 0x56;
 uint8_t const dev_ID_l_ = 0x40;
