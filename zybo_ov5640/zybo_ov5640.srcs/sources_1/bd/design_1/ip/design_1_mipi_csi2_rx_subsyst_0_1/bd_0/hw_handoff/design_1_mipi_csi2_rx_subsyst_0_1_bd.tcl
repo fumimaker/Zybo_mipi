@@ -250,7 +250,7 @@ proc create_root_design { parentCell } {
   set vfb_0 [ create_bd_cell -type ip -vlnv xilinx.com:ip:vfb:1.0 vfb_0 ]
   set_property -dict [ list \
    CONFIG.C_HS_LINE_RATE {443} \
-   CONFIG.VFB_DATA_TYPE {RGB565} \
+   CONFIG.VFB_DATA_TYPE {RAW10} \
    CONFIG.VFB_FIFO_DEPTH {2048} \
    CONFIG.VFB_FILTER_VC {0} \
    CONFIG.VFB_OP_PIXELS {4} \

@@ -217,7 +217,7 @@ proc create_root_design { parentCell } {
   set_property -dict [ list \
    CONFIG.CMN_NUM_LANES {2} \
    CONFIG.CMN_NUM_PIXELS {4} \
-   CONFIG.CMN_PXL_FORMAT {RGB565} \
+   CONFIG.CMN_PXL_FORMAT {RAW10} \
    CONFIG.C_DPHY_LANES {2} \
    CONFIG.C_HS_LINE_RATE {443} \
    CONFIG.C_HS_SETTLE_NS {157} \

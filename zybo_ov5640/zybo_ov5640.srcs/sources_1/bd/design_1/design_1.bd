@@ -1374,16 +1374,16 @@
               }
             },
             "interface_nets": {
-              "auto_pc_to_s00_couplers": {
-                "interface_ports": [
-                  "M_AXI",
-                  "auto_pc/M_AXI"
-                ]
-              },
               "s00_couplers_to_auto_pc": {
                 "interface_ports": [
                   "S_AXI",
                   "auto_pc/S_AXI"
+                ]
+              },
+              "auto_pc_to_s00_couplers": {
+                "interface_ports": [
+                  "M_AXI",
+                  "auto_pc/M_AXI"
                 ]
               }
             },
@@ -1459,7 +1459,7 @@
             "value": "4"
           },
           "CMN_PXL_FORMAT": {
-            "value": "RGB565"
+            "value": "RAW10"
           },
           "C_DPHY_LANES": {
             "value": "2"
@@ -1540,22 +1540,10 @@
       }
     },
     "interface_nets": {
-      "mipi_phy_if_0_1": {
+      "processing_system7_0_FIXED_IO": {
         "interface_ports": [
-          "mipi_phy_if_0",
-          "mipi_csi2_rx_subsyst_0/mipi_phy_if"
-        ]
-      },
-      "processing_system7_0_IIC_0": {
-        "interface_ports": [
-          "IIC_0_0",
-          "processing_system7_0/IIC_0"
-        ]
-      },
-      "ps7_0_axi_periph_M00_AXI": {
-        "interface_ports": [
-          "ps7_0_axi_periph/M00_AXI",
-          "mipi_csi2_rx_subsyst_0/csirxss_s_axi"
+          "FIXED_IO",
+          "processing_system7_0/FIXED_IO"
         ]
       },
       "processing_system7_0_M_AXI_GP0": {
@@ -1564,10 +1552,22 @@
           "ps7_0_axi_periph/S00_AXI"
         ]
       },
-      "processing_system7_0_FIXED_IO": {
+      "processing_system7_0_IIC_0": {
         "interface_ports": [
-          "FIXED_IO",
-          "processing_system7_0/FIXED_IO"
+          "IIC_0_0",
+          "processing_system7_0/IIC_0"
+        ]
+      },
+      "mipi_phy_if_0_1": {
+        "interface_ports": [
+          "mipi_phy_if_0",
+          "mipi_csi2_rx_subsyst_0/mipi_phy_if"
+        ]
+      },
+      "ps7_0_axi_periph_M00_AXI": {
+        "interface_ports": [
+          "ps7_0_axi_periph/M00_AXI",
+          "mipi_csi2_rx_subsyst_0/csirxss_s_axi"
         ]
       },
       "processing_system7_0_DDR": {

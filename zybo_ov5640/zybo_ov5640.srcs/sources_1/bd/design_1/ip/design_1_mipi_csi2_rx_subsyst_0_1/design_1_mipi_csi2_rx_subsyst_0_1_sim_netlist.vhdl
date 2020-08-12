@@ -1,10 +1,10 @@
 -- Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
 -- --------------------------------------------------------------------------------
 -- Tool Version: Vivado v.2019.2 (win64) Build 2708876 Wed Nov  6 21:40:23 MST 2019
--- Date        : Mon Aug 10 01:33:06 2020
+-- Date        : Thu Aug 13 04:04:47 2020
 -- Host        : LAPTOP-AG87OV99 running 64-bit major release  (build 9200)
 -- Command     : write_vhdl -force -mode funcsim
---               c:/Users/ivr/Documents/GitHub/Zybo_mipi/zybo_ov5640/zybo_ov5640.srcs/sources_1/bd/design_1/ip/design_1_mipi_csi2_rx_subsyst_0_1/design_1_mipi_csi2_rx_subsyst_0_1_sim_netlist.vhdl
+--               C:/Users/ivr/Documents/GitHub/Zybo_mipi/zybo_ov5640/zybo_ov5640.srcs/sources_1/bd/design_1/ip/design_1_mipi_csi2_rx_subsyst_0_1/design_1_mipi_csi2_rx_subsyst_0_1_sim_netlist.vhdl
 -- Design      : design_1_mipi_csi2_rx_subsyst_0_1
 -- Purpose     : This VHDL netlist is a functional simulation representation of the design and should not be modified or
 --               synthesized. This netlist cannot be used for SDF annotated simulation.
@@ -49,7 +49,7 @@ entity design_1_mipi_csi2_rx_subsyst_0_1_bd_11cc is
     system_rst_out : out STD_LOGIC;
     video_aclk : in STD_LOGIC;
     video_aresetn : in STD_LOGIC;
-    video_out_tdata : out STD_LOGIC_VECTOR ( 63 downto 0 );
+    video_out_tdata : out STD_LOGIC_VECTOR ( 39 downto 0 );
     video_out_tdest : out STD_LOGIC_VECTOR ( 9 downto 0 );
     video_out_tlast : out STD_LOGIC;
     video_out_tready : in STD_LOGIC;
@@ -230,7 +230,7 @@ architecture STRUCTURE of design_1_mipi_csi2_rx_subsyst_0_1_bd_11cc is
     vfb_eol : out STD_LOGIC;
     vfb_sof : out STD_LOGIC_VECTOR ( 0 to 0 );
     vfb_vcdt : out STD_LOGIC_VECTOR ( 9 downto 0 );
-    vfb_data : out STD_LOGIC_VECTOR ( 63 downto 0 )
+    vfb_data : out STD_LOGIC_VECTOR ( 39 downto 0 )
   );
   end component design_1_mipi_csi2_rx_subsyst_0_1_bd_11cc_vfb_0_0;
   signal phy_rx_mipi_ppi_if_CL_ENABLE : STD_LOGIC;
@@ -346,7 +346,7 @@ architecture STRUCTURE of design_1_mipi_csi2_rx_subsyst_0_1_bd_11cc is
   attribute X_INTERFACE_INFO of mipi_phy_if_data_lp_n : signal is "xilinx.com:interface:mipi_phy:1.0 mipi_phy_if DATA_LP_N";
   attribute X_INTERFACE_INFO of mipi_phy_if_data_lp_p : signal is "xilinx.com:interface:mipi_phy:1.0 mipi_phy_if DATA_LP_P";
   attribute X_INTERFACE_INFO of video_out_tdata : signal is "xilinx.com:interface:axis:1.0 video_out TDATA";
-  attribute X_INTERFACE_PARAMETER of video_out_tdata : signal is "XIL_INTERFACENAME video_out, CLK_DOMAIN design_1_processing_system7_0_1_FCLK_CLK0, FREQ_HZ 50000000, HAS_TKEEP 0, HAS_TLAST 1, HAS_TREADY 1, HAS_TSTRB 0, INSERT_VIP 0, LAYERED_METADATA undef, PHASE 0.000, TDATA_NUM_BYTES 8, TDEST_WIDTH 10, TID_WIDTH 0, TUSER_WIDTH 1";
+  attribute X_INTERFACE_PARAMETER of video_out_tdata : signal is "XIL_INTERFACENAME video_out, CLK_DOMAIN design_1_processing_system7_0_1_FCLK_CLK0, FREQ_HZ 50000000, HAS_TKEEP 0, HAS_TLAST 1, HAS_TREADY 1, HAS_TSTRB 0, INSERT_VIP 0, LAYERED_METADATA undef, PHASE 0.000, TDATA_NUM_BYTES 5, TDEST_WIDTH 10, TID_WIDTH 0, TUSER_WIDTH 1";
   attribute X_INTERFACE_INFO of video_out_tdest : signal is "xilinx.com:interface:axis:1.0 video_out TDEST";
   attribute X_INTERFACE_INFO of video_out_tuser : signal is "xilinx.com:interface:axis:1.0 video_out TUSER";
 begin
@@ -507,7 +507,7 @@ vfb_0: component design_1_mipi_csi2_rx_subsyst_0_1_bd_11cc_vfb_0_0
       sdt_tv => vfb_0_sdt_tv,
       vfb_arstn => video_aresetn,
       vfb_clk => video_aclk,
-      vfb_data(63 downto 0) => video_out_tdata(63 downto 0),
+      vfb_data(39 downto 0) => video_out_tdata(39 downto 0),
       vfb_eol => video_out_tlast,
       vfb_full => vfb_0_vfb_full,
       vfb_ready => video_out_tready,
@@ -549,7 +549,7 @@ entity design_1_mipi_csi2_rx_subsyst_0_1 is
     csirxss_s_axi_wready : out STD_LOGIC;
     csirxss_s_axi_wstrb : in STD_LOGIC_VECTOR ( 3 downto 0 );
     csirxss_s_axi_wvalid : in STD_LOGIC;
-    video_out_tdata : out STD_LOGIC_VECTOR ( 63 downto 0 );
+    video_out_tdata : out STD_LOGIC_VECTOR ( 39 downto 0 );
     video_out_tdest : out STD_LOGIC_VECTOR ( 9 downto 0 );
     video_out_tlast : out STD_LOGIC;
     video_out_tready : in STD_LOGIC;
@@ -613,7 +613,7 @@ architecture STRUCTURE of design_1_mipi_csi2_rx_subsyst_0_1 is
   attribute X_INTERFACE_INFO of video_out_tlast : signal is "xilinx.com:interface:axis:1.0 video_out TLAST";
   attribute X_INTERFACE_INFO of video_out_tready : signal is "xilinx.com:interface:axis:1.0 video_out TREADY";
   attribute X_INTERFACE_INFO of video_out_tvalid : signal is "xilinx.com:interface:axis:1.0 video_out TVALID";
-  attribute X_INTERFACE_PARAMETER of video_out_tvalid : signal is "XIL_INTERFACENAME video_out, TDATA_NUM_BYTES 8, TDEST_WIDTH 10, TID_WIDTH 0, TUSER_WIDTH 1, HAS_TREADY 1, HAS_TSTRB 0, HAS_TKEEP 0, HAS_TLAST 1, FREQ_HZ 50000000, PHASE 0.000, CLK_DOMAIN design_1_processing_system7_0_1_FCLK_CLK0, LAYERED_METADATA undef, INSERT_VIP 0";
+  attribute X_INTERFACE_PARAMETER of video_out_tvalid : signal is "XIL_INTERFACENAME video_out, TDATA_NUM_BYTES 5, TDEST_WIDTH 10, TID_WIDTH 0, TUSER_WIDTH 1, HAS_TREADY 1, HAS_TSTRB 0, HAS_TKEEP 0, HAS_TLAST 1, FREQ_HZ 50000000, PHASE 0.000, CLK_DOMAIN design_1_processing_system7_0_1_FCLK_CLK0, LAYERED_METADATA undef, INSERT_VIP 0";
   attribute X_INTERFACE_INFO of csirxss_s_axi_araddr : signal is "xilinx.com:interface:aximm:1.0 csirxss_s_axi ARADDR";
   attribute X_INTERFACE_INFO of csirxss_s_axi_awaddr : signal is "xilinx.com:interface:aximm:1.0 csirxss_s_axi AWADDR";
   attribute X_INTERFACE_INFO of csirxss_s_axi_bresp : signal is "xilinx.com:interface:aximm:1.0 csirxss_s_axi BRESP";
@@ -664,7 +664,7 @@ inst: entity work.design_1_mipi_csi2_rx_subsyst_0_1_bd_11cc
       system_rst_out => system_rst_out,
       video_aclk => video_aclk,
       video_aresetn => video_aresetn,
-      video_out_tdata(63 downto 0) => video_out_tdata(63 downto 0),
+      video_out_tdata(39 downto 0) => video_out_tdata(39 downto 0),
       video_out_tdest(9 downto 0) => video_out_tdest(9 downto 0),
       video_out_tlast => video_out_tlast,
       video_out_tready => video_out_tready,

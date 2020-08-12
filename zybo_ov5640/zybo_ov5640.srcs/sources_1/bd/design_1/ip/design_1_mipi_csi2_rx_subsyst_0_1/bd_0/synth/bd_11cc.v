@@ -80,7 +80,7 @@ module bd_11cc
   (* X_INTERFACE_INFO = "xilinx.com:signal:reset:1.0 RST.SYSTEM_RST_OUT RST" *) (* X_INTERFACE_PARAMETER = "XIL_INTERFACENAME RST.SYSTEM_RST_OUT, INSERT_VIP 0, POLARITY ACTIVE_LOW" *) output system_rst_out;
   (* X_INTERFACE_INFO = "xilinx.com:signal:clock:1.0 CLK.VIDEO_ACLK CLK" *) (* X_INTERFACE_PARAMETER = "XIL_INTERFACENAME CLK.VIDEO_ACLK, ASSOCIATED_BUSIF video_out, ASSOCIATED_RESET video_aresetn, CLK_DOMAIN design_1_processing_system7_0_1_FCLK_CLK0, FREQ_HZ 50000000, INSERT_VIP 0, PHASE 0.000" *) input video_aclk;
   (* X_INTERFACE_INFO = "xilinx.com:signal:reset:1.0 RST.VIDEO_ARESETN RST" *) (* X_INTERFACE_PARAMETER = "XIL_INTERFACENAME RST.VIDEO_ARESETN, INSERT_VIP 0, POLARITY ACTIVE_LOW" *) input video_aresetn;
-  (* X_INTERFACE_INFO = "xilinx.com:interface:axis:1.0 video_out TDATA" *) (* X_INTERFACE_PARAMETER = "XIL_INTERFACENAME video_out, CLK_DOMAIN design_1_processing_system7_0_1_FCLK_CLK0, FREQ_HZ 50000000, HAS_TKEEP 0, HAS_TLAST 1, HAS_TREADY 1, HAS_TSTRB 0, INSERT_VIP 0, LAYERED_METADATA undef, PHASE 0.000, TDATA_NUM_BYTES 8, TDEST_WIDTH 10, TID_WIDTH 0, TUSER_WIDTH 1" *) output [63:0]video_out_tdata;
+  (* X_INTERFACE_INFO = "xilinx.com:interface:axis:1.0 video_out TDATA" *) (* X_INTERFACE_PARAMETER = "XIL_INTERFACENAME video_out, CLK_DOMAIN design_1_processing_system7_0_1_FCLK_CLK0, FREQ_HZ 50000000, HAS_TKEEP 0, HAS_TLAST 1, HAS_TREADY 1, HAS_TSTRB 0, INSERT_VIP 0, LAYERED_METADATA undef, PHASE 0.000, TDATA_NUM_BYTES 5, TDEST_WIDTH 10, TID_WIDTH 0, TUSER_WIDTH 1" *) output [39:0]video_out_tdata;
   (* X_INTERFACE_INFO = "xilinx.com:interface:axis:1.0 video_out TDEST" *) output [9:0]video_out_tdest;
   (* X_INTERFACE_INFO = "xilinx.com:interface:axis:1.0 video_out TLAST" *) output video_out_tlast;
   (* X_INTERFACE_INFO = "xilinx.com:interface:axis:1.0 video_out TREADY" *) input video_out_tready;
@@ -151,7 +151,7 @@ module bd_11cc
   wire rx_m_axis_TREADY;
   wire [95:0]rx_m_axis_TUSER;
   wire rx_m_axis_TVALID;
-  wire [63:0]vfb_0_m_vfb_TDATA;
+  wire [39:0]vfb_0_m_vfb_TDATA;
   wire [9:0]vfb_0_m_vfb_TDEST;
   wire vfb_0_m_vfb_TLAST;
   wire vfb_0_m_vfb_TREADY;
@@ -201,7 +201,7 @@ module bd_11cc
   assign vfb_0_m_vfb_TREADY = video_out_tready;
   assign video_aclk_1 = video_aclk;
   assign video_aresetn_1 = video_aresetn;
-  assign video_out_tdata[63:0] = vfb_0_m_vfb_TDATA;
+  assign video_out_tdata[39:0] = vfb_0_m_vfb_TDATA;
   assign video_out_tdest[9:0] = vfb_0_m_vfb_TDEST;
   assign video_out_tlast = vfb_0_m_vfb_TLAST;
   assign video_out_tuser[0] = vfb_0_m_vfb_TUSER;
