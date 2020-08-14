@@ -68,7 +68,7 @@ set_property -dict { PACKAGE_PIN L16   IOSTANDARD LVDS_25     } [get_ports { dph
 set_property src_info {type:XDC file:1 line:95 export:INPUT save:INPUT read:READ} [current_design]
 set_property -dict { PACKAGE_PIN G19   IOSTANDARD LVCMOS33 } [get_ports { cam_clk }]; #IO_L18P_T2_AD13P_35 Sch=cam_clk
 set_property src_info {type:XDC file:1 line:96 export:INPUT save:INPUT read:READ} [current_design]
-set_property -dict { PACKAGE_PIN G20   IOSTANDARD LVCMOS33 	PULLUP true} [get_ports { cam_gpio }]; #IO_L18N_T2_AD13N_35 Sch=cam_gpio
+set_property -dict { PACKAGE_PIN G20   IOSTANDARD LVCMOS33 } [get_ports { cam_gpio[0] }]; #IO_L18N_T2_AD13N_35 Sch=cam_gpio
 set_property src_info {type:XDC file:1 line:97 export:INPUT save:INPUT read:READ} [current_design]
 set_property -dict {PACKAGE_PIN F20 IOSTANDARD LVCMOS33} [get_ports IIC_0_0_scl_io]
 set_property src_info {type:XDC file:1 line:98 export:INPUT save:INPUT read:READ} [current_design]

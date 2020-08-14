@@ -3918,3 +3918,905 @@ TRACE::2020-08-14.19:11:31::SCWMssOS::DEBUG:  swdes dump  C:/Users/ivr/Documents
 C:/Users/ivr/Documents/GitHub/Zybo_mipi/zybo_ov5640/vitis/design_1_wrapper/zynq_fsbl/zynq_fsbl_bsp/system.mss|system||
 
 TRACE::2020-08-14.19:11:31::SCWMssOS::Sw design exists and opened at  C:/Users/ivr/Documents/GitHub/Zybo_mipi/zybo_ov5640/vitis/design_1_wrapper/ps7_cortexa9_0/standalone_domain/bsp/system.mss
+TRACE::2020-08-14.20:28:09::SCWPlatform::Clearing the existing platform
+TRACE::2020-08-14.20:28:09::SCWSystem::Clearing the existing sysconfig
+TRACE::2020-08-14.20:28:09::SCWBDomain::clearing the fsbl build
+TRACE::2020-08-14.20:28:09::SCWMssOS::Removing the swdes entry for  C:/Users/ivr/Documents/GitHub/Zybo_mipi/zybo_ov5640/vitis/design_1_wrapper/zynq_fsbl/zynq_fsbl_bsp/system.mss
+TRACE::2020-08-14.20:28:09::SCWMssOS::Removing the swdes entry for  C:/Users/ivr/Documents/GitHub/Zybo_mipi/zybo_ov5640/vitis/design_1_wrapper/ps7_cortexa9_0/standalone_domain/bsp/system.mss
+TRACE::2020-08-14.20:28:09::SCWSystem::Clearing the domains completed.
+TRACE::2020-08-14.20:28:09::SCWPlatform::Clearing the opened hw db.
+TRACE::2020-08-14.20:28:09::SCWPlatform::DSA given C:/Users/ivr/Documents/GitHub/Zybo_mipi/zybo_ov5640/vitis/design_1_wrapper/hw/design_1_wrapper.xsa
+TRACE::2020-08-14.20:28:09::SCWPlatform::DSA absoulate path C:/Users/ivr/Documents/GitHub/Zybo_mipi/zybo_ov5640/vitis/design_1_wrapper/hw/design_1_wrapper.xsa
+TRACE::2020-08-14.20:28:09::SCWPlatform:: Platform location is C:/Users/ivr/Documents/GitHub/Zybo_mipi/zybo_ov5640/vitis/design_1_wrapper/hw
+TRACE::2020-08-14.20:28:09::SCWPlatform:: Platform Path C:/Users/ivr/Documents/GitHub/Zybo_mipi/zybo_ov5640/vitis/design_1_wrapper/hw/design_1_wrapper.xsa
+TRACE::2020-08-14.20:28:09::SCWPlatform:: Unique name xilinx:zybo-z7-20::0.0
+TRACE::2020-08-14.20:28:09::SCWPlatform::Removing the HwDB with name C:/Users/ivr/Documents/GitHub/Zybo_mipi/zybo_ov5640/vitis/design_1_wrapper/hw/design_1_wrapper.xsa
+TRACE::2020-08-14.20:28:09::SCWPlatform::Trying to open the hw design at C:/Users/ivr/Documents/GitHub/Zybo_mipi/zybo_ov5640/vitis/design_1_wrapper/hw/design_1_wrapper.xsa
+TRACE::2020-08-14.20:28:09::SCWPlatform::DSA given C:/Users/ivr/Documents/GitHub/Zybo_mipi/zybo_ov5640/vitis/design_1_wrapper/hw/design_1_wrapper.xsa
+TRACE::2020-08-14.20:28:09::SCWPlatform::DSA absoulate path C:/Users/ivr/Documents/GitHub/Zybo_mipi/zybo_ov5640/vitis/design_1_wrapper/hw/design_1_wrapper.xsa
+TRACE::2020-08-14.20:28:09::SCWPlatform::DSA directory C:/Users/ivr/Documents/GitHub/Zybo_mipi/zybo_ov5640/vitis/design_1_wrapper/hw
+TRACE::2020-08-14.20:28:09::SCWPlatform:: Platform Path C:/Users/ivr/Documents/GitHub/Zybo_mipi/zybo_ov5640/vitis/design_1_wrapper/hw/design_1_wrapper.xsa
+TRACE::2020-08-14.20:28:09::SCWPlatform:: Unique name xilinx:zybo-z7-20::0.0
+TRACE::2020-08-14.20:28:09::SCWPlatform::Do not have an existing db opened. 
+TRACE::2020-08-14.20:28:15::SCWPlatform::Opened new HwDB with name design_1_wrapper_4
+TRACE::2020-08-14.20:28:15::SCWReader::Active system found as  design_1_wrapper
+TRACE::2020-08-14.20:28:15::SCWReader::Handling sysconfig design_1_wrapper
+TRACE::2020-08-14.20:28:15::SCWDomain::checking for install qemu data   : 
+TRACE::2020-08-14.20:28:15::SCWDomain:: Using the QEMU Data from install at  : C:/Xilinx/Vitis/2019.2/data/emulation/platforms/zynq/qemu/
+TRACE::2020-08-14.20:28:15::SCWDomain:: Using the QEMU args  from install at  : C:/Xilinx/Vitis/2019.2/data/emulation/platforms/zynq/qemu/qemu_args.txt
+TRACE::2020-08-14.20:28:15::SCWPlatform::Trying to open the hw design at C:/Users/ivr/Documents/GitHub/Zybo_mipi/zybo_ov5640/vitis/design_1_wrapper/hw/design_1_wrapper.xsa
+TRACE::2020-08-14.20:28:15::SCWPlatform::DSA given C:/Users/ivr/Documents/GitHub/Zybo_mipi/zybo_ov5640/vitis/design_1_wrapper/hw/design_1_wrapper.xsa
+TRACE::2020-08-14.20:28:15::SCWPlatform::DSA absoulate path C:/Users/ivr/Documents/GitHub/Zybo_mipi/zybo_ov5640/vitis/design_1_wrapper/hw/design_1_wrapper.xsa
+TRACE::2020-08-14.20:28:15::SCWPlatform::DSA directory C:/Users/ivr/Documents/GitHub/Zybo_mipi/zybo_ov5640/vitis/design_1_wrapper/hw
+TRACE::2020-08-14.20:28:15::SCWPlatform:: Platform Path C:/Users/ivr/Documents/GitHub/Zybo_mipi/zybo_ov5640/vitis/design_1_wrapper/hw/design_1_wrapper.xsa
+TRACE::2020-08-14.20:28:15::SCWPlatform:: Unique name xilinx:zybo-z7-20::0.0
+TRACE::2020-08-14.20:28:15::SCWPlatform::Trying to set the existing hwdb with name design_1_wrapper_4
+TRACE::2020-08-14.20:28:15::SCWPlatform::Opened existing hwdb design_1_wrapper_4
+TRACE::2020-08-14.20:28:15::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2020-08-14.20:28:15::SCWPlatform::Trying to open the hw design at C:/Users/ivr/Documents/GitHub/Zybo_mipi/zybo_ov5640/vitis/design_1_wrapper/hw/design_1_wrapper.xsa
+TRACE::2020-08-14.20:28:15::SCWPlatform::DSA given C:/Users/ivr/Documents/GitHub/Zybo_mipi/zybo_ov5640/vitis/design_1_wrapper/hw/design_1_wrapper.xsa
+TRACE::2020-08-14.20:28:15::SCWPlatform::DSA absoulate path C:/Users/ivr/Documents/GitHub/Zybo_mipi/zybo_ov5640/vitis/design_1_wrapper/hw/design_1_wrapper.xsa
+TRACE::2020-08-14.20:28:15::SCWPlatform::DSA directory C:/Users/ivr/Documents/GitHub/Zybo_mipi/zybo_ov5640/vitis/design_1_wrapper/hw
+TRACE::2020-08-14.20:28:15::SCWPlatform:: Platform Path C:/Users/ivr/Documents/GitHub/Zybo_mipi/zybo_ov5640/vitis/design_1_wrapper/hw/design_1_wrapper.xsa
+TRACE::2020-08-14.20:28:15::SCWPlatform:: Unique name xilinx:zybo-z7-20::0.0
+TRACE::2020-08-14.20:28:15::SCWPlatform::Trying to set the existing hwdb with name design_1_wrapper_4
+TRACE::2020-08-14.20:28:15::SCWPlatform::Opened existing hwdb design_1_wrapper_4
+TRACE::2020-08-14.20:28:15::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2020-08-14.20:28:15::SCWReader::Boot application domain added for zynq_fsbl
+TRACE::2020-08-14.20:28:15::SCWPlatform::Trying to open the hw design at C:/Users/ivr/Documents/GitHub/Zybo_mipi/zybo_ov5640/vitis/design_1_wrapper/hw/design_1_wrapper.xsa
+TRACE::2020-08-14.20:28:15::SCWPlatform::DSA given C:/Users/ivr/Documents/GitHub/Zybo_mipi/zybo_ov5640/vitis/design_1_wrapper/hw/design_1_wrapper.xsa
+TRACE::2020-08-14.20:28:15::SCWPlatform::DSA absoulate path C:/Users/ivr/Documents/GitHub/Zybo_mipi/zybo_ov5640/vitis/design_1_wrapper/hw/design_1_wrapper.xsa
+TRACE::2020-08-14.20:28:15::SCWPlatform::DSA directory C:/Users/ivr/Documents/GitHub/Zybo_mipi/zybo_ov5640/vitis/design_1_wrapper/hw
+TRACE::2020-08-14.20:28:15::SCWPlatform:: Platform Path C:/Users/ivr/Documents/GitHub/Zybo_mipi/zybo_ov5640/vitis/design_1_wrapper/hw/design_1_wrapper.xsa
+TRACE::2020-08-14.20:28:15::SCWPlatform:: Unique name xilinx:zybo-z7-20::0.0
+TRACE::2020-08-14.20:28:15::SCWPlatform::Trying to set the existing hwdb with name design_1_wrapper_4
+TRACE::2020-08-14.20:28:15::SCWPlatform::Opened existing hwdb design_1_wrapper_4
+TRACE::2020-08-14.20:28:15::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2020-08-14.20:28:15::SCWMssOS::Checking the sw design at  C:/Users/ivr/Documents/GitHub/Zybo_mipi/zybo_ov5640/vitis/design_1_wrapper/zynq_fsbl/zynq_fsbl_bsp/system.mss
+TRACE::2020-08-14.20:28:15::SCWMssOS::DEBUG:  swdes dump  
+TRACE::2020-08-14.20:28:15::SCWMssOS::No sw design opened at  C:/Users/ivr/Documents/GitHub/Zybo_mipi/zybo_ov5640/vitis/design_1_wrapper/zynq_fsbl/zynq_fsbl_bsp/system.mss
+TRACE::2020-08-14.20:28:15::SCWMssOS::mss exists loading the mss file  C:/Users/ivr/Documents/GitHub/Zybo_mipi/zybo_ov5640/vitis/design_1_wrapper/zynq_fsbl/zynq_fsbl_bsp/system.mss
+TRACE::2020-08-14.20:28:15::SCWMssOS::Opened the sw design from mss  C:/Users/ivr/Documents/GitHub/Zybo_mipi/zybo_ov5640/vitis/design_1_wrapper/zynq_fsbl/zynq_fsbl_bsp/system.mss
+TRACE::2020-08-14.20:28:15::SCWMssOS::Adding the swdes entry C:/Users/ivr/Documents/GitHub/Zybo_mipi/zybo_ov5640/vitis/design_1_wrapper/zynq_fsbl/zynq_fsbl_bsp/system.mss with des name system
+TRACE::2020-08-14.20:28:15::SCWMssOS::updating the scw layer about changes
+TRACE::2020-08-14.20:28:15::SCWMssOS::Opened the sw design.  C:/Users/ivr/Documents/GitHub/Zybo_mipi/zybo_ov5640/vitis/design_1_wrapper/zynq_fsbl/zynq_fsbl_bsp/system.mss
+TRACE::2020-08-14.20:28:15::SCWPlatform::Trying to open the hw design at C:/Users/ivr/Documents/GitHub/Zybo_mipi/zybo_ov5640/vitis/design_1_wrapper/hw/design_1_wrapper.xsa
+TRACE::2020-08-14.20:28:15::SCWPlatform::DSA given C:/Users/ivr/Documents/GitHub/Zybo_mipi/zybo_ov5640/vitis/design_1_wrapper/hw/design_1_wrapper.xsa
+TRACE::2020-08-14.20:28:15::SCWPlatform::DSA absoulate path C:/Users/ivr/Documents/GitHub/Zybo_mipi/zybo_ov5640/vitis/design_1_wrapper/hw/design_1_wrapper.xsa
+TRACE::2020-08-14.20:28:15::SCWPlatform::DSA directory C:/Users/ivr/Documents/GitHub/Zybo_mipi/zybo_ov5640/vitis/design_1_wrapper/hw
+TRACE::2020-08-14.20:28:15::SCWPlatform:: Platform Path C:/Users/ivr/Documents/GitHub/Zybo_mipi/zybo_ov5640/vitis/design_1_wrapper/hw/design_1_wrapper.xsa
+TRACE::2020-08-14.20:28:15::SCWPlatform:: Unique name xilinx:zybo-z7-20::0.0
+TRACE::2020-08-14.20:28:15::SCWPlatform::Trying to set the existing hwdb with name design_1_wrapper_4
+TRACE::2020-08-14.20:28:15::SCWPlatform::Opened existing hwdb design_1_wrapper_4
+TRACE::2020-08-14.20:28:15::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2020-08-14.20:28:15::SCWMssOS::Checking the sw design at  C:/Users/ivr/Documents/GitHub/Zybo_mipi/zybo_ov5640/vitis/design_1_wrapper/zynq_fsbl/zynq_fsbl_bsp/system.mss
+TRACE::2020-08-14.20:28:15::SCWMssOS::DEBUG:  swdes dump  C:/Users/ivr/Documents/GitHub/Zybo_mipi/zybo_ov5640/vitis/design_1_wrapper/zynq_fsbl/zynq_fsbl_bsp/system.mss|system||
+
+TRACE::2020-08-14.20:28:15::SCWMssOS::Sw design exists and opened at  C:/Users/ivr/Documents/GitHub/Zybo_mipi/zybo_ov5640/vitis/design_1_wrapper/zynq_fsbl/zynq_fsbl_bsp/system.mss
+TRACE::2020-08-14.20:28:15::SCWMssOS:: library already available in sw design:  xilffs:4.2
+TRACE::2020-08-14.20:28:15::SCWPlatform::Trying to open the hw design at C:/Users/ivr/Documents/GitHub/Zybo_mipi/zybo_ov5640/vitis/design_1_wrapper/hw/design_1_wrapper.xsa
+TRACE::2020-08-14.20:28:15::SCWPlatform::DSA given C:/Users/ivr/Documents/GitHub/Zybo_mipi/zybo_ov5640/vitis/design_1_wrapper/hw/design_1_wrapper.xsa
+TRACE::2020-08-14.20:28:15::SCWPlatform::DSA absoulate path C:/Users/ivr/Documents/GitHub/Zybo_mipi/zybo_ov5640/vitis/design_1_wrapper/hw/design_1_wrapper.xsa
+TRACE::2020-08-14.20:28:15::SCWPlatform::DSA directory C:/Users/ivr/Documents/GitHub/Zybo_mipi/zybo_ov5640/vitis/design_1_wrapper/hw
+TRACE::2020-08-14.20:28:15::SCWPlatform:: Platform Path C:/Users/ivr/Documents/GitHub/Zybo_mipi/zybo_ov5640/vitis/design_1_wrapper/hw/design_1_wrapper.xsa
+TRACE::2020-08-14.20:28:15::SCWPlatform:: Unique name xilinx:zybo-z7-20::0.0
+TRACE::2020-08-14.20:28:15::SCWPlatform::Trying to set the existing hwdb with name design_1_wrapper_4
+TRACE::2020-08-14.20:28:15::SCWPlatform::Opened existing hwdb design_1_wrapper_4
+TRACE::2020-08-14.20:28:15::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2020-08-14.20:28:15::SCWMssOS::Checking the sw design at  C:/Users/ivr/Documents/GitHub/Zybo_mipi/zybo_ov5640/vitis/design_1_wrapper/zynq_fsbl/zynq_fsbl_bsp/system.mss
+TRACE::2020-08-14.20:28:15::SCWMssOS::DEBUG:  swdes dump  C:/Users/ivr/Documents/GitHub/Zybo_mipi/zybo_ov5640/vitis/design_1_wrapper/zynq_fsbl/zynq_fsbl_bsp/system.mss|system||
+
+TRACE::2020-08-14.20:28:15::SCWMssOS::Sw design exists and opened at  C:/Users/ivr/Documents/GitHub/Zybo_mipi/zybo_ov5640/vitis/design_1_wrapper/zynq_fsbl/zynq_fsbl_bsp/system.mss
+TRACE::2020-08-14.20:28:15::SCWMssOS:: library already available in sw design:  xilrsa:1.5
+TRACE::2020-08-14.20:28:15::SCWReader::Adding prebuilt librarypaths as   
+TRACE::2020-08-14.20:28:15::SCWReader::Adding prebuilt incpaths  as   
+TRACE::2020-08-14.20:28:15::SCWPlatform::Trying to open the hw design at C:/Users/ivr/Documents/GitHub/Zybo_mipi/zybo_ov5640/vitis/design_1_wrapper/hw/design_1_wrapper.xsa
+TRACE::2020-08-14.20:28:15::SCWPlatform::DSA given C:/Users/ivr/Documents/GitHub/Zybo_mipi/zybo_ov5640/vitis/design_1_wrapper/hw/design_1_wrapper.xsa
+TRACE::2020-08-14.20:28:15::SCWPlatform::DSA absoulate path C:/Users/ivr/Documents/GitHub/Zybo_mipi/zybo_ov5640/vitis/design_1_wrapper/hw/design_1_wrapper.xsa
+TRACE::2020-08-14.20:28:15::SCWPlatform::DSA directory C:/Users/ivr/Documents/GitHub/Zybo_mipi/zybo_ov5640/vitis/design_1_wrapper/hw
+TRACE::2020-08-14.20:28:15::SCWPlatform:: Platform Path C:/Users/ivr/Documents/GitHub/Zybo_mipi/zybo_ov5640/vitis/design_1_wrapper/hw/design_1_wrapper.xsa
+TRACE::2020-08-14.20:28:15::SCWPlatform:: Unique name xilinx:zybo-z7-20::0.0
+TRACE::2020-08-14.20:28:15::SCWPlatform::Trying to set the existing hwdb with name design_1_wrapper_4
+TRACE::2020-08-14.20:28:15::SCWPlatform::Opened existing hwdb design_1_wrapper_4
+TRACE::2020-08-14.20:28:15::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2020-08-14.20:28:15::SCWMssOS::Checking the sw design at  C:/Users/ivr/Documents/GitHub/Zybo_mipi/zybo_ov5640/vitis/design_1_wrapper/zynq_fsbl/zynq_fsbl_bsp/system.mss
+TRACE::2020-08-14.20:28:15::SCWMssOS::DEBUG:  swdes dump  C:/Users/ivr/Documents/GitHub/Zybo_mipi/zybo_ov5640/vitis/design_1_wrapper/zynq_fsbl/zynq_fsbl_bsp/system.mss|system||
+
+TRACE::2020-08-14.20:28:15::SCWMssOS::Sw design exists and opened at  C:/Users/ivr/Documents/GitHub/Zybo_mipi/zybo_ov5640/vitis/design_1_wrapper/zynq_fsbl/zynq_fsbl_bsp/system.mss
+TRACE::2020-08-14.20:28:15::SCWReader::No isolation master present  
+TRACE::2020-08-14.20:28:15::SCWDomain::checking for install qemu data   : 
+TRACE::2020-08-14.20:28:15::SCWDomain:: Using the QEMU Data from install at  : C:/Xilinx/Vitis/2019.2/data/emulation/platforms/zynq/qemu/
+TRACE::2020-08-14.20:28:15::SCWDomain:: Using the QEMU args  from install at  : C:/Xilinx/Vitis/2019.2/data/emulation/platforms/zynq/qemu/qemu_args.txt
+TRACE::2020-08-14.20:28:15::SCWPlatform::Trying to open the hw design at C:/Users/ivr/Documents/GitHub/Zybo_mipi/zybo_ov5640/vitis/design_1_wrapper/hw/design_1_wrapper.xsa
+TRACE::2020-08-14.20:28:15::SCWPlatform::DSA given C:/Users/ivr/Documents/GitHub/Zybo_mipi/zybo_ov5640/vitis/design_1_wrapper/hw/design_1_wrapper.xsa
+TRACE::2020-08-14.20:28:15::SCWPlatform::DSA absoulate path C:/Users/ivr/Documents/GitHub/Zybo_mipi/zybo_ov5640/vitis/design_1_wrapper/hw/design_1_wrapper.xsa
+TRACE::2020-08-14.20:28:15::SCWPlatform::DSA directory C:/Users/ivr/Documents/GitHub/Zybo_mipi/zybo_ov5640/vitis/design_1_wrapper/hw
+TRACE::2020-08-14.20:28:15::SCWPlatform:: Platform Path C:/Users/ivr/Documents/GitHub/Zybo_mipi/zybo_ov5640/vitis/design_1_wrapper/hw/design_1_wrapper.xsa
+TRACE::2020-08-14.20:28:15::SCWPlatform:: Unique name xilinx:zybo-z7-20::0.0
+TRACE::2020-08-14.20:28:15::SCWPlatform::Trying to set the existing hwdb with name design_1_wrapper_4
+TRACE::2020-08-14.20:28:15::SCWPlatform::Opened existing hwdb design_1_wrapper_4
+TRACE::2020-08-14.20:28:15::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2020-08-14.20:28:15::SCWPlatform::Trying to open the hw design at C:/Users/ivr/Documents/GitHub/Zybo_mipi/zybo_ov5640/vitis/design_1_wrapper/hw/design_1_wrapper.xsa
+TRACE::2020-08-14.20:28:15::SCWPlatform::DSA given C:/Users/ivr/Documents/GitHub/Zybo_mipi/zybo_ov5640/vitis/design_1_wrapper/hw/design_1_wrapper.xsa
+TRACE::2020-08-14.20:28:15::SCWPlatform::DSA absoulate path C:/Users/ivr/Documents/GitHub/Zybo_mipi/zybo_ov5640/vitis/design_1_wrapper/hw/design_1_wrapper.xsa
+TRACE::2020-08-14.20:28:15::SCWPlatform::DSA directory C:/Users/ivr/Documents/GitHub/Zybo_mipi/zybo_ov5640/vitis/design_1_wrapper/hw
+TRACE::2020-08-14.20:28:15::SCWPlatform:: Platform Path C:/Users/ivr/Documents/GitHub/Zybo_mipi/zybo_ov5640/vitis/design_1_wrapper/hw/design_1_wrapper.xsa
+TRACE::2020-08-14.20:28:15::SCWPlatform:: Unique name xilinx:zybo-z7-20::0.0
+TRACE::2020-08-14.20:28:15::SCWPlatform::Trying to set the existing hwdb with name design_1_wrapper_4
+TRACE::2020-08-14.20:28:15::SCWPlatform::Opened existing hwdb design_1_wrapper_4
+TRACE::2020-08-14.20:28:15::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2020-08-14.20:28:15::SCWMssOS::Checking the sw design at  C:/Users/ivr/Documents/GitHub/Zybo_mipi/zybo_ov5640/vitis/design_1_wrapper/ps7_cortexa9_0/standalone_domain/bsp/system.mss
+TRACE::2020-08-14.20:28:15::SCWMssOS::DEBUG:  swdes dump  C:/Users/ivr/Documents/GitHub/Zybo_mipi/zybo_ov5640/vitis/design_1_wrapper/zynq_fsbl/zynq_fsbl_bsp/system.mss|system||
+
+TRACE::2020-08-14.20:28:15::SCWMssOS::No sw design opened at  C:/Users/ivr/Documents/GitHub/Zybo_mipi/zybo_ov5640/vitis/design_1_wrapper/ps7_cortexa9_0/standalone_domain/bsp/system.mss
+TRACE::2020-08-14.20:28:15::SCWMssOS::mss exists loading the mss file  C:/Users/ivr/Documents/GitHub/Zybo_mipi/zybo_ov5640/vitis/design_1_wrapper/ps7_cortexa9_0/standalone_domain/bsp/system.mss
+TRACE::2020-08-14.20:28:15::SCWMssOS::Opened the sw design from mss  C:/Users/ivr/Documents/GitHub/Zybo_mipi/zybo_ov5640/vitis/design_1_wrapper/ps7_cortexa9_0/standalone_domain/bsp/system.mss
+TRACE::2020-08-14.20:28:15::SCWMssOS::Adding the swdes entry C:/Users/ivr/Documents/GitHub/Zybo_mipi/zybo_ov5640/vitis/design_1_wrapper/ps7_cortexa9_0/standalone_domain/bsp/system.mss with des name system_0
+TRACE::2020-08-14.20:28:15::SCWMssOS::updating the scw layer about changes
+TRACE::2020-08-14.20:28:15::SCWMssOS::Opened the sw design.  C:/Users/ivr/Documents/GitHub/Zybo_mipi/zybo_ov5640/vitis/design_1_wrapper/ps7_cortexa9_0/standalone_domain/bsp/system.mss
+TRACE::2020-08-14.20:28:15::SCWReader::Adding prebuilt librarypaths as   
+TRACE::2020-08-14.20:28:15::SCWReader::Adding prebuilt incpaths  as   
+TRACE::2020-08-14.20:28:15::SCWPlatform::Trying to open the hw design at C:/Users/ivr/Documents/GitHub/Zybo_mipi/zybo_ov5640/vitis/design_1_wrapper/hw/design_1_wrapper.xsa
+TRACE::2020-08-14.20:28:15::SCWPlatform::DSA given C:/Users/ivr/Documents/GitHub/Zybo_mipi/zybo_ov5640/vitis/design_1_wrapper/hw/design_1_wrapper.xsa
+TRACE::2020-08-14.20:28:15::SCWPlatform::DSA absoulate path C:/Users/ivr/Documents/GitHub/Zybo_mipi/zybo_ov5640/vitis/design_1_wrapper/hw/design_1_wrapper.xsa
+TRACE::2020-08-14.20:28:15::SCWPlatform::DSA directory C:/Users/ivr/Documents/GitHub/Zybo_mipi/zybo_ov5640/vitis/design_1_wrapper/hw
+TRACE::2020-08-14.20:28:15::SCWPlatform:: Platform Path C:/Users/ivr/Documents/GitHub/Zybo_mipi/zybo_ov5640/vitis/design_1_wrapper/hw/design_1_wrapper.xsa
+TRACE::2020-08-14.20:28:15::SCWPlatform:: Unique name xilinx:zybo-z7-20::0.0
+TRACE::2020-08-14.20:28:15::SCWPlatform::Trying to set the existing hwdb with name design_1_wrapper_4
+TRACE::2020-08-14.20:28:15::SCWPlatform::Opened existing hwdb design_1_wrapper_4
+TRACE::2020-08-14.20:28:15::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2020-08-14.20:28:15::SCWMssOS::Checking the sw design at  C:/Users/ivr/Documents/GitHub/Zybo_mipi/zybo_ov5640/vitis/design_1_wrapper/ps7_cortexa9_0/standalone_domain/bsp/system.mss
+TRACE::2020-08-14.20:28:15::SCWMssOS::DEBUG:  swdes dump  C:/Users/ivr/Documents/GitHub/Zybo_mipi/zybo_ov5640/vitis/design_1_wrapper/ps7_cortexa9_0/standalone_domain/bsp/system.mss|system_0||
+C:/Users/ivr/Documents/GitHub/Zybo_mipi/zybo_ov5640/vitis/design_1_wrapper/zynq_fsbl/zynq_fsbl_bsp/system.mss|system||
+
+TRACE::2020-08-14.20:28:15::SCWMssOS::Sw design exists and opened at  C:/Users/ivr/Documents/GitHub/Zybo_mipi/zybo_ov5640/vitis/design_1_wrapper/ps7_cortexa9_0/standalone_domain/bsp/system.mss
+TRACE::2020-08-14.20:28:15::SCWReader::No isolation master present  
+TRACE::2020-08-14.20:28:20::SCWPlatform::DSA given C:/Users/ivr/Documents/GitHub/Zybo_mipi/zybo_ov5640/vitis/design_1_wrapper/tempdsa/design_1_wrapper.xsa
+TRACE::2020-08-14.20:28:20::SCWPlatform::DSA absoulate path C:/Users/ivr/Documents/GitHub/Zybo_mipi/zybo_ov5640/vitis/design_1_wrapper/tempdsa/design_1_wrapper.xsa
+TRACE::2020-08-14.20:28:20::SCWPlatform:: Platform location is C:/Users/ivr/Documents/GitHub/Zybo_mipi/zybo_ov5640/vitis/design_1_wrapper/tempdsa
+TRACE::2020-08-14.20:28:20::SCWPlatform:: Platform Path C:/Users/ivr/Documents/GitHub/Zybo_mipi/zybo_ov5640/vitis/design_1_wrapper/tempdsa/design_1_wrapper.xsa
+TRACE::2020-08-14.20:28:20::SCWPlatform:: Unique name xilinx:zybo-z7-20::0.0
+TRACE::2020-08-14.20:28:26::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2020-08-14.20:28:26::SCWMssOS::Doing hw sync for the mss in domain: zynq_fsbl
+TRACE::2020-08-14.20:28:26::SCWPlatform::Trying to open the hw design at C:/Users/ivr/Documents/GitHub/Zybo_mipi/zybo_ov5640/vitis/design_1_wrapper/hw/design_1_wrapper.xsa
+TRACE::2020-08-14.20:28:26::SCWPlatform::DSA given C:/Users/ivr/Documents/GitHub/Zybo_mipi/zybo_ov5640/vitis/design_1_wrapper/hw/design_1_wrapper.xsa
+TRACE::2020-08-14.20:28:26::SCWPlatform::DSA absoulate path C:/Users/ivr/Documents/GitHub/Zybo_mipi/zybo_ov5640/vitis/design_1_wrapper/hw/design_1_wrapper.xsa
+TRACE::2020-08-14.20:28:26::SCWPlatform::DSA directory C:/Users/ivr/Documents/GitHub/Zybo_mipi/zybo_ov5640/vitis/design_1_wrapper/hw
+TRACE::2020-08-14.20:28:26::SCWPlatform:: Platform Path C:/Users/ivr/Documents/GitHub/Zybo_mipi/zybo_ov5640/vitis/design_1_wrapper/hw/design_1_wrapper.xsa
+TRACE::2020-08-14.20:28:26::SCWPlatform:: Unique name xilinx:zybo-z7-20::0.0
+TRACE::2020-08-14.20:28:26::SCWPlatform::Trying to set the existing hwdb with name design_1_wrapper_4
+TRACE::2020-08-14.20:28:26::SCWPlatform::Opened existing hwdb design_1_wrapper_4
+TRACE::2020-08-14.20:28:26::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2020-08-14.20:28:26::SCWPlatform::Trying to open the hw design at C:/Users/ivr/Documents/GitHub/Zybo_mipi/zybo_ov5640/vitis/design_1_wrapper/hw/design_1_wrapper.xsa
+TRACE::2020-08-14.20:28:26::SCWPlatform::DSA given C:/Users/ivr/Documents/GitHub/Zybo_mipi/zybo_ov5640/vitis/design_1_wrapper/hw/design_1_wrapper.xsa
+TRACE::2020-08-14.20:28:26::SCWPlatform::DSA absoulate path C:/Users/ivr/Documents/GitHub/Zybo_mipi/zybo_ov5640/vitis/design_1_wrapper/hw/design_1_wrapper.xsa
+TRACE::2020-08-14.20:28:26::SCWPlatform::DSA directory C:/Users/ivr/Documents/GitHub/Zybo_mipi/zybo_ov5640/vitis/design_1_wrapper/hw
+TRACE::2020-08-14.20:28:26::SCWPlatform:: Platform Path C:/Users/ivr/Documents/GitHub/Zybo_mipi/zybo_ov5640/vitis/design_1_wrapper/hw/design_1_wrapper.xsa
+TRACE::2020-08-14.20:28:26::SCWPlatform:: Unique name xilinx:zybo-z7-20::0.0
+TRACE::2020-08-14.20:28:26::SCWPlatform::Trying to set the existing hwdb with name design_1_wrapper_4
+TRACE::2020-08-14.20:28:26::SCWPlatform::Opened existing hwdb design_1_wrapper_4
+TRACE::2020-08-14.20:28:26::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2020-08-14.20:28:26::SCWMssOS::Checking the sw design at  C:/Users/ivr/Documents/GitHub/Zybo_mipi/zybo_ov5640/vitis/design_1_wrapper/zynq_fsbl/zynq_fsbl_bsp/system.mss
+TRACE::2020-08-14.20:28:26::SCWMssOS::DEBUG:  swdes dump  C:/Users/ivr/Documents/GitHub/Zybo_mipi/zybo_ov5640/vitis/design_1_wrapper/ps7_cortexa9_0/standalone_domain/bsp/system.mss|system_0||
+C:/Users/ivr/Documents/GitHub/Zybo_mipi/zybo_ov5640/vitis/design_1_wrapper/zynq_fsbl/zynq_fsbl_bsp/system.mss|system||
+
+TRACE::2020-08-14.20:28:26::SCWMssOS::Sw design exists and opened at  C:/Users/ivr/Documents/GitHub/Zybo_mipi/zybo_ov5640/vitis/design_1_wrapper/zynq_fsbl/zynq_fsbl_bsp/system.mss
+TRACE::2020-08-14.20:28:26::SCWPlatform::Trying to open the hw design at C:/Users/ivr/Documents/GitHub/Zybo_mipi/zybo_ov5640/vitis/design_1_wrapper/tempdsa/design_1_wrapper.xsa
+TRACE::2020-08-14.20:28:26::SCWPlatform::DSA given C:/Users/ivr/Documents/GitHub/Zybo_mipi/zybo_ov5640/vitis/design_1_wrapper/tempdsa/design_1_wrapper.xsa
+TRACE::2020-08-14.20:28:26::SCWPlatform::DSA absoulate path C:/Users/ivr/Documents/GitHub/Zybo_mipi/zybo_ov5640/vitis/design_1_wrapper/tempdsa/design_1_wrapper.xsa
+TRACE::2020-08-14.20:28:26::SCWPlatform::DSA directory C:/Users/ivr/Documents/GitHub/Zybo_mipi/zybo_ov5640/vitis/design_1_wrapper/tempdsa
+TRACE::2020-08-14.20:28:26::SCWPlatform:: Platform Path C:/Users/ivr/Documents/GitHub/Zybo_mipi/zybo_ov5640/vitis/design_1_wrapper/tempdsa/design_1_wrapper.xsa
+TRACE::2020-08-14.20:28:26::SCWPlatform:: Unique name xilinx:zybo-z7-20::0.0
+TRACE::2020-08-14.20:28:26::SCWPlatform::update - Opened existing hwdb design_1_wrapper_5
+TRACE::2020-08-14.20:28:26::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2020-08-14.20:28:26::SCWMssOS::Doing hw sync for the mss in domain: standalone_domain
+TRACE::2020-08-14.20:28:26::SCWPlatform::Trying to open the hw design at C:/Users/ivr/Documents/GitHub/Zybo_mipi/zybo_ov5640/vitis/design_1_wrapper/hw/design_1_wrapper.xsa
+TRACE::2020-08-14.20:28:26::SCWPlatform::DSA given C:/Users/ivr/Documents/GitHub/Zybo_mipi/zybo_ov5640/vitis/design_1_wrapper/hw/design_1_wrapper.xsa
+TRACE::2020-08-14.20:28:26::SCWPlatform::DSA absoulate path C:/Users/ivr/Documents/GitHub/Zybo_mipi/zybo_ov5640/vitis/design_1_wrapper/hw/design_1_wrapper.xsa
+TRACE::2020-08-14.20:28:26::SCWPlatform::DSA directory C:/Users/ivr/Documents/GitHub/Zybo_mipi/zybo_ov5640/vitis/design_1_wrapper/hw
+TRACE::2020-08-14.20:28:26::SCWPlatform:: Platform Path C:/Users/ivr/Documents/GitHub/Zybo_mipi/zybo_ov5640/vitis/design_1_wrapper/hw/design_1_wrapper.xsa
+TRACE::2020-08-14.20:28:26::SCWPlatform:: Unique name xilinx:zybo-z7-20::0.0
+TRACE::2020-08-14.20:28:26::SCWPlatform::Trying to set the existing hwdb with name design_1_wrapper_4
+TRACE::2020-08-14.20:28:26::SCWPlatform::Opened existing hwdb design_1_wrapper_4
+TRACE::2020-08-14.20:28:26::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2020-08-14.20:28:26::SCWPlatform::Trying to open the hw design at C:/Users/ivr/Documents/GitHub/Zybo_mipi/zybo_ov5640/vitis/design_1_wrapper/hw/design_1_wrapper.xsa
+TRACE::2020-08-14.20:28:26::SCWPlatform::DSA given C:/Users/ivr/Documents/GitHub/Zybo_mipi/zybo_ov5640/vitis/design_1_wrapper/hw/design_1_wrapper.xsa
+TRACE::2020-08-14.20:28:26::SCWPlatform::DSA absoulate path C:/Users/ivr/Documents/GitHub/Zybo_mipi/zybo_ov5640/vitis/design_1_wrapper/hw/design_1_wrapper.xsa
+TRACE::2020-08-14.20:28:26::SCWPlatform::DSA directory C:/Users/ivr/Documents/GitHub/Zybo_mipi/zybo_ov5640/vitis/design_1_wrapper/hw
+TRACE::2020-08-14.20:28:26::SCWPlatform:: Platform Path C:/Users/ivr/Documents/GitHub/Zybo_mipi/zybo_ov5640/vitis/design_1_wrapper/hw/design_1_wrapper.xsa
+TRACE::2020-08-14.20:28:26::SCWPlatform:: Unique name xilinx:zybo-z7-20::0.0
+TRACE::2020-08-14.20:28:26::SCWPlatform::Trying to set the existing hwdb with name design_1_wrapper_4
+TRACE::2020-08-14.20:28:26::SCWPlatform::Opened existing hwdb design_1_wrapper_4
+TRACE::2020-08-14.20:28:26::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2020-08-14.20:28:26::SCWMssOS::Checking the sw design at  C:/Users/ivr/Documents/GitHub/Zybo_mipi/zybo_ov5640/vitis/design_1_wrapper/ps7_cortexa9_0/standalone_domain/bsp/system.mss
+TRACE::2020-08-14.20:28:26::SCWMssOS::DEBUG:  swdes dump  C:/Users/ivr/Documents/GitHub/Zybo_mipi/zybo_ov5640/vitis/design_1_wrapper/ps7_cortexa9_0/standalone_domain/bsp/system.mss|system_0||
+C:/Users/ivr/Documents/GitHub/Zybo_mipi/zybo_ov5640/vitis/design_1_wrapper/zynq_fsbl/zynq_fsbl_bsp/system.mss|system||
+
+TRACE::2020-08-14.20:28:26::SCWMssOS::Sw design exists and opened at  C:/Users/ivr/Documents/GitHub/Zybo_mipi/zybo_ov5640/vitis/design_1_wrapper/ps7_cortexa9_0/standalone_domain/bsp/system.mss
+TRACE::2020-08-14.20:28:26::SCWPlatform::Trying to open the hw design at C:/Users/ivr/Documents/GitHub/Zybo_mipi/zybo_ov5640/vitis/design_1_wrapper/tempdsa/design_1_wrapper.xsa
+TRACE::2020-08-14.20:28:26::SCWPlatform::DSA given C:/Users/ivr/Documents/GitHub/Zybo_mipi/zybo_ov5640/vitis/design_1_wrapper/tempdsa/design_1_wrapper.xsa
+TRACE::2020-08-14.20:28:26::SCWPlatform::DSA absoulate path C:/Users/ivr/Documents/GitHub/Zybo_mipi/zybo_ov5640/vitis/design_1_wrapper/tempdsa/design_1_wrapper.xsa
+TRACE::2020-08-14.20:28:26::SCWPlatform::DSA directory C:/Users/ivr/Documents/GitHub/Zybo_mipi/zybo_ov5640/vitis/design_1_wrapper/tempdsa
+TRACE::2020-08-14.20:28:26::SCWPlatform:: Platform Path C:/Users/ivr/Documents/GitHub/Zybo_mipi/zybo_ov5640/vitis/design_1_wrapper/tempdsa/design_1_wrapper.xsa
+TRACE::2020-08-14.20:28:26::SCWPlatform:: Unique name xilinx:zybo-z7-20::0.0
+TRACE::2020-08-14.20:28:26::SCWPlatform::update - Opened existing hwdb design_1_wrapper_5
+TRACE::2020-08-14.20:28:26::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2020-08-14.20:28:26::SCWMssOS::Completed hw sync for the mss in domain: zynq_fsbl
+TRACE::2020-08-14.20:28:26::SCWMssOS::Completed hw sync for the mss in domain: standalone_domain
+TRACE::2020-08-14.20:28:26::SCWPlatform::Trying to open the hw design at C:/Users/ivr/Documents/GitHub/Zybo_mipi/zybo_ov5640/vitis/design_1_wrapper/hw/design_1_wrapper.xsa
+TRACE::2020-08-14.20:28:26::SCWPlatform::DSA given C:/Users/ivr/Documents/GitHub/Zybo_mipi/zybo_ov5640/vitis/design_1_wrapper/hw/design_1_wrapper.xsa
+TRACE::2020-08-14.20:28:26::SCWPlatform::DSA absoulate path C:/Users/ivr/Documents/GitHub/Zybo_mipi/zybo_ov5640/vitis/design_1_wrapper/hw/design_1_wrapper.xsa
+TRACE::2020-08-14.20:28:26::SCWPlatform::DSA directory C:/Users/ivr/Documents/GitHub/Zybo_mipi/zybo_ov5640/vitis/design_1_wrapper/hw
+TRACE::2020-08-14.20:28:26::SCWPlatform:: Platform Path C:/Users/ivr/Documents/GitHub/Zybo_mipi/zybo_ov5640/vitis/design_1_wrapper/hw/design_1_wrapper.xsa
+TRACE::2020-08-14.20:28:26::SCWPlatform:: Unique name xilinx:zybo-z7-20::0.0
+TRACE::2020-08-14.20:28:26::SCWPlatform::Do not have an existing db opened. 
+TRACE::2020-08-14.20:28:32::SCWPlatform::Opened new HwDB with name design_1_wrapper_6
+TRACE::2020-08-14.20:28:32::SCWPlatform::Trying to open the hw design at C:/Users/ivr/Documents/GitHub/Zybo_mipi/zybo_ov5640/vitis/design_1_wrapper/hw/design_1_wrapper.xsa
+TRACE::2020-08-14.20:28:32::SCWPlatform::DSA given C:/Users/ivr/Documents/GitHub/Zybo_mipi/zybo_ov5640/vitis/design_1_wrapper/hw/design_1_wrapper.xsa
+TRACE::2020-08-14.20:28:32::SCWPlatform::DSA absoulate path C:/Users/ivr/Documents/GitHub/Zybo_mipi/zybo_ov5640/vitis/design_1_wrapper/hw/design_1_wrapper.xsa
+TRACE::2020-08-14.20:28:32::SCWPlatform::DSA directory C:/Users/ivr/Documents/GitHub/Zybo_mipi/zybo_ov5640/vitis/design_1_wrapper/hw
+TRACE::2020-08-14.20:28:32::SCWPlatform:: Platform Path C:/Users/ivr/Documents/GitHub/Zybo_mipi/zybo_ov5640/vitis/design_1_wrapper/hw/design_1_wrapper.xsa
+TRACE::2020-08-14.20:28:32::SCWPlatform:: Unique name xilinx:zybo-z7-20::0.0
+TRACE::2020-08-14.20:28:32::SCWPlatform::Trying to set the existing hwdb with name design_1_wrapper_6
+TRACE::2020-08-14.20:28:32::SCWPlatform::Opened existing hwdb design_1_wrapper_6
+TRACE::2020-08-14.20:28:32::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2020-08-14.20:28:32::SCWMssOS::Checking the sw design at  C:/Users/ivr/Documents/GitHub/Zybo_mipi/zybo_ov5640/vitis/design_1_wrapper/zynq_fsbl/zynq_fsbl_bsp/system.mss
+TRACE::2020-08-14.20:28:32::SCWMssOS::DEBUG:  swdes dump  C:/Users/ivr/Documents/GitHub/Zybo_mipi/zybo_ov5640/vitis/design_1_wrapper/ps7_cortexa9_0/standalone_domain/bsp/system.mss|system_0||
+C:/Users/ivr/Documents/GitHub/Zybo_mipi/zybo_ov5640/vitis/design_1_wrapper/zynq_fsbl/zynq_fsbl_bsp/system.mss|system||
+
+TRACE::2020-08-14.20:28:32::SCWMssOS::Sw design exists and opened at  C:/Users/ivr/Documents/GitHub/Zybo_mipi/zybo_ov5640/vitis/design_1_wrapper/zynq_fsbl/zynq_fsbl_bsp/system.mss
+TRACE::2020-08-14.20:28:32::SCWPlatform::Trying to open the hw design at C:/Users/ivr/Documents/GitHub/Zybo_mipi/zybo_ov5640/vitis/design_1_wrapper/hw/design_1_wrapper.xsa
+TRACE::2020-08-14.20:28:32::SCWPlatform::DSA given C:/Users/ivr/Documents/GitHub/Zybo_mipi/zybo_ov5640/vitis/design_1_wrapper/hw/design_1_wrapper.xsa
+TRACE::2020-08-14.20:28:32::SCWPlatform::DSA absoulate path C:/Users/ivr/Documents/GitHub/Zybo_mipi/zybo_ov5640/vitis/design_1_wrapper/hw/design_1_wrapper.xsa
+TRACE::2020-08-14.20:28:32::SCWPlatform::DSA directory C:/Users/ivr/Documents/GitHub/Zybo_mipi/zybo_ov5640/vitis/design_1_wrapper/hw
+TRACE::2020-08-14.20:28:32::SCWPlatform:: Platform Path C:/Users/ivr/Documents/GitHub/Zybo_mipi/zybo_ov5640/vitis/design_1_wrapper/hw/design_1_wrapper.xsa
+TRACE::2020-08-14.20:28:32::SCWPlatform:: Unique name xilinx:zybo-z7-20::0.0
+TRACE::2020-08-14.20:28:32::SCWPlatform::Trying to set the existing hwdb with name design_1_wrapper_6
+TRACE::2020-08-14.20:28:32::SCWPlatform::Opened existing hwdb design_1_wrapper_6
+TRACE::2020-08-14.20:28:32::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2020-08-14.20:28:32::SCWMssOS::Checking the sw design at  C:/Users/ivr/Documents/GitHub/Zybo_mipi/zybo_ov5640/vitis/design_1_wrapper/zynq_fsbl/zynq_fsbl_bsp/system.mss
+TRACE::2020-08-14.20:28:32::SCWMssOS::DEBUG:  swdes dump  C:/Users/ivr/Documents/GitHub/Zybo_mipi/zybo_ov5640/vitis/design_1_wrapper/ps7_cortexa9_0/standalone_domain/bsp/system.mss|system_0||
+C:/Users/ivr/Documents/GitHub/Zybo_mipi/zybo_ov5640/vitis/design_1_wrapper/zynq_fsbl/zynq_fsbl_bsp/system.mss|system||
+
+TRACE::2020-08-14.20:28:32::SCWMssOS::Sw design exists and opened at  C:/Users/ivr/Documents/GitHub/Zybo_mipi/zybo_ov5640/vitis/design_1_wrapper/zynq_fsbl/zynq_fsbl_bsp/system.mss
+TRACE::2020-08-14.20:28:32::SCWPlatform::Trying to open the hw design at C:/Users/ivr/Documents/GitHub/Zybo_mipi/zybo_ov5640/vitis/design_1_wrapper/hw/design_1_wrapper.xsa
+TRACE::2020-08-14.20:28:32::SCWPlatform::DSA given C:/Users/ivr/Documents/GitHub/Zybo_mipi/zybo_ov5640/vitis/design_1_wrapper/hw/design_1_wrapper.xsa
+TRACE::2020-08-14.20:28:32::SCWPlatform::DSA absoulate path C:/Users/ivr/Documents/GitHub/Zybo_mipi/zybo_ov5640/vitis/design_1_wrapper/hw/design_1_wrapper.xsa
+TRACE::2020-08-14.20:28:32::SCWPlatform::DSA directory C:/Users/ivr/Documents/GitHub/Zybo_mipi/zybo_ov5640/vitis/design_1_wrapper/hw
+TRACE::2020-08-14.20:28:32::SCWPlatform:: Platform Path C:/Users/ivr/Documents/GitHub/Zybo_mipi/zybo_ov5640/vitis/design_1_wrapper/hw/design_1_wrapper.xsa
+TRACE::2020-08-14.20:28:32::SCWPlatform:: Unique name xilinx:zybo-z7-20::0.0
+TRACE::2020-08-14.20:28:32::SCWPlatform::Trying to set the existing hwdb with name design_1_wrapper_6
+TRACE::2020-08-14.20:28:32::SCWPlatform::Opened existing hwdb design_1_wrapper_6
+TRACE::2020-08-14.20:28:32::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2020-08-14.20:28:32::SCWMssOS::Checking the sw design at  C:/Users/ivr/Documents/GitHub/Zybo_mipi/zybo_ov5640/vitis/design_1_wrapper/ps7_cortexa9_0/standalone_domain/bsp/system.mss
+TRACE::2020-08-14.20:28:32::SCWMssOS::DEBUG:  swdes dump  C:/Users/ivr/Documents/GitHub/Zybo_mipi/zybo_ov5640/vitis/design_1_wrapper/ps7_cortexa9_0/standalone_domain/bsp/system.mss|system_0||
+C:/Users/ivr/Documents/GitHub/Zybo_mipi/zybo_ov5640/vitis/design_1_wrapper/zynq_fsbl/zynq_fsbl_bsp/system.mss|system||
+
+TRACE::2020-08-14.20:28:32::SCWMssOS::Sw design exists and opened at  C:/Users/ivr/Documents/GitHub/Zybo_mipi/zybo_ov5640/vitis/design_1_wrapper/ps7_cortexa9_0/standalone_domain/bsp/system.mss
+TRACE::2020-08-14.20:28:32::SCWWriter::formatted JSON is {
+	"platformName":	"design_1_wrapper",
+	"sprVersion":	"2.0",
+	"mode":	"gui",
+	"dsaType":	"Fixed",
+	"platformDesc":	"design_1_wrapper",
+	"platHandOff":	"C:/Users/ivr/Documents/GitHub/Zybo_mipi/zybo_ov5640/design_1_wrapper.xsa",
+	"platIntHandOff":	"<platformDir>/hw/design_1_wrapper.xsa",
+	"deviceType":	"zynq",
+	"platIsPrebuiltAutogen":	"false",
+	"platIsNoBootBsp":	"false",
+	"hasFsblMakeHasChanges":	"false",
+	"hasPmufwMakeHasChanges":	"false",
+	"platPreBuiltFlag":	false,
+	"platformSamplesDir":	"",
+	"platActiveSys":	"design_1_wrapper",
+	"systems":	[{
+			"systemName":	"design_1_wrapper",
+			"systemDesc":	"design_1_wrapper",
+			"sysIsBootAutoGen":	"true",
+			"systemDispName":	"design_1_wrapper",
+			"sysActiveDom":	"standalone_domain",
+			"sysDefaultDom":	"standalone_domain",
+			"domains":	[{
+					"domainName":	"zynq_fsbl",
+					"domainDispName":	"zynq_fsbl",
+					"domainDesc":	"FSBL Application BSP - Auto Generated.",
+					"processors":	"ps7_cortexa9_0",
+					"os":	"standalone",
+					"sdxOs":	"standalone",
+					"debugEnable":	"",
+					"domRuntimes":	["cpp"],
+					"swRepo":	"",
+					"mssOsVer":	"7.1",
+					"mssFile":	"",
+					"md5Digest":	"0b996db22168e82f4e5264323bacd241",
+					"compatibleApp":	"zynq_fsbl",
+					"domType":	"bootDomain",
+					"appSettings":	{
+						"appCompilerFlags":	"",
+						"appLinkerFlags":	""
+					},
+					"addedLibs":	["xilffs:4.2", "xilrsa:1.5"],
+					"libOptions":	{
+						"libsContainingOptions":	[]
+					},
+					"prebuiltLibs":	{
+						"prebuiltIncPath":	[],
+						"prebuiltLibPath":	[]
+					},
+					"isolation":	{
+					}
+				}, {
+					"domainName":	"standalone_domain",
+					"domainDispName":	"standalone on ps7_cortexa9_0",
+					"domainDesc":	"standalone_domain",
+					"processors":	"ps7_cortexa9_0",
+					"os":	"standalone",
+					"sdxOs":	"standalone",
+					"qemuArgs":	"C:/Xilinx/Vitis/2019.2/data/emulation/platforms/zynq/qemu/qemu_args.txt",
+					"qemuData":	"C:/Xilinx/Vitis/2019.2/data/emulation/platforms/zynq/qemu/",
+					"debugEnable":	"False",
+					"domRuntimes":	["cpp"],
+					"swRepo":	"",
+					"mssOsVer":	"7.1",
+					"mssFile":	"",
+					"md5Digest":	"d33a85c4fd598e99ebdad119685365ea",
+					"compatibleApp":	"",
+					"domType":	"mssDomain",
+					"arch":	"32-bit",
+					"appSettings":	{
+						"appCompilerFlags":	"",
+						"appLinkerFlags":	""
+					},
+					"addedLibs":	[],
+					"libOptions":	{
+						"libsContainingOptions":	[]
+					},
+					"prebuiltLibs":	{
+						"prebuiltIncPath":	[],
+						"prebuiltLibPath":	[]
+					},
+					"isolation":	{
+					}
+				}]
+		}]
+}
+TRACE::2020-08-14.20:47:18::SCWPlatform::Clearing the existing platform
+TRACE::2020-08-14.20:47:18::SCWSystem::Clearing the existing sysconfig
+TRACE::2020-08-14.20:47:18::SCWBDomain::clearing the fsbl build
+TRACE::2020-08-14.20:47:18::SCWMssOS::Removing the swdes entry for  C:/Users/ivr/Documents/GitHub/Zybo_mipi/zybo_ov5640/vitis/design_1_wrapper/zynq_fsbl/zynq_fsbl_bsp/system.mss
+TRACE::2020-08-14.20:47:18::SCWMssOS::Removing the swdes entry for  C:/Users/ivr/Documents/GitHub/Zybo_mipi/zybo_ov5640/vitis/design_1_wrapper/ps7_cortexa9_0/standalone_domain/bsp/system.mss
+TRACE::2020-08-14.20:47:18::SCWSystem::Clearing the domains completed.
+TRACE::2020-08-14.20:47:18::SCWPlatform::Clearing the opened hw db.
+TRACE::2020-08-14.20:47:18::SCWPlatform::DSA given C:/Users/ivr/Documents/GitHub/Zybo_mipi/zybo_ov5640/vitis/design_1_wrapper/hw/design_1_wrapper.xsa
+TRACE::2020-08-14.20:47:18::SCWPlatform::DSA absoulate path C:/Users/ivr/Documents/GitHub/Zybo_mipi/zybo_ov5640/vitis/design_1_wrapper/hw/design_1_wrapper.xsa
+TRACE::2020-08-14.20:47:18::SCWPlatform:: Platform location is C:/Users/ivr/Documents/GitHub/Zybo_mipi/zybo_ov5640/vitis/design_1_wrapper/hw
+TRACE::2020-08-14.20:47:18::SCWPlatform:: Platform Path C:/Users/ivr/Documents/GitHub/Zybo_mipi/zybo_ov5640/vitis/design_1_wrapper/hw/design_1_wrapper.xsa
+TRACE::2020-08-14.20:47:18::SCWPlatform:: Unique name xilinx:zybo-z7-20::0.0
+TRACE::2020-08-14.20:47:18::SCWPlatform::Removing the HwDB with name C:/Users/ivr/Documents/GitHub/Zybo_mipi/zybo_ov5640/vitis/design_1_wrapper/hw/design_1_wrapper.xsa
+TRACE::2020-08-14.20:47:18::SCWPlatform::Trying to open the hw design at C:/Users/ivr/Documents/GitHub/Zybo_mipi/zybo_ov5640/vitis/design_1_wrapper/hw/design_1_wrapper.xsa
+TRACE::2020-08-14.20:47:18::SCWPlatform::DSA given C:/Users/ivr/Documents/GitHub/Zybo_mipi/zybo_ov5640/vitis/design_1_wrapper/hw/design_1_wrapper.xsa
+TRACE::2020-08-14.20:47:18::SCWPlatform::DSA absoulate path C:/Users/ivr/Documents/GitHub/Zybo_mipi/zybo_ov5640/vitis/design_1_wrapper/hw/design_1_wrapper.xsa
+TRACE::2020-08-14.20:47:18::SCWPlatform::DSA directory C:/Users/ivr/Documents/GitHub/Zybo_mipi/zybo_ov5640/vitis/design_1_wrapper/hw
+TRACE::2020-08-14.20:47:18::SCWPlatform:: Platform Path C:/Users/ivr/Documents/GitHub/Zybo_mipi/zybo_ov5640/vitis/design_1_wrapper/hw/design_1_wrapper.xsa
+TRACE::2020-08-14.20:47:18::SCWPlatform:: Unique name xilinx:zybo-z7-20::0.0
+TRACE::2020-08-14.20:47:18::SCWPlatform::Do not have an existing db opened. 
+TRACE::2020-08-14.20:47:24::SCWPlatform::Opened new HwDB with name design_1_wrapper_7
+TRACE::2020-08-14.20:47:24::SCWReader::Active system found as  design_1_wrapper
+TRACE::2020-08-14.20:47:24::SCWReader::Handling sysconfig design_1_wrapper
+TRACE::2020-08-14.20:47:24::SCWDomain::checking for install qemu data   : 
+TRACE::2020-08-14.20:47:24::SCWDomain:: Using the QEMU Data from install at  : C:/Xilinx/Vitis/2019.2/data/emulation/platforms/zynq/qemu/
+TRACE::2020-08-14.20:47:24::SCWDomain:: Using the QEMU args  from install at  : C:/Xilinx/Vitis/2019.2/data/emulation/platforms/zynq/qemu/qemu_args.txt
+TRACE::2020-08-14.20:47:24::SCWPlatform::Trying to open the hw design at C:/Users/ivr/Documents/GitHub/Zybo_mipi/zybo_ov5640/vitis/design_1_wrapper/hw/design_1_wrapper.xsa
+TRACE::2020-08-14.20:47:24::SCWPlatform::DSA given C:/Users/ivr/Documents/GitHub/Zybo_mipi/zybo_ov5640/vitis/design_1_wrapper/hw/design_1_wrapper.xsa
+TRACE::2020-08-14.20:47:24::SCWPlatform::DSA absoulate path C:/Users/ivr/Documents/GitHub/Zybo_mipi/zybo_ov5640/vitis/design_1_wrapper/hw/design_1_wrapper.xsa
+TRACE::2020-08-14.20:47:24::SCWPlatform::DSA directory C:/Users/ivr/Documents/GitHub/Zybo_mipi/zybo_ov5640/vitis/design_1_wrapper/hw
+TRACE::2020-08-14.20:47:24::SCWPlatform:: Platform Path C:/Users/ivr/Documents/GitHub/Zybo_mipi/zybo_ov5640/vitis/design_1_wrapper/hw/design_1_wrapper.xsa
+TRACE::2020-08-14.20:47:24::SCWPlatform:: Unique name xilinx:zybo-z7-20::0.0
+TRACE::2020-08-14.20:47:24::SCWPlatform::Trying to set the existing hwdb with name design_1_wrapper_7
+TRACE::2020-08-14.20:47:24::SCWPlatform::Opened existing hwdb design_1_wrapper_7
+TRACE::2020-08-14.20:47:24::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2020-08-14.20:47:24::SCWPlatform::Trying to open the hw design at C:/Users/ivr/Documents/GitHub/Zybo_mipi/zybo_ov5640/vitis/design_1_wrapper/hw/design_1_wrapper.xsa
+TRACE::2020-08-14.20:47:24::SCWPlatform::DSA given C:/Users/ivr/Documents/GitHub/Zybo_mipi/zybo_ov5640/vitis/design_1_wrapper/hw/design_1_wrapper.xsa
+TRACE::2020-08-14.20:47:24::SCWPlatform::DSA absoulate path C:/Users/ivr/Documents/GitHub/Zybo_mipi/zybo_ov5640/vitis/design_1_wrapper/hw/design_1_wrapper.xsa
+TRACE::2020-08-14.20:47:24::SCWPlatform::DSA directory C:/Users/ivr/Documents/GitHub/Zybo_mipi/zybo_ov5640/vitis/design_1_wrapper/hw
+TRACE::2020-08-14.20:47:24::SCWPlatform:: Platform Path C:/Users/ivr/Documents/GitHub/Zybo_mipi/zybo_ov5640/vitis/design_1_wrapper/hw/design_1_wrapper.xsa
+TRACE::2020-08-14.20:47:24::SCWPlatform:: Unique name xilinx:zybo-z7-20::0.0
+TRACE::2020-08-14.20:47:24::SCWPlatform::Trying to set the existing hwdb with name design_1_wrapper_7
+TRACE::2020-08-14.20:47:24::SCWPlatform::Opened existing hwdb design_1_wrapper_7
+TRACE::2020-08-14.20:47:24::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2020-08-14.20:47:24::SCWReader::Boot application domain added for zynq_fsbl
+TRACE::2020-08-14.20:47:24::SCWPlatform::Trying to open the hw design at C:/Users/ivr/Documents/GitHub/Zybo_mipi/zybo_ov5640/vitis/design_1_wrapper/hw/design_1_wrapper.xsa
+TRACE::2020-08-14.20:47:24::SCWPlatform::DSA given C:/Users/ivr/Documents/GitHub/Zybo_mipi/zybo_ov5640/vitis/design_1_wrapper/hw/design_1_wrapper.xsa
+TRACE::2020-08-14.20:47:24::SCWPlatform::DSA absoulate path C:/Users/ivr/Documents/GitHub/Zybo_mipi/zybo_ov5640/vitis/design_1_wrapper/hw/design_1_wrapper.xsa
+TRACE::2020-08-14.20:47:24::SCWPlatform::DSA directory C:/Users/ivr/Documents/GitHub/Zybo_mipi/zybo_ov5640/vitis/design_1_wrapper/hw
+TRACE::2020-08-14.20:47:24::SCWPlatform:: Platform Path C:/Users/ivr/Documents/GitHub/Zybo_mipi/zybo_ov5640/vitis/design_1_wrapper/hw/design_1_wrapper.xsa
+TRACE::2020-08-14.20:47:24::SCWPlatform:: Unique name xilinx:zybo-z7-20::0.0
+TRACE::2020-08-14.20:47:24::SCWPlatform::Trying to set the existing hwdb with name design_1_wrapper_7
+TRACE::2020-08-14.20:47:24::SCWPlatform::Opened existing hwdb design_1_wrapper_7
+TRACE::2020-08-14.20:47:24::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2020-08-14.20:47:24::SCWMssOS::Checking the sw design at  C:/Users/ivr/Documents/GitHub/Zybo_mipi/zybo_ov5640/vitis/design_1_wrapper/zynq_fsbl/zynq_fsbl_bsp/system.mss
+TRACE::2020-08-14.20:47:24::SCWMssOS::DEBUG:  swdes dump  
+TRACE::2020-08-14.20:47:24::SCWMssOS::No sw design opened at  C:/Users/ivr/Documents/GitHub/Zybo_mipi/zybo_ov5640/vitis/design_1_wrapper/zynq_fsbl/zynq_fsbl_bsp/system.mss
+TRACE::2020-08-14.20:47:24::SCWMssOS::mss exists loading the mss file  C:/Users/ivr/Documents/GitHub/Zybo_mipi/zybo_ov5640/vitis/design_1_wrapper/zynq_fsbl/zynq_fsbl_bsp/system.mss
+TRACE::2020-08-14.20:47:24::SCWMssOS::Opened the sw design from mss  C:/Users/ivr/Documents/GitHub/Zybo_mipi/zybo_ov5640/vitis/design_1_wrapper/zynq_fsbl/zynq_fsbl_bsp/system.mss
+TRACE::2020-08-14.20:47:24::SCWMssOS::Adding the swdes entry C:/Users/ivr/Documents/GitHub/Zybo_mipi/zybo_ov5640/vitis/design_1_wrapper/zynq_fsbl/zynq_fsbl_bsp/system.mss with des name system
+TRACE::2020-08-14.20:47:24::SCWMssOS::updating the scw layer about changes
+TRACE::2020-08-14.20:47:24::SCWMssOS::Opened the sw design.  C:/Users/ivr/Documents/GitHub/Zybo_mipi/zybo_ov5640/vitis/design_1_wrapper/zynq_fsbl/zynq_fsbl_bsp/system.mss
+TRACE::2020-08-14.20:47:24::SCWPlatform::Trying to open the hw design at C:/Users/ivr/Documents/GitHub/Zybo_mipi/zybo_ov5640/vitis/design_1_wrapper/hw/design_1_wrapper.xsa
+TRACE::2020-08-14.20:47:24::SCWPlatform::DSA given C:/Users/ivr/Documents/GitHub/Zybo_mipi/zybo_ov5640/vitis/design_1_wrapper/hw/design_1_wrapper.xsa
+TRACE::2020-08-14.20:47:24::SCWPlatform::DSA absoulate path C:/Users/ivr/Documents/GitHub/Zybo_mipi/zybo_ov5640/vitis/design_1_wrapper/hw/design_1_wrapper.xsa
+TRACE::2020-08-14.20:47:24::SCWPlatform::DSA directory C:/Users/ivr/Documents/GitHub/Zybo_mipi/zybo_ov5640/vitis/design_1_wrapper/hw
+TRACE::2020-08-14.20:47:24::SCWPlatform:: Platform Path C:/Users/ivr/Documents/GitHub/Zybo_mipi/zybo_ov5640/vitis/design_1_wrapper/hw/design_1_wrapper.xsa
+TRACE::2020-08-14.20:47:24::SCWPlatform:: Unique name xilinx:zybo-z7-20::0.0
+TRACE::2020-08-14.20:47:24::SCWPlatform::Trying to set the existing hwdb with name design_1_wrapper_7
+TRACE::2020-08-14.20:47:24::SCWPlatform::Opened existing hwdb design_1_wrapper_7
+TRACE::2020-08-14.20:47:24::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2020-08-14.20:47:24::SCWMssOS::Checking the sw design at  C:/Users/ivr/Documents/GitHub/Zybo_mipi/zybo_ov5640/vitis/design_1_wrapper/zynq_fsbl/zynq_fsbl_bsp/system.mss
+TRACE::2020-08-14.20:47:24::SCWMssOS::DEBUG:  swdes dump  C:/Users/ivr/Documents/GitHub/Zybo_mipi/zybo_ov5640/vitis/design_1_wrapper/zynq_fsbl/zynq_fsbl_bsp/system.mss|system||
+
+TRACE::2020-08-14.20:47:24::SCWMssOS::Sw design exists and opened at  C:/Users/ivr/Documents/GitHub/Zybo_mipi/zybo_ov5640/vitis/design_1_wrapper/zynq_fsbl/zynq_fsbl_bsp/system.mss
+TRACE::2020-08-14.20:47:24::SCWMssOS:: library already available in sw design:  xilffs:4.2
+TRACE::2020-08-14.20:47:24::SCWPlatform::Trying to open the hw design at C:/Users/ivr/Documents/GitHub/Zybo_mipi/zybo_ov5640/vitis/design_1_wrapper/hw/design_1_wrapper.xsa
+TRACE::2020-08-14.20:47:24::SCWPlatform::DSA given C:/Users/ivr/Documents/GitHub/Zybo_mipi/zybo_ov5640/vitis/design_1_wrapper/hw/design_1_wrapper.xsa
+TRACE::2020-08-14.20:47:24::SCWPlatform::DSA absoulate path C:/Users/ivr/Documents/GitHub/Zybo_mipi/zybo_ov5640/vitis/design_1_wrapper/hw/design_1_wrapper.xsa
+TRACE::2020-08-14.20:47:24::SCWPlatform::DSA directory C:/Users/ivr/Documents/GitHub/Zybo_mipi/zybo_ov5640/vitis/design_1_wrapper/hw
+TRACE::2020-08-14.20:47:24::SCWPlatform:: Platform Path C:/Users/ivr/Documents/GitHub/Zybo_mipi/zybo_ov5640/vitis/design_1_wrapper/hw/design_1_wrapper.xsa
+TRACE::2020-08-14.20:47:24::SCWPlatform:: Unique name xilinx:zybo-z7-20::0.0
+TRACE::2020-08-14.20:47:24::SCWPlatform::Trying to set the existing hwdb with name design_1_wrapper_7
+TRACE::2020-08-14.20:47:24::SCWPlatform::Opened existing hwdb design_1_wrapper_7
+TRACE::2020-08-14.20:47:24::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2020-08-14.20:47:24::SCWMssOS::Checking the sw design at  C:/Users/ivr/Documents/GitHub/Zybo_mipi/zybo_ov5640/vitis/design_1_wrapper/zynq_fsbl/zynq_fsbl_bsp/system.mss
+TRACE::2020-08-14.20:47:24::SCWMssOS::DEBUG:  swdes dump  C:/Users/ivr/Documents/GitHub/Zybo_mipi/zybo_ov5640/vitis/design_1_wrapper/zynq_fsbl/zynq_fsbl_bsp/system.mss|system||
+
+TRACE::2020-08-14.20:47:24::SCWMssOS::Sw design exists and opened at  C:/Users/ivr/Documents/GitHub/Zybo_mipi/zybo_ov5640/vitis/design_1_wrapper/zynq_fsbl/zynq_fsbl_bsp/system.mss
+TRACE::2020-08-14.20:47:24::SCWMssOS:: library already available in sw design:  xilrsa:1.5
+TRACE::2020-08-14.20:47:24::SCWReader::Adding prebuilt librarypaths as   
+TRACE::2020-08-14.20:47:24::SCWReader::Adding prebuilt incpaths  as   
+TRACE::2020-08-14.20:47:24::SCWPlatform::Trying to open the hw design at C:/Users/ivr/Documents/GitHub/Zybo_mipi/zybo_ov5640/vitis/design_1_wrapper/hw/design_1_wrapper.xsa
+TRACE::2020-08-14.20:47:24::SCWPlatform::DSA given C:/Users/ivr/Documents/GitHub/Zybo_mipi/zybo_ov5640/vitis/design_1_wrapper/hw/design_1_wrapper.xsa
+TRACE::2020-08-14.20:47:24::SCWPlatform::DSA absoulate path C:/Users/ivr/Documents/GitHub/Zybo_mipi/zybo_ov5640/vitis/design_1_wrapper/hw/design_1_wrapper.xsa
+TRACE::2020-08-14.20:47:24::SCWPlatform::DSA directory C:/Users/ivr/Documents/GitHub/Zybo_mipi/zybo_ov5640/vitis/design_1_wrapper/hw
+TRACE::2020-08-14.20:47:24::SCWPlatform:: Platform Path C:/Users/ivr/Documents/GitHub/Zybo_mipi/zybo_ov5640/vitis/design_1_wrapper/hw/design_1_wrapper.xsa
+TRACE::2020-08-14.20:47:24::SCWPlatform:: Unique name xilinx:zybo-z7-20::0.0
+TRACE::2020-08-14.20:47:24::SCWPlatform::Trying to set the existing hwdb with name design_1_wrapper_7
+TRACE::2020-08-14.20:47:24::SCWPlatform::Opened existing hwdb design_1_wrapper_7
+TRACE::2020-08-14.20:47:24::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2020-08-14.20:47:24::SCWMssOS::Checking the sw design at  C:/Users/ivr/Documents/GitHub/Zybo_mipi/zybo_ov5640/vitis/design_1_wrapper/zynq_fsbl/zynq_fsbl_bsp/system.mss
+TRACE::2020-08-14.20:47:24::SCWMssOS::DEBUG:  swdes dump  C:/Users/ivr/Documents/GitHub/Zybo_mipi/zybo_ov5640/vitis/design_1_wrapper/zynq_fsbl/zynq_fsbl_bsp/system.mss|system||
+
+TRACE::2020-08-14.20:47:24::SCWMssOS::Sw design exists and opened at  C:/Users/ivr/Documents/GitHub/Zybo_mipi/zybo_ov5640/vitis/design_1_wrapper/zynq_fsbl/zynq_fsbl_bsp/system.mss
+TRACE::2020-08-14.20:47:24::SCWReader::No isolation master present  
+TRACE::2020-08-14.20:47:24::SCWDomain::checking for install qemu data   : 
+TRACE::2020-08-14.20:47:24::SCWDomain:: Using the QEMU Data from install at  : C:/Xilinx/Vitis/2019.2/data/emulation/platforms/zynq/qemu/
+TRACE::2020-08-14.20:47:24::SCWDomain:: Using the QEMU args  from install at  : C:/Xilinx/Vitis/2019.2/data/emulation/platforms/zynq/qemu/qemu_args.txt
+TRACE::2020-08-14.20:47:24::SCWPlatform::Trying to open the hw design at C:/Users/ivr/Documents/GitHub/Zybo_mipi/zybo_ov5640/vitis/design_1_wrapper/hw/design_1_wrapper.xsa
+TRACE::2020-08-14.20:47:24::SCWPlatform::DSA given C:/Users/ivr/Documents/GitHub/Zybo_mipi/zybo_ov5640/vitis/design_1_wrapper/hw/design_1_wrapper.xsa
+TRACE::2020-08-14.20:47:24::SCWPlatform::DSA absoulate path C:/Users/ivr/Documents/GitHub/Zybo_mipi/zybo_ov5640/vitis/design_1_wrapper/hw/design_1_wrapper.xsa
+TRACE::2020-08-14.20:47:24::SCWPlatform::DSA directory C:/Users/ivr/Documents/GitHub/Zybo_mipi/zybo_ov5640/vitis/design_1_wrapper/hw
+TRACE::2020-08-14.20:47:24::SCWPlatform:: Platform Path C:/Users/ivr/Documents/GitHub/Zybo_mipi/zybo_ov5640/vitis/design_1_wrapper/hw/design_1_wrapper.xsa
+TRACE::2020-08-14.20:47:24::SCWPlatform:: Unique name xilinx:zybo-z7-20::0.0
+TRACE::2020-08-14.20:47:24::SCWPlatform::Trying to set the existing hwdb with name design_1_wrapper_7
+TRACE::2020-08-14.20:47:24::SCWPlatform::Opened existing hwdb design_1_wrapper_7
+TRACE::2020-08-14.20:47:24::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2020-08-14.20:47:24::SCWPlatform::Trying to open the hw design at C:/Users/ivr/Documents/GitHub/Zybo_mipi/zybo_ov5640/vitis/design_1_wrapper/hw/design_1_wrapper.xsa
+TRACE::2020-08-14.20:47:24::SCWPlatform::DSA given C:/Users/ivr/Documents/GitHub/Zybo_mipi/zybo_ov5640/vitis/design_1_wrapper/hw/design_1_wrapper.xsa
+TRACE::2020-08-14.20:47:24::SCWPlatform::DSA absoulate path C:/Users/ivr/Documents/GitHub/Zybo_mipi/zybo_ov5640/vitis/design_1_wrapper/hw/design_1_wrapper.xsa
+TRACE::2020-08-14.20:47:24::SCWPlatform::DSA directory C:/Users/ivr/Documents/GitHub/Zybo_mipi/zybo_ov5640/vitis/design_1_wrapper/hw
+TRACE::2020-08-14.20:47:24::SCWPlatform:: Platform Path C:/Users/ivr/Documents/GitHub/Zybo_mipi/zybo_ov5640/vitis/design_1_wrapper/hw/design_1_wrapper.xsa
+TRACE::2020-08-14.20:47:24::SCWPlatform:: Unique name xilinx:zybo-z7-20::0.0
+TRACE::2020-08-14.20:47:24::SCWPlatform::Trying to set the existing hwdb with name design_1_wrapper_7
+TRACE::2020-08-14.20:47:24::SCWPlatform::Opened existing hwdb design_1_wrapper_7
+TRACE::2020-08-14.20:47:24::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2020-08-14.20:47:24::SCWMssOS::Checking the sw design at  C:/Users/ivr/Documents/GitHub/Zybo_mipi/zybo_ov5640/vitis/design_1_wrapper/ps7_cortexa9_0/standalone_domain/bsp/system.mss
+TRACE::2020-08-14.20:47:24::SCWMssOS::DEBUG:  swdes dump  C:/Users/ivr/Documents/GitHub/Zybo_mipi/zybo_ov5640/vitis/design_1_wrapper/zynq_fsbl/zynq_fsbl_bsp/system.mss|system||
+
+TRACE::2020-08-14.20:47:24::SCWMssOS::No sw design opened at  C:/Users/ivr/Documents/GitHub/Zybo_mipi/zybo_ov5640/vitis/design_1_wrapper/ps7_cortexa9_0/standalone_domain/bsp/system.mss
+TRACE::2020-08-14.20:47:24::SCWMssOS::mss exists loading the mss file  C:/Users/ivr/Documents/GitHub/Zybo_mipi/zybo_ov5640/vitis/design_1_wrapper/ps7_cortexa9_0/standalone_domain/bsp/system.mss
+TRACE::2020-08-14.20:47:24::SCWMssOS::Opened the sw design from mss  C:/Users/ivr/Documents/GitHub/Zybo_mipi/zybo_ov5640/vitis/design_1_wrapper/ps7_cortexa9_0/standalone_domain/bsp/system.mss
+TRACE::2020-08-14.20:47:24::SCWMssOS::Adding the swdes entry C:/Users/ivr/Documents/GitHub/Zybo_mipi/zybo_ov5640/vitis/design_1_wrapper/ps7_cortexa9_0/standalone_domain/bsp/system.mss with des name system_0
+TRACE::2020-08-14.20:47:24::SCWMssOS::updating the scw layer about changes
+TRACE::2020-08-14.20:47:24::SCWMssOS::Opened the sw design.  C:/Users/ivr/Documents/GitHub/Zybo_mipi/zybo_ov5640/vitis/design_1_wrapper/ps7_cortexa9_0/standalone_domain/bsp/system.mss
+TRACE::2020-08-14.20:47:24::SCWReader::Adding prebuilt librarypaths as   
+TRACE::2020-08-14.20:47:24::SCWReader::Adding prebuilt incpaths  as   
+TRACE::2020-08-14.20:47:24::SCWPlatform::Trying to open the hw design at C:/Users/ivr/Documents/GitHub/Zybo_mipi/zybo_ov5640/vitis/design_1_wrapper/hw/design_1_wrapper.xsa
+TRACE::2020-08-14.20:47:24::SCWPlatform::DSA given C:/Users/ivr/Documents/GitHub/Zybo_mipi/zybo_ov5640/vitis/design_1_wrapper/hw/design_1_wrapper.xsa
+TRACE::2020-08-14.20:47:25::SCWPlatform::DSA absoulate path C:/Users/ivr/Documents/GitHub/Zybo_mipi/zybo_ov5640/vitis/design_1_wrapper/hw/design_1_wrapper.xsa
+TRACE::2020-08-14.20:47:25::SCWPlatform::DSA directory C:/Users/ivr/Documents/GitHub/Zybo_mipi/zybo_ov5640/vitis/design_1_wrapper/hw
+TRACE::2020-08-14.20:47:25::SCWPlatform:: Platform Path C:/Users/ivr/Documents/GitHub/Zybo_mipi/zybo_ov5640/vitis/design_1_wrapper/hw/design_1_wrapper.xsa
+TRACE::2020-08-14.20:47:25::SCWPlatform:: Unique name xilinx:zybo-z7-20::0.0
+TRACE::2020-08-14.20:47:25::SCWPlatform::Trying to set the existing hwdb with name design_1_wrapper_7
+TRACE::2020-08-14.20:47:25::SCWPlatform::Opened existing hwdb design_1_wrapper_7
+TRACE::2020-08-14.20:47:25::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2020-08-14.20:47:25::SCWMssOS::Checking the sw design at  C:/Users/ivr/Documents/GitHub/Zybo_mipi/zybo_ov5640/vitis/design_1_wrapper/ps7_cortexa9_0/standalone_domain/bsp/system.mss
+TRACE::2020-08-14.20:47:25::SCWMssOS::DEBUG:  swdes dump  C:/Users/ivr/Documents/GitHub/Zybo_mipi/zybo_ov5640/vitis/design_1_wrapper/ps7_cortexa9_0/standalone_domain/bsp/system.mss|system_0||
+C:/Users/ivr/Documents/GitHub/Zybo_mipi/zybo_ov5640/vitis/design_1_wrapper/zynq_fsbl/zynq_fsbl_bsp/system.mss|system||
+
+TRACE::2020-08-14.20:47:25::SCWMssOS::Sw design exists and opened at  C:/Users/ivr/Documents/GitHub/Zybo_mipi/zybo_ov5640/vitis/design_1_wrapper/ps7_cortexa9_0/standalone_domain/bsp/system.mss
+TRACE::2020-08-14.20:47:25::SCWReader::No isolation master present  
+TRACE::2020-08-14.20:47:26::SCWPlatform::DSA given C:/Users/ivr/Documents/GitHub/Zybo_mipi/zybo_ov5640/vitis/design_1_wrapper/tempdsa/design_1_wrapper.xsa
+TRACE::2020-08-14.20:47:26::SCWPlatform::DSA absoulate path C:/Users/ivr/Documents/GitHub/Zybo_mipi/zybo_ov5640/vitis/design_1_wrapper/tempdsa/design_1_wrapper.xsa
+TRACE::2020-08-14.20:47:26::SCWPlatform:: Platform location is C:/Users/ivr/Documents/GitHub/Zybo_mipi/zybo_ov5640/vitis/design_1_wrapper/tempdsa
+TRACE::2020-08-14.20:47:26::SCWPlatform:: Platform Path C:/Users/ivr/Documents/GitHub/Zybo_mipi/zybo_ov5640/vitis/design_1_wrapper/tempdsa/design_1_wrapper.xsa
+TRACE::2020-08-14.20:47:26::SCWPlatform:: Unique name xilinx:zybo-z7-20::0.0
+TRACE::2020-08-14.20:47:32::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2020-08-14.20:47:32::SCWMssOS::Doing hw sync for the mss in domain: zynq_fsbl
+TRACE::2020-08-14.20:47:32::SCWPlatform::Trying to open the hw design at C:/Users/ivr/Documents/GitHub/Zybo_mipi/zybo_ov5640/vitis/design_1_wrapper/hw/design_1_wrapper.xsa
+TRACE::2020-08-14.20:47:32::SCWPlatform::DSA given C:/Users/ivr/Documents/GitHub/Zybo_mipi/zybo_ov5640/vitis/design_1_wrapper/hw/design_1_wrapper.xsa
+TRACE::2020-08-14.20:47:32::SCWPlatform::DSA absoulate path C:/Users/ivr/Documents/GitHub/Zybo_mipi/zybo_ov5640/vitis/design_1_wrapper/hw/design_1_wrapper.xsa
+TRACE::2020-08-14.20:47:32::SCWPlatform::DSA directory C:/Users/ivr/Documents/GitHub/Zybo_mipi/zybo_ov5640/vitis/design_1_wrapper/hw
+TRACE::2020-08-14.20:47:32::SCWPlatform:: Platform Path C:/Users/ivr/Documents/GitHub/Zybo_mipi/zybo_ov5640/vitis/design_1_wrapper/hw/design_1_wrapper.xsa
+TRACE::2020-08-14.20:47:32::SCWPlatform:: Unique name xilinx:zybo-z7-20::0.0
+TRACE::2020-08-14.20:47:32::SCWPlatform::Trying to set the existing hwdb with name design_1_wrapper_7
+TRACE::2020-08-14.20:47:32::SCWPlatform::Opened existing hwdb design_1_wrapper_7
+TRACE::2020-08-14.20:47:32::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2020-08-14.20:47:32::SCWPlatform::Trying to open the hw design at C:/Users/ivr/Documents/GitHub/Zybo_mipi/zybo_ov5640/vitis/design_1_wrapper/hw/design_1_wrapper.xsa
+TRACE::2020-08-14.20:47:32::SCWPlatform::DSA given C:/Users/ivr/Documents/GitHub/Zybo_mipi/zybo_ov5640/vitis/design_1_wrapper/hw/design_1_wrapper.xsa
+TRACE::2020-08-14.20:47:32::SCWPlatform::DSA absoulate path C:/Users/ivr/Documents/GitHub/Zybo_mipi/zybo_ov5640/vitis/design_1_wrapper/hw/design_1_wrapper.xsa
+TRACE::2020-08-14.20:47:32::SCWPlatform::DSA directory C:/Users/ivr/Documents/GitHub/Zybo_mipi/zybo_ov5640/vitis/design_1_wrapper/hw
+TRACE::2020-08-14.20:47:32::SCWPlatform:: Platform Path C:/Users/ivr/Documents/GitHub/Zybo_mipi/zybo_ov5640/vitis/design_1_wrapper/hw/design_1_wrapper.xsa
+TRACE::2020-08-14.20:47:32::SCWPlatform:: Unique name xilinx:zybo-z7-20::0.0
+TRACE::2020-08-14.20:47:32::SCWPlatform::Trying to set the existing hwdb with name design_1_wrapper_7
+TRACE::2020-08-14.20:47:32::SCWPlatform::Opened existing hwdb design_1_wrapper_7
+TRACE::2020-08-14.20:47:32::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2020-08-14.20:47:32::SCWMssOS::Checking the sw design at  C:/Users/ivr/Documents/GitHub/Zybo_mipi/zybo_ov5640/vitis/design_1_wrapper/zynq_fsbl/zynq_fsbl_bsp/system.mss
+TRACE::2020-08-14.20:47:32::SCWMssOS::DEBUG:  swdes dump  C:/Users/ivr/Documents/GitHub/Zybo_mipi/zybo_ov5640/vitis/design_1_wrapper/ps7_cortexa9_0/standalone_domain/bsp/system.mss|system_0||
+C:/Users/ivr/Documents/GitHub/Zybo_mipi/zybo_ov5640/vitis/design_1_wrapper/zynq_fsbl/zynq_fsbl_bsp/system.mss|system||
+
+TRACE::2020-08-14.20:47:32::SCWMssOS::Sw design exists and opened at  C:/Users/ivr/Documents/GitHub/Zybo_mipi/zybo_ov5640/vitis/design_1_wrapper/zynq_fsbl/zynq_fsbl_bsp/system.mss
+TRACE::2020-08-14.20:47:32::SCWPlatform::Trying to open the hw design at C:/Users/ivr/Documents/GitHub/Zybo_mipi/zybo_ov5640/vitis/design_1_wrapper/tempdsa/design_1_wrapper.xsa
+TRACE::2020-08-14.20:47:32::SCWPlatform::DSA given C:/Users/ivr/Documents/GitHub/Zybo_mipi/zybo_ov5640/vitis/design_1_wrapper/tempdsa/design_1_wrapper.xsa
+TRACE::2020-08-14.20:47:32::SCWPlatform::DSA absoulate path C:/Users/ivr/Documents/GitHub/Zybo_mipi/zybo_ov5640/vitis/design_1_wrapper/tempdsa/design_1_wrapper.xsa
+TRACE::2020-08-14.20:47:32::SCWPlatform::DSA directory C:/Users/ivr/Documents/GitHub/Zybo_mipi/zybo_ov5640/vitis/design_1_wrapper/tempdsa
+TRACE::2020-08-14.20:47:32::SCWPlatform:: Platform Path C:/Users/ivr/Documents/GitHub/Zybo_mipi/zybo_ov5640/vitis/design_1_wrapper/tempdsa/design_1_wrapper.xsa
+TRACE::2020-08-14.20:47:32::SCWPlatform:: Unique name xilinx:zybo-z7-20::0.0
+TRACE::2020-08-14.20:47:32::SCWPlatform::update - Opened existing hwdb design_1_wrapper_8
+TRACE::2020-08-14.20:47:32::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2020-08-14.20:47:32::SCWMssOS::Doing hw sync for the mss in domain: standalone_domain
+TRACE::2020-08-14.20:47:32::SCWPlatform::Trying to open the hw design at C:/Users/ivr/Documents/GitHub/Zybo_mipi/zybo_ov5640/vitis/design_1_wrapper/hw/design_1_wrapper.xsa
+TRACE::2020-08-14.20:47:32::SCWPlatform::DSA given C:/Users/ivr/Documents/GitHub/Zybo_mipi/zybo_ov5640/vitis/design_1_wrapper/hw/design_1_wrapper.xsa
+TRACE::2020-08-14.20:47:32::SCWPlatform::DSA absoulate path C:/Users/ivr/Documents/GitHub/Zybo_mipi/zybo_ov5640/vitis/design_1_wrapper/hw/design_1_wrapper.xsa
+TRACE::2020-08-14.20:47:32::SCWPlatform::DSA directory C:/Users/ivr/Documents/GitHub/Zybo_mipi/zybo_ov5640/vitis/design_1_wrapper/hw
+TRACE::2020-08-14.20:47:32::SCWPlatform:: Platform Path C:/Users/ivr/Documents/GitHub/Zybo_mipi/zybo_ov5640/vitis/design_1_wrapper/hw/design_1_wrapper.xsa
+TRACE::2020-08-14.20:47:32::SCWPlatform:: Unique name xilinx:zybo-z7-20::0.0
+TRACE::2020-08-14.20:47:32::SCWPlatform::Trying to set the existing hwdb with name design_1_wrapper_7
+TRACE::2020-08-14.20:47:32::SCWPlatform::Opened existing hwdb design_1_wrapper_7
+TRACE::2020-08-14.20:47:32::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2020-08-14.20:47:32::SCWPlatform::Trying to open the hw design at C:/Users/ivr/Documents/GitHub/Zybo_mipi/zybo_ov5640/vitis/design_1_wrapper/hw/design_1_wrapper.xsa
+TRACE::2020-08-14.20:47:32::SCWPlatform::DSA given C:/Users/ivr/Documents/GitHub/Zybo_mipi/zybo_ov5640/vitis/design_1_wrapper/hw/design_1_wrapper.xsa
+TRACE::2020-08-14.20:47:32::SCWPlatform::DSA absoulate path C:/Users/ivr/Documents/GitHub/Zybo_mipi/zybo_ov5640/vitis/design_1_wrapper/hw/design_1_wrapper.xsa
+TRACE::2020-08-14.20:47:32::SCWPlatform::DSA directory C:/Users/ivr/Documents/GitHub/Zybo_mipi/zybo_ov5640/vitis/design_1_wrapper/hw
+TRACE::2020-08-14.20:47:32::SCWPlatform:: Platform Path C:/Users/ivr/Documents/GitHub/Zybo_mipi/zybo_ov5640/vitis/design_1_wrapper/hw/design_1_wrapper.xsa
+TRACE::2020-08-14.20:47:32::SCWPlatform:: Unique name xilinx:zybo-z7-20::0.0
+TRACE::2020-08-14.20:47:32::SCWPlatform::Trying to set the existing hwdb with name design_1_wrapper_7
+TRACE::2020-08-14.20:47:32::SCWPlatform::Opened existing hwdb design_1_wrapper_7
+TRACE::2020-08-14.20:47:32::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2020-08-14.20:47:32::SCWMssOS::Checking the sw design at  C:/Users/ivr/Documents/GitHub/Zybo_mipi/zybo_ov5640/vitis/design_1_wrapper/ps7_cortexa9_0/standalone_domain/bsp/system.mss
+TRACE::2020-08-14.20:47:32::SCWMssOS::DEBUG:  swdes dump  C:/Users/ivr/Documents/GitHub/Zybo_mipi/zybo_ov5640/vitis/design_1_wrapper/ps7_cortexa9_0/standalone_domain/bsp/system.mss|system_0||
+C:/Users/ivr/Documents/GitHub/Zybo_mipi/zybo_ov5640/vitis/design_1_wrapper/zynq_fsbl/zynq_fsbl_bsp/system.mss|system||
+
+TRACE::2020-08-14.20:47:32::SCWMssOS::Sw design exists and opened at  C:/Users/ivr/Documents/GitHub/Zybo_mipi/zybo_ov5640/vitis/design_1_wrapper/ps7_cortexa9_0/standalone_domain/bsp/system.mss
+TRACE::2020-08-14.20:47:32::SCWPlatform::Trying to open the hw design at C:/Users/ivr/Documents/GitHub/Zybo_mipi/zybo_ov5640/vitis/design_1_wrapper/tempdsa/design_1_wrapper.xsa
+TRACE::2020-08-14.20:47:32::SCWPlatform::DSA given C:/Users/ivr/Documents/GitHub/Zybo_mipi/zybo_ov5640/vitis/design_1_wrapper/tempdsa/design_1_wrapper.xsa
+TRACE::2020-08-14.20:47:32::SCWPlatform::DSA absoulate path C:/Users/ivr/Documents/GitHub/Zybo_mipi/zybo_ov5640/vitis/design_1_wrapper/tempdsa/design_1_wrapper.xsa
+TRACE::2020-08-14.20:47:32::SCWPlatform::DSA directory C:/Users/ivr/Documents/GitHub/Zybo_mipi/zybo_ov5640/vitis/design_1_wrapper/tempdsa
+TRACE::2020-08-14.20:47:32::SCWPlatform:: Platform Path C:/Users/ivr/Documents/GitHub/Zybo_mipi/zybo_ov5640/vitis/design_1_wrapper/tempdsa/design_1_wrapper.xsa
+TRACE::2020-08-14.20:47:32::SCWPlatform:: Unique name xilinx:zybo-z7-20::0.0
+TRACE::2020-08-14.20:47:32::SCWPlatform::update - Opened existing hwdb design_1_wrapper_8
+TRACE::2020-08-14.20:47:32::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2020-08-14.20:47:32::SCWMssOS::Completed hw sync for the mss in domain: zynq_fsbl
+TRACE::2020-08-14.20:47:32::SCWMssOS::Completed hw sync for the mss in domain: standalone_domain
+TRACE::2020-08-14.20:47:33::SCWPlatform::Trying to open the hw design at C:/Users/ivr/Documents/GitHub/Zybo_mipi/zybo_ov5640/vitis/design_1_wrapper/hw/design_1_wrapper.xsa
+TRACE::2020-08-14.20:47:33::SCWPlatform::DSA given C:/Users/ivr/Documents/GitHub/Zybo_mipi/zybo_ov5640/vitis/design_1_wrapper/hw/design_1_wrapper.xsa
+TRACE::2020-08-14.20:47:33::SCWPlatform::DSA absoulate path C:/Users/ivr/Documents/GitHub/Zybo_mipi/zybo_ov5640/vitis/design_1_wrapper/hw/design_1_wrapper.xsa
+TRACE::2020-08-14.20:47:33::SCWPlatform::DSA directory C:/Users/ivr/Documents/GitHub/Zybo_mipi/zybo_ov5640/vitis/design_1_wrapper/hw
+TRACE::2020-08-14.20:47:33::SCWPlatform:: Platform Path C:/Users/ivr/Documents/GitHub/Zybo_mipi/zybo_ov5640/vitis/design_1_wrapper/hw/design_1_wrapper.xsa
+TRACE::2020-08-14.20:47:33::SCWPlatform:: Unique name xilinx:zybo-z7-20::0.0
+TRACE::2020-08-14.20:47:33::SCWPlatform::Do not have an existing db opened. 
+TRACE::2020-08-14.20:47:39::SCWPlatform::Opened new HwDB with name design_1_wrapper_9
+TRACE::2020-08-14.20:47:39::SCWPlatform::Trying to open the hw design at C:/Users/ivr/Documents/GitHub/Zybo_mipi/zybo_ov5640/vitis/design_1_wrapper/hw/design_1_wrapper.xsa
+TRACE::2020-08-14.20:47:39::SCWPlatform::DSA given C:/Users/ivr/Documents/GitHub/Zybo_mipi/zybo_ov5640/vitis/design_1_wrapper/hw/design_1_wrapper.xsa
+TRACE::2020-08-14.20:47:39::SCWPlatform::DSA absoulate path C:/Users/ivr/Documents/GitHub/Zybo_mipi/zybo_ov5640/vitis/design_1_wrapper/hw/design_1_wrapper.xsa
+TRACE::2020-08-14.20:47:39::SCWPlatform::DSA directory C:/Users/ivr/Documents/GitHub/Zybo_mipi/zybo_ov5640/vitis/design_1_wrapper/hw
+TRACE::2020-08-14.20:47:39::SCWPlatform:: Platform Path C:/Users/ivr/Documents/GitHub/Zybo_mipi/zybo_ov5640/vitis/design_1_wrapper/hw/design_1_wrapper.xsa
+TRACE::2020-08-14.20:47:39::SCWPlatform:: Unique name xilinx:zybo-z7-20::0.0
+TRACE::2020-08-14.20:47:39::SCWPlatform::Trying to set the existing hwdb with name design_1_wrapper_9
+TRACE::2020-08-14.20:47:39::SCWPlatform::Opened existing hwdb design_1_wrapper_9
+TRACE::2020-08-14.20:47:39::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2020-08-14.20:47:39::SCWMssOS::Checking the sw design at  C:/Users/ivr/Documents/GitHub/Zybo_mipi/zybo_ov5640/vitis/design_1_wrapper/zynq_fsbl/zynq_fsbl_bsp/system.mss
+TRACE::2020-08-14.20:47:39::SCWMssOS::DEBUG:  swdes dump  C:/Users/ivr/Documents/GitHub/Zybo_mipi/zybo_ov5640/vitis/design_1_wrapper/ps7_cortexa9_0/standalone_domain/bsp/system.mss|system_0||
+C:/Users/ivr/Documents/GitHub/Zybo_mipi/zybo_ov5640/vitis/design_1_wrapper/zynq_fsbl/zynq_fsbl_bsp/system.mss|system||
+
+TRACE::2020-08-14.20:47:39::SCWMssOS::Sw design exists and opened at  C:/Users/ivr/Documents/GitHub/Zybo_mipi/zybo_ov5640/vitis/design_1_wrapper/zynq_fsbl/zynq_fsbl_bsp/system.mss
+TRACE::2020-08-14.20:47:39::SCWPlatform::Trying to open the hw design at C:/Users/ivr/Documents/GitHub/Zybo_mipi/zybo_ov5640/vitis/design_1_wrapper/hw/design_1_wrapper.xsa
+TRACE::2020-08-14.20:47:39::SCWPlatform::DSA given C:/Users/ivr/Documents/GitHub/Zybo_mipi/zybo_ov5640/vitis/design_1_wrapper/hw/design_1_wrapper.xsa
+TRACE::2020-08-14.20:47:39::SCWPlatform::DSA absoulate path C:/Users/ivr/Documents/GitHub/Zybo_mipi/zybo_ov5640/vitis/design_1_wrapper/hw/design_1_wrapper.xsa
+TRACE::2020-08-14.20:47:39::SCWPlatform::DSA directory C:/Users/ivr/Documents/GitHub/Zybo_mipi/zybo_ov5640/vitis/design_1_wrapper/hw
+TRACE::2020-08-14.20:47:39::SCWPlatform:: Platform Path C:/Users/ivr/Documents/GitHub/Zybo_mipi/zybo_ov5640/vitis/design_1_wrapper/hw/design_1_wrapper.xsa
+TRACE::2020-08-14.20:47:39::SCWPlatform:: Unique name xilinx:zybo-z7-20::0.0
+TRACE::2020-08-14.20:47:39::SCWPlatform::Trying to set the existing hwdb with name design_1_wrapper_9
+TRACE::2020-08-14.20:47:39::SCWPlatform::Opened existing hwdb design_1_wrapper_9
+TRACE::2020-08-14.20:47:39::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2020-08-14.20:47:39::SCWMssOS::Checking the sw design at  C:/Users/ivr/Documents/GitHub/Zybo_mipi/zybo_ov5640/vitis/design_1_wrapper/zynq_fsbl/zynq_fsbl_bsp/system.mss
+TRACE::2020-08-14.20:47:39::SCWMssOS::DEBUG:  swdes dump  C:/Users/ivr/Documents/GitHub/Zybo_mipi/zybo_ov5640/vitis/design_1_wrapper/ps7_cortexa9_0/standalone_domain/bsp/system.mss|system_0||
+C:/Users/ivr/Documents/GitHub/Zybo_mipi/zybo_ov5640/vitis/design_1_wrapper/zynq_fsbl/zynq_fsbl_bsp/system.mss|system||
+
+TRACE::2020-08-14.20:47:39::SCWMssOS::Sw design exists and opened at  C:/Users/ivr/Documents/GitHub/Zybo_mipi/zybo_ov5640/vitis/design_1_wrapper/zynq_fsbl/zynq_fsbl_bsp/system.mss
+TRACE::2020-08-14.20:47:39::SCWPlatform::Trying to open the hw design at C:/Users/ivr/Documents/GitHub/Zybo_mipi/zybo_ov5640/vitis/design_1_wrapper/hw/design_1_wrapper.xsa
+TRACE::2020-08-14.20:47:39::SCWPlatform::DSA given C:/Users/ivr/Documents/GitHub/Zybo_mipi/zybo_ov5640/vitis/design_1_wrapper/hw/design_1_wrapper.xsa
+TRACE::2020-08-14.20:47:39::SCWPlatform::DSA absoulate path C:/Users/ivr/Documents/GitHub/Zybo_mipi/zybo_ov5640/vitis/design_1_wrapper/hw/design_1_wrapper.xsa
+TRACE::2020-08-14.20:47:39::SCWPlatform::DSA directory C:/Users/ivr/Documents/GitHub/Zybo_mipi/zybo_ov5640/vitis/design_1_wrapper/hw
+TRACE::2020-08-14.20:47:39::SCWPlatform:: Platform Path C:/Users/ivr/Documents/GitHub/Zybo_mipi/zybo_ov5640/vitis/design_1_wrapper/hw/design_1_wrapper.xsa
+TRACE::2020-08-14.20:47:39::SCWPlatform:: Unique name xilinx:zybo-z7-20::0.0
+TRACE::2020-08-14.20:47:39::SCWPlatform::Trying to set the existing hwdb with name design_1_wrapper_9
+TRACE::2020-08-14.20:47:39::SCWPlatform::Opened existing hwdb design_1_wrapper_9
+TRACE::2020-08-14.20:47:39::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2020-08-14.20:47:39::SCWMssOS::Checking the sw design at  C:/Users/ivr/Documents/GitHub/Zybo_mipi/zybo_ov5640/vitis/design_1_wrapper/ps7_cortexa9_0/standalone_domain/bsp/system.mss
+TRACE::2020-08-14.20:47:39::SCWMssOS::DEBUG:  swdes dump  C:/Users/ivr/Documents/GitHub/Zybo_mipi/zybo_ov5640/vitis/design_1_wrapper/ps7_cortexa9_0/standalone_domain/bsp/system.mss|system_0||
+C:/Users/ivr/Documents/GitHub/Zybo_mipi/zybo_ov5640/vitis/design_1_wrapper/zynq_fsbl/zynq_fsbl_bsp/system.mss|system||
+
+TRACE::2020-08-14.20:47:39::SCWMssOS::Sw design exists and opened at  C:/Users/ivr/Documents/GitHub/Zybo_mipi/zybo_ov5640/vitis/design_1_wrapper/ps7_cortexa9_0/standalone_domain/bsp/system.mss
+TRACE::2020-08-14.20:47:39::SCWWriter::formatted JSON is {
+	"platformName":	"design_1_wrapper",
+	"sprVersion":	"2.0",
+	"mode":	"gui",
+	"dsaType":	"Fixed",
+	"platformDesc":	"design_1_wrapper",
+	"platHandOff":	"C:/Users/ivr/Documents/GitHub/Zybo_mipi/zybo_ov5640/design_1_wrapper.xsa",
+	"platIntHandOff":	"<platformDir>/hw/design_1_wrapper.xsa",
+	"deviceType":	"zynq",
+	"platIsPrebuiltAutogen":	"false",
+	"platIsNoBootBsp":	"false",
+	"hasFsblMakeHasChanges":	"false",
+	"hasPmufwMakeHasChanges":	"false",
+	"platPreBuiltFlag":	false,
+	"platformSamplesDir":	"",
+	"platActiveSys":	"design_1_wrapper",
+	"systems":	[{
+			"systemName":	"design_1_wrapper",
+			"systemDesc":	"design_1_wrapper",
+			"sysIsBootAutoGen":	"true",
+			"systemDispName":	"design_1_wrapper",
+			"sysActiveDom":	"standalone_domain",
+			"sysDefaultDom":	"standalone_domain",
+			"domains":	[{
+					"domainName":	"zynq_fsbl",
+					"domainDispName":	"zynq_fsbl",
+					"domainDesc":	"FSBL Application BSP - Auto Generated.",
+					"processors":	"ps7_cortexa9_0",
+					"os":	"standalone",
+					"sdxOs":	"standalone",
+					"debugEnable":	"",
+					"domRuntimes":	["cpp"],
+					"swRepo":	"",
+					"mssOsVer":	"7.1",
+					"mssFile":	"",
+					"md5Digest":	"0b996db22168e82f4e5264323bacd241",
+					"compatibleApp":	"zynq_fsbl",
+					"domType":	"bootDomain",
+					"appSettings":	{
+						"appCompilerFlags":	"",
+						"appLinkerFlags":	""
+					},
+					"addedLibs":	["xilffs:4.2", "xilrsa:1.5"],
+					"libOptions":	{
+						"libsContainingOptions":	[]
+					},
+					"prebuiltLibs":	{
+						"prebuiltIncPath":	[],
+						"prebuiltLibPath":	[]
+					},
+					"isolation":	{
+					}
+				}, {
+					"domainName":	"standalone_domain",
+					"domainDispName":	"standalone on ps7_cortexa9_0",
+					"domainDesc":	"standalone_domain",
+					"processors":	"ps7_cortexa9_0",
+					"os":	"standalone",
+					"sdxOs":	"standalone",
+					"qemuArgs":	"C:/Xilinx/Vitis/2019.2/data/emulation/platforms/zynq/qemu/qemu_args.txt",
+					"qemuData":	"C:/Xilinx/Vitis/2019.2/data/emulation/platforms/zynq/qemu/",
+					"debugEnable":	"False",
+					"domRuntimes":	["cpp"],
+					"swRepo":	"",
+					"mssOsVer":	"7.1",
+					"mssFile":	"",
+					"md5Digest":	"d33a85c4fd598e99ebdad119685365ea",
+					"compatibleApp":	"",
+					"domType":	"mssDomain",
+					"arch":	"32-bit",
+					"appSettings":	{
+						"appCompilerFlags":	"",
+						"appLinkerFlags":	""
+					},
+					"addedLibs":	[],
+					"libOptions":	{
+						"libsContainingOptions":	[]
+					},
+					"prebuiltLibs":	{
+						"prebuiltIncPath":	[],
+						"prebuiltLibPath":	[]
+					},
+					"isolation":	{
+					}
+				}]
+		}]
+}
+LOG::2020-08-14.20:47:45::SCWPlatform::Started generating the artifacts platform design_1_wrapper
+TRACE::2020-08-14.20:47:45::SCWPlatform::Sanity checking of platform is completed
+LOG::2020-08-14.20:47:45::SCWPlatform::Started generating the artifacts for system configuration design_1_wrapper
+LOG::2020-08-14.20:47:45::SCWSystem::Checking the domain zynq_fsbl
+LOG::2020-08-14.20:47:45::SCWSystem::Doing application build for :  zynq_fsbl
+TRACE::2020-08-14.20:47:45::SCWBDomain::Not a forced makefile updation, No changes are present. 
+TRACE::2020-08-14.20:47:45::SCWDomain::Skipping the build for domain :  zynq_fsbl
+LOG::2020-08-14.20:47:45::SCWSystem::Checking the domain standalone_domain
+LOG::2020-08-14.20:47:45::SCWSystem::Not a boot domain 
+LOG::2020-08-14.20:47:45::SCWSystem::Started Processing the domain standalone_domain
+TRACE::2020-08-14.20:47:45::SCWDomain::Generating domain artifcats
+TRACE::2020-08-14.20:47:45::SCWMssOS::Generating standalone artifcats
+TRACE::2020-08-14.20:47:45::SCWMssOS::Copying the qemu file from  C:/Xilinx/Vitis/2019.2/data/emulation/platforms/zynq/qemu/qemu_args.txt To C:/Users/ivr/Documents/GitHub/Zybo_mipi/zybo_ov5640/vitis/design_1_wrapper/export/design_1_wrapper/sw/design_1_wrapper/qemu/
+TRACE::2020-08-14.20:47:45::SCWMssOS::Copying the qemu file from  C:/Xilinx/Vitis/2019.2/data/emulation/platforms/zynq/qemu/qemu_args.txt To C:/Users/ivr/Documents/GitHub/Zybo_mipi/zybo_ov5640/vitis/design_1_wrapper/export/design_1_wrapper/sw/design_1_wrapper/standalone_domain/qemu/
+TRACE::2020-08-14.20:47:45::SCWMssOS:: Copying the user libraries. 
+TRACE::2020-08-14.20:47:45::SCWPlatform::Trying to open the hw design at C:/Users/ivr/Documents/GitHub/Zybo_mipi/zybo_ov5640/vitis/design_1_wrapper/hw/design_1_wrapper.xsa
+TRACE::2020-08-14.20:47:45::SCWPlatform::DSA given C:/Users/ivr/Documents/GitHub/Zybo_mipi/zybo_ov5640/vitis/design_1_wrapper/hw/design_1_wrapper.xsa
+TRACE::2020-08-14.20:47:45::SCWPlatform::DSA absoulate path C:/Users/ivr/Documents/GitHub/Zybo_mipi/zybo_ov5640/vitis/design_1_wrapper/hw/design_1_wrapper.xsa
+TRACE::2020-08-14.20:47:45::SCWPlatform::DSA directory C:/Users/ivr/Documents/GitHub/Zybo_mipi/zybo_ov5640/vitis/design_1_wrapper/hw
+TRACE::2020-08-14.20:47:45::SCWPlatform:: Platform Path C:/Users/ivr/Documents/GitHub/Zybo_mipi/zybo_ov5640/vitis/design_1_wrapper/hw/design_1_wrapper.xsa
+TRACE::2020-08-14.20:47:45::SCWPlatform:: Unique name xilinx:zybo-z7-20::0.0
+TRACE::2020-08-14.20:47:45::SCWPlatform::Trying to set the existing hwdb with name design_1_wrapper_9
+TRACE::2020-08-14.20:47:45::SCWPlatform::Opened existing hwdb design_1_wrapper_9
+TRACE::2020-08-14.20:47:45::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2020-08-14.20:47:45::SCWMssOS::Checking the sw design at  C:/Users/ivr/Documents/GitHub/Zybo_mipi/zybo_ov5640/vitis/design_1_wrapper/ps7_cortexa9_0/standalone_domain/bsp/system.mss
+TRACE::2020-08-14.20:47:45::SCWMssOS::DEBUG:  swdes dump  C:/Users/ivr/Documents/GitHub/Zybo_mipi/zybo_ov5640/vitis/design_1_wrapper/ps7_cortexa9_0/standalone_domain/bsp/system.mss|system_0||
+C:/Users/ivr/Documents/GitHub/Zybo_mipi/zybo_ov5640/vitis/design_1_wrapper/zynq_fsbl/zynq_fsbl_bsp/system.mss|system||
+
+TRACE::2020-08-14.20:47:45::SCWMssOS::Sw design exists and opened at  C:/Users/ivr/Documents/GitHub/Zybo_mipi/zybo_ov5640/vitis/design_1_wrapper/ps7_cortexa9_0/standalone_domain/bsp/system.mss
+TRACE::2020-08-14.20:47:45::SCWMssOS::Completed writing the mss file at C:/Users/ivr/Documents/GitHub/Zybo_mipi/zybo_ov5640/vitis/design_1_wrapper/ps7_cortexa9_0/standalone_domain/bsp
+TRACE::2020-08-14.20:47:45::SCWMssOS::Mss edits present, copying mssfile into export location C:/Users/ivr/Documents/GitHub/Zybo_mipi/zybo_ov5640/vitis/design_1_wrapper/ps7_cortexa9_0/standalone_domain/bsp/system.mss
+TRACE::2020-08-14.20:47:45::SCWMssOS::bsp generated is upto date with the mss file. Skipping bsp generation.
+TRACE::2020-08-14.20:47:45::SCWMssOS::BSP is already built. skipping the bsp build ... 
+TRACE::2020-08-14.20:47:45::SCWDomain::Skipping the build for domain :  standalone_domain
+TRACE::2020-08-14.20:47:45::SCWMssOS::skipping the bsp build ... 
+TRACE::2020-08-14.20:47:45::SCWMssOS::Copying to export directory.
+TRACE::2020-08-14.20:47:45::SCWMssOS:: Checking if to create the Supporting Applications
+TRACE::2020-08-14.20:47:45::SCWMssOS:: No Linux domain exists, trying to generate FSBL 
+LOG::2020-08-14.20:47:45::SCWSystem::Completed Processing the domain standalone_domain
+LOG::2020-08-14.20:47:45::SCWSystem::Completed Processing the sysconfig design_1_wrapper
+LOG::2020-08-14.20:47:45::SCWPlatform::Completed generating the artifacts for system configuration design_1_wrapper
+TRACE::2020-08-14.20:47:45::SCWPlatform::Started preparing the platform 
+TRACE::2020-08-14.20:47:45::SCWSystem::Writing the bif file for system config design_1_wrapper
+TRACE::2020-08-14.20:47:45::SCWSystem::dir created 
+TRACE::2020-08-14.20:47:45::SCWSystem::Writing the bif 
+TRACE::2020-08-14.20:47:45::SCWPlatform::Started writing the spfm file 
+TRACE::2020-08-14.20:47:45::SCWPlatform::Started writing the xpfm file 
+TRACE::2020-08-14.20:47:45::SCWPlatform::Completed generating the platform
+TRACE::2020-08-14.20:47:45::SCWPlatform::Trying to open the hw design at C:/Users/ivr/Documents/GitHub/Zybo_mipi/zybo_ov5640/vitis/design_1_wrapper/hw/design_1_wrapper.xsa
+TRACE::2020-08-14.20:47:45::SCWPlatform::DSA given C:/Users/ivr/Documents/GitHub/Zybo_mipi/zybo_ov5640/vitis/design_1_wrapper/hw/design_1_wrapper.xsa
+TRACE::2020-08-14.20:47:45::SCWPlatform::DSA absoulate path C:/Users/ivr/Documents/GitHub/Zybo_mipi/zybo_ov5640/vitis/design_1_wrapper/hw/design_1_wrapper.xsa
+TRACE::2020-08-14.20:47:45::SCWPlatform::DSA directory C:/Users/ivr/Documents/GitHub/Zybo_mipi/zybo_ov5640/vitis/design_1_wrapper/hw
+TRACE::2020-08-14.20:47:45::SCWPlatform:: Platform Path C:/Users/ivr/Documents/GitHub/Zybo_mipi/zybo_ov5640/vitis/design_1_wrapper/hw/design_1_wrapper.xsa
+TRACE::2020-08-14.20:47:45::SCWPlatform:: Unique name xilinx:zybo-z7-20::0.0
+TRACE::2020-08-14.20:47:45::SCWPlatform::Trying to set the existing hwdb with name design_1_wrapper_9
+TRACE::2020-08-14.20:47:45::SCWPlatform::Opened existing hwdb design_1_wrapper_9
+TRACE::2020-08-14.20:47:45::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2020-08-14.20:47:45::SCWMssOS::Checking the sw design at  C:/Users/ivr/Documents/GitHub/Zybo_mipi/zybo_ov5640/vitis/design_1_wrapper/zynq_fsbl/zynq_fsbl_bsp/system.mss
+TRACE::2020-08-14.20:47:45::SCWMssOS::DEBUG:  swdes dump  C:/Users/ivr/Documents/GitHub/Zybo_mipi/zybo_ov5640/vitis/design_1_wrapper/ps7_cortexa9_0/standalone_domain/bsp/system.mss|system_0||
+C:/Users/ivr/Documents/GitHub/Zybo_mipi/zybo_ov5640/vitis/design_1_wrapper/zynq_fsbl/zynq_fsbl_bsp/system.mss|system||
+
+TRACE::2020-08-14.20:47:45::SCWMssOS::Sw design exists and opened at  C:/Users/ivr/Documents/GitHub/Zybo_mipi/zybo_ov5640/vitis/design_1_wrapper/zynq_fsbl/zynq_fsbl_bsp/system.mss
+TRACE::2020-08-14.20:47:45::SCWPlatform::Trying to open the hw design at C:/Users/ivr/Documents/GitHub/Zybo_mipi/zybo_ov5640/vitis/design_1_wrapper/hw/design_1_wrapper.xsa
+TRACE::2020-08-14.20:47:45::SCWPlatform::DSA given C:/Users/ivr/Documents/GitHub/Zybo_mipi/zybo_ov5640/vitis/design_1_wrapper/hw/design_1_wrapper.xsa
+TRACE::2020-08-14.20:47:45::SCWPlatform::DSA absoulate path C:/Users/ivr/Documents/GitHub/Zybo_mipi/zybo_ov5640/vitis/design_1_wrapper/hw/design_1_wrapper.xsa
+TRACE::2020-08-14.20:47:45::SCWPlatform::DSA directory C:/Users/ivr/Documents/GitHub/Zybo_mipi/zybo_ov5640/vitis/design_1_wrapper/hw
+TRACE::2020-08-14.20:47:45::SCWPlatform:: Platform Path C:/Users/ivr/Documents/GitHub/Zybo_mipi/zybo_ov5640/vitis/design_1_wrapper/hw/design_1_wrapper.xsa
+TRACE::2020-08-14.20:47:46::SCWPlatform:: Unique name xilinx:zybo-z7-20::0.0
+TRACE::2020-08-14.20:47:46::SCWPlatform::Trying to set the existing hwdb with name design_1_wrapper_9
+TRACE::2020-08-14.20:47:46::SCWPlatform::Opened existing hwdb design_1_wrapper_9
+TRACE::2020-08-14.20:47:46::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2020-08-14.20:47:46::SCWMssOS::Checking the sw design at  C:/Users/ivr/Documents/GitHub/Zybo_mipi/zybo_ov5640/vitis/design_1_wrapper/ps7_cortexa9_0/standalone_domain/bsp/system.mss
+TRACE::2020-08-14.20:47:46::SCWMssOS::DEBUG:  swdes dump  C:/Users/ivr/Documents/GitHub/Zybo_mipi/zybo_ov5640/vitis/design_1_wrapper/ps7_cortexa9_0/standalone_domain/bsp/system.mss|system_0||
+C:/Users/ivr/Documents/GitHub/Zybo_mipi/zybo_ov5640/vitis/design_1_wrapper/zynq_fsbl/zynq_fsbl_bsp/system.mss|system||
+
+TRACE::2020-08-14.20:47:46::SCWMssOS::Sw design exists and opened at  C:/Users/ivr/Documents/GitHub/Zybo_mipi/zybo_ov5640/vitis/design_1_wrapper/ps7_cortexa9_0/standalone_domain/bsp/system.mss
+TRACE::2020-08-14.20:47:46::SCWWriter::formatted JSON is {
+	"platformName":	"design_1_wrapper",
+	"sprVersion":	"2.0",
+	"mode":	"gui",
+	"dsaType":	"Fixed",
+	"platformDesc":	"design_1_wrapper",
+	"platHandOff":	"C:/Users/ivr/Documents/GitHub/Zybo_mipi/zybo_ov5640/design_1_wrapper.xsa",
+	"platIntHandOff":	"<platformDir>/hw/design_1_wrapper.xsa",
+	"deviceType":	"zynq",
+	"platIsPrebuiltAutogen":	"false",
+	"platIsNoBootBsp":	"false",
+	"hasFsblMakeHasChanges":	"false",
+	"hasPmufwMakeHasChanges":	"false",
+	"platPreBuiltFlag":	false,
+	"platformSamplesDir":	"",
+	"platActiveSys":	"design_1_wrapper",
+	"systems":	[{
+			"systemName":	"design_1_wrapper",
+			"systemDesc":	"design_1_wrapper",
+			"sysIsBootAutoGen":	"true",
+			"systemDispName":	"design_1_wrapper",
+			"sysActiveDom":	"standalone_domain",
+			"sysDefaultDom":	"standalone_domain",
+			"domains":	[{
+					"domainName":	"zynq_fsbl",
+					"domainDispName":	"zynq_fsbl",
+					"domainDesc":	"FSBL Application BSP - Auto Generated.",
+					"processors":	"ps7_cortexa9_0",
+					"os":	"standalone",
+					"sdxOs":	"standalone",
+					"debugEnable":	"",
+					"domRuntimes":	["cpp"],
+					"swRepo":	"",
+					"mssOsVer":	"7.1",
+					"mssFile":	"",
+					"md5Digest":	"0b996db22168e82f4e5264323bacd241",
+					"compatibleApp":	"zynq_fsbl",
+					"domType":	"bootDomain",
+					"appSettings":	{
+						"appCompilerFlags":	"",
+						"appLinkerFlags":	""
+					},
+					"addedLibs":	["xilffs:4.2", "xilrsa:1.5"],
+					"libOptions":	{
+						"libsContainingOptions":	[]
+					},
+					"prebuiltLibs":	{
+						"prebuiltIncPath":	[],
+						"prebuiltLibPath":	[]
+					},
+					"isolation":	{
+					}
+				}, {
+					"domainName":	"standalone_domain",
+					"domainDispName":	"standalone on ps7_cortexa9_0",
+					"domainDesc":	"standalone_domain",
+					"processors":	"ps7_cortexa9_0",
+					"os":	"standalone",
+					"sdxOs":	"standalone",
+					"qemuArgs":	"C:/Xilinx/Vitis/2019.2/data/emulation/platforms/zynq/qemu/qemu_args.txt",
+					"qemuData":	"C:/Xilinx/Vitis/2019.2/data/emulation/platforms/zynq/qemu/",
+					"debugEnable":	"False",
+					"domRuntimes":	["cpp"],
+					"swRepo":	"",
+					"mssOsVer":	"7.1",
+					"mssFile":	"",
+					"md5Digest":	"d33a85c4fd598e99ebdad119685365ea",
+					"compatibleApp":	"",
+					"domType":	"mssDomain",
+					"arch":	"32-bit",
+					"appSettings":	{
+						"appCompilerFlags":	"",
+						"appLinkerFlags":	""
+					},
+					"addedLibs":	[],
+					"libOptions":	{
+						"libsContainingOptions":	[]
+					},
+					"prebuiltLibs":	{
+						"prebuiltIncPath":	[],
+						"prebuiltLibPath":	[]
+					},
+					"isolation":	{
+					}
+				}]
+		}]
+}
+KEYINFO::2020-08-14.20:47:46::SCWPlatform::updated the xpfm file.
+TRACE::2020-08-14.20:47:46::SCWPlatform::Trying to open the hw design at C:/Users/ivr/Documents/GitHub/Zybo_mipi/zybo_ov5640/vitis/design_1_wrapper/hw/design_1_wrapper.xsa
+TRACE::2020-08-14.20:47:46::SCWPlatform::DSA given C:/Users/ivr/Documents/GitHub/Zybo_mipi/zybo_ov5640/vitis/design_1_wrapper/hw/design_1_wrapper.xsa
+TRACE::2020-08-14.20:47:46::SCWPlatform::DSA absoulate path C:/Users/ivr/Documents/GitHub/Zybo_mipi/zybo_ov5640/vitis/design_1_wrapper/hw/design_1_wrapper.xsa
+TRACE::2020-08-14.20:47:46::SCWPlatform::DSA directory C:/Users/ivr/Documents/GitHub/Zybo_mipi/zybo_ov5640/vitis/design_1_wrapper/hw
+TRACE::2020-08-14.20:47:46::SCWPlatform:: Platform Path C:/Users/ivr/Documents/GitHub/Zybo_mipi/zybo_ov5640/vitis/design_1_wrapper/hw/design_1_wrapper.xsa
+TRACE::2020-08-14.20:47:46::SCWPlatform:: Unique name xilinx:zybo-z7-20::0.0
+TRACE::2020-08-14.20:47:46::SCWPlatform::Trying to set the existing hwdb with name design_1_wrapper_9
+TRACE::2020-08-14.20:47:46::SCWPlatform::Opened existing hwdb design_1_wrapper_9
+TRACE::2020-08-14.20:47:46::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2020-08-14.20:47:46::SCWMssOS::Checking the sw design at  C:/Users/ivr/Documents/GitHub/Zybo_mipi/zybo_ov5640/vitis/design_1_wrapper/ps7_cortexa9_0/standalone_domain/bsp/system.mss
+TRACE::2020-08-14.20:47:46::SCWMssOS::DEBUG:  swdes dump  C:/Users/ivr/Documents/GitHub/Zybo_mipi/zybo_ov5640/vitis/design_1_wrapper/ps7_cortexa9_0/standalone_domain/bsp/system.mss|system_0||
+C:/Users/ivr/Documents/GitHub/Zybo_mipi/zybo_ov5640/vitis/design_1_wrapper/zynq_fsbl/zynq_fsbl_bsp/system.mss|system||
+
+TRACE::2020-08-14.20:47:46::SCWMssOS::Sw design exists and opened at  C:/Users/ivr/Documents/GitHub/Zybo_mipi/zybo_ov5640/vitis/design_1_wrapper/ps7_cortexa9_0/standalone_domain/bsp/system.mss

@@ -56,13 +56,23 @@ int Init()
     XIicPs_SetSClk(&Iic, IIC_SCLK_RATE);
     printf("I2C configuration done.\n");
 
-
+    /*
     int result = WriteReg(0x3008, 0b11000000);
 	if(result != XST_SUCCESS){
 		xil_printf("Error: OV5640 RESET\n");
 		return XST_FAILURE;
 	}
 	usleep(300*1000);
+	*/
+
+	//reset
+	REG(GPIO_DATA) = 0x01;
+	usleep(100*1000); //100ms high
+	/* Set all of 4 pins(LEDs) as Low */
+	REG(GPIO_DATA) = 0x00;
+	usleep(100*1000); //100ms low
+	REG(GPIO_DATA) = 0x01;
+	usleep(100*1000); //100ms high(n>50ms)
 
     uint8_t id_h, id_l;
 	id_h = ReadReg(reg_ID_h);
@@ -82,7 +92,7 @@ int Init()
 	WriteReg(0x3103, 0x11);
 	//[7]=1 Software reset; [6]=0 Software power down; Default=0x02
 	WriteReg(0x3008, 0x82);
-	usleep(300*1000);
+	usleep(10*1000);
 
     return XST_SUCCESS;
 }
@@ -168,16 +178,6 @@ int main()
 
 
     print("Hello World\n\r");
-
-    REG(GPIO_TRI) = 0x00;
-    while(1){
-    	/* Set all of 4 pins(LEDs) as High */
-		REG(GPIO_DATA) = 0x0F;
-		sleep(1);
-		/* Set all of 4 pins(LEDs) as Low */
-		REG(GPIO_DATA) = 0x00;
-		sleep(1);
-    }
     cleanup_platform();
     return 0;
 }

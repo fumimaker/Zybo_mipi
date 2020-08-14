@@ -1,7 +1,7 @@
 //Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
 //--------------------------------------------------------------------------------
 //Tool Version: Vivado v.2019.2 (win64) Build 2708876 Wed Nov  6 21:40:23 MST 2019
-//Date        : Fri Aug 14 19:09:55 2020
+//Date        : Fri Aug 14 20:34:33 2020
 //Host        : LAPTOP-AG87OV99 running 64-bit major release  (build 9200)
 //Command     : generate_target design_1.bd
 //Design      : design_1
@@ -9,7 +9,7 @@
 //--------------------------------------------------------------------------------
 `timescale 1 ps / 1 ps
 
-(* CORE_GENERATION_INFO = "design_1,IP_Integrator,{x_ipVendor=xilinx.com,x_ipLibrary=BlockDiagram,x_ipName=design_1,x_ipVersion=1.00.a,x_ipLanguage=VERILOG,numBlks=13,numReposBlks=9,numNonXlnxBlks=0,numHierBlks=4,maxHierDepth=0,numSysgenBlks=0,numHlsBlks=0,numHdlrefBlks=0,numPkgbdBlks=0,bdsource=USER,da_axi4_cnt=7,da_board_cnt=6,da_clkrst_cnt=10,da_ps7_cnt=3,synth_mode=OOC_per_IP}" *) (* HW_HANDOFF = "design_1.hwdef" *) 
+(* CORE_GENERATION_INFO = "design_1,IP_Integrator,{x_ipVendor=xilinx.com,x_ipLibrary=BlockDiagram,x_ipName=design_1,x_ipVersion=1.00.a,x_ipLanguage=VERILOG,numBlks=13,numReposBlks=9,numNonXlnxBlks=0,numHierBlks=4,maxHierDepth=0,numSysgenBlks=0,numHlsBlks=0,numHdlrefBlks=0,numPkgbdBlks=0,bdsource=USER,da_axi4_cnt=8,da_board_cnt=7,da_clkrst_cnt=10,da_ps7_cnt=3,synth_mode=OOC_per_IP}" *) (* HW_HANDOFF = "design_1.hwdef" *) 
 module design_1
    (CLK,
     DDR_addr,
@@ -39,7 +39,8 @@ module design_1
     IIC_0_0_sda_i,
     IIC_0_0_sda_o,
     IIC_0_0_sda_t,
-    led_tri_o,
+    cam_gpio,
+    led,
     mipi_phy_if_0_clk_hs_n,
     mipi_phy_if_0_clk_hs_p,
     mipi_phy_if_0_clk_lp_n,
@@ -77,7 +78,8 @@ module design_1
   (* X_INTERFACE_INFO = "xilinx.com:interface:iic:1.0 IIC_0_0 SDA_I" *) input IIC_0_0_sda_i;
   (* X_INTERFACE_INFO = "xilinx.com:interface:iic:1.0 IIC_0_0 SDA_O" *) output IIC_0_0_sda_o;
   (* X_INTERFACE_INFO = "xilinx.com:interface:iic:1.0 IIC_0_0 SDA_T" *) output IIC_0_0_sda_t;
-  (* X_INTERFACE_INFO = "xilinx.com:interface:gpio:1.0 led " *) output [3:0]led_tri_o;
+  output [0:0]cam_gpio;
+  output [0:0]led;
   (* X_INTERFACE_INFO = "xilinx.com:interface:mipi_phy:1.0 mipi_phy_if_0 CLK_HS_N" *) input mipi_phy_if_0_clk_hs_n;
   (* X_INTERFACE_INFO = "xilinx.com:interface:mipi_phy:1.0 mipi_phy_if_0 CLK_HS_P" *) input mipi_phy_if_0_clk_hs_p;
   (* X_INTERFACE_INFO = "xilinx.com:interface:mipi_phy:1.0 mipi_phy_if_0 CLK_LP_N" *) input mipi_phy_if_0_clk_lp_n;
@@ -89,7 +91,7 @@ module design_1
   (* X_INTERFACE_INFO = "xilinx.com:signal:reset:1.0 RST.RESET_RTL RST" *) (* X_INTERFACE_PARAMETER = "XIL_INTERFACENAME RST.RESET_RTL, INSERT_VIP 0, POLARITY ACTIVE_HIGH" *) input reset_rtl;
 
   wire CLK_1;
-  wire [3:0]axi_gpio_0_GPIO_TRI_O;
+  wire [0:0]axi_gpio_0_gpio_io_o;
   wire clk_wiz_0_clk_out1;
   wire clk_wiz_0_locked;
   wire mipi_csi2_rx_subsyst_0_csirxss_csi_irq;
@@ -216,7 +218,8 @@ module design_1
   assign IIC_0_0_scl_t = processing_system7_0_IIC_0_SCL_T;
   assign IIC_0_0_sda_o = processing_system7_0_IIC_0_SDA_O;
   assign IIC_0_0_sda_t = processing_system7_0_IIC_0_SDA_T;
-  assign led_tri_o[3:0] = axi_gpio_0_GPIO_TRI_O;
+  assign cam_gpio[0] = axi_gpio_0_gpio_io_o;
+  assign led[0] = axi_gpio_0_gpio_io_o;
   assign mipi_phy_if_0_1_CLK_HS_N = mipi_phy_if_0_clk_hs_n;
   assign mipi_phy_if_0_1_CLK_HS_P = mipi_phy_if_0_clk_hs_p;
   assign mipi_phy_if_0_1_CLK_LP_N = mipi_phy_if_0_clk_lp_n;
@@ -228,8 +231,8 @@ module design_1
   assign processing_system7_0_IIC_0_SCL_I = IIC_0_0_scl_i;
   assign processing_system7_0_IIC_0_SDA_I = IIC_0_0_sda_i;
   assign reset_rtl_1 = reset_rtl;
-  design_1_axi_gpio_0_2 axi_gpio_0
-       (.gpio_io_o(axi_gpio_0_GPIO_TRI_O),
+  design_1_axi_gpio_0_3 axi_gpio_0
+       (.gpio_io_o(axi_gpio_0_gpio_io_o),
         .s_axi_aclk(processing_system7_0_FCLK_CLK0),
         .s_axi_araddr(ps7_0_axi_periph_M01_AXI_ARADDR[8:0]),
         .s_axi_aresetn(rst_clk_wiz_0_100M_peripheral_aresetn),

@@ -1,7 +1,7 @@
 {
   "design": {
     "design_info": {
-      "boundary_crc": "0x3865347CA655944C",
+      "boundary_crc": "0x57BEB2025A7DE6D8",
       "device": "xc7z020clg400-1",
       "name": "design_1",
       "synth_flow_mode": "Hierarchical",
@@ -97,10 +97,6 @@
             "value_src": "default"
           }
         }
-      },
-      "led": {
-        "mode": "Master",
-        "vlnv": "xilinx.com:interface:gpio_rtl:1.0"
       }
     },
     "ports": {
@@ -119,6 +115,16 @@
             "value": "ACTIVE_HIGH"
           }
         }
+      },
+      "cam_gpio": {
+        "direction": "O",
+        "left": "0",
+        "right": "0"
+      },
+      "led": {
+        "direction": "O",
+        "left": "0",
+        "right": "0"
       }
     },
     "components": {
@@ -1417,16 +1423,16 @@
               }
             },
             "interface_nets": {
-              "s00_couplers_to_auto_pc": {
-                "interface_ports": [
-                  "S_AXI",
-                  "auto_pc/S_AXI"
-                ]
-              },
               "auto_pc_to_s00_couplers": {
                 "interface_ports": [
                   "M_AXI",
                   "auto_pc/M_AXI"
+                ]
+              },
+              "s00_couplers_to_auto_pc": {
+                "interface_ports": [
+                  "S_AXI",
+                  "auto_pc/S_AXI"
                 ]
               }
             },
@@ -1555,16 +1561,16 @@
           }
         },
         "interface_nets": {
-          "ps7_0_axi_periph_to_s00_couplers": {
-            "interface_ports": [
-              "S00_AXI",
-              "s00_couplers/S_AXI"
-            ]
-          },
           "s00_couplers_to_xbar": {
             "interface_ports": [
               "s00_couplers/M_AXI",
               "xbar/S00_AXI"
+            ]
+          },
+          "ps7_0_axi_periph_to_s00_couplers": {
+            "interface_ports": [
+              "S00_AXI",
+              "s00_couplers/S_AXI"
             ]
           },
           "m00_couplers_to_ps7_0_axi_periph": {
@@ -1715,10 +1721,22 @@
       },
       "axi_gpio_0": {
         "vlnv": "xilinx.com:ip:axi_gpio:2.0",
-        "xci_name": "design_1_axi_gpio_0_2",
+        "xci_name": "design_1_axi_gpio_0_3",
         "parameters": {
+          "C_ALL_INPUTS": {
+            "value": "0"
+          },
+          "C_ALL_OUTPUTS": {
+            "value": "1"
+          },
+          "C_GPIO_WIDTH": {
+            "value": "1"
+          },
+          "C_INTERRUPT_PRESENT": {
+            "value": "0"
+          },
           "GPIO_BOARD_INTERFACE": {
-            "value": "leds_4bits"
+            "value": "Custom"
           },
           "USE_BOARD_FLOW": {
             "value": "true"
@@ -1731,12 +1749,6 @@
         "interface_ports": [
           "ps7_0_axi_periph/M01_AXI",
           "axi_gpio_0/S_AXI"
-        ]
-      },
-      "axi_gpio_0_GPIO": {
-        "interface_ports": [
-          "led",
-          "axi_gpio_0/GPIO"
         ]
       },
       "processing_system7_0_M_AXI_GP0": {
@@ -1853,6 +1865,13 @@
         "ports": [
           "mipi_csi2_rx_subsyst_0/rxbyteclkhs",
           "ila_0/probe2"
+        ]
+      },
+      "axi_gpio_0_gpio_io_o": {
+        "ports": [
+          "axi_gpio_0/gpio_io_o",
+          "cam_gpio",
+          "led"
         ]
       }
     },

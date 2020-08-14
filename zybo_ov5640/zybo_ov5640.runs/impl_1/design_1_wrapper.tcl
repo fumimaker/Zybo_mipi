@@ -60,6 +60,7 @@ proc step_failed { step } {
   close $ch
 }
 
+set_msg_config  -id {DRC NSTD-1}  -suppress 
 
 start_step init_design
 set ACTIVE_STEP init_design
