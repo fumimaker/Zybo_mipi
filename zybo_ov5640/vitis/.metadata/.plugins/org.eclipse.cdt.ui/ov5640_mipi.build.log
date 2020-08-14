@@ -1,25 +1,10 @@
-21:11:40 **** Incremental Build of configuration Debug for project ov5640_mipi ****
+22:51:58 **** Incremental Build of configuration Debug for project ov5640_mipi ****
 make all 
 make --no-print-directory pre-build
 a9-linaro-pre-build-step
 ' '
 make --no-print-directory main-build
-'Building file: ../src/helloworld.c'
-'Invoking: ARM v7 gcc compiler'
-arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -IC:/Users/ivr/Documents/GitHub/Zybo_mipi/zybo_ov5640/vitis/design_1_wrapper/export/design_1_wrapper/sw/design_1_wrapper/standalone_domain/bspinclude/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
-'Finished building: ../src/helloworld.c'
-' '
-'Building target: ov5640_mipi.elf'
-'Invoking: ARM v7 gcc linker'
-arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -LC:/Users/ivr/Documents/GitHub/Zybo_mipi/zybo_ov5640/vitis/design_1_wrapper/export/design_1_wrapper/sw/design_1_wrapper/standalone_domain/bsplib/lib -o "ov5640_mipi.elf"  ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
-'Finished building target: ov5640_mipi.elf'
-' '
-'Invoking: ARM v7 Print Size'
-arm-none-eabi-size ov5640_mipi.elf  |tee "ov5640_mipi.elf.size"
-   text	   data	    bss	    dec	    hex	filename
-  64734	   2600	  23392	  90726	  16266	ov5640_mipi.elf
-'Finished building: ov5640_mipi.elf.size'
-' '
+make[1]: Nothing to be done for 'main-build'.
 
-21:11:41 Build Finished (took 1s.148ms)
+22:51:59 Build Finished (took 432ms)
 

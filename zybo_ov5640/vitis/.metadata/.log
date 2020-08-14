@@ -7412,3 +7412,246 @@ Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.]. Thread: Worker-51: Launc
 
 !ENTRY com.xilinx.sdk.utils 1 0 2020-08-14 21:13:44.276
 !MESSAGE Tool usage for 'TCF_SYSTEM_DEBUG' updated to '10'
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-08-14 22:02:04.408
+!MESSAGE XSCT Command: [ ::hsi::utils::set_current_hw_sw C:/Users/ivr/Documents/GitHub/Zybo_mipi/zybo_ov5640/vitis/design_1_wrapper/export/design_1_wrapper/hw/design_1_wrapper.xsa C:/Users/ivr/Documents/GitHub/Zybo_mipi/zybo_ov5640/vitis/design_1_wrapper/export/design_1_wrapper/sw/design_1_wrapper/standalone_domain/system.mss ], Thread: Worker-56: Build Project
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-08-14 22:02:04.424
+!MESSAGE XSCT command with result: [ ::hsi::utils::set_current_hw_sw C:/Users/ivr/Documents/GitHub/Zybo_mipi/zybo_ov5640/vitis/design_1_wrapper/export/design_1_wrapper/hw/design_1_wrapper.xsa C:/Users/ivr/Documents/GitHub/Zybo_mipi/zybo_ov5640/vitis/design_1_wrapper/export/design_1_wrapper/sw/design_1_wrapper/standalone_domain/system.mss ], Result: [null, ]. Thread: Worker-56: Build Project
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-08-14 22:02:04.433
+!MESSAGE XSCT Command: [::hsi::utils::get_hw_sw_details -json C:/Users/ivr/Documents/GitHub/Zybo_mipi/zybo_ov5640/vitis/design_1_wrapper/export/design_1_wrapper/hw/design_1_wrapper.xsa C:/Users/ivr/Documents/GitHub/Zybo_mipi/zybo_ov5640/vitis/design_1_wrapper/export/design_1_wrapper/sw/design_1_wrapper/standalone_domain/system.mss], Thread: Worker-56: Build Project
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-08-14 22:02:04.448
+!MESSAGE XSCT command with result: [::hsi::utils::get_hw_sw_details -json C:/Users/ivr/Documents/GitHub/Zybo_mipi/zybo_ov5640/vitis/design_1_wrapper/export/design_1_wrapper/hw/design_1_wrapper.xsa C:/Users/ivr/Documents/GitHub/Zybo_mipi/zybo_ov5640/vitis/design_1_wrapper/export/design_1_wrapper/sw/design_1_wrapper/standalone_domain/system.mss], Result: [null, {"procname": "ps7_cortexa9_0",
+"osname": "standalone",
+"osver": "7.1",
+}]. Thread: Worker-56: Build Project
+
+!ENTRY com.xilinx.sdk.utils 1 0 2020-08-14 22:02:04.456
+!MESSAGE Generating MD5 hash for file: C:\Users\ivr\Documents\GitHub\Zybo_mipi\zybo_ov5640\vitis\design_1_wrapper\export\design_1_wrapper\sw\design_1_wrapper\standalone_domain\system.mss ...
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-08-14 22:02:04.463
+!MESSAGE XSCT Command: [::hsi::utils::closesw C:/Users/ivr/Documents/GitHub/Zybo_mipi/zybo_ov5640/vitis/design_1_wrapper/export/design_1_wrapper/sw/design_1_wrapper/standalone_domain/system.mss], Thread: Worker-56: Build Project
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-08-14 22:02:04.472
+!MESSAGE XSCT command with result: [::hsi::utils::closesw C:/Users/ivr/Documents/GitHub/Zybo_mipi/zybo_ov5640/vitis/design_1_wrapper/export/design_1_wrapper/sw/design_1_wrapper/standalone_domain/system.mss], Result: [null, ]. Thread: Worker-56: Build Project
+
+!ENTRY com.xilinx.sdk.utils 1 0 2020-08-14 22:02:13.242
+!MESSAGE Tool usage for 'SDX_NO_OP_BUILD' updated to '9'
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-08-14 22:02:39.374
+!MESSAGE XSCT Command: [ ::hsi::utils::set_current_hw_sw C:/Users/ivr/Documents/GitHub/Zybo_mipi/zybo_ov5640/vitis/design_1_wrapper/export/design_1_wrapper/hw/design_1_wrapper.xsa C:/Users/ivr/Documents/GitHub/Zybo_mipi/zybo_ov5640/vitis/design_1_wrapper/export/design_1_wrapper/sw/design_1_wrapper/standalone_domain/system.mss ], Thread: Worker-54: Build Project
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-08-14 22:02:39.385
+!MESSAGE XSCT command with result: [ ::hsi::utils::set_current_hw_sw C:/Users/ivr/Documents/GitHub/Zybo_mipi/zybo_ov5640/vitis/design_1_wrapper/export/design_1_wrapper/hw/design_1_wrapper.xsa C:/Users/ivr/Documents/GitHub/Zybo_mipi/zybo_ov5640/vitis/design_1_wrapper/export/design_1_wrapper/sw/design_1_wrapper/standalone_domain/system.mss ], Result: [null, ]. Thread: Worker-54: Build Project
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-08-14 22:02:39.391
+!MESSAGE XSCT Command: [::hsi::utils::get_hw_sw_details -json C:/Users/ivr/Documents/GitHub/Zybo_mipi/zybo_ov5640/vitis/design_1_wrapper/export/design_1_wrapper/hw/design_1_wrapper.xsa C:/Users/ivr/Documents/GitHub/Zybo_mipi/zybo_ov5640/vitis/design_1_wrapper/export/design_1_wrapper/sw/design_1_wrapper/standalone_domain/system.mss], Thread: Worker-54: Build Project
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-08-14 22:02:39.403
+!MESSAGE XSCT command with result: [::hsi::utils::get_hw_sw_details -json C:/Users/ivr/Documents/GitHub/Zybo_mipi/zybo_ov5640/vitis/design_1_wrapper/export/design_1_wrapper/hw/design_1_wrapper.xsa C:/Users/ivr/Documents/GitHub/Zybo_mipi/zybo_ov5640/vitis/design_1_wrapper/export/design_1_wrapper/sw/design_1_wrapper/standalone_domain/system.mss], Result: [null, {"procname": "ps7_cortexa9_0",
+"osname": "standalone",
+"osver": "7.1",
+}]. Thread: Worker-54: Build Project
+
+!ENTRY com.xilinx.sdk.utils 1 0 2020-08-14 22:02:39.410
+!MESSAGE Generating MD5 hash for file: C:\Users\ivr\Documents\GitHub\Zybo_mipi\zybo_ov5640\vitis\design_1_wrapper\export\design_1_wrapper\sw\design_1_wrapper\standalone_domain\system.mss ...
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-08-14 22:02:39.417
+!MESSAGE XSCT Command: [::hsi::utils::closesw C:/Users/ivr/Documents/GitHub/Zybo_mipi/zybo_ov5640/vitis/design_1_wrapper/export/design_1_wrapper/sw/design_1_wrapper/standalone_domain/system.mss], Thread: Worker-54: Build Project
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-08-14 22:02:39.425
+!MESSAGE XSCT command with result: [::hsi::utils::closesw C:/Users/ivr/Documents/GitHub/Zybo_mipi/zybo_ov5640/vitis/design_1_wrapper/export/design_1_wrapper/sw/design_1_wrapper/standalone_domain/system.mss], Result: [null, ]. Thread: Worker-54: Build Project
+
+!ENTRY com.xilinx.sdk.utils 1 0 2020-08-14 22:02:47.894
+!MESSAGE Tool usage for 'SDX_NO_OP_BUILD' updated to '10'
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-08-14 22:04:16.618
+!MESSAGE XSCT Command: [ ::hsi::utils::set_current_hw_sw C:/Users/ivr/Documents/GitHub/Zybo_mipi/zybo_ov5640/vitis/design_1_wrapper/export/design_1_wrapper/hw/design_1_wrapper.xsa C:/Users/ivr/Documents/GitHub/Zybo_mipi/zybo_ov5640/vitis/design_1_wrapper/export/design_1_wrapper/sw/design_1_wrapper/standalone_domain/system.mss ], Thread: Worker-56: Build Project
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-08-14 22:04:16.629
+!MESSAGE XSCT command with result: [ ::hsi::utils::set_current_hw_sw C:/Users/ivr/Documents/GitHub/Zybo_mipi/zybo_ov5640/vitis/design_1_wrapper/export/design_1_wrapper/hw/design_1_wrapper.xsa C:/Users/ivr/Documents/GitHub/Zybo_mipi/zybo_ov5640/vitis/design_1_wrapper/export/design_1_wrapper/sw/design_1_wrapper/standalone_domain/system.mss ], Result: [null, ]. Thread: Worker-56: Build Project
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-08-14 22:04:16.635
+!MESSAGE XSCT Command: [::hsi::utils::get_hw_sw_details -json C:/Users/ivr/Documents/GitHub/Zybo_mipi/zybo_ov5640/vitis/design_1_wrapper/export/design_1_wrapper/hw/design_1_wrapper.xsa C:/Users/ivr/Documents/GitHub/Zybo_mipi/zybo_ov5640/vitis/design_1_wrapper/export/design_1_wrapper/sw/design_1_wrapper/standalone_domain/system.mss], Thread: Worker-56: Build Project
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-08-14 22:04:16.645
+!MESSAGE XSCT command with result: [::hsi::utils::get_hw_sw_details -json C:/Users/ivr/Documents/GitHub/Zybo_mipi/zybo_ov5640/vitis/design_1_wrapper/export/design_1_wrapper/hw/design_1_wrapper.xsa C:/Users/ivr/Documents/GitHub/Zybo_mipi/zybo_ov5640/vitis/design_1_wrapper/export/design_1_wrapper/sw/design_1_wrapper/standalone_domain/system.mss], Result: [null, {"procname": "ps7_cortexa9_0",
+"osname": "standalone",
+"osver": "7.1",
+}]. Thread: Worker-56: Build Project
+
+!ENTRY com.xilinx.sdk.utils 1 0 2020-08-14 22:04:16.652
+!MESSAGE Generating MD5 hash for file: C:\Users\ivr\Documents\GitHub\Zybo_mipi\zybo_ov5640\vitis\design_1_wrapper\export\design_1_wrapper\sw\design_1_wrapper\standalone_domain\system.mss ...
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-08-14 22:04:16.659
+!MESSAGE XSCT Command: [::hsi::utils::closesw C:/Users/ivr/Documents/GitHub/Zybo_mipi/zybo_ov5640/vitis/design_1_wrapper/export/design_1_wrapper/sw/design_1_wrapper/standalone_domain/system.mss], Thread: Worker-56: Build Project
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-08-14 22:04:16.668
+!MESSAGE XSCT command with result: [::hsi::utils::closesw C:/Users/ivr/Documents/GitHub/Zybo_mipi/zybo_ov5640/vitis/design_1_wrapper/export/design_1_wrapper/sw/design_1_wrapper/standalone_domain/system.mss], Result: [null, ]. Thread: Worker-56: Build Project
+
+!ENTRY com.xilinx.sdk.utils 1 0 2020-08-14 22:04:21.809
+!MESSAGE Tool usage for 'SDX_NO_OP_BUILD' updated to '11'
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-08-14 22:43:55.654
+!MESSAGE XSCT Command: [ ::hsi::utils::set_current_hw_sw C:/Users/ivr/Documents/GitHub/Zybo_mipi/zybo_ov5640/vitis/design_1_wrapper/export/design_1_wrapper/hw/design_1_wrapper.xsa C:/Users/ivr/Documents/GitHub/Zybo_mipi/zybo_ov5640/vitis/design_1_wrapper/export/design_1_wrapper/sw/design_1_wrapper/standalone_domain/system.mss ], Thread: Worker-68: Build Project
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-08-14 22:43:55.665
+!MESSAGE XSCT command with result: [ ::hsi::utils::set_current_hw_sw C:/Users/ivr/Documents/GitHub/Zybo_mipi/zybo_ov5640/vitis/design_1_wrapper/export/design_1_wrapper/hw/design_1_wrapper.xsa C:/Users/ivr/Documents/GitHub/Zybo_mipi/zybo_ov5640/vitis/design_1_wrapper/export/design_1_wrapper/sw/design_1_wrapper/standalone_domain/system.mss ], Result: [null, ]. Thread: Worker-68: Build Project
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-08-14 22:43:55.672
+!MESSAGE XSCT Command: [::hsi::utils::get_hw_sw_details -json C:/Users/ivr/Documents/GitHub/Zybo_mipi/zybo_ov5640/vitis/design_1_wrapper/export/design_1_wrapper/hw/design_1_wrapper.xsa C:/Users/ivr/Documents/GitHub/Zybo_mipi/zybo_ov5640/vitis/design_1_wrapper/export/design_1_wrapper/sw/design_1_wrapper/standalone_domain/system.mss], Thread: Worker-68: Build Project
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-08-14 22:43:55.681
+!MESSAGE XSCT command with result: [::hsi::utils::get_hw_sw_details -json C:/Users/ivr/Documents/GitHub/Zybo_mipi/zybo_ov5640/vitis/design_1_wrapper/export/design_1_wrapper/hw/design_1_wrapper.xsa C:/Users/ivr/Documents/GitHub/Zybo_mipi/zybo_ov5640/vitis/design_1_wrapper/export/design_1_wrapper/sw/design_1_wrapper/standalone_domain/system.mss], Result: [null, {"procname": "ps7_cortexa9_0",
+"osname": "standalone",
+"osver": "7.1",
+}]. Thread: Worker-68: Build Project
+
+!ENTRY com.xilinx.sdk.utils 1 0 2020-08-14 22:43:55.688
+!MESSAGE Generating MD5 hash for file: C:\Users\ivr\Documents\GitHub\Zybo_mipi\zybo_ov5640\vitis\design_1_wrapper\export\design_1_wrapper\sw\design_1_wrapper\standalone_domain\system.mss ...
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-08-14 22:43:55.694
+!MESSAGE XSCT Command: [::hsi::utils::closesw C:/Users/ivr/Documents/GitHub/Zybo_mipi/zybo_ov5640/vitis/design_1_wrapper/export/design_1_wrapper/sw/design_1_wrapper/standalone_domain/system.mss], Thread: Worker-68: Build Project
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-08-14 22:43:55.703
+!MESSAGE XSCT command with result: [::hsi::utils::closesw C:/Users/ivr/Documents/GitHub/Zybo_mipi/zybo_ov5640/vitis/design_1_wrapper/export/design_1_wrapper/sw/design_1_wrapper/standalone_domain/system.mss], Result: [null, ]. Thread: Worker-68: Build Project
+
+!ENTRY com.xilinx.sdk.utils 1 0 2020-08-14 22:44:00.744
+!MESSAGE Tool usage for 'SDX_NO_OP_BUILD' updated to '12'
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-08-14 22:44:34.059
+!MESSAGE XSCT Command: [ ::hsi::utils::set_current_hw_sw C:/Users/ivr/Documents/GitHub/Zybo_mipi/zybo_ov5640/vitis/design_1_wrapper/export/design_1_wrapper/hw/design_1_wrapper.xsa C:/Users/ivr/Documents/GitHub/Zybo_mipi/zybo_ov5640/vitis/design_1_wrapper/export/design_1_wrapper/sw/design_1_wrapper/standalone_domain/system.mss ], Thread: Worker-55: Build Project
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-08-14 22:44:34.071
+!MESSAGE XSCT command with result: [ ::hsi::utils::set_current_hw_sw C:/Users/ivr/Documents/GitHub/Zybo_mipi/zybo_ov5640/vitis/design_1_wrapper/export/design_1_wrapper/hw/design_1_wrapper.xsa C:/Users/ivr/Documents/GitHub/Zybo_mipi/zybo_ov5640/vitis/design_1_wrapper/export/design_1_wrapper/sw/design_1_wrapper/standalone_domain/system.mss ], Result: [null, ]. Thread: Worker-55: Build Project
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-08-14 22:44:34.080
+!MESSAGE XSCT Command: [::hsi::utils::get_hw_sw_details -json C:/Users/ivr/Documents/GitHub/Zybo_mipi/zybo_ov5640/vitis/design_1_wrapper/export/design_1_wrapper/hw/design_1_wrapper.xsa C:/Users/ivr/Documents/GitHub/Zybo_mipi/zybo_ov5640/vitis/design_1_wrapper/export/design_1_wrapper/sw/design_1_wrapper/standalone_domain/system.mss], Thread: Worker-55: Build Project
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-08-14 22:44:34.092
+!MESSAGE XSCT command with result: [::hsi::utils::get_hw_sw_details -json C:/Users/ivr/Documents/GitHub/Zybo_mipi/zybo_ov5640/vitis/design_1_wrapper/export/design_1_wrapper/hw/design_1_wrapper.xsa C:/Users/ivr/Documents/GitHub/Zybo_mipi/zybo_ov5640/vitis/design_1_wrapper/export/design_1_wrapper/sw/design_1_wrapper/standalone_domain/system.mss], Result: [null, {"procname": "ps7_cortexa9_0",
+"osname": "standalone",
+"osver": "7.1",
+}]. Thread: Worker-55: Build Project
+
+!ENTRY com.xilinx.sdk.utils 1 0 2020-08-14 22:44:34.100
+!MESSAGE Generating MD5 hash for file: C:\Users\ivr\Documents\GitHub\Zybo_mipi\zybo_ov5640\vitis\design_1_wrapper\export\design_1_wrapper\sw\design_1_wrapper\standalone_domain\system.mss ...
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-08-14 22:44:34.107
+!MESSAGE XSCT Command: [::hsi::utils::closesw C:/Users/ivr/Documents/GitHub/Zybo_mipi/zybo_ov5640/vitis/design_1_wrapper/export/design_1_wrapper/sw/design_1_wrapper/standalone_domain/system.mss], Thread: Worker-55: Build Project
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-08-14 22:44:34.115
+!MESSAGE XSCT command with result: [::hsi::utils::closesw C:/Users/ivr/Documents/GitHub/Zybo_mipi/zybo_ov5640/vitis/design_1_wrapper/export/design_1_wrapper/sw/design_1_wrapper/standalone_domain/system.mss], Result: [null, ]. Thread: Worker-55: Build Project
+
+!ENTRY com.xilinx.sdk.utils 1 0 2020-08-14 22:44:38.769
+!MESSAGE Tool usage for 'SDX_NO_OP_BUILD' updated to '13'
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-08-14 22:44:55.963
+!MESSAGE XSCT Command: [ ::hsi::utils::set_current_hw_sw C:/Users/ivr/Documents/GitHub/Zybo_mipi/zybo_ov5640/vitis/design_1_wrapper/export/design_1_wrapper/hw/design_1_wrapper.xsa C:/Users/ivr/Documents/GitHub/Zybo_mipi/zybo_ov5640/vitis/design_1_wrapper/export/design_1_wrapper/sw/design_1_wrapper/standalone_domain/system.mss ], Thread: Worker-68: Build Project
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-08-14 22:44:55.974
+!MESSAGE XSCT command with result: [ ::hsi::utils::set_current_hw_sw C:/Users/ivr/Documents/GitHub/Zybo_mipi/zybo_ov5640/vitis/design_1_wrapper/export/design_1_wrapper/hw/design_1_wrapper.xsa C:/Users/ivr/Documents/GitHub/Zybo_mipi/zybo_ov5640/vitis/design_1_wrapper/export/design_1_wrapper/sw/design_1_wrapper/standalone_domain/system.mss ], Result: [null, ]. Thread: Worker-68: Build Project
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-08-14 22:44:55.982
+!MESSAGE XSCT Command: [::hsi::utils::get_hw_sw_details -json C:/Users/ivr/Documents/GitHub/Zybo_mipi/zybo_ov5640/vitis/design_1_wrapper/export/design_1_wrapper/hw/design_1_wrapper.xsa C:/Users/ivr/Documents/GitHub/Zybo_mipi/zybo_ov5640/vitis/design_1_wrapper/export/design_1_wrapper/sw/design_1_wrapper/standalone_domain/system.mss], Thread: Worker-68: Build Project
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-08-14 22:44:55.992
+!MESSAGE XSCT command with result: [::hsi::utils::get_hw_sw_details -json C:/Users/ivr/Documents/GitHub/Zybo_mipi/zybo_ov5640/vitis/design_1_wrapper/export/design_1_wrapper/hw/design_1_wrapper.xsa C:/Users/ivr/Documents/GitHub/Zybo_mipi/zybo_ov5640/vitis/design_1_wrapper/export/design_1_wrapper/sw/design_1_wrapper/standalone_domain/system.mss], Result: [null, {"procname": "ps7_cortexa9_0",
+"osname": "standalone",
+"osver": "7.1",
+}]. Thread: Worker-68: Build Project
+
+!ENTRY com.xilinx.sdk.utils 1 0 2020-08-14 22:44:56.008
+!MESSAGE Generating MD5 hash for file: C:\Users\ivr\Documents\GitHub\Zybo_mipi\zybo_ov5640\vitis\design_1_wrapper\export\design_1_wrapper\sw\design_1_wrapper\standalone_domain\system.mss ...
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-08-14 22:44:56.019
+!MESSAGE XSCT Command: [::hsi::utils::closesw C:/Users/ivr/Documents/GitHub/Zybo_mipi/zybo_ov5640/vitis/design_1_wrapper/export/design_1_wrapper/sw/design_1_wrapper/standalone_domain/system.mss], Thread: Worker-68: Build Project
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-08-14 22:44:56.030
+!MESSAGE XSCT command with result: [::hsi::utils::closesw C:/Users/ivr/Documents/GitHub/Zybo_mipi/zybo_ov5640/vitis/design_1_wrapper/export/design_1_wrapper/sw/design_1_wrapper/standalone_domain/system.mss], Result: [null, ]. Thread: Worker-68: Build Project
+
+!ENTRY com.xilinx.sdk.utils 1 0 2020-08-14 22:45:05.241
+!MESSAGE Tool usage for 'SDX_NO_OP_BUILD' updated to '14'
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-08-14 22:51:23.258
+!MESSAGE XSCT Command: [ ::hsi::utils::set_current_hw_sw C:/Users/ivr/Documents/GitHub/Zybo_mipi/zybo_ov5640/vitis/design_1_wrapper/export/design_1_wrapper/hw/design_1_wrapper.xsa C:/Users/ivr/Documents/GitHub/Zybo_mipi/zybo_ov5640/vitis/design_1_wrapper/export/design_1_wrapper/sw/design_1_wrapper/standalone_domain/system.mss ], Thread: Worker-68: Build Project
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-08-14 22:51:23.272
+!MESSAGE XSCT command with result: [ ::hsi::utils::set_current_hw_sw C:/Users/ivr/Documents/GitHub/Zybo_mipi/zybo_ov5640/vitis/design_1_wrapper/export/design_1_wrapper/hw/design_1_wrapper.xsa C:/Users/ivr/Documents/GitHub/Zybo_mipi/zybo_ov5640/vitis/design_1_wrapper/export/design_1_wrapper/sw/design_1_wrapper/standalone_domain/system.mss ], Result: [null, ]. Thread: Worker-68: Build Project
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-08-14 22:51:23.279
+!MESSAGE XSCT Command: [::hsi::utils::get_hw_sw_details -json C:/Users/ivr/Documents/GitHub/Zybo_mipi/zybo_ov5640/vitis/design_1_wrapper/export/design_1_wrapper/hw/design_1_wrapper.xsa C:/Users/ivr/Documents/GitHub/Zybo_mipi/zybo_ov5640/vitis/design_1_wrapper/export/design_1_wrapper/sw/design_1_wrapper/standalone_domain/system.mss], Thread: Worker-68: Build Project
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-08-14 22:51:23.289
+!MESSAGE XSCT command with result: [::hsi::utils::get_hw_sw_details -json C:/Users/ivr/Documents/GitHub/Zybo_mipi/zybo_ov5640/vitis/design_1_wrapper/export/design_1_wrapper/hw/design_1_wrapper.xsa C:/Users/ivr/Documents/GitHub/Zybo_mipi/zybo_ov5640/vitis/design_1_wrapper/export/design_1_wrapper/sw/design_1_wrapper/standalone_domain/system.mss], Result: [null, {"procname": "ps7_cortexa9_0",
+"osname": "standalone",
+"osver": "7.1",
+}]. Thread: Worker-68: Build Project
+
+!ENTRY com.xilinx.sdk.utils 1 0 2020-08-14 22:51:23.296
+!MESSAGE Generating MD5 hash for file: C:\Users\ivr\Documents\GitHub\Zybo_mipi\zybo_ov5640\vitis\design_1_wrapper\export\design_1_wrapper\sw\design_1_wrapper\standalone_domain\system.mss ...
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-08-14 22:51:23.303
+!MESSAGE XSCT Command: [::hsi::utils::closesw C:/Users/ivr/Documents/GitHub/Zybo_mipi/zybo_ov5640/vitis/design_1_wrapper/export/design_1_wrapper/sw/design_1_wrapper/standalone_domain/system.mss], Thread: Worker-68: Build Project
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-08-14 22:51:23.313
+!MESSAGE XSCT command with result: [::hsi::utils::closesw C:/Users/ivr/Documents/GitHub/Zybo_mipi/zybo_ov5640/vitis/design_1_wrapper/export/design_1_wrapper/sw/design_1_wrapper/standalone_domain/system.mss], Result: [null, ]. Thread: Worker-68: Build Project
+
+!ENTRY com.xilinx.sdk.utils 1 0 2020-08-14 22:51:31.822
+!MESSAGE Tool usage for 'SDX_NO_OP_BUILD' updated to '15'
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-08-14 22:51:50.247
+!MESSAGE XSCT Command: [ ::hsi::utils::set_current_hw_sw C:/Users/ivr/Documents/GitHub/Zybo_mipi/zybo_ov5640/vitis/design_1_wrapper/export/design_1_wrapper/hw/design_1_wrapper.xsa C:/Users/ivr/Documents/GitHub/Zybo_mipi/zybo_ov5640/vitis/design_1_wrapper/export/design_1_wrapper/sw/design_1_wrapper/standalone_domain/system.mss ], Thread: Worker-74: Build Project
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-08-14 22:51:50.263
+!MESSAGE XSCT command with result: [ ::hsi::utils::set_current_hw_sw C:/Users/ivr/Documents/GitHub/Zybo_mipi/zybo_ov5640/vitis/design_1_wrapper/export/design_1_wrapper/hw/design_1_wrapper.xsa C:/Users/ivr/Documents/GitHub/Zybo_mipi/zybo_ov5640/vitis/design_1_wrapper/export/design_1_wrapper/sw/design_1_wrapper/standalone_domain/system.mss ], Result: [null, ]. Thread: Worker-74: Build Project
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-08-14 22:51:50.270
+!MESSAGE XSCT Command: [::hsi::utils::get_hw_sw_details -json C:/Users/ivr/Documents/GitHub/Zybo_mipi/zybo_ov5640/vitis/design_1_wrapper/export/design_1_wrapper/hw/design_1_wrapper.xsa C:/Users/ivr/Documents/GitHub/Zybo_mipi/zybo_ov5640/vitis/design_1_wrapper/export/design_1_wrapper/sw/design_1_wrapper/standalone_domain/system.mss], Thread: Worker-74: Build Project
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-08-14 22:51:50.283
+!MESSAGE XSCT command with result: [::hsi::utils::get_hw_sw_details -json C:/Users/ivr/Documents/GitHub/Zybo_mipi/zybo_ov5640/vitis/design_1_wrapper/export/design_1_wrapper/hw/design_1_wrapper.xsa C:/Users/ivr/Documents/GitHub/Zybo_mipi/zybo_ov5640/vitis/design_1_wrapper/export/design_1_wrapper/sw/design_1_wrapper/standalone_domain/system.mss], Result: [null, {"procname": "ps7_cortexa9_0",
+"osname": "standalone",
+"osver": "7.1",
+}]. Thread: Worker-74: Build Project
+
+!ENTRY com.xilinx.sdk.utils 1 0 2020-08-14 22:51:50.291
+!MESSAGE Generating MD5 hash for file: C:\Users\ivr\Documents\GitHub\Zybo_mipi\zybo_ov5640\vitis\design_1_wrapper\export\design_1_wrapper\sw\design_1_wrapper\standalone_domain\system.mss ...
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-08-14 22:51:50.298
+!MESSAGE XSCT Command: [::hsi::utils::closesw C:/Users/ivr/Documents/GitHub/Zybo_mipi/zybo_ov5640/vitis/design_1_wrapper/export/design_1_wrapper/sw/design_1_wrapper/standalone_domain/system.mss], Thread: Worker-74: Build Project
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-08-14 22:51:50.308
+!MESSAGE XSCT command with result: [::hsi::utils::closesw C:/Users/ivr/Documents/GitHub/Zybo_mipi/zybo_ov5640/vitis/design_1_wrapper/export/design_1_wrapper/sw/design_1_wrapper/standalone_domain/system.mss], Result: [null, ]. Thread: Worker-74: Build Project
+
+!ENTRY com.xilinx.sdk.utils 1 0 2020-08-14 22:51:57.933
+!MESSAGE Tool usage for 'SDX_NO_OP_BUILD' updated to '16'
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-08-14 22:51:58.582
+!MESSAGE XSCT Command: [ ::hsi::utils::set_current_hw_sw C:/Users/ivr/Documents/GitHub/Zybo_mipi/zybo_ov5640/vitis/design_1_wrapper/export/design_1_wrapper/hw/design_1_wrapper.xsa C:/Users/ivr/Documents/GitHub/Zybo_mipi/zybo_ov5640/vitis/design_1_wrapper/export/design_1_wrapper/sw/design_1_wrapper/standalone_domain/system.mss ], Thread: Worker-78: Building Workspace
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-08-14 22:51:58.593
+!MESSAGE XSCT command with result: [ ::hsi::utils::set_current_hw_sw C:/Users/ivr/Documents/GitHub/Zybo_mipi/zybo_ov5640/vitis/design_1_wrapper/export/design_1_wrapper/hw/design_1_wrapper.xsa C:/Users/ivr/Documents/GitHub/Zybo_mipi/zybo_ov5640/vitis/design_1_wrapper/export/design_1_wrapper/sw/design_1_wrapper/standalone_domain/system.mss ], Result: [null, ]. Thread: Worker-78: Building Workspace
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-08-14 22:51:58.599
+!MESSAGE XSCT Command: [::hsi::utils::get_hw_sw_details -json C:/Users/ivr/Documents/GitHub/Zybo_mipi/zybo_ov5640/vitis/design_1_wrapper/export/design_1_wrapper/hw/design_1_wrapper.xsa C:/Users/ivr/Documents/GitHub/Zybo_mipi/zybo_ov5640/vitis/design_1_wrapper/export/design_1_wrapper/sw/design_1_wrapper/standalone_domain/system.mss], Thread: Worker-78: Building Workspace
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-08-14 22:51:58.609
+!MESSAGE XSCT command with result: [::hsi::utils::get_hw_sw_details -json C:/Users/ivr/Documents/GitHub/Zybo_mipi/zybo_ov5640/vitis/design_1_wrapper/export/design_1_wrapper/hw/design_1_wrapper.xsa C:/Users/ivr/Documents/GitHub/Zybo_mipi/zybo_ov5640/vitis/design_1_wrapper/export/design_1_wrapper/sw/design_1_wrapper/standalone_domain/system.mss], Result: [null, {"procname": "ps7_cortexa9_0",
+"osname": "standalone",
+"osver": "7.1",
+}]. Thread: Worker-78: Building Workspace
+
+!ENTRY com.xilinx.sdk.utils 1 0 2020-08-14 22:51:58.615
+!MESSAGE Generating MD5 hash for file: C:\Users\ivr\Documents\GitHub\Zybo_mipi\zybo_ov5640\vitis\design_1_wrapper\export\design_1_wrapper\sw\design_1_wrapper\standalone_domain\system.mss ...
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-08-14 22:51:58.623
+!MESSAGE XSCT Command: [::hsi::utils::closesw C:/Users/ivr/Documents/GitHub/Zybo_mipi/zybo_ov5640/vitis/design_1_wrapper/export/design_1_wrapper/sw/design_1_wrapper/standalone_domain/system.mss], Thread: Worker-78: Building Workspace
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-08-14 22:51:58.634
+!MESSAGE XSCT command with result: [::hsi::utils::closesw C:/Users/ivr/Documents/GitHub/Zybo_mipi/zybo_ov5640/vitis/design_1_wrapper/export/design_1_wrapper/sw/design_1_wrapper/standalone_domain/system.mss], Result: [null, ]. Thread: Worker-78: Building Workspace
+
+!ENTRY com.xilinx.sdk.utils 1 0 2020-08-14 22:52:07.034
+!MESSAGE Tool usage for 'SDX_NO_OP_BUILD' updated to '17'
