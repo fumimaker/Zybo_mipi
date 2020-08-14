@@ -1,7 +1,7 @@
 //Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
 //--------------------------------------------------------------------------------
 //Tool Version: Vivado v.2019.2 (win64) Build 2708876 Wed Nov  6 21:40:23 MST 2019
-//Date        : Thu Aug 13 04:02:10 2020
+//Date        : Fri Aug 14 19:09:55 2020
 //Host        : LAPTOP-AG87OV99 running 64-bit major release  (build 9200)
 //Command     : generate_target design_1_wrapper.bd
 //Design      : design_1_wrapper
@@ -34,6 +34,7 @@ module design_1_wrapper
     FIXED_IO_ps_srstb,
     IIC_0_0_scl_io,
     IIC_0_0_sda_io,
+    led_tri_o,
     mipi_phy_if_0_clk_hs_n,
     mipi_phy_if_0_clk_hs_p,
     mipi_phy_if_0_clk_lp_n,
@@ -67,6 +68,7 @@ module design_1_wrapper
   inout FIXED_IO_ps_srstb;
   inout IIC_0_0_scl_io;
   inout IIC_0_0_sda_io;
+  output [3:0]led_tri_o;
   input mipi_phy_if_0_clk_hs_n;
   input mipi_phy_if_0_clk_hs_p;
   input mipi_phy_if_0_clk_lp_n;
@@ -107,6 +109,7 @@ module design_1_wrapper
   wire IIC_0_0_sda_io;
   wire IIC_0_0_sda_o;
   wire IIC_0_0_sda_t;
+  wire [3:0]led_tri_o;
   wire mipi_phy_if_0_clk_hs_n;
   wire mipi_phy_if_0_clk_hs_p;
   wire mipi_phy_if_0_clk_lp_n;
@@ -156,6 +159,7 @@ module design_1_wrapper
         .IIC_0_0_sda_i(IIC_0_0_sda_i),
         .IIC_0_0_sda_o(IIC_0_0_sda_o),
         .IIC_0_0_sda_t(IIC_0_0_sda_t),
+        .led_tri_o(led_tri_o),
         .mipi_phy_if_0_clk_hs_n(mipi_phy_if_0_clk_hs_n),
         .mipi_phy_if_0_clk_hs_p(mipi_phy_if_0_clk_hs_p),
         .mipi_phy_if_0_clk_lp_n(mipi_phy_if_0_clk_lp_n),

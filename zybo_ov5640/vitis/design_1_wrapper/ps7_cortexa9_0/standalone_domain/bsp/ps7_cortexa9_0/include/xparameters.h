@@ -249,6 +249,29 @@
 
 /******************************************************************/
 
+/* Definitions for driver GPIO */
+#define XPAR_XGPIO_NUM_INSTANCES 1
+
+/* Definitions for peripheral AXI_GPIO_0 */
+#define XPAR_AXI_GPIO_0_BASEADDR 0x41200000
+#define XPAR_AXI_GPIO_0_HIGHADDR 0x4120FFFF
+#define XPAR_AXI_GPIO_0_DEVICE_ID 0
+#define XPAR_AXI_GPIO_0_INTERRUPT_PRESENT 0
+#define XPAR_AXI_GPIO_0_IS_DUAL 0
+
+
+/******************************************************************/
+
+/* Canonical definitions for peripheral AXI_GPIO_0 */
+#define XPAR_GPIO_0_BASEADDR 0x41200000
+#define XPAR_GPIO_0_HIGHADDR 0x4120FFFF
+#define XPAR_GPIO_0_DEVICE_ID XPAR_AXI_GPIO_0_DEVICE_ID
+#define XPAR_GPIO_0_INTERRUPT_PRESENT 0
+#define XPAR_GPIO_0_IS_DUAL 0
+
+
+/******************************************************************/
+
 /* Definitions for driver GPIOPS */
 #define XPAR_XGPIOPS_NUM_INSTANCES 1
 
@@ -299,7 +322,7 @@
 #define XPAR_MIPI_CSI2_RX_SUBSYST_0_CMN_INC_IIC 0
 #define XPAR_MIPI_CSI2_RX_SUBSYST_0_CMN_NUM_LANES 2
 #define XPAR_MIPI_CSI2_RX_SUBSYST_0_CMN_NUM_PIXELS 4
-#define XPAR_MIPI_CSI2_RX_SUBSYST_0_CMN_PXL_FORMAT 0x22
+#define XPAR_MIPI_CSI2_RX_SUBSYST_0_CMN_PXL_FORMAT 0x2B
 #define XPAR_MIPI_CSI2_RX_SUBSYST_0_CMN_VC 4
 #define XPAR_MIPI_CSI2_RX_SUBSYST_0_CSI_BUF_DEPTH 2048
 #define XPAR_MIPI_CSI2_RX_SUBSYST_0_CSI_EMB_NON_IMG 0
@@ -320,7 +343,7 @@
 #define XPAR_CSISS_0_CMN_INC_IIC 0
 #define XPAR_CSISS_0_CMN_NUM_LANES 2
 #define XPAR_CSISS_0_CMN_NUM_PIXELS 4
-#define XPAR_CSISS_0_CMN_PXL_FORMAT 0x22
+#define XPAR_CSISS_0_CMN_PXL_FORMAT 0x2B
 #define XPAR_CSISS_0_CMN_VC 16
 #define XPAR_CSISS_0_CSI_BUF_DEPTH 2048
 #define XPAR_CSISS_0_CSI_EMB_NON_IMG 0

@@ -6,10 +6,17 @@
 #include "xiicps.h"
 
 // I2C parameters
-#define IIC_SCLK_RATE       100000  // clock 100KHz
+#define IIC_SCLK_RATE       400000  // clock 100KHz
 //#define CAMERA_ADDRESS      0x21    // 7bit address 0bit=1:write 0:read
-#define CAMERA_ADDRESS      (0x3c)    //=0x3C 7bit address + 0bit=1:write 0:read
+#define CAMERA_ADDRESS      (0x78>>1)    //=0x3C 7bit address + 0bit=1:write 0:read
 #define IIC_DEVICE_ID       XPAR_XIICPS_0_DEVICE_ID
+
+#define REG(address) *(volatile unsigned int*)(address)
+
+#define GPIO_BASE (0x41200000)  /* XPAR_AXI_GPIO_0_BASEADDR */
+#define GPIO_DATA (GPIO_BASE + 0x0000)
+#define GPIO_TRI  (GPIO_BASE + 0x0004)
+
 uint8_t const dev_ID_h_ = 0x56;
 uint8_t const dev_ID_l_ = 0x40;
 uint16_t const reg_ID_h = 0x300A;
@@ -49,13 +56,13 @@ int Init()
     XIicPs_SetSClk(&Iic, IIC_SCLK_RATE);
     printf("I2C configuration done.\n");
 
-    /*
-    int result = WriteReg(0x3008, 0b10000000);
+
+    int result = WriteReg(0x3008, 0b11000000);
 	if(result != XST_SUCCESS){
 		xil_printf("Error: OV5640 RESET\n");
 		return XST_FAILURE;
 	}
-	usleep(300*1000);*/
+	usleep(300*1000);
 
     uint8_t id_h, id_l;
 	id_h = ReadReg(reg_ID_h);
@@ -83,7 +90,7 @@ int Init()
 int i2c_write(XIicPs *Iic, u16 _register, u8 _command)
 {
     int Status;
-    u8 buffer[4];
+    u8 buffer[3];
     buffer[0] = (u8) (_register >> 8); //upper
     buffer[1] = (u8) (_register);//lower
     buffer[2] = _command;
@@ -106,7 +113,7 @@ int i2c_write(XIicPs *Iic, u16 _register, u8 _command)
     return XST_SUCCESS;
 }
 
-/*
+
 int i2c_read(XIicPs *Iic, u8* buff, u32 len, u16 i2c_adder)
 {
     int Status;
@@ -118,7 +125,7 @@ int i2c_read(XIicPs *Iic, u8* buff, u32 len, u16 i2c_adder)
     else
         return -1;
 }
-*/
+
 
 int WriteReg(u16 _register, u8 _command){
 	return i2c_write(&Iic, _register, _command);
@@ -162,6 +169,15 @@ int main()
 
     print("Hello World\n\r");
 
+    REG(GPIO_TRI) = 0x00;
+    while(1){
+    	/* Set all of 4 pins(LEDs) as High */
+		REG(GPIO_DATA) = 0x0F;
+		sleep(1);
+		/* Set all of 4 pins(LEDs) as Low */
+		REG(GPIO_DATA) = 0x00;
+		sleep(1);
+    }
     cleanup_platform();
     return 0;
 }
