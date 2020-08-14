@@ -1,4 +1,4 @@
-22:56:50 **** Incremental Build of configuration Debug for project ov5640_mipi ****
+00:02:14 **** Incremental Build of configuration Debug for project ov5640_mipi ****
 make all 
 make --no-print-directory pre-build
 a9-linaro-pre-build-step
@@ -7,8 +7,8 @@ make --no-print-directory main-build
 'Building file: ../src/main.c'
 'Invoking: ARM v7 gcc compiler'
 arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -IC:/Users/ivr/Documents/GitHub/Zybo_mipi/zybo_ov5640/vitis/design_1_wrapper/export/design_1_wrapper/sw/design_1_wrapper/standalone_domain/bspinclude/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
-../src/main.c: In function 'config':
-../src/main.c:171:1: warning: control reaches end of non-void function [-Wreturn-type]
+../src/main.c: In function 'WriteConfig':
+../src/main.c:179:1: warning: control reaches end of non-void function [-Wreturn-type]
  }
  ^
 'Finished building: ../src/main.c'
@@ -21,9 +21,9 @@ arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=non
 'Invoking: ARM v7 Print Size'
 arm-none-eabi-size ov5640_mipi.elf  |tee "ov5640_mipi.elf.size"
    text	   data	    bss	    dec	    hex	filename
-  65852	   2600	  23392	  91844	  166c4	ov5640_mipi.elf
+  66148	   2600	  23392	  92140	  167ec	ov5640_mipi.elf
 'Finished building: ov5640_mipi.elf.size'
 ' '
 
-22:56:51 Build Finished (took 1s.156ms)
+00:02:15 Build Finished (took 1s.103ms)
 

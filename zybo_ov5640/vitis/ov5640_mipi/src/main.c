@@ -18,6 +18,8 @@
 #define GPIO_DATA (GPIO_BASE + 0x0000)
 #define GPIO_TRI  (GPIO_BASE + 0x0004)
 
+#define SIZEOF(x) sizeof(x)/sizeof(x[0])
+
 uint8_t const dev_ID_h_ = 0x56;
 uint8_t const dev_ID_l_ = 0x40;
 uint16_t const reg_ID_h = 0x300A;
@@ -28,7 +30,7 @@ int i2c_write(XIicPs *Iic, u16 _register, u8 _command);
 int i2c_read(XIicPs *Iic, u8* buff, u32 len, u16 i2c_adder);
 int WriteReg(u16 _register, u8 _command);
 int ReadReg(u16 reg);
-
+int WriteConfig(config_word_t const* cfg, int size);
 
 XIicPs Iic;
 
@@ -91,6 +93,10 @@ int Init(void)
 		return XST_FAILURE;
 	}
 	usleep(10*1000);
+
+
+	WriteConfig(cfg_init_, SIZEOF(cfg_init_));
+	// stay in powerdown
 
     return XST_SUCCESS;
 }
@@ -166,9 +172,12 @@ int ReadReg(u16 reg)
 	return data[0]; //return 1byte
 }
 
-int config(void){
-
+int WriteConfig(config_word_t const* cfg, int size){
+	for(int i=0; i<size; i++){
+		WriteReg(cfg[i].addr, cfg[i].data);
+	}
 }
+
 
 int main()
 {
@@ -178,7 +187,21 @@ int main()
     	printf("Camera module initialize complete!\n");
     }
 
+    //set mode
+    //[7]=0 Software reset; [6]=1 Software power down; Default=0x02
+	WriteReg(0x3008, 0x42);
+    WriteConfig(cfg_720p_60fps_, SIZEOF(cfg_720p_60fps_));
+    //[7]=0 Software reset; [6]=0 Software power down; Default=0x02
+	WriteReg(0x3008, 0x02);
+	printf("mode settings done\n");
 
+	//set AWB
+	//[7]=0 Software reset; [6]=1 Software power down; Default=0x02
+	WriteReg(0x3008, 0x42);
+	WriteConfig(cfg_advanced_awb_, SIZEOF(cfg_advanced_awb_));
+	//[7]=0 Software reset; [6]=0 Software power down; Default=0x02
+	WriteReg(0x3008, 0x02);
+	printf("AWB settings done\n");
 
     print("Hello World\n\r");
     cleanup_platform();
