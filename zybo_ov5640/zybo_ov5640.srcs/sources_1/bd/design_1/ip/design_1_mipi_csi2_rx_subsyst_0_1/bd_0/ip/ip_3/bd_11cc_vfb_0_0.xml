@@ -246,7 +246,7 @@
       <spirit:parameters>
         <spirit:parameter>
           <spirit:name>TDATA_NUM_BYTES</spirit:name>
-          <spirit:value spirit:format="long" spirit:resolve="generated" spirit:id="BUSIFPARAM_VALUE.M_VFB.TDATA_NUM_BYTES">5</spirit:value>
+          <spirit:value spirit:format="long" spirit:resolve="generated" spirit:id="BUSIFPARAM_VALUE.M_VFB.TDATA_NUM_BYTES">2</spirit:value>
           <spirit:vendorExtensions>
             <xilinx:parameterInfo>
               <xilinx:parameterUsage>none</xilinx:parameterUsage>
@@ -555,10 +555,17 @@
         <spirit:name>xilinx_elaboratesubcores</spirit:name>
         <spirit:displayName>Elaborate Sub-Cores</spirit:displayName>
         <spirit:envIdentifier>:vivado.xilinx.com:elaborate.subcores</spirit:envIdentifier>
+        <spirit:fileSetRef>
+          <spirit:localName>xilinx_elaboratesubcores_view_fileset</spirit:localName>
+        </spirit:fileSetRef>
         <spirit:parameters>
           <spirit:parameter>
+            <spirit:name>GENtimestamp</spirit:name>
+            <spirit:value>Sat Aug 15 18:04:33 UTC 2020</spirit:value>
+          </spirit:parameter>
+          <spirit:parameter>
             <spirit:name>outputProductCRC</spirit:name>
-            <spirit:value>9:4973b243</spirit:value>
+            <spirit:value>9:b5f0928e</spirit:value>
           </spirit:parameter>
         </spirit:parameters>
       </spirit:view>
@@ -573,11 +580,11 @@
         <spirit:parameters>
           <spirit:parameter>
             <spirit:name>GENtimestamp</spirit:name>
-            <spirit:value>Wed Aug 12 19:02:19 UTC 2020</spirit:value>
+            <spirit:value>Sat Aug 15 19:06:09 UTC 2020</spirit:value>
           </spirit:parameter>
           <spirit:parameter>
             <spirit:name>outputProductCRC</spirit:name>
-            <spirit:value>9:d9158e24</spirit:value>
+            <spirit:value>9:4aa7a0b1</spirit:value>
           </spirit:parameter>
         </spirit:parameters>
       </spirit:view>
@@ -591,11 +598,11 @@
         <spirit:parameters>
           <spirit:parameter>
             <spirit:name>GENtimestamp</spirit:name>
-            <spirit:value>Wed Aug 12 19:02:19 UTC 2020</spirit:value>
+            <spirit:value>Sat Aug 15 19:06:09 UTC 2020</spirit:value>
           </spirit:parameter>
           <spirit:parameter>
             <spirit:name>outputProductCRC</spirit:name>
-            <spirit:value>9:d9158e24</spirit:value>
+            <spirit:value>9:4aa7a0b1</spirit:value>
           </spirit:parameter>
         </spirit:parameters>
       </spirit:view>
@@ -610,11 +617,11 @@
         <spirit:parameters>
           <spirit:parameter>
             <spirit:name>GENtimestamp</spirit:name>
-            <spirit:value>Wed Aug 12 19:02:19 UTC 2020</spirit:value>
+            <spirit:value>Sat Aug 15 19:06:09 UTC 2020</spirit:value>
           </spirit:parameter>
           <spirit:parameter>
             <spirit:name>outputProductCRC</spirit:name>
-            <spirit:value>9:d9158e24</spirit:value>
+            <spirit:value>9:4aa7a0b1</spirit:value>
           </spirit:parameter>
         </spirit:parameters>
       </spirit:view>
@@ -629,11 +636,11 @@
         <spirit:parameters>
           <spirit:parameter>
             <spirit:name>GENtimestamp</spirit:name>
-            <spirit:value>Wed Aug 12 19:02:19 UTC 2020</spirit:value>
+            <spirit:value>Sat Aug 15 19:06:09 UTC 2020</spirit:value>
           </spirit:parameter>
           <spirit:parameter>
             <spirit:name>outputProductCRC</spirit:name>
-            <spirit:value>9:0090f0e7</spirit:value>
+            <spirit:value>9:947a305e</spirit:value>
           </spirit:parameter>
         </spirit:parameters>
       </spirit:view>
@@ -648,11 +655,11 @@
         <spirit:parameters>
           <spirit:parameter>
             <spirit:name>GENtimestamp</spirit:name>
-            <spirit:value>Wed Aug 12 19:02:19 UTC 2020</spirit:value>
+            <spirit:value>Sat Aug 15 19:06:09 UTC 2020</spirit:value>
           </spirit:parameter>
           <spirit:parameter>
             <spirit:name>outputProductCRC</spirit:name>
-            <spirit:value>9:0090f0e7</spirit:value>
+            <spirit:value>9:947a305e</spirit:value>
           </spirit:parameter>
         </spirit:parameters>
       </spirit:view>
@@ -666,11 +673,11 @@
         <spirit:parameters>
           <spirit:parameter>
             <spirit:name>GENtimestamp</spirit:name>
-            <spirit:value>Wed Aug 12 19:03:46 UTC 2020</spirit:value>
+            <spirit:value>Sat Aug 15 19:07:20 UTC 2020</spirit:value>
           </spirit:parameter>
           <spirit:parameter>
             <spirit:name>outputProductCRC</spirit:name>
-            <spirit:value>9:d9158e24</spirit:value>
+            <spirit:value>9:4aa7a0b1</spirit:value>
           </spirit:parameter>
         </spirit:parameters>
       </spirit:view>
@@ -913,7 +920,7 @@
         <spirit:wire>
           <spirit:direction>out</spirit:direction>
           <spirit:vector>
-            <spirit:left spirit:format="long" spirit:resolve="dependent" spirit:dependency="(spirit:decode(id(&apos;MODELPARAM_VALUE.VFB_OP_DWIDTH&apos;)) - 1)">39</spirit:left>
+            <spirit:left spirit:format="long" spirit:resolve="dependent" spirit:dependency="(spirit:decode(id(&apos;MODELPARAM_VALUE.VFB_OP_DWIDTH&apos;)) - 1)">15</spirit:left>
             <spirit:right spirit:format="long">0</spirit:right>
           </spirit:vector>
           <spirit:wireTypeDefs>
@@ -1052,7 +1059,7 @@
       </spirit:modelParameter>
       <spirit:modelParameter>
         <spirit:name>VFB_DATA_TYPE</spirit:name>
-        <spirit:value spirit:format="bitString" spirit:resolve="generated" spirit:id="MODELPARAM_VALUE.VFB_DATA_TYPE" spirit:bitStringLength="6">0x2B</spirit:value>
+        <spirit:value spirit:format="bitString" spirit:resolve="generated" spirit:id="MODELPARAM_VALUE.VFB_DATA_TYPE" spirit:bitStringLength="6">0x22</spirit:value>
       </spirit:modelParameter>
       <spirit:modelParameter spirit:dataType="integer">
         <spirit:name>VFB_FILTER_VC</spirit:name>
@@ -1064,7 +1071,7 @@
       </spirit:modelParameter>
       <spirit:modelParameter spirit:dataType="integer">
         <spirit:name>VFB_REQ_BUFFER</spirit:name>
-        <spirit:value spirit:format="long" spirit:resolve="generated" spirit:id="MODELPARAM_VALUE.VFB_REQ_BUFFER">1</spirit:value>
+        <spirit:value spirit:format="long" spirit:resolve="generated" spirit:id="MODELPARAM_VALUE.VFB_REQ_BUFFER">0</spirit:value>
       </spirit:modelParameter>
       <spirit:modelParameter spirit:dataType="integer">
         <spirit:name>VFB_REQ_REORDER</spirit:name>
@@ -1080,7 +1087,7 @@
       </spirit:modelParameter>
       <spirit:modelParameter spirit:dataType="integer">
         <spirit:name>VFB_PXL_W</spirit:name>
-        <spirit:value spirit:format="long" spirit:resolve="generated" spirit:id="MODELPARAM_VALUE.VFB_PXL_W">10</spirit:value>
+        <spirit:value spirit:format="long" spirit:resolve="generated" spirit:id="MODELPARAM_VALUE.VFB_PXL_W">16</spirit:value>
       </spirit:modelParameter>
       <spirit:modelParameter spirit:dataType="integer">
         <spirit:name>VFB_PXL_W_BB</spirit:name>
@@ -1088,15 +1095,15 @@
       </spirit:modelParameter>
       <spirit:modelParameter spirit:dataType="integer">
         <spirit:name>VFB_4PXL_W</spirit:name>
-        <spirit:value spirit:format="long" spirit:resolve="generated" spirit:id="MODELPARAM_VALUE.VFB_4PXL_W">40</spirit:value>
+        <spirit:value spirit:format="long" spirit:resolve="generated" spirit:id="MODELPARAM_VALUE.VFB_4PXL_W">64</spirit:value>
       </spirit:modelParameter>
       <spirit:modelParameter spirit:dataType="integer">
         <spirit:name>VFB_DCONV_OWIDTH</spirit:name>
-        <spirit:value spirit:format="long" spirit:resolve="generated" spirit:id="MODELPARAM_VALUE.VFB_DCONV_OWIDTH">64</spirit:value>
+        <spirit:value spirit:format="long" spirit:resolve="generated" spirit:id="MODELPARAM_VALUE.VFB_DCONV_OWIDTH">16</spirit:value>
       </spirit:modelParameter>
       <spirit:modelParameter spirit:dataType="integer">
         <spirit:name>VFB_OP_DWIDTH</spirit:name>
-        <spirit:value spirit:format="long" spirit:resolve="generated" spirit:id="MODELPARAM_VALUE.VFB_OP_DWIDTH">40</spirit:value>
+        <spirit:value spirit:format="long" spirit:resolve="generated" spirit:id="MODELPARAM_VALUE.VFB_OP_DWIDTH">16</spirit:value>
       </spirit:modelParameter>
       <spirit:modelParameter spirit:dataType="integer">
         <spirit:name>VFB_OP_SBWIDTH</spirit:name>
@@ -1104,11 +1111,11 @@
       </spirit:modelParameter>
       <spirit:modelParameter spirit:dataType="integer">
         <spirit:name>VFB_OP_PIXELS</spirit:name>
-        <spirit:value spirit:format="long" spirit:resolve="generated" spirit:id="MODELPARAM_VALUE.VFB_OP_PIXELS">4</spirit:value>
+        <spirit:value spirit:format="long" spirit:resolve="generated" spirit:id="MODELPARAM_VALUE.VFB_OP_PIXELS">1</spirit:value>
       </spirit:modelParameter>
       <spirit:modelParameter spirit:dataType="integer">
         <spirit:name>VFB_BYPASS_WC</spirit:name>
-        <spirit:value spirit:format="long" spirit:resolve="generated" spirit:id="MODELPARAM_VALUE.VFB_BYPASS_WC">1</spirit:value>
+        <spirit:value spirit:format="long" spirit:resolve="generated" spirit:id="MODELPARAM_VALUE.VFB_BYPASS_WC">0</spirit:value>
       </spirit:modelParameter>
     </spirit:modelParameters>
   </spirit:model>
@@ -1203,6 +1210,17 @@
     </spirit:choice>
   </spirit:choices>
   <spirit:fileSets>
+    <spirit:fileSet>
+      <spirit:name>xilinx_elaboratesubcores_view_fileset</spirit:name>
+      <spirit:file>
+        <spirit:name>ip_0/bd_11cc_vfb_0_0_axis_converter.xci</spirit:name>
+        <spirit:userFileType>xci</spirit:userFileType>
+      </spirit:file>
+      <spirit:file>
+        <spirit:name>ip_0/bd_11cc_vfb_0_0_axis_converter.xml</spirit:name>
+        <spirit:userFileType>xml</spirit:userFileType>
+      </spirit:file>
+    </spirit:fileSet>
     <spirit:fileSet>
       <spirit:name>xilinx_anylanguagesynthesis_view_fileset</spirit:name>
       <spirit:file>
@@ -1348,7 +1366,7 @@
     <spirit:parameter>
       <spirit:name>VFB_DATA_TYPE</spirit:name>
       <spirit:displayName>CSI Data type</spirit:displayName>
-      <spirit:value spirit:resolve="user" spirit:id="PARAM_VALUE.VFB_DATA_TYPE" spirit:choiceRef="choice_list_8c6694b3" spirit:order="8">RAW10</spirit:value>
+      <spirit:value spirit:resolve="user" spirit:id="PARAM_VALUE.VFB_DATA_TYPE" spirit:choiceRef="choice_list_8c6694b3" spirit:order="8">RGB565</spirit:value>
     </spirit:parameter>
     <spirit:parameter>
       <spirit:name>VFB_FILTER_VC</spirit:name>
@@ -1380,7 +1398,7 @@
     <spirit:parameter>
       <spirit:name>VFB_PXL_W</spirit:name>
       <spirit:displayName>Actual Pixels Width</spirit:displayName>
-      <spirit:value spirit:format="long" spirit:resolve="user" spirit:id="PARAM_VALUE.VFB_PXL_W" spirit:order="13">10</spirit:value>
+      <spirit:value spirit:format="long" spirit:resolve="user" spirit:id="PARAM_VALUE.VFB_PXL_W" spirit:order="13">16</spirit:value>
     </spirit:parameter>
     <spirit:parameter>
       <spirit:name>VFB_PXL_W_BB</spirit:name>
@@ -1390,17 +1408,17 @@
     <spirit:parameter>
       <spirit:name>VFB_4PXL_W</spirit:name>
       <spirit:displayName>Actual 4 Pixels Width</spirit:displayName>
-      <spirit:value spirit:format="long" spirit:resolve="user" spirit:id="PARAM_VALUE.VFB_4PXL_W" spirit:order="15">40</spirit:value>
+      <spirit:value spirit:format="long" spirit:resolve="user" spirit:id="PARAM_VALUE.VFB_4PXL_W" spirit:order="15">64</spirit:value>
     </spirit:parameter>
     <spirit:parameter>
       <spirit:name>VFB_DCONV_OWIDTH</spirit:name>
       <spirit:displayName>Output Width of DWidth convertor</spirit:displayName>
-      <spirit:value spirit:format="long" spirit:resolve="user" spirit:id="PARAM_VALUE.VFB_DCONV_OWIDTH" spirit:order="16">64</spirit:value>
+      <spirit:value spirit:format="long" spirit:resolve="user" spirit:id="PARAM_VALUE.VFB_DCONV_OWIDTH" spirit:order="16">16</spirit:value>
     </spirit:parameter>
     <spirit:parameter>
       <spirit:name>VFB_OP_DWIDTH</spirit:name>
       <spirit:displayName>Output Width</spirit:displayName>
-      <spirit:value spirit:format="long" spirit:resolve="user" spirit:id="PARAM_VALUE.VFB_OP_DWIDTH" spirit:order="17">40</spirit:value>
+      <spirit:value spirit:format="long" spirit:resolve="user" spirit:id="PARAM_VALUE.VFB_OP_DWIDTH" spirit:order="17">16</spirit:value>
     </spirit:parameter>
     <spirit:parameter>
       <spirit:name>VFB_OP_SBWIDTH</spirit:name>
@@ -1410,12 +1428,12 @@
     <spirit:parameter>
       <spirit:name>VFB_OP_PIXELS</spirit:name>
       <spirit:displayName>Output Pixels per beat</spirit:displayName>
-      <spirit:value spirit:format="long" spirit:resolve="user" spirit:id="PARAM_VALUE.VFB_OP_PIXELS" spirit:choiceRef="choice_list_e6469819" spirit:order="19">4</spirit:value>
+      <spirit:value spirit:format="long" spirit:resolve="user" spirit:id="PARAM_VALUE.VFB_OP_PIXELS" spirit:choiceRef="choice_list_e6469819" spirit:order="19">1</spirit:value>
     </spirit:parameter>
     <spirit:parameter>
       <spirit:name>VFB_BYPASS_WC</spirit:name>
       <spirit:displayName>Bypass width converter</spirit:displayName>
-      <spirit:value spirit:format="long" spirit:resolve="user" spirit:id="PARAM_VALUE.VFB_BYPASS_WC" spirit:order="20">1</spirit:value>
+      <spirit:value spirit:format="long" spirit:resolve="user" spirit:id="PARAM_VALUE.VFB_BYPASS_WC" spirit:order="20">0</spirit:value>
     </spirit:parameter>
     <spirit:parameter>
       <spirit:name>Component_Name</spirit:name>

@@ -79,7 +79,7 @@ module bd_11cc_wrapper
   output system_rst_out;
   input video_aclk;
   input video_aresetn;
-  output [39:0]video_out_tdata;
+  output [15:0]video_out_tdata;
   output [9:0]video_out_tdest;
   output video_out_tlast;
   input video_out_tready;
@@ -119,7 +119,7 @@ module bd_11cc_wrapper
   wire system_rst_out;
   wire video_aclk;
   wire video_aresetn;
-  wire [39:0]video_out_tdata;
+  wire [15:0]video_out_tdata;
   wire [9:0]video_out_tdest;
   wire video_out_tlast;
   wire video_out_tready;

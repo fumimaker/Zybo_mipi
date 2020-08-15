@@ -203,6 +203,12 @@ int main()
 	WriteReg(0x3008, 0x02);
 	printf("AWB settings done\n");
 
+
+	//set color bar
+	WriteReg(0x503D, 0x80); //enable
+	//WriteReg(0x503D, 0x00); //disable
+
+
     print("Hello World\n\r");
     cleanup_platform();
     return 0;

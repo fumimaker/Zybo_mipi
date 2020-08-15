@@ -1,7 +1,7 @@
 -- Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
 -- --------------------------------------------------------------------------------
 -- Tool Version: Vivado v.2019.2 (win64) Build 2708876 Wed Nov  6 21:40:23 MST 2019
--- Date        : Thu Aug 13 04:04:47 2020
+-- Date        : Sun Aug 16 04:08:15 2020
 -- Host        : LAPTOP-AG87OV99 running 64-bit major release  (build 9200)
 -- Command     : write_vhdl -force -mode funcsim
 --               C:/Users/ivr/Documents/GitHub/Zybo_mipi/zybo_ov5640/zybo_ov5640.srcs/sources_1/bd/design_1/ip/design_1_mipi_csi2_rx_subsyst_0_1/design_1_mipi_csi2_rx_subsyst_0_1_sim_netlist.vhdl
@@ -49,7 +49,7 @@ entity design_1_mipi_csi2_rx_subsyst_0_1_bd_11cc is
     system_rst_out : out STD_LOGIC;
     video_aclk : in STD_LOGIC;
     video_aresetn : in STD_LOGIC;
-    video_out_tdata : out STD_LOGIC_VECTOR ( 39 downto 0 );
+    video_out_tdata : out STD_LOGIC_VECTOR ( 15 downto 0 );
     video_out_tdest : out STD_LOGIC_VECTOR ( 9 downto 0 );
     video_out_tlast : out STD_LOGIC;
     video_out_tready : in STD_LOGIC;
@@ -230,7 +230,7 @@ architecture STRUCTURE of design_1_mipi_csi2_rx_subsyst_0_1_bd_11cc is
     vfb_eol : out STD_LOGIC;
     vfb_sof : out STD_LOGIC_VECTOR ( 0 to 0 );
     vfb_vcdt : out STD_LOGIC_VECTOR ( 9 downto 0 );
-    vfb_data : out STD_LOGIC_VECTOR ( 39 downto 0 )
+    vfb_data : out STD_LOGIC_VECTOR ( 15 downto 0 )
   );
   end component design_1_mipi_csi2_rx_subsyst_0_1_bd_11cc_vfb_0_0;
   signal phy_rx_mipi_ppi_if_CL_ENABLE : STD_LOGIC;
@@ -334,7 +334,7 @@ architecture STRUCTURE of design_1_mipi_csi2_rx_subsyst_0_1_bd_11cc is
   attribute X_INTERFACE_INFO of video_out_tready : signal is "xilinx.com:interface:axis:1.0 video_out TREADY";
   attribute X_INTERFACE_INFO of video_out_tvalid : signal is "xilinx.com:interface:axis:1.0 video_out TVALID";
   attribute X_INTERFACE_INFO of csirxss_s_axi_araddr : signal is "xilinx.com:interface:aximm:1.0 csirxss_s_axi ARADDR";
-  attribute X_INTERFACE_PARAMETER of csirxss_s_axi_araddr : signal is "XIL_INTERFACENAME csirxss_s_axi, ADDR_WIDTH 16, ARUSER_WIDTH 0, AWUSER_WIDTH 0, BUSER_WIDTH 0, CLK_DOMAIN design_1_processing_system7_0_1_FCLK_CLK0, DATA_WIDTH 32, FREQ_HZ 50000000, HAS_BRESP 1, HAS_BURST 0, HAS_CACHE 0, HAS_LOCK 0, HAS_PROT 0, HAS_QOS 0, HAS_REGION 0, HAS_RRESP 1, HAS_WSTRB 1, ID_WIDTH 0, INSERT_VIP 0, MAX_BURST_LENGTH 1, NUM_READ_OUTSTANDING 8, NUM_READ_THREADS 4, NUM_WRITE_OUTSTANDING 8, NUM_WRITE_THREADS 4, PHASE 0.000, PROTOCOL AXI4LITE, READ_WRITE_MODE READ_WRITE, RUSER_BITS_PER_BYTE 0, RUSER_WIDTH 0, SUPPORTS_NARROW_BURST 0, WUSER_BITS_PER_BYTE 0, WUSER_WIDTH 0";
+  attribute X_INTERFACE_PARAMETER of csirxss_s_axi_araddr : signal is "XIL_INTERFACENAME csirxss_s_axi, ADDR_WIDTH 16, ARUSER_WIDTH 0, AWUSER_WIDTH 0, BUSER_WIDTH 0, CLK_DOMAIN design_1_processing_system7_0_1_FCLK_CLK0, DATA_WIDTH 32, FREQ_HZ 50000000, HAS_BRESP 1, HAS_BURST 0, HAS_CACHE 0, HAS_LOCK 0, HAS_PROT 0, HAS_QOS 0, HAS_REGION 0, HAS_RRESP 1, HAS_WSTRB 1, ID_WIDTH 0, INSERT_VIP 0, MAX_BURST_LENGTH 1, NUM_READ_OUTSTANDING 2, NUM_READ_THREADS 1, NUM_WRITE_OUTSTANDING 2, NUM_WRITE_THREADS 1, PHASE 0.000, PROTOCOL AXI4LITE, READ_WRITE_MODE READ_WRITE, RUSER_BITS_PER_BYTE 0, RUSER_WIDTH 0, SUPPORTS_NARROW_BURST 0, WUSER_BITS_PER_BYTE 0, WUSER_WIDTH 0";
   attribute X_INTERFACE_INFO of csirxss_s_axi_awaddr : signal is "xilinx.com:interface:aximm:1.0 csirxss_s_axi AWADDR";
   attribute X_INTERFACE_INFO of csirxss_s_axi_bresp : signal is "xilinx.com:interface:aximm:1.0 csirxss_s_axi BRESP";
   attribute X_INTERFACE_INFO of csirxss_s_axi_rdata : signal is "xilinx.com:interface:aximm:1.0 csirxss_s_axi RDATA";
@@ -346,7 +346,7 @@ architecture STRUCTURE of design_1_mipi_csi2_rx_subsyst_0_1_bd_11cc is
   attribute X_INTERFACE_INFO of mipi_phy_if_data_lp_n : signal is "xilinx.com:interface:mipi_phy:1.0 mipi_phy_if DATA_LP_N";
   attribute X_INTERFACE_INFO of mipi_phy_if_data_lp_p : signal is "xilinx.com:interface:mipi_phy:1.0 mipi_phy_if DATA_LP_P";
   attribute X_INTERFACE_INFO of video_out_tdata : signal is "xilinx.com:interface:axis:1.0 video_out TDATA";
-  attribute X_INTERFACE_PARAMETER of video_out_tdata : signal is "XIL_INTERFACENAME video_out, CLK_DOMAIN design_1_processing_system7_0_1_FCLK_CLK0, FREQ_HZ 50000000, HAS_TKEEP 0, HAS_TLAST 1, HAS_TREADY 1, HAS_TSTRB 0, INSERT_VIP 0, LAYERED_METADATA undef, PHASE 0.000, TDATA_NUM_BYTES 5, TDEST_WIDTH 10, TID_WIDTH 0, TUSER_WIDTH 1";
+  attribute X_INTERFACE_PARAMETER of video_out_tdata : signal is "XIL_INTERFACENAME video_out, CLK_DOMAIN design_1_processing_system7_0_1_FCLK_CLK0, FREQ_HZ 50000000, HAS_TKEEP 0, HAS_TLAST 1, HAS_TREADY 1, HAS_TSTRB 0, INSERT_VIP 0, LAYERED_METADATA undef, PHASE 0.000, TDATA_NUM_BYTES 2, TDEST_WIDTH 10, TID_WIDTH 0, TUSER_WIDTH 1";
   attribute X_INTERFACE_INFO of video_out_tdest : signal is "xilinx.com:interface:axis:1.0 video_out TDEST";
   attribute X_INTERFACE_INFO of video_out_tuser : signal is "xilinx.com:interface:axis:1.0 video_out TUSER";
 begin
@@ -507,7 +507,7 @@ vfb_0: component design_1_mipi_csi2_rx_subsyst_0_1_bd_11cc_vfb_0_0
       sdt_tv => vfb_0_sdt_tv,
       vfb_arstn => video_aresetn,
       vfb_clk => video_aclk,
-      vfb_data(39 downto 0) => video_out_tdata(39 downto 0),
+      vfb_data(15 downto 0) => video_out_tdata(15 downto 0),
       vfb_eol => video_out_tlast,
       vfb_full => vfb_0_vfb_full,
       vfb_ready => video_out_tready,
@@ -549,7 +549,7 @@ entity design_1_mipi_csi2_rx_subsyst_0_1 is
     csirxss_s_axi_wready : out STD_LOGIC;
     csirxss_s_axi_wstrb : in STD_LOGIC_VECTOR ( 3 downto 0 );
     csirxss_s_axi_wvalid : in STD_LOGIC;
-    video_out_tdata : out STD_LOGIC_VECTOR ( 39 downto 0 );
+    video_out_tdata : out STD_LOGIC_VECTOR ( 15 downto 0 );
     video_out_tdest : out STD_LOGIC_VECTOR ( 9 downto 0 );
     video_out_tlast : out STD_LOGIC;
     video_out_tready : in STD_LOGIC;
@@ -591,7 +591,7 @@ architecture STRUCTURE of design_1_mipi_csi2_rx_subsyst_0_1 is
   attribute X_INTERFACE_INFO of csirxss_s_axi_rvalid : signal is "xilinx.com:interface:aximm:1.0 csirxss_s_axi RVALID";
   attribute X_INTERFACE_INFO of csirxss_s_axi_wready : signal is "xilinx.com:interface:aximm:1.0 csirxss_s_axi WREADY";
   attribute X_INTERFACE_INFO of csirxss_s_axi_wvalid : signal is "xilinx.com:interface:aximm:1.0 csirxss_s_axi WVALID";
-  attribute X_INTERFACE_PARAMETER of csirxss_s_axi_wvalid : signal is "XIL_INTERFACENAME csirxss_s_axi, DATA_WIDTH 32, PROTOCOL AXI4LITE, FREQ_HZ 50000000, ID_WIDTH 0, ADDR_WIDTH 16, AWUSER_WIDTH 0, ARUSER_WIDTH 0, WUSER_WIDTH 0, RUSER_WIDTH 0, BUSER_WIDTH 0, READ_WRITE_MODE READ_WRITE, HAS_BURST 0, HAS_LOCK 0, HAS_PROT 0, HAS_CACHE 0, HAS_QOS 0, HAS_REGION 0, HAS_WSTRB 1, HAS_BRESP 1, HAS_RRESP 1, SUPPORTS_NARROW_BURST 0, NUM_READ_OUTSTANDING 8, NUM_WRITE_OUTSTANDING 8, MAX_BURST_LENGTH 1, PHASE 0.000, CLK_DOMAIN design_1_processing_system7_0_1_FCLK_CLK0, NUM_READ_THREADS 4, NUM_WRITE_THREADS 4, RUSER_BITS_PER_BYTE 0, WUSER_BITS_PER_BYTE 0, INSERT_VIP 0";
+  attribute X_INTERFACE_PARAMETER of csirxss_s_axi_wvalid : signal is "XIL_INTERFACENAME csirxss_s_axi, DATA_WIDTH 32, PROTOCOL AXI4LITE, FREQ_HZ 50000000, ID_WIDTH 0, ADDR_WIDTH 16, AWUSER_WIDTH 0, ARUSER_WIDTH 0, WUSER_WIDTH 0, RUSER_WIDTH 0, BUSER_WIDTH 0, READ_WRITE_MODE READ_WRITE, HAS_BURST 0, HAS_LOCK 0, HAS_PROT 0, HAS_CACHE 0, HAS_QOS 0, HAS_REGION 0, HAS_WSTRB 1, HAS_BRESP 1, HAS_RRESP 1, SUPPORTS_NARROW_BURST 0, NUM_READ_OUTSTANDING 2, NUM_WRITE_OUTSTANDING 2, MAX_BURST_LENGTH 1, PHASE 0.000, CLK_DOMAIN design_1_processing_system7_0_1_FCLK_CLK0, NUM_READ_THREADS 1, NUM_WRITE_THREADS 1, RUSER_BITS_PER_BYTE 0, WUSER_BITS_PER_BYTE 0, INSERT_VIP 0";
   attribute X_INTERFACE_INFO of dphy_clk_200M : signal is "xilinx.com:signal:clock:1.0 CLK.dphy_clk_200M CLK";
   attribute X_INTERFACE_PARAMETER of dphy_clk_200M : signal is "XIL_INTERFACENAME CLK.dphy_clk_200M, FREQ_HZ 200000000, PHASE 0.0, CLK_DOMAIN /clk_wiz_0_clk_out1, INSERT_VIP 0";
   attribute X_INTERFACE_INFO of lite_aclk : signal is "xilinx.com:signal:clock:1.0 CLK.lite_aclk CLK";
@@ -613,7 +613,7 @@ architecture STRUCTURE of design_1_mipi_csi2_rx_subsyst_0_1 is
   attribute X_INTERFACE_INFO of video_out_tlast : signal is "xilinx.com:interface:axis:1.0 video_out TLAST";
   attribute X_INTERFACE_INFO of video_out_tready : signal is "xilinx.com:interface:axis:1.0 video_out TREADY";
   attribute X_INTERFACE_INFO of video_out_tvalid : signal is "xilinx.com:interface:axis:1.0 video_out TVALID";
-  attribute X_INTERFACE_PARAMETER of video_out_tvalid : signal is "XIL_INTERFACENAME video_out, TDATA_NUM_BYTES 5, TDEST_WIDTH 10, TID_WIDTH 0, TUSER_WIDTH 1, HAS_TREADY 1, HAS_TSTRB 0, HAS_TKEEP 0, HAS_TLAST 1, FREQ_HZ 50000000, PHASE 0.000, CLK_DOMAIN design_1_processing_system7_0_1_FCLK_CLK0, LAYERED_METADATA undef, INSERT_VIP 0";
+  attribute X_INTERFACE_PARAMETER of video_out_tvalid : signal is "XIL_INTERFACENAME video_out, TDATA_NUM_BYTES 2, TDEST_WIDTH 10, TID_WIDTH 0, TUSER_WIDTH 1, HAS_TREADY 1, HAS_TSTRB 0, HAS_TKEEP 0, HAS_TLAST 1, FREQ_HZ 50000000, PHASE 0.000, CLK_DOMAIN design_1_processing_system7_0_1_FCLK_CLK0, LAYERED_METADATA undef, INSERT_VIP 0";
   attribute X_INTERFACE_INFO of csirxss_s_axi_araddr : signal is "xilinx.com:interface:aximm:1.0 csirxss_s_axi ARADDR";
   attribute X_INTERFACE_INFO of csirxss_s_axi_awaddr : signal is "xilinx.com:interface:aximm:1.0 csirxss_s_axi AWADDR";
   attribute X_INTERFACE_INFO of csirxss_s_axi_bresp : signal is "xilinx.com:interface:aximm:1.0 csirxss_s_axi BRESP";
@@ -664,7 +664,7 @@ inst: entity work.design_1_mipi_csi2_rx_subsyst_0_1_bd_11cc
       system_rst_out => system_rst_out,
       video_aclk => video_aclk,
       video_aresetn => video_aresetn,
-      video_out_tdata(39 downto 0) => video_out_tdata(39 downto 0),
+      video_out_tdata(15 downto 0) => video_out_tdata(15 downto 0),
       video_out_tdest(9 downto 0) => video_out_tdest(9 downto 0),
       video_out_tlast => video_out_tlast,
       video_out_tready => video_out_tready,

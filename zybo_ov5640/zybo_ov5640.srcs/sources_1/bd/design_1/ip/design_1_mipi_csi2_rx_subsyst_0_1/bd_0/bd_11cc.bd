@@ -1,7 +1,7 @@
 {
   "design": {
     "design_info": {
-      "boundary_crc": "0xBDE285FFDC4065A",
+      "boundary_crc": "0x95D89DC9982D6472",
       "design_src": "SBD",
       "device": "xc7z020clg400-1",
       "name": "bd_11cc",
@@ -129,11 +129,11 @@
           },
           "NUM_READ_THREADS": {
             "value": "1",
-            "value_src": "default_prop"
+            "value_src": "default"
           },
           "NUM_WRITE_THREADS": {
             "value": "1",
-            "value_src": "default_prop"
+            "value_src": "default"
           },
           "RUSER_BITS_PER_BYTE": {
             "value": "0",
@@ -154,7 +154,7 @@
         "vlnv": "xilinx.com:interface:axis_rtl:1.0",
         "parameters": {
           "TDATA_NUM_BYTES": {
-            "value": "5",
+            "value": "2",
             "value_src": "auto"
           },
           "TDEST_WIDTH": {
@@ -518,7 +518,7 @@
             "value": "443"
           },
           "VFB_DATA_TYPE": {
-            "value": "RAW10"
+            "value": "RGB565"
           },
           "VFB_FIFO_DEPTH": {
             "value": "2048"
@@ -527,7 +527,7 @@
             "value": "0"
           },
           "VFB_OP_PIXELS": {
-            "value": "4"
+            "value": "1"
           },
           "VFB_TU_WIDTH": {
             "value": "1"
@@ -548,12 +548,6 @@
           "vfb_0/s_axis"
         ]
       },
-      "phy_rx_mipi_ppi_if": {
-        "interface_ports": [
-          "phy/rx_mipi_ppi_if",
-          "rx/rx_mipi_ppi_if"
-        ]
-      },
       "mipi_phy_if_1": {
         "interface_ports": [
           "mipi_phy_if",
@@ -564,6 +558,12 @@
         "interface_ports": [
           "video_out",
           "vfb_0/m_vfb"
+        ]
+      },
+      "phy_rx_mipi_ppi_if": {
+        "interface_ports": [
+          "phy/rx_mipi_ppi_if",
+          "rx/rx_mipi_ppi_if"
         ]
       }
     },

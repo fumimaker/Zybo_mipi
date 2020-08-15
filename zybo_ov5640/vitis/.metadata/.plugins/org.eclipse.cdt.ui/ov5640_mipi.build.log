@@ -1,4 +1,4 @@
-00:02:14 **** Incremental Build of configuration Debug for project ov5640_mipi ****
+02:44:09 **** Incremental Build of configuration Debug for project ov5640_mipi ****
 make all 
 make --no-print-directory pre-build
 a9-linaro-pre-build-step
@@ -25,5 +25,5 @@ arm-none-eabi-size ov5640_mipi.elf  |tee "ov5640_mipi.elf.size"
 'Finished building: ov5640_mipi.elf.size'
 ' '
 
-00:02:15 Build Finished (took 1s.103ms)
+02:44:12 Build Finished (took 2s.595ms)
 

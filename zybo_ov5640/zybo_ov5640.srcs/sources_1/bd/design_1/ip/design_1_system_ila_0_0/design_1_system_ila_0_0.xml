@@ -171,7 +171,7 @@
       <spirit:parameters>
         <spirit:parameter>
           <spirit:name>TDATA_NUM_BYTES</spirit:name>
-          <spirit:value spirit:format="long" spirit:resolve="generated" spirit:id="BUSIFPARAM_VALUE.SLOT_0_AXIS.TDATA_NUM_BYTES">5</spirit:value>
+          <spirit:value spirit:format="long" spirit:resolve="generated" spirit:id="BUSIFPARAM_VALUE.SLOT_0_AXIS.TDATA_NUM_BYTES">2</spirit:value>
           <spirit:vendorExtensions>
             <xilinx:parameterInfo>
               <xilinx:parameterUsage>none</xilinx:parameterUsage>
@@ -310,39 +310,6 @@
         </spirit:parameters>
       </spirit:view>
       <spirit:view>
-        <spirit:name>xilinx_verilogbehavioralsimulation</spirit:name>
-        <spirit:displayName>Verilog Simulation</spirit:displayName>
-        <spirit:envIdentifier>verilogSource:vivado.xilinx.com:simulation</spirit:envIdentifier>
-        <spirit:language>verilog</spirit:language>
-        <spirit:modelName>bd_f60c</spirit:modelName>
-        <spirit:parameters>
-          <spirit:parameter>
-            <spirit:name>outputProductCRC</spirit:name>
-            <spirit:value>9:790c3803</spirit:value>
-          </spirit:parameter>
-        </spirit:parameters>
-      </spirit:view>
-      <spirit:view>
-        <spirit:name>xilinx_verilogsimulationwrapper</spirit:name>
-        <spirit:displayName>Verilog Simulation Wrapper</spirit:displayName>
-        <spirit:envIdentifier>verilogSource:vivado.xilinx.com:simulation.wrapper</spirit:envIdentifier>
-        <spirit:language>verilog</spirit:language>
-        <spirit:modelName>design_1_system_ila_0_0</spirit:modelName>
-        <spirit:fileSetRef>
-          <spirit:localName>xilinx_verilogsimulationwrapper_view_fileset</spirit:localName>
-        </spirit:fileSetRef>
-        <spirit:parameters>
-          <spirit:parameter>
-            <spirit:name>GENtimestamp</spirit:name>
-            <spirit:value>Wed Aug 12 19:02:11 UTC 2020</spirit:value>
-          </spirit:parameter>
-          <spirit:parameter>
-            <spirit:name>outputProductCRC</spirit:name>
-            <spirit:value>9:790c3803</spirit:value>
-          </spirit:parameter>
-        </spirit:parameters>
-      </spirit:view>
-      <spirit:view>
         <spirit:name>xilinx_externalfiles</spirit:name>
         <spirit:displayName>External Files</spirit:displayName>
         <spirit:envIdentifier>:vivado.xilinx.com:external.files</spirit:envIdentifier>
@@ -352,11 +319,11 @@
         <spirit:parameters>
           <spirit:parameter>
             <spirit:name>GENtimestamp</spirit:name>
-            <spirit:value>Fri Aug 14 11:34:44 UTC 2020</spirit:value>
+            <spirit:value>Sat Aug 15 19:06:15 UTC 2020</spirit:value>
           </spirit:parameter>
           <spirit:parameter>
             <spirit:name>outputProductCRC</spirit:name>
-            <spirit:value>9:35cd735a</spirit:value>
+            <spirit:value>9:449cea1d</spirit:value>
           </spirit:parameter>
         </spirit:parameters>
       </spirit:view>
@@ -370,7 +337,7 @@
         <spirit:parameters>
           <spirit:parameter>
             <spirit:name>GENtimestamp</spirit:name>
-            <spirit:value>Fri Aug 14 11:04:01 UTC 2020</spirit:value>
+            <spirit:value>Sat Aug 15 18:04:22 UTC 2020</spirit:value>
           </spirit:parameter>
           <spirit:parameter>
             <spirit:name>outputProductCRC</spirit:name>
@@ -386,7 +353,7 @@
         <spirit:parameters>
           <spirit:parameter>
             <spirit:name>outputProductCRC</spirit:name>
-            <spirit:value>9:35cd735a</spirit:value>
+            <spirit:value>9:6dbfb0f0</spirit:value>
           </spirit:parameter>
         </spirit:parameters>
       </spirit:view>
@@ -401,11 +368,11 @@
         <spirit:parameters>
           <spirit:parameter>
             <spirit:name>GENtimestamp</spirit:name>
-            <spirit:value>Fri Aug 14 11:34:34 UTC 2020</spirit:value>
+            <spirit:value>Sat Aug 15 19:06:01 UTC 2020</spirit:value>
           </spirit:parameter>
           <spirit:parameter>
             <spirit:name>outputProductCRC</spirit:name>
-            <spirit:value>9:35cd735a</spirit:value>
+            <spirit:value>9:6dbfb0f0</spirit:value>
           </spirit:parameter>
         </spirit:parameters>
       </spirit:view>
@@ -421,11 +388,52 @@
         <spirit:parameters>
           <spirit:parameter>
             <spirit:name>GENtimestamp</spirit:name>
-            <spirit:value>Fri Aug 14 11:34:34 UTC 2020</spirit:value>
+            <spirit:value>Sat Aug 15 19:06:01 UTC 2020</spirit:value>
           </spirit:parameter>
           <spirit:parameter>
             <spirit:name>outputProductCRC</spirit:name>
-            <spirit:value>9:35cd735a</spirit:value>
+            <spirit:value>9:6dbfb0f0</spirit:value>
+          </spirit:parameter>
+        </spirit:parameters>
+      </spirit:view>
+      <spirit:view>
+        <spirit:name>xilinx_verilogbehavioralsimulation</spirit:name>
+        <spirit:displayName>Verilog Simulation</spirit:displayName>
+        <spirit:envIdentifier>verilogSource:vivado.xilinx.com:simulation</spirit:envIdentifier>
+        <spirit:language>verilog</spirit:language>
+        <spirit:modelName>bd_f60c</spirit:modelName>
+        <spirit:parameters>
+          <spirit:parameter>
+            <spirit:name>outputProductCRC</spirit:name>
+            <spirit:value>9:0a4ff835</spirit:value>
+          </spirit:parameter>
+          <spirit:parameter>
+            <spirit:name>sim_type</spirit:name>
+            <spirit:value>rtl</spirit:value>
+          </spirit:parameter>
+        </spirit:parameters>
+      </spirit:view>
+      <spirit:view>
+        <spirit:name>xilinx_verilogsimulationwrapper</spirit:name>
+        <spirit:displayName>Verilog Simulation Wrapper</spirit:displayName>
+        <spirit:envIdentifier>verilogSource:vivado.xilinx.com:simulation.wrapper</spirit:envIdentifier>
+        <spirit:language>verilog</spirit:language>
+        <spirit:modelName>design_1_system_ila_0_0</spirit:modelName>
+        <spirit:fileSetRef>
+          <spirit:localName>xilinx_verilogsimulationwrapper_view_fileset</spirit:localName>
+        </spirit:fileSetRef>
+        <spirit:parameters>
+          <spirit:parameter>
+            <spirit:name>GENtimestamp</spirit:name>
+            <spirit:value>Sat Aug 15 19:06:01 UTC 2020</spirit:value>
+          </spirit:parameter>
+          <spirit:parameter>
+            <spirit:name>outputProductCRC</spirit:name>
+            <spirit:value>9:0a4ff835</spirit:value>
+          </spirit:parameter>
+          <spirit:parameter>
+            <spirit:name>sim_type</spirit:name>
+            <spirit:value>rtl</spirit:value>
           </spirit:parameter>
         </spirit:parameters>
       </spirit:view>
@@ -469,7 +477,7 @@
         <spirit:wire>
           <spirit:direction>in</spirit:direction>
           <spirit:vector>
-            <spirit:left spirit:format="long">39</spirit:left>
+            <spirit:left spirit:format="long">15</spirit:left>
             <spirit:right spirit:format="long">0</spirit:right>
           </spirit:vector>
           <spirit:wireTypeDefs>
@@ -1640,14 +1648,6 @@
       </spirit:file>
     </spirit:fileSet>
     <spirit:fileSet>
-      <spirit:name>xilinx_verilogsimulationwrapper_view_fileset</spirit:name>
-      <spirit:file>
-        <spirit:name>sim/design_1_system_ila_0_0.v</spirit:name>
-        <spirit:fileType>verilogSource</spirit:fileType>
-        <spirit:logicalName>xil_defaultlib</spirit:logicalName>
-      </spirit:file>
-    </spirit:fileSet>
-    <spirit:fileSet>
       <spirit:name>xilinx_externalfiles_view_fileset</spirit:name>
       <spirit:file>
         <spirit:name>design_1_system_ila_0_0.dcp</spirit:name>
@@ -1704,6 +1704,14 @@
       <spirit:name>xilinx_verilogsynthesiswrapper_view_fileset</spirit:name>
       <spirit:file>
         <spirit:name>synth/design_1_system_ila_0_0.v</spirit:name>
+        <spirit:fileType>verilogSource</spirit:fileType>
+        <spirit:logicalName>xil_defaultlib</spirit:logicalName>
+      </spirit:file>
+    </spirit:fileSet>
+    <spirit:fileSet>
+      <spirit:name>xilinx_verilogsimulationwrapper_view_fileset</spirit:name>
+      <spirit:file>
+        <spirit:name>sim/design_1_system_ila_0_0.v</spirit:name>
         <spirit:fileType>verilogSource</spirit:fileType>
         <spirit:logicalName>xil_defaultlib</spirit:logicalName>
       </spirit:file>

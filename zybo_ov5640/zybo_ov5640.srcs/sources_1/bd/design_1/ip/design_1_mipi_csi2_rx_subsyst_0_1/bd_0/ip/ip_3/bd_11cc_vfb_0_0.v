@@ -57,20 +57,20 @@ module bd_11cc_vfb_0_0
  parameter AXIS_TUSER_WIDTH         = 96 ,
  parameter AXIS_TDEST_WIDTH         = 4 ,
  parameter VFB_TU_WIDTH             = 1 ,
- parameter VFB_DATA_TYPE            = 'h2B ,
+ parameter VFB_DATA_TYPE            = 'h22 ,
  parameter VFB_FILTER_VC            = 0 ,
  parameter VFB_VC                   = 'h0 ,
- parameter VFB_REQ_BUFFER           = 1 ,
+ parameter VFB_REQ_BUFFER           = 0 ,
  parameter VFB_REQ_REORDER          = 1 ,
  parameter VFB_FIFO_DEPTH           = 2048 ,
  parameter VFB_FIFO_WIDTH           = 64 ,
- parameter VFB_PXL_W                = 10 ,
+ parameter VFB_PXL_W                = 16 ,
  parameter VFB_PXL_W_BB             = 16 ,
- parameter VFB_4PXL_W               = 40 ,
- parameter VFB_DCONV_OWIDTH         = 64 ,
- parameter VFB_OP_DWIDTH            = 40 ,
- parameter VFB_OP_PIXELS            = 4 ,
- parameter VFB_BYPASS_WC            = 1 
+ parameter VFB_4PXL_W               = 64 ,
+ parameter VFB_DCONV_OWIDTH         = 16 ,
+ parameter VFB_OP_DWIDTH            = 16 ,
+ parameter VFB_OP_PIXELS            = 1 ,
+ parameter VFB_BYPASS_WC            = 0 
 ) (
  //AXIS Interface
  input                              s_axis_aclk    ,

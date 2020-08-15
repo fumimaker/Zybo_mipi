@@ -1,7 +1,7 @@
 {
   "design": {
     "design_info": {
-      "boundary_crc": "0x360EEF2C1F17680C",
+      "boundary_crc": "0xF0E21F300542E88F",
       "design_src": "SBD",
       "device": "xc7z020clg400-1",
       "name": "bd_f60c",
@@ -20,7 +20,7 @@
         "vlnv": "xilinx.com:interface:axis_rtl:1.0",
         "parameters": {
           "TDATA_NUM_BYTES": {
-            "value": "5",
+            "value": "2",
             "value_src": "default"
           },
           "TDEST_WIDTH": {
@@ -157,7 +157,7 @@
             "value": "0"
           },
           "C_PROBE0_WIDTH": {
-            "value": "40"
+            "value": "16"
           },
           "C_PROBE1_TYPE": {
             "value": "0"
@@ -217,7 +217,7 @@
             "value": "0"
           },
           "C_SLOT_0_AXIS_TDATA_WIDTH": {
-            "value": "40"
+            "value": "16"
           },
           "C_SLOT_0_AXIS_TDEST_WIDTH": {
             "value": "10"

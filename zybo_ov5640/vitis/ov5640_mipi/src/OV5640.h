@@ -79,6 +79,8 @@ config_word_t const cfg_720p_60fps_[] =
 	//[7:0]=0 Y address start low byte
 	{0x3803, 8 & 0xFF},
 
+	//1280*720 = fullres 2592*1944-->2560*1440 /2binning
+
 	//[3:0] X address end high byte
 	{0x3804, (2619 >> 8) & 0x0F},
 	//[7:0] X address end low byte
@@ -131,10 +133,13 @@ config_word_t const cfg_720p_60fps_[] =
 	{0x3709, 0x52},
 	{0x370c, 0x03},
 
+	//edit by fumi
 	//[7:4]=0x0 Formatter RAW, [3:0]=0x0 BGBG/GRGR
-	{0x4300, 0x00},
+	//{0x4300, 0x00},
 	//[2:0]=0x3 Format select ISP RAW (DPC)
-	{0x501f, 0x03}
+	//{0x501f, 0x03}
+	{0x4300, 0x6f}, //RGB565
+	{0x501f, 0x01}, //RGB
 };
 config_word_t const cfg_1080p_15fps_[] =
 {//1920 x 1080 @ 15 fps, RAW10, MIPISCLK=210, SCLK=42MHz, PCLK=42M

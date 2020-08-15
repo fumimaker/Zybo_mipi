@@ -1,6 +1,6 @@
 Nothing to build in platform 'design_1_wrapper'
 
-00:02:14 **** Incremental Build of configuration Debug for project ov5640_mipi ****
+02:44:09 **** Incremental Build of configuration Debug for project ov5640_mipi ****
 make all 
 make --no-print-directory pre-build
 a9-linaro-pre-build-step
@@ -26,7 +26,7 @@ arm-none-eabi-size ov5640_mipi.elf  |tee "ov5640_mipi.elf.size"
   66148	   2600	  23392	  92140	  167ec	ov5640_mipi.elf
 'Finished building: ov5640_mipi.elf.size'
 ' '
-00:02:16 **** Incremental Build of configuration Debug for project ov5640_mipi_system ****
+02:44:13 **** Incremental Build of configuration Debug for project ov5640_mipi_system ****
 make all 
 Generating bif file for the system project
 generate_system_bif.bat 60795 C:/Users/ivr/Documents/GitHub/Zybo_mipi/zybo_ov5640/vitis/design_1_wrapper/export/design_1_wrapper/design_1_wrapper.xpfm standalone_domain C:/Users/ivr/Documents/GitHub/Zybo_mipi/zybo_ov5640/vitis/ov5640_mipi_system/Debug/system.bif

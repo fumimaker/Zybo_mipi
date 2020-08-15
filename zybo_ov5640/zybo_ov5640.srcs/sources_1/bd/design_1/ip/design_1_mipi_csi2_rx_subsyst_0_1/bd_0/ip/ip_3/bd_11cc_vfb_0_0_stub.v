@@ -1,7 +1,7 @@
 // Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
 // --------------------------------------------------------------------------------
 // Tool Version: Vivado v.2019.2 (win64) Build 2708876 Wed Nov  6 21:40:23 MST 2019
-// Date        : Thu Aug 13 04:03:46 2020
+// Date        : Sun Aug 16 04:07:20 2020
 // Host        : LAPTOP-AG87OV99 running 64-bit major release  (build 9200)
 // Command     : write_verilog -force -mode synth_stub
 //               c:/Users/ivr/Documents/GitHub/Zybo_mipi/zybo_ov5640/zybo_ov5640.srcs/sources_1/bd/design_1/ip/design_1_mipi_csi2_rx_subsyst_0_1/bd_0/ip/ip_3/bd_11cc_vfb_0_0_stub.v
@@ -17,7 +17,7 @@ module bd_11cc_vfb_0_0(s_axis_aclk, s_axis_aresetn, s_axis_tready,
   s_axis_tvalid, s_axis_tlast, s_axis_tdata, s_axis_tkeep, s_axis_tuser, s_axis_tdest, mdt_tv, 
   mdt_tr, sdt_tv, sdt_tr, vfb_tv, vfb_tr, vfb_arstn, vfb_clk, vfb_ready, vfb_full, vfb_valid, vfb_eol, 
   vfb_sof, vfb_vcdt, vfb_data)
-/* synthesis syn_black_box black_box_pad_pin="s_axis_aclk,s_axis_aresetn,s_axis_tready,s_axis_tvalid,s_axis_tlast,s_axis_tdata[63:0],s_axis_tkeep[7:0],s_axis_tuser[95:0],s_axis_tdest[3:0],mdt_tv,mdt_tr,sdt_tv,sdt_tr,vfb_tv,vfb_tr,vfb_arstn,vfb_clk,vfb_ready,vfb_full,vfb_valid,vfb_eol,vfb_sof[0:0],vfb_vcdt[9:0],vfb_data[39:0]" */;
+/* synthesis syn_black_box black_box_pad_pin="s_axis_aclk,s_axis_aresetn,s_axis_tready,s_axis_tvalid,s_axis_tlast,s_axis_tdata[63:0],s_axis_tkeep[7:0],s_axis_tuser[95:0],s_axis_tdest[3:0],mdt_tv,mdt_tr,sdt_tv,sdt_tr,vfb_tv,vfb_tr,vfb_arstn,vfb_clk,vfb_ready,vfb_full,vfb_valid,vfb_eol,vfb_sof[0:0],vfb_vcdt[9:0],vfb_data[15:0]" */;
   input s_axis_aclk;
   input s_axis_aresetn;
   output s_axis_tready;
@@ -41,5 +41,5 @@ module bd_11cc_vfb_0_0(s_axis_aclk, s_axis_aresetn, s_axis_tready,
   output vfb_eol;
   output [0:0]vfb_sof;
   output [9:0]vfb_vcdt;
-  output [39:0]vfb_data;
+  output [15:0]vfb_data;
 endmodule

@@ -1,7 +1,7 @@
 //Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
 //--------------------------------------------------------------------------------
 //Tool Version: Vivado v.2019.2 (win64) Build 2708876 Wed Nov  6 21:40:23 MST 2019
-//Date        : Fri Aug 14 20:34:33 2020
+//Date        : Sun Aug 16 04:06:00 2020
 //Host        : LAPTOP-AG87OV99 running 64-bit major release  (build 9200)
 //Command     : generate_target design_1.bd
 //Design      : design_1
@@ -97,7 +97,7 @@ module design_1
   wire mipi_csi2_rx_subsyst_0_csirxss_csi_irq;
   wire mipi_csi2_rx_subsyst_0_rxbyteclkhs;
   wire mipi_csi2_rx_subsyst_0_system_rst_out;
-  (* CONN_BUS_INFO = "mipi_csi2_rx_subsyst_0_video_out xilinx.com:interface:axis:1.0 None TDATA" *) (* DONT_TOUCH *) wire [39:0]mipi_csi2_rx_subsyst_0_video_out_TDATA;
+  (* CONN_BUS_INFO = "mipi_csi2_rx_subsyst_0_video_out xilinx.com:interface:axis:1.0 None TDATA" *) (* DONT_TOUCH *) wire [15:0]mipi_csi2_rx_subsyst_0_video_out_TDATA;
   (* CONN_BUS_INFO = "mipi_csi2_rx_subsyst_0_video_out xilinx.com:interface:axis:1.0 None TDEST" *) (* DONT_TOUCH *) wire [9:0]mipi_csi2_rx_subsyst_0_video_out_TDEST;
   (* CONN_BUS_INFO = "mipi_csi2_rx_subsyst_0_video_out xilinx.com:interface:axis:1.0 None TLAST" *) (* DONT_TOUCH *) wire mipi_csi2_rx_subsyst_0_video_out_TLAST;
   (* CONN_BUS_INFO = "mipi_csi2_rx_subsyst_0_video_out xilinx.com:interface:axis:1.0 None TUSER" *) (* DONT_TOUCH *) wire [0:0]mipi_csi2_rx_subsyst_0_video_out_TUSER;

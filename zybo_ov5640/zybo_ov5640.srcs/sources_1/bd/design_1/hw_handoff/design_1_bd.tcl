@@ -228,9 +228,10 @@ proc create_root_design { parentCell } {
   # Create instance: mipi_csi2_rx_subsyst_0, and set properties
   set mipi_csi2_rx_subsyst_0 [ create_bd_cell -type ip -vlnv xilinx.com:ip:mipi_csi2_rx_subsystem:4.1 mipi_csi2_rx_subsyst_0 ]
   set_property -dict [ list \
+   CONFIG.CMN_INC_VFB {true} \
    CONFIG.CMN_NUM_LANES {2} \
-   CONFIG.CMN_NUM_PIXELS {4} \
-   CONFIG.CMN_PXL_FORMAT {RAW10} \
+   CONFIG.CMN_NUM_PIXELS {1} \
+   CONFIG.CMN_PXL_FORMAT {RGB565} \
    CONFIG.C_DPHY_LANES {2} \
    CONFIG.C_HS_LINE_RATE {443} \
    CONFIG.C_HS_SETTLE_NS {157} \
