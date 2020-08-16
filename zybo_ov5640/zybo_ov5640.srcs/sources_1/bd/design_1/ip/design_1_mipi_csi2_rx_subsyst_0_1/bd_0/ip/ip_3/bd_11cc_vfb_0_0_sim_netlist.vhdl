@@ -3,8 +3,8 @@
 -- Tool Version: Vivado v.2019.2 (win64) Build 2708876 Wed Nov  6 21:40:23 MST 2019
 -- Date        : Sun Aug 16 04:07:20 2020
 -- Host        : LAPTOP-AG87OV99 running 64-bit major release  (build 9200)
--- Command     : write_vhdl -force -mode funcsim
---               c:/Users/ivr/Documents/GitHub/Zybo_mipi/zybo_ov5640/zybo_ov5640.srcs/sources_1/bd/design_1/ip/design_1_mipi_csi2_rx_subsyst_0_1/bd_0/ip/ip_3/bd_11cc_vfb_0_0_sim_netlist.vhdl
+-- Command     : write_vhdl -force -mode funcsim -rename_top bd_11cc_vfb_0_0 -prefix
+--               bd_11cc_vfb_0_0_ bd_11cc_vfb_0_0_sim_netlist.vhdl
 -- Design      : bd_11cc_vfb_0_0
 -- Purpose     : This VHDL netlist is a functional simulation representation of the design and should not be modified or
 --               synthesized. This netlist cannot be used for SDF annotated simulation.
@@ -33,8 +33,6 @@ entity bd_11cc_vfb_0_0_axis_dwidth_converter_v1_1_19_axisc_downsizer is
     s_axis_tid : in STD_LOGIC_VECTOR ( 31 downto 0 );
     s_axis_tuser : in STD_LOGIC_VECTOR ( 23 downto 0 )
   );
-  attribute ORIG_REF_NAME : string;
-  attribute ORIG_REF_NAME of bd_11cc_vfb_0_0_axis_dwidth_converter_v1_1_19_axisc_downsizer : entity is "axis_dwidth_converter_v1_1_19_axisc_downsizer";
 end bd_11cc_vfb_0_0_axis_dwidth_converter_v1_1_19_axisc_downsizer;
 
 architecture STRUCTURE of bd_11cc_vfb_0_0_axis_dwidth_converter_v1_1_19_axisc_downsizer is
@@ -2979,8 +2977,6 @@ entity bd_11cc_vfb_0_0_vfb_v1_0_14_op_inf is
     \sband_td_r_reg[55]_1\ : in STD_LOGIC_VECTOR ( 55 downto 0 );
     \vfb_data_reg[7]_0\ : in STD_LOGIC_VECTOR ( 7 downto 0 )
   );
-  attribute ORIG_REF_NAME : string;
-  attribute ORIG_REF_NAME of bd_11cc_vfb_0_0_vfb_v1_0_14_op_inf : entity is "vfb_v1_0_14_op_inf";
 end bd_11cc_vfb_0_0_vfb_v1_0_14_op_inf;
 
 architecture STRUCTURE of bd_11cc_vfb_0_0_vfb_v1_0_14_op_inf is
@@ -4343,8 +4339,6 @@ entity bd_11cc_vfb_0_0_vfb_v1_0_14_reorder is
     \sband_tu_r_reg[0]_0\ : in STD_LOGIC;
     \buf_data_reg[1][172]_0\ : in STD_LOGIC_VECTOR ( 99 downto 0 )
   );
-  attribute ORIG_REF_NAME : string;
-  attribute ORIG_REF_NAME of bd_11cc_vfb_0_0_vfb_v1_0_14_reorder : entity is "vfb_v1_0_14_reorder";
 end bd_11cc_vfb_0_0_vfb_v1_0_14_reorder;
 
 architecture STRUCTURE of bd_11cc_vfb_0_0_vfb_v1_0_14_reorder is
@@ -9093,8 +9087,6 @@ entity bd_11cc_vfb_0_0_axis_dwidth_converter_v1_1_19_axis_dwidth_converter is
     s_axis_tuser : in STD_LOGIC_VECTOR ( 23 downto 0 );
     aresetn : in STD_LOGIC
   );
-  attribute ORIG_REF_NAME : string;
-  attribute ORIG_REF_NAME of bd_11cc_vfb_0_0_axis_dwidth_converter_v1_1_19_axis_dwidth_converter : entity is "axis_dwidth_converter_v1_1_19_axis_dwidth_converter";
 end bd_11cc_vfb_0_0_axis_dwidth_converter_v1_1_19_axis_dwidth_converter;
 
 architecture STRUCTURE of bd_11cc_vfb_0_0_axis_dwidth_converter_v1_1_19_axis_dwidth_converter is
@@ -9167,8 +9159,6 @@ entity bd_11cc_vfb_0_0_bd_11cc_vfb_0_0_axis_converter is
   attribute CHECK_LICENSE_TYPE of bd_11cc_vfb_0_0_bd_11cc_vfb_0_0_axis_converter : entity is "bd_11cc_vfb_0_0_axis_converter,axis_dwidth_converter_v1_1_19_axis_dwidth_converter,{}";
   attribute DowngradeIPIdentifiedWarnings : string;
   attribute DowngradeIPIdentifiedWarnings of bd_11cc_vfb_0_0_bd_11cc_vfb_0_0_axis_converter : entity is "yes";
-  attribute ORIG_REF_NAME : string;
-  attribute ORIG_REF_NAME of bd_11cc_vfb_0_0_bd_11cc_vfb_0_0_axis_converter : entity is "bd_11cc_vfb_0_0_axis_converter";
   attribute X_CORE_INFO : string;
   attribute X_CORE_INFO of bd_11cc_vfb_0_0_bd_11cc_vfb_0_0_axis_converter : entity is "axis_dwidth_converter_v1_1_19_axis_dwidth_converter,Vivado 2019.2";
 end bd_11cc_vfb_0_0_bd_11cc_vfb_0_0_axis_converter;
@@ -9241,8 +9231,6 @@ entity bd_11cc_vfb_0_0_bd_11cc_vfb_0_0_axis_dconverter is
     s_axis_tuser : in STD_LOGIC_VECTOR ( 0 to 0 );
     mdt_tr : in STD_LOGIC
   );
-  attribute ORIG_REF_NAME : string;
-  attribute ORIG_REF_NAME of bd_11cc_vfb_0_0_bd_11cc_vfb_0_0_axis_dconverter : entity is "bd_11cc_vfb_0_0_axis_dconverter";
 end bd_11cc_vfb_0_0_bd_11cc_vfb_0_0_axis_dconverter;
 
 architecture STRUCTURE of bd_11cc_vfb_0_0_bd_11cc_vfb_0_0_axis_dconverter is
@@ -9433,8 +9421,6 @@ entity bd_11cc_vfb_0_0_bd_11cc_vfb_0_0_core is
   attribute C_HS_LINE_RATE of bd_11cc_vfb_0_0_bd_11cc_vfb_0_0_core : entity is 443;
   attribute DowngradeIPIdentifiedWarnings : string;
   attribute DowngradeIPIdentifiedWarnings of bd_11cc_vfb_0_0_bd_11cc_vfb_0_0_core : entity is "yes";
-  attribute ORIG_REF_NAME : string;
-  attribute ORIG_REF_NAME of bd_11cc_vfb_0_0_bd_11cc_vfb_0_0_core : entity is "bd_11cc_vfb_0_0_core";
   attribute VFB_4PXL_W : integer;
   attribute VFB_4PXL_W of bd_11cc_vfb_0_0_bd_11cc_vfb_0_0_core : entity is 64;
   attribute VFB_BYPASS_WC : integer;

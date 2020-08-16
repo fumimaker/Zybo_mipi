@@ -3,8 +3,8 @@
 // Tool Version: Vivado v.2019.2 (win64) Build 2708876 Wed Nov  6 21:40:23 MST 2019
 // Date        : Sun Aug 16 04:07:20 2020
 // Host        : LAPTOP-AG87OV99 running 64-bit major release  (build 9200)
-// Command     : write_verilog -force -mode synth_stub
-//               c:/Users/ivr/Documents/GitHub/Zybo_mipi/zybo_ov5640/zybo_ov5640.srcs/sources_1/bd/design_1/ip/design_1_mipi_csi2_rx_subsyst_0_1/bd_0/ip/ip_3/bd_11cc_vfb_0_0_stub.v
+// Command     : write_verilog -force -mode synth_stub -rename_top bd_11cc_vfb_0_0 -prefix
+//               bd_11cc_vfb_0_0_ bd_11cc_vfb_0_0_stub.v
 // Design      : bd_11cc_vfb_0_0
 // Purpose     : Stub declaration of top-level module interface
 // Device      : xc7z020clg400-1

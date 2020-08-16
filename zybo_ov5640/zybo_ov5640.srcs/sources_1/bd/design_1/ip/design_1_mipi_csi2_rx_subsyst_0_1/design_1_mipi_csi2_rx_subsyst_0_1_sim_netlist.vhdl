@@ -1,10 +1,10 @@
 -- Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
 -- --------------------------------------------------------------------------------
 -- Tool Version: Vivado v.2019.2 (win64) Build 2708876 Wed Nov  6 21:40:23 MST 2019
--- Date        : Sun Aug 16 04:08:15 2020
+-- Date        : Sun Aug 16 04:08:14 2020
 -- Host        : LAPTOP-AG87OV99 running 64-bit major release  (build 9200)
--- Command     : write_vhdl -force -mode funcsim
---               C:/Users/ivr/Documents/GitHub/Zybo_mipi/zybo_ov5640/zybo_ov5640.srcs/sources_1/bd/design_1/ip/design_1_mipi_csi2_rx_subsyst_0_1/design_1_mipi_csi2_rx_subsyst_0_1_sim_netlist.vhdl
+-- Command     : write_vhdl -force -mode funcsim -rename_top design_1_mipi_csi2_rx_subsyst_0_1 -prefix
+--               design_1_mipi_csi2_rx_subsyst_0_1_ design_1_mipi_csi2_rx_subsyst_0_1_sim_netlist.vhdl
 -- Design      : design_1_mipi_csi2_rx_subsyst_0_1
 -- Purpose     : This VHDL netlist is a functional simulation representation of the design and should not be modified or
 --               synthesized. This netlist cannot be used for SDF annotated simulation.
@@ -58,8 +58,6 @@ entity design_1_mipi_csi2_rx_subsyst_0_1_bd_11cc is
   );
   attribute HW_HANDOFF : string;
   attribute HW_HANDOFF of design_1_mipi_csi2_rx_subsyst_0_1_bd_11cc : entity is "design_1_mipi_csi2_rx_subsyst_0_1.hwdef";
-  attribute ORIG_REF_NAME : string;
-  attribute ORIG_REF_NAME of design_1_mipi_csi2_rx_subsyst_0_1_bd_11cc : entity is "bd_11cc";
 end design_1_mipi_csi2_rx_subsyst_0_1_bd_11cc;
 
 architecture STRUCTURE of design_1_mipi_csi2_rx_subsyst_0_1_bd_11cc is

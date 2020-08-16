@@ -536,18 +536,6 @@
       }
     },
     "interface_nets": {
-      "csirxss_s_axi_1": {
-        "interface_ports": [
-          "csirxss_s_axi",
-          "rx/s_axi"
-        ]
-      },
-      "rx_m_axis": {
-        "interface_ports": [
-          "rx/m_axis",
-          "vfb_0/s_axis"
-        ]
-      },
       "mipi_phy_if_1": {
         "interface_ports": [
           "mipi_phy_if",
@@ -558,6 +546,18 @@
         "interface_ports": [
           "video_out",
           "vfb_0/m_vfb"
+        ]
+      },
+      "csirxss_s_axi_1": {
+        "interface_ports": [
+          "csirxss_s_axi",
+          "rx/s_axi"
+        ]
+      },
+      "rx_m_axis": {
+        "interface_ports": [
+          "rx/m_axis",
+          "vfb_0/s_axis"
         ]
       },
       "phy_rx_mipi_ppi_if": {
