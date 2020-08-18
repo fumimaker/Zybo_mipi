@@ -1,10 +1,10 @@
 -- Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
 -- --------------------------------------------------------------------------------
 -- Tool Version: Vivado v.2019.2 (win64) Build 2708876 Wed Nov  6 21:40:23 MST 2019
--- Date        : Sun Aug 16 04:07:20 2020
+-- Date        : Tue Aug 18 19:08:52 2020
 -- Host        : LAPTOP-AG87OV99 running 64-bit major release  (build 9200)
--- Command     : write_vhdl -force -mode synth_stub -rename_top bd_11cc_vfb_0_0 -prefix
---               bd_11cc_vfb_0_0_ bd_11cc_vfb_0_0_stub.vhdl
+-- Command     : write_vhdl -force -mode synth_stub
+--               c:/Users/ivr/Documents/GitHub/Zybo_mipi/zybo_ov5640/zybo_ov5640.srcs/sources_1/bd/design_1/ip/design_1_mipi_csi2_rx_subsyst_0_1/bd_0/ip/ip_3/bd_11cc_vfb_0_0_stub.vhdl
 -- Design      : bd_11cc_vfb_0_0
 -- Purpose     : Stub declaration of top-level module interface
 -- Device      : xc7z020clg400-1
@@ -37,7 +37,7 @@ entity bd_11cc_vfb_0_0 is
     vfb_eol : out STD_LOGIC;
     vfb_sof : out STD_LOGIC_VECTOR ( 0 to 0 );
     vfb_vcdt : out STD_LOGIC_VECTOR ( 9 downto 0 );
-    vfb_data : out STD_LOGIC_VECTOR ( 15 downto 0 )
+    vfb_data : out STD_LOGIC_VECTOR ( 39 downto 0 )
   );
 
 end bd_11cc_vfb_0_0;
@@ -46,6 +46,6 @@ architecture stub of bd_11cc_vfb_0_0 is
 attribute syn_black_box : boolean;
 attribute black_box_pad_pin : string;
 attribute syn_black_box of stub : architecture is true;
-attribute black_box_pad_pin of stub : architecture is "s_axis_aclk,s_axis_aresetn,s_axis_tready,s_axis_tvalid,s_axis_tlast,s_axis_tdata[63:0],s_axis_tkeep[7:0],s_axis_tuser[95:0],s_axis_tdest[3:0],mdt_tv,mdt_tr,sdt_tv,sdt_tr,vfb_tv,vfb_tr,vfb_arstn,vfb_clk,vfb_ready,vfb_full,vfb_valid,vfb_eol,vfb_sof[0:0],vfb_vcdt[9:0],vfb_data[15:0]";
+attribute black_box_pad_pin of stub : architecture is "s_axis_aclk,s_axis_aresetn,s_axis_tready,s_axis_tvalid,s_axis_tlast,s_axis_tdata[63:0],s_axis_tkeep[7:0],s_axis_tuser[95:0],s_axis_tdest[3:0],mdt_tv,mdt_tr,sdt_tv,sdt_tr,vfb_tv,vfb_tr,vfb_arstn,vfb_clk,vfb_ready,vfb_full,vfb_valid,vfb_eol,vfb_sof[0:0],vfb_vcdt[9:0],vfb_data[39:0]";
 begin
 end;

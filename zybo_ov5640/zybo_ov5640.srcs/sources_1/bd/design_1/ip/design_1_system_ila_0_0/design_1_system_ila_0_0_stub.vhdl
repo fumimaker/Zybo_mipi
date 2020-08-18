@@ -1,7 +1,7 @@
 -- Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
 -- --------------------------------------------------------------------------------
 -- Tool Version: Vivado v.2019.2 (win64) Build 2708876 Wed Nov  6 21:40:23 MST 2019
--- Date        : Sun Aug 16 02:19:35 2020
+-- Date        : Tue Aug 18 18:17:03 2020
 -- Host        : LAPTOP-AG87OV99 running 64-bit major release  (build 9200)
 -- Command     : write_vhdl -force -mode synth_stub -rename_top design_1_system_ila_0_0 -prefix
 --               design_1_system_ila_0_0_ design_1_system_ila_0_0_stub.vhdl
@@ -16,7 +16,7 @@ entity design_1_system_ila_0_0 is
   Port ( 
     clk : in STD_LOGIC;
     SLOT_0_AXIS_tdest : in STD_LOGIC_VECTOR ( 9 downto 0 );
-    SLOT_0_AXIS_tdata : in STD_LOGIC_VECTOR ( 15 downto 0 );
+    SLOT_0_AXIS_tdata : in STD_LOGIC_VECTOR ( 39 downto 0 );
     SLOT_0_AXIS_tlast : in STD_LOGIC;
     SLOT_0_AXIS_tuser : in STD_LOGIC_VECTOR ( 0 to 0 );
     SLOT_0_AXIS_tvalid : in STD_LOGIC;
@@ -30,7 +30,7 @@ architecture stub of design_1_system_ila_0_0 is
 attribute syn_black_box : boolean;
 attribute black_box_pad_pin : string;
 attribute syn_black_box of stub : architecture is true;
-attribute black_box_pad_pin of stub : architecture is "clk,SLOT_0_AXIS_tdest[9:0],SLOT_0_AXIS_tdata[15:0],SLOT_0_AXIS_tlast,SLOT_0_AXIS_tuser[0:0],SLOT_0_AXIS_tvalid,SLOT_0_AXIS_tready,resetn";
+attribute black_box_pad_pin of stub : architecture is "clk,SLOT_0_AXIS_tdest[9:0],SLOT_0_AXIS_tdata[39:0],SLOT_0_AXIS_tlast,SLOT_0_AXIS_tuser[0:0],SLOT_0_AXIS_tvalid,SLOT_0_AXIS_tready,resetn";
 attribute X_CORE_INFO : string;
 attribute X_CORE_INFO of stub : architecture is "bd_f60c,Vivado 2019.2";
 begin

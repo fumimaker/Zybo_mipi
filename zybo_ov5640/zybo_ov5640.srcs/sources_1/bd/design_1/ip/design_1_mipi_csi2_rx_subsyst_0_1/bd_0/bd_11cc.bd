@@ -1,7 +1,7 @@
 {
   "design": {
     "design_info": {
-      "boundary_crc": "0x95D89DC9982D6472",
+      "boundary_crc": "0xBDE285F5C122B75",
       "design_src": "SBD",
       "device": "xc7z020clg400-1",
       "name": "bd_11cc",
@@ -154,7 +154,7 @@
         "vlnv": "xilinx.com:interface:axis_rtl:1.0",
         "parameters": {
           "TDATA_NUM_BYTES": {
-            "value": "2",
+            "value": "5",
             "value_src": "auto"
           },
           "TDEST_WIDTH": {
@@ -281,7 +281,7 @@
             "value_src": "default"
           },
           "FREQ_HZ": {
-            "value": "55375000.0",
+            "value": "42000000.0",
             "value_src": "ip"
           },
           "INSERT_VIP": {
@@ -422,7 +422,7 @@
             "value": "false"
           },
           "C_HS_LINE_RATE": {
-            "value": "443"
+            "value": "336"
           },
           "C_IS_7SERIES": {
             "value": "true"
@@ -479,10 +479,10 @@
             "value": "true"
           },
           "C_HS_LINE_RATE": {
-            "value": "443"
+            "value": "336"
           },
           "C_HS_SETTLE_NS": {
-            "value": "157"
+            "value": "164"
           },
           "C_HS_TIMEOUT": {
             "value": "65541"
@@ -515,10 +515,10 @@
             "value": "64"
           },
           "C_HS_LINE_RATE": {
-            "value": "443"
+            "value": "336"
           },
           "VFB_DATA_TYPE": {
-            "value": "RGB565"
+            "value": "RAW10"
           },
           "VFB_FIFO_DEPTH": {
             "value": "2048"
@@ -527,7 +527,7 @@
             "value": "0"
           },
           "VFB_OP_PIXELS": {
-            "value": "1"
+            "value": "4"
           },
           "VFB_TU_WIDTH": {
             "value": "1"
@@ -536,10 +536,16 @@
       }
     },
     "interface_nets": {
-      "mipi_phy_if_1": {
+      "csirxss_s_axi_1": {
         "interface_ports": [
-          "mipi_phy_if",
-          "phy/rx_mipi_phy_if"
+          "csirxss_s_axi",
+          "rx/s_axi"
+        ]
+      },
+      "phy_rx_mipi_ppi_if": {
+        "interface_ports": [
+          "phy/rx_mipi_ppi_if",
+          "rx/rx_mipi_ppi_if"
         ]
       },
       "vfb_0_m_vfb": {
@@ -548,22 +554,16 @@
           "vfb_0/m_vfb"
         ]
       },
-      "csirxss_s_axi_1": {
-        "interface_ports": [
-          "csirxss_s_axi",
-          "rx/s_axi"
-        ]
-      },
       "rx_m_axis": {
         "interface_ports": [
           "rx/m_axis",
           "vfb_0/s_axis"
         ]
       },
-      "phy_rx_mipi_ppi_if": {
+      "mipi_phy_if_1": {
         "interface_ports": [
-          "phy/rx_mipi_ppi_if",
-          "rx/rx_mipi_ppi_if"
+          "mipi_phy_if",
+          "phy/rx_mipi_phy_if"
         ]
       }
     },

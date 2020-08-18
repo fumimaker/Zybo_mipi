@@ -56,29 +56,18 @@ module bd_11cc_vfb_0_0_axis_dconverter (
   input s_axis_tlast,
   output m_axis_tvalid,
   input m_axis_tready,
-  output [16-1:0] m_axis_tdata,
-  output [2-1:0] m_axis_tkeep,
+  output [64-1:0] m_axis_tdata,
+  output [8-1:0] m_axis_tkeep,
   output [32-1:0]  m_axis_tid,
   output [3-1:0] m_axis_tuser,
   output m_axis_tlast
 );
-bd_11cc_vfb_0_0_axis_converter axis_conv_inst (
-  .aclk         (aclk         ),
-  .aresetn      (aresetn      ),
-  .s_axis_tvalid(s_axis_tvalid),
-  .s_axis_tready(s_axis_tready),
-  .s_axis_tdata (s_axis_tdata ),
-  .s_axis_tkeep (s_axis_tkeep ),
-  .s_axis_tid   (s_axis_tid   ),
-  .m_axis_tid   (m_axis_tid   ),
-  .s_axis_tuser (s_axis_tuser ),
-  .m_axis_tuser (m_axis_tuser ),
-  .s_axis_tlast (s_axis_tlast ),
-  .m_axis_tvalid(m_axis_tvalid),
-  .m_axis_tready(m_axis_tready),
-  .m_axis_tdata (m_axis_tdata ),
-  .m_axis_tkeep (m_axis_tkeep ),
-  .m_axis_tlast (m_axis_tlast ) 
-);
+  assign m_axis_tvalid = s_axis_tvalid;
+  assign m_axis_tdata  = s_axis_tdata ;
+  assign m_axis_tkeep  = s_axis_tkeep ;
+  assign m_axis_tid    = s_axis_tid   ;
+  assign m_axis_tuser  = s_axis_tuser ;
+  assign m_axis_tlast  = s_axis_tlast ;
+  assign s_axis_tready = m_axis_tready;
 
 endmodule

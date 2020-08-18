@@ -169,7 +169,7 @@ output wire cl_enable;
 (* X_INTERFACE_INFO = "xilinx.com:interface:rx_mipi_ppi_if:1.0 rx_mipi_ppi_if CL_RXULPSCLKNOT" *)
 input wire cl_rxulpsclknot;
 input wire vfb_full;
-(* X_INTERFACE_PARAMETER = "XIL_INTERFACENAME dl0_rxbyteclkhs, FREQ_HZ 55375000.0, PHASE 0, CLK_DOMAIN bd_11cc_phy_0_rxbyteclkhs, INSERT_VIP 0" *)
+(* X_INTERFACE_PARAMETER = "XIL_INTERFACENAME dl0_rxbyteclkhs, FREQ_HZ 42000000.0, PHASE 0, CLK_DOMAIN bd_11cc_phy_0_rxbyteclkhs, INSERT_VIP 0" *)
 (* X_INTERFACE_INFO = "xilinx.com:signal:clock:1.0 dl0_rxbyteclkhs CLK" *)
 input wire dl0_rxbyteclkhs;
 (* X_INTERFACE_INFO = "xilinx.com:interface:rx_mipi_ppi_if:1.0 rx_mipi_ppi_if DL0_RXDATAHS" *)
@@ -194,7 +194,7 @@ input wire dl0_errsotsynchs;
 input wire dl0_erresc;
 (* X_INTERFACE_INFO = "xilinx.com:interface:rx_mipi_ppi_if:1.0 rx_mipi_ppi_if DL0_ERRCONTROL" *)
 input wire dl0_errcontrol;
-(* X_INTERFACE_PARAMETER = "XIL_INTERFACENAME dl1_rxbyteclkhs, FREQ_HZ 55375000.0, PHASE 0, CLK_DOMAIN bd_11cc_phy_0_rxbyteclkhs, INSERT_VIP 0" *)
+(* X_INTERFACE_PARAMETER = "XIL_INTERFACENAME dl1_rxbyteclkhs, FREQ_HZ 42000000.0, PHASE 0, CLK_DOMAIN bd_11cc_phy_0_rxbyteclkhs, INSERT_VIP 0" *)
 (* X_INTERFACE_INFO = "xilinx.com:signal:clock:1.0 dl1_rxbyteclkhs CLK" *)
 input wire dl1_rxbyteclkhs;
 (* X_INTERFACE_INFO = "xilinx.com:interface:rx_mipi_ppi_if:1.0 rx_mipi_ppi_if DL1_RXDATAHS" *)
@@ -254,7 +254,7 @@ input wire vfb_tr;
 output wire interrupt;
 
   mipi_csi2_rx_ctrl_v1_0_8_top #(
-    .C_HS_LINE_RATE(443),
+    .C_HS_LINE_RATE(336),
     .C_RCVE_DESKEW_SEQ("false"),
     .C_FAMILY("zynq"),
     .C_S_AXI_ADDR_WIDTH(8),

@@ -207,8 +207,8 @@ proc create_root_design { parentCell } {
    CONFIG.C_EN_TIMEOUT_REGS {false} \
    CONFIG.C_ESC_TIMEOUT {25600} \
    CONFIG.C_FIFO_RD_EN_CONTROL {true} \
-   CONFIG.C_HS_LINE_RATE {443} \
-   CONFIG.C_HS_SETTLE_NS {157} \
+   CONFIG.C_HS_LINE_RATE {336} \
+   CONFIG.C_HS_SETTLE_NS {164} \
    CONFIG.C_HS_TIMEOUT {65541} \
    CONFIG.C_IDLY_GROUP_NAME {mipi_csi2rx_idly_group} \
    CONFIG.C_INIT {100000} \
@@ -240,7 +240,7 @@ proc create_root_design { parentCell } {
    CONFIG.C_DISABLE_LITE {false} \
    CONFIG.C_EN_CSI_V2_0 {false} \
    CONFIG.C_EN_VCX {false} \
-   CONFIG.C_HS_LINE_RATE {443} \
+   CONFIG.C_HS_LINE_RATE {336} \
    CONFIG.C_IS_7SERIES {true} \
    CONFIG.C_MIPI_SLV_INT {0} \
    CONFIG.C_RCVE_DESKEW_SEQ {false} \
@@ -249,11 +249,11 @@ proc create_root_design { parentCell } {
   # Create instance: vfb_0, and set properties
   set vfb_0 [ create_bd_cell -type ip -vlnv xilinx.com:ip:vfb:1.0 vfb_0 ]
   set_property -dict [ list \
-   CONFIG.C_HS_LINE_RATE {443} \
-   CONFIG.VFB_DATA_TYPE {RGB565} \
+   CONFIG.C_HS_LINE_RATE {336} \
+   CONFIG.VFB_DATA_TYPE {RAW10} \
    CONFIG.VFB_FIFO_DEPTH {2048} \
    CONFIG.VFB_FILTER_VC {0} \
-   CONFIG.VFB_OP_PIXELS {1} \
+   CONFIG.VFB_OP_PIXELS {4} \
    CONFIG.VFB_TU_WIDTH {1} \
  ] $vfb_0
 

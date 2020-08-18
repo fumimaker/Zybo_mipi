@@ -1,29 +1,10 @@
-02:44:09 **** Incremental Build of configuration Debug for project ov5640_mipi ****
+18:32:23 **** Incremental Build of configuration Debug for project ov5640_mipi ****
 make all 
 make --no-print-directory pre-build
 a9-linaro-pre-build-step
 ' '
 make --no-print-directory main-build
-'Building file: ../src/main.c'
-'Invoking: ARM v7 gcc compiler'
-arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -IC:/Users/ivr/Documents/GitHub/Zybo_mipi/zybo_ov5640/vitis/design_1_wrapper/export/design_1_wrapper/sw/design_1_wrapper/standalone_domain/bspinclude/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
-../src/main.c: In function 'WriteConfig':
-../src/main.c:179:1: warning: control reaches end of non-void function [-Wreturn-type]
- }
- ^
-'Finished building: ../src/main.c'
-' '
-'Building target: ov5640_mipi.elf'
-'Invoking: ARM v7 gcc linker'
-arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -LC:/Users/ivr/Documents/GitHub/Zybo_mipi/zybo_ov5640/vitis/design_1_wrapper/export/design_1_wrapper/sw/design_1_wrapper/standalone_domain/bsplib/lib -o "ov5640_mipi.elf"  ./src/OV5640.o ./src/main.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
-'Finished building target: ov5640_mipi.elf'
-' '
-'Invoking: ARM v7 Print Size'
-arm-none-eabi-size ov5640_mipi.elf  |tee "ov5640_mipi.elf.size"
-   text	   data	    bss	    dec	    hex	filename
-  66148	   2600	  23392	  92140	  167ec	ov5640_mipi.elf
-'Finished building: ov5640_mipi.elf.size'
-' '
+make[1]: Nothing to be done for 'main-build'.
 
-02:44:12 Build Finished (took 2s.595ms)
+18:32:23 Build Finished (took 452ms)
 

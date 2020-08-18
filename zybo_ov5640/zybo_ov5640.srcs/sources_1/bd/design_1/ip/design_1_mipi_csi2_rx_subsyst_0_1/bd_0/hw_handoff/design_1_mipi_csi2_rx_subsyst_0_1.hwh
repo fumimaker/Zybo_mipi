@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
-<EDKSYSTEM EDWVERSION="1.2" TIMESTAMP="Mon Aug 17 02:32:12 2020" VIVADOVERSION="2019.2">
+<EDKSYSTEM EDWVERSION="1.2" TIMESTAMP="Tue Aug 18 19:07:17 2020" VIVADOVERSION="2019.2">
 
   <SYSTEMINFO ARCH="zynq" BOARD="digilentinc.com:zybo-z7-20:part0:1.0" DEVICE="7z020" NAME="bd_11cc" PACKAGE="clg400" SPEEDGRADE="-1"/>
 
@@ -20,7 +20,7 @@
         <CONNECTION INSTANCE="phy" PORT="core_clk"/>
       </CONNECTIONS>
     </PORT>
-    <PORT CLKFREQUENCY="55375000.0" DIR="O" NAME="rxbyteclkhs" SIGIS="clk" SIGNAME="phy_rxbyteclkhs">
+    <PORT CLKFREQUENCY="42000000.0" DIR="O" NAME="rxbyteclkhs" SIGIS="clk" SIGNAME="phy_rxbyteclkhs">
       <CONNECTIONS>
         <CONNECTION INSTANCE="phy" PORT="rxbyteclkhs"/>
       </CONNECTIONS>
@@ -136,7 +136,7 @@
         <CONNECTION INSTANCE="rx" PORT="s_axi_wvalid"/>
       </CONNECTIONS>
     </PORT>
-    <PORT DIR="O" LEFT="15" NAME="video_out_tdata" RIGHT="0" SIGIS="undef" SIGNAME="vfb_0_vfb_data">
+    <PORT DIR="O" LEFT="39" NAME="video_out_tdata" RIGHT="0" SIGIS="undef" SIGNAME="vfb_0_vfb_data">
       <CONNECTIONS>
         <CONNECTION INSTANCE="vfb_0" PORT="vfb_data"/>
       </CONNECTIONS>
@@ -280,7 +280,7 @@
       </PERIPHERALS>
     </BUSINTERFACE>
     <BUSINTERFACE BUSNAME="vfb_0_m_vfb" NAME="video_out" TYPE="INITIATOR">
-      <PARAMETER NAME="TDATA_NUM_BYTES" VALUE="2"/>
+      <PARAMETER NAME="TDATA_NUM_BYTES" VALUE="5"/>
       <PARAMETER NAME="TDEST_WIDTH" VALUE="10"/>
       <PARAMETER NAME="TID_WIDTH" VALUE="0"/>
       <PARAMETER NAME="TUSER_WIDTH" VALUE="1"/>
@@ -356,7 +356,7 @@
         <PARAMETER NAME="DATA_LANE7_IO_LOC" VALUE="None"/>
         <PARAMETER NAME="DATA_LANE7_IO_LOC_NAME" VALUE="None"/>
         <PARAMETER NAME="C_DPHY_MODE" VALUE="SLAVE"/>
-        <PARAMETER NAME="C_HS_LINE_RATE" VALUE="443"/>
+        <PARAMETER NAME="C_HS_LINE_RATE" VALUE="336"/>
         <PARAMETER NAME="C_LPX_PERIOD" VALUE="50"/>
         <PARAMETER NAME="C_STABLE_CLK_PERIOD" VALUE="5.000"/>
         <PARAMETER NAME="C_ESC_CLK_PERIOD" VALUE="50.000"/>
@@ -375,7 +375,7 @@
         <PARAMETER NAME="C_EN_TIMEOUT_REGS" VALUE="0"/>
         <PARAMETER NAME="DPHY_PRESET" VALUE="CSI2RX_XLNX"/>
         <PARAMETER NAME="C_TXPLL_CLKIN_PERIOD" VALUE="8.0"/>
-        <PARAMETER NAME="C_DIV4_CLK_PERIOD" VALUE="18.059"/>
+        <PARAMETER NAME="C_DIV4_CLK_PERIOD" VALUE="23.810"/>
         <PARAMETER NAME="C_PLL_DIVCLK_DIVIDE" VALUE="1"/>
         <PARAMETER NAME="C_PLL_DIVCLK_MULT" VALUE="8"/>
         <PARAMETER NAME="C_PLL_CLKOUTPHY_MODE" VALUE="VCO"/>
@@ -390,14 +390,14 @@
         <PARAMETER NAME="C_EN_BG3_PIN0" VALUE="false"/>
         <PARAMETER NAME="C_EN_BG3_PIN6" VALUE="false"/>
         <PARAMETER NAME="C_IS_7SERIES" VALUE="true"/>
-        <PARAMETER NAME="C_DDR_CLK_PERIOD" VALUE="4.514"/>
+        <PARAMETER NAME="C_DDR_CLK_PERIOD" VALUE="5.952"/>
         <PARAMETER NAME="C_IDLY_TAP" VALUE="0"/>
         <PARAMETER NAME="C_CAL_MODE" VALUE="FIXED"/>
         <PARAMETER NAME="C_EN_CLK300M" VALUE="0"/>
         <PARAMETER NAME="C_SHARE_IDLYCTRL" VALUE="false"/>
         <PARAMETER NAME="C_FIFO_RD_EN_CONTROL" VALUE="true"/>
         <PARAMETER NAME="C_EN_ULPS_WAKEUP_CNT" VALUE="false"/>
-        <PARAMETER NAME="C_HS_SETTLE_NS" VALUE="157"/>
+        <PARAMETER NAME="C_HS_SETTLE_NS" VALUE="164"/>
         <PARAMETER NAME="C_EN_HS_OBUFTDS" VALUE="0"/>
         <PARAMETER NAME="C_USE_LANE0_TXREADYHS" VALUE="true"/>
         <PARAMETER NAME="C_XMIT_FIRST_DESKEW_SEQ" VALUE="false"/>
@@ -510,7 +510,7 @@
             <CONNECTION INSTANCE="r_sync" PORT="peripheral_reset"/>
           </CONNECTIONS>
         </PORT>
-        <PORT CLKFREQUENCY="55375000.0" DIR="O" NAME="rxbyteclkhs" SIGIS="clk" SIGNAME="phy_rxbyteclkhs">
+        <PORT CLKFREQUENCY="42000000.0" DIR="O" NAME="rxbyteclkhs" SIGIS="clk" SIGNAME="phy_rxbyteclkhs">
           <CONNECTIONS>
             <CONNECTION INSTANCE="rx" PORT="dl0_rxbyteclkhs"/>
             <CONNECTION INSTANCE="rx" PORT="dl1_rxbyteclkhs"/>
@@ -817,7 +817,7 @@
     <MODULE COREREVISION="8" FULLNAME="/rx" HWVERSION="1.0" INSTANCE="rx" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="mipi_csi2_rx_ctrl" VLNV="xilinx.com:ip:mipi_csi2_rx_ctrl:1.0">
       <DOCUMENTS/>
       <PARAMETERS>
-        <PARAMETER NAME="C_HS_LINE_RATE" VALUE="443"/>
+        <PARAMETER NAME="C_HS_LINE_RATE" VALUE="336"/>
         <PARAMETER NAME="C_RCVE_DESKEW_SEQ" VALUE="false"/>
         <PARAMETER NAME="C_FAMILY" VALUE="zynq"/>
         <PARAMETER NAME="C_S_AXI_ADDR_WIDTH" VALUE="8"/>
@@ -980,7 +980,7 @@
             <CONNECTION INSTANCE="vfb_0" PORT="vfb_full"/>
           </CONNECTIONS>
         </PORT>
-        <PORT CLKFREQUENCY="55375000.0" DIR="I" NAME="dl0_rxbyteclkhs" SIGIS="clk" SIGNAME="phy_rxbyteclkhs">
+        <PORT CLKFREQUENCY="42000000.0" DIR="I" NAME="dl0_rxbyteclkhs" SIGIS="clk" SIGNAME="phy_rxbyteclkhs">
           <CONNECTIONS>
             <CONNECTION INSTANCE="phy" PORT="rxbyteclkhs"/>
           </CONNECTIONS>
@@ -1040,7 +1040,7 @@
             <CONNECTION INSTANCE="phy" PORT="dl0_errcontrol"/>
           </CONNECTIONS>
         </PORT>
-        <PORT CLKFREQUENCY="55375000.0" DIR="I" NAME="dl1_rxbyteclkhs" SIGIS="clk" SIGNAME="phy_rxbyteclkhs">
+        <PORT CLKFREQUENCY="42000000.0" DIR="I" NAME="dl1_rxbyteclkhs" SIGIS="clk" SIGNAME="phy_rxbyteclkhs">
           <CONNECTIONS>
             <CONNECTION INSTANCE="phy" PORT="rxbyteclkhs"/>
           </CONNECTIONS>
@@ -1297,7 +1297,7 @@
     <MODULE COREREVISION="14" FULLNAME="/vfb_0" HWVERSION="1.0" INSTANCE="vfb_0" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="vfb" VLNV="xilinx.com:ip:vfb:1.0">
       <DOCUMENTS/>
       <PARAMETERS>
-        <PARAMETER NAME="C_HS_LINE_RATE" VALUE="443"/>
+        <PARAMETER NAME="C_HS_LINE_RATE" VALUE="336"/>
         <PARAMETER NAME="VFB_TU_WIDTH" VALUE="1"/>
         <PARAMETER NAME="VFB_TSB0_WIDTH" VALUE="32"/>
         <PARAMETER NAME="VFB_TSB1_WIDTH" VALUE="0"/>
@@ -1305,21 +1305,21 @@
         <PARAMETER NAME="AXIS_TDATA_WIDTH" VALUE="64"/>
         <PARAMETER NAME="AXIS_TUSER_WIDTH" VALUE="96"/>
         <PARAMETER NAME="AXIS_TDEST_WIDTH" VALUE="4"/>
-        <PARAMETER NAME="VFB_DATA_TYPE" VALUE="0x22"/>
+        <PARAMETER NAME="VFB_DATA_TYPE" VALUE="0x2B"/>
         <PARAMETER NAME="VFB_FILTER_VC" VALUE="0"/>
         <PARAMETER NAME="VFB_VC" VALUE="0x0"/>
-        <PARAMETER NAME="VFB_REQ_BUFFER" VALUE="0"/>
+        <PARAMETER NAME="VFB_REQ_BUFFER" VALUE="1"/>
         <PARAMETER NAME="VFB_REQ_REORDER" VALUE="1"/>
         <PARAMETER NAME="VFB_FIFO_DEPTH" VALUE="2048"/>
         <PARAMETER NAME="VFB_FIFO_WIDTH" VALUE="64"/>
-        <PARAMETER NAME="VFB_PXL_W" VALUE="16"/>
+        <PARAMETER NAME="VFB_PXL_W" VALUE="10"/>
         <PARAMETER NAME="VFB_PXL_W_BB" VALUE="16"/>
-        <PARAMETER NAME="VFB_4PXL_W" VALUE="64"/>
-        <PARAMETER NAME="VFB_DCONV_OWIDTH" VALUE="16"/>
-        <PARAMETER NAME="VFB_OP_DWIDTH" VALUE="16"/>
+        <PARAMETER NAME="VFB_4PXL_W" VALUE="40"/>
+        <PARAMETER NAME="VFB_DCONV_OWIDTH" VALUE="64"/>
+        <PARAMETER NAME="VFB_OP_DWIDTH" VALUE="40"/>
         <PARAMETER NAME="VFB_OP_SBWIDTH" VALUE="96"/>
-        <PARAMETER NAME="VFB_OP_PIXELS" VALUE="1"/>
-        <PARAMETER NAME="VFB_BYPASS_WC" VALUE="0"/>
+        <PARAMETER NAME="VFB_OP_PIXELS" VALUE="4"/>
+        <PARAMETER NAME="VFB_BYPASS_WC" VALUE="1"/>
         <PARAMETER NAME="VFB_CONV_TYPE" VALUE="CSI to UG934"/>
         <PARAMETER NAME="Component_Name" VALUE="bd_11cc_vfb_0_0"/>
         <PARAMETER NAME="EDK_IPTYPE" VALUE="PERIPHERAL"/>
@@ -1405,7 +1405,7 @@
             <CONNECTION INSTANCE="bd_11cc_imp" PORT="video_out_tdest"/>
           </CONNECTIONS>
         </PORT>
-        <PORT DIR="O" LEFT="15" NAME="vfb_data" RIGHT="0" SIGIS="undef" SIGNAME="vfb_0_vfb_data">
+        <PORT DIR="O" LEFT="39" NAME="vfb_data" RIGHT="0" SIGIS="undef" SIGNAME="vfb_0_vfb_data">
           <CONNECTIONS>
             <CONNECTION INSTANCE="bd_11cc_imp" PORT="video_out_tdata"/>
           </CONNECTIONS>
@@ -1472,7 +1472,7 @@
           </PORTMAPS>
         </BUSINTERFACE>
         <BUSINTERFACE BUSNAME="vfb_0_m_vfb" NAME="m_vfb" TYPE="INITIATOR" VLNV="xilinx.com:interface:axis:1.0">
-          <PARAMETER NAME="TDATA_NUM_BYTES" VALUE="2"/>
+          <PARAMETER NAME="TDATA_NUM_BYTES" VALUE="5"/>
           <PARAMETER NAME="TDEST_WIDTH" VALUE="10"/>
           <PARAMETER NAME="TID_WIDTH" VALUE="0"/>
           <PARAMETER NAME="TUSER_WIDTH" VALUE="1"/>

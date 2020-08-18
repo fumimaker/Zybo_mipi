@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
-<EDKSYSTEM EDWVERSION="1.2" TIMESTAMP="Mon Aug 17 02:32:12 2020" VIVADOVERSION="2019.2">
+<EDKSYSTEM EDWVERSION="1.2" TIMESTAMP="Tue Aug 18 19:07:18 2020" VIVADOVERSION="2019.2">
 
   <SYSTEMINFO ARCH="zynq" BOARD="digilentinc.com:zybo-z7-20:part0:1.0" DEVICE="7z020" NAME="design_1" PACKAGE="clg400" SPEEDGRADE="-1"/>
 
@@ -23,76 +23,6 @@
     <PORT DIR="O" LEFT="0" NAME="led" RIGHT="0" SIGIS="undef" SIGNAME="axi_gpio_0_gpio_io_o">
       <CONNECTIONS>
         <CONNECTION INSTANCE="axi_gpio_0" PORT="gpio_io_o"/>
-      </CONNECTIONS>
-    </PORT>
-    <PORT DIR="I" NAME="mipi_phy_if_0_clk_hs_n" SIGIS="undef" SIGNAME="mipi_csi2_rx_subsyst_0_mipi_phy_if_clk_hs_n">
-      <CONNECTIONS>
-        <CONNECTION INSTANCE="mipi_csi2_rx_subsyst_0" PORT="mipi_phy_if_clk_hs_n"/>
-      </CONNECTIONS>
-    </PORT>
-    <PORT DIR="I" NAME="mipi_phy_if_0_clk_hs_p" SIGIS="undef" SIGNAME="mipi_csi2_rx_subsyst_0_mipi_phy_if_clk_hs_p">
-      <CONNECTIONS>
-        <CONNECTION INSTANCE="mipi_csi2_rx_subsyst_0" PORT="mipi_phy_if_clk_hs_p"/>
-      </CONNECTIONS>
-    </PORT>
-    <PORT DIR="I" NAME="mipi_phy_if_0_clk_lp_n" SIGIS="undef" SIGNAME="mipi_csi2_rx_subsyst_0_mipi_phy_if_clk_lp_n">
-      <CONNECTIONS>
-        <CONNECTION INSTANCE="mipi_csi2_rx_subsyst_0" PORT="mipi_phy_if_clk_lp_n"/>
-      </CONNECTIONS>
-    </PORT>
-    <PORT DIR="I" NAME="mipi_phy_if_0_clk_lp_p" SIGIS="undef" SIGNAME="mipi_csi2_rx_subsyst_0_mipi_phy_if_clk_lp_p">
-      <CONNECTIONS>
-        <CONNECTION INSTANCE="mipi_csi2_rx_subsyst_0" PORT="mipi_phy_if_clk_lp_p"/>
-      </CONNECTIONS>
-    </PORT>
-    <PORT DIR="I" LEFT="1" NAME="mipi_phy_if_0_data_hs_n" RIGHT="0" SIGIS="undef" SIGNAME="mipi_csi2_rx_subsyst_0_mipi_phy_if_data_hs_n">
-      <CONNECTIONS>
-        <CONNECTION INSTANCE="mipi_csi2_rx_subsyst_0" PORT="mipi_phy_if_data_hs_n"/>
-      </CONNECTIONS>
-    </PORT>
-    <PORT DIR="I" LEFT="1" NAME="mipi_phy_if_0_data_hs_p" RIGHT="0" SIGIS="undef" SIGNAME="mipi_csi2_rx_subsyst_0_mipi_phy_if_data_hs_p">
-      <CONNECTIONS>
-        <CONNECTION INSTANCE="mipi_csi2_rx_subsyst_0" PORT="mipi_phy_if_data_hs_p"/>
-      </CONNECTIONS>
-    </PORT>
-    <PORT DIR="I" LEFT="1" NAME="mipi_phy_if_0_data_lp_n" RIGHT="0" SIGIS="undef" SIGNAME="mipi_csi2_rx_subsyst_0_mipi_phy_if_data_lp_n">
-      <CONNECTIONS>
-        <CONNECTION INSTANCE="mipi_csi2_rx_subsyst_0" PORT="mipi_phy_if_data_lp_n"/>
-      </CONNECTIONS>
-    </PORT>
-    <PORT DIR="I" LEFT="1" NAME="mipi_phy_if_0_data_lp_p" RIGHT="0" SIGIS="undef" SIGNAME="mipi_csi2_rx_subsyst_0_mipi_phy_if_data_lp_p">
-      <CONNECTIONS>
-        <CONNECTION INSTANCE="mipi_csi2_rx_subsyst_0" PORT="mipi_phy_if_data_lp_p"/>
-      </CONNECTIONS>
-    </PORT>
-    <PORT DIR="I" NAME="IIC_0_0_sda_i" SIGIS="undef" SIGNAME="processing_system7_0_I2C0_SDA_I">
-      <CONNECTIONS>
-        <CONNECTION INSTANCE="processing_system7_0" PORT="I2C0_SDA_I"/>
-      </CONNECTIONS>
-    </PORT>
-    <PORT DIR="O" NAME="IIC_0_0_sda_o" SIGIS="undef" SIGNAME="processing_system7_0_I2C0_SDA_O">
-      <CONNECTIONS>
-        <CONNECTION INSTANCE="processing_system7_0" PORT="I2C0_SDA_O"/>
-      </CONNECTIONS>
-    </PORT>
-    <PORT DIR="O" NAME="IIC_0_0_sda_t" SIGIS="undef" SIGNAME="processing_system7_0_I2C0_SDA_T">
-      <CONNECTIONS>
-        <CONNECTION INSTANCE="processing_system7_0" PORT="I2C0_SDA_T"/>
-      </CONNECTIONS>
-    </PORT>
-    <PORT DIR="I" NAME="IIC_0_0_scl_i" SIGIS="undef" SIGNAME="processing_system7_0_I2C0_SCL_I">
-      <CONNECTIONS>
-        <CONNECTION INSTANCE="processing_system7_0" PORT="I2C0_SCL_I"/>
-      </CONNECTIONS>
-    </PORT>
-    <PORT DIR="O" NAME="IIC_0_0_scl_o" SIGIS="undef" SIGNAME="processing_system7_0_I2C0_SCL_O">
-      <CONNECTIONS>
-        <CONNECTION INSTANCE="processing_system7_0" PORT="I2C0_SCL_O"/>
-      </CONNECTIONS>
-    </PORT>
-    <PORT DIR="O" NAME="IIC_0_0_scl_t" SIGIS="undef" SIGNAME="processing_system7_0_I2C0_SCL_T">
-      <CONNECTIONS>
-        <CONNECTION INSTANCE="processing_system7_0" PORT="I2C0_SCL_T"/>
       </CONNECTIONS>
     </PORT>
     <PORT DIR="IO" LEFT="53" NAME="FIXED_IO_mio" RIGHT="0" SIGIS="undef" SIGNAME="processing_system7_0_MIO">
@@ -198,6 +128,76 @@
     <PORT DIR="IO" LEFT="3" NAME="DDR_dqs_p" RIGHT="0" SIGIS="undef" SIGNAME="processing_system7_0_DDR_DQS">
       <CONNECTIONS>
         <CONNECTION INSTANCE="processing_system7_0" PORT="DDR_DQS"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="I" NAME="mipi_phy_if_0_clk_hs_n" SIGIS="undef" SIGNAME="mipi_csi2_rx_subsyst_0_mipi_phy_if_clk_hs_n">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="mipi_csi2_rx_subsyst_0" PORT="mipi_phy_if_clk_hs_n"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="I" NAME="mipi_phy_if_0_clk_hs_p" SIGIS="undef" SIGNAME="mipi_csi2_rx_subsyst_0_mipi_phy_if_clk_hs_p">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="mipi_csi2_rx_subsyst_0" PORT="mipi_phy_if_clk_hs_p"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="I" NAME="mipi_phy_if_0_clk_lp_n" SIGIS="undef" SIGNAME="mipi_csi2_rx_subsyst_0_mipi_phy_if_clk_lp_n">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="mipi_csi2_rx_subsyst_0" PORT="mipi_phy_if_clk_lp_n"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="I" NAME="mipi_phy_if_0_clk_lp_p" SIGIS="undef" SIGNAME="mipi_csi2_rx_subsyst_0_mipi_phy_if_clk_lp_p">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="mipi_csi2_rx_subsyst_0" PORT="mipi_phy_if_clk_lp_p"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="I" LEFT="1" NAME="mipi_phy_if_0_data_hs_n" RIGHT="0" SIGIS="undef" SIGNAME="mipi_csi2_rx_subsyst_0_mipi_phy_if_data_hs_n">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="mipi_csi2_rx_subsyst_0" PORT="mipi_phy_if_data_hs_n"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="I" LEFT="1" NAME="mipi_phy_if_0_data_hs_p" RIGHT="0" SIGIS="undef" SIGNAME="mipi_csi2_rx_subsyst_0_mipi_phy_if_data_hs_p">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="mipi_csi2_rx_subsyst_0" PORT="mipi_phy_if_data_hs_p"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="I" LEFT="1" NAME="mipi_phy_if_0_data_lp_n" RIGHT="0" SIGIS="undef" SIGNAME="mipi_csi2_rx_subsyst_0_mipi_phy_if_data_lp_n">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="mipi_csi2_rx_subsyst_0" PORT="mipi_phy_if_data_lp_n"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="I" LEFT="1" NAME="mipi_phy_if_0_data_lp_p" RIGHT="0" SIGIS="undef" SIGNAME="mipi_csi2_rx_subsyst_0_mipi_phy_if_data_lp_p">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="mipi_csi2_rx_subsyst_0" PORT="mipi_phy_if_data_lp_p"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="I" NAME="IIC_0_0_sda_i" SIGIS="undef" SIGNAME="processing_system7_0_I2C0_SDA_I">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="processing_system7_0" PORT="I2C0_SDA_I"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="O" NAME="IIC_0_0_sda_o" SIGIS="undef" SIGNAME="processing_system7_0_I2C0_SDA_O">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="processing_system7_0" PORT="I2C0_SDA_O"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="O" NAME="IIC_0_0_sda_t" SIGIS="undef" SIGNAME="processing_system7_0_I2C0_SDA_T">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="processing_system7_0" PORT="I2C0_SDA_T"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="I" NAME="IIC_0_0_scl_i" SIGIS="undef" SIGNAME="processing_system7_0_I2C0_SCL_I">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="processing_system7_0" PORT="I2C0_SCL_I"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="O" NAME="IIC_0_0_scl_o" SIGIS="undef" SIGNAME="processing_system7_0_I2C0_SCL_O">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="processing_system7_0" PORT="I2C0_SCL_O"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="O" NAME="IIC_0_0_scl_t" SIGIS="undef" SIGNAME="processing_system7_0_I2C0_SCL_T">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="processing_system7_0" PORT="I2C0_SCL_T"/>
       </CONNECTIONS>
     </PORT>
   </EXTERNALPORTS>
@@ -4433,19 +4433,19 @@
         <PARAMETER NAME="C_EN_BG2_PIN6" VALUE="false"/>
         <PARAMETER NAME="C_EN_BG3_PIN0" VALUE="false"/>
         <PARAMETER NAME="C_EN_BG3_PIN6" VALUE="false"/>
-        <PARAMETER NAME="CMN_PXL_FORMAT" VALUE="RGB565"/>
+        <PARAMETER NAME="CMN_PXL_FORMAT" VALUE="RAW10"/>
         <PARAMETER NAME="CMN_NUM_LANES" VALUE="2"/>
         <PARAMETER NAME="C_DPHY_LANES" VALUE="2"/>
         <PARAMETER NAME="C_EN_CSI_V2_0" VALUE="false"/>
         <PARAMETER NAME="C_EN_VCX" VALUE="false"/>
         <PARAMETER NAME="CMN_VC" VALUE="All"/>
-        <PARAMETER NAME="CMN_NUM_PIXELS" VALUE="1"/>
+        <PARAMETER NAME="CMN_NUM_PIXELS" VALUE="4"/>
         <PARAMETER NAME="CMN_INC_IIC" VALUE="false"/>
         <PARAMETER NAME="CMN_INC_VFB" VALUE="true"/>
         <PARAMETER NAME="CMN_PROJ_FAMILY" VALUE="0"/>
         <PARAMETER NAME="CMN_FIFO_RD_EN_CNTRL" VALUE="true"/>
-        <PARAMETER NAME="C_HS_LINE_RATE" VALUE="443"/>
-        <PARAMETER NAME="DPY_LINE_RATE" VALUE="443"/>
+        <PARAMETER NAME="C_HS_LINE_RATE" VALUE="336"/>
+        <PARAMETER NAME="DPY_LINE_RATE" VALUE="336"/>
         <PARAMETER NAME="DPY_EN_REG_IF" VALUE="false"/>
         <PARAMETER NAME="CSI_EMB_NON_IMG" VALUE="false"/>
         <PARAMETER NAME="CSI_BUF_DEPTH" VALUE="2048"/>
@@ -4483,7 +4483,7 @@
         <PARAMETER NAME="C_EN_CLK300M" VALUE="false"/>
         <PARAMETER NAME="C_SHARE_IDLYCTRL" VALUE="false"/>
         <PARAMETER NAME="C_FIFO_RD_EN_CONTROL" VALUE="true"/>
-        <PARAMETER NAME="C_HS_SETTLE_NS" VALUE="157"/>
+        <PARAMETER NAME="C_HS_SETTLE_NS" VALUE="164"/>
         <PARAMETER NAME="C_EN_TIMEOUT_REGS" VALUE="false"/>
         <PARAMETER NAME="C_HS_TIMEOUT" VALUE="65541"/>
         <PARAMETER NAME="C_ESC_TIMEOUT" VALUE="25600"/>
@@ -4513,7 +4513,7 @@
             <CONNECTION INSTANCE="clk_wiz_0" PORT="clk_out1"/>
           </CONNECTIONS>
         </PORT>
-        <PORT CLKFREQUENCY="55375000.0" DIR="O" NAME="rxbyteclkhs" SIGIS="clk" SIGNAME="mipi_csi2_rx_subsyst_0_rxbyteclkhs">
+        <PORT CLKFREQUENCY="42000000.0" DIR="O" NAME="rxbyteclkhs" SIGIS="clk" SIGNAME="mipi_csi2_rx_subsyst_0_rxbyteclkhs">
           <CONNECTIONS>
             <CONNECTION INSTANCE="ila_0" PORT="probe2"/>
           </CONNECTIONS>
@@ -4623,7 +4623,7 @@
             <CONNECTION INSTANCE="ps7_0_axi_periph" PORT="M00_AXI_wvalid"/>
           </CONNECTIONS>
         </PORT>
-        <PORT DIR="O" LEFT="15" NAME="video_out_tdata" RIGHT="0" SIGIS="undef"/>
+        <PORT DIR="O" LEFT="39" NAME="video_out_tdata" RIGHT="0" SIGIS="undef"/>
         <PORT DIR="O" LEFT="9" NAME="video_out_tdest" RIGHT="0" SIGIS="undef"/>
         <PORT DIR="O" NAME="video_out_tlast" SIGIS="undef"/>
         <PORT DIR="I" NAME="video_out_tready" SIGIS="undef"/>
@@ -4736,7 +4736,7 @@
           </PORTMAPS>
         </BUSINTERFACE>
         <BUSINTERFACE BUSNAME="__NOC__" NAME="video_out" TYPE="INITIATOR" VLNV="xilinx.com:interface:axis:1.0">
-          <PARAMETER NAME="TDATA_NUM_BYTES" VALUE="2"/>
+          <PARAMETER NAME="TDATA_NUM_BYTES" VALUE="5"/>
           <PARAMETER NAME="TDEST_WIDTH" VALUE="10"/>
           <PARAMETER NAME="TID_WIDTH" VALUE="0"/>
           <PARAMETER NAME="TUSER_WIDTH" VALUE="1"/>
@@ -7320,7 +7320,7 @@
         <PARAMETER NAME="C_SLOT_15_APC_MAX_WLAST_TO_AWVALID_WAITS" VALUE="0"/>
         <PARAMETER NAME="C_SLOT_15_APC_MAX_WRITE_TO_BVALID_WAITS" VALUE="0"/>
         <PARAMETER NAME="C_SLOT_15_APC_MAX_CONTINUOUS_RTRANSFERS_WAITS" VALUE="0"/>
-        <PARAMETER NAME="C_BRAM_CNT" VALUE="27"/>
+        <PARAMETER NAME="C_BRAM_CNT" VALUE="53.5"/>
         <PARAMETER NAME="C_SLOT_0_AXI_AW_SEL_DATA" VALUE="1"/>
         <PARAMETER NAME="C_SLOT_0_AXI_W_SEL_DATA" VALUE="1"/>
         <PARAMETER NAME="C_SLOT_0_AXI_B_SEL_DATA" VALUE="1"/>
@@ -9640,7 +9640,7 @@
         <PARAMETER NAME="C_PROBE2_WIDTH" VALUE="1"/>
         <PARAMETER NAME="C_PROBE1_WIDTH" VALUE="1"/>
         <PARAMETER NAME="C_PROBE0_WIDTH" VALUE="1"/>
-        <PARAMETER NAME="C_DATA_DEPTH" VALUE="32768"/>
+        <PARAMETER NAME="C_DATA_DEPTH" VALUE="65536"/>
         <PARAMETER NAME="C_NUM_OF_PROBES" VALUE="1"/>
         <PARAMETER NAME="C_XLNX_HW_PROBE_INFO" VALUE="DEFAULT"/>
         <PARAMETER NAME="Component_Name" VALUE="design_1_system_ila_0_0"/>
@@ -10916,7 +10916,7 @@
           </CONNECTIONS>
         </PORT>
         <PORT DIR="I" LEFT="9" NAME="SLOT_0_AXIS_tdest" RIGHT="0" SIGIS="undef"/>
-        <PORT DIR="I" LEFT="15" NAME="SLOT_0_AXIS_tdata" RIGHT="0" SIGIS="undef"/>
+        <PORT DIR="I" LEFT="39" NAME="SLOT_0_AXIS_tdata" RIGHT="0" SIGIS="undef"/>
         <PORT DIR="I" NAME="SLOT_0_AXIS_tlast" SIGIS="undef"/>
         <PORT DIR="I" LEFT="0" NAME="SLOT_0_AXIS_tuser" RIGHT="0" SIGIS="undef"/>
         <PORT DIR="I" NAME="SLOT_0_AXIS_tvalid" SIGIS="undef"/>
@@ -10929,7 +10929,7 @@
       </PORTS>
       <BUSINTERFACES>
         <BUSINTERFACE BUSNAME="__NOC__" NAME="SLOT_0_AXIS" TYPE="MONITOR" VLNV="xilinx.com:interface:axis:1.0">
-          <PARAMETER NAME="TDATA_NUM_BYTES" VALUE="2"/>
+          <PARAMETER NAME="TDATA_NUM_BYTES" VALUE="5"/>
           <PARAMETER NAME="TDEST_WIDTH" VALUE="10"/>
           <PARAMETER NAME="TID_WIDTH" VALUE="0"/>
           <PARAMETER NAME="TUSER_WIDTH" VALUE="1"/>

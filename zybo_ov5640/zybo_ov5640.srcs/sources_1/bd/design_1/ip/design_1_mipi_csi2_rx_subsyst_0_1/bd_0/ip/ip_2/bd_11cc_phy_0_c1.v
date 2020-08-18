@@ -112,7 +112,7 @@ module bd_11cc_phy_0_c1
    // Valid values are from 80 to 1500 in the order of 1 Mbps for D-PHY v1.1 Spec
    // Valid values are from 80 to 2500 in the order of 1 Mbps for D-PHY v1.2 Spec
    // No real values are allowed in Line Rate	
-   parameter C_HS_LINE_RATE = 443,
+   parameter C_HS_LINE_RATE = 336,
    // Transmit first deskew calibration sequence by D-PHY TX for line rates above 1.5 Gbps
    parameter C_XMIT_FIRST_DESKEW_SEQ  =  "false",
    // Transmit periodic deskew calibration sequence by D-PHY TX for line rates above 1.5 Gbps
@@ -152,7 +152,7 @@ module bd_11cc_phy_0_c1
    // HS_SETTLE timing parameter in ns
    // min is 85 + 6 UI
    // max is 145 + 10 UI
-   parameter C_HS_SETTLE_NS = 157,
+   parameter C_HS_SETTLE_NS = 164,
    // HS [T/R]X Timeout in bytes
    // Valid range is from 1000 to 65541	
    parameter C_HS_TIMEOUT = 65541,
@@ -177,7 +177,7 @@ module bd_11cc_phy_0_c1
    // TXPLL input clock frequency in ns
    parameter C_TXPLL_CLKIN_PERIOD = 8.0,
    // byteclkhs clock period derived from line rate
-   parameter C_DIV4_CLK_PERIOD = 18.059,
+   parameter C_DIV4_CLK_PERIOD = 23.810,
    // Calibration Mode for IDELAY in Slave mode of IP
    parameter C_CAL_MODE = "FIXED",
    // IDELAY Tap value when calibration mode is Fixed

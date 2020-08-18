@@ -50,7 +50,7 @@
 # False path constraint for synchronizer
 set_false_path -to [get_pins -hier *cdc_to*/D]
 
-create_clock -period 4.514 [get_ports clk_hs_rxp]
+create_clock -period 5.952 [get_ports clk_hs_rxp]
 ########################################################################
 ########################################################################
 

@@ -135,11 +135,11 @@ config_word_t const cfg_720p_60fps_[] =
 
 	//edit by fumi
 	//[7:4]=0x0 Formatter RAW, [3:0]=0x0 BGBG/GRGR
-	//{0x4300, 0x00},
+	{0x4300, 0x00},
 	//[2:0]=0x3 Format select ISP RAW (DPC)
-	//{0x501f, 0x03}
-	{0x4300, 0x6f}, //RGB565
-	{0x501f, 0x01}, //RGB
+	{0x501f, 0x03}
+	//{0x4300, 0x6f}, //RGB565
+	//{0x501f, 0x01}, //RGB
 };
 config_word_t const cfg_1080p_15fps_[] =
 {//1920 x 1080 @ 15 fps, RAW10, MIPISCLK=210, SCLK=42MHz, PCLK=42M

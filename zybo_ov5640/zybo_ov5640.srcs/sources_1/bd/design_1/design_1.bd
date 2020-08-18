@@ -217,7 +217,7 @@
         "xci_name": "design_1_system_ila_0_0",
         "parameters": {
           "C_DATA_DEPTH": {
-            "value": "32768"
+            "value": "65536"
           },
           "C_MON_TYPE": {
             "value": "INTERFACE"
@@ -1640,22 +1640,22 @@
             "value": "2"
           },
           "CMN_NUM_PIXELS": {
-            "value": "1"
+            "value": "4"
           },
           "CMN_PXL_FORMAT": {
-            "value": "RGB565"
+            "value": "RAW10"
           },
           "C_DPHY_LANES": {
             "value": "2"
           },
           "C_HS_LINE_RATE": {
-            "value": "443"
+            "value": "336"
           },
           "C_HS_SETTLE_NS": {
-            "value": "157"
+            "value": "164"
           },
           "DPY_LINE_RATE": {
-            "value": "443"
+            "value": "336"
           }
         },
         "interface_ports": {
@@ -1754,10 +1754,16 @@
           "processing_system7_0/FIXED_IO"
         ]
       },
-      "ps7_0_axi_periph_M00_AXI": {
+      "ps7_0_axi_periph_M01_AXI": {
         "interface_ports": [
-          "ps7_0_axi_periph/M00_AXI",
-          "mipi_csi2_rx_subsyst_0/csirxss_s_axi"
+          "ps7_0_axi_periph/M01_AXI",
+          "axi_gpio_0/S_AXI"
+        ]
+      },
+      "processing_system7_0_IIC_0": {
+        "interface_ports": [
+          "IIC_0_0",
+          "processing_system7_0/IIC_0"
         ]
       },
       "processing_system7_0_DDR": {
@@ -1766,10 +1772,10 @@
           "processing_system7_0/DDR"
         ]
       },
-      "ps7_0_axi_periph_M01_AXI": {
+      "ps7_0_axi_periph_M00_AXI": {
         "interface_ports": [
-          "ps7_0_axi_periph/M01_AXI",
-          "axi_gpio_0/S_AXI"
+          "ps7_0_axi_periph/M00_AXI",
+          "mipi_csi2_rx_subsyst_0/csirxss_s_axi"
         ]
       },
       "mipi_csi2_rx_subsyst_0_video_out": {
@@ -1782,12 +1788,6 @@
         "interface_ports": [
           "mipi_phy_if_0",
           "mipi_csi2_rx_subsyst_0/mipi_phy_if"
-        ]
-      },
-      "processing_system7_0_IIC_0": {
-        "interface_ports": [
-          "IIC_0_0",
-          "processing_system7_0/IIC_0"
         ]
       },
       "processing_system7_0_M_AXI_GP0": {

@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
-<EDKSYSTEM EDWVERSION="1.2" TIMESTAMP="Mon Aug 17 02:32:08 2020" VIVADOVERSION="2019.2">
+<EDKSYSTEM EDWVERSION="1.2" TIMESTAMP="Tue Aug 18 19:07:13 2020" VIVADOVERSION="2019.2">
 
   <SYSTEMINFO ARCH="zynq" BOARD="digilentinc.com:zybo-z7-20:part0:1.0" DEVICE="7z020" NAME="bd_f60c" PACKAGE="clg400" SPEEDGRADE="-1"/>
 
@@ -15,7 +15,7 @@
         <CONNECTION INSTANCE="g_inst" PORT="aresetn"/>
       </CONNECTIONS>
     </PORT>
-    <PORT DIR="I" LEFT="15" NAME="SLOT_0_AXIS_tdata" RIGHT="0" SIGIS="undef" SIGNAME="g_inst_slot_0_axis_tdata">
+    <PORT DIR="I" LEFT="39" NAME="SLOT_0_AXIS_tdata" RIGHT="0" SIGIS="undef" SIGNAME="g_inst_slot_0_axis_tdata">
       <CONNECTIONS>
         <CONNECTION INSTANCE="g_inst" PORT="slot_0_axis_tdata"/>
       </CONNECTIONS>
@@ -49,7 +49,7 @@
 
   <EXTERNALINTERFACES>
     <BUSINTERFACE BUSNAME="g_inst_slot_0_axis" NAME="SLOT_0_AXIS" TYPE="TARGET">
-      <PARAMETER NAME="TDATA_NUM_BYTES" VALUE="2"/>
+      <PARAMETER NAME="TDATA_NUM_BYTES" VALUE="5"/>
       <PARAMETER NAME="TDEST_WIDTH" VALUE="10"/>
       <PARAMETER NAME="TID_WIDTH" VALUE="0"/>
       <PARAMETER NAME="TUSER_WIDTH" VALUE="1"/>
@@ -1295,7 +1295,7 @@
         <PARAMETER NAME="C_SLOT_0_AXI_DATA_WIDTH" VALUE="32"/>
         <PARAMETER NAME="C_SLOT_0_AXI_ID_WIDTH" VALUE="1"/>
         <PARAMETER NAME="C_SLOT_0_AXI_PROTOCOL" VALUE="AXI4S"/>
-        <PARAMETER NAME="C_SLOT_0_AXIS_TDATA_WIDTH" VALUE="16"/>
+        <PARAMETER NAME="C_SLOT_0_AXIS_TDATA_WIDTH" VALUE="40"/>
         <PARAMETER NAME="C_SLOT_0_AXIS_TID_WIDTH" VALUE="0"/>
         <PARAMETER NAME="C_SLOT_0_AXIS_TDEST_WIDTH" VALUE="10"/>
         <PARAMETER NAME="C_SLOT_0_AXIS_TUSER_WIDTH" VALUE="1"/>
@@ -1444,7 +1444,7 @@
             <CONNECTION INSTANCE="bd_f60c_imp" PORT="SLOT_0_AXIS_tready"/>
           </CONNECTIONS>
         </PORT>
-        <PORT DIR="I" LEFT="15" NAME="slot_0_axis_tdata" RIGHT="0" SIGIS="undef" SIGNAME="g_inst_slot_0_axis_tdata">
+        <PORT DIR="I" LEFT="39" NAME="slot_0_axis_tdata" RIGHT="0" SIGIS="undef" SIGNAME="g_inst_slot_0_axis_tdata">
           <CONNECTIONS>
             <CONNECTION INSTANCE="bd_f60c_imp" PORT="SLOT_0_AXIS_tdata"/>
           </CONNECTIONS>
@@ -1474,7 +1474,7 @@
             <CONNECTION INSTANCE="ila_lib" PORT="probe4"/>
           </CONNECTIONS>
         </PORT>
-        <PORT DIR="O" LEFT="15" NAME="m_slot_0_axis_tdata" RIGHT="0" SIGIS="undef" SIGNAME="g_inst_m_slot_0_axis_tdata">
+        <PORT DIR="O" LEFT="39" NAME="m_slot_0_axis_tdata" RIGHT="0" SIGIS="undef" SIGNAME="g_inst_m_slot_0_axis_tdata">
           <CONNECTIONS>
             <CONNECTION INSTANCE="ila_lib" PORT="probe0"/>
           </CONNECTIONS>
@@ -1497,7 +1497,7 @@
       </PORTS>
       <BUSINTERFACES>
         <BUSINTERFACE BUSNAME="g_inst_slot_0_axis" NAME="slot_0_axis" TYPE="MONITOR" VLNV="xilinx.com:interface:axis:1.0">
-          <PARAMETER NAME="TDATA_NUM_BYTES" VALUE="2"/>
+          <PARAMETER NAME="TDATA_NUM_BYTES" VALUE="5"/>
           <PARAMETER NAME="TDEST_WIDTH" VALUE="10"/>
           <PARAMETER NAME="TID_WIDTH" VALUE="0"/>
           <PARAMETER NAME="TUSER_WIDTH" VALUE="1"/>
@@ -1520,7 +1520,7 @@
           </PORTMAPS>
         </BUSINTERFACE>
         <BUSINTERFACE BUSNAME="__NOC__" NAME="m_slot_0_axis" TYPE="INITIATOR" VLNV="xilinx.com:interface:axis:1.0">
-          <PARAMETER NAME="TDATA_NUM_BYTES" VALUE="2"/>
+          <PARAMETER NAME="TDATA_NUM_BYTES" VALUE="5"/>
           <PARAMETER NAME="TDEST_WIDTH" VALUE="10"/>
           <PARAMETER NAME="TID_WIDTH" VALUE="0"/>
           <PARAMETER NAME="TUSER_WIDTH" VALUE="1"/>
@@ -1565,7 +1565,7 @@
         <PARAMETER NAME="C_NUM_MONITOR_SLOTS" VALUE="1"/>
         <PARAMETER NAME="C_ENABLE_ILA_AXI_MON" VALUE="0"/>
         <PARAMETER NAME="C_NUM_OF_PROBES" VALUE="6"/>
-        <PARAMETER NAME="C_DATA_DEPTH" VALUE="32768"/>
+        <PARAMETER NAME="C_DATA_DEPTH" VALUE="65536"/>
         <PARAMETER NAME="C_MAJOR_VERSION" VALUE="2019"/>
         <PARAMETER NAME="C_MINOR_VERSION" VALUE="2"/>
         <PARAMETER NAME="C_BUILD_REVISION" VALUE="0"/>
@@ -1588,7 +1588,7 @@
         <PARAMETER NAME="C_SLOT_0_AXI_AWUSER_WIDTH" VALUE="1"/>
         <PARAMETER NAME="C_SLOT_0_AXI_WUSER_WIDTH" VALUE="1"/>
         <PARAMETER NAME="C_SLOT_0_AXI_BUSER_WIDTH" VALUE="1"/>
-        <PARAMETER NAME="C_PROBE0_WIDTH" VALUE="16"/>
+        <PARAMETER NAME="C_PROBE0_WIDTH" VALUE="40"/>
         <PARAMETER NAME="C_PROBE1_WIDTH" VALUE="10"/>
         <PARAMETER NAME="C_PROBE2_WIDTH" VALUE="1"/>
         <PARAMETER NAME="C_PROBE3_WIDTH" VALUE="1"/>
@@ -4689,7 +4689,7 @@
             <CONNECTION INSTANCE="External_Ports" PORT="clk"/>
           </CONNECTIONS>
         </PORT>
-        <PORT DIR="I" LEFT="15" NAME="probe0" RIGHT="0" SIGIS="undef" SIGNAME="g_inst_m_slot_0_axis_tdata">
+        <PORT DIR="I" LEFT="39" NAME="probe0" RIGHT="0" SIGIS="undef" SIGNAME="g_inst_m_slot_0_axis_tdata">
           <CONNECTIONS>
             <CONNECTION INSTANCE="g_inst" PORT="m_slot_0_axis_tdata"/>
           </CONNECTIONS>

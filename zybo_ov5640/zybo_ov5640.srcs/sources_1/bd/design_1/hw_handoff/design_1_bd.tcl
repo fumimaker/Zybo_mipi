@@ -230,12 +230,12 @@ proc create_root_design { parentCell } {
   set_property -dict [ list \
    CONFIG.CMN_INC_VFB {true} \
    CONFIG.CMN_NUM_LANES {2} \
-   CONFIG.CMN_NUM_PIXELS {1} \
-   CONFIG.CMN_PXL_FORMAT {RGB565} \
+   CONFIG.CMN_NUM_PIXELS {4} \
+   CONFIG.CMN_PXL_FORMAT {RAW10} \
    CONFIG.C_DPHY_LANES {2} \
-   CONFIG.C_HS_LINE_RATE {443} \
-   CONFIG.C_HS_SETTLE_NS {157} \
-   CONFIG.DPY_LINE_RATE {443} \
+   CONFIG.C_HS_LINE_RATE {336} \
+   CONFIG.C_HS_SETTLE_NS {164} \
+   CONFIG.DPY_LINE_RATE {336} \
  ] $mipi_csi2_rx_subsyst_0
 
   # Create instance: processing_system7_0, and set properties
@@ -729,8 +729,8 @@ proc create_root_design { parentCell } {
   # Create instance: system_ila_0, and set properties
   set system_ila_0 [ create_bd_cell -type ip -vlnv xilinx.com:ip:system_ila:1.1 system_ila_0 ]
   set_property -dict [ list \
-   CONFIG.C_BRAM_CNT {27} \
-   CONFIG.C_DATA_DEPTH {32768} \
+   CONFIG.C_BRAM_CNT {53.5} \
+   CONFIG.C_DATA_DEPTH {65536} \
    CONFIG.C_MON_TYPE {INTERFACE} \
    CONFIG.C_NUM_MONITOR_SLOTS {1} \
    CONFIG.C_SLOT_0_APC_EN {0} \

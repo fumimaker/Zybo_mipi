@@ -1,3 +1,9 @@
-03:02:58 **** Incremental Build of project design_1_wrapper ****
-buildplatform.bat 57514 design_1_wrapper no_domain_build 
-XSDB Server Channel: tcfchan#13
+Nothing to build in platform 'design_1_wrapper'
+
+18:32:23 **** Incremental Build of configuration Debug for project ov5640_mipi ****
+make all 
+make --no-print-directory pre-build
+a9-linaro-pre-build-step
+' '
+make --no-print-directory main-build
+make[1]: Nothing to be done for 'main-build'.

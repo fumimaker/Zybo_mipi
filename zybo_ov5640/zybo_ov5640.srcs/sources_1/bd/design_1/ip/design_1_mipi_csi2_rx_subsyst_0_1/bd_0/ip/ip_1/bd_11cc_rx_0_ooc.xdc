@@ -58,8 +58,8 @@ create_clock -period 20 -name m_axis_aclk [get_ports m_axis_aclk]
 
 create_clock -period 20 -name s_axi_aclk [get_ports s_axi_aclk]
 
-create_clock -period 18.059 -name dl0_rxbyteclkhs [get_ports dl0_rxbyteclkhs]
+create_clock -period 23.810 -name dl0_rxbyteclkhs [get_ports dl0_rxbyteclkhs]
 
-create_clock -period 18.059 -name dl1_rxbyteclkhs [get_ports dl1_rxbyteclkhs]
+create_clock -period 23.810 -name dl1_rxbyteclkhs [get_ports dl1_rxbyteclkhs]
 
 
