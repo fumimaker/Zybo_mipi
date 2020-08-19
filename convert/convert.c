@@ -23,7 +23,7 @@ int main(void)
         num = strtoull(data, NULL, 16);
         int int40, int30, int20, int10;
 
-        printf("num=%lx\n",num);
+        printf("num=%llx\n",num);
         int40 = (num>>30)&0x00000000000003FF;
         int30 = (num>>20)&0x00000000000003FF;
         int20 = (num>>10)&0x00000000000003FF;
