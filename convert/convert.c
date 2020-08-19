@@ -1,5 +1,6 @@
 #include <stdio.h>
 #include <stdlib.h>
+#include <string.h>
 
 #define datanum 12345
 
@@ -19,8 +20,7 @@ int main(void)
         data[len] = '\0';
 
         printf("data=%s\n",data);
-        unsigned long long num = 0;
-        num = strtoull(data, NULL, 16);
+        unsigned long long num = strtoull(data, NULL, 16);
         int int40, int30, int20, int10;
 
         printf("num=%llx\n",num);
