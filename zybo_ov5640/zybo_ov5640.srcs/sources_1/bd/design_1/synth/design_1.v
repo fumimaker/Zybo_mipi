@@ -1,7 +1,7 @@
 //Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
 //--------------------------------------------------------------------------------
 //Tool Version: Vivado v.2019.2 (win64) Build 2708876 Wed Nov  6 21:40:23 MST 2019
-//Date        : Tue Aug 18 19:07:08 2020
+//Date        : Thu Aug 20 00:34:17 2020
 //Host        : LAPTOP-AG87OV99 running 64-bit major release  (build 9200)
 //Command     : generate_target design_1.bd
 //Design      : design_1
@@ -9,7 +9,7 @@
 //--------------------------------------------------------------------------------
 `timescale 1 ps / 1 ps
 
-(* CORE_GENERATION_INFO = "design_1,IP_Integrator,{x_ipVendor=xilinx.com,x_ipLibrary=BlockDiagram,x_ipName=design_1,x_ipVersion=1.00.a,x_ipLanguage=VERILOG,numBlks=13,numReposBlks=9,numNonXlnxBlks=0,numHierBlks=4,maxHierDepth=0,numSysgenBlks=0,numHlsBlks=0,numHdlrefBlks=0,numPkgbdBlks=0,bdsource=USER,da_axi4_cnt=8,da_board_cnt=7,da_clkrst_cnt=10,da_ps7_cnt=3,synth_mode=OOC_per_IP}" *) (* HW_HANDOFF = "design_1.hwdef" *) 
+(* CORE_GENERATION_INFO = "design_1,IP_Integrator,{x_ipVendor=xilinx.com,x_ipLibrary=BlockDiagram,x_ipName=design_1,x_ipVersion=1.00.a,x_ipLanguage=VERILOG,numBlks=12,numReposBlks=8,numNonXlnxBlks=0,numHierBlks=4,maxHierDepth=0,numSysgenBlks=0,numHlsBlks=0,numHdlrefBlks=0,numPkgbdBlks=0,bdsource=USER,da_axi4_cnt=8,da_board_cnt=7,da_clkrst_cnt=10,da_ps7_cnt=3,synth_mode=OOC_per_IP}" *) (* HW_HANDOFF = "design_1.hwdef" *) 
 module design_1
    (CLK,
     DDR_addr,
@@ -94,9 +94,6 @@ module design_1
   wire [0:0]axi_gpio_0_gpio_io_o;
   wire clk_wiz_0_clk_out1;
   wire clk_wiz_0_locked;
-  wire mipi_csi2_rx_subsyst_0_csirxss_csi_irq;
-  wire mipi_csi2_rx_subsyst_0_rxbyteclkhs;
-  wire mipi_csi2_rx_subsyst_0_system_rst_out;
   (* CONN_BUS_INFO = "mipi_csi2_rx_subsyst_0_video_out xilinx.com:interface:axis:1.0 None TDATA" *) (* DONT_TOUCH *) wire [39:0]mipi_csi2_rx_subsyst_0_video_out_TDATA;
   (* CONN_BUS_INFO = "mipi_csi2_rx_subsyst_0_video_out xilinx.com:interface:axis:1.0 None TDEST" *) (* DONT_TOUCH *) wire [9:0]mipi_csi2_rx_subsyst_0_video_out_TDEST;
   (* CONN_BUS_INFO = "mipi_csi2_rx_subsyst_0_video_out xilinx.com:interface:axis:1.0 None TLAST" *) (* DONT_TOUCH *) wire mipi_csi2_rx_subsyst_0_video_out_TLAST;
@@ -257,14 +254,8 @@ module design_1
         .clk_out1(clk_wiz_0_clk_out1),
         .locked(clk_wiz_0_locked),
         .reset(reset_rtl_1));
-  design_1_ila_0_0 ila_0
-       (.clk(processing_system7_0_FCLK_CLK0),
-        .probe0(mipi_csi2_rx_subsyst_0_system_rst_out),
-        .probe1(mipi_csi2_rx_subsyst_0_csirxss_csi_irq),
-        .probe2(mipi_csi2_rx_subsyst_0_rxbyteclkhs));
   design_1_mipi_csi2_rx_subsyst_0_1 mipi_csi2_rx_subsyst_0
-       (.csirxss_csi_irq(mipi_csi2_rx_subsyst_0_csirxss_csi_irq),
-        .csirxss_s_axi_araddr(ps7_0_axi_periph_M00_AXI_ARADDR[7:0]),
+       (.csirxss_s_axi_araddr(ps7_0_axi_periph_M00_AXI_ARADDR[7:0]),
         .csirxss_s_axi_arready(ps7_0_axi_periph_M00_AXI_ARREADY),
         .csirxss_s_axi_arvalid(ps7_0_axi_periph_M00_AXI_ARVALID),
         .csirxss_s_axi_awaddr(ps7_0_axi_periph_M00_AXI_AWADDR[7:0]),
@@ -292,8 +283,6 @@ module design_1
         .mipi_phy_if_data_hs_p(mipi_phy_if_0_1_DATA_HS_P),
         .mipi_phy_if_data_lp_n(mipi_phy_if_0_1_DATA_LP_N),
         .mipi_phy_if_data_lp_p(mipi_phy_if_0_1_DATA_LP_P),
-        .rxbyteclkhs(mipi_csi2_rx_subsyst_0_rxbyteclkhs),
-        .system_rst_out(mipi_csi2_rx_subsyst_0_system_rst_out),
         .video_aclk(processing_system7_0_FCLK_CLK0),
         .video_aresetn(rst_clk_wiz_0_100M_peripheral_aresetn),
         .video_out_tdata(mipi_csi2_rx_subsyst_0_video_out_TDATA),
