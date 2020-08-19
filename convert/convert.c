@@ -2,7 +2,7 @@
 #include <stdlib.h>
 #include <string.h>
 
-#define datanum 12345
+#define datanum 12481
 long long counter = 0;
 
 int main(void)
