@@ -25,10 +25,10 @@ int main(void)
         int int40, int30, int20, int10;
 
         //printf("num=%llx\n",num);
-        int10 = (num>>30)&0x00000000000003FF;
-        int20 = (num>>20)&0x00000000000003FF;
-        int30 = (num>>10)&0x00000000000003FF;
-        int40 = (num>>0) &0x00000000000003FF;
+        int10 = (num>>30)&0x00000000000003FF;   //4th
+        int20 = (num>>20)&0x00000000000003FF;   //3rd
+        int30 = (num>>10)&0x00000000000003FF;   //2nd
+        int40 = (num>>0) &0x00000000000003FF;   //1st
         //printf("%02x %02x %02x %02x\n", int40, int30, int20, int10);
 
         //printf("%02x\n",int40);

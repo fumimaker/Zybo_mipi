@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<spirit:component xmlns:xilinx="http://www.xilinx.com" xmlns:spirit="http://www.spiritconsortium.org/XMLSchema/SPIRIT/1685-2009" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <spirit:vendor>xilinx.com</spirit:vendor>
+  <spirit:library>ip</spirit:library>
+  <spirit:name>system_AXI_BayerToRGB_1_0</spirit:name>
+  <spirit:version>1.0</spirit:version>
+  <spirit:model>
+    <spirit:views>
+      <spirit:view>
+        <spirit:name>xilinx_anylanguagesynthesis</spirit:name>
+        <spirit:displayName>Synthesis</spirit:displayName>
+        <spirit:envIdentifier>:vivado.xilinx.com:synthesis</spirit:envIdentifier>
+        <spirit:language>VHDL</spirit:language>
+        <spirit:fileSetRef>
+          <spirit:localName>xilinx_anylanguagesynthesis_view_fileset</spirit:localName>
+        </spirit:fileSetRef>
+        <spirit:parameters>
+          <spirit:parameter>
+            <spirit:name>viewChecksum</spirit:name>
+            <spirit:value>466bcd9b</spirit:value>
+          </spirit:parameter>
+        </spirit:parameters>
+      </spirit:view>
+      <spirit:view>
+        <spirit:name>xilinx_anylanguagebehavioralsimulation</spirit:name>
+        <spirit:displayName>Simulation</spirit:displayName>
+        <spirit:envIdentifier>:vivado.xilinx.com:simulation</spirit:envIdentifier>
+        <spirit:language>VHDL</spirit:language>
+        <spirit:fileSetRef>
+          <spirit:localName>xilinx_anylanguagebehavioralsimulation_view_fileset</spirit:localName>
+        </spirit:fileSetRef>
+        <spirit:parameters>
+          <spirit:parameter>
+            <spirit:name>viewChecksum</spirit:name>
+            <spirit:value>02b9cbe2</spirit:value>
+          </spirit:parameter>
+        </spirit:parameters>
+      </spirit:view>
+    </spirit:views>
+  </spirit:model>
+  <spirit:fileSets>
+    <spirit:fileSet>
+      <spirit:name>xilinx_anylanguagesynthesis_view_fileset</spirit:name>
+      <spirit:file>
+        <spirit:name>sim/system_AXI_BayerToRGB_1_0.vhd</spirit:name>
+        <spirit:fileType>vhdlSource</spirit:fileType>
+        <spirit:logicalName>system_AXI_BayerToRGB_1_0</spirit:logicalName>
+      </spirit:file>
+      <spirit:file>
+        <spirit:name>synth/system_AXI_BayerToRGB_1_0.vhd</spirit:name>
+        <spirit:fileType>vhdlSource</spirit:fileType>
+        <spirit:logicalName>system_AXI_BayerToRGB_1_0</spirit:logicalName>
+      </spirit:file>
+      <spirit:file>
+        <spirit:name>system_AXI_BayerToRGB_1_0/sim/system_AXI_BayerToRGB_1_0.vhd</spirit:name>
+        <spirit:fileType>vhdlSource</spirit:fileType>
+        <spirit:logicalName>system_AXI_BayerToRGB_1_0</spirit:logicalName>
+      </spirit:file>
+      <spirit:file>
+        <spirit:name>system_AXI_BayerToRGB_1_0/synth/system_AXI_BayerToRGB_1_0.vhd</spirit:name>
+        <spirit:fileType>vhdlSource</spirit:fileType>
+        <spirit:logicalName>system_AXI_BayerToRGB_1_0</spirit:logicalName>
+      </spirit:file>
+      <spirit:file>
+        <spirit:name>system_AXI_BayerToRGB_1_0/system_AXI_BayerToRGB_1_0_sim_netlist.v</spirit:name>
+        <spirit:fileType>verilogSource</spirit:fileType>
+        <spirit:logicalName>system_AXI_BayerToRGB_1_0</spirit:logicalName>
+      </spirit:file>
+      <spirit:file>
+        <spirit:name>system_AXI_BayerToRGB_1_0/system_AXI_BayerToRGB_1_0_sim_netlist.vhdl</spirit:name>
+        <spirit:fileType>vhdlSource</spirit:fileType>
+        <spirit:logicalName>system_AXI_BayerToRGB_1_0</spirit:logicalName>
+      </spirit:file>
+      <spirit:file>
+        <spirit:name>system_AXI_BayerToRGB_1_0/system_AXI_BayerToRGB_1_0_stub.v</spirit:name>
+        <spirit:fileType>verilogSource</spirit:fileType>
+        <spirit:logicalName>system_AXI_BayerToRGB_1_0</spirit:logicalName>
+      </spirit:file>
+      <spirit:file>
+        <spirit:name>system_AXI_BayerToRGB_1_0/system_AXI_BayerToRGB_1_0_stub.vhdl</spirit:name>
+        <spirit:fileType>vhdlSource</spirit:fileType>
+        <spirit:logicalName>system_AXI_BayerToRGB_1_0</spirit:logicalName>
+      </spirit:file>
+      <spirit:file>
+        <spirit:name>system_AXI_BayerToRGB_1_0_sim_netlist.v</spirit:name>
+        <spirit:fileType>verilogSource</spirit:fileType>
+        <spirit:logicalName>system_AXI_BayerToRGB_1_0</spirit:logicalName>
+      </spirit:file>
+      <spirit:file>
+        <spirit:name>system_AXI_BayerToRGB_1_0_sim_netlist.vhdl</spirit:name>
+        <spirit:fileType>vhdlSource</spirit:fileType>
+        <spirit:logicalName>system_AXI_BayerToRGB_1_0</spirit:logicalName>
+      </spirit:file>
+      <spirit:file>
+        <spirit:name>system_AXI_BayerToRGB_1_0_stub.v</spirit:name>
+        <spirit:fileType>verilogSource</spirit:fileType>
+        <spirit:logicalName>system_AXI_BayerToRGB_1_0</spirit:logicalName>
+      </spirit:file>
+      <spirit:file>
+        <spirit:name>system_AXI_BayerToRGB_1_0_stub.vhdl</spirit:name>
+        <spirit:fileType>vhdlSource</spirit:fileType>
+        <spirit:logicalName>system_AXI_BayerToRGB_1_0</spirit:logicalName>
+      </spirit:file>
+    </spirit:fileSet>
+    <spirit:fileSet>
+      <spirit:name>xilinx_anylanguagebehavioralsimulation_view_fileset</spirit:name>
+      <spirit:file>
+        <spirit:name>sim/system_AXI_BayerToRGB_1_0.vhd</spirit:name>
+        <spirit:fileType>vhdlSource</spirit:fileType>
+        <spirit:logicalName>system_AXI_BayerToRGB_1_0</spirit:logicalName>
+      </spirit:file>
+    </spirit:fileSet>
+  </spirit:fileSets>
+  <spirit:description>xilinx.com:ip:system_AXI_BayerToRGB_1_0:1.0</spirit:description>
+  <spirit:parameters>
+    <spirit:parameter>
+      <spirit:name>Component_Name</spirit:name>
+      <spirit:value spirit:resolve="user" spirit:id="PARAM_VALUE.Component_Name" spirit:order="1">system_AXI_BayerToRGB_1_0_v1_0</spirit:value>
+    </spirit:parameter>
+  </spirit:parameters>
+  <spirit:vendorExtensions>
+    <xilinx:coreExtensions>
+      <xilinx:displayName>system_AXI_BayerToRGB_1_0_v1_0</xilinx:displayName>
+      <xilinx:hideInCatalogGUI>true</xilinx:hideInCatalogGUI>
+      <xilinx:definitionSource>package_project</xilinx:definitionSource>
+      <xilinx:coreRevision>2</xilinx:coreRevision>
+      <xilinx:coreCreationDateTime>2020-08-19T19:58:49Z</xilinx:coreCreationDateTime>
+      <xilinx:tags>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@5ca261bd_ARCHIVE_LOCATION">c:/Users/ivr/Documents/GitHub/Zybo_mipi/zybo_ov5640/IP/system_AXI_BayerToRGB_1_0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@3e1ddfaf_ARCHIVE_LOCATION">c:/Users/ivr/Documents/GitHub/Zybo_mipi/zybo_ov5640/IP/system_AXI_BayerToRGB_1_0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@2f66e9a7_ARCHIVE_LOCATION">c:/Users/ivr/Documents/GitHub/Zybo_mipi/zybo_ov5640/IP/system_AXI_BayerToRGB_1_0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@783e72b8_ARCHIVE_LOCATION">c:/Users/ivr/Documents/GitHub/Zybo_mipi/zybo_ov5640/IP/system_AXI_BayerToRGB_1_0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@7bbeaade_ARCHIVE_LOCATION">c:/Users/ivr/Documents/GitHub/Zybo_mipi/zybo_ov5640/IP/system_AXI_BayerToRGB_1_0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@16ee23b9_ARCHIVE_LOCATION">c:/Users/ivr/Documents/GitHub/Zybo_mipi/zybo_ov5640/IP/system_AXI_BayerToRGB_1_0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@35ec92db_ARCHIVE_LOCATION">c:/Users/ivr/Documents/GitHub/Zybo_mipi/zybo_ov5640/IP/system_AXI_BayerToRGB_1_0</xilinx:tag>
+      </xilinx:tags>
+    </xilinx:coreExtensions>
+    <xilinx:packagingInfo>
+      <xilinx:xilinxVersion>2019.2</xilinx:xilinxVersion>
+      <xilinx:checksum xilinx:scope="fileGroups" xilinx:value="104851c2"/>
+      <xilinx:checksum xilinx:scope="parameters" xilinx:value="06827b7e"/>
+    </xilinx:packagingInfo>
+  </spirit:vendorExtensions>
+</spirit:component>
