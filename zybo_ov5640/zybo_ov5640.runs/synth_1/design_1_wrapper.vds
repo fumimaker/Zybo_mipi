@@ -2,8 +2,8 @@
 # Vivado v2019.2 (64-bit)
 # SW Build 2708876 on Wed Nov  6 21:40:23 MST 2019
 # IP Build 2700528 on Thu Nov  7 00:09:20 MST 2019
-# Start of session at: Thu Aug 20 00:37:52 2020
-# Process ID: 17668
+# Start of session at: Thu Aug 20 21:17:04 2020
+# Process ID: 6352
 # Current directory: C:/Users/ivr/Documents/GitHub/Zybo_mipi/zybo_ov5640/zybo_ov5640.runs/synth_1
 # Command line: vivado.exe -log design_1_wrapper.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source design_1_wrapper.tcl
 # Log file: C:/Users/ivr/Documents/GitHub/Zybo_mipi/zybo_ov5640/zybo_ov5640.runs/synth_1/design_1_wrapper.vds
@@ -11,18 +11,20 @@
 #-----------------------------------------------------------
 source design_1_wrapper.tcl -notrace
 INFO: [IP_Flow 19-234] Refreshing IP repositories
+WARNING: [IP_Flow 19-2248] Failed to load user IP repository 'c:/Users/ivr/Documents/GitHub/Zybo_mipi/zybo_ov5640/IP/system_AXI_BayerToRGB_1_0'; Can't find the specified path.
+If this directory should no longer be in your list of user repositories, go to the IP Settings dialog and remove it.
 INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/ivr/Downloads/vivado-library-master/vivado-library-master'.
 INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2019.2/data/ip'.
-add_files: Time (s): cpu = 00:00:07 ; elapsed = 00:00:08 . Memory (MB): peak = 550.441 ; gain = 64.023
+add_files: Time (s): cpu = 00:00:08 ; elapsed = 00:00:11 . Memory (MB): peak = 551.270 ; gain = 64.387
 Command: synth_design -top design_1_wrapper -part xc7z020clg400-1
 Starting synth_design
 Attempting to get a license for feature 'Synthesis' and/or device 'xc7z020'
 INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7z020'
 INFO: [Device 21-403] Loading part xc7z020clg400-1
 INFO: Launching helper process for spawning children vivado processes
-INFO: Helper process launched with PID 28708 
+INFO: Helper process launched with PID 6972 
 ---------------------------------------------------------------------------------
-Starting RTL Elaboration : Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 1093.211 ; gain = 232.406
+Starting RTL Elaboration : Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 1094.676 ; gain = 233.074
 ---------------------------------------------------------------------------------
 INFO: [Synth 8-6157] synthesizing module 'design_1_wrapper' [C:/Users/ivr/Documents/GitHub/Zybo_mipi/zybo_ov5640/zybo_ov5640.srcs/sources_1/bd/design_1/hdl/design_1_wrapper.v:12]
 INFO: [Synth 8-6157] synthesizing module 'IOBUF' [C:/Xilinx/Vivado/2019.2/scripts/rt/data/unisim_comp.v:36196]
@@ -32,37 +34,39 @@ INFO: [Synth 8-6157] synthesizing module 'IOBUF' [C:/Xilinx/Vivado/2019.2/script
 	Parameter SLEW bound to: SLOW - type: string 
 INFO: [Synth 8-6155] done synthesizing module 'IOBUF' (1#1) [C:/Xilinx/Vivado/2019.2/scripts/rt/data/unisim_comp.v:36196]
 INFO: [Synth 8-6157] synthesizing module 'design_1' [C:/Users/ivr/Documents/GitHub/Zybo_mipi/zybo_ov5640/zybo_ov5640.srcs/sources_1/bd/design_1/synth/design_1.v:13]
-INFO: [Synth 8-6157] synthesizing module 'design_1_axi_gpio_0_3' [C:/Users/ivr/Documents/GitHub/Zybo_mipi/zybo_ov5640/zybo_ov5640.runs/synth_1/.Xil/Vivado-17668-LAPTOP-AG87OV99/realtime/design_1_axi_gpio_0_3_stub.v:6]
-INFO: [Synth 8-6155] done synthesizing module 'design_1_axi_gpio_0_3' (2#1) [C:/Users/ivr/Documents/GitHub/Zybo_mipi/zybo_ov5640/zybo_ov5640.runs/synth_1/.Xil/Vivado-17668-LAPTOP-AG87OV99/realtime/design_1_axi_gpio_0_3_stub.v:6]
-INFO: [Synth 8-6157] synthesizing module 'design_1_clk_wiz_0_0' [C:/Users/ivr/Documents/GitHub/Zybo_mipi/zybo_ov5640/zybo_ov5640.runs/synth_1/.Xil/Vivado-17668-LAPTOP-AG87OV99/realtime/design_1_clk_wiz_0_0_stub.v:5]
-INFO: [Synth 8-6155] done synthesizing module 'design_1_clk_wiz_0_0' (3#1) [C:/Users/ivr/Documents/GitHub/Zybo_mipi/zybo_ov5640/zybo_ov5640.runs/synth_1/.Xil/Vivado-17668-LAPTOP-AG87OV99/realtime/design_1_clk_wiz_0_0_stub.v:5]
-INFO: [Synth 8-6157] synthesizing module 'design_1_mipi_csi2_rx_subsyst_0_1' [C:/Users/ivr/Documents/GitHub/Zybo_mipi/zybo_ov5640/zybo_ov5640.runs/synth_1/.Xil/Vivado-17668-LAPTOP-AG87OV99/realtime/design_1_mipi_csi2_rx_subsyst_0_1_stub.v:6]
-INFO: [Synth 8-6155] done synthesizing module 'design_1_mipi_csi2_rx_subsyst_0_1' (4#1) [C:/Users/ivr/Documents/GitHub/Zybo_mipi/zybo_ov5640/zybo_ov5640.runs/synth_1/.Xil/Vivado-17668-LAPTOP-AG87OV99/realtime/design_1_mipi_csi2_rx_subsyst_0_1_stub.v:6]
-WARNING: [Synth 8-7023] instance 'mipi_csi2_rx_subsyst_0' of module 'design_1_mipi_csi2_rx_subsyst_0_1' has 39 connections declared, but only 36 given [C:/Users/ivr/Documents/GitHub/Zybo_mipi/zybo_ov5640/zybo_ov5640.srcs/sources_1/bd/design_1/synth/design_1.v:257]
-INFO: [Synth 8-6157] synthesizing module 'design_1_processing_system7_0_1' [C:/Users/ivr/Documents/GitHub/Zybo_mipi/zybo_ov5640/zybo_ov5640.runs/synth_1/.Xil/Vivado-17668-LAPTOP-AG87OV99/realtime/design_1_processing_system7_0_1_stub.v:6]
-INFO: [Synth 8-6155] done synthesizing module 'design_1_processing_system7_0_1' (5#1) [C:/Users/ivr/Documents/GitHub/Zybo_mipi/zybo_ov5640/zybo_ov5640.runs/synth_1/.Xil/Vivado-17668-LAPTOP-AG87OV99/realtime/design_1_processing_system7_0_1_stub.v:6]
-WARNING: [Synth 8-7023] instance 'processing_system7_0' of module 'design_1_processing_system7_0_1' has 71 connections declared, but only 68 given [C:/Users/ivr/Documents/GitHub/Zybo_mipi/zybo_ov5640/zybo_ov5640.srcs/sources_1/bd/design_1/synth/design_1.v:294]
-INFO: [Synth 8-6157] synthesizing module 'design_1_ps7_0_axi_periph_1' [C:/Users/ivr/Documents/GitHub/Zybo_mipi/zybo_ov5640/zybo_ov5640.srcs/sources_1/bd/design_1/synth/design_1.v:462]
-INFO: [Synth 8-6157] synthesizing module 'm00_couplers_imp_15SPJYW' [C:/Users/ivr/Documents/GitHub/Zybo_mipi/zybo_ov5640/zybo_ov5640.srcs/sources_1/bd/design_1/synth/design_1.v:1007]
-INFO: [Synth 8-6155] done synthesizing module 'm00_couplers_imp_15SPJYW' (6#1) [C:/Users/ivr/Documents/GitHub/Zybo_mipi/zybo_ov5640/zybo_ov5640.srcs/sources_1/bd/design_1/synth/design_1.v:1007]
-INFO: [Synth 8-6157] synthesizing module 'm01_couplers_imp_XU9C55' [C:/Users/ivr/Documents/GitHub/Zybo_mipi/zybo_ov5640/zybo_ov5640.srcs/sources_1/bd/design_1/synth/design_1.v:1139]
-INFO: [Synth 8-6155] done synthesizing module 'm01_couplers_imp_XU9C55' (7#1) [C:/Users/ivr/Documents/GitHub/Zybo_mipi/zybo_ov5640/zybo_ov5640.srcs/sources_1/bd/design_1/synth/design_1.v:1139]
-INFO: [Synth 8-6157] synthesizing module 's00_couplers_imp_UYSKKA' [C:/Users/ivr/Documents/GitHub/Zybo_mipi/zybo_ov5640/zybo_ov5640.srcs/sources_1/bd/design_1/synth/design_1.v:1271]
-INFO: [Synth 8-6157] synthesizing module 'design_1_auto_pc_0' [C:/Users/ivr/Documents/GitHub/Zybo_mipi/zybo_ov5640/zybo_ov5640.runs/synth_1/.Xil/Vivado-17668-LAPTOP-AG87OV99/realtime/design_1_auto_pc_0_stub.v:6]
-INFO: [Synth 8-6155] done synthesizing module 'design_1_auto_pc_0' (8#1) [C:/Users/ivr/Documents/GitHub/Zybo_mipi/zybo_ov5640/zybo_ov5640.runs/synth_1/.Xil/Vivado-17668-LAPTOP-AG87OV99/realtime/design_1_auto_pc_0_stub.v:6]
-INFO: [Synth 8-6155] done synthesizing module 's00_couplers_imp_UYSKKA' (9#1) [C:/Users/ivr/Documents/GitHub/Zybo_mipi/zybo_ov5640/zybo_ov5640.srcs/sources_1/bd/design_1/synth/design_1.v:1271]
-INFO: [Synth 8-6157] synthesizing module 'design_1_xbar_0' [C:/Users/ivr/Documents/GitHub/Zybo_mipi/zybo_ov5640/zybo_ov5640.runs/synth_1/.Xil/Vivado-17668-LAPTOP-AG87OV99/realtime/design_1_xbar_0_stub.v:6]
-INFO: [Synth 8-6155] done synthesizing module 'design_1_xbar_0' (10#1) [C:/Users/ivr/Documents/GitHub/Zybo_mipi/zybo_ov5640/zybo_ov5640.runs/synth_1/.Xil/Vivado-17668-LAPTOP-AG87OV99/realtime/design_1_xbar_0_stub.v:6]
-WARNING: [Synth 8-7023] instance 'xbar' of module 'design_1_xbar_0' has 40 connections declared, but only 38 given [C:/Users/ivr/Documents/GitHub/Zybo_mipi/zybo_ov5640/zybo_ov5640.srcs/sources_1/bd/design_1/synth/design_1.v:966]
-INFO: [Synth 8-6155] done synthesizing module 'design_1_ps7_0_axi_periph_1' (11#1) [C:/Users/ivr/Documents/GitHub/Zybo_mipi/zybo_ov5640/zybo_ov5640.srcs/sources_1/bd/design_1/synth/design_1.v:462]
-INFO: [Synth 8-6157] synthesizing module 'design_1_rst_clk_wiz_0_100M_0' [C:/Users/ivr/Documents/GitHub/Zybo_mipi/zybo_ov5640/zybo_ov5640.runs/synth_1/.Xil/Vivado-17668-LAPTOP-AG87OV99/realtime/design_1_rst_clk_wiz_0_100M_0_stub.v:6]
-INFO: [Synth 8-6155] done synthesizing module 'design_1_rst_clk_wiz_0_100M_0' (12#1) [C:/Users/ivr/Documents/GitHub/Zybo_mipi/zybo_ov5640/zybo_ov5640.runs/synth_1/.Xil/Vivado-17668-LAPTOP-AG87OV99/realtime/design_1_rst_clk_wiz_0_100M_0_stub.v:6]
-WARNING: [Synth 8-7023] instance 'rst_clk_wiz_0_100M' of module 'design_1_rst_clk_wiz_0_100M_0' has 10 connections declared, but only 6 given [C:/Users/ivr/Documents/GitHub/Zybo_mipi/zybo_ov5640/zybo_ov5640.srcs/sources_1/bd/design_1/synth/design_1.v:444]
-WARNING: [Synth 8-4446] all outputs are unconnected for this instance and logic may be removed [C:/Users/ivr/Documents/GitHub/Zybo_mipi/zybo_ov5640/zybo_ov5640.srcs/sources_1/bd/design_1/synth/design_1.v:451]
-INFO: [Synth 8-6157] synthesizing module 'design_1_system_ila_0_0' [C:/Users/ivr/Documents/GitHub/Zybo_mipi/zybo_ov5640/zybo_ov5640.runs/synth_1/.Xil/Vivado-17668-LAPTOP-AG87OV99/realtime/design_1_system_ila_0_0_stub.v:6]
-INFO: [Synth 8-6155] done synthesizing module 'design_1_system_ila_0_0' (13#1) [C:/Users/ivr/Documents/GitHub/Zybo_mipi/zybo_ov5640/zybo_ov5640.runs/synth_1/.Xil/Vivado-17668-LAPTOP-AG87OV99/realtime/design_1_system_ila_0_0_stub.v:6]
-INFO: [Synth 8-6155] done synthesizing module 'design_1' (14#1) [C:/Users/ivr/Documents/GitHub/Zybo_mipi/zybo_ov5640/zybo_ov5640.srcs/sources_1/bd/design_1/synth/design_1.v:13]
-INFO: [Synth 8-6155] done synthesizing module 'design_1_wrapper' (15#1) [C:/Users/ivr/Documents/GitHub/Zybo_mipi/zybo_ov5640/zybo_ov5640.srcs/sources_1/bd/design_1/hdl/design_1_wrapper.v:12]
+INFO: [Synth 8-6157] synthesizing module 'design_1_AXI_BayerToRGB_0_0' [C:/Users/ivr/Documents/GitHub/Zybo_mipi/zybo_ov5640/zybo_ov5640.runs/synth_1/.Xil/Vivado-6352-LAPTOP-AG87OV99/realtime/design_1_AXI_BayerToRGB_0_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_AXI_BayerToRGB_0_0' (2#1) [C:/Users/ivr/Documents/GitHub/Zybo_mipi/zybo_ov5640/zybo_ov5640.runs/synth_1/.Xil/Vivado-6352-LAPTOP-AG87OV99/realtime/design_1_AXI_BayerToRGB_0_0_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'design_1_axi_gpio_0_3' [C:/Users/ivr/Documents/GitHub/Zybo_mipi/zybo_ov5640/zybo_ov5640.runs/synth_1/.Xil/Vivado-6352-LAPTOP-AG87OV99/realtime/design_1_axi_gpio_0_3_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_axi_gpio_0_3' (3#1) [C:/Users/ivr/Documents/GitHub/Zybo_mipi/zybo_ov5640/zybo_ov5640.runs/synth_1/.Xil/Vivado-6352-LAPTOP-AG87OV99/realtime/design_1_axi_gpio_0_3_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'design_1_clk_wiz_0_0' [C:/Users/ivr/Documents/GitHub/Zybo_mipi/zybo_ov5640/zybo_ov5640.runs/synth_1/.Xil/Vivado-6352-LAPTOP-AG87OV99/realtime/design_1_clk_wiz_0_0_stub.v:5]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_clk_wiz_0_0' (4#1) [C:/Users/ivr/Documents/GitHub/Zybo_mipi/zybo_ov5640/zybo_ov5640.runs/synth_1/.Xil/Vivado-6352-LAPTOP-AG87OV99/realtime/design_1_clk_wiz_0_0_stub.v:5]
+INFO: [Synth 8-6157] synthesizing module 'design_1_mipi_csi2_rx_subsyst_0_1' [C:/Users/ivr/Documents/GitHub/Zybo_mipi/zybo_ov5640/zybo_ov5640.runs/synth_1/.Xil/Vivado-6352-LAPTOP-AG87OV99/realtime/design_1_mipi_csi2_rx_subsyst_0_1_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_mipi_csi2_rx_subsyst_0_1' (5#1) [C:/Users/ivr/Documents/GitHub/Zybo_mipi/zybo_ov5640/zybo_ov5640.runs/synth_1/.Xil/Vivado-6352-LAPTOP-AG87OV99/realtime/design_1_mipi_csi2_rx_subsyst_0_1_stub.v:6]
+WARNING: [Synth 8-7023] instance 'mipi_csi2_rx_subsyst_0' of module 'design_1_mipi_csi2_rx_subsyst_0_1' has 39 connections declared, but only 35 given [C:/Users/ivr/Documents/GitHub/Zybo_mipi/zybo_ov5640/zybo_ov5640.srcs/sources_1/bd/design_1/synth/design_1.v:275]
+INFO: [Synth 8-6157] synthesizing module 'design_1_processing_system7_0_1' [C:/Users/ivr/Documents/GitHub/Zybo_mipi/zybo_ov5640/zybo_ov5640.runs/synth_1/.Xil/Vivado-6352-LAPTOP-AG87OV99/realtime/design_1_processing_system7_0_1_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_processing_system7_0_1' (6#1) [C:/Users/ivr/Documents/GitHub/Zybo_mipi/zybo_ov5640/zybo_ov5640.runs/synth_1/.Xil/Vivado-6352-LAPTOP-AG87OV99/realtime/design_1_processing_system7_0_1_stub.v:6]
+WARNING: [Synth 8-7023] instance 'processing_system7_0' of module 'design_1_processing_system7_0_1' has 71 connections declared, but only 67 given [C:/Users/ivr/Documents/GitHub/Zybo_mipi/zybo_ov5640/zybo_ov5640.srcs/sources_1/bd/design_1/synth/design_1.v:311]
+INFO: [Synth 8-6157] synthesizing module 'design_1_ps7_0_axi_periph_1' [C:/Users/ivr/Documents/GitHub/Zybo_mipi/zybo_ov5640/zybo_ov5640.srcs/sources_1/bd/design_1/synth/design_1.v:477]
+INFO: [Synth 8-6157] synthesizing module 'm00_couplers_imp_15SPJYW' [C:/Users/ivr/Documents/GitHub/Zybo_mipi/zybo_ov5640/zybo_ov5640.srcs/sources_1/bd/design_1/synth/design_1.v:1022]
+INFO: [Synth 8-6155] done synthesizing module 'm00_couplers_imp_15SPJYW' (7#1) [C:/Users/ivr/Documents/GitHub/Zybo_mipi/zybo_ov5640/zybo_ov5640.srcs/sources_1/bd/design_1/synth/design_1.v:1022]
+INFO: [Synth 8-6157] synthesizing module 'm01_couplers_imp_XU9C55' [C:/Users/ivr/Documents/GitHub/Zybo_mipi/zybo_ov5640/zybo_ov5640.srcs/sources_1/bd/design_1/synth/design_1.v:1154]
+INFO: [Synth 8-6155] done synthesizing module 'm01_couplers_imp_XU9C55' (8#1) [C:/Users/ivr/Documents/GitHub/Zybo_mipi/zybo_ov5640/zybo_ov5640.srcs/sources_1/bd/design_1/synth/design_1.v:1154]
+INFO: [Synth 8-6157] synthesizing module 's00_couplers_imp_UYSKKA' [C:/Users/ivr/Documents/GitHub/Zybo_mipi/zybo_ov5640/zybo_ov5640.srcs/sources_1/bd/design_1/synth/design_1.v:1286]
+INFO: [Synth 8-6157] synthesizing module 'design_1_auto_pc_0' [C:/Users/ivr/Documents/GitHub/Zybo_mipi/zybo_ov5640/zybo_ov5640.runs/synth_1/.Xil/Vivado-6352-LAPTOP-AG87OV99/realtime/design_1_auto_pc_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_auto_pc_0' (9#1) [C:/Users/ivr/Documents/GitHub/Zybo_mipi/zybo_ov5640/zybo_ov5640.runs/synth_1/.Xil/Vivado-6352-LAPTOP-AG87OV99/realtime/design_1_auto_pc_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 's00_couplers_imp_UYSKKA' (10#1) [C:/Users/ivr/Documents/GitHub/Zybo_mipi/zybo_ov5640/zybo_ov5640.srcs/sources_1/bd/design_1/synth/design_1.v:1286]
+INFO: [Synth 8-6157] synthesizing module 'design_1_xbar_0' [C:/Users/ivr/Documents/GitHub/Zybo_mipi/zybo_ov5640/zybo_ov5640.runs/synth_1/.Xil/Vivado-6352-LAPTOP-AG87OV99/realtime/design_1_xbar_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_xbar_0' (11#1) [C:/Users/ivr/Documents/GitHub/Zybo_mipi/zybo_ov5640/zybo_ov5640.runs/synth_1/.Xil/Vivado-6352-LAPTOP-AG87OV99/realtime/design_1_xbar_0_stub.v:6]
+WARNING: [Synth 8-7023] instance 'xbar' of module 'design_1_xbar_0' has 40 connections declared, but only 38 given [C:/Users/ivr/Documents/GitHub/Zybo_mipi/zybo_ov5640/zybo_ov5640.srcs/sources_1/bd/design_1/synth/design_1.v:981]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_ps7_0_axi_periph_1' (12#1) [C:/Users/ivr/Documents/GitHub/Zybo_mipi/zybo_ov5640/zybo_ov5640.srcs/sources_1/bd/design_1/synth/design_1.v:477]
+INFO: [Synth 8-6157] synthesizing module 'design_1_rst_clk_wiz_0_100M_0' [C:/Users/ivr/Documents/GitHub/Zybo_mipi/zybo_ov5640/zybo_ov5640.runs/synth_1/.Xil/Vivado-6352-LAPTOP-AG87OV99/realtime/design_1_rst_clk_wiz_0_100M_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_rst_clk_wiz_0_100M_0' (13#1) [C:/Users/ivr/Documents/GitHub/Zybo_mipi/zybo_ov5640/zybo_ov5640.runs/synth_1/.Xil/Vivado-6352-LAPTOP-AG87OV99/realtime/design_1_rst_clk_wiz_0_100M_0_stub.v:6]
+WARNING: [Synth 8-7023] instance 'rst_clk_wiz_0_100M' of module 'design_1_rst_clk_wiz_0_100M_0' has 10 connections declared, but only 6 given [C:/Users/ivr/Documents/GitHub/Zybo_mipi/zybo_ov5640/zybo_ov5640.srcs/sources_1/bd/design_1/synth/design_1.v:460]
+WARNING: [Synth 8-4446] all outputs are unconnected for this instance and logic may be removed [C:/Users/ivr/Documents/GitHub/Zybo_mipi/zybo_ov5640/zybo_ov5640.srcs/sources_1/bd/design_1/synth/design_1.v:467]
+INFO: [Synth 8-6157] synthesizing module 'design_1_system_ila_0_0' [C:/Users/ivr/Documents/GitHub/Zybo_mipi/zybo_ov5640/zybo_ov5640.runs/synth_1/.Xil/Vivado-6352-LAPTOP-AG87OV99/realtime/design_1_system_ila_0_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_system_ila_0_0' (14#1) [C:/Users/ivr/Documents/GitHub/Zybo_mipi/zybo_ov5640/zybo_ov5640.runs/synth_1/.Xil/Vivado-6352-LAPTOP-AG87OV99/realtime/design_1_system_ila_0_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'design_1' (15#1) [C:/Users/ivr/Documents/GitHub/Zybo_mipi/zybo_ov5640/zybo_ov5640.srcs/sources_1/bd/design_1/synth/design_1.v:13]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_wrapper' (16#1) [C:/Users/ivr/Documents/GitHub/Zybo_mipi/zybo_ov5640/zybo_ov5640.srcs/sources_1/bd/design_1/hdl/design_1_wrapper.v:12]
 WARNING: [Synth 8-3331] design s00_couplers_imp_UYSKKA has unconnected port M_ACLK
 WARNING: [Synth 8-3331] design s00_couplers_imp_UYSKKA has unconnected port M_ARESETN
 WARNING: [Synth 8-3331] design m01_couplers_imp_XU9C55 has unconnected port M_ACLK
@@ -80,7 +84,7 @@ WARNING: [Synth 8-3331] design design_1_ps7_0_axi_periph_1 has unconnected port 
 WARNING: [Synth 8-3331] design design_1_ps7_0_axi_periph_1 has unconnected port S00_ACLK
 WARNING: [Synth 8-3331] design design_1_ps7_0_axi_periph_1 has unconnected port S00_ARESETN
 ---------------------------------------------------------------------------------
-Finished RTL Elaboration : Time (s): cpu = 00:00:06 ; elapsed = 00:00:07 . Memory (MB): peak = 1172.223 ; gain = 311.418
+Finished RTL Elaboration : Time (s): cpu = 00:00:07 ; elapsed = 00:00:07 . Memory (MB): peak = 1173.480 ; gain = 311.879
 ---------------------------------------------------------------------------------
 
 Report Check Netlist: 
@@ -93,12 +97,12 @@ Report Check Netlist:
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:00:07 ; elapsed = 00:00:07 . Memory (MB): peak = 1172.223 ; gain = 311.418
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:07 ; elapsed = 00:00:07 . Memory (MB): peak = 1173.480 ; gain = 311.879
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:07 ; elapsed = 00:00:07 . Memory (MB): peak = 1172.223 ; gain = 311.418
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:07 ; elapsed = 00:00:07 . Memory (MB): peak = 1173.480 ; gain = 311.879
 ---------------------------------------------------------------------------------
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.030 . Memory (MB): peak = 1172.223 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.032 . Memory (MB): peak = 1173.480 ; gain = 0.000
 INFO: [Netlist 29-17] Analyzing 2 Unisim elements for replacement
 INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
 INFO: [Project 1-570] Preparing netlist for logic optimization
@@ -119,8 +123,10 @@ Parsing XDC File [c:/Users/ivr/Documents/GitHub/Zybo_mipi/zybo_ov5640/zybo_ov564
 Finished Parsing XDC File [c:/Users/ivr/Documents/GitHub/Zybo_mipi/zybo_ov5640/zybo_ov5640.srcs/sources_1/bd/design_1/ip/design_1_xbar_0/design_1_xbar_0/design_1_xbar_0_in_context.xdc] for cell 'design_1_i/ps7_0_axi_periph/xbar'
 Parsing XDC File [c:/Users/ivr/Documents/GitHub/Zybo_mipi/zybo_ov5640/zybo_ov5640.srcs/sources_1/bd/design_1/ip/design_1_axi_gpio_0_3/design_1_axi_gpio_0_3/design_1_axi_gpio_0_3_in_context.xdc] for cell 'design_1_i/axi_gpio_0'
 Finished Parsing XDC File [c:/Users/ivr/Documents/GitHub/Zybo_mipi/zybo_ov5640/zybo_ov5640.srcs/sources_1/bd/design_1/ip/design_1_axi_gpio_0_3/design_1_axi_gpio_0_3/design_1_axi_gpio_0_3_in_context.xdc] for cell 'design_1_i/axi_gpio_0'
-Parsing XDC File [c:/Users/ivr/Documents/GitHub/Zybo_mipi/zybo_ov5640/zybo_ov5640.srcs/sources_1/bd/design_1/ip/design_1_auto_pc_0/design_1_auto_pc_0/design_1_auto_pc_0_in_context.xdc] for cell 'design_1_i/ps7_0_axi_periph/s00_couplers/auto_pc'
-Finished Parsing XDC File [c:/Users/ivr/Documents/GitHub/Zybo_mipi/zybo_ov5640/zybo_ov5640.srcs/sources_1/bd/design_1/ip/design_1_auto_pc_0/design_1_auto_pc_0/design_1_auto_pc_0_in_context.xdc] for cell 'design_1_i/ps7_0_axi_periph/s00_couplers/auto_pc'
+Parsing XDC File [c:/Users/ivr/Documents/GitHub/Zybo_mipi/zybo_ov5640/zybo_ov5640.srcs/sources_1/bd/design_1/ip/design_1_AXI_BayerToRGB_0_0/design_1_AXI_BayerToRGB_0_0/design_1_AXI_BayerToRGB_0_0_in_context.xdc] for cell 'design_1_i/AXI_BayerToRGB_0'
+Finished Parsing XDC File [c:/Users/ivr/Documents/GitHub/Zybo_mipi/zybo_ov5640/zybo_ov5640.srcs/sources_1/bd/design_1/ip/design_1_AXI_BayerToRGB_0_0/design_1_AXI_BayerToRGB_0_0/design_1_AXI_BayerToRGB_0_0_in_context.xdc] for cell 'design_1_i/AXI_BayerToRGB_0'
+Parsing XDC File [c:/Users/ivr/Documents/GitHub/Zybo_mipi/zybo_ov5640/zybo_ov5640.srcs/sources_1/bd/design_1/ip/design_1_auto_pc_0/design_1_auto_pc_0/design_1_auto_pc_1_in_context.xdc] for cell 'design_1_i/ps7_0_axi_periph/s00_couplers/auto_pc'
+Finished Parsing XDC File [c:/Users/ivr/Documents/GitHub/Zybo_mipi/zybo_ov5640/zybo_ov5640.srcs/sources_1/bd/design_1/ip/design_1_auto_pc_0/design_1_auto_pc_0/design_1_auto_pc_1_in_context.xdc] for cell 'design_1_i/ps7_0_axi_periph/s00_couplers/auto_pc'
 Parsing XDC File [C:/Users/ivr/Documents/GitHub/Zybo_mipi/zybo_ov5640/zybo_ov5640.srcs/constrs_1/imports/new/port.xdc]
 WARNING: [Vivado 12-584] No ports matched 'VGA_R[0]'. [C:/Users/ivr/Documents/GitHub/Zybo_mipi/zybo_ov5640/zybo_ov5640.srcs/constrs_1/imports/new/port.xdc:7]
 WARNING: [Vivado 12-584] No ports matched 'VGA_R[1]'. [C:/Users/ivr/Documents/GitHub/Zybo_mipi/zybo_ov5640/zybo_ov5640.srcs/constrs_1/imports/new/port.xdc:8]
@@ -162,27 +168,27 @@ Parsing XDC File [C:/Users/ivr/Documents/GitHub/Zybo_mipi/zybo_ov5640/zybo_ov564
 Finished Parsing XDC File [C:/Users/ivr/Documents/GitHub/Zybo_mipi/zybo_ov5640/zybo_ov5640.runs/synth_1/dont_touch.xdc]
 Completed Processing XDC Constraints
 
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1214.883 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1225.742 ; gain = 0.000
 INFO: [Project 1-111] Unisim Transformation Summary:
   A total of 2 instances were transformed.
   IOBUF => IOBUF (IBUF, OBUFT): 2 instances
 
-Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.021 . Memory (MB): peak = 1214.883 ; gain = 0.000
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.028 . Memory (MB): peak = 1225.742 ; gain = 0.000
 ---------------------------------------------------------------------------------
-Finished Constraint Validation : Time (s): cpu = 00:00:15 ; elapsed = 00:00:16 . Memory (MB): peak = 1214.883 ; gain = 354.078
+Finished Constraint Validation : Time (s): cpu = 00:00:16 ; elapsed = 00:00:17 . Memory (MB): peak = 1225.742 ; gain = 364.141
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Loading Part and Timing Information
 ---------------------------------------------------------------------------------
 Loading part: xc7z020clg400-1
 ---------------------------------------------------------------------------------
-Finished Loading Part and Timing Information : Time (s): cpu = 00:00:15 ; elapsed = 00:00:16 . Memory (MB): peak = 1214.883 ; gain = 354.078
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:16 ; elapsed = 00:00:17 . Memory (MB): peak = 1225.742 ; gain = 364.141
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Applying 'set_property' XDC Constraints
 ---------------------------------------------------------------------------------
-Applied set_property IO_BUFFER_TYPE = NONE for CLK. (constraint file  c:/Users/ivr/Documents/GitHub/Zybo_mipi/zybo_ov5640/zybo_ov5640.srcs/sources_1/bd/design_1/ip/design_1_clk_wiz_0_0/design_1_clk_wiz_0_0/design_1_clk_wiz_0_0_in_context.xdc, line 3).
-Applied set_property CLOCK_BUFFER_TYPE = NONE for CLK. (constraint file  c:/Users/ivr/Documents/GitHub/Zybo_mipi/zybo_ov5640/zybo_ov5640.srcs/sources_1/bd/design_1/ip/design_1_clk_wiz_0_0/design_1_clk_wiz_0_0/design_1_clk_wiz_0_0_in_context.xdc, line 4).
+Applied set_property IO_BUFFER_TYPE = NONE for CLK. (constraint file  c:/Users/ivr/Documents/GitHub/Zybo_mipi/zybo_ov5640/zybo_ov5640.srcs/sources_1/bd/design_1/ip/design_1_clk_wiz_0_0/design_1_clk_wiz_0_0/design_1_clk_wiz_0_0_in_context.xdc, line 4).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for CLK. (constraint file  c:/Users/ivr/Documents/GitHub/Zybo_mipi/zybo_ov5640/zybo_ov5640.srcs/sources_1/bd/design_1/ip/design_1_clk_wiz_0_0/design_1_clk_wiz_0_0/design_1_clk_wiz_0_0_in_context.xdc, line 5).
 Applied set_property IO_BUFFER_TYPE = NONE for DDR_addr[0]. (constraint file  c:/Users/ivr/Documents/GitHub/Zybo_mipi/zybo_ov5640/zybo_ov5640.srcs/sources_1/bd/design_1/ip/design_1_processing_system7_0_1/design_1_processing_system7_0_1/design_1_processing_system7_0_1_in_context.xdc, line 2).
 Applied set_property CLOCK_BUFFER_TYPE = NONE for DDR_addr[0]. (constraint file  c:/Users/ivr/Documents/GitHub/Zybo_mipi/zybo_ov5640/zybo_ov5640.srcs/sources_1/bd/design_1/ip/design_1_processing_system7_0_1/design_1_processing_system7_0_1/design_1_processing_system7_0_1_in_context.xdc, line 3).
 Applied set_property IO_BUFFER_TYPE = NONE for DDR_addr[10]. (constraint file  c:/Users/ivr/Documents/GitHub/Zybo_mipi/zybo_ov5640/zybo_ov5640.srcs/sources_1/bd/design_1/ip/design_1_processing_system7_0_1/design_1_processing_system7_0_1/design_1_processing_system7_0_1_in_context.xdc, line 4).
@@ -464,12 +470,13 @@ Applied set_property DONT_TOUCH = true for design_1_i/rst_clk_wiz_0_100M. (const
 Applied set_property DONT_TOUCH = true for design_1_i/mipi_csi2_rx_subsyst_0. (constraint file  auto generated constraint, line ).
 Applied set_property DONT_TOUCH = true for design_1_i/ps7_0_axi_periph/xbar. (constraint file  auto generated constraint, line ).
 Applied set_property DONT_TOUCH = true for design_1_i/axi_gpio_0. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for design_1_i/AXI_BayerToRGB_0. (constraint file  auto generated constraint, line ).
 Applied set_property DONT_TOUCH = true for design_1_i/ps7_0_axi_periph/s00_couplers/auto_pc. (constraint file  auto generated constraint, line ).
 ---------------------------------------------------------------------------------
-Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:16 ; elapsed = 00:00:17 . Memory (MB): peak = 1214.883 ; gain = 354.078
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:17 ; elapsed = 00:00:17 . Memory (MB): peak = 1225.742 ; gain = 364.141
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:16 ; elapsed = 00:00:17 . Memory (MB): peak = 1214.883 ; gain = 354.078
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:17 ; elapsed = 00:00:18 . Memory (MB): peak = 1225.742 ; gain = 364.141
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -511,7 +518,7 @@ WARNING: [Synth 8-3331] design design_1_ps7_0_axi_periph_1 has unconnected port 
 WARNING: [Synth 8-3331] design design_1_ps7_0_axi_periph_1 has unconnected port S00_ACLK
 WARNING: [Synth 8-3331] design design_1_ps7_0_axi_periph_1 has unconnected port S00_ARESETN
 ---------------------------------------------------------------------------------
-Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:18 ; elapsed = 00:00:19 . Memory (MB): peak = 1214.883 ; gain = 354.078
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:19 ; elapsed = 00:00:20 . Memory (MB): peak = 1225.742 ; gain = 364.141
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -523,13 +530,13 @@ Report RTL Partitions:
 Start Applying XDC Timing Constraints
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:27 ; elapsed = 00:00:28 . Memory (MB): peak = 1238.742 ; gain = 377.938
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:29 ; elapsed = 00:00:29 . Memory (MB): peak = 1241.477 ; gain = 379.875
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Timing Optimization
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Timing Optimization : Time (s): cpu = 00:00:27 ; elapsed = 00:00:28 . Memory (MB): peak = 1239.023 ; gain = 378.219
+Finished Timing Optimization : Time (s): cpu = 00:00:29 ; elapsed = 00:00:29 . Memory (MB): peak = 1241.699 ; gain = 380.098
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -541,7 +548,7 @@ Report RTL Partitions:
 Start Technology Mapping
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Technology Mapping : Time (s): cpu = 00:00:27 ; elapsed = 00:00:28 . Memory (MB): peak = 1248.773 ; gain = 387.969
+Finished Technology Mapping : Time (s): cpu = 00:00:29 ; elapsed = 00:00:29 . Memory (MB): peak = 1251.461 ; gain = 389.859
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -565,13 +572,13 @@ Start Final Netlist Cleanup
 Finished Final Netlist Cleanup
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished IO Insertion : Time (s): cpu = 00:00:32 ; elapsed = 00:00:33 . Memory (MB): peak = 1264.570 ; gain = 403.766
+Finished IO Insertion : Time (s): cpu = 00:00:34 ; elapsed = 00:00:35 . Memory (MB): peak = 1267.152 ; gain = 405.551
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Instances
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Instances : Time (s): cpu = 00:00:32 ; elapsed = 00:00:33 . Memory (MB): peak = 1264.570 ; gain = 403.766
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:34 ; elapsed = 00:00:35 . Memory (MB): peak = 1267.152 ; gain = 405.551
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -590,25 +597,25 @@ Report Check Netlist:
 Start Rebuilding User Hierarchy
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:32 ; elapsed = 00:00:33 . Memory (MB): peak = 1264.570 ; gain = 403.766
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:34 ; elapsed = 00:00:35 . Memory (MB): peak = 1267.152 ; gain = 405.551
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Ports
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Ports : Time (s): cpu = 00:00:32 ; elapsed = 00:00:33 . Memory (MB): peak = 1264.570 ; gain = 403.766
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:34 ; elapsed = 00:00:35 . Memory (MB): peak = 1267.152 ; gain = 405.551
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:00:32 ; elapsed = 00:00:33 . Memory (MB): peak = 1264.570 ; gain = 403.766
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:34 ; elapsed = 00:00:35 . Memory (MB): peak = 1267.152 ; gain = 405.551
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Nets
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Nets : Time (s): cpu = 00:00:32 ; elapsed = 00:00:33 . Memory (MB): peak = 1264.570 ; gain = 403.766
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:34 ; elapsed = 00:00:35 . Memory (MB): peak = 1267.152 ; gain = 405.551
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Writing Synthesis Report
@@ -620,64 +627,68 @@ Report BlackBoxes:
 +------+----------------------------------+----------+
 |1     |design_1_xbar_0                   |         1|
 |2     |design_1_auto_pc_0                |         1|
-|3     |design_1_axi_gpio_0_3             |         1|
-|4     |design_1_clk_wiz_0_0              |         1|
-|5     |design_1_mipi_csi2_rx_subsyst_0_1 |         1|
-|6     |design_1_processing_system7_0_1   |         1|
-|7     |design_1_rst_clk_wiz_0_100M_0     |         1|
-|8     |design_1_system_ila_0_0           |         1|
+|3     |design_1_AXI_BayerToRGB_0_0       |         1|
+|4     |design_1_axi_gpio_0_3             |         1|
+|5     |design_1_clk_wiz_0_0              |         1|
+|6     |design_1_mipi_csi2_rx_subsyst_0_1 |         1|
+|7     |design_1_processing_system7_0_1   |         1|
+|8     |design_1_rst_clk_wiz_0_100M_0     |         1|
+|9     |design_1_system_ila_0_0           |         1|
 +------+----------------------------------+----------+
 
 Report Cell Usage: 
 +------+----------------------------------+------+
 |      |Cell                              |Count |
 +------+----------------------------------+------+
-|1     |design_1_auto_pc_0                |     1|
-|2     |design_1_axi_gpio_0_3             |     1|
-|3     |design_1_clk_wiz_0_0              |     1|
-|4     |design_1_mipi_csi2_rx_subsyst_0_1 |     1|
-|5     |design_1_processing_system7_0_1   |     1|
-|6     |design_1_rst_clk_wiz_0_100M_0     |     1|
-|7     |design_1_system_ila_0_0           |     1|
-|8     |design_1_xbar_0                   |     1|
-|9     |IBUF                              |     7|
-|10    |IOBUF                             |     2|
-|11    |OBUF                              |     2|
+|1     |design_1_AXI_BayerToRGB_0_0       |     1|
+|2     |design_1_auto_pc_0                |     1|
+|3     |design_1_axi_gpio_0_3             |     1|
+|4     |design_1_clk_wiz_0_0              |     1|
+|5     |design_1_mipi_csi2_rx_subsyst_0_1 |     1|
+|6     |design_1_processing_system7_0_1   |     1|
+|7     |design_1_rst_clk_wiz_0_100M_0     |     1|
+|8     |design_1_system_ila_0_0           |     1|
+|9     |design_1_xbar_0                   |     1|
+|10    |IBUF                              |     7|
+|11    |IOBUF                             |     2|
+|12    |OBUF                              |     2|
 +------+----------------------------------+------+
 
 Report Instance Areas: 
 +------+---------------------+----------------------------+------+
 |      |Instance             |Module                      |Cells |
 +------+---------------------+----------------------------+------+
-|1     |top                  |                            |   792|
-|2     |  design_1_i         |design_1                    |   781|
+|1     |top                  |                            |   829|
+|2     |  design_1_i         |design_1                    |   818|
 |3     |    ps7_0_axi_periph |design_1_ps7_0_axi_periph_1 |   440|
 |4     |      s00_couplers   |s00_couplers_imp_UYSKKA     |   177|
 +------+---------------------+----------------------------+------+
 ---------------------------------------------------------------------------------
-Finished Writing Synthesis Report : Time (s): cpu = 00:00:32 ; elapsed = 00:00:33 . Memory (MB): peak = 1264.570 ; gain = 403.766
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:34 ; elapsed = 00:00:35 . Memory (MB): peak = 1267.152 ; gain = 405.551
 ---------------------------------------------------------------------------------
 Synthesis finished with 0 errors, 0 critical warnings and 6 warnings.
-Synthesis Optimization Runtime : Time (s): cpu = 00:00:22 ; elapsed = 00:00:30 . Memory (MB): peak = 1264.570 ; gain = 361.105
-Synthesis Optimization Complete : Time (s): cpu = 00:00:32 ; elapsed = 00:00:33 . Memory (MB): peak = 1264.570 ; gain = 403.766
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:23 ; elapsed = 00:00:31 . Memory (MB): peak = 1267.152 ; gain = 353.289
+Synthesis Optimization Complete : Time (s): cpu = 00:00:34 ; elapsed = 00:00:35 . Memory (MB): peak = 1267.152 ; gain = 405.551
 INFO: [Project 1-571] Translating synthesized netlist
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.024 . Memory (MB): peak = 1264.570 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.026 . Memory (MB): peak = 1267.152 ; gain = 0.000
 INFO: [Netlist 29-17] Analyzing 2 Unisim elements for replacement
 INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
 INFO: [Project 1-570] Preparing netlist for logic optimization
 INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1285.438 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1289.668 ; gain = 0.000
 INFO: [Project 1-111] Unisim Transformation Summary:
   A total of 2 instances were transformed.
   IOBUF => IOBUF (IBUF, OBUFT): 2 instances
 
 INFO: [Common 17-83] Releasing license: Synthesis
-47 Infos, 60 Warnings, 0 Critical Warnings and 0 Errors encountered.
+49 Infos, 61 Warnings, 0 Critical Warnings and 0 Errors encountered.
 synth_design completed successfully
-synth_design: Time (s): cpu = 00:00:37 ; elapsed = 00:00:38 . Memory (MB): peak = 1285.438 ; gain = 734.996
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1285.438 ; gain = 0.000
+synth_design: Time (s): cpu = 00:00:38 ; elapsed = 00:00:40 . Memory (MB): peak = 1289.668 ; gain = 738.398
+INFO: [Common 17-600] The following parameters have non-default value.
+tcl.collectionResultDisplayLimit
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1289.668 ; gain = 0.000
 WARNING: [Constraints 18-5210] No constraints selected for write.
 Resolution: This message can indicate that there are no constraints for the design, or it can indicate that the used_in flags are set such that the constraints are ignored. This later case is used when running synth_design to not write synthesis constraints to the resulting checkpoint. Instead, project constraints are read when the synthesized design is opened.
 INFO: [Common 17-1381] The checkpoint 'C:/Users/ivr/Documents/GitHub/Zybo_mipi/zybo_ov5640/zybo_ov5640.runs/synth_1/design_1_wrapper.dcp' has been generated.
 INFO: [runtcl-4] Executing : report_utilization -file design_1_wrapper_utilization_synth.rpt -pb design_1_wrapper_utilization_synth.pb
-INFO: [Common 17-206] Exiting Vivado at Thu Aug 20 00:38:49 2020...
+INFO: [Common 17-206] Exiting Vivado at Thu Aug 20 21:18:07 2020...

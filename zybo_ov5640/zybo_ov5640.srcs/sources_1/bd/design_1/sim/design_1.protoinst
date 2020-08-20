@@ -3,6 +3,26 @@
 	"modules": {
 		"design_1": {
 			"proto_instances": {
+				"/AXI_BayerToRGB_0/m_axis_video": {
+					"interface": "xilinx.com:interface:axis:1.0",
+					"ports": {
+						"TDATA": { "actual": "m_axis_video_tdata"},
+						"TLAST": { "actual": "m_axis_video_tlast"},
+						"TREADY": { "actual": "m_axis_video_tready"},
+						"TUSER": { "actual": "m_axis_video_tuser"},
+						"TVALID": { "actual": "m_axis_video_tvalid"}
+					}
+				},
+				"/AXI_BayerToRGB_0/s_axis_video": {
+					"interface": "xilinx.com:interface:axis:1.0",
+					"ports": {
+						"TDATA": { "actual": "s_axis_video_tdata"},
+						"TLAST": { "actual": "s_axis_video_tlast"},
+						"TREADY": { "actual": "s_axis_video_tready"},
+						"TUSER": { "actual": "s_axis_video_tuser"},
+						"TVALID": { "actual": "s_axis_video_tvalid"}
+					}
+				},
 				"/axi_gpio_0/S_AXI": {
 					"interface": "xilinx.com:interface:aximm:1.0",
 					"ports": {

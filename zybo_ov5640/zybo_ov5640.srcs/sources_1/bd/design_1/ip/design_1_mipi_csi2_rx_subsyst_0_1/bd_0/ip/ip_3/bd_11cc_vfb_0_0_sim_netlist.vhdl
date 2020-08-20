@@ -1,10 +1,10 @@
 -- Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
 -- --------------------------------------------------------------------------------
 -- Tool Version: Vivado v.2019.2 (win64) Build 2708876 Wed Nov  6 21:40:23 MST 2019
--- Date        : Tue Aug 18 19:08:52 2020
+-- Date        : Thu Aug 20 20:49:39 2020
 -- Host        : LAPTOP-AG87OV99 running 64-bit major release  (build 9200)
--- Command     : write_vhdl -force -mode funcsim -rename_top bd_11cc_vfb_0_0 -prefix
---               bd_11cc_vfb_0_0_ bd_11cc_vfb_0_0_sim_netlist.vhdl
+-- Command     : write_vhdl -force -mode funcsim
+--               c:/Users/ivr/Documents/GitHub/Zybo_mipi/zybo_ov5640/zybo_ov5640.srcs/sources_1/bd/design_1/ip/design_1_mipi_csi2_rx_subsyst_0_1/bd_0/ip/ip_3/bd_11cc_vfb_0_0_sim_netlist.vhdl
 -- Design      : bd_11cc_vfb_0_0
 -- Purpose     : This VHDL netlist is a functional simulation representation of the design and should not be modified or
 --               synthesized. This netlist cannot be used for SDF annotated simulation.
@@ -46,6 +46,8 @@ entity bd_11cc_vfb_0_0_vfb_v1_0_14_op_inf is
     \vfb_data_reg[39]_0\ : in STD_LOGIC_VECTOR ( 31 downto 0 );
     \vfb_data_reg[31]_0\ : in STD_LOGIC_VECTOR ( 7 downto 0 )
   );
+  attribute ORIG_REF_NAME : string;
+  attribute ORIG_REF_NAME of bd_11cc_vfb_0_0_vfb_v1_0_14_op_inf : entity is "vfb_v1_0_14_op_inf";
 end bd_11cc_vfb_0_0_vfb_v1_0_14_op_inf;
 
 architecture STRUCTURE of bd_11cc_vfb_0_0_vfb_v1_0_14_op_inf is
@@ -1578,6 +1580,8 @@ entity bd_11cc_vfb_0_0_vfb_v1_0_14_reorder is
     \buf_valid[1]_i_2_1\ : in STD_LOGIC;
     \buf_data_reg[1][172]_0\ : in STD_LOGIC_VECTOR ( 84 downto 0 )
   );
+  attribute ORIG_REF_NAME : string;
+  attribute ORIG_REF_NAME of bd_11cc_vfb_0_0_vfb_v1_0_14_reorder : entity is "vfb_v1_0_14_reorder";
 end bd_11cc_vfb_0_0_vfb_v1_0_14_reorder;
 
 architecture STRUCTURE of bd_11cc_vfb_0_0_vfb_v1_0_14_reorder is
@@ -10044,6 +10048,8 @@ entity bd_11cc_vfb_0_0_bd_11cc_vfb_0_0_core is
   attribute C_HS_LINE_RATE of bd_11cc_vfb_0_0_bd_11cc_vfb_0_0_core : entity is 336;
   attribute DowngradeIPIdentifiedWarnings : string;
   attribute DowngradeIPIdentifiedWarnings of bd_11cc_vfb_0_0_bd_11cc_vfb_0_0_core : entity is "yes";
+  attribute ORIG_REF_NAME : string;
+  attribute ORIG_REF_NAME of bd_11cc_vfb_0_0_bd_11cc_vfb_0_0_core : entity is "bd_11cc_vfb_0_0_core";
   attribute VFB_4PXL_W : integer;
   attribute VFB_4PXL_W of bd_11cc_vfb_0_0_bd_11cc_vfb_0_0_core : entity is 40;
   attribute VFB_BYPASS_WC : integer;

@@ -17,6 +17,9 @@ proc create_report { reportName command } {
     send_msg_id runtcl-5 warning "$msg"
   }
 }
+set_param tcl.collectionResultDisplayLimit 0
+set_param chipscope.maxJobs 2
+set_param xicom.use_bs_reader 1
 set_msg_config  -id {DRC NSTD-1}  -suppress 
 create_project -in_memory -part xc7z020clg400-1
 
@@ -30,7 +33,10 @@ set_property XPM_LIBRARIES {XPM_CDC XPM_FIFO XPM_MEMORY} [current_project]
 set_property default_lib xil_defaultlib [current_project]
 set_property target_language Verilog [current_project]
 set_property board_part digilentinc.com:zybo-z7-20:part0:1.0 [current_project]
-set_property ip_repo_paths c:/Users/ivr/Downloads/vivado-library-master/vivado-library-master [current_project]
+set_property ip_repo_paths {
+  c:/Users/ivr/Documents/GitHub/Zybo_mipi/zybo_ov5640/IP/system_AXI_BayerToRGB_1_0
+  c:/Users/ivr/Downloads/vivado-library-master/vivado-library-master
+} [current_project]
 update_ip_catalog
 set_property ip_output_repo c:/Users/ivr/Documents/GitHub/Zybo_mipi/zybo_ov5640/zybo_ov5640.cache/ip [current_project]
 set_property ip_cache_permissions {read write} [current_project]

@@ -66,14 +66,19 @@ start_step init_design
 set ACTIVE_STEP init_design
 set rc [catch {
   create_msg_db init_design.pb
+  set_param tcl.collectionResultDisplayLimit 0
   set_param chipscope.maxJobs 2
+  set_param xicom.use_bs_reader 1
   create_project -in_memory -part xc7z020clg400-1
   set_property board_part digilentinc.com:zybo-z7-20:part0:1.0 [current_project]
   set_property design_mode GateLvl [current_fileset]
   set_param project.singleFileAddWarning.threshold 0
   set_property webtalk.parent_dir C:/Users/ivr/Documents/GitHub/Zybo_mipi/zybo_ov5640/zybo_ov5640.cache/wt [current_project]
   set_property parent.project_path C:/Users/ivr/Documents/GitHub/Zybo_mipi/zybo_ov5640/zybo_ov5640.xpr [current_project]
-  set_property ip_repo_paths C:/Users/ivr/Downloads/vivado-library-master/vivado-library-master [current_project]
+  set_property ip_repo_paths {
+  C:/Users/ivr/Documents/GitHub/Zybo_mipi/zybo_ov5640/IP/system_AXI_BayerToRGB_1_0
+  C:/Users/ivr/Downloads/vivado-library-master/vivado-library-master
+} [current_project]
   update_ip_catalog
   set_property ip_output_repo C:/Users/ivr/Documents/GitHub/Zybo_mipi/zybo_ov5640/zybo_ov5640.cache/ip [current_project]
   set_property ip_cache_permissions {read write} [current_project]

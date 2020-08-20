@@ -1,7 +1,7 @@
 //Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
 //--------------------------------------------------------------------------------
 //Tool Version: Vivado v.2019.2 (win64) Build 2708876 Wed Nov  6 21:40:23 MST 2019
-//Date        : Thu Aug 20 00:34:17 2020
+//Date        : Thu Aug 20 21:13:10 2020
 //Host        : LAPTOP-AG87OV99 running 64-bit major release  (build 9200)
 //Command     : generate_target design_1.bd
 //Design      : design_1
@@ -9,7 +9,7 @@
 //--------------------------------------------------------------------------------
 `timescale 1 ps / 1 ps
 
-(* CORE_GENERATION_INFO = "design_1,IP_Integrator,{x_ipVendor=xilinx.com,x_ipLibrary=BlockDiagram,x_ipName=design_1,x_ipVersion=1.00.a,x_ipLanguage=VERILOG,numBlks=12,numReposBlks=8,numNonXlnxBlks=0,numHierBlks=4,maxHierDepth=0,numSysgenBlks=0,numHlsBlks=0,numHdlrefBlks=0,numPkgbdBlks=0,bdsource=USER,da_axi4_cnt=8,da_board_cnt=7,da_clkrst_cnt=10,da_ps7_cnt=3,synth_mode=OOC_per_IP}" *) (* HW_HANDOFF = "design_1.hwdef" *) 
+(* CORE_GENERATION_INFO = "design_1,IP_Integrator,{x_ipVendor=xilinx.com,x_ipLibrary=BlockDiagram,x_ipName=design_1,x_ipVersion=1.00.a,x_ipLanguage=VERILOG,numBlks=13,numReposBlks=9,numNonXlnxBlks=0,numHierBlks=4,maxHierDepth=0,numSysgenBlks=0,numHlsBlks=0,numHdlrefBlks=1,numPkgbdBlks=0,bdsource=USER,da_axi4_cnt=8,da_board_cnt=7,da_clkrst_cnt=10,da_ps7_cnt=3,synth_mode=OOC_per_IP}" *) (* HW_HANDOFF = "design_1.hwdef" *) 
 module design_1
    (CLK,
     DDR_addr,
@@ -90,15 +90,20 @@ module design_1
   (* X_INTERFACE_INFO = "xilinx.com:interface:mipi_phy:1.0 mipi_phy_if_0 DATA_LP_P" *) input [1:0]mipi_phy_if_0_data_lp_p;
   (* X_INTERFACE_INFO = "xilinx.com:signal:reset:1.0 RST.RESET_RTL RST" *) (* X_INTERFACE_PARAMETER = "XIL_INTERFACENAME RST.RESET_RTL, INSERT_VIP 0, POLARITY ACTIVE_HIGH" *) input reset_rtl;
 
+  (* CONN_BUS_INFO = "AXI_BayerToRGB_0_m_axis_video xilinx.com:interface:axis:1.0 None TDATA" *) (* DONT_TOUCH *) wire [31:0]AXI_BayerToRGB_0_m_axis_video_TDATA;
+  (* CONN_BUS_INFO = "AXI_BayerToRGB_0_m_axis_video xilinx.com:interface:axis:1.0 None TLAST" *) (* DONT_TOUCH *) wire AXI_BayerToRGB_0_m_axis_video_TLAST;
+  (* CONN_BUS_INFO = "AXI_BayerToRGB_0_m_axis_video xilinx.com:interface:axis:1.0 None TUSER" *) (* DONT_TOUCH *) wire AXI_BayerToRGB_0_m_axis_video_TUSER;
+  (* CONN_BUS_INFO = "AXI_BayerToRGB_0_m_axis_video xilinx.com:interface:axis:1.0 None TVALID" *) (* DONT_TOUCH *) wire AXI_BayerToRGB_0_m_axis_video_TVALID;
   wire CLK_1;
   wire [0:0]axi_gpio_0_gpio_io_o;
   wire clk_wiz_0_clk_out1;
+  wire clk_wiz_0_clk_out2;
   wire clk_wiz_0_locked;
-  (* CONN_BUS_INFO = "mipi_csi2_rx_subsyst_0_video_out xilinx.com:interface:axis:1.0 None TDATA" *) (* DONT_TOUCH *) wire [39:0]mipi_csi2_rx_subsyst_0_video_out_TDATA;
-  (* CONN_BUS_INFO = "mipi_csi2_rx_subsyst_0_video_out xilinx.com:interface:axis:1.0 None TDEST" *) (* DONT_TOUCH *) wire [9:0]mipi_csi2_rx_subsyst_0_video_out_TDEST;
-  (* CONN_BUS_INFO = "mipi_csi2_rx_subsyst_0_video_out xilinx.com:interface:axis:1.0 None TLAST" *) (* DONT_TOUCH *) wire mipi_csi2_rx_subsyst_0_video_out_TLAST;
-  (* CONN_BUS_INFO = "mipi_csi2_rx_subsyst_0_video_out xilinx.com:interface:axis:1.0 None TUSER" *) (* DONT_TOUCH *) wire [0:0]mipi_csi2_rx_subsyst_0_video_out_TUSER;
-  (* CONN_BUS_INFO = "mipi_csi2_rx_subsyst_0_video_out xilinx.com:interface:axis:1.0 None TVALID" *) (* DONT_TOUCH *) wire mipi_csi2_rx_subsyst_0_video_out_TVALID;
+  wire [39:0]mipi_csi2_rx_subsyst_0_video_out_TDATA;
+  wire mipi_csi2_rx_subsyst_0_video_out_TLAST;
+  wire mipi_csi2_rx_subsyst_0_video_out_TREADY;
+  wire [0:0]mipi_csi2_rx_subsyst_0_video_out_TUSER;
+  wire mipi_csi2_rx_subsyst_0_video_out_TVALID;
   wire mipi_phy_if_0_1_CLK_HS_N;
   wire mipi_phy_if_0_1_CLK_HS_P;
   wire mipi_phy_if_0_1_CLK_LP_N;
@@ -122,7 +127,6 @@ module design_1
   wire processing_system7_0_DDR_RAS_N;
   wire processing_system7_0_DDR_RESET_N;
   wire processing_system7_0_DDR_WE_N;
-  wire processing_system7_0_FCLK_CLK0;
   wire processing_system7_0_FIXED_IO_DDR_VRN;
   wire processing_system7_0_FIXED_IO_DDR_VRP;
   wire [53:0]processing_system7_0_FIXED_IO_MIO;
@@ -228,9 +232,22 @@ module design_1
   assign processing_system7_0_IIC_0_SCL_I = IIC_0_0_scl_i;
   assign processing_system7_0_IIC_0_SDA_I = IIC_0_0_sda_i;
   assign reset_rtl_1 = reset_rtl;
+  design_1_AXI_BayerToRGB_0_0 AXI_BayerToRGB_0
+       (.StreamClk(clk_wiz_0_clk_out2),
+        .m_axis_video_tdata(AXI_BayerToRGB_0_m_axis_video_TDATA),
+        .m_axis_video_tlast(AXI_BayerToRGB_0_m_axis_video_TLAST),
+        .m_axis_video_tready(1'b1),
+        .m_axis_video_tuser(AXI_BayerToRGB_0_m_axis_video_TUSER),
+        .m_axis_video_tvalid(AXI_BayerToRGB_0_m_axis_video_TVALID),
+        .sStreamReset_n(rst_clk_wiz_0_100M_peripheral_aresetn),
+        .s_axis_video_tdata(mipi_csi2_rx_subsyst_0_video_out_TDATA),
+        .s_axis_video_tlast(mipi_csi2_rx_subsyst_0_video_out_TLAST),
+        .s_axis_video_tready(mipi_csi2_rx_subsyst_0_video_out_TREADY),
+        .s_axis_video_tuser(mipi_csi2_rx_subsyst_0_video_out_TUSER),
+        .s_axis_video_tvalid(mipi_csi2_rx_subsyst_0_video_out_TVALID));
   design_1_axi_gpio_0_3 axi_gpio_0
        (.gpio_io_o(axi_gpio_0_gpio_io_o),
-        .s_axi_aclk(processing_system7_0_FCLK_CLK0),
+        .s_axi_aclk(clk_wiz_0_clk_out2),
         .s_axi_araddr(ps7_0_axi_periph_M01_AXI_ARADDR[8:0]),
         .s_axi_aresetn(rst_clk_wiz_0_100M_peripheral_aresetn),
         .s_axi_arready(ps7_0_axi_periph_M01_AXI_ARREADY),
@@ -252,6 +269,7 @@ module design_1
   design_1_clk_wiz_0_0 clk_wiz_0
        (.clk_in1(CLK_1),
         .clk_out1(clk_wiz_0_clk_out1),
+        .clk_out2(clk_wiz_0_clk_out2),
         .locked(clk_wiz_0_locked),
         .reset(reset_rtl_1));
   design_1_mipi_csi2_rx_subsyst_0_1 mipi_csi2_rx_subsyst_0
@@ -273,7 +291,7 @@ module design_1
         .csirxss_s_axi_wstrb(ps7_0_axi_periph_M00_AXI_WSTRB),
         .csirxss_s_axi_wvalid(ps7_0_axi_periph_M00_AXI_WVALID),
         .dphy_clk_200M(clk_wiz_0_clk_out1),
-        .lite_aclk(processing_system7_0_FCLK_CLK0),
+        .lite_aclk(clk_wiz_0_clk_out2),
         .lite_aresetn(rst_clk_wiz_0_100M_peripheral_aresetn),
         .mipi_phy_if_clk_hs_n(mipi_phy_if_0_1_CLK_HS_N),
         .mipi_phy_if_clk_hs_p(mipi_phy_if_0_1_CLK_HS_P),
@@ -283,12 +301,11 @@ module design_1
         .mipi_phy_if_data_hs_p(mipi_phy_if_0_1_DATA_HS_P),
         .mipi_phy_if_data_lp_n(mipi_phy_if_0_1_DATA_LP_N),
         .mipi_phy_if_data_lp_p(mipi_phy_if_0_1_DATA_LP_P),
-        .video_aclk(processing_system7_0_FCLK_CLK0),
+        .video_aclk(clk_wiz_0_clk_out2),
         .video_aresetn(rst_clk_wiz_0_100M_peripheral_aresetn),
         .video_out_tdata(mipi_csi2_rx_subsyst_0_video_out_TDATA),
-        .video_out_tdest(mipi_csi2_rx_subsyst_0_video_out_TDEST),
         .video_out_tlast(mipi_csi2_rx_subsyst_0_video_out_TLAST),
-        .video_out_tready(1'b1),
+        .video_out_tready(mipi_csi2_rx_subsyst_0_video_out_TREADY),
         .video_out_tuser(mipi_csi2_rx_subsyst_0_video_out_TUSER),
         .video_out_tvalid(mipi_csi2_rx_subsyst_0_video_out_TVALID));
   design_1_processing_system7_0_1 processing_system7_0
@@ -309,7 +326,6 @@ module design_1
         .DDR_VRN(FIXED_IO_ddr_vrn),
         .DDR_VRP(FIXED_IO_ddr_vrp),
         .DDR_WEB(DDR_we_n),
-        .FCLK_CLK0(processing_system7_0_FCLK_CLK0),
         .I2C0_SCL_I(processing_system7_0_IIC_0_SCL_I),
         .I2C0_SCL_O(processing_system7_0_IIC_0_SCL_O),
         .I2C0_SCL_T(processing_system7_0_IIC_0_SCL_T),
@@ -317,7 +333,7 @@ module design_1
         .I2C0_SDA_O(processing_system7_0_IIC_0_SDA_O),
         .I2C0_SDA_T(processing_system7_0_IIC_0_SDA_T),
         .MIO(FIXED_IO_mio[53:0]),
-        .M_AXI_GP0_ACLK(processing_system7_0_FCLK_CLK0),
+        .M_AXI_GP0_ACLK(clk_wiz_0_clk_out2),
         .M_AXI_GP0_ARADDR(processing_system7_0_M_AXI_GP0_ARADDR),
         .M_AXI_GP0_ARBURST(processing_system7_0_M_AXI_GP0_ARBURST),
         .M_AXI_GP0_ARCACHE(processing_system7_0_M_AXI_GP0_ARCACHE),
@@ -361,9 +377,9 @@ module design_1
         .PS_SRSTB(FIXED_IO_ps_srstb),
         .USB0_VBUS_PWRFAULT(1'b0));
   design_1_ps7_0_axi_periph_1 ps7_0_axi_periph
-       (.ACLK(processing_system7_0_FCLK_CLK0),
+       (.ACLK(clk_wiz_0_clk_out2),
         .ARESETN(rst_clk_wiz_0_100M_peripheral_aresetn),
-        .M00_ACLK(processing_system7_0_FCLK_CLK0),
+        .M00_ACLK(clk_wiz_0_clk_out2),
         .M00_ARESETN(rst_clk_wiz_0_100M_peripheral_aresetn),
         .M00_AXI_araddr(ps7_0_axi_periph_M00_AXI_ARADDR),
         .M00_AXI_arready(ps7_0_axi_periph_M00_AXI_ARREADY),
@@ -382,7 +398,7 @@ module design_1
         .M00_AXI_wready(ps7_0_axi_periph_M00_AXI_WREADY),
         .M00_AXI_wstrb(ps7_0_axi_periph_M00_AXI_WSTRB),
         .M00_AXI_wvalid(ps7_0_axi_periph_M00_AXI_WVALID),
-        .M01_ACLK(processing_system7_0_FCLK_CLK0),
+        .M01_ACLK(clk_wiz_0_clk_out2),
         .M01_ARESETN(rst_clk_wiz_0_100M_peripheral_aresetn),
         .M01_AXI_araddr(ps7_0_axi_periph_M01_AXI_ARADDR),
         .M01_AXI_arready(ps7_0_axi_periph_M01_AXI_ARREADY),
@@ -401,7 +417,7 @@ module design_1
         .M01_AXI_wready(ps7_0_axi_periph_M01_AXI_WREADY),
         .M01_AXI_wstrb(ps7_0_axi_periph_M01_AXI_WSTRB),
         .M01_AXI_wvalid(ps7_0_axi_periph_M01_AXI_WVALID),
-        .S00_ACLK(processing_system7_0_FCLK_CLK0),
+        .S00_ACLK(clk_wiz_0_clk_out2),
         .S00_ARESETN(rst_clk_wiz_0_100M_peripheral_aresetn),
         .S00_AXI_araddr(processing_system7_0_M_AXI_GP0_ARADDR),
         .S00_AXI_arburst(processing_system7_0_M_AXI_GP0_ARBURST),
@@ -447,15 +463,14 @@ module design_1
         .ext_reset_in(reset_rtl_1),
         .mb_debug_sys_rst(1'b0),
         .peripheral_aresetn(rst_clk_wiz_0_100M_peripheral_aresetn),
-        .slowest_sync_clk(processing_system7_0_FCLK_CLK0));
+        .slowest_sync_clk(clk_wiz_0_clk_out2));
   design_1_system_ila_0_0 system_ila_0
-       (.SLOT_0_AXIS_tdata(mipi_csi2_rx_subsyst_0_video_out_TDATA),
-        .SLOT_0_AXIS_tdest(mipi_csi2_rx_subsyst_0_video_out_TDEST),
-        .SLOT_0_AXIS_tlast(mipi_csi2_rx_subsyst_0_video_out_TLAST),
+       (.SLOT_0_AXIS_tdata(AXI_BayerToRGB_0_m_axis_video_TDATA),
+        .SLOT_0_AXIS_tlast(AXI_BayerToRGB_0_m_axis_video_TLAST),
         .SLOT_0_AXIS_tready(1'b1),
-        .SLOT_0_AXIS_tuser(mipi_csi2_rx_subsyst_0_video_out_TUSER),
-        .SLOT_0_AXIS_tvalid(mipi_csi2_rx_subsyst_0_video_out_TVALID),
-        .clk(processing_system7_0_FCLK_CLK0),
+        .SLOT_0_AXIS_tuser(AXI_BayerToRGB_0_m_axis_video_TUSER),
+        .SLOT_0_AXIS_tvalid(AXI_BayerToRGB_0_m_axis_video_TVALID),
+        .clk(clk_wiz_0_clk_out2),
         .resetn(rst_clk_wiz_0_100M_peripheral_aresetn));
 endmodule
 

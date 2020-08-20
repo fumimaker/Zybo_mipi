@@ -1,7 +1,7 @@
 {
   "design": {
     "design_info": {
-      "boundary_crc": "0xBDE285F5C122B75",
+      "boundary_crc": "0xBDE285FEC3C826B",
       "design_src": "SBD",
       "device": "xc7z020clg400-1",
       "name": "bd_11cc",
@@ -33,8 +33,8 @@
             "value": "AXI4LITE"
           },
           "FREQ_HZ": {
-            "value": "50000000",
-            "value_src": "user_prop"
+            "value": "100000000",
+            "value_src": "ip_prop"
           },
           "ID_WIDTH": {
             "value": "0",
@@ -120,12 +120,12 @@
             "value_src": "ip_prop"
           },
           "PHASE": {
-            "value": "0.000",
-            "value_src": "default"
+            "value": "0.0",
+            "value_src": "ip_prop"
           },
           "CLK_DOMAIN": {
-            "value": "design_1_processing_system7_0_1_FCLK_CLK0",
-            "value_src": "default_prop"
+            "value": "/clk_wiz_0_clk_out1",
+            "value_src": "ip_prop"
           },
           "NUM_READ_THREADS": {
             "value": "1",
@@ -186,16 +186,16 @@
             "value_src": "constant"
           },
           "FREQ_HZ": {
-            "value": "50000000",
-            "value_src": "user_prop"
+            "value": "100000000",
+            "value_src": "ip_prop"
           },
           "PHASE": {
-            "value": "0.000",
-            "value_src": "default"
+            "value": "0.0",
+            "value_src": "ip_prop"
           },
           "CLK_DOMAIN": {
-            "value": "design_1_processing_system7_0_1_FCLK_CLK0",
-            "value_src": "default_prop"
+            "value": "/clk_wiz_0_clk_out1",
+            "value_src": "ip_prop"
           },
           "LAYERED_METADATA": {
             "value": "undef",
@@ -220,20 +220,20 @@
             "value": "lite_aresetn"
           },
           "CLK_DOMAIN": {
-            "value": "design_1_processing_system7_0_1_FCLK_CLK0",
-            "value_src": "default_prop"
+            "value": "/clk_wiz_0_clk_out1",
+            "value_src": "ip_prop"
           },
           "FREQ_HZ": {
-            "value": "50000000",
-            "value_src": "user_prop"
+            "value": "100000000",
+            "value_src": "ip_prop"
           },
           "INSERT_VIP": {
             "value": "0",
             "value_src": "default"
           },
           "PHASE": {
-            "value": "0.000",
-            "value_src": "default"
+            "value": "0.0",
+            "value_src": "ip_prop"
           }
         }
       },
@@ -333,20 +333,20 @@
             "value": "video_aresetn"
           },
           "CLK_DOMAIN": {
-            "value": "design_1_processing_system7_0_1_FCLK_CLK0",
-            "value_src": "default_prop"
+            "value": "/clk_wiz_0_clk_out1",
+            "value_src": "ip_prop"
           },
           "FREQ_HZ": {
-            "value": "50000000",
-            "value_src": "user_prop"
+            "value": "100000000",
+            "value_src": "ip_prop"
           },
           "INSERT_VIP": {
             "value": "0",
             "value_src": "default"
           },
           "PHASE": {
-            "value": "0.000",
-            "value_src": "default"
+            "value": "0.0",
+            "value_src": "ip_prop"
           }
         }
       },
@@ -536,6 +536,12 @@
       }
     },
     "interface_nets": {
+      "vfb_0_m_vfb": {
+        "interface_ports": [
+          "video_out",
+          "vfb_0/m_vfb"
+        ]
+      },
       "csirxss_s_axi_1": {
         "interface_ports": [
           "csirxss_s_axi",
@@ -558,12 +564,6 @@
         "interface_ports": [
           "mipi_phy_if",
           "phy/rx_mipi_phy_if"
-        ]
-      },
-      "vfb_0_m_vfb": {
-        "interface_ports": [
-          "video_out",
-          "vfb_0/m_vfb"
         ]
       }
     },

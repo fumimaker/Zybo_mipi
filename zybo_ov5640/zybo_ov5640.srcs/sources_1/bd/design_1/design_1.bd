@@ -5,7 +5,8 @@
       "device": "xc7z020clg400-1",
       "name": "design_1",
       "synth_flow_mode": "Hierarchical",
-      "tool_version": "2019.2"
+      "tool_version": "2019.2",
+      "validated": "true"
     },
     "design_tree": {
       "clk_wiz_0": "",
@@ -21,7 +22,8 @@
       },
       "rst_clk_wiz_0_100M": "",
       "mipi_csi2_rx_subsyst_0": "",
-      "axi_gpio_0": ""
+      "axi_gpio_0": "",
+      "AXI_BayerToRGB_0": ""
     },
     "interface_ports": {
       "mipi_phy_if_0": {
@@ -34,11 +36,67 @@
       },
       "DDR": {
         "mode": "Master",
-        "vlnv": "xilinx.com:interface:ddrx_rtl:1.0"
+        "vlnv": "xilinx.com:interface:ddrx_rtl:1.0",
+        "parameters": {
+          "CAN_DEBUG": {
+            "value": "false",
+            "value_src": "default"
+          },
+          "TIMEPERIOD_PS": {
+            "value": "1250",
+            "value_src": "default"
+          },
+          "MEMORY_TYPE": {
+            "value": "COMPONENTS",
+            "value_src": "default"
+          },
+          "DATA_WIDTH": {
+            "value": "8",
+            "value_src": "default"
+          },
+          "CS_ENABLED": {
+            "value": "true",
+            "value_src": "default"
+          },
+          "DATA_MASK_ENABLED": {
+            "value": "true",
+            "value_src": "default"
+          },
+          "SLOT": {
+            "value": "Single",
+            "value_src": "default"
+          },
+          "MEM_ADDR_MAP": {
+            "value": "ROW_COLUMN_BANK",
+            "value_src": "default"
+          },
+          "BURST_LENGTH": {
+            "value": "8",
+            "value_src": "default"
+          },
+          "AXI_ARBITRATION_SCHEME": {
+            "value": "TDM",
+            "value_src": "default"
+          },
+          "CAS_LATENCY": {
+            "value": "11",
+            "value_src": "default"
+          },
+          "CAS_WRITE_LATENCY": {
+            "value": "11",
+            "value_src": "default"
+          }
+        }
       },
       "FIXED_IO": {
         "mode": "Master",
-        "vlnv": "xilinx.com:display_processing_system7:fixedio_rtl:1.0"
+        "vlnv": "xilinx.com:display_processing_system7:fixedio_rtl:1.0",
+        "parameters": {
+          "CAN_DEBUG": {
+            "value": "false",
+            "value_src": "default"
+          }
+        }
       }
     },
     "ports": {
@@ -49,6 +107,10 @@
         "type": "rst",
         "direction": "I",
         "parameters": {
+          "INSERT_VIP": {
+            "value": "0",
+            "value_src": "default"
+          },
           "POLARITY": {
             "value": "ACTIVE_HIGH"
           }
@@ -89,16 +151,16 @@
             "value": "BUFG"
           },
           "CLKOUT2_JITTER": {
-            "value": "109.241"
+            "value": "124.615"
           },
           "CLKOUT2_PHASE_ERROR": {
             "value": "96.948"
           },
           "CLKOUT2_REQUESTED_OUT_FREQ": {
-            "value": "200"
+            "value": "100"
           },
           "CLKOUT2_USED": {
-            "value": "false"
+            "value": "true"
           },
           "CLKOUT3_DRIVES": {
             "value": "BUFG"
@@ -134,7 +196,7 @@
             "value": "5.000"
           },
           "MMCM_CLKOUT1_DIVIDE": {
-            "value": "1"
+            "value": "10"
           },
           "MMCM_COMPENSATION": {
             "value": "ZHOLD"
@@ -143,7 +205,7 @@
             "value": "1"
           },
           "NUM_OUT_CLKS": {
-            "value": "1"
+            "value": "2"
           },
           "PRIMITIVE": {
             "value": "MMCM"
@@ -155,7 +217,7 @@
         "xci_name": "design_1_system_ila_0_0",
         "parameters": {
           "C_DATA_DEPTH": {
-            "value": "65536"
+            "value": "131072"
           },
           "C_MON_TYPE": {
             "value": "INTERFACE"
@@ -167,7 +229,7 @@
             "value": "0"
           },
           "C_SLOT_0_AXIS_TDATA_WIDTH": {
-            "value": "40"
+            "value": "32"
           },
           "C_SLOT_0_AXI_DATA_SEL": {
             "value": "1"
@@ -1364,16 +1426,16 @@
               }
             },
             "interface_nets": {
-              "s00_couplers_to_auto_pc": {
-                "interface_ports": [
-                  "S_AXI",
-                  "auto_pc/S_AXI"
-                ]
-              },
               "auto_pc_to_s00_couplers": {
                 "interface_ports": [
                   "M_AXI",
                   "auto_pc/M_AXI"
+                ]
+              },
+              "s00_couplers_to_auto_pc": {
+                "interface_ports": [
+                  "S_AXI",
+                  "auto_pc/S_AXI"
                 ]
               }
             },
@@ -1508,16 +1570,16 @@
               "s00_couplers/S_AXI"
             ]
           },
-          "m00_couplers_to_ps7_0_axi_periph": {
-            "interface_ports": [
-              "M00_AXI",
-              "m00_couplers/M_AXI"
-            ]
-          },
           "s00_couplers_to_xbar": {
             "interface_ports": [
               "s00_couplers/M_AXI",
               "xbar/S00_AXI"
+            ]
+          },
+          "m00_couplers_to_ps7_0_axi_periph": {
+            "interface_ports": [
+              "M00_AXI",
+              "m00_couplers/M_AXI"
             ]
           },
           "xbar_to_m00_couplers": {
@@ -1668,9 +1730,214 @@
             "value": "true"
           }
         }
+      },
+      "AXI_BayerToRGB_0": {
+        "vlnv": "xilinx.com:module_ref:AXI_BayerToRGB:1.0",
+        "xci_name": "design_1_AXI_BayerToRGB_0_0",
+        "reference_info": {
+          "ref_type": "hdl",
+          "ref_name": "AXI_BayerToRGB",
+          "boundary_crc": "0x0"
+        },
+        "interface_ports": {
+          "m_axis_video": {
+            "mode": "Master",
+            "vlnv": "xilinx.com:interface:axis_rtl:1.0",
+            "parameters": {
+              "TDATA_NUM_BYTES": {
+                "value": "4",
+                "value_src": "auto"
+              },
+              "TDEST_WIDTH": {
+                "value": "0",
+                "value_src": "constant"
+              },
+              "TID_WIDTH": {
+                "value": "0",
+                "value_src": "constant"
+              },
+              "TUSER_WIDTH": {
+                "value": "1",
+                "value_src": "constant"
+              },
+              "HAS_TREADY": {
+                "value": "1",
+                "value_src": "constant"
+              },
+              "HAS_TSTRB": {
+                "value": "0",
+                "value_src": "constant"
+              },
+              "HAS_TKEEP": {
+                "value": "0",
+                "value_src": "constant"
+              },
+              "HAS_TLAST": {
+                "value": "1",
+                "value_src": "constant"
+              }
+            },
+            "port_maps": {
+              "TDATA": {
+                "physical_name": "m_axis_video_tdata",
+                "direction": "O",
+                "left": "31",
+                "right": "0"
+              },
+              "TLAST": {
+                "physical_name": "m_axis_video_tlast",
+                "direction": "O"
+              },
+              "TUSER": {
+                "physical_name": "m_axis_video_tuser",
+                "direction": "O"
+              },
+              "TVALID": {
+                "physical_name": "m_axis_video_tvalid",
+                "direction": "O"
+              },
+              "TREADY": {
+                "physical_name": "m_axis_video_tready",
+                "direction": "I"
+              }
+            }
+          },
+          "s_axis_video": {
+            "mode": "Slave",
+            "vlnv": "xilinx.com:interface:axis_rtl:1.0",
+            "parameters": {
+              "TDATA_NUM_BYTES": {
+                "value": "5",
+                "value_src": "auto"
+              },
+              "TDEST_WIDTH": {
+                "value": "0",
+                "value_src": "constant"
+              },
+              "TID_WIDTH": {
+                "value": "0",
+                "value_src": "constant"
+              },
+              "TUSER_WIDTH": {
+                "value": "1",
+                "value_src": "constant"
+              },
+              "HAS_TREADY": {
+                "value": "1",
+                "value_src": "constant"
+              },
+              "HAS_TSTRB": {
+                "value": "0",
+                "value_src": "constant"
+              },
+              "HAS_TKEEP": {
+                "value": "0",
+                "value_src": "constant"
+              },
+              "HAS_TLAST": {
+                "value": "1",
+                "value_src": "constant"
+              }
+            },
+            "port_maps": {
+              "TDATA": {
+                "physical_name": "s_axis_video_tdata",
+                "direction": "I",
+                "left": "39",
+                "right": "0"
+              },
+              "TLAST": {
+                "physical_name": "s_axis_video_tlast",
+                "direction": "I"
+              },
+              "TUSER": {
+                "physical_name": "s_axis_video_tuser",
+                "direction": "I"
+              },
+              "TVALID": {
+                "physical_name": "s_axis_video_tvalid",
+                "direction": "I"
+              },
+              "TREADY": {
+                "physical_name": "s_axis_video_tready",
+                "direction": "O"
+              }
+            }
+          }
+        },
+        "ports": {
+          "StreamClk": {
+            "direction": "I",
+            "parameters": {
+              "CLK_DOMAIN": {
+                "value": "/clk_wiz_0_clk_out1",
+                "value_src": "ip_prop"
+              },
+              "FREQ_HZ": {
+                "value": "100000000",
+                "value_src": "ip_prop"
+              },
+              "PHASE": {
+                "value": "0.0",
+                "value_src": "ip_prop"
+              }
+            }
+          },
+          "sStreamReset_n": {
+            "direction": "I",
+            "parameters": {
+              "POLARITY": {
+                "value": "ACTIVE_LOW",
+                "value_src": "const_prop"
+              }
+            }
+          }
+        }
       }
     },
     "interface_nets": {
+      "ps7_0_axi_periph_M01_AXI": {
+        "interface_ports": [
+          "ps7_0_axi_periph/M01_AXI",
+          "axi_gpio_0/S_AXI"
+        ]
+      },
+      "processing_system7_0_M_AXI_GP0": {
+        "interface_ports": [
+          "processing_system7_0/M_AXI_GP0",
+          "ps7_0_axi_periph/S00_AXI"
+        ]
+      },
+      "processing_system7_0_IIC_0": {
+        "interface_ports": [
+          "IIC_0_0",
+          "processing_system7_0/IIC_0"
+        ]
+      },
+      "ps7_0_axi_periph_M00_AXI": {
+        "interface_ports": [
+          "ps7_0_axi_periph/M00_AXI",
+          "mipi_csi2_rx_subsyst_0/csirxss_s_axi"
+        ]
+      },
+      "mipi_phy_if_0_1": {
+        "interface_ports": [
+          "mipi_phy_if_0",
+          "mipi_csi2_rx_subsyst_0/mipi_phy_if"
+        ]
+      },
+      "mipi_csi2_rx_subsyst_0_video_out": {
+        "interface_ports": [
+          "AXI_BayerToRGB_0/s_axis_video",
+          "mipi_csi2_rx_subsyst_0/video_out"
+        ]
+      },
+      "AXI_BayerToRGB_0_m_axis_video": {
+        "interface_ports": [
+          "AXI_BayerToRGB_0/m_axis_video",
+          "system_ila_0/SLOT_0_AXIS"
+        ]
+      },
       "processing_system7_0_DDR": {
         "interface_ports": [
           "DDR",
@@ -1681,42 +1948,6 @@
         "interface_ports": [
           "FIXED_IO",
           "processing_system7_0/FIXED_IO"
-        ]
-      },
-      "ps7_0_axi_periph_M01_AXI": {
-        "interface_ports": [
-          "ps7_0_axi_periph/M01_AXI",
-          "axi_gpio_0/S_AXI"
-        ]
-      },
-      "processing_system7_0_IIC_0": {
-        "interface_ports": [
-          "IIC_0_0",
-          "processing_system7_0/IIC_0"
-        ]
-      },
-      "mipi_phy_if_0_1": {
-        "interface_ports": [
-          "mipi_phy_if_0",
-          "mipi_csi2_rx_subsyst_0/mipi_phy_if"
-        ]
-      },
-      "ps7_0_axi_periph_M00_AXI": {
-        "interface_ports": [
-          "ps7_0_axi_periph/M00_AXI",
-          "mipi_csi2_rx_subsyst_0/csirxss_s_axi"
-        ]
-      },
-      "mipi_csi2_rx_subsyst_0_video_out": {
-        "interface_ports": [
-          "mipi_csi2_rx_subsyst_0/video_out",
-          "system_ila_0/SLOT_0_AXIS"
-        ]
-      },
-      "processing_system7_0_M_AXI_GP0": {
-        "interface_ports": [
-          "processing_system7_0/M_AXI_GP0",
-          "ps7_0_axi_periph/S00_AXI"
         ]
       }
     },
@@ -1750,22 +1981,8 @@
           "mipi_csi2_rx_subsyst_0/video_aresetn",
           "mipi_csi2_rx_subsyst_0/lite_aresetn",
           "ps7_0_axi_periph/M01_ARESETN",
-          "axi_gpio_0/s_axi_aresetn"
-        ]
-      },
-      "processing_system7_0_FCLK_CLK0": {
-        "ports": [
-          "processing_system7_0/FCLK_CLK0",
-          "mipi_csi2_rx_subsyst_0/lite_aclk",
-          "ps7_0_axi_periph/M00_ACLK",
-          "mipi_csi2_rx_subsyst_0/video_aclk",
-          "processing_system7_0/M_AXI_GP0_ACLK",
-          "ps7_0_axi_periph/S00_ACLK",
-          "ps7_0_axi_periph/ACLK",
-          "rst_clk_wiz_0_100M/slowest_sync_clk",
-          "system_ila_0/clk",
-          "ps7_0_axi_periph/M01_ACLK",
-          "axi_gpio_0/s_axi_aclk"
+          "axi_gpio_0/s_axi_aresetn",
+          "AXI_BayerToRGB_0/sStreamReset_n"
         ]
       },
       "clk_wiz_0_clk_out1": {
@@ -1779,6 +1996,22 @@
           "axi_gpio_0/gpio_io_o",
           "cam_gpio",
           "led"
+        ]
+      },
+      "clk_wiz_0_clk_out2": {
+        "ports": [
+          "clk_wiz_0/clk_out2",
+          "rst_clk_wiz_0_100M/slowest_sync_clk",
+          "ps7_0_axi_periph/ACLK",
+          "ps7_0_axi_periph/S00_ACLK",
+          "ps7_0_axi_periph/M00_ACLK",
+          "ps7_0_axi_periph/M01_ACLK",
+          "mipi_csi2_rx_subsyst_0/video_aclk",
+          "mipi_csi2_rx_subsyst_0/lite_aclk",
+          "AXI_BayerToRGB_0/StreamClk",
+          "axi_gpio_0/s_axi_aclk",
+          "processing_system7_0/M_AXI_GP0_ACLK",
+          "system_ila_0/clk"
         ]
       }
     },

@@ -1,10 +1,10 @@
 // Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
 // --------------------------------------------------------------------------------
 // Tool Version: Vivado v.2019.2 (win64) Build 2708876 Wed Nov  6 21:40:23 MST 2019
-// Date        : Tue Aug 18 19:08:52 2020
+// Date        : Thu Aug 20 20:49:39 2020
 // Host        : LAPTOP-AG87OV99 running 64-bit major release  (build 9200)
-// Command     : write_verilog -force -mode funcsim -rename_top bd_11cc_vfb_0_0 -prefix
-//               bd_11cc_vfb_0_0_ bd_11cc_vfb_0_0_sim_netlist.v
+// Command     : write_verilog -force -mode funcsim
+//               c:/Users/ivr/Documents/GitHub/Zybo_mipi/zybo_ov5640/zybo_ov5640.srcs/sources_1/bd/design_1/ip/design_1_mipi_csi2_rx_subsyst_0_1/bd_0/ip/ip_3/bd_11cc_vfb_0_0_sim_netlist.v
 // Design      : bd_11cc_vfb_0_0
 // Purpose     : This verilog netlist is a functional simulation representation of the design and should not be modified
 //               or synthesized. This netlist cannot be used for SDF annotated simulation.
@@ -147,13 +147,14 @@ module bd_11cc_vfb_0_0
 endmodule
 
 (* AXIS_TDATA_WIDTH = "64" *) (* AXIS_TDEST_WIDTH = "4" *) (* AXIS_TUSER_WIDTH = "96" *) 
-(* C_HS_LINE_RATE = "336" *) (* DowngradeIPIdentifiedWarnings = "yes" *) (* VFB_4PXL_W = "40" *) 
-(* VFB_BYPASS_WC = "1" *) (* VFB_DATA_TYPE = "43" *) (* VFB_DCONV_OWIDTH = "64" *) 
-(* VFB_DCONV_TUW = "24" *) (* VFB_FIFO_DEPTH = "2048" *) (* VFB_FIFO_WIDTH = "64" *) 
-(* VFB_FILTER_VC = "0" *) (* VFB_OP_DWIDTH = "40" *) (* VFB_OP_PIXELS = "4" *) 
-(* VFB_PXL_W = "10" *) (* VFB_PXL_W_BB = "16" *) (* VFB_REQ_BUFFER = "1" *) 
-(* VFB_REQ_REORDER = "1" *) (* VFB_TSB0_WIDTH = "32" *) (* VFB_TSB1_WIDTH = "0" *) 
-(* VFB_TSB2_WIDTH = "3" *) (* VFB_TU_WIDTH = "1" *) (* VFB_VC = "0" *) 
+(* C_HS_LINE_RATE = "336" *) (* DowngradeIPIdentifiedWarnings = "yes" *) (* ORIG_REF_NAME = "bd_11cc_vfb_0_0_core" *) 
+(* VFB_4PXL_W = "40" *) (* VFB_BYPASS_WC = "1" *) (* VFB_DATA_TYPE = "43" *) 
+(* VFB_DCONV_OWIDTH = "64" *) (* VFB_DCONV_TUW = "24" *) (* VFB_FIFO_DEPTH = "2048" *) 
+(* VFB_FIFO_WIDTH = "64" *) (* VFB_FILTER_VC = "0" *) (* VFB_OP_DWIDTH = "40" *) 
+(* VFB_OP_PIXELS = "4" *) (* VFB_PXL_W = "10" *) (* VFB_PXL_W_BB = "16" *) 
+(* VFB_REQ_BUFFER = "1" *) (* VFB_REQ_REORDER = "1" *) (* VFB_TSB0_WIDTH = "32" *) 
+(* VFB_TSB1_WIDTH = "0" *) (* VFB_TSB2_WIDTH = "3" *) (* VFB_TU_WIDTH = "1" *) 
+(* VFB_VC = "0" *) 
 module bd_11cc_vfb_0_0_bd_11cc_vfb_0_0_core
    (s_axis_aclk,
     s_axis_aresetn,
@@ -391,6 +392,7 @@ module bd_11cc_vfb_0_0_bd_11cc_vfb_0_0_core
         .\vfb_vcdt_reg[0]_0 (mdt_tv));
 endmodule
 
+(* ORIG_REF_NAME = "vfb_v1_0_14_op_inf" *) 
 module bd_11cc_vfb_0_0_vfb_v1_0_14_op_inf
    (vfb_eol_reg_0,
     vfb_valid_reg_0,
@@ -1584,6 +1586,7 @@ module bd_11cc_vfb_0_0_vfb_v1_0_14_op_inf
         .R(vfb_valid_i_1_n_0));
 endmodule
 
+(* ORIG_REF_NAME = "vfb_v1_0_14_reorder" *) 
 module bd_11cc_vfb_0_0_vfb_v1_0_14_reorder
    (s_fifo_tu,
     s_fifo_tv_reg_0,
