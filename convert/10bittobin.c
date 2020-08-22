@@ -24,26 +24,24 @@ int main(void)
 
         printf("data=%s\n",data);
         unsigned long long num = strtoull(data, NULL, 16); //8byte
-        unsigned int red, green, blue;
+        unsigned short red, green, blue; //2byte
 
         printf("num=%llx\n",num);
-        red =   (num >> 0)    & 0b00000000000000000000001111111111;
-        green = (num >> 10)   & 0b00000000000000000000001111111111;
-        blue =  (num >> 20)   & 0b00000000000000000000001111111111;
-        printf("%x %x %x \n", blue, green, red);
-        printf("%lu",sizeof(red));
+        //文字列を数字に変換して各色10Bitにする
+        red =   (num >> 0)    & 0b0000001111111111; //&0x3F
+        green = (num >> 10)   & 0b0000001111111111;
+        blue =  (num >> 20)   & 0b0000001111111111;
 
-        if (fwrite(&red, sizeof(red), 1, fp) < 1)
-        {
-            fputs("ファイルへの書き込みに失敗しました。\n", stderr);
-            exit(EXIT_FAILURE);
-        }
-        if (fwrite(&green, sizeof(green), 1, fp) < 1)
-        {
-            fputs("ファイルへの書き込みに失敗しました。\n", stderr);
-            exit(EXIT_FAILURE);
-        }
-        if (fwrite(&blue, sizeof(blue), 1, fp) < 1)
+        //RGB565に変換する
+        red = (red & 0b0000001111100000) >> 5;     //5bit
+        green = (green & 0b0000001111110000) >> 4; //6bit
+        blue = (blue & 0b0000001111100000)>>5; //5bit
+        printf("%x %x %x \n", blue, green, red);
+        unsigned short output = red<<11 | green<<5 | blue;
+
+        printf("output=%x\n",output);
+
+        if (fwrite(&output, sizeof(output), 1, fp) < 1)
         {
             fputs("ファイルへの書き込みに失敗しました。\n", stderr);
             exit(EXIT_FAILURE);
