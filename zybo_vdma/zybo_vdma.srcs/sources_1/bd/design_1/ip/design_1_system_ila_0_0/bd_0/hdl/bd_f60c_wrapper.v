@@ -8,6 +8,7 @@
 
 module bd_f60c_wrapper
    (SLOT_0_AXIS_tdata,
+    SLOT_0_AXIS_tkeep,
     SLOT_0_AXIS_tlast,
     SLOT_0_AXIS_tready,
     SLOT_0_AXIS_tuser,
@@ -15,6 +16,7 @@ module bd_f60c_wrapper
     clk,
     resetn);
   input [31:0]SLOT_0_AXIS_tdata;
+  input [3:0]SLOT_0_AXIS_tkeep;
   input SLOT_0_AXIS_tlast;
   input SLOT_0_AXIS_tready;
   input [0:0]SLOT_0_AXIS_tuser;
@@ -23,6 +25,7 @@ module bd_f60c_wrapper
   input resetn;
 
   wire [31:0]SLOT_0_AXIS_tdata;
+  wire [3:0]SLOT_0_AXIS_tkeep;
   wire SLOT_0_AXIS_tlast;
   wire SLOT_0_AXIS_tready;
   wire [0:0]SLOT_0_AXIS_tuser;
@@ -32,6 +35,7 @@ module bd_f60c_wrapper
 
   bd_f60c bd_f60c_i
        (.SLOT_0_AXIS_tdata(SLOT_0_AXIS_tdata),
+        .SLOT_0_AXIS_tkeep(SLOT_0_AXIS_tkeep),
         .SLOT_0_AXIS_tlast(SLOT_0_AXIS_tlast),
         .SLOT_0_AXIS_tready(SLOT_0_AXIS_tready),
         .SLOT_0_AXIS_tuser(SLOT_0_AXIS_tuser),

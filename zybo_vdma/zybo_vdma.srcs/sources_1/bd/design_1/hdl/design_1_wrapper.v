@@ -1,8 +1,8 @@
 //Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
 //--------------------------------------------------------------------------------
 //Tool Version: Vivado v.2019.2 (win64) Build 2708876 Wed Nov  6 21:40:23 MST 2019
-//Date        : Mon Aug 24 22:47:24 2020
-//Host        : FUMIMAKER6BEE running 64-bit major release  (build 9200)
+//Date        : Wed Aug 26 19:28:24 2020
+//Host        : LAPTOP-AG87OV99 running 64-bit major release  (build 9200)
 //Command     : generate_target design_1_wrapper.bd
 //Design      : design_1_wrapper
 //Purpose     : IP block netlist
@@ -35,6 +35,10 @@ module design_1_wrapper
     IIC_0_0_scl_io,
     IIC_0_0_sda_io,
     cam_gpio,
+    hdmi_tx_clk_n,
+    hdmi_tx_clk_p,
+    hdmi_tx_data_n,
+    hdmi_tx_data_p,
     led,
     mipi_phy_if_0_clk_hs_n,
     mipi_phy_if_0_clk_hs_p,
@@ -70,6 +74,10 @@ module design_1_wrapper
   inout IIC_0_0_scl_io;
   inout IIC_0_0_sda_io;
   output [0:0]cam_gpio;
+  output hdmi_tx_clk_n;
+  output hdmi_tx_clk_p;
+  output [2:0]hdmi_tx_data_n;
+  output [2:0]hdmi_tx_data_p;
   output [0:0]led;
   input mipi_phy_if_0_clk_hs_n;
   input mipi_phy_if_0_clk_hs_p;
@@ -112,6 +120,10 @@ module design_1_wrapper
   wire IIC_0_0_sda_o;
   wire IIC_0_0_sda_t;
   wire [0:0]cam_gpio;
+  wire hdmi_tx_clk_n;
+  wire hdmi_tx_clk_p;
+  wire [2:0]hdmi_tx_data_n;
+  wire [2:0]hdmi_tx_data_p;
   wire [0:0]led;
   wire mipi_phy_if_0_clk_hs_n;
   wire mipi_phy_if_0_clk_hs_p;
@@ -163,6 +175,10 @@ module design_1_wrapper
         .IIC_0_0_sda_o(IIC_0_0_sda_o),
         .IIC_0_0_sda_t(IIC_0_0_sda_t),
         .cam_gpio(cam_gpio),
+        .hdmi_tx_clk_n(hdmi_tx_clk_n),
+        .hdmi_tx_clk_p(hdmi_tx_clk_p),
+        .hdmi_tx_data_n(hdmi_tx_data_n),
+        .hdmi_tx_data_p(hdmi_tx_data_p),
         .led(led),
         .mipi_phy_if_0_clk_hs_n(mipi_phy_if_0_clk_hs_n),
         .mipi_phy_if_0_clk_hs_p(mipi_phy_if_0_clk_hs_p),

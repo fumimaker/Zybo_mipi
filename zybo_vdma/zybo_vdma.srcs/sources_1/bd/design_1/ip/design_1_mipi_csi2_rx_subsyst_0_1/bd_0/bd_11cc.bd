@@ -554,16 +554,16 @@
           "rx/s_axi"
         ]
       },
-      "phy_rx_mipi_ppi_if": {
-        "interface_ports": [
-          "phy/rx_mipi_ppi_if",
-          "rx/rx_mipi_ppi_if"
-        ]
-      },
       "rx_m_axis": {
         "interface_ports": [
           "rx/m_axis",
           "vfb_0/s_axis"
+        ]
+      },
+      "phy_rx_mipi_ppi_if": {
+        "interface_ports": [
+          "phy/rx_mipi_ppi_if",
+          "rx/rx_mipi_ppi_if"
         ]
       }
     },

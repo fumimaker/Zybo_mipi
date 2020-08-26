@@ -66,28 +66,28 @@ start_step init_design
 set ACTIVE_STEP init_design
 set rc [catch {
   create_msg_db init_design.pb
-  set_param chipscope.maxJobs 3
+  set_param chipscope.maxJobs 2
   create_project -in_memory -part xc7z020clg400-1
-  set_property board_part_repo_paths {C:/Users/fumi/AppData/Roaming/Xilinx/Vivado/2019.1/xhub/board_store} [current_project]
   set_property board_part digilentinc.com:zybo-z7-20:part0:1.0 [current_project]
   set_property design_mode GateLvl [current_fileset]
   set_param project.singleFileAddWarning.threshold 0
-  set_property webtalk.parent_dir C:/Github/Zybo_mipi/zybo_vdma/zybo_vdma.cache/wt [current_project]
-  set_property parent.project_path C:/Github/Zybo_mipi/zybo_vdma/zybo_vdma.xpr [current_project]
+  set_property webtalk.parent_dir C:/Users/ivr/Documents/GitHub/Zybo_mipi/zybo_vdma/zybo_vdma.cache/wt [current_project]
+  set_property parent.project_path C:/Users/ivr/Documents/GitHub/Zybo_mipi/zybo_vdma/zybo_vdma.xpr [current_project]
   set_property ip_repo_paths {
-  C:/Github/Zybo_mipi/zybo_ov5640/IP/system_AXI_BayerToRGB_1_0
-  C:/../Downloads/vivado-library-master/vivado-library-master
+  C:/Users/ivr/Documents/GitHub/Zybo_mipi/ip_repo/rgb10torgb8_1.0
+  C:/Users/ivr/Documents/GitHub/Zybo_mipi/zybo_ov5640/IP/system_AXI_BayerToRGB_1_0
+  C:/Users/ivr/Downloads/vivado-library-master/vivado-library-master
 } [current_project]
   update_ip_catalog
-  set_property ip_output_repo C:/Github/Zybo_mipi/zybo_vdma/zybo_vdma.cache/ip [current_project]
+  set_property ip_output_repo C:/Users/ivr/Documents/GitHub/Zybo_mipi/zybo_vdma/zybo_vdma.cache/ip [current_project]
   set_property ip_cache_permissions {read write} [current_project]
   set_property XPM_LIBRARIES {XPM_CDC XPM_FIFO XPM_MEMORY} [current_project]
-  add_files -quiet C:/Github/Zybo_mipi/zybo_vdma/zybo_vdma.runs/synth_1/design_1_wrapper.dcp
+  add_files -quiet C:/Users/ivr/Documents/GitHub/Zybo_mipi/zybo_vdma/zybo_vdma.runs/synth_1/design_1_wrapper.dcp
   set_msg_config -source 4 -id {BD 41-1661} -limit 0
   set_param project.isImplRun true
-  add_files C:/Github/Zybo_mipi/zybo_vdma/zybo_vdma.srcs/sources_1/bd/design_1/design_1.bd
+  add_files C:/Users/ivr/Documents/GitHub/Zybo_mipi/zybo_vdma/zybo_vdma.srcs/sources_1/bd/design_1/design_1.bd
   set_param project.isImplRun false
-  read_xdc C:/Github/Zybo_mipi/zybo_vdma/zybo_vdma.srcs/constrs_1/imports/new/port.xdc
+  read_xdc C:/Users/ivr/Documents/GitHub/Zybo_mipi/zybo_vdma/zybo_vdma.srcs/constrs_1/imports/new/port.xdc
   set_param project.isImplRun true
   link_design -top design_1_wrapper -part xc7z020clg400-1
   set_param project.isImplRun false
