@@ -1,7 +1,7 @@
 //Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
 //--------------------------------------------------------------------------------
 //Tool Version: Vivado v.2019.2 (win64) Build 2708876 Wed Nov  6 21:40:23 MST 2019
-//Date        : Wed Aug 26 19:28:24 2020
+//Date        : Tue Sep  1 16:47:02 2020
 //Host        : LAPTOP-AG87OV99 running 64-bit major release  (build 9200)
 //Command     : generate_target design_1.bd
 //Design      : design_1
@@ -180,6 +180,7 @@ module design_1
   wire axi_vdma_0_M_AXI_S2MM_WVALID;
   wire clk_wiz_0_clk_out1;
   wire clk_wiz_0_clk_out2;
+  wire clk_wiz_0_clk_out3;
   wire clk_wiz_0_locked;
   wire clk_wiz_1_clk_out1;
   wire [39:0]mipi_csi2_rx_subsyst_0_video_out_TDATA;
@@ -545,10 +546,11 @@ module design_1
        (.clk_in1(CLK_1),
         .clk_out1(clk_wiz_0_clk_out1),
         .clk_out2(clk_wiz_0_clk_out2),
+        .clk_out3(clk_wiz_0_clk_out3),
         .locked(clk_wiz_0_locked),
         .reset(reset_rtl_1));
   design_1_clk_wiz_1_0 clk_wiz_1
-       (.clk_in1(CLK_1),
+       (.clk_in1(clk_wiz_0_clk_out3),
         .clk_out1(clk_wiz_1_clk_out1),
         .reset(reset_rtl_1));
   design_1_mipi_csi2_rx_subsyst_0_1 mipi_csi2_rx_subsyst_0

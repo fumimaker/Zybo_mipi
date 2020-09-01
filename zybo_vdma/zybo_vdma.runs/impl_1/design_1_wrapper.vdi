@@ -2,8 +2,8 @@
 # Vivado v2019.2 (64-bit)
 # SW Build 2708876 on Wed Nov  6 21:40:23 MST 2019
 # IP Build 2700528 on Thu Nov  7 00:09:20 MST 2019
-# Start of session at: Wed Aug 26 19:32:40 2020
-# Process ID: 31500
+# Start of session at: Tue Sep  1 16:50:40 2020
+# Process ID: 16528
 # Current directory: C:/Users/ivr/Documents/GitHub/Zybo_mipi/zybo_vdma/zybo_vdma.runs/impl_1
 # Command line: vivado.exe -log design_1_wrapper.vdi -applog -product Vivado -messageDb vivado.pb -mode batch -source design_1_wrapper.tcl -notrace
 # Log file: C:/Users/ivr/Documents/GitHub/Zybo_mipi/zybo_vdma/zybo_vdma.runs/impl_1/design_1_wrapper.vdi
@@ -16,7 +16,7 @@ WARNING: [IP_Flow 19-2248] Failed to load user IP repository 'c:/Users/ivr/Docum
 If this directory should no longer be in your list of user repositories, go to the IP Settings dialog and remove it.
 INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/ivr/Downloads/vivado-library-master/vivado-library-master'.
 INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2019.2/data/ip'.
-add_files: Time (s): cpu = 00:00:08 ; elapsed = 00:00:11 . Memory (MB): peak = 576.250 ; gain = 86.000
+add_files: Time (s): cpu = 00:00:09 ; elapsed = 00:00:12 . Memory (MB): peak = 577.012 ; gain = 88.762
 Command: link_design -top design_1_wrapper -part xc7z020clg400-1
 Design is defaulting to srcset: sources_1
 Design is defaulting to constrset: constrs_1
@@ -42,19 +42,21 @@ INFO: [Project 1-454] Reading design checkpoint 'c:/Users/ivr/Documents/GitHub/Z
 INFO: [Project 1-454] Reading design checkpoint 'c:/Users/ivr/Documents/GitHub/Zybo_mipi/zybo_vdma/zybo_vdma.srcs/sources_1/bd/design_1/ip/design_1_mipi_csi2_rx_subsyst_0_1/bd_0/ip/ip_0/bd_11cc_r_sync_0.dcp' for cell 'design_1_i/mipi_csi2_rx_subsyst_0/inst/r_sync'
 INFO: [Project 1-454] Reading design checkpoint 'c:/Users/ivr/Documents/GitHub/Zybo_mipi/zybo_vdma/zybo_vdma.srcs/sources_1/bd/design_1/ip/design_1_mipi_csi2_rx_subsyst_0_1/bd_0/ip/ip_1/bd_11cc_rx_0.dcp' for cell 'design_1_i/mipi_csi2_rx_subsyst_0/inst/rx'
 INFO: [Project 1-454] Reading design checkpoint 'c:/Users/ivr/Documents/GitHub/Zybo_mipi/zybo_vdma/zybo_vdma.srcs/sources_1/bd/design_1/ip/design_1_mipi_csi2_rx_subsyst_0_1/bd_0/ip/ip_3/bd_11cc_vfb_0_0.dcp' for cell 'design_1_i/mipi_csi2_rx_subsyst_0/inst/vfb_0'
-Netlist sorting complete. Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.875 . Memory (MB): peak = 995.715 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.891 . Memory (MB): peak = 997.047 ; gain = 0.000
 INFO: [Netlist 29-17] Analyzing 1019 Unisim elements for replacement
 INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
 INFO: [Project 1-479] Netlist was created with Vivado 2019.2
 INFO: [Project 1-570] Preparing netlist for logic optimization
-CRITICAL WARNING: [Shape Builder 18-119] Failed to create I/OLOGIC Route Through shape for instance design_1_i/clk_wiz_1/inst/clkin1_ibufg. Found overlapping instances within the shape: design_1_i/clk_wiz_0/inst/clkin1_ibufg and design_1_i/clk_wiz_1/inst/clkin1_ibufg.
+WARNING: [Opt 31-32] Removing redundant IBUF since it is not being driven by a top-level port. design_1_i/clk_wiz_1/inst/clkin1_ibufg 
+Resolution: The tool has removed redundant IBUF. To resolve this warning, check for redundant IBUF in the input design.
+WARNING: [Constraints 18-550] Could not create 'IBUF_LOW_PWR' constraint because net 'design_1_i/clk_wiz_1/clk_in1' is not directly connected to top level port. Synthesis is ignored for IBUF_LOW_PWR but preserved for implementation.
 INFO: [Chipscope 16-324] Core: design_1_i/system_ila_0/inst/ila_lib UUID: cd4c83c8-23a6-596d-99ad-09be1335c6b0 
 Parsing XDC File [c:/Users/ivr/Documents/GitHub/Zybo_mipi/zybo_vdma/zybo_vdma.srcs/sources_1/bd/design_1/ip/design_1_clk_wiz_0_0/design_1_clk_wiz_0_0_board.xdc] for cell 'design_1_i/clk_wiz_0/inst'
 Finished Parsing XDC File [c:/Users/ivr/Documents/GitHub/Zybo_mipi/zybo_vdma/zybo_vdma.srcs/sources_1/bd/design_1/ip/design_1_clk_wiz_0_0/design_1_clk_wiz_0_0_board.xdc] for cell 'design_1_i/clk_wiz_0/inst'
 Parsing XDC File [c:/Users/ivr/Documents/GitHub/Zybo_mipi/zybo_vdma/zybo_vdma.srcs/sources_1/bd/design_1/ip/design_1_clk_wiz_0_0/design_1_clk_wiz_0_0.xdc] for cell 'design_1_i/clk_wiz_0/inst'
 INFO: [Timing 38-35] Done setting XDC timing constraints. [c:/Users/ivr/Documents/GitHub/Zybo_mipi/zybo_vdma/zybo_vdma.srcs/sources_1/bd/design_1/ip/design_1_clk_wiz_0_0/design_1_clk_wiz_0_0.xdc:57]
 INFO: [Timing 38-2] Deriving generated clocks [c:/Users/ivr/Documents/GitHub/Zybo_mipi/zybo_vdma/zybo_vdma.srcs/sources_1/bd/design_1/ip/design_1_clk_wiz_0_0/design_1_clk_wiz_0_0.xdc:57]
-get_clocks: Time (s): cpu = 00:00:12 ; elapsed = 00:00:12 . Memory (MB): peak = 1727.168 ; gain = 587.953
+get_clocks: Time (s): cpu = 00:00:13 ; elapsed = 00:00:13 . Memory (MB): peak = 1730.848 ; gain = 588.594
 Finished Parsing XDC File [c:/Users/ivr/Documents/GitHub/Zybo_mipi/zybo_vdma/zybo_vdma.srcs/sources_1/bd/design_1/ip/design_1_clk_wiz_0_0/design_1_clk_wiz_0_0.xdc] for cell 'design_1_i/clk_wiz_0/inst'
 Parsing XDC File [c:/Users/ivr/Documents/GitHub/Zybo_mipi/zybo_vdma/zybo_vdma.srcs/sources_1/bd/design_1/ip/design_1_system_ila_0_0/bd_0/ip/ip_0/ila_v6_2/constraints/ila_impl.xdc] for cell 'design_1_i/system_ila_0/inst/ila_lib/inst'
 Finished Parsing XDC File [c:/Users/ivr/Documents/GitHub/Zybo_mipi/zybo_vdma/zybo_vdma.srcs/sources_1/bd/design_1/ip/design_1_system_ila_0_0/bd_0/ip/ip_0/ila_v6_2/constraints/ila_impl.xdc] for cell 'design_1_i/system_ila_0/inst/ila_lib/inst'
@@ -106,11 +108,9 @@ Finished Parsing XDC File [c:/Users/ivr/Documents/GitHub/Zybo_mipi/zybo_vdma/zyb
 Parsing XDC File [c:/Users/ivr/Documents/GitHub/Zybo_mipi/zybo_vdma/zybo_vdma.srcs/sources_1/bd/design_1/ip/design_1_clk_wiz_1_0/design_1_clk_wiz_1_0_board.xdc] for cell 'design_1_i/clk_wiz_1/inst'
 Finished Parsing XDC File [c:/Users/ivr/Documents/GitHub/Zybo_mipi/zybo_vdma/zybo_vdma.srcs/sources_1/bd/design_1/ip/design_1_clk_wiz_1_0/design_1_clk_wiz_1_0_board.xdc] for cell 'design_1_i/clk_wiz_1/inst'
 Parsing XDC File [c:/Users/ivr/Documents/GitHub/Zybo_mipi/zybo_vdma/zybo_vdma.srcs/sources_1/bd/design_1/ip/design_1_clk_wiz_1_0/design_1_clk_wiz_1_0.xdc] for cell 'design_1_i/clk_wiz_1/inst'
-WARNING: [Constraints 18-619] A clock with name 'CLK' already exists, overwriting the previous clock with the same name. [c:/Users/ivr/Documents/GitHub/Zybo_mipi/zybo_vdma/zybo_vdma.srcs/sources_1/bd/design_1/ip/design_1_clk_wiz_1_0/design_1_clk_wiz_1_0.xdc:56]
 INFO: [Timing 38-2] Deriving generated clocks [c:/Users/ivr/Documents/GitHub/Zybo_mipi/zybo_vdma/zybo_vdma.srcs/sources_1/bd/design_1/ip/design_1_clk_wiz_1_0/design_1_clk_wiz_1_0.xdc:57]
 Finished Parsing XDC File [c:/Users/ivr/Documents/GitHub/Zybo_mipi/zybo_vdma/zybo_vdma.srcs/sources_1/bd/design_1/ip/design_1_clk_wiz_1_0/design_1_clk_wiz_1_0.xdc] for cell 'design_1_i/clk_wiz_1/inst'
 Parsing XDC File [C:/Users/ivr/Documents/GitHub/Zybo_mipi/zybo_vdma/zybo_vdma.srcs/constrs_1/imports/new/port.xdc]
-CRITICAL WARNING: [Vivado 12-1411] Cannot set LOC property of ports, Cannot set PACKAGE_PIN property of ports,  port CLK can not be placed on PACKAGE_PIN K17 because the PACKAGE_PIN is occupied by port CLK [C:/Users/ivr/Documents/GitHub/Zybo_mipi/zybo_vdma/zybo_vdma.srcs/constrs_1/imports/new/port.xdc:2]
 WARNING: [Vivado 12-584] No ports matched 'VGA_R[0]'. [C:/Users/ivr/Documents/GitHub/Zybo_mipi/zybo_vdma/zybo_vdma.srcs/constrs_1/imports/new/port.xdc:7]
 CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/ivr/Documents/GitHub/Zybo_mipi/zybo_vdma/zybo_vdma.srcs/constrs_1/imports/new/port.xdc:7]
 Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
@@ -1682,7 +1682,7 @@ Finished Sourcing Tcl File [C:/Xilinx/Vivado/2019.2/data/ip/xpm/xpm_fifo/tcl/xpm
 Sourcing Tcl File [C:/Xilinx/Vivado/2019.2/data/ip/xpm/xpm_fifo/tcl/xpm_fifo_rst.tcl] for cell 'design_1_i/v_axi4s_vid_out_0/inst/COUPLER_INST/generate_sync_fifo.FIFO_INST/XPM_FIFO_SYNC_INST'
 Finished Sourcing Tcl File [C:/Xilinx/Vivado/2019.2/data/ip/xpm/xpm_fifo/tcl/xpm_fifo_rst.tcl] for cell 'design_1_i/v_axi4s_vid_out_0/inst/COUPLER_INST/generate_sync_fifo.FIFO_INST/XPM_FIFO_SYNC_INST'
 INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.021 . Memory (MB): peak = 1727.449 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.020 . Memory (MB): peak = 1730.848 ; gain = 0.000
 INFO: [Project 1-111] Unisim Transformation Summary:
   A total of 88 instances were transformed.
   CFGLUT5 => CFGLUT5 (SRL16E, SRLC32E): 64 instances
@@ -1691,9 +1691,9 @@ INFO: [Project 1-111] Unisim Transformation Summary:
   RAM32X1D => RAM32X1D (RAMD32(x2)): 1 instance 
   RAM64X1S => RAM64X1S (RAMS64E): 1 instance 
 
-139 Infos, 205 Warnings, 34 Critical Warnings and 0 Errors encountered.
+139 Infos, 206 Warnings, 32 Critical Warnings and 0 Errors encountered.
 link_design completed successfully
-link_design: Time (s): cpu = 00:00:37 ; elapsed = 00:00:41 . Memory (MB): peak = 1727.449 ; gain = 1151.199
+link_design: Time (s): cpu = 00:00:41 ; elapsed = 00:00:45 . Memory (MB): peak = 1730.848 ; gain = 1153.836
 Command: opt_design
 Attempting to get a license for feature 'Implementation' and/or device 'xc7z020'
 INFO: [Common 17-349] Got license for feature 'Implementation' and/or device 'xc7z020'
@@ -1704,13 +1704,13 @@ INFO: [DRC 23-27] Running DRC with 2 threads
 INFO: [Project 1-461] DRC finished with 0 Errors
 INFO: [Project 1-462] Please refer to the DRC report (report_drc) for more information.
 
-Time (s): cpu = 00:00:02 ; elapsed = 00:00:01 . Memory (MB): peak = 1727.449 ; gain = 0.000
+Time (s): cpu = 00:00:02 ; elapsed = 00:00:01 . Memory (MB): peak = 1730.848 ; gain = 0.000
 
 Starting Cache Timing Information Task
 INFO: [Timing 38-35] Done setting XDC timing constraints.
-Ending Cache Timing Information Task | Checksum: 1ec8bb51a
+Ending Cache Timing Information Task | Checksum: 2216736de
 
-Time (s): cpu = 00:00:03 ; elapsed = 00:00:01 . Memory (MB): peak = 1727.449 ; gain = 0.000
+Time (s): cpu = 00:00:03 ; elapsed = 00:00:01 . Memory (MB): peak = 1730.848 ; gain = 0.000
 
 Starting Logic Optimization Task
 
@@ -1718,32 +1718,32 @@ Phase 1 Generate And Synthesize Debug Cores
 INFO: [Chipscope 16-329] Generating Script for core instance : dbg_hub 
 INFO: [IP_Flow 19-3806] Processing IP xilinx.com:ip:xsdbm:3.0 for cell dbg_hub_CV.
 INFO: [Chipscope 16-220] Re-using generated and synthesized IP, "xilinx.com:ip:xsdbm:3.0", from Vivado IP cache entry "3a651f28139fd9a0".
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.066 . Memory (MB): peak = 1934.660 ; gain = 0.000
-Phase 1 Generate And Synthesize Debug Cores | Checksum: 2344e57c6
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.072 . Memory (MB): peak = 1941.770 ; gain = 0.000
+Phase 1 Generate And Synthesize Debug Cores | Checksum: 1217289a4
 
-Time (s): cpu = 00:00:05 ; elapsed = 00:00:24 . Memory (MB): peak = 1934.660 ; gain = 38.547
+Time (s): cpu = 00:00:06 ; elapsed = 00:00:25 . Memory (MB): peak = 1941.770 ; gain = 37.094
 
 Phase 2 Retarget
 INFO: [Opt 31-138] Pushed 8 inverter(s) to 50 load pin(s).
 INFO: [Opt 31-49] Retargeted 0 cell(s).
-Phase 2 Retarget | Checksum: 26db9eda7
+Phase 2 Retarget | Checksum: 25730a7dd
 
-Time (s): cpu = 00:00:11 ; elapsed = 00:00:28 . Memory (MB): peak = 1934.660 ; gain = 38.547
+Time (s): cpu = 00:00:12 ; elapsed = 00:00:29 . Memory (MB): peak = 1941.770 ; gain = 37.094
 INFO: [Opt 31-389] Phase Retarget created 322 cells and removed 988 cells
-INFO: [Opt 31-1021] In phase Retarget, 193 netlist objects are constrained preventing optimization. Please run opt_design with -debug_log to get more detail. 
+INFO: [Opt 31-1021] In phase Retarget, 191 netlist objects are constrained preventing optimization. Please run opt_design with -debug_log to get more detail. 
 
 Phase 3 Constant propagation
 INFO: [Opt 31-138] Pushed 1 inverter(s) to 1 load pin(s).
-Phase 3 Constant propagation | Checksum: 25abc8648
+Phase 3 Constant propagation | Checksum: 2891c8c3c
 
-Time (s): cpu = 00:00:13 ; elapsed = 00:00:30 . Memory (MB): peak = 1934.660 ; gain = 38.547
+Time (s): cpu = 00:00:13 ; elapsed = 00:00:30 . Memory (MB): peak = 1941.770 ; gain = 37.094
 INFO: [Opt 31-389] Phase Constant propagation created 232 cells and removed 1297 cells
 INFO: [Opt 31-1021] In phase Constant propagation, 470 netlist objects are constrained preventing optimization. Please run opt_design with -debug_log to get more detail. 
 
 Phase 4 Sweep
-Phase 4 Sweep | Checksum: 271e158e3
+Phase 4 Sweep | Checksum: 205e7560b
 
-Time (s): cpu = 00:00:17 ; elapsed = 00:00:34 . Memory (MB): peak = 1934.660 ; gain = 38.547
+Time (s): cpu = 00:00:16 ; elapsed = 00:00:34 . Memory (MB): peak = 1941.770 ; gain = 37.094
 INFO: [Opt 31-389] Phase Sweep created 0 cells and removed 3588 cells
 INFO: [Opt 31-1021] In phase Sweep, 1355 netlist objects are constrained preventing optimization. Please run opt_design with -debug_log to get more detail. 
 
@@ -1754,22 +1754,22 @@ INFO: [Opt 31-193] Inserted 2 BUFG(s) on clock nets
 INFO: [Opt 31-1112] Starts optimizing BUFG(s) with a common MMCM/DPLL/XPLL driver.
 INFO: [Opt 31-1112] Starts optimizing BUFG(s) with a common driver.
 INFO: [Opt 31-1092] Phase BUFG optimization transformed 0 BUFG(s) to MBUFG(s).
-Phase 5 BUFG optimization | Checksum: 243d285ea
+Phase 5 BUFG optimization | Checksum: 1ef0b467c
 
-Time (s): cpu = 00:00:17 ; elapsed = 00:00:35 . Memory (MB): peak = 1934.660 ; gain = 38.547
+Time (s): cpu = 00:00:17 ; elapsed = 00:00:35 . Memory (MB): peak = 1941.770 ; gain = 37.094
 INFO: [Opt 31-662] Phase BUFG optimization created 2 cells of which 2 are BUFGs and removed 0 cells.
 
 Phase 6 Shift Register Optimization
 INFO: [Opt 31-1064] SRL Remap converted 0 SRLs to 0 registers and converted 0 registers of register chains to 0 SRLs
-Phase 6 Shift Register Optimization | Checksum: 243d285ea
+Phase 6 Shift Register Optimization | Checksum: 1ef0b467c
 
-Time (s): cpu = 00:00:18 ; elapsed = 00:00:35 . Memory (MB): peak = 1934.660 ; gain = 38.547
+Time (s): cpu = 00:00:18 ; elapsed = 00:00:35 . Memory (MB): peak = 1941.770 ; gain = 37.094
 INFO: [Opt 31-389] Phase Shift Register Optimization created 0 cells and removed 0 cells
 
 Phase 7 Post Processing Netlist
-Phase 7 Post Processing Netlist | Checksum: 243d285ea
+Phase 7 Post Processing Netlist | Checksum: 1ef0b467c
 
-Time (s): cpu = 00:00:18 ; elapsed = 00:00:36 . Memory (MB): peak = 1934.660 ; gain = 38.547
+Time (s): cpu = 00:00:18 ; elapsed = 00:00:36 . Memory (MB): peak = 1941.770 ; gain = 37.094
 INFO: [Opt 31-389] Phase Post Processing Netlist created 0 cells and removed 0 cells
 INFO: [Opt 31-1021] In phase Post Processing Netlist, 144 netlist objects are constrained preventing optimization. Please run opt_design with -debug_log to get more detail. 
 Opt_design Change Summary
@@ -1779,7 +1779,7 @@ Opt_design Change Summary
 -------------------------------------------------------------------------------------------------------------------------
 |  Phase                        |  #Cells created  |  #Cells Removed  |  #Constrained objects preventing optimizations  |
 -------------------------------------------------------------------------------------------------------------------------
-|  Retarget                     |             322  |             988  |                                            193  |
+|  Retarget                     |             322  |             988  |                                            191  |
 |  Constant propagation         |             232  |            1297  |                                            470  |
 |  Sweep                        |               0  |            3588  |                                           1355  |
 |  BUFG optimization            |               2  |               0  |                                              0  |
@@ -1791,17 +1791,17 @@ Opt_design Change Summary
 
 Starting Connectivity Check Task
 
-Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.081 . Memory (MB): peak = 1934.660 ; gain = 0.000
-Ending Logic Optimization Task | Checksum: 262752eb9
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.083 . Memory (MB): peak = 1941.770 ; gain = 0.000
+Ending Logic Optimization Task | Checksum: 226448859
 
-Time (s): cpu = 00:00:20 ; elapsed = 00:00:37 . Memory (MB): peak = 1934.660 ; gain = 38.547
+Time (s): cpu = 00:00:19 ; elapsed = 00:00:37 . Memory (MB): peak = 1941.770 ; gain = 37.094
 
 Starting Power Optimization Task
 INFO: [Pwropt 34-132] Skipping clock gating for clocks with a period < 2.00 ns.
 INFO: [Timing 38-35] Done setting XDC timing constraints.
 INFO: [Pwropt 34-9] Applying IDT optimizations ...
 INFO: [Pwropt 34-10] Applying ODC optimizations ...
-INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-4.389 | TNS=-12031.141 |
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-6.508 | TNS=-499.477 |
 Running Vector-less Activity Propagation...
 
 Finished Running Vector-less Activity Propagation
@@ -1813,12 +1813,12 @@ INFO: [Pwropt 34-201] Structural ODC has moved 0 WE to EN ports
 Number of BRAM Ports augmented: 143 newly gated: 0 Total Ports: 168
 Number of Flops added for Enable Generation: 1
 
-Ending PowerOpt Patch Enables Task | Checksum: 1976baa4a
+Ending PowerOpt Patch Enables Task | Checksum: 1ef2f5ed8
 
-Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.972 . Memory (MB): peak = 2453.055 ; gain = 0.000
-Ending Power Optimization Task | Checksum: 1976baa4a
+Time (s): cpu = 00:00:01 ; elapsed = 00:00:01 . Memory (MB): peak = 2444.957 ; gain = 0.000
+Ending Power Optimization Task | Checksum: 1ef2f5ed8
 
-Time (s): cpu = 00:00:37 ; elapsed = 00:00:20 . Memory (MB): peak = 2453.055 ; gain = 518.395
+Time (s): cpu = 00:00:38 ; elapsed = 00:00:21 . Memory (MB): peak = 2444.957 ; gain = 503.188
 
 Starting Final Cleanup Task
 
@@ -1827,32 +1827,32 @@ INFO: [Timing 38-35] Done setting XDC timing constraints.
 INFO: [Opt 31-1112] Starts optimizing BUFG(s) with a common MMCM/DPLL/XPLL driver.
 INFO: [Opt 31-1112] Starts optimizing BUFG(s) with a common driver.
 INFO: [Opt 31-1092] Phase BUFG optimization transformed 0 BUFG(s) to MBUFG(s).
-Ending Logic Optimization Task | Checksum: 13ad3cf13
+Ending Logic Optimization Task | Checksum: 179ff0848
 
-Time (s): cpu = 00:00:07 ; elapsed = 00:00:05 . Memory (MB): peak = 2453.055 ; gain = 0.000
-Ending Final Cleanup Task | Checksum: 13ad3cf13
+Time (s): cpu = 00:00:06 ; elapsed = 00:00:05 . Memory (MB): peak = 2444.957 ; gain = 0.000
+Ending Final Cleanup Task | Checksum: 179ff0848
 
-Time (s): cpu = 00:00:10 ; elapsed = 00:00:08 . Memory (MB): peak = 2453.055 ; gain = 0.000
+Time (s): cpu = 00:00:09 ; elapsed = 00:00:08 . Memory (MB): peak = 2444.957 ; gain = 0.000
 
 Starting Netlist Obfuscation Task
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.020 . Memory (MB): peak = 2453.055 ; gain = 0.000
-Ending Netlist Obfuscation Task | Checksum: 13ad3cf13
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.030 . Memory (MB): peak = 2444.957 ; gain = 0.000
+Ending Netlist Obfuscation Task | Checksum: 179ff0848
 
-Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.020 . Memory (MB): peak = 2453.055 ; gain = 0.000
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.030 . Memory (MB): peak = 2444.957 ; gain = 0.000
 INFO: [Common 17-83] Releasing license: Implementation
-182 Infos, 205 Warnings, 34 Critical Warnings and 0 Errors encountered.
+182 Infos, 206 Warnings, 32 Critical Warnings and 0 Errors encountered.
 opt_design completed successfully
-opt_design: Time (s): cpu = 00:01:15 ; elapsed = 00:01:11 . Memory (MB): peak = 2453.055 ; gain = 725.605
+opt_design: Time (s): cpu = 00:01:15 ; elapsed = 00:01:12 . Memory (MB): peak = 2444.957 ; gain = 714.109
 INFO: [Timing 38-35] Done setting XDC timing constraints.
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.024 . Memory (MB): peak = 2453.055 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.021 . Memory (MB): peak = 2444.957 ; gain = 0.000
 INFO: [Timing 38-480] Writing timing data to binary archive.
 Writing placer database...
 Writing XDEF routing.
 Writing XDEF routing logical nets.
 Writing XDEF routing special nets.
-Write XDEF Complete: Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.125 . Memory (MB): peak = 2453.055 ; gain = 0.000
+Write XDEF Complete: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.112 . Memory (MB): peak = 2444.957 ; gain = 0.000
 INFO: [Common 17-1381] The checkpoint 'C:/Users/ivr/Documents/GitHub/Zybo_mipi/zybo_vdma/zybo_vdma.runs/impl_1/design_1_wrapper_opt.dcp' has been generated.
-write_checkpoint: Time (s): cpu = 00:00:12 ; elapsed = 00:00:08 . Memory (MB): peak = 2453.055 ; gain = 0.000
+write_checkpoint: Time (s): cpu = 00:00:12 ; elapsed = 00:00:08 . Memory (MB): peak = 2444.957 ; gain = 0.000
 INFO: [runtcl-4] Executing : report_drc -file design_1_wrapper_drc_opted.rpt -pb design_1_wrapper_drc_opted.pb -rpx design_1_wrapper_drc_opted.rpx
 Command: report_drc -file design_1_wrapper_drc_opted.rpt -pb design_1_wrapper_drc_opted.pb -rpx design_1_wrapper_drc_opted.rpx
 INFO: [IP_Flow 19-1839] IP Catalog is up to date.
@@ -1877,110 +1877,1074 @@ INFO: [Place 30-611] Multithreading enabled for place_design using a maximum of 
 Phase 1 Placer Initialization
 
 Phase 1.1 Placer Initialization Netlist Sorting
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.019 . Memory (MB): peak = 2453.055 ; gain = 0.000
-Phase 1.1 Placer Initialization Netlist Sorting | Checksum: e3f576fa
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.018 . Memory (MB): peak = 2444.957 ; gain = 0.000
+Phase 1.1 Placer Initialization Netlist Sorting | Checksum: 1056c6395
 
-Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.035 . Memory (MB): peak = 2453.055 ; gain = 0.000
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.020 . Memory (MB): peak = 2453.055 ; gain = 0.000
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.032 . Memory (MB): peak = 2444.957 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.021 . Memory (MB): peak = 2444.957 ; gain = 0.000
 
 Phase 1.2 IO Placement/ Clock Placement/ Build Placer Device
-ERROR: [Place 30-602] IO port 'CLK' is driving multiple buffers. This will lead to unplaceable/unroutable situation.
-The buffers connected are:
-    design_1_i/clk_wiz_1/inst/clkin1_ibufg {IBUF}
-    design_1_i/clk_wiz_0/inst/clkin1_ibufg {IBUF}
+Phase 1.2 IO Placement/ Clock Placement/ Build Placer Device | Checksum: 1173394cf
 
-ERROR: [Place 30-475] IO terminal CLK with IOStandard LVCMOS18 is not placeable anywhere in the device.
-Please check whether the IOSTANDARD is compatible with the target device.
-ERROR: [Place 30-58] IO placement is infeasible. Number of unplaced terminals (1) is greater than number of available sites (0).
-The following are banks with available pins: 
- IO Group: 0 with : SioStd: LVCMOS18   VCCO = 1.8 Termination: 0  TermDir:  In   RangeId: 1 GClock  has only 0 sites available on device, but needs 1 sites.
-	Term: CLK
+Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 2444.957 ; gain = 0.000
+
+Phase 1.3 Build Placer Netlist Model
+Phase 1.3 Build Placer Netlist Model | Checksum: a8a668a2
+
+Time (s): cpu = 00:00:13 ; elapsed = 00:00:09 . Memory (MB): peak = 2444.957 ; gain = 0.000
+
+Phase 1.4 Constrain Clocks/Macros
+Phase 1.4 Constrain Clocks/Macros | Checksum: a8a668a2
+
+Time (s): cpu = 00:00:13 ; elapsed = 00:00:09 . Memory (MB): peak = 2444.957 ; gain = 0.000
+Phase 1 Placer Initialization | Checksum: a8a668a2
+
+Time (s): cpu = 00:00:14 ; elapsed = 00:00:09 . Memory (MB): peak = 2444.957 ; gain = 0.000
+
+Phase 2 Global Placement
+
+Phase 2.1 Floorplanning
+Phase 2.1 Floorplanning | Checksum: ef60a1b2
+
+Time (s): cpu = 00:00:16 ; elapsed = 00:00:11 . Memory (MB): peak = 2444.957 ; gain = 0.000
+
+Phase 2.2 Global Placement Core
+
+Phase 2.2.1 Physical Synthesis In Placer
+INFO: [Physopt 32-1018] Found 852 candidate LUT instances to create LUTNM shape
+INFO: [Physopt 32-775] End 1 Pass. Optimized 335 nets or cells. Created 7 new cells, deleted 328 existing cells and moved 0 existing cell
+INFO: [Physopt 32-65] No nets found for high-fanout optimization.
+INFO: [Physopt 32-232] Optimized 0 net. Created 0 new instance.
+INFO: [Physopt 32-775] End 1 Pass. Optimized 0 net or cell. Created 0 new cell, deleted 0 existing cell and moved 0 existing cell
+INFO: [Physopt 32-456] No candidate cells for DSP register optimization found in the design.
+INFO: [Physopt 32-775] End 2 Pass. Optimized 0 net or cell. Created 0 new cell, deleted 0 existing cell and moved 0 existing cell
+INFO: [Physopt 32-775] End 1 Pass. Optimized 0 net or cell. Created 0 new cell, deleted 0 existing cell and moved 0 existing cell
+INFO: [Physopt 32-677] No candidate cells for Shift Register optimization found in the design
+INFO: [Physopt 32-775] End 1 Pass. Optimized 0 net or cell. Created 0 new cell, deleted 0 existing cell and moved 0 existing cell
+INFO: [Physopt 32-526] No candidate cells for BRAM register optimization found in the design
+INFO: [Physopt 32-775] End 1 Pass. Optimized 0 net or cell. Created 0 new cell, deleted 0 existing cell and moved 0 existing cell
+INFO: [Physopt 32-949] No candidate nets found for HD net replication
+INFO: [Physopt 32-775] End 1 Pass. Optimized 0 net or cell. Created 0 new cell, deleted 0 existing cell and moved 0 existing cell
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.019 . Memory (MB): peak = 2444.957 ; gain = 0.000
+
+Summary of Physical Synthesis Optimizations
+============================================
 
 
-ERROR: [Place 30-58] IO placement is infeasible. Number of unplaced terminals (1) is greater than number of available sites (0).
-The following are banks with available pins: 
- IO Group: 0 with : SioStd: LVCMOS18   VCCO = 1.8 Termination: 0  TermDir:  In   RangeId: 1 GClock  has only 0 sites available on device, but needs 1 sites.
-	Term: CLK
+-----------------------------------------------------------------------------------------------------------------------------------------------------------
+|  Optimization                                     |  Added Cells  |  Removed Cells  |  Optimized Cells/Nets  |  Dont Touch  |  Iterations  |  Elapsed   |
+-----------------------------------------------------------------------------------------------------------------------------------------------------------
+|  LUT Combining                                    |            7  |            328  |                   335  |           0  |           1  |  00:00:01  |
+|  Very High Fanout                                 |            0  |              0  |                     0  |           0  |           1  |  00:00:00  |
+|  DSP Register                                     |            0  |              0  |                     0  |           0  |           1  |  00:00:00  |
+|  Shift Register to Pipeline                       |            0  |              0  |                     0  |           0  |           1  |  00:00:00  |
+|  Shift Register                                   |            0  |              0  |                     0  |           0  |           1  |  00:00:00  |
+|  BRAM Register                                    |            0  |              0  |                     0  |           0  |           1  |  00:00:00  |
+|  Dynamic/Static Region Interface Net Replication  |            0  |              0  |                     0  |           0  |           1  |  00:00:00  |
+|  Total                                            |            7  |            328  |                   335  |           0  |           7  |  00:00:01  |
+-----------------------------------------------------------------------------------------------------------------------------------------------------------
 
 
-ERROR: [Place 30-475] IO terminal CLK with IOStandard LVCMOS18 is not placeable anywhere in the device.
-Please check whether the IOSTANDARD is compatible with the target device.
-ERROR: [Place 30-58] IO placement is infeasible. Number of unplaced terminals (1) is greater than number of available sites (0).
-The following are banks with available pins: 
- IO Group: 0 with : SioStd: LVCMOS18   VCCO = 1.8 Termination: 0  TermDir:  In   RangeId: 1  has only 0 sites available on device, but needs 1 sites.
-	Term: CLK
+Phase 2.2.1 Physical Synthesis In Placer | Checksum: 257ceb9fe
 
+Time (s): cpu = 00:00:49 ; elapsed = 00:00:30 . Memory (MB): peak = 2444.957 ; gain = 0.000
+Phase 2.2 Global Placement Core | Checksum: 2a69c711a
 
-ERROR: [Place 30-58] IO placement is infeasible. Number of unplaced terminals (1) is greater than number of available sites (0).
-The following are banks with available pins: 
- IO Group: 0 with : SioStd: LVCMOS18   VCCO = 1.8 Termination: 0  TermDir:  In   RangeId: 1  has only 0 sites available on device, but needs 1 sites.
-	Term: CLK
+Time (s): cpu = 00:00:51 ; elapsed = 00:00:31 . Memory (MB): peak = 2444.957 ; gain = 0.000
+Phase 2 Global Placement | Checksum: 2a69c711a
 
+Time (s): cpu = 00:00:51 ; elapsed = 00:00:31 . Memory (MB): peak = 2444.957 ; gain = 0.000
 
-ERROR: [Place 30-374] IO placer failed to find a solution
-Below is the partial placement that can be analyzed to see if any constraint modifications will make the IO placement problem easier to solve.
-0. CLK
+Phase 3 Detail Placement
 
-+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-|                                                                     IO Placement : Bank Stats                                                                           |
-+----+-------+-------+------------------------------------------------------------------------+------------------------------------------+--------+--------+--------+-----+
-| Id | Pins  | Terms |                               Standards                                |                IDelayCtrls               |  VREF  |  VCCO  |   VR   | DCI |
-+----+-------+-------+------------------------------------------------------------------------+------------------------------------------+--------+--------+--------+-----+
-|  0 |     0 |     0 |                                                                        |                                          |        |        |        |     |
-| 13 |    25 |     0 |                                                                        |                                          |        |        |        |     |
-| 34 |    50 |     1 | LVCMOS33(1)                                                            |                                          |        |  +3.30 |    YES |     |
-| 35 |    50 |    24 | LVCMOS33(4)  HSUL_12(6)  LVDS_25(6)  TMDS_33(8)                        |                                          |  +0.60 |  +3.30 |    YES |     |
-+----+-------+-------+------------------------------------------------------------------------+------------------------------------------+--------+--------+--------+-----+
-|    |   125 |    25 |                                                                        |                                          |        |        |        |     |
-+----+-------+-------+------------------------------------------------------------------------+------------------------------------------+--------+--------+--------+-----+
+Phase 3.1 Commit Multi Column Macros
+Phase 3.1 Commit Multi Column Macros | Checksum: 1df0ffb34
 
-IO Placement:
-+--------+----------------------+-----------------+----------------------+----------------------+----------------------+
-| BankId |             Terminal | Standard        | Site                 | Pin                  | Attributes           |
-+--------+----------------------+-----------------+----------------------+----------------------+----------------------+
-| 34     | reset_rtl            | LVCMOS33        | IOB_X1Y86            | Y16                  |                      |
-+--------+----------------------+-----------------+----------------------+----------------------+----------------------+
-| 35     | hdmi_tx_clk_p        | TMDS_33         | IOB_X1Y124           | H16                  |                      |
-|        | hdmi_tx_clk_n        | TMDS_33         | IOB_X1Y123           | H17                  |                      |
-|        | hdmi_tx_data_p[0]    | TMDS_33         | IOB_X1Y142           | D19                  |                      |
-|        | hdmi_tx_data_n[0]    | TMDS_33         | IOB_X1Y141           | D20                  |                      |
-|        | hdmi_tx_data_p[1]    | TMDS_33         | IOB_X1Y148           | C20                  |                      |
-|        | hdmi_tx_data_n[1]    | TMDS_33         | IOB_X1Y147           | B20                  |                      |
-|        | hdmi_tx_data_p[2]    | TMDS_33         | IOB_X1Y146           | B19                  |                      |
-|        | hdmi_tx_data_n[2]    | TMDS_33         | IOB_X1Y145           | A20                  |                      |
-|        | pi_phy_if_0_clk_hs_p | LVDS_25         | IOB_X1Y122           | J18                  |                      |
-|        | pi_phy_if_0_clk_hs_n | LVDS_25         | IOB_X1Y121           | H18                  |                      |
-|        | hy_if_0_data_hs_p[0] | LVDS_25         | IOB_X1Y136           | M19                  |                      |
-|        | hy_if_0_data_hs_n[0] | LVDS_25         | IOB_X1Y135           | M20                  |                      |
-|        | hy_if_0_data_hs_p[1] | LVDS_25         | IOB_X1Y128           | L16                  |                      |
-|        | hy_if_0_data_hs_n[1] | LVDS_25         | IOB_X1Y127           | L17                  |                      |
-|        | IIC_0_0_scl_io       | LVCMOS33        | IOB_X1Y119           | F20                  |                      |
-|        | IIC_0_0_sda_io       | LVCMOS33        | IOB_X1Y120           | F19                  |                      |
-|        | cam_gpio[0]          | LVCMOS33        | IOB_X1Y113           | G20                  |                      |
-|        | led[0]               | LVCMOS33        | IOB_X1Y104           | M14                  |                      |
-|        | pi_phy_if_0_clk_lp_n | HSUL_12         | IOB_X1Y129           | J19                  | VRef=+0.60           |
-|        | pi_phy_if_0_clk_lp_p | HSUL_12         | IOB_X1Y115           | H20                  | VRef=+0.60           |
-|        | hy_if_0_data_lp_n[0] | HSUL_12         | IOB_X1Y133           | M18                  | VRef=+0.60           |
-|        | hy_if_0_data_lp_n[1] | HSUL_12         | IOB_X1Y131           | L20                  | VRef=+0.60           |
-|        | hy_if_0_data_lp_p[0] | HSUL_12         | IOB_X1Y132           | L19                  | VRef=+0.60           |
-|        | hy_if_0_data_lp_p[1] | HSUL_12         | IOB_X1Y116           | J20                  | VRef=+0.60           |
-+--------+----------------------+-----------------+----------------------+----------------------+----------------------+
+Time (s): cpu = 00:00:53 ; elapsed = 00:00:33 . Memory (MB): peak = 2444.957 ; gain = 0.000
 
-ERROR: [Place 30-69] Instance design_1_i/clk_wiz_0/inst/clkin1_ibufg (IBUF driven by I/O terminal CLK) is unplaced after IO placer
-ERROR: [Place 30-69] Instance design_1_i/clk_wiz_1/inst/clkin1_ibufg (IBUF driven by I/O terminal CLK) is unplaced after IO placer
-Phase 1.2 IO Placement/ Clock Placement/ Build Placer Device | Checksum: 1171f71dd
+Phase 3.2 Commit Most Macros & LUTRAMs
+Phase 3.2 Commit Most Macros & LUTRAMs | Checksum: 1072f84bd
 
-Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 2453.055 ; gain = 0.000
-Phase 1 Placer Initialization | Checksum: 1171f71dd
+Time (s): cpu = 00:00:58 ; elapsed = 00:00:36 . Memory (MB): peak = 2444.957 ; gain = 0.000
 
-Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 2453.055 ; gain = 0.000
-ERROR: [Place 30-99] Placer failed with error: 'IO Clock Placer stopped due to earlier errors. Implementation Feasibility check failed, Please see the previously displayed individual error or warning messages for more details.'
-Please review all ERROR, CRITICAL WARNING, and WARNING messages during placement to understand the cause for failure.
-Ending Placer Task | Checksum: 120021a29
+Phase 3.3 Area Swap Optimization
+Phase 3.3 Area Swap Optimization | Checksum: 172aa57e7
 
-Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 2453.055 ; gain = 0.000
+Time (s): cpu = 00:00:58 ; elapsed = 00:00:36 . Memory (MB): peak = 2444.957 ; gain = 0.000
+
+Phase 3.4 Pipeline Register Optimization
+Phase 3.4 Pipeline Register Optimization | Checksum: 115d679ee
+
+Time (s): cpu = 00:00:58 ; elapsed = 00:00:36 . Memory (MB): peak = 2444.957 ; gain = 0.000
+
+Phase 3.5 Fast Optimization
+Phase 3.5 Fast Optimization | Checksum: 16e1e6c4a
+
+Time (s): cpu = 00:01:04 ; elapsed = 00:00:40 . Memory (MB): peak = 2444.957 ; gain = 0.000
+
+Phase 3.6 Small Shape Detail Placement
+Phase 3.6 Small Shape Detail Placement | Checksum: 1cb2614af
+
+Time (s): cpu = 00:01:12 ; elapsed = 00:00:48 . Memory (MB): peak = 2444.957 ; gain = 0.000
+
+Phase 3.7 Re-assign LUT pins
+Phase 3.7 Re-assign LUT pins | Checksum: 1788957f3
+
+Time (s): cpu = 00:01:14 ; elapsed = 00:00:50 . Memory (MB): peak = 2444.957 ; gain = 0.000
+
+Phase 3.8 Pipeline Register Optimization
+Phase 3.8 Pipeline Register Optimization | Checksum: 1cbc5940f
+
+Time (s): cpu = 00:01:14 ; elapsed = 00:00:50 . Memory (MB): peak = 2444.957 ; gain = 0.000
+
+Phase 3.9 Fast Optimization
+Phase 3.9 Fast Optimization | Checksum: 250806e00
+
+Time (s): cpu = 00:01:23 ; elapsed = 00:00:56 . Memory (MB): peak = 2444.957 ; gain = 0.000
+Phase 3 Detail Placement | Checksum: 250806e00
+
+Time (s): cpu = 00:01:23 ; elapsed = 00:00:56 . Memory (MB): peak = 2444.957 ; gain = 0.000
+
+Phase 4 Post Placement Optimization and Clean-Up
+
+Phase 4.1 Post Commit Optimization
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+
+Phase 4.1.1 Post Placement Optimization
+Post Placement Optimization Initialization | Checksum: 1c21f3d35
+
+Phase 4.1.1.1 BUFG Insertion
+INFO: [Place 46-33] Processed net design_1_i/v_tc_0/U0/U_VIDEO_CTRL/GEN_HAS_IRQ.irq_i_1_n_0, BUFG insertion was skipped due to placement/routing conflicts.
+INFO: [Place 46-56] BUFG insertion identified 1 candidate nets. Inserted BUFG: 0, Replicated BUFG Driver: 0, Skipped due to Placement/Routing Conflicts: 1, Skipped due to Timing Degradation: 0, Skipped due to Illegal Netlist: 0.
+Phase 4.1.1.1 BUFG Insertion | Checksum: 1c21f3d35
+
+Time (s): cpu = 00:01:34 ; elapsed = 00:01:03 . Memory (MB): peak = 2444.957 ; gain = 0.000
+INFO: [Place 30-746] Post Placement Timing Summary WNS=-6.925. For the most accurate timing information please run report_timing.
+Phase 4.1.1 Post Placement Optimization | Checksum: 1fd2cc754
+
+Time (s): cpu = 00:02:27 ; elapsed = 00:01:53 . Memory (MB): peak = 2444.957 ; gain = 0.000
+Phase 4.1 Post Commit Optimization | Checksum: 1fd2cc754
+
+Time (s): cpu = 00:02:27 ; elapsed = 00:01:53 . Memory (MB): peak = 2444.957 ; gain = 0.000
+
+Phase 4.2 Post Placement Cleanup
+Phase 4.2 Post Placement Cleanup | Checksum: 1fd2cc754
+
+Time (s): cpu = 00:02:28 ; elapsed = 00:01:54 . Memory (MB): peak = 2444.957 ; gain = 0.000
+
+Phase 4.3 Placer Reporting
+Phase 4.3 Placer Reporting | Checksum: 1fd2cc754
+
+Time (s): cpu = 00:02:28 ; elapsed = 00:01:54 . Memory (MB): peak = 2444.957 ; gain = 0.000
+
+Phase 4.4 Final Placement Cleanup
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.024 . Memory (MB): peak = 2444.957 ; gain = 0.000
+Phase 4.4 Final Placement Cleanup | Checksum: 1cf91756e
+
+Time (s): cpu = 00:02:28 ; elapsed = 00:01:54 . Memory (MB): peak = 2444.957 ; gain = 0.000
+Phase 4 Post Placement Optimization and Clean-Up | Checksum: 1cf91756e
+
+Time (s): cpu = 00:02:28 ; elapsed = 00:01:54 . Memory (MB): peak = 2444.957 ; gain = 0.000
+Ending Placer Task | Checksum: 116a2b9c6
+
+Time (s): cpu = 00:02:28 ; elapsed = 00:01:54 . Memory (MB): peak = 2444.957 ; gain = 0.000
 INFO: [Common 17-83] Releasing license: Implementation
-199 Infos, 205 Warnings, 34 Critical Warnings and 12 Errors encountered.
-place_design failed
-ERROR: [Common 17-69] Command failed: Placer could not place all instances
-INFO: [Common 17-206] Exiting Vivado at Wed Aug 26 19:35:09 2020...
+217 Infos, 206 Warnings, 32 Critical Warnings and 0 Errors encountered.
+place_design completed successfully
+place_design: Time (s): cpu = 00:02:32 ; elapsed = 00:01:57 . Memory (MB): peak = 2444.957 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.022 . Memory (MB): peak = 2444.957 ; gain = 0.000
+INFO: [Timing 38-480] Writing timing data to binary archive.
+Writing placer database...
+Writing XDEF routing.
+Writing XDEF routing logical nets.
+Writing XDEF routing special nets.
+Write XDEF Complete: Time (s): cpu = 00:00:08 ; elapsed = 00:00:02 . Memory (MB): peak = 2444.957 ; gain = 0.000
+INFO: [Common 17-1381] The checkpoint 'C:/Users/ivr/Documents/GitHub/Zybo_mipi/zybo_vdma/zybo_vdma.runs/impl_1/design_1_wrapper_placed.dcp' has been generated.
+write_checkpoint: Time (s): cpu = 00:00:13 ; elapsed = 00:00:06 . Memory (MB): peak = 2444.957 ; gain = 0.000
+INFO: [runtcl-4] Executing : report_io -file design_1_wrapper_io_placed.rpt
+report_io: Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.081 . Memory (MB): peak = 2444.957 ; gain = 0.000
+INFO: [runtcl-4] Executing : report_utilization -file design_1_wrapper_utilization_placed.rpt -pb design_1_wrapper_utilization_placed.pb
+INFO: [runtcl-4] Executing : report_control_sets -verbose -file design_1_wrapper_control_sets_placed.rpt
+report_control_sets: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.098 . Memory (MB): peak = 2444.957 ; gain = 0.000
+Command: phys_opt_design
+Attempting to get a license for feature 'Implementation' and/or device 'xc7z020'
+INFO: [Common 17-349] Got license for feature 'Implementation' and/or device 'xc7z020'
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.018 . Memory (MB): peak = 2444.957 ; gain = 0.000
+
+Starting Physical Synthesis Task
+
+Phase 1 Physical Synthesis Initialization
+INFO: [Physopt 32-721] Multithreading enabled for phys_opt_design using a maximum of 2 CPUs
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-6.925 | TNS=-535.817 |
+Phase 1 Physical Synthesis Initialization | Checksum: 1ba4764d5
+
+Time (s): cpu = 00:00:12 ; elapsed = 00:00:05 . Memory (MB): peak = 2444.957 ; gain = 0.000
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-6.925 | TNS=-535.817 |
+
+Phase 2 DSP Register Optimization
+INFO: [Physopt 32-456] No candidate cells for DSP register optimization found in the design.
+INFO: [Physopt 32-775] End 2 Pass. Optimized 0 net or cell. Created 0 new cell, deleted 0 existing cell and moved 0 existing cell
+Phase 2 DSP Register Optimization | Checksum: 1ba4764d5
+
+Time (s): cpu = 00:00:12 ; elapsed = 00:00:05 . Memory (MB): peak = 2444.957 ; gain = 0.000
+
+Phase 3 Critical Path Optimization
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-6.925 | TNS=-535.817 |
+INFO: [Physopt 32-702] Processed net design_1_i/v_axi4s_vid_out_0/inst/COUPLER_INST/generate_sync_fifo.FIFO_INST/XPM_FIFO_SYNC_INST/xpm_fifo_base_inst/rdp_inst/count_value_i_reg[10]_0[9]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-81] Processed net design_1_i/v_tc_0/U0/U_TC_TOP/GEN_GENERATOR.U_TC_GEN/active_video_reg_0. Replicated 1 times.
+INFO: [Physopt 32-735] Processed net design_1_i/v_tc_0/U0/U_TC_TOP/GEN_GENERATOR.U_TC_GEN/active_video_reg_0. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-6.896 | TNS=-532.117 |
+INFO: [Physopt 32-662] Processed net design_1_i/v_tc_0/U0/U_TC_TOP/GEN_GENERATOR.U_TC_GEN/active_video_reg_0.  Did not re-place instance design_1_i/v_tc_0/U0/U_TC_TOP/GEN_GENERATOR.U_TC_GEN/active_video_reg
+INFO: [Physopt 32-702] Processed net design_1_i/v_tc_0/U0/U_TC_TOP/GEN_GENERATOR.U_TC_GEN/active_video_reg_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net design_1_i/v_axi4s_vid_out_0/inst/COUPLER_INST/generate_sync_fifo.FIFO_INST/XPM_FIFO_SYNC_INST/xpm_fifo_base_inst/rdp_inst/count_value_i_reg[7]_i_1__0_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net design_1_i/v_axi4s_vid_out_0/inst/COUPLER_INST/generate_sync_fifo.FIFO_INST/XPM_FIFO_SYNC_INST/xpm_fifo_base_inst/rdp_inst/count_value_i_reg[3]_i_1__0_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-735] Processed net design_1_i/v_axi4s_vid_out_0/inst/COUPLER_INST/generate_sync_fifo.FIFO_INST/XPM_FIFO_SYNC_INST/xpm_fifo_base_inst/rdp_inst/count_value_i[3]_i_2__0_n_0. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-6.652 | TNS=-527.486 |
+INFO: [Physopt 32-702] Processed net design_1_i/v_axi4s_vid_out_0/inst/COUPLER_INST/generate_sync_fifo.FIFO_INST/XPM_FIFO_SYNC_INST/xpm_fifo_base_inst/rdpp1_inst/count_value_i_reg_n_0_[9]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-662] Processed net design_1_i/v_axi4s_vid_out_0/inst/COUPLER_INST/generate_sync_fifo.FIFO_INST/XPM_FIFO_SYNC_INST/xpm_fifo_base_inst/rdpp1_inst/count_value_i[9]_i_2__0_n_0.  Did not re-place instance design_1_i/v_axi4s_vid_out_0/inst/COUPLER_INST/generate_sync_fifo.FIFO_INST/XPM_FIFO_SYNC_INST/xpm_fifo_base_inst/rdpp1_inst/count_value_i[9]_i_2__0
+INFO: [Physopt 32-710] Processed net design_1_i/v_axi4s_vid_out_0/inst/COUPLER_INST/generate_sync_fifo.FIFO_INST/XPM_FIFO_SYNC_INST/xpm_fifo_base_inst/rdpp1_inst/count_value_i[9]_i_1__0_n_0. Critical path length was reduced through logic transformation on cell design_1_i/v_axi4s_vid_out_0/inst/COUPLER_INST/generate_sync_fifo.FIFO_INST/XPM_FIFO_SYNC_INST/xpm_fifo_base_inst/rdpp1_inst/count_value_i[9]_i_1__0_comp.
+INFO: [Physopt 32-735] Processed net design_1_i/v_axi4s_vid_out_0/inst/COUPLER_INST/generate_sync_fifo.FIFO_INST/XPM_FIFO_SYNC_INST/xpm_fifo_base_inst/rdpp1_inst/count_value_i[9]_i_2__0_n_0. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-6.599 | TNS=-527.316 |
+INFO: [Physopt 32-702] Processed net design_1_i/v_axi4s_vid_out_0/inst/COUPLER_INST/generate_sync_fifo.FIFO_INST/XPM_FIFO_SYNC_INST/xpm_fifo_base_inst/rdpp1_inst/Q[1]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-662] Processed net design_1_i/v_axi4s_vid_out_0/inst/COUPLER_INST/generate_sync_fifo.FIFO_INST/XPM_FIFO_SYNC_INST/xpm_fifo_base_inst/rdpp1_inst/count_value_i[9]_i_2__0_n_0.  Did not re-place instance design_1_i/v_axi4s_vid_out_0/inst/COUPLER_INST/generate_sync_fifo.FIFO_INST/XPM_FIFO_SYNC_INST/xpm_fifo_base_inst/rdpp1_inst/count_value_i[9]_i_2__0
+INFO: [Physopt 32-572] Net design_1_i/v_axi4s_vid_out_0/inst/COUPLER_INST/generate_sync_fifo.FIFO_INST/XPM_FIFO_SYNC_INST/xpm_fifo_base_inst/rdpp1_inst/count_value_i[9]_i_2__0_n_0 was not replicated.
+Resolution: phys_opt_design can be forced to replicate a net driver using the option -force_replication_on_nets <list of net objects>.
+INFO: [Physopt 32-702] Processed net design_1_i/v_axi4s_vid_out_0/inst/COUPLER_INST/generate_sync_fifo.FIFO_INST/XPM_FIFO_SYNC_INST/xpm_fifo_base_inst/rdpp1_inst/count_value_i[9]_i_2__0_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-662] Processed net design_1_i/v_axi4s_vid_out_0/inst/COUPLER_INST/generate_sync_fifo.FIFO_INST/XPM_FIFO_SYNC_INST/xpm_fifo_base_inst/rdpp1_inst/FSM_sequential_gen_fwft.curr_fwft_state_reg[0].  Did not re-place instance design_1_i/v_axi4s_vid_out_0/inst/COUPLER_INST/generate_sync_fifo.FIFO_INST/XPM_FIFO_SYNC_INST/xpm_fifo_base_inst/rdpp1_inst/gen_pntr_flags_cc.gen_full_rst_val.ram_full_i_i_4
+INFO: [Physopt 32-710] Processed net design_1_i/v_axi4s_vid_out_0/inst/COUPLER_INST/generate_sync_fifo.FIFO_INST/XPM_FIFO_SYNC_INST/xpm_fifo_base_inst/rdpp1_inst/count_value_i[9]_i_2__0_n_0. Critical path length was reduced through logic transformation on cell design_1_i/v_axi4s_vid_out_0/inst/COUPLER_INST/generate_sync_fifo.FIFO_INST/XPM_FIFO_SYNC_INST/xpm_fifo_base_inst/rdpp1_inst/count_value_i[9]_i_2__0_comp_1.
+INFO: [Physopt 32-735] Processed net design_1_i/v_axi4s_vid_out_0/inst/COUPLER_INST/generate_sync_fifo.FIFO_INST/XPM_FIFO_SYNC_INST/xpm_fifo_base_inst/rdpp1_inst/FSM_sequential_gen_fwft.curr_fwft_state_reg[0]. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-6.558 | TNS=-525.406 |
+INFO: [Physopt 32-702] Processed net design_1_i/v_axi4s_vid_out_0/inst/COUPLER_INST/generate_sync_fifo.FIFO_INST/XPM_FIFO_SYNC_INST/xpm_fifo_base_inst/gen_sdpram.xpm_memory_base_inst/doutb[0]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-572] Net design_1_i/v_axi4s_vid_out_0/inst/SYNC_INST/E[0] was not replicated.
+Resolution: phys_opt_design can be forced to replicate a net driver using the option -force_replication_on_nets <list of net objects>.
+INFO: [Physopt 32-662] Processed net design_1_i/v_axi4s_vid_out_0/inst/SYNC_INST/E[0].  Did not re-place instance design_1_i/v_axi4s_vid_out_0/inst/SYNC_INST/in_data_mux[23]_i_1
+INFO: [Physopt 32-710] Processed net design_1_i/v_axi4s_vid_out_0/inst/COUPLER_INST/generate_sync_fifo.FIFO_INST/XPM_FIFO_SYNC_INST/xpm_fifo_base_inst/rdp_inst/E[0]. Critical path length was reduced through logic transformation on cell design_1_i/v_axi4s_vid_out_0/inst/COUPLER_INST/generate_sync_fifo.FIFO_INST/XPM_FIFO_SYNC_INST/xpm_fifo_base_inst/rdp_inst/gen_sdpram.xpm_memory_base_inst_i_2_comp.
+INFO: [Physopt 32-735] Processed net design_1_i/v_axi4s_vid_out_0/inst/SYNC_INST/E[0]. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-6.479 | TNS=-506.782 |
+INFO: [Physopt 32-702] Processed net design_1_i/v_axi4s_vid_out_0/inst/COUPLER_INST/generate_sync_fifo.FIFO_INST/XPM_FIFO_SYNC_INST/xpm_fifo_base_inst/rdp_inst/count_value_i[3]_i_2__0_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-572] Net design_1_i/v_axi4s_vid_out_0/inst/SYNC_INST/E[0] was not replicated.
+Resolution: phys_opt_design can be forced to replicate a net driver using the option -force_replication_on_nets <list of net objects>.
+INFO: [Physopt 32-662] Processed net design_1_i/v_axi4s_vid_out_0/inst/SYNC_INST/E[0].  Did not re-place instance design_1_i/v_axi4s_vid_out_0/inst/SYNC_INST/in_data_mux[23]_i_1
+INFO: [Physopt 32-710] Processed net design_1_i/v_axi4s_vid_out_0/inst/COUPLER_INST/generate_sync_fifo.FIFO_INST/XPM_FIFO_SYNC_INST/xpm_fifo_base_inst/rdp_inst/count_value_i[3]_i_2__0_n_0. Critical path length was reduced through logic transformation on cell design_1_i/v_axi4s_vid_out_0/inst/COUPLER_INST/generate_sync_fifo.FIFO_INST/XPM_FIFO_SYNC_INST/xpm_fifo_base_inst/rdp_inst/count_value_i[3]_i_2__0_comp.
+INFO: [Physopt 32-735] Processed net design_1_i/v_axi4s_vid_out_0/inst/SYNC_INST/E[0]. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-6.475 | TNS=-499.205 |
+INFO: [Physopt 32-662] Processed net design_1_i/v_axi4s_vid_out_0/inst/COUPLER_INST/generate_sync_fifo.FIFO_INST/XPM_FIFO_SYNC_INST/xpm_fifo_base_inst/rdpp1_inst/FSM_sequential_gen_fwft.curr_fwft_state_reg[0].  Did not re-place instance design_1_i/v_axi4s_vid_out_0/inst/COUPLER_INST/generate_sync_fifo.FIFO_INST/XPM_FIFO_SYNC_INST/xpm_fifo_base_inst/rdpp1_inst/gen_pntr_flags_cc.gen_full_rst_val.ram_full_i_i_4
+INFO: [Physopt 32-710] Processed net design_1_i/v_axi4s_vid_out_0/inst/COUPLER_INST/generate_sync_fifo.FIFO_INST/XPM_FIFO_SYNC_INST/xpm_fifo_base_inst/rdpp1_inst/count_value_i[9]_i_1__0_n_0. Critical path length was reduced through logic transformation on cell design_1_i/v_axi4s_vid_out_0/inst/COUPLER_INST/generate_sync_fifo.FIFO_INST/XPM_FIFO_SYNC_INST/xpm_fifo_base_inst/rdpp1_inst/count_value_i[9]_i_1__0_comp_1.
+INFO: [Physopt 32-735] Processed net design_1_i/v_axi4s_vid_out_0/inst/COUPLER_INST/generate_sync_fifo.FIFO_INST/XPM_FIFO_SYNC_INST/xpm_fifo_base_inst/rdpp1_inst/FSM_sequential_gen_fwft.curr_fwft_state_reg[0]. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-6.460 | TNS=-498.568 |
+INFO: [Physopt 32-702] Processed net design_1_i/v_axi4s_vid_out_0/inst/COUPLER_INST/generate_sync_fifo.FIFO_INST/XPM_FIFO_SYNC_INST/xpm_fifo_base_inst/full. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-662] Processed net design_1_i/v_axi4s_vid_out_0/inst/COUPLER_INST/generate_sync_fifo.FIFO_INST/XPM_FIFO_SYNC_INST/xpm_fifo_base_inst/rdpp1_inst/FSM_sequential_gen_fwft.curr_fwft_state_reg[0].  Did not re-place instance design_1_i/v_axi4s_vid_out_0/inst/COUPLER_INST/generate_sync_fifo.FIFO_INST/XPM_FIFO_SYNC_INST/xpm_fifo_base_inst/rdpp1_inst/gen_pntr_flags_cc.gen_full_rst_val.ram_full_i_i_4
+INFO: [Physopt 32-710] Processed net design_1_i/v_axi4s_vid_out_0/inst/COUPLER_INST/generate_sync_fifo.FIFO_INST/XPM_FIFO_SYNC_INST/xpm_fifo_base_inst/wrpp1_inst/gen_pntr_flags_cc.gen_full_rst_val.ram_full_i_reg. Critical path length was reduced through logic transformation on cell design_1_i/v_axi4s_vid_out_0/inst/COUPLER_INST/generate_sync_fifo.FIFO_INST/XPM_FIFO_SYNC_INST/xpm_fifo_base_inst/wrpp1_inst/gen_pntr_flags_cc.gen_full_rst_val.ram_full_i_i_1_comp.
+INFO: [Physopt 32-735] Processed net design_1_i/v_axi4s_vid_out_0/inst/COUPLER_INST/generate_sync_fifo.FIFO_INST/XPM_FIFO_SYNC_INST/xpm_fifo_base_inst/rdpp1_inst/FSM_sequential_gen_fwft.curr_fwft_state_reg[0]. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-6.456 | TNS=-497.805 |
+INFO: [Physopt 32-702] Processed net design_1_i/v_axi4s_vid_out_0/inst/COUPLER_INST/generate_sync_fifo.FIFO_INST/XPM_FIFO_SYNC_INST/xpm_fifo_base_inst/ram_empty_i. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-662] Processed net design_1_i/v_axi4s_vid_out_0/inst/COUPLER_INST/generate_sync_fifo.FIFO_INST/XPM_FIFO_SYNC_INST/xpm_fifo_base_inst/rdpp1_inst/FSM_sequential_gen_fwft.curr_fwft_state_reg[0].  Did not re-place instance design_1_i/v_axi4s_vid_out_0/inst/COUPLER_INST/generate_sync_fifo.FIFO_INST/XPM_FIFO_SYNC_INST/xpm_fifo_base_inst/rdpp1_inst/gen_pntr_flags_cc.gen_full_rst_val.ram_full_i_i_4
+INFO: [Physopt 32-710] Processed net design_1_i/v_axi4s_vid_out_0/inst/COUPLER_INST/generate_sync_fifo.FIFO_INST/XPM_FIFO_SYNC_INST/xpm_fifo_base_inst/wrp_inst/ram_empty_i0. Critical path length was reduced through logic transformation on cell design_1_i/v_axi4s_vid_out_0/inst/COUPLER_INST/generate_sync_fifo.FIFO_INST/XPM_FIFO_SYNC_INST/xpm_fifo_base_inst/wrp_inst/gen_pntr_flags_cc.ram_empty_i_i_1_comp.
+INFO: [Physopt 32-735] Processed net design_1_i/v_axi4s_vid_out_0/inst/COUPLER_INST/generate_sync_fifo.FIFO_INST/XPM_FIFO_SYNC_INST/xpm_fifo_base_inst/rdpp1_inst/FSM_sequential_gen_fwft.curr_fwft_state_reg[0]. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-6.448 | TNS=-497.040 |
+INFO: [Physopt 32-702] Processed net design_1_i/v_axi4s_vid_out_0/inst/COUPLER_INST/generate_sync_fifo.FIFO_INST/XPM_FIFO_SYNC_INST/xpm_fifo_base_inst/rdpp1_inst/count_value_i_reg_n_0_[2]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-662] Processed net design_1_i/v_axi4s_vid_out_0/inst/COUPLER_INST/generate_sync_fifo.FIFO_INST/XPM_FIFO_SYNC_INST/xpm_fifo_base_inst/rdpp1_inst/FSM_sequential_gen_fwft.curr_fwft_state_reg[0].  Did not re-place instance design_1_i/v_axi4s_vid_out_0/inst/COUPLER_INST/generate_sync_fifo.FIFO_INST/XPM_FIFO_SYNC_INST/xpm_fifo_base_inst/rdpp1_inst/gen_pntr_flags_cc.gen_full_rst_val.ram_full_i_i_4
+INFO: [Physopt 32-572] Net design_1_i/v_axi4s_vid_out_0/inst/COUPLER_INST/generate_sync_fifo.FIFO_INST/XPM_FIFO_SYNC_INST/xpm_fifo_base_inst/rdpp1_inst/FSM_sequential_gen_fwft.curr_fwft_state_reg[0] was not replicated.
+Resolution: phys_opt_design can be forced to replicate a net driver using the option -force_replication_on_nets <list of net objects>.
+INFO: [Physopt 32-735] Processed net design_1_i/v_axi4s_vid_out_0/inst/COUPLER_INST/generate_sync_fifo.FIFO_INST/XPM_FIFO_SYNC_INST/xpm_fifo_base_inst/rdpp1_inst/FSM_sequential_gen_fwft.curr_fwft_state_reg[0]. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-6.353 | TNS=-496.410 |
+INFO: [Physopt 32-572] Net design_1_i/v_axi4s_vid_out_0/inst/SYNC_INST/E[0] was not replicated.
+Resolution: phys_opt_design can be forced to replicate a net driver using the option -force_replication_on_nets <list of net objects>.
+INFO: [Physopt 32-662] Processed net design_1_i/v_axi4s_vid_out_0/inst/SYNC_INST/E[0].  Did not re-place instance design_1_i/v_axi4s_vid_out_0/inst/SYNC_INST/in_data_mux[23]_i_1
+INFO: [Physopt 32-710] Processed net design_1_i/v_axi4s_vid_out_0/inst/COUPLER_INST/generate_sync_fifo.FIFO_INST/XPM_FIFO_SYNC_INST/xpm_fifo_base_inst/gen_fwft.ram_regout_en. Critical path length was reduced through logic transformation on cell design_1_i/v_axi4s_vid_out_0/inst/COUPLER_INST/generate_sync_fifo.FIFO_INST/XPM_FIFO_SYNC_INST/xpm_fifo_base_inst/gen_sdpram.xpm_memory_base_inst_i_3_comp.
+INFO: [Physopt 32-735] Processed net design_1_i/v_axi4s_vid_out_0/inst/SYNC_INST/E[0]. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-6.261 | TNS=-495.747 |
+INFO: [Physopt 32-702] Processed net design_1_i/v_axi4s_vid_out_0/inst/SYNC_INST/state[3]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-572] Net design_1_i/v_tc_0/U0/U_TC_TOP/GEN_GENERATOR.U_TC_GEN/active_video_reg_0_repN was not replicated.
+Resolution: phys_opt_design can be forced to replicate a net driver using the option -force_replication_on_nets <list of net objects>.
+INFO: [Physopt 32-662] Processed net design_1_i/v_tc_0/U0/U_TC_TOP/GEN_GENERATOR.U_TC_GEN/active_video_reg_0_repN.  Did not re-place instance design_1_i/v_tc_0/U0/U_TC_TOP/GEN_GENERATOR.U_TC_GEN/active_video_reg_replica
+INFO: [Physopt 32-572] Net design_1_i/v_tc_0/U0/U_TC_TOP/GEN_GENERATOR.U_TC_GEN/active_video_reg_0_repN was not replicated.
+Resolution: phys_opt_design can be forced to replicate a net driver using the option -force_replication_on_nets <list of net objects>.
+INFO: [Physopt 32-702] Processed net design_1_i/v_tc_0/U0/U_TC_TOP/GEN_GENERATOR.U_TC_GEN/active_video_reg_0_repN. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-662] Processed net design_1_i/v_axi4s_vid_out_0/inst/SYNC_INST/FSM_sequential_state[3]_i_2_n_0.  Did not re-place instance design_1_i/v_axi4s_vid_out_0/inst/SYNC_INST/FSM_sequential_state[3]_i_2
+INFO: [Physopt 32-710] Processed net design_1_i/v_axi4s_vid_out_0/inst/SYNC_INST/FSM_sequential_state[3]_i_1_n_0. Critical path length was reduced through logic transformation on cell design_1_i/v_axi4s_vid_out_0/inst/SYNC_INST/FSM_sequential_state[3]_i_1_comp.
+INFO: [Physopt 32-735] Processed net design_1_i/v_axi4s_vid_out_0/inst/SYNC_INST/FSM_sequential_state[3]_i_2_n_0. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-6.240 | TNS=-495.648 |
+INFO: [Physopt 32-662] Processed net design_1_i/v_axi4s_vid_out_0/inst/COUPLER_INST/generate_sync_fifo.FIFO_INST/XPM_FIFO_SYNC_INST/xpm_fifo_base_inst/rdpp1_inst/FSM_sequential_gen_fwft.curr_fwft_state_reg[0].  Did not re-place instance design_1_i/v_axi4s_vid_out_0/inst/COUPLER_INST/generate_sync_fifo.FIFO_INST/XPM_FIFO_SYNC_INST/xpm_fifo_base_inst/rdpp1_inst/gen_pntr_flags_cc.gen_full_rst_val.ram_full_i_i_4
+INFO: [Physopt 32-572] Net design_1_i/v_axi4s_vid_out_0/inst/COUPLER_INST/generate_sync_fifo.FIFO_INST/XPM_FIFO_SYNC_INST/xpm_fifo_base_inst/rdpp1_inst/FSM_sequential_gen_fwft.curr_fwft_state_reg[0] was not replicated.
+Resolution: phys_opt_design can be forced to replicate a net driver using the option -force_replication_on_nets <list of net objects>.
+INFO: [Physopt 32-702] Processed net design_1_i/v_axi4s_vid_out_0/inst/COUPLER_INST/generate_sync_fifo.FIFO_INST/XPM_FIFO_SYNC_INST/xpm_fifo_base_inst/rdpp1_inst/FSM_sequential_gen_fwft.curr_fwft_state_reg[0]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-572] Net design_1_i/v_axi4s_vid_out_0/inst/SYNC_INST/E[0] was not replicated.
+Resolution: phys_opt_design can be forced to replicate a net driver using the option -force_replication_on_nets <list of net objects>.
+INFO: [Physopt 32-662] Processed net design_1_i/v_axi4s_vid_out_0/inst/SYNC_INST/E[0].  Did not re-place instance design_1_i/v_axi4s_vid_out_0/inst/SYNC_INST/in_data_mux[23]_i_1
+INFO: [Physopt 32-710] Processed net design_1_i/v_axi4s_vid_out_0/inst/COUPLER_INST/generate_sync_fifo.FIFO_INST/XPM_FIFO_SYNC_INST/xpm_fifo_base_inst/rdpp1_inst/FSM_sequential_gen_fwft.curr_fwft_state_reg[0]. Critical path length was reduced through logic transformation on cell design_1_i/v_axi4s_vid_out_0/inst/COUPLER_INST/generate_sync_fifo.FIFO_INST/XPM_FIFO_SYNC_INST/xpm_fifo_base_inst/rdpp1_inst/gen_pntr_flags_cc.gen_full_rst_val.ram_full_i_i_4_comp_4.
+INFO: [Physopt 32-735] Processed net design_1_i/v_axi4s_vid_out_0/inst/SYNC_INST/E[0]. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-6.162 | TNS=-493.857 |
+INFO: [Physopt 32-663] Processed net design_1_i/v_axi4s_vid_out_0/inst/SYNC_INST/FSM_sequential_state[3]_i_7_n_0.  Re-placed instance design_1_i/v_axi4s_vid_out_0/inst/SYNC_INST/FSM_sequential_state[3]_i_7
+INFO: [Physopt 32-735] Processed net design_1_i/v_axi4s_vid_out_0/inst/SYNC_INST/FSM_sequential_state[3]_i_7_n_0. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-6.140 | TNS=-493.502 |
+INFO: [Physopt 32-572] Net design_1_i/v_axi4s_vid_out_0/inst/SYNC_INST/E[0] was not replicated.
+Resolution: phys_opt_design can be forced to replicate a net driver using the option -force_replication_on_nets <list of net objects>.
+INFO: [Physopt 32-662] Processed net design_1_i/v_axi4s_vid_out_0/inst/SYNC_INST/E[0].  Did not re-place instance design_1_i/v_axi4s_vid_out_0/inst/SYNC_INST/in_data_mux[23]_i_1
+INFO: [Physopt 32-710] Processed net design_1_i/v_axi4s_vid_out_0/inst/COUPLER_INST/generate_sync_fifo.FIFO_INST/XPM_FIFO_SYNC_INST/xpm_fifo_base_inst/rdpp1_inst/count_value_i[9]_i_2__0_n_0. Critical path length was reduced through logic transformation on cell design_1_i/v_axi4s_vid_out_0/inst/COUPLER_INST/generate_sync_fifo.FIFO_INST/XPM_FIFO_SYNC_INST/xpm_fifo_base_inst/rdpp1_inst/count_value_i[9]_i_2__0_comp_2.
+INFO: [Physopt 32-735] Processed net design_1_i/v_axi4s_vid_out_0/inst/SYNC_INST/E[0]. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-6.140 | TNS=-489.463 |
+INFO: [Physopt 32-702] Processed net design_1_i/v_axi4s_vid_out_0/inst/SYNC_INST/state[0]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-662] Processed net design_1_i/v_axi4s_vid_out_0/inst/SYNC_INST/FSM_sequential_state[0]_i_3_n_0.  Did not re-place instance design_1_i/v_axi4s_vid_out_0/inst/SYNC_INST/FSM_sequential_state[0]_i_3
+INFO: [Physopt 32-702] Processed net design_1_i/v_axi4s_vid_out_0/inst/SYNC_INST/FSM_sequential_state[0]_i_3_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-663] Processed net design_1_i/v_axi4s_vid_out_0/inst/SYNC_INST/FSM_sequential_state[3]_i_12_n_0.  Re-placed instance design_1_i/v_axi4s_vid_out_0/inst/SYNC_INST/FSM_sequential_state[3]_i_12
+INFO: [Physopt 32-735] Processed net design_1_i/v_axi4s_vid_out_0/inst/SYNC_INST/FSM_sequential_state[3]_i_12_n_0. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-6.135 | TNS=-489.425 |
+INFO: [Physopt 32-662] Processed net design_1_i/v_axi4s_vid_out_0/inst/SYNC_INST/FSM_sequential_state[3]_i_6_n_0.  Did not re-place instance design_1_i/v_axi4s_vid_out_0/inst/SYNC_INST/FSM_sequential_state[3]_i_6
+INFO: [Physopt 32-710] Processed net design_1_i/v_axi4s_vid_out_0/inst/SYNC_INST/FSM_sequential_state[3]_i_1_n_0. Critical path length was reduced through logic transformation on cell design_1_i/v_axi4s_vid_out_0/inst/SYNC_INST/FSM_sequential_state[3]_i_1_comp_1.
+INFO: [Physopt 32-735] Processed net design_1_i/v_axi4s_vid_out_0/inst/SYNC_INST/FSM_sequential_state[3]_i_6_n_0. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-6.105 | TNS=-489.389 |
+INFO: [Physopt 32-662] Processed net design_1_i/v_axi4s_vid_out_0/inst/SYNC_INST/FSM_sequential_state[3]_i_12_n_0.  Did not re-place instance design_1_i/v_axi4s_vid_out_0/inst/SYNC_INST/FSM_sequential_state[3]_i_12
+INFO: [Physopt 32-710] Processed net design_1_i/v_axi4s_vid_out_0/inst/SYNC_INST/FSM_sequential_state[0]_i_3_n_0. Critical path length was reduced through logic transformation on cell design_1_i/v_axi4s_vid_out_0/inst/SYNC_INST/FSM_sequential_state[0]_i_3_comp.
+INFO: [Physopt 32-735] Processed net design_1_i/v_axi4s_vid_out_0/inst/SYNC_INST/FSM_sequential_state[3]_i_12_n_0. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-6.096 | TNS=-489.245 |
+INFO: [Physopt 32-702] Processed net design_1_i/v_axi4s_vid_out_0/inst/COUPLER_INST/generate_sync_fifo.FIFO_INST/XPM_FIFO_SYNC_INST/xpm_fifo_base_inst/gen_fwft.rdpp1_inst/count_value_i_reg[1]_0[0]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-662] Processed net design_1_i/v_axi4s_vid_out_0/inst/COUPLER_INST/generate_sync_fifo.FIFO_INST/XPM_FIFO_SYNC_INST/xpm_fifo_base_inst/gen_fwft.rdpp1_inst/count_value_i[1]_i_2_n_0.  Did not re-place instance design_1_i/v_axi4s_vid_out_0/inst/COUPLER_INST/generate_sync_fifo.FIFO_INST/XPM_FIFO_SYNC_INST/xpm_fifo_base_inst/gen_fwft.rdpp1_inst/count_value_i[1]_i_2
+INFO: [Physopt 32-710] Processed net design_1_i/v_axi4s_vid_out_0/inst/COUPLER_INST/generate_sync_fifo.FIFO_INST/XPM_FIFO_SYNC_INST/xpm_fifo_base_inst/gen_fwft.rdpp1_inst/count_value_i[1]_i_1_n_0. Critical path length was reduced through logic transformation on cell design_1_i/v_axi4s_vid_out_0/inst/COUPLER_INST/generate_sync_fifo.FIFO_INST/XPM_FIFO_SYNC_INST/xpm_fifo_base_inst/gen_fwft.rdpp1_inst/count_value_i[1]_i_1_comp.
+INFO: [Physopt 32-735] Processed net design_1_i/v_axi4s_vid_out_0/inst/COUPLER_INST/generate_sync_fifo.FIFO_INST/XPM_FIFO_SYNC_INST/xpm_fifo_base_inst/gen_fwft.rdpp1_inst/count_value_i[1]_i_2_n_0. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-6.090 | TNS=-489.082 |
+INFO: [Physopt 32-662] Processed net design_1_i/v_axi4s_vid_out_0/inst/SYNC_INST/FSM_sequential_state[3]_i_5_n_0.  Did not re-place instance design_1_i/v_axi4s_vid_out_0/inst/SYNC_INST/FSM_sequential_state[3]_i_5
+INFO: [Physopt 32-735] Processed net design_1_i/v_axi4s_vid_out_0/inst/SYNC_INST/FSM_sequential_state[3]_i_5_n_0. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-6.023 | TNS=-489.015 |
+INFO: [Physopt 32-662] Processed net design_1_i/v_axi4s_vid_out_0/inst/SYNC_INST/FSM_sequential_state[3]_i_5_n_0.  Did not re-place instance design_1_i/v_axi4s_vid_out_0/inst/SYNC_INST/FSM_sequential_state[3]_i_5
+INFO: [Physopt 32-702] Processed net design_1_i/v_axi4s_vid_out_0/inst/SYNC_INST/FSM_sequential_state[3]_i_5_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-663] Processed net design_1_i/v_axi4s_vid_out_0/inst/SYNC_INST/FSM_sequential_state[3]_i_12_n_0.  Re-placed instance design_1_i/v_axi4s_vid_out_0/inst/SYNC_INST/FSM_sequential_state[3]_i_12
+INFO: [Physopt 32-735] Processed net design_1_i/v_axi4s_vid_out_0/inst/SYNC_INST/FSM_sequential_state[3]_i_12_n_0. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-6.021 | TNS=-489.013 |
+INFO: [Physopt 32-662] Processed net design_1_i/v_axi4s_vid_out_0/inst/SYNC_INST/FSM_sequential_state[3]_i_6_n_0_repN.  Did not re-place instance design_1_i/v_axi4s_vid_out_0/inst/SYNC_INST/FSM_sequential_state[3]_i_6_comp
+INFO: [Physopt 32-702] Processed net design_1_i/v_axi4s_vid_out_0/inst/SYNC_INST/FSM_sequential_state[3]_i_6_n_0_repN. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-662] Processed net design_1_i/v_axi4s_vid_out_0/inst/SYNC_INST/FSM_sequential_state[1]_i_4_n_0.  Did not re-place instance design_1_i/v_axi4s_vid_out_0/inst/SYNC_INST/FSM_sequential_state[1]_i_4
+INFO: [Physopt 32-710] Processed net design_1_i/v_axi4s_vid_out_0/inst/SYNC_INST/FSM_sequential_state[3]_i_6_n_0_repN. Critical path length was reduced through logic transformation on cell design_1_i/v_axi4s_vid_out_0/inst/SYNC_INST/FSM_sequential_state[3]_i_6_comp_2.
+INFO: [Physopt 32-735] Processed net design_1_i/v_axi4s_vid_out_0/inst/SYNC_INST/FSM_sequential_state[1]_i_4_n_0. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-6.001 | TNS=-488.993 |
+INFO: [Physopt 32-663] Processed net design_1_i/v_axi4s_vid_out_0/inst/SYNC_INST/FSM_sequential_state[3]_i_13_n_0.  Re-placed instance design_1_i/v_axi4s_vid_out_0/inst/SYNC_INST/FSM_sequential_state[3]_i_13
+INFO: [Physopt 32-735] Processed net design_1_i/v_axi4s_vid_out_0/inst/SYNC_INST/FSM_sequential_state[3]_i_13_n_0. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-5.975 | TNS=-488.967 |
+INFO: [Physopt 32-702] Processed net design_1_i/v_axi4s_vid_out_0/inst/SYNC_INST/state[1]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-662] Processed net design_1_i/v_axi4s_vid_out_0/inst/SYNC_INST/FSM_sequential_state[1]_i_5_n_0.  Did not re-place instance design_1_i/v_axi4s_vid_out_0/inst/SYNC_INST/FSM_sequential_state[1]_i_5
+INFO: [Physopt 32-710] Processed net design_1_i/v_axi4s_vid_out_0/inst/SYNC_INST/FSM_sequential_state[1]_i_1_n_0. Critical path length was reduced through logic transformation on cell design_1_i/v_axi4s_vid_out_0/inst/SYNC_INST/FSM_sequential_state[1]_i_1_comp.
+INFO: [Physopt 32-735] Processed net design_1_i/v_axi4s_vid_out_0/inst/SYNC_INST/FSM_sequential_state[1]_i_5_n_0. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-5.975 | TNS=-488.662 |
+INFO: [Physopt 32-662] Processed net design_1_i/v_axi4s_vid_out_0/inst/SYNC_INST/FSM_sequential_state[3]_i_12_n_0.  Did not re-place instance design_1_i/v_axi4s_vid_out_0/inst/SYNC_INST/FSM_sequential_state[3]_i_12
+INFO: [Physopt 32-710] Processed net design_1_i/v_axi4s_vid_out_0/inst/SYNC_INST/FSM_sequential_state[3]_i_5_n_0. Critical path length was reduced through logic transformation on cell design_1_i/v_axi4s_vid_out_0/inst/SYNC_INST/FSM_sequential_state[3]_i_5_comp.
+INFO: [Physopt 32-735] Processed net design_1_i/v_axi4s_vid_out_0/inst/SYNC_INST/FSM_sequential_state[3]_i_12_n_0. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-5.956 | TNS=-488.521 |
+INFO: [Physopt 32-662] Processed net design_1_i/v_axi4s_vid_out_0/inst/SYNC_INST/FSM_sequential_state[1]_i_4_n_0.  Did not re-place instance design_1_i/v_axi4s_vid_out_0/inst/SYNC_INST/FSM_sequential_state[1]_i_4
+INFO: [Physopt 32-710] Processed net design_1_i/v_axi4s_vid_out_0/inst/SYNC_INST/FSM_sequential_state[0]_i_3_n_0. Critical path length was reduced through logic transformation on cell design_1_i/v_axi4s_vid_out_0/inst/SYNC_INST/FSM_sequential_state[0]_i_3_comp_1.
+INFO: [Physopt 32-735] Processed net design_1_i/v_axi4s_vid_out_0/inst/SYNC_INST/FSM_sequential_state[1]_i_4_n_0. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-5.933 | TNS=-488.466 |
+INFO: [Physopt 32-572] Net design_1_i/v_axi4s_vid_out_0/inst/SYNC_INST/E[0] was not replicated.
+Resolution: phys_opt_design can be forced to replicate a net driver using the option -force_replication_on_nets <list of net objects>.
+INFO: [Physopt 32-662] Processed net design_1_i/v_axi4s_vid_out_0/inst/SYNC_INST/E[0].  Did not re-place instance design_1_i/v_axi4s_vid_out_0/inst/SYNC_INST/in_data_mux[23]_i_1
+INFO: [Physopt 32-735] Processed net design_1_i/v_axi4s_vid_out_0/inst/SYNC_INST/E[0]. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-5.915 | TNS=-478.269 |
+INFO: [Physopt 32-663] Processed net design_1_i/v_axi4s_vid_out_0/inst/SYNC_INST/FSM_sequential_state[0]_i_2_n_0.  Re-placed instance design_1_i/v_axi4s_vid_out_0/inst/SYNC_INST/FSM_sequential_state[0]_i_2
+INFO: [Physopt 32-735] Processed net design_1_i/v_axi4s_vid_out_0/inst/SYNC_INST/FSM_sequential_state[0]_i_2_n_0. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-5.858 | TNS=-478.212 |
+INFO: [Physopt 32-662] Processed net design_1_i/v_axi4s_vid_out_0/inst/SYNC_INST/FSM_sequential_state[0]_i_4_n_0.  Did not re-place instance design_1_i/v_axi4s_vid_out_0/inst/SYNC_INST/FSM_sequential_state[0]_i_4
+INFO: [Physopt 32-710] Processed net design_1_i/v_axi4s_vid_out_0/inst/SYNC_INST/FSM_sequential_state[0]_i_1_n_0. Critical path length was reduced through logic transformation on cell design_1_i/v_axi4s_vid_out_0/inst/SYNC_INST/FSM_sequential_state[0]_i_1_comp.
+INFO: [Physopt 32-735] Processed net design_1_i/v_axi4s_vid_out_0/inst/SYNC_INST/FSM_sequential_state[0]_i_4_n_0. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-5.834 | TNS=-478.186 |
+INFO: [Physopt 32-662] Processed net design_1_i/v_axi4s_vid_out_0/inst/SYNC_INST/FSM_sequential_state[3]_i_7_n_0.  Did not re-place instance design_1_i/v_axi4s_vid_out_0/inst/SYNC_INST/FSM_sequential_state[3]_i_7
+INFO: [Physopt 32-710] Processed net design_1_i/v_axi4s_vid_out_0/inst/SYNC_INST/FSM_sequential_state[3]_i_1_n_0. Critical path length was reduced through logic transformation on cell design_1_i/v_axi4s_vid_out_0/inst/SYNC_INST/FSM_sequential_state[3]_i_1_comp.
+INFO: [Physopt 32-735] Processed net design_1_i/v_axi4s_vid_out_0/inst/SYNC_INST/FSM_sequential_state[3]_i_7_n_0. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-5.833 | TNS=-478.169 |
+INFO: [Physopt 32-662] Processed net design_1_i/v_axi4s_vid_out_0/inst/SYNC_INST/FSM_sequential_state[0]_i_5_n_0.  Did not re-place instance design_1_i/v_axi4s_vid_out_0/inst/SYNC_INST/FSM_sequential_state[0]_i_5
+INFO: [Physopt 32-702] Processed net design_1_i/v_axi4s_vid_out_0/inst/SYNC_INST/FSM_sequential_state[0]_i_5_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-662] Processed net design_1_i/v_axi4s_vid_out_0/inst/SYNC_INST/FSM_sequential_state[0]_i_6_n_0.  Did not re-place instance design_1_i/v_axi4s_vid_out_0/inst/SYNC_INST/FSM_sequential_state[0]_i_6
+INFO: [Physopt 32-710] Processed net design_1_i/v_axi4s_vid_out_0/inst/SYNC_INST/FSM_sequential_state[0]_i_5_n_0. Critical path length was reduced through logic transformation on cell design_1_i/v_axi4s_vid_out_0/inst/SYNC_INST/FSM_sequential_state[0]_i_5_comp.
+INFO: [Physopt 32-735] Processed net design_1_i/v_axi4s_vid_out_0/inst/SYNC_INST/FSM_sequential_state[0]_i_6_n_0. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-5.811 | TNS=-478.029 |
+INFO: [Physopt 32-663] Processed net design_1_i/v_axi4s_vid_out_0/inst/SYNC_INST/FSM_sequential_state[3]_i_13_n_0.  Re-placed instance design_1_i/v_axi4s_vid_out_0/inst/SYNC_INST/FSM_sequential_state[3]_i_13
+INFO: [Physopt 32-735] Processed net design_1_i/v_axi4s_vid_out_0/inst/SYNC_INST/FSM_sequential_state[3]_i_13_n_0. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-5.792 | TNS=-478.010 |
+INFO: [Physopt 32-662] Processed net design_1_i/v_axi4s_vid_out_0/inst/SYNC_INST/FSM_sequential_state[3]_i_13_n_0.  Did not re-place instance design_1_i/v_axi4s_vid_out_0/inst/SYNC_INST/FSM_sequential_state[3]_i_13
+INFO: [Physopt 32-710] Processed net design_1_i/v_axi4s_vid_out_0/inst/SYNC_INST/FSM_sequential_state[3]_i_1_n_0. Critical path length was reduced through logic transformation on cell design_1_i/v_axi4s_vid_out_0/inst/SYNC_INST/FSM_sequential_state[3]_i_1_comp_2.
+INFO: [Physopt 32-735] Processed net design_1_i/v_axi4s_vid_out_0/inst/SYNC_INST/FSM_sequential_state[3]_i_13_n_0. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-5.780 | TNS=-477.879 |
+INFO: [Physopt 32-702] Processed net design_1_i/v_axi4s_vid_out_0/inst/COUPLER_INST/generate_sync_fifo.FIFO_INST/XPM_FIFO_SYNC_INST/xpm_fifo_base_inst/rdp_inst/count_value_i_reg[10]_i_1__0_n_6. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net design_1_i/clk_wiz_1/inst/clk_out1_design_1_clk_wiz_1_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-663] Processed net design_1_i/v_axi4s_vid_out_0/inst/FORMATTER_INST/vid_data[20].  Re-placed instance design_1_i/v_axi4s_vid_out_0/inst/FORMATTER_INST/in_data_mux_reg[20]
+INFO: [Physopt 32-735] Processed net design_1_i/v_axi4s_vid_out_0/inst/FORMATTER_INST/vid_data[20]. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-5.780 | TNS=-477.841 |
+INFO: [Physopt 32-663] Processed net design_1_i/v_axi4s_vid_out_0/inst/FORMATTER_INST/vid_data[2].  Re-placed instance design_1_i/v_axi4s_vid_out_0/inst/FORMATTER_INST/in_data_mux_reg[2]
+INFO: [Physopt 32-735] Processed net design_1_i/v_axi4s_vid_out_0/inst/FORMATTER_INST/vid_data[2]. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-5.780 | TNS=-477.803 |
+INFO: [Physopt 32-663] Processed net design_1_i/v_axi4s_vid_out_0/inst/FORMATTER_INST/vid_data[5].  Re-placed instance design_1_i/v_axi4s_vid_out_0/inst/FORMATTER_INST/in_data_mux_reg[5]
+INFO: [Physopt 32-735] Processed net design_1_i/v_axi4s_vid_out_0/inst/FORMATTER_INST/vid_data[5]. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-5.780 | TNS=-477.789 |
+INFO: [Physopt 32-663] Processed net design_1_i/v_axi4s_vid_out_0/inst/FORMATTER_INST/vid_vsync.  Re-placed instance design_1_i/v_axi4s_vid_out_0/inst/FORMATTER_INST/in_vsync_mux_reg
+INFO: [Physopt 32-735] Processed net design_1_i/v_axi4s_vid_out_0/inst/FORMATTER_INST/vid_vsync. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-5.780 | TNS=-477.409 |
+INFO: [Physopt 32-663] Processed net design_1_i/v_axi4s_vid_out_0/inst/FORMATTER_INST/vid_active_video.  Re-placed instance design_1_i/v_axi4s_vid_out_0/inst/FORMATTER_INST/in_de_mux_reg
+INFO: [Physopt 32-735] Processed net design_1_i/v_axi4s_vid_out_0/inst/FORMATTER_INST/vid_active_video. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-5.780 | TNS=-477.232 |
+INFO: [Physopt 32-702] Processed net design_1_i/v_axi4s_vid_out_0/inst/FORMATTER_INST/vblank_rising. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-663] Processed net design_1_i/v_tc_0/U0/U_TC_TOP/GEN_GENERATOR.U_TC_GEN/vblank_reg_0.  Re-placed instance design_1_i/v_tc_0/U0/U_TC_TOP/GEN_GENERATOR.U_TC_GEN/vblank_reg
+INFO: [Physopt 32-735] Processed net design_1_i/v_tc_0/U0/U_TC_TOP/GEN_GENERATOR.U_TC_GEN/vblank_reg_0. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-5.780 | TNS=-477.235 |
+INFO: [Physopt 32-662] Processed net design_1_i/v_tc_0/U0/U_TC_TOP/GEN_GENERATOR.U_TC_GEN/vblank_reg_0.  Did not re-place instance design_1_i/v_tc_0/U0/U_TC_TOP/GEN_GENERATOR.U_TC_GEN/vblank_reg
+INFO: [Physopt 32-572] Net design_1_i/v_tc_0/U0/U_TC_TOP/GEN_GENERATOR.U_TC_GEN/vblank_reg_0 was not replicated.
+Resolution: phys_opt_design can be forced to replicate a net driver using the option -force_replication_on_nets <list of net objects>.
+INFO: [Physopt 32-702] Processed net design_1_i/v_tc_0/U0/U_TC_TOP/GEN_GENERATOR.U_TC_GEN/vblank_reg_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net design_1_i/v_axi4s_vid_out_0/inst/FORMATTER_INST/vblank_rising_i_1_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net design_1_i/rgb2dvi_0/U0/DataEncoders[2].DataEncoder/n1d_1_reg_n_0_[2]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-662] Processed net design_1_i/v_axi4s_vid_out_0/inst/FORMATTER_INST/vid_data[16].  Did not re-place instance design_1_i/v_axi4s_vid_out_0/inst/FORMATTER_INST/in_data_mux_reg[16]
+INFO: [Physopt 32-572] Net design_1_i/v_axi4s_vid_out_0/inst/FORMATTER_INST/vid_data[16] was not replicated.
+Resolution: phys_opt_design can be forced to replicate a net driver using the option -force_replication_on_nets <list of net objects>.
+INFO: [Physopt 32-702] Processed net design_1_i/v_axi4s_vid_out_0/inst/FORMATTER_INST/vid_data[16]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-663] Processed net design_1_i/rgb2dvi_0/U0/DataEncoders[2].DataEncoder/n1d_1[3]_i_3_n_0.  Re-placed instance design_1_i/rgb2dvi_0/U0/DataEncoders[2].DataEncoder/n1d_1[3]_i_3
+INFO: [Physopt 32-735] Processed net design_1_i/rgb2dvi_0/U0/DataEncoders[2].DataEncoder/n1d_1[3]_i_3_n_0. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-5.780 | TNS=-477.124 |
+INFO: [Physopt 32-702] Processed net design_1_i/rgb2dvi_0/U0/DataEncoders[1].DataEncoder/n1d_1_reg_n_0_[1]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-662] Processed net design_1_i/v_axi4s_vid_out_0/inst/FORMATTER_INST/vid_data[5].  Did not re-place instance design_1_i/v_axi4s_vid_out_0/inst/FORMATTER_INST/in_data_mux_reg[5]
+INFO: [Physopt 32-572] Net design_1_i/v_axi4s_vid_out_0/inst/FORMATTER_INST/vid_data[5] was not replicated.
+Resolution: phys_opt_design can be forced to replicate a net driver using the option -force_replication_on_nets <list of net objects>.
+INFO: [Physopt 32-702] Processed net design_1_i/v_axi4s_vid_out_0/inst/FORMATTER_INST/vid_data[5]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-663] Processed net design_1_i/rgb2dvi_0/U0/DataEncoders[1].DataEncoder/n1d_1[1]_i_2_n_0.  Re-placed instance design_1_i/rgb2dvi_0/U0/DataEncoders[1].DataEncoder/n1d_1[1]_i_2
+INFO: [Physopt 32-735] Processed net design_1_i/rgb2dvi_0/U0/DataEncoders[1].DataEncoder/n1d_1[1]_i_2_n_0. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-5.780 | TNS=-477.100 |
+INFO: [Physopt 32-702] Processed net design_1_i/rgb2dvi_0/U0/DataEncoders[0].DataEncoder/n1d_1_reg_n_0_[2]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-662] Processed net design_1_i/v_axi4s_vid_out_0/inst/FORMATTER_INST/vid_data[11].  Did not re-place instance design_1_i/v_axi4s_vid_out_0/inst/FORMATTER_INST/in_data_mux_reg[11]
+INFO: [Physopt 32-572] Net design_1_i/v_axi4s_vid_out_0/inst/FORMATTER_INST/vid_data[11] was not replicated.
+Resolution: phys_opt_design can be forced to replicate a net driver using the option -force_replication_on_nets <list of net objects>.
+INFO: [Physopt 32-702] Processed net design_1_i/v_axi4s_vid_out_0/inst/FORMATTER_INST/vid_data[11]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-663] Processed net design_1_i/rgb2dvi_0/U0/DataEncoders[0].DataEncoder/n1d_1[3]_i_2_n_0.  Re-placed instance design_1_i/rgb2dvi_0/U0/DataEncoders[0].DataEncoder/n1d_1[3]_i_2
+INFO: [Physopt 32-735] Processed net design_1_i/rgb2dvi_0/U0/DataEncoders[0].DataEncoder/n1d_1[3]_i_2_n_0. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-5.780 | TNS=-477.035 |
+INFO: [Physopt 32-663] Processed net design_1_i/v_axi4s_vid_out_0/inst/FORMATTER_INST/vid_data[1].  Re-placed instance design_1_i/v_axi4s_vid_out_0/inst/FORMATTER_INST/in_data_mux_reg[1]
+INFO: [Physopt 32-735] Processed net design_1_i/v_axi4s_vid_out_0/inst/FORMATTER_INST/vid_data[1]. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-5.780 | TNS=-476.658 |
+INFO: [Physopt 32-662] Processed net design_1_i/rgb2dvi_0/U0/DataEncoders[0].DataEncoder/n1d_1[3]_i_2_n_0.  Did not re-place instance design_1_i/rgb2dvi_0/U0/DataEncoders[0].DataEncoder/n1d_1[3]_i_2
+INFO: [Physopt 32-81] Processed net design_1_i/rgb2dvi_0/U0/DataEncoders[0].DataEncoder/n1d_1[3]_i_2_n_0. Replicated 1 times.
+INFO: [Physopt 32-735] Processed net design_1_i/rgb2dvi_0/U0/DataEncoders[0].DataEncoder/n1d_1[3]_i_2_n_0. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-5.780 | TNS=-476.107 |
+INFO: [Physopt 32-662] Processed net design_1_i/rgb2dvi_0/U0/DataEncoders[2].DataEncoder/n1d_1[3]_i_3_n_0.  Did not re-place instance design_1_i/rgb2dvi_0/U0/DataEncoders[2].DataEncoder/n1d_1[3]_i_3
+INFO: [Physopt 32-710] Processed net design_1_i/rgb2dvi_0/U0/DataEncoders[2].DataEncoder/n1d_1[2]_i_1_n_0. Critical path length was reduced through logic transformation on cell design_1_i/rgb2dvi_0/U0/DataEncoders[2].DataEncoder/n1d_1[2]_i_1_comp.
+INFO: [Physopt 32-735] Processed net design_1_i/rgb2dvi_0/U0/DataEncoders[2].DataEncoder/n1d_1[3]_i_3_n_0. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-5.780 | TNS=-476.055 |
+INFO: [Physopt 32-702] Processed net design_1_i/rgb2dvi_0/U0/DataEncoders[2].DataEncoder/n1d_1_reg_n_0_[3]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-662] Processed net design_1_i/rgb2dvi_0/U0/DataEncoders[2].DataEncoder/n1d_1[3]_i_3_n_0.  Did not re-place instance design_1_i/rgb2dvi_0/U0/DataEncoders[2].DataEncoder/n1d_1[3]_i_3
+INFO: [Physopt 32-601] Processed net design_1_i/rgb2dvi_0/U0/DataEncoders[2].DataEncoder/n1d_1[3]_i_3_n_0. Net driver design_1_i/rgb2dvi_0/U0/DataEncoders[2].DataEncoder/n1d_1[3]_i_3 was replaced.
+INFO: [Physopt 32-735] Processed net design_1_i/rgb2dvi_0/U0/DataEncoders[2].DataEncoder/n1d_1[3]_i_3_n_0. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-5.780 | TNS=-475.985 |
+INFO: [Physopt 32-702] Processed net design_1_i/rgb2dvi_0/U0/DataEncoders[1].DataEncoder/n1d_1_reg_n_0_[2]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-662] Processed net design_1_i/v_axi4s_vid_out_0/inst/FORMATTER_INST/vid_data[0].  Did not re-place instance design_1_i/v_axi4s_vid_out_0/inst/FORMATTER_INST/in_data_mux_reg[0]
+INFO: [Physopt 32-572] Net design_1_i/v_axi4s_vid_out_0/inst/FORMATTER_INST/vid_data[0] was not replicated.
+Resolution: phys_opt_design can be forced to replicate a net driver using the option -force_replication_on_nets <list of net objects>.
+INFO: [Physopt 32-702] Processed net design_1_i/v_axi4s_vid_out_0/inst/FORMATTER_INST/vid_data[0]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-663] Processed net design_1_i/rgb2dvi_0/U0/DataEncoders[1].DataEncoder/n1d_1[3]_i_3_n_0.  Re-placed instance design_1_i/rgb2dvi_0/U0/DataEncoders[1].DataEncoder/n1d_1[3]_i_3
+INFO: [Physopt 32-735] Processed net design_1_i/rgb2dvi_0/U0/DataEncoders[1].DataEncoder/n1d_1[3]_i_3_n_0. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-5.780 | TNS=-475.709 |
+INFO: [Physopt 32-702] Processed net design_1_i/rgb2dvi_0/U0/DataEncoders[2].DataEncoder/n1d_1_reg_n_0_[1]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-662] Processed net design_1_i/v_axi4s_vid_out_0/inst/FORMATTER_INST/vid_data[17].  Did not re-place instance design_1_i/v_axi4s_vid_out_0/inst/FORMATTER_INST/in_data_mux_reg[17]
+INFO: [Physopt 32-572] Net design_1_i/v_axi4s_vid_out_0/inst/FORMATTER_INST/vid_data[17] was not replicated.
+Resolution: phys_opt_design can be forced to replicate a net driver using the option -force_replication_on_nets <list of net objects>.
+INFO: [Physopt 32-702] Processed net design_1_i/v_axi4s_vid_out_0/inst/FORMATTER_INST/vid_data[17]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-663] Processed net design_1_i/rgb2dvi_0/U0/DataEncoders[2].DataEncoder/n1d_1[3]_i_2_n_0.  Re-placed instance design_1_i/rgb2dvi_0/U0/DataEncoders[2].DataEncoder/n1d_1[3]_i_2
+INFO: [Physopt 32-735] Processed net design_1_i/rgb2dvi_0/U0/DataEncoders[2].DataEncoder/n1d_1[3]_i_2_n_0. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-5.780 | TNS=-475.635 |
+INFO: [Physopt 32-702] Processed net design_1_i/rgb2dvi_0/U0/DataEncoders[0].DataEncoder/n1d_1_reg_n_0_[3]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-662] Processed net design_1_i/v_axi4s_vid_out_0/inst/FORMATTER_INST/vid_data[8].  Did not re-place instance design_1_i/v_axi4s_vid_out_0/inst/FORMATTER_INST/in_data_mux_reg[8]
+INFO: [Physopt 32-572] Net design_1_i/v_axi4s_vid_out_0/inst/FORMATTER_INST/vid_data[8] was not replicated.
+Resolution: phys_opt_design can be forced to replicate a net driver using the option -force_replication_on_nets <list of net objects>.
+INFO: [Physopt 32-702] Processed net design_1_i/v_axi4s_vid_out_0/inst/FORMATTER_INST/vid_data[8]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-663] Processed net design_1_i/rgb2dvi_0/U0/DataEncoders[0].DataEncoder/n1d_1[3]_i_3_n_0.  Re-placed instance design_1_i/rgb2dvi_0/U0/DataEncoders[0].DataEncoder/n1d_1[3]_i_3
+INFO: [Physopt 32-735] Processed net design_1_i/rgb2dvi_0/U0/DataEncoders[0].DataEncoder/n1d_1[3]_i_3_n_0. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-5.780 | TNS=-475.411 |
+INFO: [Physopt 32-662] Processed net design_1_i/rgb2dvi_0/U0/DataEncoders[2].DataEncoder/n1d_1[3]_i_2_n_0.  Did not re-place instance design_1_i/rgb2dvi_0/U0/DataEncoders[2].DataEncoder/n1d_1[3]_i_2
+INFO: [Physopt 32-601] Processed net design_1_i/rgb2dvi_0/U0/DataEncoders[2].DataEncoder/n1d_1[3]_i_2_n_0. Net driver design_1_i/rgb2dvi_0/U0/DataEncoders[2].DataEncoder/n1d_1[3]_i_2 was replaced.
+INFO: [Physopt 32-735] Processed net design_1_i/rgb2dvi_0/U0/DataEncoders[2].DataEncoder/n1d_1[3]_i_2_n_0. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-5.780 | TNS=-474.992 |
+INFO: [Physopt 32-662] Processed net design_1_i/rgb2dvi_0/U0/DataEncoders[2].DataEncoder/n1d_1[3]_i_3_n_0.  Did not re-place instance design_1_i/rgb2dvi_0/U0/DataEncoders[2].DataEncoder/n1d_1[3]_i_3
+INFO: [Physopt 32-572] Net design_1_i/rgb2dvi_0/U0/DataEncoders[2].DataEncoder/n1d_1[3]_i_3_n_0 was not replicated.
+Resolution: phys_opt_design can be forced to replicate a net driver using the option -force_replication_on_nets <list of net objects>.
+INFO: [Physopt 32-735] Processed net design_1_i/rgb2dvi_0/U0/DataEncoders[2].DataEncoder/n1d_1[3]_i_3_n_0. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-5.780 | TNS=-474.835 |
+INFO: [Physopt 32-662] Processed net design_1_i/rgb2dvi_0/U0/DataEncoders[1].DataEncoder/n1d_1[1]_i_2_n_0.  Did not re-place instance design_1_i/rgb2dvi_0/U0/DataEncoders[1].DataEncoder/n1d_1[1]_i_2
+INFO: [Physopt 32-710] Processed net design_1_i/rgb2dvi_0/U0/DataEncoders[1].DataEncoder/n1d_1[1]_i_1_n_0. Critical path length was reduced through logic transformation on cell design_1_i/rgb2dvi_0/U0/DataEncoders[1].DataEncoder/n1d_1[1]_i_1_comp.
+INFO: [Physopt 32-735] Processed net design_1_i/rgb2dvi_0/U0/DataEncoders[1].DataEncoder/n1d_1[1]_i_2_n_0. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-5.780 | TNS=-474.803 |
+INFO: [Physopt 32-702] Processed net design_1_i/rgb2dvi_0/U0/DataEncoders[0].DataEncoder/n1d_1_reg_n_0_[1]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-662] Processed net design_1_i/v_axi4s_vid_out_0/inst/FORMATTER_INST/vid_data[12].  Did not re-place instance design_1_i/v_axi4s_vid_out_0/inst/FORMATTER_INST/in_data_mux_reg[12]
+INFO: [Physopt 32-572] Net design_1_i/v_axi4s_vid_out_0/inst/FORMATTER_INST/vid_data[12] was not replicated.
+Resolution: phys_opt_design can be forced to replicate a net driver using the option -force_replication_on_nets <list of net objects>.
+INFO: [Physopt 32-702] Processed net design_1_i/v_axi4s_vid_out_0/inst/FORMATTER_INST/vid_data[12]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-663] Processed net design_1_i/rgb2dvi_0/U0/DataEncoders[0].DataEncoder/n1d_1[1]_i_2_n_0.  Re-placed instance design_1_i/rgb2dvi_0/U0/DataEncoders[0].DataEncoder/n1d_1[1]_i_2
+INFO: [Physopt 32-735] Processed net design_1_i/rgb2dvi_0/U0/DataEncoders[0].DataEncoder/n1d_1[1]_i_2_n_0. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-5.780 | TNS=-474.646 |
+INFO: [Physopt 32-662] Processed net design_1_i/v_axi4s_vid_out_0/inst/FORMATTER_INST/vid_data[2].  Did not re-place instance design_1_i/v_axi4s_vid_out_0/inst/FORMATTER_INST/in_data_mux_reg[2]
+INFO: [Physopt 32-572] Net design_1_i/v_axi4s_vid_out_0/inst/FORMATTER_INST/vid_data[2] was not replicated.
+Resolution: phys_opt_design can be forced to replicate a net driver using the option -force_replication_on_nets <list of net objects>.
+INFO: [Physopt 32-702] Processed net design_1_i/v_axi4s_vid_out_0/inst/FORMATTER_INST/vid_data[2]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-663] Processed net design_1_i/rgb2dvi_0/U0/DataEncoders[1].DataEncoder/n1d_1[3]_i_2_n_0.  Re-placed instance design_1_i/rgb2dvi_0/U0/DataEncoders[1].DataEncoder/n1d_1[3]_i_2
+INFO: [Physopt 32-735] Processed net design_1_i/rgb2dvi_0/U0/DataEncoders[1].DataEncoder/n1d_1[3]_i_2_n_0. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-5.780 | TNS=-474.373 |
+INFO: [Physopt 32-662] Processed net design_1_i/v_axi4s_vid_out_0/inst/FORMATTER_INST/vid_data[22].  Did not re-place instance design_1_i/v_axi4s_vid_out_0/inst/FORMATTER_INST/in_data_mux_reg[22]
+INFO: [Physopt 32-572] Net design_1_i/v_axi4s_vid_out_0/inst/FORMATTER_INST/vid_data[22] was not replicated.
+Resolution: phys_opt_design can be forced to replicate a net driver using the option -force_replication_on_nets <list of net objects>.
+INFO: [Physopt 32-702] Processed net design_1_i/v_axi4s_vid_out_0/inst/FORMATTER_INST/vid_data[22]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-663] Processed net design_1_i/rgb2dvi_0/U0/DataEncoders[2].DataEncoder/n1d_1[2]_i_2_n_0.  Re-placed instance design_1_i/rgb2dvi_0/U0/DataEncoders[2].DataEncoder/n1d_1[2]_i_2
+INFO: [Physopt 32-735] Processed net design_1_i/rgb2dvi_0/U0/DataEncoders[2].DataEncoder/n1d_1[2]_i_2_n_0. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-5.780 | TNS=-474.345 |
+INFO: [Physopt 32-662] Processed net design_1_i/v_axi4s_vid_out_0/inst/FORMATTER_INST/vid_data[20].  Did not re-place instance design_1_i/v_axi4s_vid_out_0/inst/FORMATTER_INST/in_data_mux_reg[20]
+INFO: [Physopt 32-572] Net design_1_i/v_axi4s_vid_out_0/inst/FORMATTER_INST/vid_data[20] was not replicated.
+Resolution: phys_opt_design can be forced to replicate a net driver using the option -force_replication_on_nets <list of net objects>.
+INFO: [Physopt 32-702] Processed net design_1_i/v_axi4s_vid_out_0/inst/FORMATTER_INST/vid_data[20]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-662] Processed net design_1_i/rgb2dvi_0/U0/DataEncoders[2].DataEncoder/n1d_1[1]_i_2_n_0.  Did not re-place instance design_1_i/rgb2dvi_0/U0/DataEncoders[2].DataEncoder/n1d_1[1]_i_2
+INFO: [Physopt 32-710] Processed net design_1_i/rgb2dvi_0/U0/DataEncoders[2].DataEncoder/n1d_1[1]_i_1_n_0. Critical path length was reduced through logic transformation on cell design_1_i/rgb2dvi_0/U0/DataEncoders[2].DataEncoder/n1d_1[1]_i_1_comp.
+INFO: [Physopt 32-735] Processed net design_1_i/rgb2dvi_0/U0/DataEncoders[2].DataEncoder/n1d_1[1]_i_2_n_0. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-5.780 | TNS=-474.322 |
+INFO: [Physopt 32-663] Processed net design_1_i/rgb2dvi_0/U0/DataEncoders[2].DataEncoder/n1d_1[3]_i_2_n_0.  Re-placed instance design_1_i/rgb2dvi_0/U0/DataEncoders[2].DataEncoder/n1d_1[3]_i_2
+INFO: [Physopt 32-735] Processed net design_1_i/rgb2dvi_0/U0/DataEncoders[2].DataEncoder/n1d_1[3]_i_2_n_0. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-5.780 | TNS=-474.314 |
+INFO: [Physopt 32-662] Processed net design_1_i/v_axi4s_vid_out_0/inst/FORMATTER_INST/vid_data[9].  Did not re-place instance design_1_i/v_axi4s_vid_out_0/inst/FORMATTER_INST/in_data_mux_reg[9]
+INFO: [Physopt 32-572] Net design_1_i/v_axi4s_vid_out_0/inst/FORMATTER_INST/vid_data[9] was not replicated.
+Resolution: phys_opt_design can be forced to replicate a net driver using the option -force_replication_on_nets <list of net objects>.
+INFO: [Physopt 32-702] Processed net design_1_i/v_axi4s_vid_out_0/inst/FORMATTER_INST/vid_data[9]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-663] Processed net design_1_i/rgb2dvi_0/U0/DataEncoders[0].DataEncoder/n1d_1[3]_i_2_n_0_repN.  Re-placed instance design_1_i/rgb2dvi_0/U0/DataEncoders[0].DataEncoder/n1d_1[3]_i_2_replica
+INFO: [Physopt 32-735] Processed net design_1_i/rgb2dvi_0/U0/DataEncoders[0].DataEncoder/n1d_1[3]_i_2_n_0_repN. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-5.780 | TNS=-474.308 |
+INFO: [Physopt 32-662] Processed net design_1_i/rgb2dvi_0/U0/DataEncoders[0].DataEncoder/n1d_1[3]_i_2_n_0_repN.  Did not re-place instance design_1_i/rgb2dvi_0/U0/DataEncoders[0].DataEncoder/n1d_1[3]_i_2_replica
+INFO: [Physopt 32-601] Processed net design_1_i/rgb2dvi_0/U0/DataEncoders[0].DataEncoder/n1d_1[3]_i_2_n_0_repN. Net driver design_1_i/rgb2dvi_0/U0/DataEncoders[0].DataEncoder/n1d_1[3]_i_2_replica was replaced.
+INFO: [Physopt 32-735] Processed net design_1_i/rgb2dvi_0/U0/DataEncoders[0].DataEncoder/n1d_1[3]_i_2_n_0_repN. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-5.780 | TNS=-474.128 |
+INFO: [Physopt 32-662] Processed net design_1_i/rgb2dvi_0/U0/DataEncoders[2].DataEncoder/n1d_1[3]_i_2_n_0.  Did not re-place instance design_1_i/rgb2dvi_0/U0/DataEncoders[2].DataEncoder/n1d_1[3]_i_2
+INFO: [Physopt 32-572] Net design_1_i/rgb2dvi_0/U0/DataEncoders[2].DataEncoder/n1d_1[3]_i_2_n_0 was not replicated.
+Resolution: phys_opt_design can be forced to replicate a net driver using the option -force_replication_on_nets <list of net objects>.
+INFO: [Physopt 32-702] Processed net design_1_i/rgb2dvi_0/U0/DataEncoders[2].DataEncoder/n1d_1[3]_i_2_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-662] Processed net design_1_i/rgb2dvi_0/U0/DataEncoders[2].DataEncoder/n1d_1[0]_i_2_n_0.  Did not re-place instance design_1_i/rgb2dvi_0/U0/DataEncoders[2].DataEncoder/n1d_1[0]_i_2
+INFO: [Physopt 32-601] Processed net design_1_i/rgb2dvi_0/U0/DataEncoders[2].DataEncoder/n1d_1[0]_i_2_n_0. Net driver design_1_i/rgb2dvi_0/U0/DataEncoders[2].DataEncoder/n1d_1[0]_i_2 was replaced.
+INFO: [Physopt 32-735] Processed net design_1_i/rgb2dvi_0/U0/DataEncoders[2].DataEncoder/n1d_1[0]_i_2_n_0. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-5.780 | TNS=-474.024 |
+INFO: [Physopt 32-662] Processed net design_1_i/v_axi4s_vid_out_0/inst/FORMATTER_INST/vid_data[19].  Did not re-place instance design_1_i/v_axi4s_vid_out_0/inst/FORMATTER_INST/in_data_mux_reg[19]
+INFO: [Physopt 32-572] Net design_1_i/v_axi4s_vid_out_0/inst/FORMATTER_INST/vid_data[19] was not replicated.
+Resolution: phys_opt_design can be forced to replicate a net driver using the option -force_replication_on_nets <list of net objects>.
+INFO: [Physopt 32-702] Processed net design_1_i/v_axi4s_vid_out_0/inst/FORMATTER_INST/vid_data[19]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-662] Processed net design_1_i/rgb2dvi_0/U0/DataEncoders[2].DataEncoder/n1d_1[3]_i_3_n_0.  Did not re-place instance design_1_i/rgb2dvi_0/U0/DataEncoders[2].DataEncoder/n1d_1[3]_i_3
+INFO: [Physopt 32-572] Net design_1_i/rgb2dvi_0/U0/DataEncoders[2].DataEncoder/n1d_1[3]_i_3_n_0 was not replicated.
+Resolution: phys_opt_design can be forced to replicate a net driver using the option -force_replication_on_nets <list of net objects>.
+INFO: [Physopt 32-702] Processed net design_1_i/rgb2dvi_0/U0/DataEncoders[2].DataEncoder/n1d_1[3]_i_3_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net design_1_i/rgb2dvi_0/U0/DataEncoders[2].DataEncoder/n1d_1[3]_i_1_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net design_1_i/clk_wiz_0/inst/clk_out2_design_1_clk_wiz_0_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net design_1_i/v_axi4s_vid_out_0/inst/COUPLER_INST/generate_sync_fifo.FIFO_INST/XPM_FIFO_SYNC_INST/xpm_fifo_base_inst/rdp_inst/count_value_i_reg[10]_0[9]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-663] Processed net design_1_i/v_tc_0/U0/U_TC_TOP/GEN_GENERATOR.U_TC_GEN/active_video_reg_0.  Re-placed instance design_1_i/v_tc_0/U0/U_TC_TOP/GEN_GENERATOR.U_TC_GEN/active_video_reg
+INFO: [Physopt 32-735] Processed net design_1_i/v_tc_0/U0/U_TC_TOP/GEN_GENERATOR.U_TC_GEN/active_video_reg_0. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-5.692 | TNS=-468.160 |
+INFO: [Physopt 32-702] Processed net design_1_i/v_axi4s_vid_out_0/inst/SYNC_INST/state[0]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-662] Processed net design_1_i/v_tc_0/U0/U_TC_TOP/GEN_GENERATOR.U_TC_GEN/active_video_reg_0_repN.  Did not re-place instance design_1_i/v_tc_0/U0/U_TC_TOP/GEN_GENERATOR.U_TC_GEN/active_video_reg_replica
+INFO: [Physopt 32-702] Processed net design_1_i/v_tc_0/U0/U_TC_TOP/GEN_GENERATOR.U_TC_GEN/active_video_reg_0_repN. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-662] Processed net design_1_i/v_axi4s_vid_out_0/inst/SYNC_INST/FSM_sequential_state[0]_i_2_n_0.  Did not re-place instance design_1_i/v_axi4s_vid_out_0/inst/SYNC_INST/FSM_sequential_state[0]_i_2
+INFO: [Physopt 32-702] Processed net design_1_i/v_axi4s_vid_out_0/inst/SYNC_INST/FSM_sequential_state[0]_i_2_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net design_1_i/v_axi4s_vid_out_0/inst/SYNC_INST/FSM_sequential_state[0]_i_1_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net design_1_i/clk_wiz_1/inst/clk_out1_design_1_clk_wiz_1_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net design_1_i/v_axi4s_vid_out_0/inst/FORMATTER_INST/vblank_rising. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-662] Processed net design_1_i/v_tc_0/U0/U_TC_TOP/GEN_GENERATOR.U_TC_GEN/vblank_reg_0.  Did not re-place instance design_1_i/v_tc_0/U0/U_TC_TOP/GEN_GENERATOR.U_TC_GEN/vblank_reg
+INFO: [Physopt 32-702] Processed net design_1_i/v_tc_0/U0/U_TC_TOP/GEN_GENERATOR.U_TC_GEN/vblank_reg_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net design_1_i/v_axi4s_vid_out_0/inst/FORMATTER_INST/vblank_rising_i_1_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net design_1_i/rgb2dvi_0/U0/DataEncoders[2].DataEncoder/n1d_1_reg_n_0_[3]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-663] Processed net design_1_i/v_axi4s_vid_out_0/inst/FORMATTER_INST/vid_data[19].  Re-placed instance design_1_i/v_axi4s_vid_out_0/inst/FORMATTER_INST/in_data_mux_reg[19]
+INFO: [Physopt 32-735] Processed net design_1_i/v_axi4s_vid_out_0/inst/FORMATTER_INST/vid_data[19]. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-5.692 | TNS=-467.979 |
+INFO: [Physopt 32-702] Processed net design_1_i/rgb2dvi_0/U0/DataEncoders[1].DataEncoder/n1d_1_reg_n_0_[3]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-663] Processed net design_1_i/v_axi4s_vid_out_0/inst/FORMATTER_INST/vid_data[7].  Re-placed instance design_1_i/v_axi4s_vid_out_0/inst/FORMATTER_INST/in_data_mux_reg[7]
+INFO: [Physopt 32-735] Processed net design_1_i/v_axi4s_vid_out_0/inst/FORMATTER_INST/vid_data[7]. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-5.692 | TNS=-467.868 |
+INFO: [Physopt 32-702] Processed net design_1_i/rgb2dvi_0/U0/DataEncoders[2].DataEncoder/n1d_1_reg_n_0_[2]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-663] Processed net design_1_i/v_axi4s_vid_out_0/inst/FORMATTER_INST/vid_data[21].  Re-placed instance design_1_i/v_axi4s_vid_out_0/inst/FORMATTER_INST/in_data_mux_reg[21]
+INFO: [Physopt 32-735] Processed net design_1_i/v_axi4s_vid_out_0/inst/FORMATTER_INST/vid_data[21]. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-5.692 | TNS=-467.837 |
+INFO: [Physopt 32-702] Processed net design_1_i/rgb2dvi_0/U0/DataEncoders[2].DataEncoder/n1d_1_reg_n_0_[1]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-662] Processed net design_1_i/v_axi4s_vid_out_0/inst/FORMATTER_INST/vid_data[21].  Did not re-place instance design_1_i/v_axi4s_vid_out_0/inst/FORMATTER_INST/in_data_mux_reg[21]
+INFO: [Physopt 32-702] Processed net design_1_i/v_axi4s_vid_out_0/inst/FORMATTER_INST/vid_data[21]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-663] Processed net design_1_i/rgb2dvi_0/U0/DataEncoders[2].DataEncoder/n1d_1[3]_i_2_n_0.  Re-placed instance design_1_i/rgb2dvi_0/U0/DataEncoders[2].DataEncoder/n1d_1[3]_i_2
+INFO: [Physopt 32-735] Processed net design_1_i/rgb2dvi_0/U0/DataEncoders[2].DataEncoder/n1d_1[3]_i_2_n_0. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-5.692 | TNS=-467.725 |
+INFO: [Physopt 32-663] Processed net design_1_i/v_axi4s_vid_out_0/inst/FORMATTER_INST/vid_data[0].  Re-placed instance design_1_i/v_axi4s_vid_out_0/inst/FORMATTER_INST/in_data_mux_reg[0]
+INFO: [Physopt 32-735] Processed net design_1_i/v_axi4s_vid_out_0/inst/FORMATTER_INST/vid_data[0]. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-5.692 | TNS=-467.701 |
+INFO: [Physopt 32-662] Processed net design_1_i/v_axi4s_vid_out_0/inst/FORMATTER_INST/vid_data[0].  Did not re-place instance design_1_i/v_axi4s_vid_out_0/inst/FORMATTER_INST/in_data_mux_reg[0]
+INFO: [Physopt 32-702] Processed net design_1_i/v_axi4s_vid_out_0/inst/FORMATTER_INST/vid_data[0]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-663] Processed net design_1_i/rgb2dvi_0/U0/DataEncoders[1].DataEncoder/n1d_1[3]_i_3_n_0.  Re-placed instance design_1_i/rgb2dvi_0/U0/DataEncoders[1].DataEncoder/n1d_1[3]_i_3
+INFO: [Physopt 32-735] Processed net design_1_i/rgb2dvi_0/U0/DataEncoders[1].DataEncoder/n1d_1[3]_i_3_n_0. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-5.692 | TNS=-467.476 |
+INFO: [Physopt 32-663] Processed net design_1_i/rgb2dvi_0/U0/DataEncoders[2].DataEncoder/n1d_1[2]_i_2_n_0.  Re-placed instance design_1_i/rgb2dvi_0/U0/DataEncoders[2].DataEncoder/n1d_1[2]_i_2
+INFO: [Physopt 32-735] Processed net design_1_i/rgb2dvi_0/U0/DataEncoders[2].DataEncoder/n1d_1[2]_i_2_n_0. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-5.692 | TNS=-467.455 |
+INFO: [Physopt 32-663] Processed net design_1_i/v_axi4s_vid_out_0/inst/FORMATTER_INST/vid_data[16].  Re-placed instance design_1_i/v_axi4s_vid_out_0/inst/FORMATTER_INST/in_data_mux_reg[16]
+INFO: [Physopt 32-735] Processed net design_1_i/v_axi4s_vid_out_0/inst/FORMATTER_INST/vid_data[16]. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-5.692 | TNS=-467.369 |
+INFO: [Physopt 32-662] Processed net design_1_i/v_axi4s_vid_out_0/inst/FORMATTER_INST/vid_data[16].  Did not re-place instance design_1_i/v_axi4s_vid_out_0/inst/FORMATTER_INST/in_data_mux_reg[16]
+INFO: [Physopt 32-702] Processed net design_1_i/v_axi4s_vid_out_0/inst/FORMATTER_INST/vid_data[16]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-662] Processed net design_1_i/rgb2dvi_0/U0/DataEncoders[2].DataEncoder/n1d_1[3]_i_3_n_0.  Did not re-place instance design_1_i/rgb2dvi_0/U0/DataEncoders[2].DataEncoder/n1d_1[3]_i_3
+INFO: [Physopt 32-702] Processed net design_1_i/rgb2dvi_0/U0/DataEncoders[2].DataEncoder/n1d_1[3]_i_3_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net design_1_i/rgb2dvi_0/U0/DataEncoders[2].DataEncoder/n1d_1[3]_i_1_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net design_1_i/clk_wiz_0/inst/clk_out2_design_1_clk_wiz_0_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-5.692 | TNS=-467.369 |
+Phase 3 Critical Path Optimization | Checksum: 1ba4764d5
+
+Time (s): cpu = 00:00:44 ; elapsed = 00:00:24 . Memory (MB): peak = 2444.957 ; gain = 0.000
+
+Phase 4 Critical Path Optimization
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-5.692 | TNS=-467.369 |
+INFO: [Physopt 32-702] Processed net design_1_i/v_axi4s_vid_out_0/inst/SYNC_INST/state[0]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-572] Net design_1_i/v_tc_0/U0/U_TC_TOP/GEN_GENERATOR.U_TC_GEN/active_video_reg_0_repN was not replicated.
+Resolution: phys_opt_design can be forced to replicate a net driver using the option -force_replication_on_nets <list of net objects>.
+INFO: [Physopt 32-662] Processed net design_1_i/v_tc_0/U0/U_TC_TOP/GEN_GENERATOR.U_TC_GEN/active_video_reg_0_repN.  Did not re-place instance design_1_i/v_tc_0/U0/U_TC_TOP/GEN_GENERATOR.U_TC_GEN/active_video_reg_replica
+INFO: [Physopt 32-81] Processed net design_1_i/v_tc_0/U0/U_TC_TOP/GEN_GENERATOR.U_TC_GEN/active_video_reg_0_repN. Replicated 1 times.
+INFO: [Physopt 32-735] Processed net design_1_i/v_tc_0/U0/U_TC_TOP/GEN_GENERATOR.U_TC_GEN/active_video_reg_0_repN. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-5.690 | TNS=-467.298 |
+INFO: [Physopt 32-572] Net design_1_i/v_tc_0/U0/U_TC_TOP/GEN_GENERATOR.U_TC_GEN/active_video_reg_0_repN was not replicated.
+Resolution: phys_opt_design can be forced to replicate a net driver using the option -force_replication_on_nets <list of net objects>.
+INFO: [Physopt 32-662] Processed net design_1_i/v_tc_0/U0/U_TC_TOP/GEN_GENERATOR.U_TC_GEN/active_video_reg_0_repN.  Did not re-place instance design_1_i/v_tc_0/U0/U_TC_TOP/GEN_GENERATOR.U_TC_GEN/active_video_reg_replica
+INFO: [Physopt 32-572] Net design_1_i/v_tc_0/U0/U_TC_TOP/GEN_GENERATOR.U_TC_GEN/active_video_reg_0_repN was not replicated.
+Resolution: phys_opt_design can be forced to replicate a net driver using the option -force_replication_on_nets <list of net objects>.
+INFO: [Physopt 32-702] Processed net design_1_i/v_tc_0/U0/U_TC_TOP/GEN_GENERATOR.U_TC_GEN/active_video_reg_0_repN. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-662] Processed net design_1_i/v_axi4s_vid_out_0/inst/SYNC_INST/FSM_sequential_state[0]_i_2_n_0.  Did not re-place instance design_1_i/v_axi4s_vid_out_0/inst/SYNC_INST/FSM_sequential_state[0]_i_2
+INFO: [Physopt 32-710] Processed net design_1_i/v_axi4s_vid_out_0/inst/SYNC_INST/FSM_sequential_state[0]_i_1_n_0. Critical path length was reduced through logic transformation on cell design_1_i/v_axi4s_vid_out_0/inst/SYNC_INST/FSM_sequential_state[0]_i_1_comp_1.
+INFO: [Physopt 32-735] Processed net design_1_i/v_axi4s_vid_out_0/inst/SYNC_INST/FSM_sequential_state[0]_i_2_n_0. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-5.665 | TNS=-467.263 |
+INFO: [Physopt 32-663] Processed net design_1_i/v_axi4s_vid_out_0/inst/SYNC_INST/FSM_sequential_state[0]_i_3_n_0.  Re-placed instance design_1_i/v_axi4s_vid_out_0/inst/SYNC_INST/FSM_sequential_state[0]_i_3_comp_1
+INFO: [Physopt 32-735] Processed net design_1_i/v_axi4s_vid_out_0/inst/SYNC_INST/FSM_sequential_state[0]_i_3_n_0. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-5.663 | TNS=-467.247 |
+INFO: [Physopt 32-702] Processed net design_1_i/v_axi4s_vid_out_0/inst/SYNC_INST/state[3]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-663] Processed net design_1_i/v_axi4s_vid_out_0/inst/SYNC_INST/FSM_sequential_state[3]_i_5_n_0.  Re-placed instance design_1_i/v_axi4s_vid_out_0/inst/SYNC_INST/FSM_sequential_state[3]_i_5_comp
+INFO: [Physopt 32-735] Processed net design_1_i/v_axi4s_vid_out_0/inst/SYNC_INST/FSM_sequential_state[3]_i_5_n_0. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-5.659 | TNS=-467.198 |
+INFO: [Physopt 32-702] Processed net design_1_i/v_axi4s_vid_out_0/inst/SYNC_INST/state[1]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-662] Processed net design_1_i/v_axi4s_vid_out_0/inst/SYNC_INST/FSM_sequential_state[1]_i_4_n_0.  Did not re-place instance design_1_i/v_axi4s_vid_out_0/inst/SYNC_INST/FSM_sequential_state[1]_i_4
+INFO: [Physopt 32-710] Processed net design_1_i/v_axi4s_vid_out_0/inst/SYNC_INST/FSM_sequential_state[1]_i_1_n_0. Critical path length was reduced through logic transformation on cell design_1_i/v_axi4s_vid_out_0/inst/SYNC_INST/FSM_sequential_state[1]_i_1_comp_1.
+INFO: [Physopt 32-735] Processed net design_1_i/v_axi4s_vid_out_0/inst/SYNC_INST/FSM_sequential_state[1]_i_4_n_0. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-5.651 | TNS=-466.823 |
+INFO: [Physopt 32-662] Processed net design_1_i/v_axi4s_vid_out_0/inst/SYNC_INST/FSM_sequential_state[0]_i_3_n_0.  Did not re-place instance design_1_i/v_axi4s_vid_out_0/inst/SYNC_INST/FSM_sequential_state[0]_i_3_comp_1
+INFO: [Physopt 32-735] Processed net design_1_i/v_axi4s_vid_out_0/inst/SYNC_INST/FSM_sequential_state[0]_i_3_n_0. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-5.616 | TNS=-466.758 |
+INFO: [Physopt 32-662] Processed net design_1_i/v_axi4s_vid_out_0/inst/SYNC_INST/FSM_sequential_state[3]_i_6_n_0_repN.  Did not re-place instance design_1_i/v_axi4s_vid_out_0/inst/SYNC_INST/FSM_sequential_state[3]_i_6_comp_2
+INFO: [Physopt 32-710] Processed net design_1_i/v_axi4s_vid_out_0/inst/SYNC_INST/FSM_sequential_state[3]_i_1_n_0. Critical path length was reduced through logic transformation on cell design_1_i/v_axi4s_vid_out_0/inst/SYNC_INST/FSM_sequential_state[3]_i_1_comp.
+INFO: [Physopt 32-735] Processed net design_1_i/v_axi4s_vid_out_0/inst/SYNC_INST/FSM_sequential_state[3]_i_6_n_0_repN. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-5.613 | TNS=-466.675 |
+INFO: [Physopt 32-702] Processed net design_1_i/v_axi4s_vid_out_0/inst/COUPLER_INST/generate_sync_fifo.FIFO_INST/XPM_FIFO_SYNC_INST/xpm_fifo_base_inst/rdp_inst/count_value_i_reg[10]_0[9]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-662] Processed net design_1_i/v_tc_0/U0/U_TC_TOP/GEN_GENERATOR.U_TC_GEN/active_video_reg_0.  Did not re-place instance design_1_i/v_tc_0/U0/U_TC_TOP/GEN_GENERATOR.U_TC_GEN/active_video_reg
+INFO: [Physopt 32-572] Net design_1_i/v_tc_0/U0/U_TC_TOP/GEN_GENERATOR.U_TC_GEN/active_video_reg_0 was not replicated.
+Resolution: phys_opt_design can be forced to replicate a net driver using the option -force_replication_on_nets <list of net objects>.
+INFO: [Physopt 32-702] Processed net design_1_i/v_tc_0/U0/U_TC_TOP/GEN_GENERATOR.U_TC_GEN/active_video_reg_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net design_1_i/v_axi4s_vid_out_0/inst/COUPLER_INST/generate_sync_fifo.FIFO_INST/XPM_FIFO_SYNC_INST/xpm_fifo_base_inst/rdp_inst/count_value_i_reg[7]_i_1__0_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net design_1_i/v_axi4s_vid_out_0/inst/COUPLER_INST/generate_sync_fifo.FIFO_INST/XPM_FIFO_SYNC_INST/xpm_fifo_base_inst/rdp_inst/count_value_i_reg[3]_i_1__0_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net design_1_i/v_axi4s_vid_out_0/inst/COUPLER_INST/generate_sync_fifo.FIFO_INST/XPM_FIFO_SYNC_INST/xpm_fifo_base_inst/rdp_inst/count_value_i[3]_i_2__0_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net design_1_i/v_axi4s_vid_out_0/inst/COUPLER_INST/generate_sync_fifo.FIFO_INST/XPM_FIFO_SYNC_INST/xpm_fifo_base_inst/rdp_inst/count_value_i_reg[10]_i_1__0_n_6. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net design_1_i/clk_wiz_1/inst/clk_out1_design_1_clk_wiz_1_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net design_1_i/v_axi4s_vid_out_0/inst/FORMATTER_INST/vblank_rising. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-662] Processed net design_1_i/v_tc_0/U0/U_TC_TOP/GEN_GENERATOR.U_TC_GEN/vblank_reg_0.  Did not re-place instance design_1_i/v_tc_0/U0/U_TC_TOP/GEN_GENERATOR.U_TC_GEN/vblank_reg
+INFO: [Physopt 32-572] Net design_1_i/v_tc_0/U0/U_TC_TOP/GEN_GENERATOR.U_TC_GEN/vblank_reg_0 was not replicated.
+Resolution: phys_opt_design can be forced to replicate a net driver using the option -force_replication_on_nets <list of net objects>.
+INFO: [Physopt 32-702] Processed net design_1_i/v_tc_0/U0/U_TC_TOP/GEN_GENERATOR.U_TC_GEN/vblank_reg_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net design_1_i/v_axi4s_vid_out_0/inst/FORMATTER_INST/vblank_rising_i_1_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net design_1_i/rgb2dvi_0/U0/DataEncoders[2].DataEncoder/n1d_1_reg_n_0_[3]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-662] Processed net design_1_i/v_axi4s_vid_out_0/inst/FORMATTER_INST/vid_data[16].  Did not re-place instance design_1_i/v_axi4s_vid_out_0/inst/FORMATTER_INST/in_data_mux_reg[16]
+INFO: [Physopt 32-572] Net design_1_i/v_axi4s_vid_out_0/inst/FORMATTER_INST/vid_data[16] was not replicated.
+Resolution: phys_opt_design can be forced to replicate a net driver using the option -force_replication_on_nets <list of net objects>.
+INFO: [Physopt 32-702] Processed net design_1_i/v_axi4s_vid_out_0/inst/FORMATTER_INST/vid_data[16]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-662] Processed net design_1_i/rgb2dvi_0/U0/DataEncoders[2].DataEncoder/n1d_1[3]_i_3_n_0.  Did not re-place instance design_1_i/rgb2dvi_0/U0/DataEncoders[2].DataEncoder/n1d_1[3]_i_3
+INFO: [Physopt 32-572] Net design_1_i/rgb2dvi_0/U0/DataEncoders[2].DataEncoder/n1d_1[3]_i_3_n_0 was not replicated.
+Resolution: phys_opt_design can be forced to replicate a net driver using the option -force_replication_on_nets <list of net objects>.
+INFO: [Physopt 32-702] Processed net design_1_i/rgb2dvi_0/U0/DataEncoders[2].DataEncoder/n1d_1[3]_i_3_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net design_1_i/rgb2dvi_0/U0/DataEncoders[2].DataEncoder/n1d_1[3]_i_1_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net design_1_i/clk_wiz_0/inst/clk_out2_design_1_clk_wiz_0_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net design_1_i/v_axi4s_vid_out_0/inst/COUPLER_INST/generate_sync_fifo.FIFO_INST/XPM_FIFO_SYNC_INST/xpm_fifo_base_inst/rdp_inst/count_value_i_reg[10]_0[9]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-662] Processed net design_1_i/v_tc_0/U0/U_TC_TOP/GEN_GENERATOR.U_TC_GEN/active_video_reg_0.  Did not re-place instance design_1_i/v_tc_0/U0/U_TC_TOP/GEN_GENERATOR.U_TC_GEN/active_video_reg
+INFO: [Physopt 32-702] Processed net design_1_i/v_tc_0/U0/U_TC_TOP/GEN_GENERATOR.U_TC_GEN/active_video_reg_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net design_1_i/v_axi4s_vid_out_0/inst/COUPLER_INST/generate_sync_fifo.FIFO_INST/XPM_FIFO_SYNC_INST/xpm_fifo_base_inst/rdp_inst/count_value_i[3]_i_2__0_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net design_1_i/v_axi4s_vid_out_0/inst/COUPLER_INST/generate_sync_fifo.FIFO_INST/XPM_FIFO_SYNC_INST/xpm_fifo_base_inst/rdp_inst/count_value_i_reg[10]_i_1__0_n_6. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net design_1_i/clk_wiz_1/inst/clk_out1_design_1_clk_wiz_1_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net design_1_i/v_axi4s_vid_out_0/inst/FORMATTER_INST/vblank_rising. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-662] Processed net design_1_i/v_tc_0/U0/U_TC_TOP/GEN_GENERATOR.U_TC_GEN/vblank_reg_0.  Did not re-place instance design_1_i/v_tc_0/U0/U_TC_TOP/GEN_GENERATOR.U_TC_GEN/vblank_reg
+INFO: [Physopt 32-702] Processed net design_1_i/v_tc_0/U0/U_TC_TOP/GEN_GENERATOR.U_TC_GEN/vblank_reg_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net design_1_i/v_axi4s_vid_out_0/inst/FORMATTER_INST/vblank_rising_i_1_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net design_1_i/rgb2dvi_0/U0/DataEncoders[2].DataEncoder/n1d_1_reg_n_0_[3]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-662] Processed net design_1_i/v_axi4s_vid_out_0/inst/FORMATTER_INST/vid_data[16].  Did not re-place instance design_1_i/v_axi4s_vid_out_0/inst/FORMATTER_INST/in_data_mux_reg[16]
+INFO: [Physopt 32-702] Processed net design_1_i/v_axi4s_vid_out_0/inst/FORMATTER_INST/vid_data[16]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-662] Processed net design_1_i/rgb2dvi_0/U0/DataEncoders[2].DataEncoder/n1d_1[3]_i_3_n_0.  Did not re-place instance design_1_i/rgb2dvi_0/U0/DataEncoders[2].DataEncoder/n1d_1[3]_i_3
+INFO: [Physopt 32-702] Processed net design_1_i/rgb2dvi_0/U0/DataEncoders[2].DataEncoder/n1d_1[3]_i_3_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net design_1_i/rgb2dvi_0/U0/DataEncoders[2].DataEncoder/n1d_1[3]_i_1_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net design_1_i/clk_wiz_0/inst/clk_out2_design_1_clk_wiz_0_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-5.613 | TNS=-466.675 |
+Phase 4 Critical Path Optimization | Checksum: 1ba4764d5
+
+Time (s): cpu = 00:00:49 ; elapsed = 00:00:28 . Memory (MB): peak = 2444.957 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.072 . Memory (MB): peak = 2444.957 ; gain = 0.000
+INFO: [Physopt 32-603] Post Physical Optimization Timing Summary | WNS=-5.613 | TNS=-466.675 |
+
+Summary of Physical Synthesis Optimizations
+============================================
+
+
+-------------------------------------------------------------------------------------------------------------------------------------------------------------
+|  Optimization   |  WNS Gain (ns)  |  TNS Gain (ns)  |  Added Cells  |  Removed Cells  |  Optimized Cells/Nets  |  Dont Touch  |  Iterations  |  Elapsed   |
+-------------------------------------------------------------------------------------------------------------------------------------------------------------
+|  DSP Register   |          0.000  |          0.000  |            0  |              0  |                     0  |           0  |           1  |  00:00:00  |
+|  Critical Path  |          1.312  |         69.141  |            3  |              0  |                    76  |           0  |           2  |  00:00:23  |
+|  Total          |          1.312  |         69.141  |            3  |              0  |                    76  |           0  |           3  |  00:00:23  |
+-------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.020 . Memory (MB): peak = 2444.957 ; gain = 0.000
+Ending Physical Synthesis Task | Checksum: 1ba4764d5
+
+Time (s): cpu = 00:00:50 ; elapsed = 00:00:28 . Memory (MB): peak = 2444.957 ; gain = 0.000
+INFO: [Common 17-83] Releasing license: Implementation
+670 Infos, 206 Warnings, 32 Critical Warnings and 0 Errors encountered.
+phys_opt_design completed successfully
+phys_opt_design: Time (s): cpu = 00:01:05 ; elapsed = 00:00:37 . Memory (MB): peak = 2444.957 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.036 . Memory (MB): peak = 2444.957 ; gain = 0.000
+INFO: [Timing 38-480] Writing timing data to binary archive.
+Writing placer database...
+Writing XDEF routing.
+Writing XDEF routing logical nets.
+Writing XDEF routing special nets.
+Write XDEF Complete: Time (s): cpu = 00:00:08 ; elapsed = 00:00:02 . Memory (MB): peak = 2444.957 ; gain = 0.000
+INFO: [Common 17-1381] The checkpoint 'C:/Users/ivr/Documents/GitHub/Zybo_mipi/zybo_vdma/zybo_vdma.runs/impl_1/design_1_wrapper_physopt.dcp' has been generated.
+write_checkpoint: Time (s): cpu = 00:00:13 ; elapsed = 00:00:06 . Memory (MB): peak = 2444.957 ; gain = 0.000
+Command: route_design
+Attempting to get a license for feature 'Implementation' and/or device 'xc7z020'
+INFO: [Common 17-349] Got license for feature 'Implementation' and/or device 'xc7z020'
+INFO: [DRC 23-27] Running DRC with 2 threads
+INFO: [Vivado_Tcl 4-198] DRC finished with 0 Errors
+INFO: [Vivado_Tcl 4-199] Please refer to the DRC report (report_drc) for more information.
+Running DRC as a precondition to command route_design
+INFO: [DRC 23-27] Running DRC with 2 threads
+INFO: [Vivado_Tcl 4-198] DRC finished with 0 Errors
+INFO: [Vivado_Tcl 4-199] Please refer to the DRC report (report_drc) for more information.
+
+
+Starting Routing Task
+INFO: [Route 35-254] Multithreading enabled for route_design using a maximum of 2 CPUs
+Checksum: PlaceDB: 41e49916 ConstDB: 0 ShapeSum: a70b2588 RouteDB: 0
+
+Phase 1 Build RT Design
+Phase 1 Build RT Design | Checksum: 14ac865a8
+
+Time (s): cpu = 00:00:39 ; elapsed = 00:00:33 . Memory (MB): peak = 2444.957 ; gain = 0.000
+Post Restoration Checksum: NetGraph: 6aba1855 NumContArr: e00e4d53 Constraints: 0 Timing: 0
+
+Phase 2 Router Initialization
+
+Phase 2.1 Create Timer
+Phase 2.1 Create Timer | Checksum: 14ac865a8
+
+Time (s): cpu = 00:00:40 ; elapsed = 00:00:33 . Memory (MB): peak = 2444.957 ; gain = 0.000
+
+Phase 2.2 Fix Topology Constraints
+Phase 2.2 Fix Topology Constraints | Checksum: 14ac865a8
+
+Time (s): cpu = 00:00:40 ; elapsed = 00:00:34 . Memory (MB): peak = 2444.957 ; gain = 0.000
+
+Phase 2.3 Pre Route Cleanup
+Phase 2.3 Pre Route Cleanup | Checksum: 14ac865a8
+
+Time (s): cpu = 00:00:40 ; elapsed = 00:00:34 . Memory (MB): peak = 2444.957 ; gain = 0.000
+ Number of Nodes with overlaps = 0
+
+Phase 2.4 Update Timing
+Phase 2.4 Update Timing | Checksum: 162b8b6ee
+
+Time (s): cpu = 00:00:57 ; elapsed = 00:00:45 . Memory (MB): peak = 2444.957 ; gain = 0.000
+INFO: [Route 35-416] Intermediate Timing Summary | WNS=-5.552 | TNS=-457.749| WHS=-2.271 | THS=-972.778|
+
+
+Phase 2.5 Update Timing for Bus Skew
+
+Phase 2.5.1 Update Timing
+Phase 2.5.1 Update Timing | Checksum: 21c872631
+
+Time (s): cpu = 00:01:13 ; elapsed = 00:00:54 . Memory (MB): peak = 2444.957 ; gain = 0.000
+INFO: [Route 35-416] Intermediate Timing Summary | WNS=-5.552 | TNS=-457.676| WHS=N/A    | THS=N/A    |
+
+Phase 2.5 Update Timing for Bus Skew | Checksum: 16019716c
+
+Time (s): cpu = 00:01:13 ; elapsed = 00:00:54 . Memory (MB): peak = 2444.957 ; gain = 0.000
+Phase 2 Router Initialization | Checksum: 18db90e71
+
+Time (s): cpu = 00:01:13 ; elapsed = 00:00:54 . Memory (MB): peak = 2444.957 ; gain = 0.000
+
+Router Utilization Summary
+  Global Vertical Routing Utilization    = 0 %
+  Global Horizontal Routing Utilization  = 0 %
+  Routable Net Status*
+  *Does not include unroutable nets such as driverless and loadless.
+  Run report_route_status for detailed report.
+  Number of Failed Nets               = 19880
+    (Failed Nets is the sum of unrouted and partially routed nets)
+  Number of Unrouted Nets             = 19880
+  Number of Partially Routed Nets     = 0
+  Number of Node Overlaps             = 0
+
+
+Phase 3 Initial Routing
+Phase 3 Initial Routing | Checksum: 19841adae
+
+Time (s): cpu = 00:02:06 ; elapsed = 00:01:22 . Memory (MB): peak = 2444.957 ; gain = 0.000
+INFO: [Route 35-580] Design has 39 pins with tight setup and hold constraints.
+
+The top 5 pins with tight setup and hold constraints:
+
++--------------------------+--------------------------+----------------------------------------------------------------------------------------------------------+
+|       Launch Clock       |      Capture Clock       |                                                 Pin                                                      |
++--------------------------+--------------------------+----------------------------------------------------------------------------------------------------------+
+| clk_out2_design_1_clk_wiz_0_0 |clk_out1_design_1_clk_wiz_1_0_1 |                                        design_1_i/rgb2dvi_0/U0/DataEncoders[0].DataEncoder/n1d_1_reg[1]/D|
+| clk_out2_design_1_clk_wiz_0_0 |clk_out1_design_1_clk_wiz_1_0_1 |                                           design_1_i/rgb2dvi_0/U0/DataEncoders[0].DataEncoder/pC0_1_reg/D|
+| clk_out2_design_1_clk_wiz_0_0 |clk_out1_design_1_clk_wiz_1_0_1 |                                        design_1_i/rgb2dvi_0/U0/DataEncoders[1].DataEncoder/n1d_1_reg[2]/D|
+| clk_out2_design_1_clk_wiz_0_0 |clk_out1_design_1_clk_wiz_1_0_1 |                                        design_1_i/rgb2dvi_0/U0/DataEncoders[0].DataEncoder/n1d_1_reg[3]/D|
+| clk_out2_design_1_clk_wiz_0_0 |clk_out1_design_1_clk_wiz_1_0_1 |                                        design_1_i/rgb2dvi_0/U0/DataEncoders[0].DataEncoder/n1d_1_reg[2]/D|
++--------------------------+--------------------------+----------------------------------------------------------------------------------------------------------+
+
+File with complete list of pins: tight_setup_hold_pins.txt
+
+
+Phase 4 Rip-up And Reroute
+
+Phase 4.1 Global Iteration 0
+ Number of Nodes with overlaps = 1615
+ Number of Nodes with overlaps = 133
+ Number of Nodes with overlaps = 30
+ Number of Nodes with overlaps = 14
+ Number of Nodes with overlaps = 3
+ Number of Nodes with overlaps = 0
+INFO: [Route 35-416] Intermediate Timing Summary | WNS=-5.773 | TNS=-621.933| WHS=N/A    | THS=N/A    |
+
+Phase 4.1 Global Iteration 0 | Checksum: 11bbe2579
+
+Time (s): cpu = 00:05:22 ; elapsed = 00:03:33 . Memory (MB): peak = 2444.957 ; gain = 0.000
+
+Phase 4.2 Global Iteration 1
+ Number of Nodes with overlaps = 1
+ Number of Nodes with overlaps = 0
+INFO: [Route 35-416] Intermediate Timing Summary | WNS=-5.773 | TNS=-621.566| WHS=N/A    | THS=N/A    |
+
+Phase 4.2 Global Iteration 1 | Checksum: 29c5aae74
+
+Time (s): cpu = 00:05:22 ; elapsed = 00:03:34 . Memory (MB): peak = 2444.957 ; gain = 0.000
+Phase 4 Rip-up And Reroute | Checksum: 29c5aae74
+
+Time (s): cpu = 00:05:22 ; elapsed = 00:03:34 . Memory (MB): peak = 2444.957 ; gain = 0.000
+
+Phase 5 Delay and Skew Optimization
+
+Phase 5.1 Delay CleanUp
+
+Phase 5.1.1 Update Timing
+Phase 5.1.1 Update Timing | Checksum: 286bdb2d0
+
+Time (s): cpu = 00:05:28 ; elapsed = 00:03:37 . Memory (MB): peak = 2444.957 ; gain = 0.000
+INFO: [Route 35-416] Intermediate Timing Summary | WNS=-5.773 | TNS=-618.513| WHS=N/A    | THS=N/A    |
+
+ Number of Nodes with overlaps = 0
+Phase 5.1 Delay CleanUp | Checksum: 1c1b74a1f
+
+Time (s): cpu = 00:05:31 ; elapsed = 00:03:40 . Memory (MB): peak = 2444.957 ; gain = 0.000
+
+Phase 5.2 Clock Skew Optimization
+Phase 5.2 Clock Skew Optimization | Checksum: 1c1b74a1f
+
+Time (s): cpu = 00:05:31 ; elapsed = 00:03:40 . Memory (MB): peak = 2444.957 ; gain = 0.000
+Phase 5 Delay and Skew Optimization | Checksum: 1c1b74a1f
+
+Time (s): cpu = 00:05:31 ; elapsed = 00:03:40 . Memory (MB): peak = 2444.957 ; gain = 0.000
+
+Phase 6 Post Hold Fix
+
+Phase 6.1 Hold Fix Iter
+
+Phase 6.1.1 Update Timing
+Phase 6.1.1 Update Timing | Checksum: 1c34460bf
+
+Time (s): cpu = 00:05:37 ; elapsed = 00:03:43 . Memory (MB): peak = 2444.957 ; gain = 0.000
+INFO: [Route 35-416] Intermediate Timing Summary | WNS=-5.773 | TNS=-587.086| WHS=-0.263 | THS=-2.829 |
+
+Phase 6.1 Hold Fix Iter | Checksum: 1624fed88
+
+Time (s): cpu = 00:05:44 ; elapsed = 00:03:47 . Memory (MB): peak = 2444.957 ; gain = 0.000
+WARNING: [Route 35-468] The router encountered 180 pins that are both setup-critical and hold-critical and tried to fix hold violations at the expense of setup slack. Such pins are:
+	design_1_i/rgb2dvi_0/U0/DataEncoders[0].DataEncoder/pC1_1_reg/D
+	design_1_i/rgb2dvi_0/U0/DataEncoders[0].DataEncoder/pDataOut_1_reg[3]/D
+	design_1_i/rgb2dvi_0/U0/DataEncoders[0].DataEncoder/n1d_1[3]_i_4/I0
+	design_1_i/rgb2dvi_0/U0/DataEncoders[0].DataEncoder/n1d_1[0]_i_2/I1
+	design_1_i/rgb2dvi_0/U0/DataEncoders[0].DataEncoder/n1d_1[2]_i_1/I3
+	design_1_i/rgb2dvi_0/U0/DataEncoders[0].DataEncoder/n1d_1[3]_i_3/I3
+	design_1_i/rgb2dvi_0/U0/DataEncoders[0].DataEncoder/n1d_1[1]_i_2/I5
+	design_1_i/rgb2dvi_0/U0/DataEncoders[2].DataEncoder/pDataOut_1_reg[4]/D
+	design_1_i/rgb2dvi_0/U0/DataEncoders[2].DataEncoder/n1d_1[2]_i_2/I2
+	design_1_i/rgb2dvi_0/U0/DataEncoders[2].DataEncoder/n1d_1[3]_i_1/I2
+	.. and 170 more pins.
+
+Phase 6 Post Hold Fix | Checksum: 1a16a33b8
+
+Time (s): cpu = 00:05:44 ; elapsed = 00:03:47 . Memory (MB): peak = 2444.957 ; gain = 0.000
+
+Phase 7 Route finalize
+
+Router Utilization Summary
+  Global Vertical Routing Utilization    = 4.42348 %
+  Global Horizontal Routing Utilization  = 5.78524 %
+  Routable Net Status*
+  *Does not include unroutable nets such as driverless and loadless.
+  Run report_route_status for detailed report.
+  Number of Failed Nets               = 0
+    (Failed Nets is the sum of unrouted and partially routed nets)
+  Number of Unrouted Nets             = 0
+  Number of Partially Routed Nets     = 0
+  Number of Node Overlaps             = 0
+
+Congestion Report
+North Dir 1x1 Area, Max Cong = 53.1532%, No Congested Regions.
+South Dir 1x1 Area, Max Cong = 54.955%, No Congested Regions.
+East Dir 1x1 Area, Max Cong = 57.3529%, No Congested Regions.
+West Dir 1x1 Area, Max Cong = 57.3529%, No Congested Regions.
+
+------------------------------
+Reporting congestion hotspots
+------------------------------
+Direction: North
+----------------
+Congested clusters found at Level 0
+Effective congestion level: 0 Aspect Ratio: 1 Sparse Ratio: 0
+Direction: South
+----------------
+Congested clusters found at Level 0
+Effective congestion level: 0 Aspect Ratio: 1 Sparse Ratio: 0
+Direction: East
+----------------
+Congested clusters found at Level 0
+Effective congestion level: 0 Aspect Ratio: 1 Sparse Ratio: 0
+Direction: West
+----------------
+Congested clusters found at Level 0
+Effective congestion level: 0 Aspect Ratio: 1 Sparse Ratio: 0
+
+Phase 7 Route finalize | Checksum: 1541785bc
+
+Time (s): cpu = 00:05:44 ; elapsed = 00:03:48 . Memory (MB): peak = 2444.957 ; gain = 0.000
+
+Phase 8 Verifying routed nets
+
+ Verification completed successfully
+Phase 8 Verifying routed nets | Checksum: 1541785bc
+
+Time (s): cpu = 00:05:44 ; elapsed = 00:03:48 . Memory (MB): peak = 2444.957 ; gain = 0.000
+
+Phase 9 Depositing Routes
+Phase 9 Depositing Routes | Checksum: 18860fbec
+
+Time (s): cpu = 00:05:47 ; elapsed = 00:03:50 . Memory (MB): peak = 2444.957 ; gain = 0.000
+
+Phase 10 Post Router Timing
+
+Phase 10.1 Update Timing
+Phase 10.1 Update Timing | Checksum: 1aca3f54f
+
+Time (s): cpu = 00:05:53 ; elapsed = 00:03:54 . Memory (MB): peak = 2444.957 ; gain = 0.000
+INFO: [Route 35-57] Estimated Timing Summary | WNS=-5.773 | TNS=-609.227| WHS=0.050  | THS=0.000  |
+
+WARNING: [Route 35-328] Router estimated timing not met.
+Resolution: For a complete and accurate timing signoff, report_timing_summary must be run after route_design. Alternatively, route_design can be run with the -timing_summary option to enable a complete timing signoff at the end of route_design.
+Phase 10 Post Router Timing | Checksum: 1aca3f54f
+
+Time (s): cpu = 00:05:53 ; elapsed = 00:03:54 . Memory (MB): peak = 2444.957 ; gain = 0.000
+INFO: [Route 35-16] Router Completed Successfully
+
+Time (s): cpu = 00:05:53 ; elapsed = 00:03:54 . Memory (MB): peak = 2444.957 ; gain = 0.000
+
+Routing Is Done.
+INFO: [Common 17-83] Releasing license: Implementation
+690 Infos, 208 Warnings, 32 Critical Warnings and 0 Errors encountered.
+route_design completed successfully
+route_design: Time (s): cpu = 00:05:58 ; elapsed = 00:03:57 . Memory (MB): peak = 2444.957 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.023 . Memory (MB): peak = 2444.957 ; gain = 0.000
+INFO: [Timing 38-480] Writing timing data to binary archive.
+Writing placer database...
+Writing XDEF routing.
+Writing XDEF routing logical nets.
+Writing XDEF routing special nets.
+Write XDEF Complete: Time (s): cpu = 00:00:10 ; elapsed = 00:00:03 . Memory (MB): peak = 2444.957 ; gain = 0.000
+INFO: [Common 17-1381] The checkpoint 'C:/Users/ivr/Documents/GitHub/Zybo_mipi/zybo_vdma/zybo_vdma.runs/impl_1/design_1_wrapper_routed.dcp' has been generated.
+write_checkpoint: Time (s): cpu = 00:00:13 ; elapsed = 00:00:07 . Memory (MB): peak = 2444.957 ; gain = 0.000
+INFO: [runtcl-4] Executing : report_drc -file design_1_wrapper_drc_routed.rpt -pb design_1_wrapper_drc_routed.pb -rpx design_1_wrapper_drc_routed.rpx
+Command: report_drc -file design_1_wrapper_drc_routed.rpt -pb design_1_wrapper_drc_routed.pb -rpx design_1_wrapper_drc_routed.rpx
+INFO: [IP_Flow 19-1839] IP Catalog is up to date.
+INFO: [DRC 23-27] Running DRC with 2 threads
+INFO: [Coretcl 2-168] The results of DRC are in file C:/Users/ivr/Documents/GitHub/Zybo_mipi/zybo_vdma/zybo_vdma.runs/impl_1/design_1_wrapper_drc_routed.rpt.
+report_drc completed successfully
+INFO: [runtcl-4] Executing : report_methodology -file design_1_wrapper_methodology_drc_routed.rpt -pb design_1_wrapper_methodology_drc_routed.pb -rpx design_1_wrapper_methodology_drc_routed.rpx
+Command: report_methodology -file design_1_wrapper_methodology_drc_routed.rpt -pb design_1_wrapper_methodology_drc_routed.pb -rpx design_1_wrapper_methodology_drc_routed.rpx
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+INFO: [DRC 23-133] Running Methodology with 2 threads
+INFO: [Coretcl 2-1520] The results of Report Methodology are in file C:/Users/ivr/Documents/GitHub/Zybo_mipi/zybo_vdma/zybo_vdma.runs/impl_1/design_1_wrapper_methodology_drc_routed.rpt.
+report_methodology completed successfully
+report_methodology: Time (s): cpu = 00:00:42 ; elapsed = 00:00:24 . Memory (MB): peak = 2664.551 ; gain = 219.594
+INFO: [runtcl-4] Executing : report_power -file design_1_wrapper_power_routed.rpt -pb design_1_wrapper_power_summary_routed.pb -rpx design_1_wrapper_power_routed.rpx
+Command: report_power -file design_1_wrapper_power_routed.rpt -pb design_1_wrapper_power_summary_routed.pb -rpx design_1_wrapper_power_routed.rpx
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+Running Vector-less Activity Propagation...
+
+Finished Running Vector-less Activity Propagation
+WARNING: [Power 33-332] Found switching activity that implies high-fanout reset nets being asserted for excessive periods of time which may result in inaccurate power analysis.
+Resolution: To review and fix problems, please run Power Constraints Advisor in the GUI from Tools > Power Constraints Advisor or run report_power with the -advisory option to generate a text report.
+702 Infos, 209 Warnings, 32 Critical Warnings and 0 Errors encountered.
+report_power completed successfully
+report_power: Time (s): cpu = 00:00:21 ; elapsed = 00:00:11 . Memory (MB): peak = 2664.551 ; gain = 0.000
+INFO: [runtcl-4] Executing : report_route_status -file design_1_wrapper_route_status.rpt -pb design_1_wrapper_route_status.pb
+INFO: [runtcl-4] Executing : report_timing_summary -max_paths 10 -file design_1_wrapper_timing_summary_routed.rpt -pb design_1_wrapper_timing_summary_routed.pb -rpx design_1_wrapper_timing_summary_routed.rpx -warn_on_violation 
+INFO: [Timing 38-91] UpdateTimingParams: Speed grade: -1, Delay Type: min_max.
+INFO: [Timing 38-191] Multithreading enabled for timing update using a maximum of 2 CPUs
+CRITICAL WARNING: [Timing 38-282] The design failed to meet the timing requirements. Please see the timing summary report for details on the timing violations.
+WARNING: [Timing 38-436] There are set_bus_skew constraint(s) in this design. Please run report_bus_skew to ensure that bus skew requirements are met.
+INFO: [runtcl-4] Executing : report_incremental_reuse -file design_1_wrapper_incremental_reuse_routed.rpt
+INFO: [Vivado_Tcl 4-1062] Incremental flow is disabled. No incremental reuse Info to report.
+INFO: [runtcl-4] Executing : report_clock_utilization -file design_1_wrapper_clock_utilization_routed.rpt
+INFO: [runtcl-4] Executing : report_bus_skew -warn_on_violation -file design_1_wrapper_bus_skew_routed.rpt -pb design_1_wrapper_bus_skew_routed.pb -rpx design_1_wrapper_bus_skew_routed.rpx
+INFO: [Timing 38-91] UpdateTimingParams: Speed grade: -1, Delay Type: min_max.
+INFO: [Timing 38-191] Multithreading enabled for timing update using a maximum of 2 CPUs
+INFO: [Memdata 28-208] The XPM instance: <design_1_i/v_axi4s_vid_out_0/inst/COUPLER_INST/generate_sync_fifo.FIFO_INST/XPM_FIFO_SYNC_INST/xpm_fifo_base_inst/gen_sdpram.xpm_memory_base_inst> is part of IP: <design_1_i/v_axi4s_vid_out_0>. This XPM instance will be excluded from the .mmi because updatemem is prohibited from making changes to an XPM that is part of an IP.
+INFO: [Memdata 28-167] Found XPM memory block design_1_i/mipi_csi2_rx_subsyst_0/inst/rx/inst/gen_pkt_fifo/pkt_fifo/gnuram_async_fifo.xpm_fifo_base_inst/gen_sdpram.xpm_memory_base_inst with a P_MEMORY_PRIMITIVE property set to distributed. A value of block is required. You will not be able to use the updatemem program to update the bitstream with new data for the design_1_i/mipi_csi2_rx_subsyst_0/inst/rx/inst/gen_pkt_fifo/pkt_fifo/gnuram_async_fifo.xpm_fifo_base_inst/gen_sdpram.xpm_memory_base_inst block.
+INFO: [Memdata 28-208] The XPM instance: <design_1_i/mipi_csi2_rx_subsyst_0/inst/rx/inst/RX_1500M.line_buffer/line_buf/xpm_fifo_base_inst/gen_sdpram.xpm_memory_base_inst> is part of IP: <design_1_i/mipi_csi2_rx_subsyst_0/inst/rx>. This XPM instance will be excluded from the .mmi because updatemem is prohibited from making changes to an XPM that is part of an IP.
+INFO: [Memdata 28-167] Found XPM memory block design_1_i/mipi_csi2_rx_subsyst_0/inst/rx/inst/LANE_2.ppi_fifo1/CSI_OPT3_OFF.ppi_fifo/xpm_fifo_base_inst/gen_sdpram.xpm_memory_base_inst with a P_MEMORY_PRIMITIVE property set to distributed. A value of block is required. You will not be able to use the updatemem program to update the bitstream with new data for the design_1_i/mipi_csi2_rx_subsyst_0/inst/rx/inst/LANE_2.ppi_fifo1/CSI_OPT3_OFF.ppi_fifo/xpm_fifo_base_inst/gen_sdpram.xpm_memory_base_inst block.
+INFO: [Memdata 28-167] Found XPM memory block design_1_i/mipi_csi2_rx_subsyst_0/inst/rx/inst/LANE_1.ppi_fifo0/CSI_OPT3_OFF.ppi_fifo/xpm_fifo_base_inst/gen_sdpram.xpm_memory_base_inst with a P_MEMORY_PRIMITIVE property set to distributed. A value of block is required. You will not be able to use the updatemem program to update the bitstream with new data for the design_1_i/mipi_csi2_rx_subsyst_0/inst/rx/inst/LANE_1.ppi_fifo0/CSI_OPT3_OFF.ppi_fifo/xpm_fifo_base_inst/gen_sdpram.xpm_memory_base_inst block.
+INFO: [Memdata 28-167] Found XPM memory block design_1_i/mipi_csi2_rx_subsyst_0/inst/rx/inst/AXI_LITE.reg_inf/gen_spkt_fifo/generic_pkt/gnuram_async_fifo.xpm_fifo_base_inst/gen_sdpram.xpm_memory_base_inst with a P_MEMORY_PRIMITIVE property set to distributed. A value of block is required. You will not be able to use the updatemem program to update the bitstream with new data for the design_1_i/mipi_csi2_rx_subsyst_0/inst/rx/inst/AXI_LITE.reg_inf/gen_spkt_fifo/generic_pkt/gnuram_async_fifo.xpm_fifo_base_inst/gen_sdpram.xpm_memory_base_inst block.
+INFO: [Memdata 28-167] Found XPM memory block design_1_i/axi_vdma_0/U0/I_PRMRY_DATAMOVER/GEN_S2MM_FULL.I_S2MM_FULL_WRAPPER/GEN_ENABLE_INDET_BTT_SF.I_INDET_BTT/I_XD_FIFO/NON_BLK_MEM.I_SYNC_FIFOGEN_FIFO/xpm_fifo_instance.xpm_fifo_sync_inst/xpm_fifo_base_inst/gen_sdpram.xpm_memory_base_inst with a P_MEMORY_PRIMITIVE property set to auto. A value of block is required. You will not be able to use the updatemem program to update the bitstream with new data for the design_1_i/axi_vdma_0/U0/I_PRMRY_DATAMOVER/GEN_S2MM_FULL.I_S2MM_FULL_WRAPPER/GEN_ENABLE_INDET_BTT_SF.I_INDET_BTT/I_XD_FIFO/NON_BLK_MEM.I_SYNC_FIFOGEN_FIFO/xpm_fifo_instance.xpm_fifo_sync_inst/xpm_fifo_base_inst/gen_sdpram.xpm_memory_base_inst block.
+INFO: [Memdata 28-208] The XPM instance: <design_1_i/axi_vdma_0/U0/I_PRMRY_DATAMOVER/GEN_S2MM_FULL.I_S2MM_FULL_WRAPPER/GEN_ENABLE_INDET_BTT_SF.I_INDET_BTT/I_DATA_FIFO/BLK_MEM.I_SYNC_FIFOGEN_FIFO/xpm_fifo_instance.xpm_fifo_sync_inst/xpm_fifo_base_inst/gen_sdpram.xpm_memory_base_inst> is part of IP: <design_1_i/axi_vdma_0>. This XPM instance will be excluded from the .mmi because updatemem is prohibited from making changes to an XPM that is part of an IP.
+INFO: [Memdata 28-208] The XPM instance: <design_1_i/axi_vdma_0/U0/I_PRMRY_DATAMOVER/GEN_MM2S_FULL.I_MM2S_FULL_WRAPPER/GEN_INCLUDE_MM2S_SF.I_RD_SF/I_DATA_FIFO/BLK_MEM.I_SYNC_FIFOGEN_FIFO/xpm_fifo_instance.xpm_fifo_sync_inst/xpm_fifo_base_inst/gen_sdpram.xpm_memory_base_inst> is part of IP: <design_1_i/axi_vdma_0>. This XPM instance will be excluded from the .mmi because updatemem is prohibited from making changes to an XPM that is part of an IP.
+INFO: [Memdata 28-208] The XPM instance: <design_1_i/axi_vdma_0/U0/GEN_SPRT_FOR_S2MM.S2MM_LINEBUFFER_I/GEN_S2MM_FLUSH_SOF_LOGIC.GEN_LINEBUFFER_FLUSH_SOF.GEN_SYNC_FIFO_FLUSH_SOF.I_LINEBUFFER_FIFO/xpm_fifo_sync_inst/xpm_fifo_base_inst/gen_sdpram.xpm_memory_base_inst> is part of IP: <design_1_i/axi_vdma_0>. This XPM instance will be excluded from the .mmi because updatemem is prohibited from making changes to an XPM that is part of an IP.
+INFO: [Memdata 28-208] The XPM instance: <design_1_i/axi_vdma_0/U0/GEN_SPRT_FOR_MM2S.MM2S_LINEBUFFER_I/GEN_LINEBUF_NO_SOF.GEN_LINEBUFFER.GEN_SYNC_FIFO.I_LINEBUFFER_FIFO/xpm_fifo_sync_inst/xpm_fifo_base_inst/gen_sdpram.xpm_memory_base_inst> is part of IP: <design_1_i/axi_vdma_0>. This XPM instance will be excluded from the .mmi because updatemem is prohibited from making changes to an XPM that is part of an IP.
+Command: write_bitstream -force design_1_wrapper.bit
+Attempting to get a license for feature 'Implementation' and/or device 'xc7z020'
+INFO: [Common 17-349] Got license for feature 'Implementation' and/or device 'xc7z020'
+CRITICAL WARNING: [Vivado 12-1790] Evaluation License Warning: This design contains one or more evaluation cores that will cease to function after a certain period of time. This design should NOT be used in production systems.
+
+Evaluation cores found in this design:
+    IP core 'design_1_mipi_csi2_rx_subsyst_0_1' (bd_11cc) was generated using a hardware_evaluation license.
+    IP core 'bd_11cc_rx_0' (mipi_csi2_rx_ctrl_v1_0_8_top) was generated using a hardware_evaluation license.
+
+Resolution: If a new IP Core license was added, in order for the new license to be picked up, the current netlist needs to be updated by resetting and re-generating the IP output products before bitstream generation.
+Running DRC as a precondition to command write_bitstream
+INFO: [IP_Flow 19-1839] IP Catalog is up to date.
+INFO: [DRC 23-27] Running DRC with 2 threads
+WARNING: [DRC RTSTAT-10] No routable loads: 70 net(s) have no routable loads. The problem bus(es) and/or net(s) are design_1_i/axi_mem_intercon/m00_couplers/auto_pc/inst/gen_axi4_axi3.axi3_conv_inst/USE_READ.USE_SPLIT_R.read_addr_inst/USE_R_CHANNEL.cmd_queue/inst/fifo_gen_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/gr1.gr1_int.rfwft/aempty_fwft_i, design_1_i/axi_mem_intercon/m00_couplers/auto_pc/inst/gen_axi4_axi3.axi3_conv_inst/USE_WRITE.write_addr_inst/USE_BURSTS.cmd_queue/inst/fifo_gen_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/gr1.gr1_int.rfwft/aempty_fwft_i, design_1_i/axi_mem_intercon/m00_couplers/auto_pc/inst/gen_axi4_axi3.axi3_conv_inst/USE_WRITE.write_addr_inst/USE_B_CHANNEL.cmd_b_queue/inst/fifo_gen_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/gr1.gr1_int.rfwft/aempty_fwft_i, dbg_hub/inst/BSCANID.u_xsdbm_id/CORE_XSDB.UUT_MASTER/U_ICON_INTERFACE/U_CMD6_RD/U_RD_FIFO/SUBCORE_FIFO.xsdbm_v3_0_0_rdfifo_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/gr1.gr1_int.rfwft/aempty_fwft_i, dbg_hub/inst/BSCANID.u_xsdbm_id/CORE_XSDB.UUT_MASTER/U_ICON_INTERFACE/U_CMD7_CTL/ctl_reg[2:0], dbg_hub/inst/BSCANID.u_xsdbm_id/CORE_XSDB.UUT_MASTER/U_ICON_INTERFACE/U_CMD7_CTL/ctl_reg_en_2[1], dbg_hub/inst/BSCANID.u_xsdbm_id/CORE_XSDB.UUT_MASTER/U_ICON_INTERFACE/U_CMD1/ctl_reg_en_2[1], design_1_i/mipi_csi2_rx_subsyst_0/inst/phy/inst/inst/bd_11cc_phy_0_rx_support_i/slave_rx.dphy_rx_fab_top/gen_rx_data_lane[0].rx_data_lane_inst/fifo_rd_rst_t1_nxt, design_1_i/mipi_csi2_rx_subsyst_0/inst/phy/inst/inst/bd_11cc_phy_0_rx_support_i/slave_rx.dphy_rx_fab_top/gen_rx_data_lane[1].rx_data_lane_inst/fifo_rd_rst_t1_nxt, design_1_i/mipi_csi2_rx_subsyst_0/inst/phy/inst/inst/bd_11cc_phy_0_rx_support_i/slave_rx.dphy_rx_fab_top/gen_rx_data_lane[0].rx_data_lane_inst/fifo_rd_rst_t2, design_1_i/mipi_csi2_rx_subsyst_0/inst/phy/inst/inst/bd_11cc_phy_0_rx_support_i/slave_rx.dphy_rx_fab_top/gen_rx_data_lane[1].rx_data_lane_inst/fifo_rd_rst_t2, design_1_i/mipi_csi2_rx_subsyst_0/inst/phy/inst/inst/bd_11cc_phy_0_rx_support_i/slave_rx.dphy_rx_fab_top/gen_rx_data_lane[1].rx_data_lane_inst/gen_hs_high_rates_spec_v1_1.rx_sot_det_align_i/h_reg[0], design_1_i/mipi_csi2_rx_subsyst_0/inst/phy/inst/inst/bd_11cc_phy_0_rx_support_i/slave_rx.dphy_rx_fab_top/gen_rx_data_lane[0].rx_data_lane_inst/gen_hs_high_rates_spec_v1_1.rx_sot_det_align_i/h_reg[0], dbg_hub/inst/BSCANID.u_xsdbm_id/SWITCH_N_EXT_BSCAN.bscan_switch/m_bscan_capture[0], dbg_hub/inst/BSCANID.u_xsdbm_id/SWITCH_N_EXT_BSCAN.bscan_switch/m_bscan_drck[0]... and (the first 15 of 53 listed).
+INFO: [DRC REQP-181] writefirst: Synchronous clocking is detected for BRAM (design_1_i/axi_vdma_0/U0/I_PRMRY_DATAMOVER/GEN_MM2S_FULL.I_MM2S_FULL_WRAPPER/GEN_INCLUDE_MM2S_SF.I_RD_SF/I_DATA_FIFO/BLK_MEM.I_SYNC_FIFOGEN_FIFO/xpm_fifo_instance.xpm_fifo_sync_inst/xpm_fifo_base_inst/gen_sdpram.xpm_memory_base_inst/gen_wr_a.gen_word_narrow.mem_reg) in SDP mode with WRITE_FIRST write-mode. This is the preferred mode for best power characteristics, however it may exhibit address collisions if the same address appears on both read and write ports resulting in unknown or corrupted read data. It is suggested to confirm via simulation that an address collision never occurs and if so it is suggested to try and avoid this situation. If address collisions cannot be avoided, the write-mode may be set to READ_FIRST which guarantees that the read data is the prior contents of the memory at the cost of additional power in the design. See the FPGA Memory Resources User Guide for additional information.
+INFO: [DRC REQP-181] writefirst: Synchronous clocking is detected for BRAM (design_1_i/axi_vdma_0/U0/I_PRMRY_DATAMOVER/GEN_S2MM_FULL.I_S2MM_FULL_WRAPPER/GEN_ENABLE_INDET_BTT_SF.I_INDET_BTT/I_DATA_FIFO/BLK_MEM.I_SYNC_FIFOGEN_FIFO/xpm_fifo_instance.xpm_fifo_sync_inst/xpm_fifo_base_inst/gen_sdpram.xpm_memory_base_inst/gen_wr_a.gen_word_narrow.mem_reg) in SDP mode with WRITE_FIRST write-mode. This is the preferred mode for best power characteristics, however it may exhibit address collisions if the same address appears on both read and write ports resulting in unknown or corrupted read data. It is suggested to confirm via simulation that an address collision never occurs and if so it is suggested to try and avoid this situation. If address collisions cannot be avoided, the write-mode may be set to READ_FIRST which guarantees that the read data is the prior contents of the memory at the cost of additional power in the design. See the FPGA Memory Resources User Guide for additional information.
+INFO: [Vivado 12-3199] DRC finished with 0 Errors, 1 Warnings, 2 Advisories
+INFO: [Vivado 12-3200] Please refer to the DRC report (report_drc) for more information.
+INFO: [Designutils 20-2272] Running write_bitstream with 2 threads.
+Loading data files...
+Loading site data...
+Loading route data...
+Processing options...
+Creating bitmap...
+Creating bitstream...
+Writing bitstream ./design_1_wrapper.bit...
+INFO: [Vivado 12-1842] Bitgen Completed Successfully.
+INFO: [Project 1-120] WebTalk data collection is mandatory when using a WebPACK part without a full Vivado license. To see the specific WebTalk data collected for your design, open the usage_statistics_webtalk.html or usage_statistics_webtalk.xml file in the implementation directory.
+INFO: [Common 17-186] 'C:/Users/ivr/Documents/GitHub/Zybo_mipi/zybo_vdma/zybo_vdma.runs/impl_1/usage_statistics_webtalk.xml' has been successfully sent to Xilinx on Tue Sep  1 17:01:28 2020. For additional details about this file, please refer to the WebTalk help file at C:/Xilinx/Vivado/2019.2/doc/webtalk_introduction.html.
+INFO: [Common 17-83] Releasing license: Implementation
+735 Infos, 211 Warnings, 34 Critical Warnings and 0 Errors encountered.
+write_bitstream completed successfully
+write_bitstream: Time (s): cpu = 00:00:53 ; elapsed = 00:00:42 . Memory (MB): peak = 2879.879 ; gain = 215.328
+INFO: [Common 17-206] Exiting Vivado at Tue Sep  1 17:01:28 2020...

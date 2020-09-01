@@ -1,5 +1,12 @@
 typedef struct { uint16_t addr; uint8_t data; } config_word_t;
 
+int Init(void);
+int i2c_write(XIicPs *Iic, u16 _register, u8 _command);
+int i2c_read(XIicPs *Iic, u8* buff, u32 len, u16 i2c_adder);
+int WriteReg(u16 _register, u8 _command);
+int ReadReg(u16 reg);
+int WriteConfig(config_word_t const* cfg, int size);
+
 config_word_t const cfg_advanced_awb_[] =
 {
 	// Enable Advanced AWB
