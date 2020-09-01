@@ -13,6 +13,7 @@
             <includePath path="c:\xilinx\vitis\2019.2\gnu\aarch32\nt\gcc-arm-none-eabi\bin\../lib/gcc/arm-none-eabi/8.2.0/../../../../arm-none-eabi/include"/>
             <includePath path="#undef __ARM_FEATURE_CRC32" removed="true"/>
             <includePath path="c:\xilinx\vitis\2019.2\gnu\aarch32\nt\gcc-arm-none-eabi\bin\../arm-none-eabi/libc/usr/include"/>
+            <includePath path="#undef __ARM_FEATURE_DSP" removed="true"/>
             <includePath path="#undef __ARM_FEATURE_CMSE" removed="true"/>
             <includePath path="#undef __ARM_FEATURE_DOTPROD" removed="true"/>
             <definedSymbol symbol="__STDC__=1"/>

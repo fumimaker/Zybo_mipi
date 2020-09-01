@@ -25,12 +25,7 @@ uint8_t const dev_ID_l_ = 0x40;
 uint16_t const reg_ID_h = 0x300A;
 uint16_t const reg_ID_l = 0x300B;
 
-int Init(void);
-int i2c_write(XIicPs *Iic, u16 _register, u8 _command);
-int i2c_read(XIicPs *Iic, u8* buff, u32 len, u16 i2c_adder);
-int WriteReg(u16 _register, u8 _command);
-int ReadReg(u16 reg);
-int WriteConfig(config_word_t const* cfg, int size);
+
 
 XIicPs Iic;
 
