@@ -5,6 +5,7 @@
 #include "sleep.h"
 #include "xiicps.h"
 #include "OV5640.h"
+#include "xaxivdma.h"
 
 // I2C parameters
 #define IIC_SCLK_RATE       400000  // clock 100KHz
@@ -31,7 +32,7 @@ int i2c_read(XIicPs *Iic, u8* buff, u32 len, u16 i2c_adder);
 int WriteReg(u16 _register, u8 _command);
 int ReadReg(u16 reg);
 int WriteConfig(config_word_t const* cfg, int size);
-
+void VdmaConfigureWrite(uint16_t hres, uint16_t vres);
 XIicPs Iic;
 
 int Init(void)
@@ -59,6 +60,7 @@ int Init(void)
 
     XIicPs_SetSClk(&Iic, IIC_SCLK_RATE);
     printf("I2C configuration done.\n");
+
 
 
 	//reset
@@ -178,6 +180,24 @@ int WriteConfig(config_word_t const* cfg, int size){
 	}
 }
 
+void VdmaConfigureWrite(uint16_t hres, uint16_t vres){
+	XStatus status;
+	XAxiVdma_DmaSetup myFrameBuffer;
+	myFrameBuffer.VertSizeInput = 720;	   // 480 vertical pixels.
+	myFrameBuffer.HoriSizeInput = 1280 * 4; // 640 horizontal (32-bit pixels).
+	myFrameBuffer.Stride = 1280 * 4;		   // Dont' worry about the rest of the values.
+	myFrameBuffer.FrameDelay = 0;
+	myFrameBuffer.EnableCircularBuf = 1;
+	myFrameBuffer.EnableSync = 0;
+	myFrameBuffer.PointNum = 0;
+	myFrameBuffer.EnableFrameCounter = 0;
+	myFrameBuffer.FixedFrameStoreAddr = 0;
+	
+	if (XST_FAILURE == XAxiVdma_DmaConfig(&videoDMAController, XAXIVDMA_READ, &myFrameBuffer)){
+		xil_printf("DMA Config Failed\r\n");
+	}
+}
+
 
 int main(void){
 	init_platform();
@@ -202,11 +222,11 @@ int main(void){
 	WriteReg(0x3008, 0x02);
 	printf("AWB settings done\n");
 
-
 	//set color bar
 	WriteReg(0x503D, 0x80); //enable
 	//WriteReg(0x503D, 0x00); //disable
 
+	
 
     print("Hello World\n\r");
     cleanup_platform();

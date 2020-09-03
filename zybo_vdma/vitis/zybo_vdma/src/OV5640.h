@@ -1,7 +1,5 @@
 typedef struct { uint16_t addr; uint8_t data; } config_word_t;
 
-
-
 config_word_t const cfg_advanced_awb_[] =
 {
 	// Enable Advanced AWB
