@@ -26,16 +26,20 @@ uint8_t const dev_ID_l_ = 0x40;
 uint16_t const reg_ID_h = 0x300A;
 uint16_t const reg_ID_l = 0x300B;
 
-int Init(void);
+
+uint16_t const v_res = 1280;
+uint16_t const h_res = 720;
+
+int i2c_Init(void);
 int i2c_write(XIicPs *Iic, u16 _register, u8 _command);
 int i2c_read(XIicPs *Iic, u8* buff, u32 len, u16 i2c_adder);
 int WriteReg(u16 _register, u8 _command);
 int ReadReg(u16 reg);
 int WriteConfig(config_word_t const* cfg, int size);
-void VdmaConfigureWrite(uint16_t hres, uint16_t vres);
+void VdmaInit(void);
 XIicPs Iic;
 
-int Init(void)
+int i2c_Init(void)
 {
     int Status;
     XIicPs_Config *Config;  /**< configuration information for the device */
@@ -180,23 +184,41 @@ int WriteConfig(config_word_t const* cfg, int size){
 	}
 }
 
-void VdmaConfigureWrite(uint16_t hres, uint16_t vres){
+void Vdma_Init(void){
+	XAxiVdma videoDMAController;
 	XStatus status;
+
+	XAxiVdma_Config *VideoDMAConfig = XAxiVdma_LookupConfig(XPAR_AXI_VDMA_0_DEVICE_ID);
+
+	VideoDMAConfig->
+
+	if (XST_FAILURE == XAxiVdma_CfgInitialize(&videoDMAController, VideoDMAConfig, XPAR_AXI_VDMA_0_BASEADDR)){
+		xil_printf("VideoDMA Did not initialize.\r\n");
+	}
+
+	if (XST_FAILURE == XAxiVdma_SetFrmStore(&videoDMAController, 2, XAXIVDMA_WRITE)){
+		xil_printf("Set Frame Store Failed.");
+	}
+
+	/////configureWrite/////
 	XAxiVdma_DmaSetup myFrameBuffer;
-	myFrameBuffer.VertSizeInput = 720;	   // 480 vertical pixels.
-	myFrameBuffer.HoriSizeInput = 1280 * 4; // 640 horizontal (32-bit pixels).
-	myFrameBuffer.Stride = 1280 * 4;		   // Dont' worry about the rest of the values.
+	myFrameBuffer.VertSizeInput = v_res;		// 480 vertical pixels.
+	myFrameBuffer.HoriSizeInput = h_res * 4; // 640 horizontal (32-bit pixels).
+	myFrameBuffer.Stride = h_res * 4;		// Dont' worry about the rest of the values.
 	myFrameBuffer.FrameDelay = 0;
 	myFrameBuffer.EnableCircularBuf = 1;
 	myFrameBuffer.EnableSync = 0;
 	myFrameBuffer.PointNum = 0;
 	myFrameBuffer.EnableFrameCounter = 0;
 	myFrameBuffer.FixedFrameStoreAddr = 0;
-	
-	if (XST_FAILURE == XAxiVdma_DmaConfig(&videoDMAController, XAXIVDMA_READ, &myFrameBuffer)){
+	if (XST_FAILURE == XAxiVdma_DmaConfig(&videoDMAController, XAXIVDMA_WRITE, &myFrameBuffer)){
 		xil_printf("DMA Config Failed\r\n");
 	}
+
+	myFrameBuffer.FrameStoreStartAddr[0] = FRAME_BUFFER_0_ADDR;
+	myFrameBuffer.FrameStoreStartAddr[1] = FRAME_BUFFER_0_ADDR + 4 * v_res * h_res;
 }
+
 
 
 int main(void){
