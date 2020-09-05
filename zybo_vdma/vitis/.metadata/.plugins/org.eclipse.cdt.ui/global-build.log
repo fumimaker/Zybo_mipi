@@ -1,6 +1,10 @@
 Nothing to build in platform 'design_1_wrapper'
 
-01:46:23 **** Incremental Build of configuration Debug for project zybo_vdma ****
+02:08:08 **** Clean-only build of configuration Debug for project zybo_vdma ****
+make clean 
+rm -rf  ./src/helloworld.o ./src/main.o ./src/platform.o  ./src/helloworld.d ./src/main.d ./src/platform.d  zybo_vdma.elf.size  zybo_vdma.elf
+' '
+02:08:09 **** Incremental Build of configuration Debug for project zybo_vdma ****
 make all 
 make --no-print-directory pre-build
 a9-linaro-pre-build-step
@@ -15,11 +19,19 @@ arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cort
  ^
 'Finished building: ../src/main.c'
 ' '
+'Building file: ../src/platform.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/platform.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -IC:/Users/ivr/Documents/GitHub/Zybo_mipi/zybo_vdma/vitis/design_1_wrapper/export/design_1_wrapper/sw/design_1_wrapper/standalone_domain/bspinclude/include -MMD -MP -MF"src/platform.d" -MT"src/platform.o" -o "src/platform.o" "../src/platform.c"
+'Finished building: ../src/platform.c'
+' '
 'Building target: zybo_vdma.elf'
 'Invoking: ARM v7 gcc linker'
-arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -LC:/Users/ivr/Documents/GitHub/Zybo_mipi/zybo_vdma/vitis/design_1_wrapper/export/design_1_wrapper/sw/design_1_wrapper/standalone_domain/bsplib/lib -o "zybo_vdma.elf"  ./src/helloworld.o ./src/main.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
-c:/xilinx/vitis/2019.2/gnu/aarch32/nt/gcc-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/8.2.0/../../../../arm-none-eabi/bin/ld.exe: ./src/main.o: in function `main':
-C:\Users\ivr\Documents\GitHub\Zybo_mipi\zybo_vdma\vitis\zybo_vdma\Debug/../src/main.c:182: multiple definition of `main'; ./src/helloworld.o:C:\Users\ivr\Documents\GitHub\Zybo_mipi\zybo_vdma\vitis\zybo_vdma\Debug/../src/helloworld.c:54: first defined here
-collect2.exe: error: ld returned 1 exit status
-make[1]: *** [makefile:43: zybo_vdma.elf] Error 1
-make: *** [makefile:34: all] Error 2
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -LC:/Users/ivr/Documents/GitHub/Zybo_mipi/zybo_vdma/vitis/design_1_wrapper/export/design_1_wrapper/sw/design_1_wrapper/standalone_domain/bsplib/lib -o "zybo_vdma.elf"  ./src/main.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: zybo_vdma.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size zybo_vdma.elf  |tee "zybo_vdma.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  66148	   2600	  23392	  92140	  167ec	zybo_vdma.elf
+'Finished building: zybo_vdma.elf.size'
+' '
