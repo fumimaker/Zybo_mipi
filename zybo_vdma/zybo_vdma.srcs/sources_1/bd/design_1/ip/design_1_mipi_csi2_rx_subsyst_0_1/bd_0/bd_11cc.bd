@@ -548,16 +548,16 @@
           "phy/rx_mipi_phy_if"
         ]
       },
-      "csirxss_s_axi_1": {
-        "interface_ports": [
-          "csirxss_s_axi",
-          "rx/s_axi"
-        ]
-      },
       "rx_m_axis": {
         "interface_ports": [
           "rx/m_axis",
           "vfb_0/s_axis"
+        ]
+      },
+      "csirxss_s_axi_1": {
+        "interface_ports": [
+          "csirxss_s_axi",
+          "rx/s_axi"
         ]
       },
       "phy_rx_mipi_ppi_if": {

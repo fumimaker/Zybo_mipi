@@ -603,41 +603,6 @@
 
 /******************************************************************/
 
-/* Definitions for driver VTC */
-#define XPAR_XVTC_NUM_INSTANCES 1
-
-/* Definitions for peripheral V_TC_0 */
-#define XPAR_V_TC_0_DEVICE_ID 0
-#define XPAR_V_TC_0_BASEADDR 0x43C10000
-#define XPAR_V_TC_0_HIGHADDR 0x43C1FFFF
-#define XPAR_V_TC_0_GENERATE_EN 1
-#define XPAR_V_TC_0_DETECT_EN 1
-#define XPAR_V_TC_0_DET_HSYNC_EN 1
-#define XPAR_V_TC_0_DET_VSYNC_EN 1
-#define XPAR_V_TC_0_DET_HBLANK_EN 1
-#define XPAR_V_TC_0_DET_VBLANK_EN 1
-#define XPAR_V_TC_0_DET_AVIDEO_EN 1
-#define XPAR_V_TC_0_DET_ACHROMA_EN 0
-
-
-/******************************************************************/
-
-/* Canonical definitions for peripheral V_TC_0 */
-#define XPAR_VTC_0_DEVICE_ID XPAR_V_TC_0_DEVICE_ID
-#define XPAR_VTC_0_BASEADDR 0x43C10000
-#define XPAR_VTC_0_HIGHADDR 0x43C1FFFF
-#define XPAR_VTC_0_GENERATE_EN 1
-#define XPAR_VTC_0_DETECT_EN 1
-#define XPAR_VTC_0_DET_HSYNC_EN 1
-#define XPAR_VTC_0_DET_VSYNC_EN 1
-#define XPAR_VTC_0_DET_HBLANK_EN 1
-#define XPAR_VTC_0_DET_VBLANK_EN 1
-#define XPAR_VTC_0_DET_AVIDEO_EN 1
-#define XPAR_VTC_0_DET_ACHROMA_EN 0
-
-
-/******************************************************************/
-
 /* Definitions for driver XADCPS */
 #define XPAR_XADCPS_NUM_INSTANCES 1
 

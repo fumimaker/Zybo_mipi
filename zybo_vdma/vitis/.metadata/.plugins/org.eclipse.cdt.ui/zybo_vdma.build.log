@@ -1,33 +1,10 @@
-00:51:13 **** Incremental Build of configuration Debug for project zybo_vdma ****
+03:42:41 **** Incremental Build of configuration Debug for project zybo_vdma ****
 make all 
 make --no-print-directory pre-build
 a9-linaro-pre-build-step
 ' '
 make --no-print-directory main-build
-'Building file: ../src/main.c'
-'Invoking: ARM v7 gcc compiler'
-arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -IC:/Users/ivr/Documents/GitHub/Zybo_mipi/zybo_vdma/vitis/design_1_wrapper/export/design_1_wrapper/sw/design_1_wrapper/standalone_domain/bspinclude/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
-../src/main.c: In function 'VdmaInit':
-../src/main.c:192:10: warning: unused variable 'status' [-Wunused-variable]
-  XStatus status;
-          ^~~~~~
-../src/main.c: In function 'WriteConfig':
-../src/main.c:188:1: warning: control reaches end of non-void function [-Wreturn-type]
- }
- ^
-'Finished building: ../src/main.c'
-' '
-'Building target: zybo_vdma.elf'
-'Invoking: ARM v7 gcc linker'
-arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -LC:/Users/ivr/Documents/GitHub/Zybo_mipi/zybo_vdma/vitis/design_1_wrapper/export/design_1_wrapper/sw/design_1_wrapper/standalone_domain/bsplib/lib -o "zybo_vdma.elf"  ./src/main.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
-'Finished building target: zybo_vdma.elf'
-' '
-'Invoking: ARM v7 Print Size'
-arm-none-eabi-size zybo_vdma.elf  |tee "zybo_vdma.elf.size"
-   text	   data	    bss	    dec	    hex	filename
-  73184	   2728	  23392	  99304	  183e8	zybo_vdma.elf
-'Finished building: zybo_vdma.elf.size'
-' '
+make[1]: Nothing to be done for 'main-build'.
 
-00:51:15 Build Finished (took 1s.359ms)
+03:42:41 Build Finished (took 389ms)
 

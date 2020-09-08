@@ -232,6 +232,15 @@ void VdmaInit(void){
 	if (XST_FAILURE == XAxiVdma_DmaSetBufferAddr(&videoDMAController, XAXIVDMA_WRITE, myFrameBuffer.FrameStoreStartAddr)){
 		xil_printf("DMA Set Address Failed Failed\r\n");
 	}
+
+	//Clear errors in SR
+	XAxiVdma_ClearChannelErrors(&videoDMAController.WriteChannel, XAXIVDMA_SR_ERR_ALL_MASK);
+	//Unmask error interrupts
+	XAxiVdma_MaskS2MMErrIntr(&videoDMAController, ~XAXIVDMA_S2MM_IRQ_ERR_ALL_MASK, XAXIVDMA_WRITE);
+	//Enable write channel error and frame count interrupts
+	XAxiVdma_IntrEnable(&videoDMAController, XAXIVDMA_IXR_ERROR_MASK, XAXIVDMA_WRITE);
+
+
 	/////Start DMA Write/////
 	if (XST_FAILURE == XAxiVdma_DmaStart(&videoDMAController, XAXIVDMA_WRITE)){
 		xil_printf("DMA WRITE START FAILED\r\n");
@@ -271,10 +280,18 @@ void VdmaInit(void){
 		xil_printf("DMA Set Address Failed Failed\r\n");
 	}
 
-	/////Start DMA Write/////
+	//Clear errors in SR
+	XAxiVdma_ClearChannelErrors(&videoDMAController.ReadChannel, XAXIVDMA_SR_ERR_ALL_MASK);
+	//Enable read channel error and frame count interrupts
+	XAxiVdma_IntrEnable(&videoDMAController, XAXIVDMA_IXR_ERROR_MASK, XAXIVDMA_READ);
+
+
+	/////Start DMA Read/////
 	if (XST_FAILURE == XAxiVdma_DmaStart(&videoDMAController, XAXIVDMA_READ)){
 		xil_printf("DMA READ START FAILED\r\n");
 	}
+
+
 }
 
 
