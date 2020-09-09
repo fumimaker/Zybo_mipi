@@ -1,4 +1,29 @@
-typedef struct { uint16_t addr; uint8_t data; } config_word_t;
+#ifndef OV5640_H
+#define OV5640_H
+
+
+// I2C parameters
+#define IIC_SCLK_RATE       400000  // clock 100KHz
+//#define CAMERA_ADDRESS      0x21    // 7bit address 0bit=1:write 0:read
+#define CAMERA_ADDRESS      (0x78>>1)    //=0x3C 7bit address + 0bit=1:write 0:read
+#define IIC_DEVICE_ID       XPAR_XIICPS_0_DEVICE_ID
+
+#define REG(address) *(volatile unsigned int*)(address)
+
+#define GPIO_BASE (0x41200000)  /* XPAR_AXI_GPIO_0_BASEADDR */
+#define GPIO_DATA (GPIO_BASE + 0x0000)
+#define GPIO_TRI  (GPIO_BASE + 0x0004)
+
+#define SIZEOF(x) sizeof(x)/sizeof(x[0])
+
+uint8_t const dev_ID_h_ = 0x56;
+uint8_t const dev_ID_l_ = 0x40;
+uint16_t const reg_ID_h = 0x300A;
+uint16_t const reg_ID_l = 0x300B;
+
+extern typedef struct { uint16_t addr; uint8_t data; } config_word_t;
+
+
 
 config_word_t const cfg_advanced_awb_[] =
 {
@@ -622,3 +647,11 @@ config_word_t const cfg_init_[] =
 	{0x5001, 0x03}
 };
 
+extern int Init(void);
+extern int i2c_write(XIicPs *Iic, u16 _register, u8 _command);
+extern int i2c_read(XIicPs *Iic, u8* buff, u32 len, u16 i2c_adder);
+extern int WriteReg(u16 _register, u8 _command);
+extern int ReadReg(u16 reg);
+int WriteConfig(config_word_t const* cfg, int size);
+
+#endif

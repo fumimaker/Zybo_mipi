@@ -1,10 +1,2358 @@
-18:55:28 **** Incremental Build of configuration Debug for project ov5640_mipi ****
+21:38:19 **** Incremental Build of configuration Debug for project ov5640_mipi ****
 make all 
 make --no-print-directory pre-build
 a9-linaro-pre-build-step
 ' '
 make --no-print-directory main-build
-make[1]: Nothing to be done for 'main-build'.
+'Building file: ../src/OV5640.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/OV5640.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -IC:/Github/Zybo_mipi/zybo_ov5640/vitis/design_1_wrapper/export/design_1_wrapper/sw/design_1_wrapper/standalone_domain/bspinclude/include -MMD -MP -MF"src/OV5640.d" -MT"src/OV5640.o" -o "src/OV5640.o" "../src/OV5640.c"
+In file included from ../src/OV5640.c:7:
+../src/OV5640.h:24:1: error: multiple storage classes in declaration specifiers
+ extern typedef struct { uint16_t addr; uint8_t data; } config_word_t;
+ ^~~~~~
+../src/OV5640.h:28:14: error: expected ';' before 'const'
+ config_word_t const cfg_advanced_awb_[] =
+              ^~~~~~
+              ;
+../src/OV5640.h:28:21: warning: type defaults to 'int' in declaration of 'cfg_advanced_awb_' [-Wimplicit-int]
+ config_word_t const cfg_advanced_awb_[] =
+                     ^~~~~~~~~~~~~~~~~
+../src/OV5640.h:31:2: warning: braces around scalar initializer
+  {0x3406 ,0x00},
+  ^
+../src/OV5640.h:31:2: note: (near initialization for 'cfg_advanced_awb_[0]')
+../src/OV5640.h:31:11: warning: excess elements in scalar initializer
+  {0x3406 ,0x00},
+           ^~~~
+../src/OV5640.h:31:11: note: (near initialization for 'cfg_advanced_awb_[0]')
+../src/OV5640.h:32:2: warning: braces around scalar initializer
+  {0x5192 ,0x04},
+  ^
+../src/OV5640.h:32:2: note: (near initialization for 'cfg_advanced_awb_[1]')
+../src/OV5640.h:32:11: warning: excess elements in scalar initializer
+  {0x5192 ,0x04},
+           ^~~~
+../src/OV5640.h:32:11: note: (near initialization for 'cfg_advanced_awb_[1]')
+../src/OV5640.h:33:2: warning: braces around scalar initializer
+  {0x5191 ,0xf8},
+  ^
+../src/OV5640.h:33:2: note: (near initialization for 'cfg_advanced_awb_[2]')
+../src/OV5640.h:33:11: warning: excess elements in scalar initializer
+  {0x5191 ,0xf8},
+           ^~~~
+../src/OV5640.h:33:11: note: (near initialization for 'cfg_advanced_awb_[2]')
+../src/OV5640.h:34:2: warning: braces around scalar initializer
+  {0x518d ,0x26},
+  ^
+../src/OV5640.h:34:2: note: (near initialization for 'cfg_advanced_awb_[3]')
+../src/OV5640.h:34:11: warning: excess elements in scalar initializer
+  {0x518d ,0x26},
+           ^~~~
+../src/OV5640.h:34:11: note: (near initialization for 'cfg_advanced_awb_[3]')
+../src/OV5640.h:35:2: warning: braces around scalar initializer
+  {0x518f ,0x42},
+  ^
+../src/OV5640.h:35:2: note: (near initialization for 'cfg_advanced_awb_[4]')
+../src/OV5640.h:35:11: warning: excess elements in scalar initializer
+  {0x518f ,0x42},
+           ^~~~
+../src/OV5640.h:35:11: note: (near initialization for 'cfg_advanced_awb_[4]')
+../src/OV5640.h:36:2: warning: braces around scalar initializer
+  {0x518e ,0x2b},
+  ^
+../src/OV5640.h:36:2: note: (near initialization for 'cfg_advanced_awb_[5]')
+../src/OV5640.h:36:11: warning: excess elements in scalar initializer
+  {0x518e ,0x2b},
+           ^~~~
+../src/OV5640.h:36:11: note: (near initialization for 'cfg_advanced_awb_[5]')
+../src/OV5640.h:37:2: warning: braces around scalar initializer
+  {0x5190 ,0x42},
+  ^
+../src/OV5640.h:37:2: note: (near initialization for 'cfg_advanced_awb_[6]')
+../src/OV5640.h:37:11: warning: excess elements in scalar initializer
+  {0x5190 ,0x42},
+           ^~~~
+../src/OV5640.h:37:11: note: (near initialization for 'cfg_advanced_awb_[6]')
+../src/OV5640.h:38:2: warning: braces around scalar initializer
+  {0x518b ,0xd0},
+  ^
+../src/OV5640.h:38:2: note: (near initialization for 'cfg_advanced_awb_[7]')
+../src/OV5640.h:38:11: warning: excess elements in scalar initializer
+  {0x518b ,0xd0},
+           ^~~~
+../src/OV5640.h:38:11: note: (near initialization for 'cfg_advanced_awb_[7]')
+../src/OV5640.h:39:2: warning: braces around scalar initializer
+  {0x518c ,0xbd},
+  ^
+../src/OV5640.h:39:2: note: (near initialization for 'cfg_advanced_awb_[8]')
+../src/OV5640.h:39:11: warning: excess elements in scalar initializer
+  {0x518c ,0xbd},
+           ^~~~
+../src/OV5640.h:39:11: note: (near initialization for 'cfg_advanced_awb_[8]')
+../src/OV5640.h:40:2: warning: braces around scalar initializer
+  {0x5187 ,0x18},
+  ^
+../src/OV5640.h:40:2: note: (near initialization for 'cfg_advanced_awb_[9]')
+../src/OV5640.h:40:11: warning: excess elements in scalar initializer
+  {0x5187 ,0x18},
+           ^~~~
+../src/OV5640.h:40:11: note: (near initialization for 'cfg_advanced_awb_[9]')
+../src/OV5640.h:41:2: warning: braces around scalar initializer
+  {0x5188 ,0x18},
+  ^
+../src/OV5640.h:41:2: note: (near initialization for 'cfg_advanced_awb_[10]')
+../src/OV5640.h:41:11: warning: excess elements in scalar initializer
+  {0x5188 ,0x18},
+           ^~~~
+../src/OV5640.h:41:11: note: (near initialization for 'cfg_advanced_awb_[10]')
+../src/OV5640.h:42:2: warning: braces around scalar initializer
+  {0x5189 ,0x56},
+  ^
+../src/OV5640.h:42:2: note: (near initialization for 'cfg_advanced_awb_[11]')
+../src/OV5640.h:42:11: warning: excess elements in scalar initializer
+  {0x5189 ,0x56},
+           ^~~~
+../src/OV5640.h:42:11: note: (near initialization for 'cfg_advanced_awb_[11]')
+../src/OV5640.h:43:2: warning: braces around scalar initializer
+  {0x518a ,0x5c},
+  ^
+../src/OV5640.h:43:2: note: (near initialization for 'cfg_advanced_awb_[12]')
+../src/OV5640.h:43:11: warning: excess elements in scalar initializer
+  {0x518a ,0x5c},
+           ^~~~
+../src/OV5640.h:43:11: note: (near initialization for 'cfg_advanced_awb_[12]')
+../src/OV5640.h:44:2: warning: braces around scalar initializer
+  {0x5186 ,0x1c},
+  ^
+../src/OV5640.h:44:2: note: (near initialization for 'cfg_advanced_awb_[13]')
+../src/OV5640.h:44:11: warning: excess elements in scalar initializer
+  {0x5186 ,0x1c},
+           ^~~~
+../src/OV5640.h:44:11: note: (near initialization for 'cfg_advanced_awb_[13]')
+../src/OV5640.h:45:2: warning: braces around scalar initializer
+  {0x5181 ,0x50},
+  ^
+../src/OV5640.h:45:2: note: (near initialization for 'cfg_advanced_awb_[14]')
+../src/OV5640.h:45:11: warning: excess elements in scalar initializer
+  {0x5181 ,0x50},
+           ^~~~
+../src/OV5640.h:45:11: note: (near initialization for 'cfg_advanced_awb_[14]')
+../src/OV5640.h:46:2: warning: braces around scalar initializer
+  {0x5184 ,0x20},
+  ^
+../src/OV5640.h:46:2: note: (near initialization for 'cfg_advanced_awb_[15]')
+../src/OV5640.h:46:11: warning: excess elements in scalar initializer
+  {0x5184 ,0x20},
+           ^~~~
+../src/OV5640.h:46:11: note: (near initialization for 'cfg_advanced_awb_[15]')
+../src/OV5640.h:47:2: warning: braces around scalar initializer
+  {0x5182 ,0x11},
+  ^
+../src/OV5640.h:47:2: note: (near initialization for 'cfg_advanced_awb_[16]')
+../src/OV5640.h:47:11: warning: excess elements in scalar initializer
+  {0x5182 ,0x11},
+           ^~~~
+../src/OV5640.h:47:11: note: (near initialization for 'cfg_advanced_awb_[16]')
+../src/OV5640.h:48:2: warning: braces around scalar initializer
+  {0x5183 ,0x00},
+  ^
+../src/OV5640.h:48:2: note: (near initialization for 'cfg_advanced_awb_[17]')
+../src/OV5640.h:48:11: warning: excess elements in scalar initializer
+  {0x5183 ,0x00},
+           ^~~~
+../src/OV5640.h:48:11: note: (near initialization for 'cfg_advanced_awb_[17]')
+../src/OV5640.h:49:2: warning: braces around scalar initializer
+  {0x5001 ,0x03}
+  ^
+../src/OV5640.h:49:2: note: (near initialization for 'cfg_advanced_awb_[18]')
+../src/OV5640.h:49:11: warning: excess elements in scalar initializer
+  {0x5001 ,0x03}
+           ^~~~
+../src/OV5640.h:49:11: note: (near initialization for 'cfg_advanced_awb_[18]')
+../src/OV5640.h:52:14: error: expected ';' before 'const'
+ config_word_t const cfg_simple_awb_[] =
+              ^~~~~~
+              ;
+../src/OV5640.h:52:21: warning: type defaults to 'int' in declaration of 'cfg_simple_awb_' [-Wimplicit-int]
+ config_word_t const cfg_simple_awb_[] =
+                     ^~~~~~~~~~~~~~~
+../src/OV5640.h:55:2: warning: braces around scalar initializer
+  {0x518d ,0x00},
+  ^
+../src/OV5640.h:55:2: note: (near initialization for 'cfg_simple_awb_[0]')
+../src/OV5640.h:55:11: warning: excess elements in scalar initializer
+  {0x518d ,0x00},
+           ^~~~
+../src/OV5640.h:55:11: note: (near initialization for 'cfg_simple_awb_[0]')
+../src/OV5640.h:56:2: warning: braces around scalar initializer
+  {0x518f ,0x20},
+  ^
+../src/OV5640.h:56:2: note: (near initialization for 'cfg_simple_awb_[1]')
+../src/OV5640.h:56:11: warning: excess elements in scalar initializer
+  {0x518f ,0x20},
+           ^~~~
+../src/OV5640.h:56:11: note: (near initialization for 'cfg_simple_awb_[1]')
+../src/OV5640.h:57:2: warning: braces around scalar initializer
+  {0x518e ,0x00},
+  ^
+../src/OV5640.h:57:2: note: (near initialization for 'cfg_simple_awb_[2]')
+../src/OV5640.h:57:11: warning: excess elements in scalar initializer
+  {0x518e ,0x00},
+           ^~~~
+../src/OV5640.h:57:11: note: (near initialization for 'cfg_simple_awb_[2]')
+../src/OV5640.h:58:2: warning: braces around scalar initializer
+  {0x5190 ,0x20},
+  ^
+../src/OV5640.h:58:2: note: (near initialization for 'cfg_simple_awb_[3]')
+../src/OV5640.h:58:11: warning: excess elements in scalar initializer
+  {0x5190 ,0x20},
+           ^~~~
+../src/OV5640.h:58:11: note: (near initialization for 'cfg_simple_awb_[3]')
+../src/OV5640.h:59:2: warning: braces around scalar initializer
+  {0x518b ,0x00},
+  ^
+../src/OV5640.h:59:2: note: (near initialization for 'cfg_simple_awb_[4]')
+../src/OV5640.h:59:11: warning: excess elements in scalar initializer
+  {0x518b ,0x00},
+           ^~~~
+../src/OV5640.h:59:11: note: (near initialization for 'cfg_simple_awb_[4]')
+../src/OV5640.h:60:2: warning: braces around scalar initializer
+  {0x518c ,0x00},
+  ^
+../src/OV5640.h:60:2: note: (near initialization for 'cfg_simple_awb_[5]')
+../src/OV5640.h:60:11: warning: excess elements in scalar initializer
+  {0x518c ,0x00},
+           ^~~~
+../src/OV5640.h:60:11: note: (near initialization for 'cfg_simple_awb_[5]')
+../src/OV5640.h:61:2: warning: braces around scalar initializer
+  {0x5187 ,0x10},
+  ^
+../src/OV5640.h:61:2: note: (near initialization for 'cfg_simple_awb_[6]')
+../src/OV5640.h:61:11: warning: excess elements in scalar initializer
+  {0x5187 ,0x10},
+           ^~~~
+../src/OV5640.h:61:11: note: (near initialization for 'cfg_simple_awb_[6]')
+../src/OV5640.h:62:2: warning: braces around scalar initializer
+  {0x5188 ,0x10},
+  ^
+../src/OV5640.h:62:2: note: (near initialization for 'cfg_simple_awb_[7]')
+../src/OV5640.h:62:11: warning: excess elements in scalar initializer
+  {0x5188 ,0x10},
+           ^~~~
+../src/OV5640.h:62:11: note: (near initialization for 'cfg_simple_awb_[7]')
+../src/OV5640.h:63:2: warning: braces around scalar initializer
+  {0x5189 ,0x40},
+  ^
+../src/OV5640.h:63:2: note: (near initialization for 'cfg_simple_awb_[8]')
+../src/OV5640.h:63:11: warning: excess elements in scalar initializer
+  {0x5189 ,0x40},
+           ^~~~
+../src/OV5640.h:63:11: note: (near initialization for 'cfg_simple_awb_[8]')
+../src/OV5640.h:64:2: warning: braces around scalar initializer
+  {0x518a ,0x40},
+  ^
+../src/OV5640.h:64:2: note: (near initialization for 'cfg_simple_awb_[9]')
+../src/OV5640.h:64:11: warning: excess elements in scalar initializer
+  {0x518a ,0x40},
+           ^~~~
+../src/OV5640.h:64:11: note: (near initialization for 'cfg_simple_awb_[9]')
+../src/OV5640.h:65:2: warning: braces around scalar initializer
+  {0x5186 ,0x10},
+  ^
+../src/OV5640.h:65:2: note: (near initialization for 'cfg_simple_awb_[10]')
+../src/OV5640.h:65:11: warning: excess elements in scalar initializer
+  {0x5186 ,0x10},
+           ^~~~
+../src/OV5640.h:65:11: note: (near initialization for 'cfg_simple_awb_[10]')
+../src/OV5640.h:66:2: warning: braces around scalar initializer
+  {0x5181 ,0x58},
+  ^
+../src/OV5640.h:66:2: note: (near initialization for 'cfg_simple_awb_[11]')
+../src/OV5640.h:66:11: warning: excess elements in scalar initializer
+  {0x5181 ,0x58},
+           ^~~~
+../src/OV5640.h:66:11: note: (near initialization for 'cfg_simple_awb_[11]')
+../src/OV5640.h:67:2: warning: braces around scalar initializer
+  {0x5184 ,0x25},
+  ^
+../src/OV5640.h:67:2: note: (near initialization for 'cfg_simple_awb_[12]')
+../src/OV5640.h:67:11: warning: excess elements in scalar initializer
+  {0x5184 ,0x25},
+           ^~~~
+../src/OV5640.h:67:11: note: (near initialization for 'cfg_simple_awb_[12]')
+../src/OV5640.h:68:2: warning: braces around scalar initializer
+  {0x5182 ,0x11},
+  ^
+../src/OV5640.h:68:2: note: (near initialization for 'cfg_simple_awb_[13]')
+../src/OV5640.h:68:11: warning: excess elements in scalar initializer
+  {0x5182 ,0x11},
+           ^~~~
+../src/OV5640.h:68:11: note: (near initialization for 'cfg_simple_awb_[13]')
+../src/OV5640.h:71:2: warning: braces around scalar initializer
+  {0x3406 ,0x00},
+  ^
+../src/OV5640.h:71:2: note: (near initialization for 'cfg_simple_awb_[14]')
+../src/OV5640.h:71:11: warning: excess elements in scalar initializer
+  {0x3406 ,0x00},
+           ^~~~
+../src/OV5640.h:71:11: note: (near initialization for 'cfg_simple_awb_[14]')
+../src/OV5640.h:72:2: warning: braces around scalar initializer
+  {0x5183 ,0x80},
+  ^
+../src/OV5640.h:72:2: note: (near initialization for 'cfg_simple_awb_[15]')
+../src/OV5640.h:72:11: warning: excess elements in scalar initializer
+  {0x5183 ,0x80},
+           ^~~~
+../src/OV5640.h:72:11: note: (near initialization for 'cfg_simple_awb_[15]')
+../src/OV5640.h:73:2: warning: braces around scalar initializer
+  {0x5191 ,0xff},
+  ^
+../src/OV5640.h:73:2: note: (near initialization for 'cfg_simple_awb_[16]')
+../src/OV5640.h:73:11: warning: excess elements in scalar initializer
+  {0x5191 ,0xff},
+           ^~~~
+../src/OV5640.h:73:11: note: (near initialization for 'cfg_simple_awb_[16]')
+../src/OV5640.h:74:2: warning: braces around scalar initializer
+  {0x5192 ,0x00},
+  ^
+../src/OV5640.h:74:2: note: (near initialization for 'cfg_simple_awb_[17]')
+../src/OV5640.h:74:11: warning: excess elements in scalar initializer
+  {0x5192 ,0x00},
+           ^~~~
+../src/OV5640.h:74:11: note: (near initialization for 'cfg_simple_awb_[17]')
+../src/OV5640.h:75:2: warning: braces around scalar initializer
+  {0x5001 ,0x03}
+  ^
+../src/OV5640.h:75:2: note: (near initialization for 'cfg_simple_awb_[18]')
+../src/OV5640.h:75:11: warning: excess elements in scalar initializer
+  {0x5001 ,0x03}
+           ^~~~
+../src/OV5640.h:75:11: note: (near initialization for 'cfg_simple_awb_[18]')
+../src/OV5640.h:78:14: error: expected ';' before 'const'
+ config_word_t const cfg_disable_awb_[] =
+              ^~~~~~
+              ;
+../src/OV5640.h:78:21: warning: type defaults to 'int' in declaration of 'cfg_disable_awb_' [-Wimplicit-int]
+ config_word_t const cfg_disable_awb_[] =
+                     ^~~~~~~~~~~~~~~~
+../src/OV5640.h:80:2: warning: braces around scalar initializer
+  {0x5001 ,0x02}
+  ^
+../src/OV5640.h:80:2: note: (near initialization for 'cfg_disable_awb_[0]')
+../src/OV5640.h:80:11: warning: excess elements in scalar initializer
+  {0x5001 ,0x02}
+           ^~~~
+../src/OV5640.h:80:11: note: (near initialization for 'cfg_disable_awb_[0]')
+../src/OV5640.h:83:14: error: expected ';' before 'const'
+ config_word_t const cfg_720p_60fps_[] =
+              ^~~~~~
+              ;
+../src/OV5640.h:83:21: warning: type defaults to 'int' in declaration of 'cfg_720p_60fps_' [-Wimplicit-int]
+ config_word_t const cfg_720p_60fps_[] =
+                     ^~~~~~~~~~~~~~~
+../src/OV5640.h:87:2: warning: braces around scalar initializer
+  {0x3035, 0x21},
+  ^
+../src/OV5640.h:87:2: note: (near initialization for 'cfg_720p_60fps_[0]')
+../src/OV5640.h:87:11: warning: excess elements in scalar initializer
+  {0x3035, 0x21},
+           ^~~~
+../src/OV5640.h:87:11: note: (near initialization for 'cfg_720p_60fps_[0]')
+../src/OV5640.h:89:2: warning: braces around scalar initializer
+  {0x3036, 0x46},
+  ^
+../src/OV5640.h:89:2: note: (near initialization for 'cfg_720p_60fps_[1]')
+../src/OV5640.h:89:11: warning: excess elements in scalar initializer
+  {0x3036, 0x46},
+           ^~~~
+../src/OV5640.h:89:11: note: (near initialization for 'cfg_720p_60fps_[1]')
+../src/OV5640.h:91:2: warning: braces around scalar initializer
+  {0x3037, 0x05},
+  ^
+../src/OV5640.h:91:2: note: (near initialization for 'cfg_720p_60fps_[2]')
+../src/OV5640.h:91:11: warning: excess elements in scalar initializer
+  {0x3037, 0x05},
+           ^~~~
+../src/OV5640.h:91:11: note: (near initialization for 'cfg_720p_60fps_[2]')
+../src/OV5640.h:93:2: warning: braces around scalar initializer
+  {0x3108, 0x11},
+  ^
+../src/OV5640.h:93:2: note: (near initialization for 'cfg_720p_60fps_[3]')
+../src/OV5640.h:93:11: warning: excess elements in scalar initializer
+  {0x3108, 0x11},
+           ^~~~
+../src/OV5640.h:93:11: note: (near initialization for 'cfg_720p_60fps_[3]')
+../src/OV5640.h:96:2: warning: braces around scalar initializer
+  {0x3034, 0x1A},
+  ^
+../src/OV5640.h:96:2: note: (near initialization for 'cfg_720p_60fps_[4]')
+../src/OV5640.h:96:11: warning: excess elements in scalar initializer
+  {0x3034, 0x1A},
+           ^~~~
+../src/OV5640.h:96:11: note: (near initialization for 'cfg_720p_60fps_[4]')
+../src/OV5640.h:99:2: warning: braces around scalar initializer
+  {0x3800, (0 >> 8) & 0x0F},
+  ^
+../src/OV5640.h:99:2: note: (near initialization for 'cfg_720p_60fps_[5]')
+../src/OV5640.h:99:11: warning: excess elements in scalar initializer
+  {0x3800, (0 >> 8) & 0x0F},
+           ^
+../src/OV5640.h:99:11: note: (near initialization for 'cfg_720p_60fps_[5]')
+../src/OV5640.h:101:2: warning: braces around scalar initializer
+  {0x3801, 0 & 0xFF},
+  ^
+../src/OV5640.h:101:2: note: (near initialization for 'cfg_720p_60fps_[6]')
+../src/OV5640.h:101:11: warning: excess elements in scalar initializer
+  {0x3801, 0 & 0xFF},
+           ^
+../src/OV5640.h:101:11: note: (near initialization for 'cfg_720p_60fps_[6]')
+../src/OV5640.h:103:2: warning: braces around scalar initializer
+  {0x3802, (8 >> 8) & 0x07},
+  ^
+../src/OV5640.h:103:2: note: (near initialization for 'cfg_720p_60fps_[7]')
+../src/OV5640.h:103:11: warning: excess elements in scalar initializer
+  {0x3802, (8 >> 8) & 0x07},
+           ^
+../src/OV5640.h:103:11: note: (near initialization for 'cfg_720p_60fps_[7]')
+../src/OV5640.h:105:2: warning: braces around scalar initializer
+  {0x3803, 8 & 0xFF},
+  ^
+../src/OV5640.h:105:2: note: (near initialization for 'cfg_720p_60fps_[8]')
+../src/OV5640.h:105:11: warning: excess elements in scalar initializer
+  {0x3803, 8 & 0xFF},
+           ^
+../src/OV5640.h:105:11: note: (near initialization for 'cfg_720p_60fps_[8]')
+../src/OV5640.h:110:2: warning: braces around scalar initializer
+  {0x3804, (2619 >> 8) & 0x0F},
+  ^
+../src/OV5640.h:110:2: note: (near initialization for 'cfg_720p_60fps_[9]')
+../src/OV5640.h:110:11: warning: excess elements in scalar initializer
+  {0x3804, (2619 >> 8) & 0x0F},
+           ^
+../src/OV5640.h:110:11: note: (near initialization for 'cfg_720p_60fps_[9]')
+../src/OV5640.h:112:2: warning: braces around scalar initializer
+  {0x3805, 2619 & 0xFF},
+  ^
+../src/OV5640.h:112:2: note: (near initialization for 'cfg_720p_60fps_[10]')
+../src/OV5640.h:112:11: warning: excess elements in scalar initializer
+  {0x3805, 2619 & 0xFF},
+           ^~~~
+../src/OV5640.h:112:11: note: (near initialization for 'cfg_720p_60fps_[10]')
+../src/OV5640.h:114:2: warning: braces around scalar initializer
+  {0x3806, (1947 >> 8) & 0x07},
+  ^
+../src/OV5640.h:114:2: note: (near initialization for 'cfg_720p_60fps_[11]')
+../src/OV5640.h:114:11: warning: excess elements in scalar initializer
+  {0x3806, (1947 >> 8) & 0x07},
+           ^
+../src/OV5640.h:114:11: note: (near initialization for 'cfg_720p_60fps_[11]')
+../src/OV5640.h:116:2: warning: braces around scalar initializer
+  {0x3807, 1947 & 0xFF},
+  ^
+../src/OV5640.h:116:2: note: (near initialization for 'cfg_720p_60fps_[12]')
+../src/OV5640.h:116:11: warning: excess elements in scalar initializer
+  {0x3807, 1947 & 0xFF},
+           ^~~~
+../src/OV5640.h:116:11: note: (near initialization for 'cfg_720p_60fps_[12]')
+../src/OV5640.h:119:2: warning: braces around scalar initializer
+  {0x3810, (0 >> 8) & 0x0F},
+  ^
+../src/OV5640.h:119:2: note: (near initialization for 'cfg_720p_60fps_[13]')
+../src/OV5640.h:119:11: warning: excess elements in scalar initializer
+  {0x3810, (0 >> 8) & 0x0F},
+           ^
+../src/OV5640.h:119:11: note: (near initialization for 'cfg_720p_60fps_[13]')
+../src/OV5640.h:121:2: warning: braces around scalar initializer
+  {0x3811, 0 & 0xFF},
+  ^
+../src/OV5640.h:121:2: note: (near initialization for 'cfg_720p_60fps_[14]')
+../src/OV5640.h:121:11: warning: excess elements in scalar initializer
+  {0x3811, 0 & 0xFF},
+           ^
+../src/OV5640.h:121:11: note: (near initialization for 'cfg_720p_60fps_[14]')
+../src/OV5640.h:123:2: warning: braces around scalar initializer
+  {0x3812, (0 >> 8) & 0x07},
+  ^
+../src/OV5640.h:123:2: note: (near initialization for 'cfg_720p_60fps_[15]')
+../src/OV5640.h:123:11: warning: excess elements in scalar initializer
+  {0x3812, (0 >> 8) & 0x07},
+           ^
+../src/OV5640.h:123:11: note: (near initialization for 'cfg_720p_60fps_[15]')
+../src/OV5640.h:125:2: warning: braces around scalar initializer
+  {0x3813, 0 & 0xFF},
+  ^
+../src/OV5640.h:125:2: note: (near initialization for 'cfg_720p_60fps_[16]')
+../src/OV5640.h:125:11: warning: excess elements in scalar initializer
+  {0x3813, 0 & 0xFF},
+           ^
+../src/OV5640.h:125:11: note: (near initialization for 'cfg_720p_60fps_[16]')
+../src/OV5640.h:128:2: warning: braces around scalar initializer
+  {0x3808, (1280 >> 8) & 0x0F},
+  ^
+../src/OV5640.h:128:2: note: (near initialization for 'cfg_720p_60fps_[17]')
+../src/OV5640.h:128:11: warning: excess elements in scalar initializer
+  {0x3808, (1280 >> 8) & 0x0F},
+           ^
+../src/OV5640.h:128:11: note: (near initialization for 'cfg_720p_60fps_[17]')
+../src/OV5640.h:130:2: warning: braces around scalar initializer
+  {0x3809, 1280 & 0xFF},
+  ^
+../src/OV5640.h:130:2: note: (near initialization for 'cfg_720p_60fps_[18]')
+../src/OV5640.h:130:11: warning: excess elements in scalar initializer
+  {0x3809, 1280 & 0xFF},
+           ^~~~
+../src/OV5640.h:130:11: note: (near initialization for 'cfg_720p_60fps_[18]')
+../src/OV5640.h:132:2: warning: braces around scalar initializer
+  {0x380a, (720 >> 8) & 0x7F},
+  ^
+../src/OV5640.h:132:2: note: (near initialization for 'cfg_720p_60fps_[19]')
+../src/OV5640.h:132:11: warning: excess elements in scalar initializer
+  {0x380a, (720 >> 8) & 0x7F},
+           ^
+../src/OV5640.h:132:11: note: (near initialization for 'cfg_720p_60fps_[19]')
+../src/OV5640.h:134:2: warning: braces around scalar initializer
+  {0x380b, 720 & 0xFF},
+  ^
+../src/OV5640.h:134:2: note: (near initialization for 'cfg_720p_60fps_[20]')
+../src/OV5640.h:134:11: warning: excess elements in scalar initializer
+  {0x380b, 720 & 0xFF},
+           ^~~
+../src/OV5640.h:134:11: note: (near initialization for 'cfg_720p_60fps_[20]')
+../src/OV5640.h:137:2: warning: braces around scalar initializer
+  {0x380c, (1896 >> 8) & 0x1F},
+  ^
+../src/OV5640.h:137:2: note: (near initialization for 'cfg_720p_60fps_[21]')
+../src/OV5640.h:137:11: warning: excess elements in scalar initializer
+  {0x380c, (1896 >> 8) & 0x1F},
+           ^
+../src/OV5640.h:137:11: note: (near initialization for 'cfg_720p_60fps_[21]')
+../src/OV5640.h:138:2: warning: braces around scalar initializer
+  {0x380d, 1896 & 0xFF},
+  ^
+../src/OV5640.h:138:2: note: (near initialization for 'cfg_720p_60fps_[22]')
+../src/OV5640.h:138:11: warning: excess elements in scalar initializer
+  {0x380d, 1896 & 0xFF},
+           ^~~~
+../src/OV5640.h:138:11: note: (near initialization for 'cfg_720p_60fps_[22]')
+../src/OV5640.h:140:2: warning: braces around scalar initializer
+  {0x380e, (984 >> 8) & 0xFF},
+  ^
+../src/OV5640.h:140:2: note: (near initialization for 'cfg_720p_60fps_[23]')
+../src/OV5640.h:140:11: warning: excess elements in scalar initializer
+  {0x380e, (984 >> 8) & 0xFF},
+           ^
+../src/OV5640.h:140:11: note: (near initialization for 'cfg_720p_60fps_[23]')
+../src/OV5640.h:141:2: warning: braces around scalar initializer
+  {0x380f, 984 & 0xFF},
+  ^
+../src/OV5640.h:141:2: note: (near initialization for 'cfg_720p_60fps_[24]')
+../src/OV5640.h:141:11: warning: excess elements in scalar initializer
+  {0x380f, 984 & 0xFF},
+           ^~~
+../src/OV5640.h:141:11: note: (near initialization for 'cfg_720p_60fps_[24]')
+../src/OV5640.h:144:2: warning: braces around scalar initializer
+  {0x3814, 0x31},
+  ^
+../src/OV5640.h:144:2: note: (near initialization for 'cfg_720p_60fps_[25]')
+../src/OV5640.h:144:11: warning: excess elements in scalar initializer
+  {0x3814, 0x31},
+           ^~~~
+../src/OV5640.h:144:11: note: (near initialization for 'cfg_720p_60fps_[25]')
+../src/OV5640.h:146:2: warning: braces around scalar initializer
+  {0x3815, 0x31},
+  ^
+../src/OV5640.h:146:2: note: (near initialization for 'cfg_720p_60fps_[26]')
+../src/OV5640.h:146:11: warning: excess elements in scalar initializer
+  {0x3815, 0x31},
+           ^~~~
+../src/OV5640.h:146:11: note: (near initialization for 'cfg_720p_60fps_[26]')
+../src/OV5640.h:149:2: warning: braces around scalar initializer
+  {0x3821, 0x01},
+  ^
+../src/OV5640.h:149:2: note: (near initialization for 'cfg_720p_60fps_[27]')
+../src/OV5640.h:149:11: warning: excess elements in scalar initializer
+  {0x3821, 0x01},
+           ^~~~
+../src/OV5640.h:149:11: note: (near initialization for 'cfg_720p_60fps_[27]')
+../src/OV5640.h:152:2: warning: braces around scalar initializer
+  {0x4837, 36}, // 1/56M*2
+  ^
+../src/OV5640.h:152:2: note: (near initialization for 'cfg_720p_60fps_[28]')
+../src/OV5640.h:152:11: warning: excess elements in scalar initializer
+  {0x4837, 36}, // 1/56M*2
+           ^~
+../src/OV5640.h:152:11: note: (near initialization for 'cfg_720p_60fps_[28]')
+../src/OV5640.h:155:2: warning: braces around scalar initializer
+  {0x3618, 0x00}, // Removes vertical lines appearing under bright light
+  ^
+../src/OV5640.h:155:2: note: (near initialization for 'cfg_720p_60fps_[29]')
+../src/OV5640.h:155:11: warning: excess elements in scalar initializer
+  {0x3618, 0x00}, // Removes vertical lines appearing under bright light
+           ^~~~
+../src/OV5640.h:155:11: note: (near initialization for 'cfg_720p_60fps_[29]')
+../src/OV5640.h:156:2: warning: braces around scalar initializer
+  {0x3612, 0x59},
+  ^
+../src/OV5640.h:156:2: note: (near initialization for 'cfg_720p_60fps_[30]')
+../src/OV5640.h:156:11: warning: excess elements in scalar initializer
+  {0x3612, 0x59},
+           ^~~~
+../src/OV5640.h:156:11: note: (near initialization for 'cfg_720p_60fps_[30]')
+../src/OV5640.h:157:2: warning: braces around scalar initializer
+  {0x3708, 0x64},
+  ^
+../src/OV5640.h:157:2: note: (near initialization for 'cfg_720p_60fps_[31]')
+../src/OV5640.h:157:11: warning: excess elements in scalar initializer
+  {0x3708, 0x64},
+           ^~~~
+../src/OV5640.h:157:11: note: (near initialization for 'cfg_720p_60fps_[31]')
+../src/OV5640.h:158:2: warning: braces around scalar initializer
+  {0x3709, 0x52},
+  ^
+../src/OV5640.h:158:2: note: (near initialization for 'cfg_720p_60fps_[32]')
+../src/OV5640.h:158:11: warning: excess elements in scalar initializer
+  {0x3709, 0x52},
+           ^~~~
+../src/OV5640.h:158:11: note: (near initialization for 'cfg_720p_60fps_[32]')
+../src/OV5640.h:159:2: warning: braces around scalar initializer
+  {0x370c, 0x03},
+  ^
+../src/OV5640.h:159:2: note: (near initialization for 'cfg_720p_60fps_[33]')
+../src/OV5640.h:159:11: warning: excess elements in scalar initializer
+  {0x370c, 0x03},
+           ^~~~
+../src/OV5640.h:159:11: note: (near initialization for 'cfg_720p_60fps_[33]')
+../src/OV5640.h:163:2: warning: braces around scalar initializer
+  {0x4300, 0x00},
+  ^
+../src/OV5640.h:163:2: note: (near initialization for 'cfg_720p_60fps_[34]')
+../src/OV5640.h:163:11: warning: excess elements in scalar initializer
+  {0x4300, 0x00},
+           ^~~~
+../src/OV5640.h:163:11: note: (near initialization for 'cfg_720p_60fps_[34]')
+../src/OV5640.h:165:2: warning: braces around scalar initializer
+  {0x501f, 0x03}
+  ^
+../src/OV5640.h:165:2: note: (near initialization for 'cfg_720p_60fps_[35]')
+../src/OV5640.h:165:11: warning: excess elements in scalar initializer
+  {0x501f, 0x03}
+           ^~~~
+../src/OV5640.h:165:11: note: (near initialization for 'cfg_720p_60fps_[35]')
+../src/OV5640.h:169:14: error: expected ';' before 'const'
+ config_word_t const cfg_1080p_15fps_[] =
+              ^~~~~~
+              ;
+../src/OV5640.h:169:21: warning: type defaults to 'int' in declaration of 'cfg_1080p_15fps_' [-Wimplicit-int]
+ config_word_t const cfg_1080p_15fps_[] =
+                     ^~~~~~~~~~~~~~~~
+../src/OV5640.h:173:2: warning: braces around scalar initializer
+  {0x3035, 0x41},
+  ^
+../src/OV5640.h:173:2: note: (near initialization for 'cfg_1080p_15fps_[0]')
+../src/OV5640.h:173:11: warning: excess elements in scalar initializer
+  {0x3035, 0x41},
+           ^~~~
+../src/OV5640.h:173:11: note: (near initialization for 'cfg_1080p_15fps_[0]')
+../src/OV5640.h:175:2: warning: braces around scalar initializer
+  {0x3036, 0x69},
+  ^
+../src/OV5640.h:175:2: note: (near initialization for 'cfg_1080p_15fps_[1]')
+../src/OV5640.h:175:11: warning: excess elements in scalar initializer
+  {0x3036, 0x69},
+           ^~~~
+../src/OV5640.h:175:11: note: (near initialization for 'cfg_1080p_15fps_[1]')
+../src/OV5640.h:177:2: warning: braces around scalar initializer
+  {0x3037, 0x05},
+  ^
+../src/OV5640.h:177:2: note: (near initialization for 'cfg_1080p_15fps_[2]')
+../src/OV5640.h:177:11: warning: excess elements in scalar initializer
+  {0x3037, 0x05},
+           ^~~~
+../src/OV5640.h:177:11: note: (near initialization for 'cfg_1080p_15fps_[2]')
+../src/OV5640.h:179:2: warning: braces around scalar initializer
+  {0x3108, 0x11},
+  ^
+../src/OV5640.h:179:2: note: (near initialization for 'cfg_1080p_15fps_[3]')
+../src/OV5640.h:179:11: warning: excess elements in scalar initializer
+  {0x3108, 0x11},
+           ^~~~
+../src/OV5640.h:179:11: note: (near initialization for 'cfg_1080p_15fps_[3]')
+../src/OV5640.h:182:2: warning: braces around scalar initializer
+  {0x3034, 0x1A},
+  ^
+../src/OV5640.h:182:2: note: (near initialization for 'cfg_1080p_15fps_[4]')
+../src/OV5640.h:182:11: warning: excess elements in scalar initializer
+  {0x3034, 0x1A},
+           ^~~~
+../src/OV5640.h:182:11: note: (near initialization for 'cfg_1080p_15fps_[4]')
+../src/OV5640.h:185:2: warning: braces around scalar initializer
+  {0x3800, (336 >> 8) & 0x0F},
+  ^
+../src/OV5640.h:185:2: note: (near initialization for 'cfg_1080p_15fps_[5]')
+../src/OV5640.h:185:11: warning: excess elements in scalar initializer
+  {0x3800, (336 >> 8) & 0x0F},
+           ^
+../src/OV5640.h:185:11: note: (near initialization for 'cfg_1080p_15fps_[5]')
+../src/OV5640.h:187:2: warning: braces around scalar initializer
+  {0x3801, 336 & 0xFF},
+  ^
+../src/OV5640.h:187:2: note: (near initialization for 'cfg_1080p_15fps_[6]')
+../src/OV5640.h:187:11: warning: excess elements in scalar initializer
+  {0x3801, 336 & 0xFF},
+           ^~~
+../src/OV5640.h:187:11: note: (near initialization for 'cfg_1080p_15fps_[6]')
+../src/OV5640.h:189:2: warning: braces around scalar initializer
+  {0x3802, (426 >> 8) & 0x07},
+  ^
+../src/OV5640.h:189:2: note: (near initialization for 'cfg_1080p_15fps_[7]')
+../src/OV5640.h:189:11: warning: excess elements in scalar initializer
+  {0x3802, (426 >> 8) & 0x07},
+           ^
+../src/OV5640.h:189:11: note: (near initialization for 'cfg_1080p_15fps_[7]')
+../src/OV5640.h:191:2: warning: braces around scalar initializer
+  {0x3803, 426 & 0xFF},
+  ^
+../src/OV5640.h:191:2: note: (near initialization for 'cfg_1080p_15fps_[8]')
+../src/OV5640.h:191:11: warning: excess elements in scalar initializer
+  {0x3803, 426 & 0xFF},
+           ^~~
+../src/OV5640.h:191:11: note: (near initialization for 'cfg_1080p_15fps_[8]')
+../src/OV5640.h:194:2: warning: braces around scalar initializer
+  {0x3804, (2287 >> 8) & 0x0F},
+  ^
+../src/OV5640.h:194:2: note: (near initialization for 'cfg_1080p_15fps_[9]')
+../src/OV5640.h:194:11: warning: excess elements in scalar initializer
+  {0x3804, (2287 >> 8) & 0x0F},
+           ^
+../src/OV5640.h:194:11: note: (near initialization for 'cfg_1080p_15fps_[9]')
+../src/OV5640.h:196:2: warning: braces around scalar initializer
+  {0x3805, 2287 & 0xFF},
+  ^
+../src/OV5640.h:196:2: note: (near initialization for 'cfg_1080p_15fps_[10]')
+../src/OV5640.h:196:11: warning: excess elements in scalar initializer
+  {0x3805, 2287 & 0xFF},
+           ^~~~
+../src/OV5640.h:196:11: note: (near initialization for 'cfg_1080p_15fps_[10]')
+../src/OV5640.h:198:2: warning: braces around scalar initializer
+  {0x3806, (1529 >> 8) & 0x07},
+  ^
+../src/OV5640.h:198:2: note: (near initialization for 'cfg_1080p_15fps_[11]')
+../src/OV5640.h:198:11: warning: excess elements in scalar initializer
+  {0x3806, (1529 >> 8) & 0x07},
+           ^
+../src/OV5640.h:198:11: note: (near initialization for 'cfg_1080p_15fps_[11]')
+../src/OV5640.h:200:2: warning: braces around scalar initializer
+  {0x3807, 1529 & 0xFF},
+  ^
+../src/OV5640.h:200:2: note: (near initialization for 'cfg_1080p_15fps_[12]')
+../src/OV5640.h:200:11: warning: excess elements in scalar initializer
+  {0x3807, 1529 & 0xFF},
+           ^~~~
+../src/OV5640.h:200:11: note: (near initialization for 'cfg_1080p_15fps_[12]')
+../src/OV5640.h:203:2: warning: braces around scalar initializer
+  {0x3810, (16 >> 8) & 0x0F},
+  ^
+../src/OV5640.h:203:2: note: (near initialization for 'cfg_1080p_15fps_[13]')
+../src/OV5640.h:203:11: warning: excess elements in scalar initializer
+  {0x3810, (16 >> 8) & 0x0F},
+           ^
+../src/OV5640.h:203:11: note: (near initialization for 'cfg_1080p_15fps_[13]')
+../src/OV5640.h:205:2: warning: braces around scalar initializer
+  {0x3811, 16 & 0xFF},
+  ^
+../src/OV5640.h:205:2: note: (near initialization for 'cfg_1080p_15fps_[14]')
+../src/OV5640.h:205:11: warning: excess elements in scalar initializer
+  {0x3811, 16 & 0xFF},
+           ^~
+../src/OV5640.h:205:11: note: (near initialization for 'cfg_1080p_15fps_[14]')
+../src/OV5640.h:207:2: warning: braces around scalar initializer
+  {0x3812, (12 >> 8) & 0x07},
+  ^
+../src/OV5640.h:207:2: note: (near initialization for 'cfg_1080p_15fps_[15]')
+../src/OV5640.h:207:11: warning: excess elements in scalar initializer
+  {0x3812, (12 >> 8) & 0x07},
+           ^
+../src/OV5640.h:207:11: note: (near initialization for 'cfg_1080p_15fps_[15]')
+../src/OV5640.h:209:2: warning: braces around scalar initializer
+  {0x3813, 12 & 0xFF},
+  ^
+../src/OV5640.h:209:2: note: (near initialization for 'cfg_1080p_15fps_[16]')
+../src/OV5640.h:209:11: warning: excess elements in scalar initializer
+  {0x3813, 12 & 0xFF},
+           ^~
+../src/OV5640.h:209:11: note: (near initialization for 'cfg_1080p_15fps_[16]')
+../src/OV5640.h:212:2: warning: braces around scalar initializer
+  {0x3808, (1920 >> 8) & 0x0F},
+  ^
+../src/OV5640.h:212:2: note: (near initialization for 'cfg_1080p_15fps_[17]')
+../src/OV5640.h:212:11: warning: excess elements in scalar initializer
+  {0x3808, (1920 >> 8) & 0x0F},
+           ^
+../src/OV5640.h:212:11: note: (near initialization for 'cfg_1080p_15fps_[17]')
+../src/OV5640.h:214:2: warning: braces around scalar initializer
+  {0x3809, 1920 & 0xFF},
+  ^
+../src/OV5640.h:214:2: note: (near initialization for 'cfg_1080p_15fps_[18]')
+../src/OV5640.h:214:11: warning: excess elements in scalar initializer
+  {0x3809, 1920 & 0xFF},
+           ^~~~
+../src/OV5640.h:214:11: note: (near initialization for 'cfg_1080p_15fps_[18]')
+../src/OV5640.h:216:2: warning: braces around scalar initializer
+  {0x380a, (1080 >> 8) & 0x7F},
+  ^
+../src/OV5640.h:216:2: note: (near initialization for 'cfg_1080p_15fps_[19]')
+../src/OV5640.h:216:11: warning: excess elements in scalar initializer
+  {0x380a, (1080 >> 8) & 0x7F},
+           ^
+../src/OV5640.h:216:11: note: (near initialization for 'cfg_1080p_15fps_[19]')
+../src/OV5640.h:218:2: warning: braces around scalar initializer
+  {0x380b, 1080 & 0xFF},
+  ^
+../src/OV5640.h:218:2: note: (near initialization for 'cfg_1080p_15fps_[20]')
+../src/OV5640.h:218:11: warning: excess elements in scalar initializer
+  {0x380b, 1080 & 0xFF},
+           ^~~~
+../src/OV5640.h:218:11: note: (near initialization for 'cfg_1080p_15fps_[20]')
+../src/OV5640.h:221:2: warning: braces around scalar initializer
+  {0x380c, (2500 >> 8) & 0x1F},
+  ^
+../src/OV5640.h:221:2: note: (near initialization for 'cfg_1080p_15fps_[21]')
+../src/OV5640.h:221:11: warning: excess elements in scalar initializer
+  {0x380c, (2500 >> 8) & 0x1F},
+           ^
+../src/OV5640.h:221:11: note: (near initialization for 'cfg_1080p_15fps_[21]')
+../src/OV5640.h:222:2: warning: braces around scalar initializer
+  {0x380d, 2500 & 0xFF},
+  ^
+../src/OV5640.h:222:2: note: (near initialization for 'cfg_1080p_15fps_[22]')
+../src/OV5640.h:222:11: warning: excess elements in scalar initializer
+  {0x380d, 2500 & 0xFF},
+           ^~~~
+../src/OV5640.h:222:11: note: (near initialization for 'cfg_1080p_15fps_[22]')
+../src/OV5640.h:224:2: warning: braces around scalar initializer
+  {0x380e, (1120 >> 8) & 0xFF},
+  ^
+../src/OV5640.h:224:2: note: (near initialization for 'cfg_1080p_15fps_[23]')
+../src/OV5640.h:224:11: warning: excess elements in scalar initializer
+  {0x380e, (1120 >> 8) & 0xFF},
+           ^
+../src/OV5640.h:224:11: note: (near initialization for 'cfg_1080p_15fps_[23]')
+../src/OV5640.h:225:2: warning: braces around scalar initializer
+  {0x380f, 1120 & 0xFF},
+  ^
+../src/OV5640.h:225:2: note: (near initialization for 'cfg_1080p_15fps_[24]')
+../src/OV5640.h:225:11: warning: excess elements in scalar initializer
+  {0x380f, 1120 & 0xFF},
+           ^~~~
+../src/OV5640.h:225:11: note: (near initialization for 'cfg_1080p_15fps_[24]')
+../src/OV5640.h:228:2: warning: braces around scalar initializer
+  {0x3814, 0x11},
+  ^
+../src/OV5640.h:228:2: note: (near initialization for 'cfg_1080p_15fps_[25]')
+../src/OV5640.h:228:11: warning: excess elements in scalar initializer
+  {0x3814, 0x11},
+           ^~~~
+../src/OV5640.h:228:11: note: (near initialization for 'cfg_1080p_15fps_[25]')
+../src/OV5640.h:230:2: warning: braces around scalar initializer
+  {0x3815, 0x11},
+  ^
+../src/OV5640.h:230:2: note: (near initialization for 'cfg_1080p_15fps_[26]')
+../src/OV5640.h:230:11: warning: excess elements in scalar initializer
+  {0x3815, 0x11},
+           ^~~~
+../src/OV5640.h:230:11: note: (near initialization for 'cfg_1080p_15fps_[26]')
+../src/OV5640.h:233:2: warning: braces around scalar initializer
+  {0x3821, 0x00},
+  ^
+../src/OV5640.h:233:2: note: (near initialization for 'cfg_1080p_15fps_[27]')
+../src/OV5640.h:233:11: warning: excess elements in scalar initializer
+  {0x3821, 0x00},
+           ^~~~
+../src/OV5640.h:233:11: note: (near initialization for 'cfg_1080p_15fps_[27]')
+../src/OV5640.h:236:2: warning: braces around scalar initializer
+  {0x4837, 48}, // 1/42M*2
+  ^
+../src/OV5640.h:236:2: note: (near initialization for 'cfg_1080p_15fps_[28]')
+../src/OV5640.h:236:11: warning: excess elements in scalar initializer
+  {0x4837, 48}, // 1/42M*2
+           ^~
+../src/OV5640.h:236:11: note: (near initialization for 'cfg_1080p_15fps_[28]')
+../src/OV5640.h:239:2: warning: braces around scalar initializer
+  {0x3618, 0x00}, // Removes vertical lines appearing under bright light
+  ^
+../src/OV5640.h:239:2: note: (near initialization for 'cfg_1080p_15fps_[29]')
+../src/OV5640.h:239:11: warning: excess elements in scalar initializer
+  {0x3618, 0x00}, // Removes vertical lines appearing under bright light
+           ^~~~
+../src/OV5640.h:239:11: note: (near initialization for 'cfg_1080p_15fps_[29]')
+../src/OV5640.h:240:2: warning: braces around scalar initializer
+  {0x3612, 0x59},
+  ^
+../src/OV5640.h:240:2: note: (near initialization for 'cfg_1080p_15fps_[30]')
+../src/OV5640.h:240:11: warning: excess elements in scalar initializer
+  {0x3612, 0x59},
+           ^~~~
+../src/OV5640.h:240:11: note: (near initialization for 'cfg_1080p_15fps_[30]')
+../src/OV5640.h:241:2: warning: braces around scalar initializer
+  {0x3708, 0x64},
+  ^
+../src/OV5640.h:241:2: note: (near initialization for 'cfg_1080p_15fps_[31]')
+../src/OV5640.h:241:11: warning: excess elements in scalar initializer
+  {0x3708, 0x64},
+           ^~~~
+../src/OV5640.h:241:11: note: (near initialization for 'cfg_1080p_15fps_[31]')
+../src/OV5640.h:242:2: warning: braces around scalar initializer
+  {0x3709, 0x52},
+  ^
+../src/OV5640.h:242:2: note: (near initialization for 'cfg_1080p_15fps_[32]')
+../src/OV5640.h:242:11: warning: excess elements in scalar initializer
+  {0x3709, 0x52},
+           ^~~~
+../src/OV5640.h:242:11: note: (near initialization for 'cfg_1080p_15fps_[32]')
+../src/OV5640.h:243:2: warning: braces around scalar initializer
+  {0x370c, 0x03},
+  ^
+../src/OV5640.h:243:2: note: (near initialization for 'cfg_1080p_15fps_[33]')
+../src/OV5640.h:243:11: warning: excess elements in scalar initializer
+  {0x370c, 0x03},
+           ^~~~
+../src/OV5640.h:243:11: note: (near initialization for 'cfg_1080p_15fps_[33]')
+../src/OV5640.h:246:2: warning: braces around scalar initializer
+  {0x4300, 0x00},
+  ^
+../src/OV5640.h:246:2: note: (near initialization for 'cfg_1080p_15fps_[34]')
+../src/OV5640.h:246:11: warning: excess elements in scalar initializer
+  {0x4300, 0x00},
+           ^~~~
+../src/OV5640.h:246:11: note: (near initialization for 'cfg_1080p_15fps_[34]')
+../src/OV5640.h:248:2: warning: braces around scalar initializer
+  {0x501f, 0x03}
+  ^
+../src/OV5640.h:248:2: note: (near initialization for 'cfg_1080p_15fps_[35]')
+../src/OV5640.h:248:11: warning: excess elements in scalar initializer
+  {0x501f, 0x03}
+           ^~~~
+../src/OV5640.h:248:11: note: (near initialization for 'cfg_1080p_15fps_[35]')
+../src/OV5640.h:250:14: error: expected ';' before 'const'
+ config_word_t const cfg_1080p_30fps_[] =
+              ^~~~~~
+              ;
+../src/OV5640.h:250:21: warning: type defaults to 'int' in declaration of 'cfg_1080p_30fps_' [-Wimplicit-int]
+ config_word_t const cfg_1080p_30fps_[] =
+                     ^~~~~~~~~~~~~~~~
+../src/OV5640.h:254:2: warning: braces around scalar initializer
+  {0x3035, 0x21}, // 30fps setting
+  ^
+../src/OV5640.h:254:2: note: (near initialization for 'cfg_1080p_30fps_[0]')
+../src/OV5640.h:254:11: warning: excess elements in scalar initializer
+  {0x3035, 0x21}, // 30fps setting
+           ^~~~
+../src/OV5640.h:254:11: note: (near initialization for 'cfg_1080p_30fps_[0]')
+../src/OV5640.h:256:2: warning: braces around scalar initializer
+  {0x3036, 0x69},
+  ^
+../src/OV5640.h:256:2: note: (near initialization for 'cfg_1080p_30fps_[1]')
+../src/OV5640.h:256:11: warning: excess elements in scalar initializer
+  {0x3036, 0x69},
+           ^~~~
+../src/OV5640.h:256:11: note: (near initialization for 'cfg_1080p_30fps_[1]')
+../src/OV5640.h:258:2: warning: braces around scalar initializer
+  {0x3037, 0x05},
+  ^
+../src/OV5640.h:258:2: note: (near initialization for 'cfg_1080p_30fps_[2]')
+../src/OV5640.h:258:11: warning: excess elements in scalar initializer
+  {0x3037, 0x05},
+           ^~~~
+../src/OV5640.h:258:11: note: (near initialization for 'cfg_1080p_30fps_[2]')
+../src/OV5640.h:260:2: warning: braces around scalar initializer
+  {0x3108, 0x11},
+  ^
+../src/OV5640.h:260:2: note: (near initialization for 'cfg_1080p_30fps_[3]')
+../src/OV5640.h:260:11: warning: excess elements in scalar initializer
+  {0x3108, 0x11},
+           ^~~~
+../src/OV5640.h:260:11: note: (near initialization for 'cfg_1080p_30fps_[3]')
+../src/OV5640.h:263:2: warning: braces around scalar initializer
+  {0x3034, 0x1A},
+  ^
+../src/OV5640.h:263:2: note: (near initialization for 'cfg_1080p_30fps_[4]')
+../src/OV5640.h:263:11: warning: excess elements in scalar initializer
+  {0x3034, 0x1A},
+           ^~~~
+../src/OV5640.h:263:11: note: (near initialization for 'cfg_1080p_30fps_[4]')
+../src/OV5640.h:266:2: warning: braces around scalar initializer
+  {0x3800, (336 >> 8) & 0x0F},
+  ^
+../src/OV5640.h:266:2: note: (near initialization for 'cfg_1080p_30fps_[5]')
+../src/OV5640.h:266:11: warning: excess elements in scalar initializer
+  {0x3800, (336 >> 8) & 0x0F},
+           ^
+../src/OV5640.h:266:11: note: (near initialization for 'cfg_1080p_30fps_[5]')
+../src/OV5640.h:268:2: warning: braces around scalar initializer
+  {0x3801, 336 & 0xFF},
+  ^
+../src/OV5640.h:268:2: note: (near initialization for 'cfg_1080p_30fps_[6]')
+../src/OV5640.h:268:11: warning: excess elements in scalar initializer
+  {0x3801, 336 & 0xFF},
+           ^~~
+../src/OV5640.h:268:11: note: (near initialization for 'cfg_1080p_30fps_[6]')
+../src/OV5640.h:270:2: warning: braces around scalar initializer
+  {0x3802, (426 >> 8) & 0x07},
+  ^
+../src/OV5640.h:270:2: note: (near initialization for 'cfg_1080p_30fps_[7]')
+../src/OV5640.h:270:11: warning: excess elements in scalar initializer
+  {0x3802, (426 >> 8) & 0x07},
+           ^
+../src/OV5640.h:270:11: note: (near initialization for 'cfg_1080p_30fps_[7]')
+../src/OV5640.h:272:2: warning: braces around scalar initializer
+  {0x3803, 426 & 0xFF},
+  ^
+../src/OV5640.h:272:2: note: (near initialization for 'cfg_1080p_30fps_[8]')
+../src/OV5640.h:272:11: warning: excess elements in scalar initializer
+  {0x3803, 426 & 0xFF},
+           ^~~
+../src/OV5640.h:272:11: note: (near initialization for 'cfg_1080p_30fps_[8]')
+../src/OV5640.h:275:2: warning: braces around scalar initializer
+  {0x3804, (2287 >> 8) & 0x0F},
+  ^
+../src/OV5640.h:275:2: note: (near initialization for 'cfg_1080p_30fps_[9]')
+../src/OV5640.h:275:11: warning: excess elements in scalar initializer
+  {0x3804, (2287 >> 8) & 0x0F},
+           ^
+../src/OV5640.h:275:11: note: (near initialization for 'cfg_1080p_30fps_[9]')
+../src/OV5640.h:277:2: warning: braces around scalar initializer
+  {0x3805, 2287 & 0xFF},
+  ^
+../src/OV5640.h:277:2: note: (near initialization for 'cfg_1080p_30fps_[10]')
+../src/OV5640.h:277:11: warning: excess elements in scalar initializer
+  {0x3805, 2287 & 0xFF},
+           ^~~~
+../src/OV5640.h:277:11: note: (near initialization for 'cfg_1080p_30fps_[10]')
+../src/OV5640.h:279:2: warning: braces around scalar initializer
+  {0x3806, (1529 >> 8) & 0x07},
+  ^
+../src/OV5640.h:279:2: note: (near initialization for 'cfg_1080p_30fps_[11]')
+../src/OV5640.h:279:11: warning: excess elements in scalar initializer
+  {0x3806, (1529 >> 8) & 0x07},
+           ^
+../src/OV5640.h:279:11: note: (near initialization for 'cfg_1080p_30fps_[11]')
+../src/OV5640.h:281:2: warning: braces around scalar initializer
+  {0x3807, 1529 & 0xFF},
+  ^
+../src/OV5640.h:281:2: note: (near initialization for 'cfg_1080p_30fps_[12]')
+../src/OV5640.h:281:11: warning: excess elements in scalar initializer
+  {0x3807, 1529 & 0xFF},
+           ^~~~
+../src/OV5640.h:281:11: note: (near initialization for 'cfg_1080p_30fps_[12]')
+../src/OV5640.h:284:2: warning: braces around scalar initializer
+  {0x3810, (16 >> 8) & 0x0F},
+  ^
+../src/OV5640.h:284:2: note: (near initialization for 'cfg_1080p_30fps_[13]')
+../src/OV5640.h:284:11: warning: excess elements in scalar initializer
+  {0x3810, (16 >> 8) & 0x0F},
+           ^
+../src/OV5640.h:284:11: note: (near initialization for 'cfg_1080p_30fps_[13]')
+../src/OV5640.h:286:2: warning: braces around scalar initializer
+  {0x3811, 16 & 0xFF},
+  ^
+../src/OV5640.h:286:2: note: (near initialization for 'cfg_1080p_30fps_[14]')
+../src/OV5640.h:286:11: warning: excess elements in scalar initializer
+  {0x3811, 16 & 0xFF},
+           ^~
+../src/OV5640.h:286:11: note: (near initialization for 'cfg_1080p_30fps_[14]')
+../src/OV5640.h:288:2: warning: braces around scalar initializer
+  {0x3812, (12 >> 8) & 0x07},
+  ^
+../src/OV5640.h:288:2: note: (near initialization for 'cfg_1080p_30fps_[15]')
+../src/OV5640.h:288:11: warning: excess elements in scalar initializer
+  {0x3812, (12 >> 8) & 0x07},
+           ^
+../src/OV5640.h:288:11: note: (near initialization for 'cfg_1080p_30fps_[15]')
+../src/OV5640.h:290:2: warning: braces around scalar initializer
+  {0x3813, 12 & 0xFF},
+  ^
+../src/OV5640.h:290:2: note: (near initialization for 'cfg_1080p_30fps_[16]')
+../src/OV5640.h:290:11: warning: excess elements in scalar initializer
+  {0x3813, 12 & 0xFF},
+           ^~
+../src/OV5640.h:290:11: note: (near initialization for 'cfg_1080p_30fps_[16]')
+../src/OV5640.h:293:2: warning: braces around scalar initializer
+  {0x3808, (1920 >> 8) & 0x0F},
+  ^
+../src/OV5640.h:293:2: note: (near initialization for 'cfg_1080p_30fps_[17]')
+../src/OV5640.h:293:11: warning: excess elements in scalar initializer
+  {0x3808, (1920 >> 8) & 0x0F},
+           ^
+../src/OV5640.h:293:11: note: (near initialization for 'cfg_1080p_30fps_[17]')
+../src/OV5640.h:295:2: warning: braces around scalar initializer
+  {0x3809, 1920 & 0xFF},
+  ^
+../src/OV5640.h:295:2: note: (near initialization for 'cfg_1080p_30fps_[18]')
+../src/OV5640.h:295:11: warning: excess elements in scalar initializer
+  {0x3809, 1920 & 0xFF},
+           ^~~~
+../src/OV5640.h:295:11: note: (near initialization for 'cfg_1080p_30fps_[18]')
+../src/OV5640.h:297:2: warning: braces around scalar initializer
+  {0x380a, (1080 >> 8) & 0x7F},
+  ^
+../src/OV5640.h:297:2: note: (near initialization for 'cfg_1080p_30fps_[19]')
+../src/OV5640.h:297:11: warning: excess elements in scalar initializer
+  {0x380a, (1080 >> 8) & 0x7F},
+           ^
+../src/OV5640.h:297:11: note: (near initialization for 'cfg_1080p_30fps_[19]')
+../src/OV5640.h:299:2: warning: braces around scalar initializer
+  {0x380b, 1080 & 0xFF},
+  ^
+../src/OV5640.h:299:2: note: (near initialization for 'cfg_1080p_30fps_[20]')
+../src/OV5640.h:299:11: warning: excess elements in scalar initializer
+  {0x380b, 1080 & 0xFF},
+           ^~~~
+../src/OV5640.h:299:11: note: (near initialization for 'cfg_1080p_30fps_[20]')
+../src/OV5640.h:302:2: warning: braces around scalar initializer
+  {0x380c, (2500 >> 8) & 0x1F},
+  ^
+../src/OV5640.h:302:2: note: (near initialization for 'cfg_1080p_30fps_[21]')
+../src/OV5640.h:302:11: warning: excess elements in scalar initializer
+  {0x380c, (2500 >> 8) & 0x1F},
+           ^
+../src/OV5640.h:302:11: note: (near initialization for 'cfg_1080p_30fps_[21]')
+../src/OV5640.h:303:2: warning: braces around scalar initializer
+  {0x380d, 2500 & 0xFF},
+  ^
+../src/OV5640.h:303:2: note: (near initialization for 'cfg_1080p_30fps_[22]')
+../src/OV5640.h:303:11: warning: excess elements in scalar initializer
+  {0x380d, 2500 & 0xFF},
+           ^~~~
+../src/OV5640.h:303:11: note: (near initialization for 'cfg_1080p_30fps_[22]')
+../src/OV5640.h:305:2: warning: braces around scalar initializer
+  {0x380e, (1120 >> 8) & 0xFF},
+  ^
+../src/OV5640.h:305:2: note: (near initialization for 'cfg_1080p_30fps_[23]')
+../src/OV5640.h:305:11: warning: excess elements in scalar initializer
+  {0x380e, (1120 >> 8) & 0xFF},
+           ^
+../src/OV5640.h:305:11: note: (near initialization for 'cfg_1080p_30fps_[23]')
+../src/OV5640.h:306:2: warning: braces around scalar initializer
+  {0x380f, 1120 & 0xFF},
+  ^
+../src/OV5640.h:306:2: note: (near initialization for 'cfg_1080p_30fps_[24]')
+../src/OV5640.h:306:11: warning: excess elements in scalar initializer
+  {0x380f, 1120 & 0xFF},
+           ^~~~
+../src/OV5640.h:306:11: note: (near initialization for 'cfg_1080p_30fps_[24]')
+../src/OV5640.h:309:2: warning: braces around scalar initializer
+  {0x3814, 0x11},
+  ^
+../src/OV5640.h:309:2: note: (near initialization for 'cfg_1080p_30fps_[25]')
+../src/OV5640.h:309:11: warning: excess elements in scalar initializer
+  {0x3814, 0x11},
+           ^~~~
+../src/OV5640.h:309:11: note: (near initialization for 'cfg_1080p_30fps_[25]')
+../src/OV5640.h:311:2: warning: braces around scalar initializer
+  {0x3815, 0x11},
+  ^
+../src/OV5640.h:311:2: note: (near initialization for 'cfg_1080p_30fps_[26]')
+../src/OV5640.h:311:11: warning: excess elements in scalar initializer
+  {0x3815, 0x11},
+           ^~~~
+../src/OV5640.h:311:11: note: (near initialization for 'cfg_1080p_30fps_[26]')
+../src/OV5640.h:314:2: warning: braces around scalar initializer
+  {0x3821, 0x00},
+  ^
+../src/OV5640.h:314:2: note: (near initialization for 'cfg_1080p_30fps_[27]')
+../src/OV5640.h:314:11: warning: excess elements in scalar initializer
+  {0x3821, 0x00},
+           ^~~~
+../src/OV5640.h:314:11: note: (near initialization for 'cfg_1080p_30fps_[27]')
+../src/OV5640.h:317:2: warning: braces around scalar initializer
+  {0x4837, 24}, // 1/84M*2
+  ^
+../src/OV5640.h:317:2: note: (near initialization for 'cfg_1080p_30fps_[28]')
+../src/OV5640.h:317:11: warning: excess elements in scalar initializer
+  {0x4837, 24}, // 1/84M*2
+           ^~
+../src/OV5640.h:317:11: note: (near initialization for 'cfg_1080p_30fps_[28]')
+../src/OV5640.h:320:2: warning: braces around scalar initializer
+  {0x3618, 0x00}, // Removes vertical lines appearing under bright light
+  ^
+../src/OV5640.h:320:2: note: (near initialization for 'cfg_1080p_30fps_[29]')
+../src/OV5640.h:320:11: warning: excess elements in scalar initializer
+  {0x3618, 0x00}, // Removes vertical lines appearing under bright light
+           ^~~~
+../src/OV5640.h:320:11: note: (near initialization for 'cfg_1080p_30fps_[29]')
+../src/OV5640.h:321:2: warning: braces around scalar initializer
+  {0x3612, 0x59},
+  ^
+../src/OV5640.h:321:2: note: (near initialization for 'cfg_1080p_30fps_[30]')
+../src/OV5640.h:321:11: warning: excess elements in scalar initializer
+  {0x3612, 0x59},
+           ^~~~
+../src/OV5640.h:321:11: note: (near initialization for 'cfg_1080p_30fps_[30]')
+../src/OV5640.h:322:2: warning: braces around scalar initializer
+  {0x3708, 0x64},
+  ^
+../src/OV5640.h:322:2: note: (near initialization for 'cfg_1080p_30fps_[31]')
+../src/OV5640.h:322:11: warning: excess elements in scalar initializer
+  {0x3708, 0x64},
+           ^~~~
+../src/OV5640.h:322:11: note: (near initialization for 'cfg_1080p_30fps_[31]')
+../src/OV5640.h:323:2: warning: braces around scalar initializer
+  {0x3709, 0x52},
+  ^
+../src/OV5640.h:323:2: note: (near initialization for 'cfg_1080p_30fps_[32]')
+../src/OV5640.h:323:11: warning: excess elements in scalar initializer
+  {0x3709, 0x52},
+           ^~~~
+../src/OV5640.h:323:11: note: (near initialization for 'cfg_1080p_30fps_[32]')
+../src/OV5640.h:324:2: warning: braces around scalar initializer
+  {0x370c, 0x03},
+  ^
+../src/OV5640.h:324:2: note: (near initialization for 'cfg_1080p_30fps_[33]')
+../src/OV5640.h:324:11: warning: excess elements in scalar initializer
+  {0x370c, 0x03},
+           ^~~~
+../src/OV5640.h:324:11: note: (near initialization for 'cfg_1080p_30fps_[33]')
+../src/OV5640.h:327:2: warning: braces around scalar initializer
+  {0x4300, 0x00},
+  ^
+../src/OV5640.h:327:2: note: (near initialization for 'cfg_1080p_30fps_[34]')
+../src/OV5640.h:327:11: warning: excess elements in scalar initializer
+  {0x4300, 0x00},
+           ^~~~
+../src/OV5640.h:327:11: note: (near initialization for 'cfg_1080p_30fps_[34]')
+../src/OV5640.h:329:2: warning: braces around scalar initializer
+  {0x501f, 0x03}
+  ^
+../src/OV5640.h:329:2: note: (near initialization for 'cfg_1080p_30fps_[35]')
+../src/OV5640.h:329:11: warning: excess elements in scalar initializer
+  {0x501f, 0x03}
+           ^~~~
+../src/OV5640.h:329:11: note: (near initialization for 'cfg_1080p_30fps_[35]')
+../src/OV5640.h:331:14: error: expected ';' before 'const'
+ config_word_t const cfg_1080p_30fps_336M_mipi_[] =
+              ^~~~~~
+              ;
+../src/OV5640.h:331:21: warning: type defaults to 'int' in declaration of 'cfg_1080p_30fps_336M_mipi_' [-Wimplicit-int]
+ config_word_t const cfg_1080p_30fps_336M_mipi_[] =
+                     ^~~~~~~~~~~~~~~~~~~~~~~~~~
+../src/OV5640.h:335:3: warning: braces around scalar initializer
+   {0x3035, 0x11}, // 30fps setting
+   ^
+../src/OV5640.h:335:3: note: (near initialization for 'cfg_1080p_30fps_336M_mipi_[0]')
+../src/OV5640.h:335:12: warning: excess elements in scalar initializer
+   {0x3035, 0x11}, // 30fps setting
+            ^~~~
+../src/OV5640.h:335:12: note: (near initialization for 'cfg_1080p_30fps_336M_mipi_[0]')
+../src/OV5640.h:337:3: warning: braces around scalar initializer
+   {0x3036, 0x54},
+   ^
+../src/OV5640.h:337:3: note: (near initialization for 'cfg_1080p_30fps_336M_mipi_[1]')
+../src/OV5640.h:337:12: warning: excess elements in scalar initializer
+   {0x3036, 0x54},
+            ^~~~
+../src/OV5640.h:337:12: note: (near initialization for 'cfg_1080p_30fps_336M_mipi_[1]')
+../src/OV5640.h:339:3: warning: braces around scalar initializer
+   {0x3037, 0x15},
+   ^
+../src/OV5640.h:339:3: note: (near initialization for 'cfg_1080p_30fps_336M_mipi_[2]')
+../src/OV5640.h:339:12: warning: excess elements in scalar initializer
+   {0x3037, 0x15},
+            ^~~~
+../src/OV5640.h:339:12: note: (near initialization for 'cfg_1080p_30fps_336M_mipi_[2]')
+../src/OV5640.h:341:3: warning: braces around scalar initializer
+   {0x3108, 0x01},
+   ^
+../src/OV5640.h:341:3: note: (near initialization for 'cfg_1080p_30fps_336M_mipi_[3]')
+../src/OV5640.h:341:12: warning: excess elements in scalar initializer
+   {0x3108, 0x01},
+            ^~~~
+../src/OV5640.h:341:12: note: (near initialization for 'cfg_1080p_30fps_336M_mipi_[3]')
+../src/OV5640.h:344:3: warning: braces around scalar initializer
+   {0x3034, 0x1A},
+   ^
+../src/OV5640.h:344:3: note: (near initialization for 'cfg_1080p_30fps_336M_mipi_[4]')
+../src/OV5640.h:344:12: warning: excess elements in scalar initializer
+   {0x3034, 0x1A},
+            ^~~~
+../src/OV5640.h:344:12: note: (near initialization for 'cfg_1080p_30fps_336M_mipi_[4]')
+../src/OV5640.h:347:3: warning: braces around scalar initializer
+   {0x3800, (336 >> 8) & 0x0F},
+   ^
+../src/OV5640.h:347:3: note: (near initialization for 'cfg_1080p_30fps_336M_mipi_[5]')
+../src/OV5640.h:347:12: warning: excess elements in scalar initializer
+   {0x3800, (336 >> 8) & 0x0F},
+            ^
+../src/OV5640.h:347:12: note: (near initialization for 'cfg_1080p_30fps_336M_mipi_[5]')
+../src/OV5640.h:349:3: warning: braces around scalar initializer
+   {0x3801, 336 & 0xFF},
+   ^
+../src/OV5640.h:349:3: note: (near initialization for 'cfg_1080p_30fps_336M_mipi_[6]')
+../src/OV5640.h:349:12: warning: excess elements in scalar initializer
+   {0x3801, 336 & 0xFF},
+            ^~~
+../src/OV5640.h:349:12: note: (near initialization for 'cfg_1080p_30fps_336M_mipi_[6]')
+../src/OV5640.h:351:3: warning: braces around scalar initializer
+   {0x3802, (426 >> 8) & 0x07},
+   ^
+../src/OV5640.h:351:3: note: (near initialization for 'cfg_1080p_30fps_336M_mipi_[7]')
+../src/OV5640.h:351:12: warning: excess elements in scalar initializer
+   {0x3802, (426 >> 8) & 0x07},
+            ^
+../src/OV5640.h:351:12: note: (near initialization for 'cfg_1080p_30fps_336M_mipi_[7]')
+../src/OV5640.h:353:3: warning: braces around scalar initializer
+   {0x3803, 426 & 0xFF},
+   ^
+../src/OV5640.h:353:3: note: (near initialization for 'cfg_1080p_30fps_336M_mipi_[8]')
+../src/OV5640.h:353:12: warning: excess elements in scalar initializer
+   {0x3803, 426 & 0xFF},
+            ^~~
+../src/OV5640.h:353:12: note: (near initialization for 'cfg_1080p_30fps_336M_mipi_[8]')
+../src/OV5640.h:356:3: warning: braces around scalar initializer
+   {0x3804, (2287 >> 8) & 0x0F},
+   ^
+../src/OV5640.h:356:3: note: (near initialization for 'cfg_1080p_30fps_336M_mipi_[9]')
+../src/OV5640.h:356:12: warning: excess elements in scalar initializer
+   {0x3804, (2287 >> 8) & 0x0F},
+            ^
+../src/OV5640.h:356:12: note: (near initialization for 'cfg_1080p_30fps_336M_mipi_[9]')
+../src/OV5640.h:358:3: warning: braces around scalar initializer
+   {0x3805, 2287 & 0xFF},
+   ^
+../src/OV5640.h:358:3: note: (near initialization for 'cfg_1080p_30fps_336M_mipi_[10]')
+../src/OV5640.h:358:12: warning: excess elements in scalar initializer
+   {0x3805, 2287 & 0xFF},
+            ^~~~
+../src/OV5640.h:358:12: note: (near initialization for 'cfg_1080p_30fps_336M_mipi_[10]')
+../src/OV5640.h:360:3: warning: braces around scalar initializer
+   {0x3806, (1529 >> 8) & 0x07},
+   ^
+../src/OV5640.h:360:3: note: (near initialization for 'cfg_1080p_30fps_336M_mipi_[11]')
+../src/OV5640.h:360:12: warning: excess elements in scalar initializer
+   {0x3806, (1529 >> 8) & 0x07},
+            ^
+../src/OV5640.h:360:12: note: (near initialization for 'cfg_1080p_30fps_336M_mipi_[11]')
+../src/OV5640.h:362:3: warning: braces around scalar initializer
+   {0x3807, 1529 & 0xFF},
+   ^
+../src/OV5640.h:362:3: note: (near initialization for 'cfg_1080p_30fps_336M_mipi_[12]')
+../src/OV5640.h:362:12: warning: excess elements in scalar initializer
+   {0x3807, 1529 & 0xFF},
+            ^~~~
+../src/OV5640.h:362:12: note: (near initialization for 'cfg_1080p_30fps_336M_mipi_[12]')
+../src/OV5640.h:365:3: warning: braces around scalar initializer
+   {0x3810, (16 >> 8) & 0x0F},
+   ^
+../src/OV5640.h:365:3: note: (near initialization for 'cfg_1080p_30fps_336M_mipi_[13]')
+../src/OV5640.h:365:12: warning: excess elements in scalar initializer
+   {0x3810, (16 >> 8) & 0x0F},
+            ^
+../src/OV5640.h:365:12: note: (near initialization for 'cfg_1080p_30fps_336M_mipi_[13]')
+../src/OV5640.h:367:3: warning: braces around scalar initializer
+   {0x3811, 16 & 0xFF},
+   ^
+../src/OV5640.h:367:3: note: (near initialization for 'cfg_1080p_30fps_336M_mipi_[14]')
+../src/OV5640.h:367:12: warning: excess elements in scalar initializer
+   {0x3811, 16 & 0xFF},
+            ^~
+../src/OV5640.h:367:12: note: (near initialization for 'cfg_1080p_30fps_336M_mipi_[14]')
+../src/OV5640.h:369:3: warning: braces around scalar initializer
+   {0x3812, (12 >> 8) & 0x07},
+   ^
+../src/OV5640.h:369:3: note: (near initialization for 'cfg_1080p_30fps_336M_mipi_[15]')
+../src/OV5640.h:369:12: warning: excess elements in scalar initializer
+   {0x3812, (12 >> 8) & 0x07},
+            ^
+../src/OV5640.h:369:12: note: (near initialization for 'cfg_1080p_30fps_336M_mipi_[15]')
+../src/OV5640.h:371:3: warning: braces around scalar initializer
+   {0x3813, 12 & 0xFF},
+   ^
+../src/OV5640.h:371:3: note: (near initialization for 'cfg_1080p_30fps_336M_mipi_[16]')
+../src/OV5640.h:371:12: warning: excess elements in scalar initializer
+   {0x3813, 12 & 0xFF},
+            ^~
+../src/OV5640.h:371:12: note: (near initialization for 'cfg_1080p_30fps_336M_mipi_[16]')
+../src/OV5640.h:374:3: warning: braces around scalar initializer
+   {0x3808, (1920 >> 8) & 0x0F},
+   ^
+../src/OV5640.h:374:3: note: (near initialization for 'cfg_1080p_30fps_336M_mipi_[17]')
+../src/OV5640.h:374:12: warning: excess elements in scalar initializer
+   {0x3808, (1920 >> 8) & 0x0F},
+            ^
+../src/OV5640.h:374:12: note: (near initialization for 'cfg_1080p_30fps_336M_mipi_[17]')
+../src/OV5640.h:376:3: warning: braces around scalar initializer
+   {0x3809, 1920 & 0xFF},
+   ^
+../src/OV5640.h:376:3: note: (near initialization for 'cfg_1080p_30fps_336M_mipi_[18]')
+../src/OV5640.h:376:12: warning: excess elements in scalar initializer
+   {0x3809, 1920 & 0xFF},
+            ^~~~
+../src/OV5640.h:376:12: note: (near initialization for 'cfg_1080p_30fps_336M_mipi_[18]')
+../src/OV5640.h:378:3: warning: braces around scalar initializer
+   {0x380a, (1080 >> 8) & 0x7F},
+   ^
+../src/OV5640.h:378:3: note: (near initialization for 'cfg_1080p_30fps_336M_mipi_[19]')
+../src/OV5640.h:378:12: warning: excess elements in scalar initializer
+   {0x380a, (1080 >> 8) & 0x7F},
+            ^
+../src/OV5640.h:378:12: note: (near initialization for 'cfg_1080p_30fps_336M_mipi_[19]')
+../src/OV5640.h:380:3: warning: braces around scalar initializer
+   {0x380b, 1080 & 0xFF},
+   ^
+../src/OV5640.h:380:3: note: (near initialization for 'cfg_1080p_30fps_336M_mipi_[20]')
+../src/OV5640.h:380:12: warning: excess elements in scalar initializer
+   {0x380b, 1080 & 0xFF},
+            ^~~~
+../src/OV5640.h:380:12: note: (near initialization for 'cfg_1080p_30fps_336M_mipi_[20]')
+../src/OV5640.h:383:3: warning: braces around scalar initializer
+   {0x380c, (2500 >> 8) & 0x1F},
+   ^
+../src/OV5640.h:383:3: note: (near initialization for 'cfg_1080p_30fps_336M_mipi_[21]')
+../src/OV5640.h:383:12: warning: excess elements in scalar initializer
+   {0x380c, (2500 >> 8) & 0x1F},
+            ^
+../src/OV5640.h:383:12: note: (near initialization for 'cfg_1080p_30fps_336M_mipi_[21]')
+../src/OV5640.h:384:3: warning: braces around scalar initializer
+   {0x380d, 2500 & 0xFF},
+   ^
+../src/OV5640.h:384:3: note: (near initialization for 'cfg_1080p_30fps_336M_mipi_[22]')
+../src/OV5640.h:384:12: warning: excess elements in scalar initializer
+   {0x380d, 2500 & 0xFF},
+            ^~~~
+../src/OV5640.h:384:12: note: (near initialization for 'cfg_1080p_30fps_336M_mipi_[22]')
+../src/OV5640.h:386:3: warning: braces around scalar initializer
+   {0x380e, (1120 >> 8) & 0xFF},
+   ^
+../src/OV5640.h:386:3: note: (near initialization for 'cfg_1080p_30fps_336M_mipi_[23]')
+../src/OV5640.h:386:12: warning: excess elements in scalar initializer
+   {0x380e, (1120 >> 8) & 0xFF},
+            ^
+../src/OV5640.h:386:12: note: (near initialization for 'cfg_1080p_30fps_336M_mipi_[23]')
+../src/OV5640.h:387:3: warning: braces around scalar initializer
+   {0x380f, 1120 & 0xFF},
+   ^
+../src/OV5640.h:387:3: note: (near initialization for 'cfg_1080p_30fps_336M_mipi_[24]')
+../src/OV5640.h:387:12: warning: excess elements in scalar initializer
+   {0x380f, 1120 & 0xFF},
+            ^~~~
+../src/OV5640.h:387:12: note: (near initialization for 'cfg_1080p_30fps_336M_mipi_[24]')
+../src/OV5640.h:390:3: warning: braces around scalar initializer
+   {0x3814, 0x11},
+   ^
+../src/OV5640.h:390:3: note: (near initialization for 'cfg_1080p_30fps_336M_mipi_[25]')
+../src/OV5640.h:390:12: warning: excess elements in scalar initializer
+   {0x3814, 0x11},
+            ^~~~
+../src/OV5640.h:390:12: note: (near initialization for 'cfg_1080p_30fps_336M_mipi_[25]')
+../src/OV5640.h:392:3: warning: braces around scalar initializer
+   {0x3815, 0x11},
+   ^
+../src/OV5640.h:392:3: note: (near initialization for 'cfg_1080p_30fps_336M_mipi_[26]')
+../src/OV5640.h:392:12: warning: excess elements in scalar initializer
+   {0x3815, 0x11},
+            ^~~~
+../src/OV5640.h:392:12: note: (near initialization for 'cfg_1080p_30fps_336M_mipi_[26]')
+../src/OV5640.h:395:3: warning: braces around scalar initializer
+   {0x3821, 0x00},
+   ^
+../src/OV5640.h:395:3: note: (near initialization for 'cfg_1080p_30fps_336M_mipi_[27]')
+../src/OV5640.h:395:12: warning: excess elements in scalar initializer
+   {0x3821, 0x00},
+            ^~~~
+../src/OV5640.h:395:12: note: (near initialization for 'cfg_1080p_30fps_336M_mipi_[27]')
+../src/OV5640.h:398:3: warning: braces around scalar initializer
+   {0x4837, 14}, // 1/84M*2
+   ^
+../src/OV5640.h:398:3: note: (near initialization for 'cfg_1080p_30fps_336M_mipi_[28]')
+../src/OV5640.h:398:12: warning: excess elements in scalar initializer
+   {0x4837, 14}, // 1/84M*2
+            ^~
+../src/OV5640.h:398:12: note: (near initialization for 'cfg_1080p_30fps_336M_mipi_[28]')
+../src/OV5640.h:401:3: warning: braces around scalar initializer
+   {0x3618, 0x00}, // Removes vertical lines appearing under bright light
+   ^
+../src/OV5640.h:401:3: note: (near initialization for 'cfg_1080p_30fps_336M_mipi_[29]')
+../src/OV5640.h:401:12: warning: excess elements in scalar initializer
+   {0x3618, 0x00}, // Removes vertical lines appearing under bright light
+            ^~~~
+../src/OV5640.h:401:12: note: (near initialization for 'cfg_1080p_30fps_336M_mipi_[29]')
+../src/OV5640.h:402:3: warning: braces around scalar initializer
+   {0x3612, 0x59},
+   ^
+../src/OV5640.h:402:3: note: (near initialization for 'cfg_1080p_30fps_336M_mipi_[30]')
+../src/OV5640.h:402:12: warning: excess elements in scalar initializer
+   {0x3612, 0x59},
+            ^~~~
+../src/OV5640.h:402:12: note: (near initialization for 'cfg_1080p_30fps_336M_mipi_[30]')
+../src/OV5640.h:403:3: warning: braces around scalar initializer
+   {0x3708, 0x64},
+   ^
+../src/OV5640.h:403:3: note: (near initialization for 'cfg_1080p_30fps_336M_mipi_[31]')
+../src/OV5640.h:403:12: warning: excess elements in scalar initializer
+   {0x3708, 0x64},
+            ^~~~
+../src/OV5640.h:403:12: note: (near initialization for 'cfg_1080p_30fps_336M_mipi_[31]')
+../src/OV5640.h:404:3: warning: braces around scalar initializer
+   {0x3709, 0x52},
+   ^
+../src/OV5640.h:404:3: note: (near initialization for 'cfg_1080p_30fps_336M_mipi_[32]')
+../src/OV5640.h:404:12: warning: excess elements in scalar initializer
+   {0x3709, 0x52},
+            ^~~~
+../src/OV5640.h:404:12: note: (near initialization for 'cfg_1080p_30fps_336M_mipi_[32]')
+../src/OV5640.h:405:3: warning: braces around scalar initializer
+   {0x370c, 0x03},
+   ^
+../src/OV5640.h:405:3: note: (near initialization for 'cfg_1080p_30fps_336M_mipi_[33]')
+../src/OV5640.h:405:12: warning: excess elements in scalar initializer
+   {0x370c, 0x03},
+            ^~~~
+../src/OV5640.h:405:12: note: (near initialization for 'cfg_1080p_30fps_336M_mipi_[33]')
+../src/OV5640.h:408:3: warning: braces around scalar initializer
+   {0x4300, 0x00},
+   ^
+../src/OV5640.h:408:3: note: (near initialization for 'cfg_1080p_30fps_336M_mipi_[34]')
+../src/OV5640.h:408:12: warning: excess elements in scalar initializer
+   {0x4300, 0x00},
+            ^~~~
+../src/OV5640.h:408:12: note: (near initialization for 'cfg_1080p_30fps_336M_mipi_[34]')
+../src/OV5640.h:410:3: warning: braces around scalar initializer
+   {0x501f, 0x03}
+   ^
+../src/OV5640.h:410:3: note: (near initialization for 'cfg_1080p_30fps_336M_mipi_[35]')
+../src/OV5640.h:410:12: warning: excess elements in scalar initializer
+   {0x501f, 0x03}
+            ^~~~
+../src/OV5640.h:410:12: note: (near initialization for 'cfg_1080p_30fps_336M_mipi_[35]')
+../src/OV5640.h:412:14: error: expected ';' before 'const'
+ config_word_t const cfg_1080p_30fps_336M_1lane_mipi_[] =
+              ^~~~~~
+              ;
+../src/OV5640.h:412:21: warning: type defaults to 'int' in declaration of 'cfg_1080p_30fps_336M_1lane_mipi_' [-Wimplicit-int]
+ config_word_t const cfg_1080p_30fps_336M_1lane_mipi_[] =
+                     ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+../src/OV5640.h:416:2: warning: braces around scalar initializer
+  {0x3035, 0x11}, // 30fps setting
+  ^
+../src/OV5640.h:416:2: note: (near initialization for 'cfg_1080p_30fps_336M_1lane_mipi_[0]')
+../src/OV5640.h:416:11: warning: excess elements in scalar initializer
+  {0x3035, 0x11}, // 30fps setting
+           ^~~~
+../src/OV5640.h:416:11: note: (near initialization for 'cfg_1080p_30fps_336M_1lane_mipi_[0]')
+../src/OV5640.h:418:2: warning: braces around scalar initializer
+  {0x3036, 0x54},
+  ^
+../src/OV5640.h:418:2: note: (near initialization for 'cfg_1080p_30fps_336M_1lane_mipi_[1]')
+../src/OV5640.h:418:11: warning: excess elements in scalar initializer
+  {0x3036, 0x54},
+           ^~~~
+../src/OV5640.h:418:11: note: (near initialization for 'cfg_1080p_30fps_336M_1lane_mipi_[1]')
+../src/OV5640.h:420:2: warning: braces around scalar initializer
+  {0x3037, 0x15},
+  ^
+../src/OV5640.h:420:2: note: (near initialization for 'cfg_1080p_30fps_336M_1lane_mipi_[2]')
+../src/OV5640.h:420:11: warning: excess elements in scalar initializer
+  {0x3037, 0x15},
+           ^~~~
+../src/OV5640.h:420:11: note: (near initialization for 'cfg_1080p_30fps_336M_1lane_mipi_[2]')
+../src/OV5640.h:422:2: warning: braces around scalar initializer
+  {0x3108, 0x01},
+  ^
+../src/OV5640.h:422:2: note: (near initialization for 'cfg_1080p_30fps_336M_1lane_mipi_[3]')
+../src/OV5640.h:422:11: warning: excess elements in scalar initializer
+  {0x3108, 0x01},
+           ^~~~
+../src/OV5640.h:422:11: note: (near initialization for 'cfg_1080p_30fps_336M_1lane_mipi_[3]')
+../src/OV5640.h:425:2: warning: braces around scalar initializer
+  {0x3034, 0x1A},
+  ^
+../src/OV5640.h:425:2: note: (near initialization for 'cfg_1080p_30fps_336M_1lane_mipi_[4]')
+../src/OV5640.h:425:11: warning: excess elements in scalar initializer
+  {0x3034, 0x1A},
+           ^~~~
+../src/OV5640.h:425:11: note: (near initialization for 'cfg_1080p_30fps_336M_1lane_mipi_[4]')
+In file included from ../src/OV5640.c:7:
+../src/OV5640.h:428:2: warning: braces around scalar initializer
+  {0x300e, 0x25},
+  ^
+../src/OV5640.h:428:2: note: (near initialization for 'cfg_1080p_30fps_336M_1lane_mipi_[5]')
+../src/OV5640.h:428:11: warning: excess elements in scalar initializer
+  {0x300e, 0x25},
+           ^~~~
+../src/OV5640.h:428:11: note: (near initialization for 'cfg_1080p_30fps_336M_1lane_mipi_[5]')
+../src/OV5640.h:431:2: warning: braces around scalar initializer
+  {0x3800, (336 >> 8) & 0x0F},
+  ^
+../src/OV5640.h:431:2: note: (near initialization for 'cfg_1080p_30fps_336M_1lane_mipi_[6]')
+../src/OV5640.h:431:11: warning: excess elements in scalar initializer
+  {0x3800, (336 >> 8) & 0x0F},
+           ^
+../src/OV5640.h:431:11: note: (near initialization for 'cfg_1080p_30fps_336M_1lane_mipi_[6]')
+../src/OV5640.h:433:2: warning: braces around scalar initializer
+  {0x3801, 336 & 0xFF},
+  ^
+../src/OV5640.h:433:2: note: (near initialization for 'cfg_1080p_30fps_336M_1lane_mipi_[7]')
+../src/OV5640.h:433:11: warning: excess elements in scalar initializer
+  {0x3801, 336 & 0xFF},
+           ^~~
+../src/OV5640.h:433:11: note: (near initialization for 'cfg_1080p_30fps_336M_1lane_mipi_[7]')
+../src/OV5640.h:435:2: warning: braces around scalar initializer
+  {0x3802, (426 >> 8) & 0x07},
+  ^
+../src/OV5640.h:435:2: note: (near initialization for 'cfg_1080p_30fps_336M_1lane_mipi_[8]')
+../src/OV5640.h:435:11: warning: excess elements in scalar initializer
+  {0x3802, (426 >> 8) & 0x07},
+           ^
+../src/OV5640.h:435:11: note: (near initialization for 'cfg_1080p_30fps_336M_1lane_mipi_[8]')
+../src/OV5640.h:437:2: warning: braces around scalar initializer
+  {0x3803, 426 & 0xFF},
+  ^
+../src/OV5640.h:437:2: note: (near initialization for 'cfg_1080p_30fps_336M_1lane_mipi_[9]')
+../src/OV5640.h:437:11: warning: excess elements in scalar initializer
+  {0x3803, 426 & 0xFF},
+           ^~~
+../src/OV5640.h:437:11: note: (near initialization for 'cfg_1080p_30fps_336M_1lane_mipi_[9]')
+../src/OV5640.h:440:2: warning: braces around scalar initializer
+  {0x3804, (2287 >> 8) & 0x0F},
+  ^
+../src/OV5640.h:440:2: note: (near initialization for 'cfg_1080p_30fps_336M_1lane_mipi_[10]')
+../src/OV5640.h:440:11: warning: excess elements in scalar initializer
+  {0x3804, (2287 >> 8) & 0x0F},
+           ^
+../src/OV5640.h:440:11: note: (near initialization for 'cfg_1080p_30fps_336M_1lane_mipi_[10]')
+../src/OV5640.h:442:2: warning: braces around scalar initializer
+  {0x3805, 2287 & 0xFF},
+  ^
+../src/OV5640.h:442:2: note: (near initialization for 'cfg_1080p_30fps_336M_1lane_mipi_[11]')
+../src/OV5640.h:442:11: warning: excess elements in scalar initializer
+  {0x3805, 2287 & 0xFF},
+           ^~~~
+../src/OV5640.h:442:11: note: (near initialization for 'cfg_1080p_30fps_336M_1lane_mipi_[11]')
+../src/OV5640.h:444:2: warning: braces around scalar initializer
+  {0x3806, (1529 >> 8) & 0x07},
+  ^
+../src/OV5640.h:444:2: note: (near initialization for 'cfg_1080p_30fps_336M_1lane_mipi_[12]')
+../src/OV5640.h:444:11: warning: excess elements in scalar initializer
+  {0x3806, (1529 >> 8) & 0x07},
+           ^
+../src/OV5640.h:444:11: note: (near initialization for 'cfg_1080p_30fps_336M_1lane_mipi_[12]')
+../src/OV5640.h:446:2: warning: braces around scalar initializer
+  {0x3807, 1529 & 0xFF},
+  ^
+../src/OV5640.h:446:2: note: (near initialization for 'cfg_1080p_30fps_336M_1lane_mipi_[13]')
+../src/OV5640.h:446:11: warning: excess elements in scalar initializer
+  {0x3807, 1529 & 0xFF},
+           ^~~~
+../src/OV5640.h:446:11: note: (near initialization for 'cfg_1080p_30fps_336M_1lane_mipi_[13]')
+../src/OV5640.h:449:2: warning: braces around scalar initializer
+  {0x3810, (16 >> 8) & 0x0F},
+  ^
+../src/OV5640.h:449:2: note: (near initialization for 'cfg_1080p_30fps_336M_1lane_mipi_[14]')
+../src/OV5640.h:449:11: warning: excess elements in scalar initializer
+  {0x3810, (16 >> 8) & 0x0F},
+           ^
+../src/OV5640.h:449:11: note: (near initialization for 'cfg_1080p_30fps_336M_1lane_mipi_[14]')
+../src/OV5640.h:451:2: warning: braces around scalar initializer
+  {0x3811, 16 & 0xFF},
+  ^
+../src/OV5640.h:451:2: note: (near initialization for 'cfg_1080p_30fps_336M_1lane_mipi_[15]')
+../src/OV5640.h:451:11: warning: excess elements in scalar initializer
+  {0x3811, 16 & 0xFF},
+           ^~
+../src/OV5640.h:451:11: note: (near initialization for 'cfg_1080p_30fps_336M_1lane_mipi_[15]')
+../src/OV5640.h:453:2: warning: braces around scalar initializer
+  {0x3812, (12 >> 8) & 0x07},
+  ^
+../src/OV5640.h:453:2: note: (near initialization for 'cfg_1080p_30fps_336M_1lane_mipi_[16]')
+../src/OV5640.h:453:11: warning: excess elements in scalar initializer
+  {0x3812, (12 >> 8) & 0x07},
+           ^
+../src/OV5640.h:453:11: note: (near initialization for 'cfg_1080p_30fps_336M_1lane_mipi_[16]')
+../src/OV5640.h:455:2: warning: braces around scalar initializer
+  {0x3813, 12 & 0xFF},
+  ^
+../src/OV5640.h:455:2: note: (near initialization for 'cfg_1080p_30fps_336M_1lane_mipi_[17]')
+../src/OV5640.h:455:11: warning: excess elements in scalar initializer
+  {0x3813, 12 & 0xFF},
+           ^~
+../src/OV5640.h:455:11: note: (near initialization for 'cfg_1080p_30fps_336M_1lane_mipi_[17]')
+../src/OV5640.h:458:2: warning: braces around scalar initializer
+  {0x3808, (1920 >> 8) & 0x0F},
+  ^
+../src/OV5640.h:458:2: note: (near initialization for 'cfg_1080p_30fps_336M_1lane_mipi_[18]')
+../src/OV5640.h:458:11: warning: excess elements in scalar initializer
+  {0x3808, (1920 >> 8) & 0x0F},
+           ^
+../src/OV5640.h:458:11: note: (near initialization for 'cfg_1080p_30fps_336M_1lane_mipi_[18]')
+../src/OV5640.h:460:2: warning: braces around scalar initializer
+  {0x3809, 1920 & 0xFF},
+  ^
+../src/OV5640.h:460:2: note: (near initialization for 'cfg_1080p_30fps_336M_1lane_mipi_[19]')
+../src/OV5640.h:460:11: warning: excess elements in scalar initializer
+  {0x3809, 1920 & 0xFF},
+           ^~~~
+../src/OV5640.h:460:11: note: (near initialization for 'cfg_1080p_30fps_336M_1lane_mipi_[19]')
+../src/OV5640.h:462:2: warning: braces around scalar initializer
+  {0x380a, (1080 >> 8) & 0x7F},
+  ^
+../src/OV5640.h:462:2: note: (near initialization for 'cfg_1080p_30fps_336M_1lane_mipi_[20]')
+../src/OV5640.h:462:11: warning: excess elements in scalar initializer
+  {0x380a, (1080 >> 8) & 0x7F},
+           ^
+../src/OV5640.h:462:11: note: (near initialization for 'cfg_1080p_30fps_336M_1lane_mipi_[20]')
+../src/OV5640.h:464:2: warning: braces around scalar initializer
+  {0x380b, 1080 & 0xFF},
+  ^
+../src/OV5640.h:464:2: note: (near initialization for 'cfg_1080p_30fps_336M_1lane_mipi_[21]')
+../src/OV5640.h:464:11: warning: excess elements in scalar initializer
+  {0x380b, 1080 & 0xFF},
+           ^~~~
+../src/OV5640.h:464:11: note: (near initialization for 'cfg_1080p_30fps_336M_1lane_mipi_[21]')
+../src/OV5640.h:467:2: warning: braces around scalar initializer
+  {0x380c, (2500 >> 8) & 0x1F},
+  ^
+../src/OV5640.h:467:2: note: (near initialization for 'cfg_1080p_30fps_336M_1lane_mipi_[22]')
+../src/OV5640.h:467:11: warning: excess elements in scalar initializer
+  {0x380c, (2500 >> 8) & 0x1F},
+           ^
+../src/OV5640.h:467:11: note: (near initialization for 'cfg_1080p_30fps_336M_1lane_mipi_[22]')
+../src/OV5640.h:468:2: warning: braces around scalar initializer
+  {0x380d, 2500 & 0xFF},
+  ^
+../src/OV5640.h:468:2: note: (near initialization for 'cfg_1080p_30fps_336M_1lane_mipi_[23]')
+../src/OV5640.h:468:11: warning: excess elements in scalar initializer
+  {0x380d, 2500 & 0xFF},
+           ^~~~
+../src/OV5640.h:468:11: note: (near initialization for 'cfg_1080p_30fps_336M_1lane_mipi_[23]')
+../src/OV5640.h:470:2: warning: braces around scalar initializer
+  {0x380e, (1120 >> 8) & 0xFF},
+  ^
+../src/OV5640.h:470:2: note: (near initialization for 'cfg_1080p_30fps_336M_1lane_mipi_[24]')
+../src/OV5640.h:470:11: warning: excess elements in scalar initializer
+  {0x380e, (1120 >> 8) & 0xFF},
+           ^
+../src/OV5640.h:470:11: note: (near initialization for 'cfg_1080p_30fps_336M_1lane_mipi_[24]')
+../src/OV5640.h:471:2: warning: braces around scalar initializer
+  {0x380f, 1120 & 0xFF},
+  ^
+../src/OV5640.h:471:2: note: (near initialization for 'cfg_1080p_30fps_336M_1lane_mipi_[25]')
+../src/OV5640.h:471:11: warning: excess elements in scalar initializer
+  {0x380f, 1120 & 0xFF},
+           ^~~~
+../src/OV5640.h:471:11: note: (near initialization for 'cfg_1080p_30fps_336M_1lane_mipi_[25]')
+../src/OV5640.h:474:2: warning: braces around scalar initializer
+  {0x3814, 0x11},
+  ^
+../src/OV5640.h:474:2: note: (near initialization for 'cfg_1080p_30fps_336M_1lane_mipi_[26]')
+../src/OV5640.h:474:11: warning: excess elements in scalar initializer
+  {0x3814, 0x11},
+           ^~~~
+../src/OV5640.h:474:11: note: (near initialization for 'cfg_1080p_30fps_336M_1lane_mipi_[26]')
+../src/OV5640.h:476:2: warning: braces around scalar initializer
+  {0x3815, 0x11},
+  ^
+../src/OV5640.h:476:2: note: (near initialization for 'cfg_1080p_30fps_336M_1lane_mipi_[27]')
+../src/OV5640.h:476:11: warning: excess elements in scalar initializer
+  {0x3815, 0x11},
+           ^~~~
+../src/OV5640.h:476:11: note: (near initialization for 'cfg_1080p_30fps_336M_1lane_mipi_[27]')
+../src/OV5640.h:479:2: warning: braces around scalar initializer
+  {0x3821, 0x00},
+  ^
+../src/OV5640.h:479:2: note: (near initialization for 'cfg_1080p_30fps_336M_1lane_mipi_[28]')
+../src/OV5640.h:479:11: warning: excess elements in scalar initializer
+  {0x3821, 0x00},
+           ^~~~
+../src/OV5640.h:479:11: note: (near initialization for 'cfg_1080p_30fps_336M_1lane_mipi_[28]')
+../src/OV5640.h:482:2: warning: braces around scalar initializer
+  {0x4837, 28}, // 1/84M*2
+  ^
+../src/OV5640.h:482:2: note: (near initialization for 'cfg_1080p_30fps_336M_1lane_mipi_[29]')
+../src/OV5640.h:482:11: warning: excess elements in scalar initializer
+  {0x4837, 28}, // 1/84M*2
+           ^~
+../src/OV5640.h:482:11: note: (near initialization for 'cfg_1080p_30fps_336M_1lane_mipi_[29]')
+../src/OV5640.h:485:2: warning: braces around scalar initializer
+  {0x3618, 0x00}, // Removes vertical lines appearing under bright light
+  ^
+../src/OV5640.h:485:2: note: (near initialization for 'cfg_1080p_30fps_336M_1lane_mipi_[30]')
+../src/OV5640.h:485:11: warning: excess elements in scalar initializer
+  {0x3618, 0x00}, // Removes vertical lines appearing under bright light
+           ^~~~
+../src/OV5640.h:485:11: note: (near initialization for 'cfg_1080p_30fps_336M_1lane_mipi_[30]')
+../src/OV5640.h:486:2: warning: braces around scalar initializer
+  {0x3612, 0x59},
+  ^
+../src/OV5640.h:486:2: note: (near initialization for 'cfg_1080p_30fps_336M_1lane_mipi_[31]')
+../src/OV5640.h:486:11: warning: excess elements in scalar initializer
+  {0x3612, 0x59},
+           ^~~~
+../src/OV5640.h:486:11: note: (near initialization for 'cfg_1080p_30fps_336M_1lane_mipi_[31]')
+../src/OV5640.h:487:2: warning: braces around scalar initializer
+  {0x3708, 0x64},
+  ^
+../src/OV5640.h:487:2: note: (near initialization for 'cfg_1080p_30fps_336M_1lane_mipi_[32]')
+../src/OV5640.h:487:11: warning: excess elements in scalar initializer
+  {0x3708, 0x64},
+           ^~~~
+../src/OV5640.h:487:11: note: (near initialization for 'cfg_1080p_30fps_336M_1lane_mipi_[32]')
+../src/OV5640.h:488:2: warning: braces around scalar initializer
+  {0x3709, 0x52},
+  ^
+../src/OV5640.h:488:2: note: (near initialization for 'cfg_1080p_30fps_336M_1lane_mipi_[33]')
+../src/OV5640.h:488:11: warning: excess elements in scalar initializer
+  {0x3709, 0x52},
+           ^~~~
+../src/OV5640.h:488:11: note: (near initialization for 'cfg_1080p_30fps_336M_1lane_mipi_[33]')
+../src/OV5640.h:489:2: warning: braces around scalar initializer
+  {0x370c, 0x03},
+  ^
+../src/OV5640.h:489:2: note: (near initialization for 'cfg_1080p_30fps_336M_1lane_mipi_[34]')
+../src/OV5640.h:489:11: warning: excess elements in scalar initializer
+  {0x370c, 0x03},
+           ^~~~
+../src/OV5640.h:489:11: note: (near initialization for 'cfg_1080p_30fps_336M_1lane_mipi_[34]')
+../src/OV5640.h:492:2: warning: braces around scalar initializer
+  {0x4300, 0x00},
+  ^
+../src/OV5640.h:492:2: note: (near initialization for 'cfg_1080p_30fps_336M_1lane_mipi_[35]')
+../src/OV5640.h:492:11: warning: excess elements in scalar initializer
+  {0x4300, 0x00},
+           ^~~~
+../src/OV5640.h:492:11: note: (near initialization for 'cfg_1080p_30fps_336M_1lane_mipi_[35]')
+../src/OV5640.h:494:2: warning: braces around scalar initializer
+  {0x501f, 0x03}
+  ^
+../src/OV5640.h:494:2: note: (near initialization for 'cfg_1080p_30fps_336M_1lane_mipi_[36]')
+../src/OV5640.h:494:11: warning: excess elements in scalar initializer
+  {0x501f, 0x03}
+           ^~~~
+../src/OV5640.h:494:11: note: (near initialization for 'cfg_1080p_30fps_336M_1lane_mipi_[36]')
+../src/OV5640.h:496:14: error: expected ';' before 'const'
+ config_word_t const cfg_init_[] =
+              ^~~~~~
+              ;
+../src/OV5640.h:496:21: warning: type defaults to 'int' in declaration of 'cfg_init_' [-Wimplicit-int]
+ config_word_t const cfg_init_[] =
+                     ^~~~~~~~~
+../src/OV5640.h:499:2: warning: braces around scalar initializer
+  {0x3008, 0x42},
+  ^
+../src/OV5640.h:499:2: note: (near initialization for 'cfg_init_[0]')
+../src/OV5640.h:499:11: warning: excess elements in scalar initializer
+  {0x3008, 0x42},
+           ^~~~
+../src/OV5640.h:499:11: note: (near initialization for 'cfg_init_[0]')
+../src/OV5640.h:501:2: warning: braces around scalar initializer
+  {0x3103, 0x03},
+  ^
+../src/OV5640.h:501:2: note: (near initialization for 'cfg_init_[1]')
+../src/OV5640.h:501:11: warning: excess elements in scalar initializer
+  {0x3103, 0x03},
+           ^~~~
+../src/OV5640.h:501:11: note: (near initialization for 'cfg_init_[1]')
+../src/OV5640.h:503:2: warning: braces around scalar initializer
+  {0x3017, 0x00},
+  ^
+../src/OV5640.h:503:2: note: (near initialization for 'cfg_init_[2]')
+../src/OV5640.h:503:11: warning: excess elements in scalar initializer
+  {0x3017, 0x00},
+           ^~~~
+../src/OV5640.h:503:11: note: (near initialization for 'cfg_init_[2]')
+../src/OV5640.h:505:2: warning: braces around scalar initializer
+  {0x3018, 0x00},
+  ^
+../src/OV5640.h:505:2: note: (near initialization for 'cfg_init_[3]')
+../src/OV5640.h:505:11: warning: excess elements in scalar initializer
+  {0x3018, 0x00},
+           ^~~~
+../src/OV5640.h:505:11: note: (near initialization for 'cfg_init_[3]')
+../src/OV5640.h:507:2: warning: braces around scalar initializer
+  {0x3034, 0x18},
+  ^
+../src/OV5640.h:507:2: note: (near initialization for 'cfg_init_[4]')
+../src/OV5640.h:507:11: warning: excess elements in scalar initializer
+  {0x3034, 0x18},
+           ^~~~
+../src/OV5640.h:507:11: note: (near initialization for 'cfg_init_[4]')
+../src/OV5640.h:549:2: warning: braces around scalar initializer
+  {0x3035, 0x11},
+  ^
+../src/OV5640.h:549:2: note: (near initialization for 'cfg_init_[5]')
+../src/OV5640.h:549:11: warning: excess elements in scalar initializer
+  {0x3035, 0x11},
+           ^~~~
+../src/OV5640.h:549:11: note: (near initialization for 'cfg_init_[5]')
+../src/OV5640.h:551:2: warning: braces around scalar initializer
+  {0x3036, 0x38},
+  ^
+../src/OV5640.h:551:2: note: (near initialization for 'cfg_init_[6]')
+../src/OV5640.h:551:11: warning: excess elements in scalar initializer
+  {0x3036, 0x38},
+           ^~~~
+../src/OV5640.h:551:11: note: (near initialization for 'cfg_init_[6]')
+../src/OV5640.h:553:2: warning: braces around scalar initializer
+  {0x3037, 0x11},
+  ^
+../src/OV5640.h:553:2: note: (near initialization for 'cfg_init_[7]')
+../src/OV5640.h:553:11: warning: excess elements in scalar initializer
+  {0x3037, 0x11},
+           ^~~~
+../src/OV5640.h:553:11: note: (near initialization for 'cfg_init_[7]')
+../src/OV5640.h:555:2: warning: braces around scalar initializer
+  {0x3108, 0x01},
+  ^
+../src/OV5640.h:555:2: note: (near initialization for 'cfg_init_[8]')
+../src/OV5640.h:555:11: warning: excess elements in scalar initializer
+  {0x3108, 0x01},
+           ^~~~
+../src/OV5640.h:555:11: note: (near initialization for 'cfg_init_[8]')
+../src/OV5640.h:558:2: warning: braces around scalar initializer
+  {0x303D, 0x10},
+  ^
+../src/OV5640.h:558:2: note: (near initialization for 'cfg_init_[9]')
+../src/OV5640.h:558:11: warning: excess elements in scalar initializer
+  {0x303D, 0x10},
+           ^~~~
+../src/OV5640.h:558:11: note: (near initialization for 'cfg_init_[9]')
+../src/OV5640.h:560:2: warning: braces around scalar initializer
+  {0x303B, 0x19},
+  ^
+../src/OV5640.h:560:2: note: (near initialization for 'cfg_init_[10]')
+../src/OV5640.h:560:11: warning: excess elements in scalar initializer
+  {0x303B, 0x19},
+           ^~~~
+../src/OV5640.h:560:11: note: (near initialization for 'cfg_init_[10]')
+../src/OV5640.h:562:2: warning: braces around scalar initializer
+  {0x3630, 0x2e},
+  ^
+../src/OV5640.h:562:2: note: (near initialization for 'cfg_init_[11]')
+../src/OV5640.h:562:11: warning: excess elements in scalar initializer
+  {0x3630, 0x2e},
+           ^~~~
+../src/OV5640.h:562:11: note: (near initialization for 'cfg_init_[11]')
+../src/OV5640.h:563:2: warning: braces around scalar initializer
+  {0x3631, 0x0e},
+  ^
+../src/OV5640.h:563:2: note: (near initialization for 'cfg_init_[12]')
+../src/OV5640.h:563:11: warning: excess elements in scalar initializer
+  {0x3631, 0x0e},
+           ^~~~
+../src/OV5640.h:563:11: note: (near initialization for 'cfg_init_[12]')
+../src/OV5640.h:564:2: warning: braces around scalar initializer
+  {0x3632, 0xe2},
+  ^
+../src/OV5640.h:564:2: note: (near initialization for 'cfg_init_[13]')
+../src/OV5640.h:564:11: warning: excess elements in scalar initializer
+  {0x3632, 0xe2},
+           ^~~~
+../src/OV5640.h:564:11: note: (near initialization for 'cfg_init_[13]')
+../src/OV5640.h:565:2: warning: braces around scalar initializer
+  {0x3633, 0x23},
+  ^
+../src/OV5640.h:565:2: note: (near initialization for 'cfg_init_[14]')
+../src/OV5640.h:565:11: warning: excess elements in scalar initializer
+  {0x3633, 0x23},
+           ^~~~
+../src/OV5640.h:565:11: note: (near initialization for 'cfg_init_[14]')
+../src/OV5640.h:566:2: warning: braces around scalar initializer
+  {0x3621, 0xe0},
+  ^
+../src/OV5640.h:566:2: note: (near initialization for 'cfg_init_[15]')
+../src/OV5640.h:566:11: warning: excess elements in scalar initializer
+  {0x3621, 0xe0},
+           ^~~~
+../src/OV5640.h:566:11: note: (near initialization for 'cfg_init_[15]')
+../src/OV5640.h:567:2: warning: braces around scalar initializer
+  {0x3704, 0xa0},
+  ^
+../src/OV5640.h:567:2: note: (near initialization for 'cfg_init_[16]')
+../src/OV5640.h:567:11: warning: excess elements in scalar initializer
+  {0x3704, 0xa0},
+           ^~~~
+../src/OV5640.h:567:11: note: (near initialization for 'cfg_init_[16]')
+../src/OV5640.h:568:2: warning: braces around scalar initializer
+  {0x3703, 0x5a},
+  ^
+../src/OV5640.h:568:2: note: (near initialization for 'cfg_init_[17]')
+../src/OV5640.h:568:11: warning: excess elements in scalar initializer
+  {0x3703, 0x5a},
+           ^~~~
+../src/OV5640.h:568:11: note: (near initialization for 'cfg_init_[17]')
+../src/OV5640.h:569:2: warning: braces around scalar initializer
+  {0x3715, 0x78},
+  ^
+../src/OV5640.h:569:2: note: (near initialization for 'cfg_init_[18]')
+../src/OV5640.h:569:11: warning: excess elements in scalar initializer
+  {0x3715, 0x78},
+           ^~~~
+../src/OV5640.h:569:11: note: (near initialization for 'cfg_init_[18]')
+../src/OV5640.h:570:2: warning: braces around scalar initializer
+  {0x3717, 0x01},
+  ^
+../src/OV5640.h:570:2: note: (near initialization for 'cfg_init_[19]')
+../src/OV5640.h:570:11: warning: excess elements in scalar initializer
+  {0x3717, 0x01},
+           ^~~~
+../src/OV5640.h:570:11: note: (near initialization for 'cfg_init_[19]')
+../src/OV5640.h:571:2: warning: braces around scalar initializer
+  {0x370b, 0x60},
+  ^
+../src/OV5640.h:571:2: note: (near initialization for 'cfg_init_[20]')
+../src/OV5640.h:571:11: warning: excess elements in scalar initializer
+  {0x370b, 0x60},
+           ^~~~
+../src/OV5640.h:571:11: note: (near initialization for 'cfg_init_[20]')
+../src/OV5640.h:572:2: warning: braces around scalar initializer
+  {0x3705, 0x1a},
+  ^
+../src/OV5640.h:572:2: note: (near initialization for 'cfg_init_[21]')
+../src/OV5640.h:572:11: warning: excess elements in scalar initializer
+  {0x3705, 0x1a},
+           ^~~~
+../src/OV5640.h:572:11: note: (near initialization for 'cfg_init_[21]')
+../src/OV5640.h:573:2: warning: braces around scalar initializer
+  {0x3905, 0x02},
+  ^
+../src/OV5640.h:573:2: note: (near initialization for 'cfg_init_[22]')
+../src/OV5640.h:573:11: warning: excess elements in scalar initializer
+  {0x3905, 0x02},
+           ^~~~
+../src/OV5640.h:573:11: note: (near initialization for 'cfg_init_[22]')
+../src/OV5640.h:574:2: warning: braces around scalar initializer
+  {0x3906, 0x10},
+  ^
+../src/OV5640.h:574:2: note: (near initialization for 'cfg_init_[23]')
+../src/OV5640.h:574:11: warning: excess elements in scalar initializer
+  {0x3906, 0x10},
+           ^~~~
+../src/OV5640.h:574:11: note: (near initialization for 'cfg_init_[23]')
+../src/OV5640.h:575:2: warning: braces around scalar initializer
+  {0x3901, 0x0a},
+  ^
+../src/OV5640.h:575:2: note: (near initialization for 'cfg_init_[24]')
+../src/OV5640.h:575:11: warning: excess elements in scalar initializer
+  {0x3901, 0x0a},
+           ^~~~
+../src/OV5640.h:575:11: note: (near initialization for 'cfg_init_[24]')
+../src/OV5640.h:576:2: warning: braces around scalar initializer
+  {0x3731, 0x02},
+  ^
+../src/OV5640.h:576:2: note: (near initialization for 'cfg_init_[25]')
+../src/OV5640.h:576:11: warning: excess elements in scalar initializer
+  {0x3731, 0x02},
+           ^~~~
+../src/OV5640.h:576:11: note: (near initialization for 'cfg_init_[25]')
+../src/OV5640.h:578:2: warning: braces around scalar initializer
+  {0x3600, 0x37},
+  ^
+../src/OV5640.h:578:2: note: (near initialization for 'cfg_init_[26]')
+../src/OV5640.h:578:11: warning: excess elements in scalar initializer
+  {0x3600, 0x37},
+           ^~~~
+../src/OV5640.h:578:11: note: (near initialization for 'cfg_init_[26]')
+../src/OV5640.h:579:2: warning: braces around scalar initializer
+  {0x3601, 0x33},
+  ^
+../src/OV5640.h:579:2: note: (near initialization for 'cfg_init_[27]')
+../src/OV5640.h:579:11: warning: excess elements in scalar initializer
+  {0x3601, 0x33},
+           ^~~~
+../src/OV5640.h:579:11: note: (near initialization for 'cfg_init_[27]')
+../src/OV5640.h:581:2: warning: braces around scalar initializer
+  {0x302d, 0x60},
+  ^
+../src/OV5640.h:581:2: note: (near initialization for 'cfg_init_[28]')
+../src/OV5640.h:581:11: warning: excess elements in scalar initializer
+  {0x302d, 0x60},
+           ^~~~
+../src/OV5640.h:581:11: note: (near initialization for 'cfg_init_[28]')
+../src/OV5640.h:583:2: warning: braces around scalar initializer
+  {0x3620, 0x52},
+  ^
+../src/OV5640.h:583:2: note: (near initialization for 'cfg_init_[29]')
+../src/OV5640.h:583:11: warning: excess elements in scalar initializer
+  {0x3620, 0x52},
+           ^~~~
+../src/OV5640.h:583:11: note: (near initialization for 'cfg_init_[29]')
+../src/OV5640.h:584:2: warning: braces around scalar initializer
+  {0x371b, 0x20},
+  ^
+../src/OV5640.h:584:2: note: (near initialization for 'cfg_init_[30]')
+../src/OV5640.h:584:11: warning: excess elements in scalar initializer
+  {0x371b, 0x20},
+           ^~~~
+../src/OV5640.h:584:11: note: (near initialization for 'cfg_init_[30]')
+../src/OV5640.h:586:2: warning: braces around scalar initializer
+  {0x471c, 0x50},
+  ^
+../src/OV5640.h:586:2: note: (near initialization for 'cfg_init_[31]')
+../src/OV5640.h:586:11: warning: excess elements in scalar initializer
+  {0x471c, 0x50},
+           ^~~~
+../src/OV5640.h:586:11: note: (near initialization for 'cfg_init_[31]')
+../src/OV5640.h:588:2: warning: braces around scalar initializer
+  {0x3a13, 0x43},
+  ^
+../src/OV5640.h:588:2: note: (near initialization for 'cfg_init_[32]')
+../src/OV5640.h:588:11: warning: excess elements in scalar initializer
+  {0x3a13, 0x43},
+           ^~~~
+../src/OV5640.h:588:11: note: (near initialization for 'cfg_init_[32]')
+../src/OV5640.h:589:2: warning: braces around scalar initializer
+  {0x3a18, 0x00},
+  ^
+../src/OV5640.h:589:2: note: (near initialization for 'cfg_init_[33]')
+../src/OV5640.h:589:11: warning: excess elements in scalar initializer
+  {0x3a18, 0x00},
+           ^~~~
+../src/OV5640.h:589:11: note: (near initialization for 'cfg_init_[33]')
+../src/OV5640.h:590:2: warning: braces around scalar initializer
+  {0x3a19, 0xf8},
+  ^
+../src/OV5640.h:590:2: note: (near initialization for 'cfg_init_[34]')
+../src/OV5640.h:590:11: warning: excess elements in scalar initializer
+  {0x3a19, 0xf8},
+           ^~~~
+../src/OV5640.h:590:11: note: (near initialization for 'cfg_init_[34]')
+../src/OV5640.h:591:2: warning: braces around scalar initializer
+  {0x3635, 0x13},
+  ^
+../src/OV5640.h:591:2: note: (near initialization for 'cfg_init_[35]')
+../src/OV5640.h:591:11: warning: excess elements in scalar initializer
+  {0x3635, 0x13},
+           ^~~~
+../src/OV5640.h:591:11: note: (near initialization for 'cfg_init_[35]')
+../src/OV5640.h:592:2: warning: braces around scalar initializer
+  {0x3636, 0x06},
+  ^
+../src/OV5640.h:592:2: note: (near initialization for 'cfg_init_[36]')
+../src/OV5640.h:592:11: warning: excess elements in scalar initializer
+  {0x3636, 0x06},
+           ^~~~
+../src/OV5640.h:592:11: note: (near initialization for 'cfg_init_[36]')
+../src/OV5640.h:593:2: warning: braces around scalar initializer
+  {0x3634, 0x44},
+  ^
+../src/OV5640.h:593:2: note: (near initialization for 'cfg_init_[37]')
+../src/OV5640.h:593:11: warning: excess elements in scalar initializer
+  {0x3634, 0x44},
+           ^~~~
+../src/OV5640.h:593:11: note: (near initialization for 'cfg_init_[37]')
+../src/OV5640.h:594:2: warning: braces around scalar initializer
+  {0x3622, 0x01},
+  ^
+../src/OV5640.h:594:2: note: (near initialization for 'cfg_init_[38]')
+../src/OV5640.h:594:11: warning: excess elements in scalar initializer
+  {0x3622, 0x01},
+           ^~~~
+../src/OV5640.h:594:11: note: (near initialization for 'cfg_init_[38]')
+../src/OV5640.h:595:2: warning: braces around scalar initializer
+  {0x3c01, 0x34},
+  ^
+../src/OV5640.h:595:2: note: (near initialization for 'cfg_init_[39]')
+../src/OV5640.h:595:11: warning: excess elements in scalar initializer
+  {0x3c01, 0x34},
+           ^~~~
+../src/OV5640.h:595:11: note: (near initialization for 'cfg_init_[39]')
+../src/OV5640.h:596:2: warning: braces around scalar initializer
+  {0x3c04, 0x28},
+  ^
+../src/OV5640.h:596:2: note: (near initialization for 'cfg_init_[40]')
+../src/OV5640.h:596:11: warning: excess elements in scalar initializer
+  {0x3c04, 0x28},
+           ^~~~
+../src/OV5640.h:596:11: note: (near initialization for 'cfg_init_[40]')
+../src/OV5640.h:597:2: warning: braces around scalar initializer
+  {0x3c05, 0x98},
+  ^
+../src/OV5640.h:597:2: note: (near initialization for 'cfg_init_[41]')
+../src/OV5640.h:597:11: warning: excess elements in scalar initializer
+  {0x3c05, 0x98},
+           ^~~~
+../src/OV5640.h:597:11: note: (near initialization for 'cfg_init_[41]')
+../src/OV5640.h:598:2: warning: braces around scalar initializer
+  {0x3c06, 0x00},
+  ^
+../src/OV5640.h:598:2: note: (near initialization for 'cfg_init_[42]')
+../src/OV5640.h:598:11: warning: excess elements in scalar initializer
+  {0x3c06, 0x00},
+           ^~~~
+../src/OV5640.h:598:11: note: (near initialization for 'cfg_init_[42]')
+../src/OV5640.h:599:2: warning: braces around scalar initializer
+  {0x3c07, 0x08},
+  ^
+../src/OV5640.h:599:2: note: (near initialization for 'cfg_init_[43]')
+../src/OV5640.h:599:11: warning: excess elements in scalar initializer
+  {0x3c07, 0x08},
+           ^~~~
+../src/OV5640.h:599:11: note: (near initialization for 'cfg_init_[43]')
+../src/OV5640.h:600:2: warning: braces around scalar initializer
+  {0x3c08, 0x00},
+  ^
+../src/OV5640.h:600:2: note: (near initialization for 'cfg_init_[44]')
+../src/OV5640.h:600:11: warning: excess elements in scalar initializer
+  {0x3c08, 0x00},
+           ^~~~
+../src/OV5640.h:600:11: note: (near initialization for 'cfg_init_[44]')
+../src/OV5640.h:601:2: warning: braces around scalar initializer
+  {0x3c09, 0x1c},
+  ^
+../src/OV5640.h:601:2: note: (near initialization for 'cfg_init_[45]')
+../src/OV5640.h:601:11: warning: excess elements in scalar initializer
+  {0x3c09, 0x1c},
+           ^~~~
+../src/OV5640.h:601:11: note: (near initialization for 'cfg_init_[45]')
+../src/OV5640.h:602:2: warning: braces around scalar initializer
+  {0x3c0a, 0x9c},
+  ^
+../src/OV5640.h:602:2: note: (near initialization for 'cfg_init_[46]')
+../src/OV5640.h:602:11: warning: excess elements in scalar initializer
+  {0x3c0a, 0x9c},
+           ^~~~
+../src/OV5640.h:602:11: note: (near initialization for 'cfg_init_[46]')
+../src/OV5640.h:603:2: warning: braces around scalar initializer
+  {0x3c0b, 0x40},
+  ^
+../src/OV5640.h:603:2: note: (near initialization for 'cfg_init_[47]')
+../src/OV5640.h:603:11: warning: excess elements in scalar initializer
+  {0x3c0b, 0x40},
+           ^~~~
+../src/OV5640.h:603:11: note: (near initialization for 'cfg_init_[47]')
+../src/OV5640.h:606:2: warning: braces around scalar initializer
+  {0x503d, 0x00},
+  ^
+../src/OV5640.h:606:2: note: (near initialization for 'cfg_init_[48]')
+../src/OV5640.h:606:11: warning: excess elements in scalar initializer
+  {0x503d, 0x00},
+           ^~~~
+../src/OV5640.h:606:11: note: (near initialization for 'cfg_init_[48]')
+../src/OV5640.h:608:2: warning: braces around scalar initializer
+  {0x3820, 0x46},
+  ^
+../src/OV5640.h:608:2: note: (near initialization for 'cfg_init_[49]')
+../src/OV5640.h:608:11: warning: excess elements in scalar initializer
+  {0x3820, 0x46},
+           ^~~~
+../src/OV5640.h:608:11: note: (near initialization for 'cfg_init_[49]')
+../src/OV5640.h:611:2: warning: braces around scalar initializer
+  {0x300e, 0x45},
+  ^
+../src/OV5640.h:611:2: note: (near initialization for 'cfg_init_[50]')
+../src/OV5640.h:611:11: warning: excess elements in scalar initializer
+  {0x300e, 0x45},
+           ^~~~
+../src/OV5640.h:611:11: note: (near initialization for 'cfg_init_[50]')
+../src/OV5640.h:613:2: warning: braces around scalar initializer
+  {0x4800, 0x14},
+  ^
+../src/OV5640.h:613:2: note: (near initialization for 'cfg_init_[51]')
+../src/OV5640.h:613:11: warning: excess elements in scalar initializer
+  {0x4800, 0x14},
+           ^~~~
+../src/OV5640.h:613:11: note: (near initialization for 'cfg_init_[51]')
+../src/OV5640.h:614:2: warning: braces around scalar initializer
+  {0x302e, 0x08},
+  ^
+../src/OV5640.h:614:2: note: (near initialization for 'cfg_init_[52]')
+../src/OV5640.h:614:11: warning: excess elements in scalar initializer
+  {0x302e, 0x08},
+           ^~~~
+../src/OV5640.h:614:11: note: (near initialization for 'cfg_init_[52]')
+../src/OV5640.h:618:2: warning: braces around scalar initializer
+  {0x4300, 0x6f},
+  ^
+../src/OV5640.h:618:2: note: (near initialization for 'cfg_init_[53]')
+../src/OV5640.h:618:11: warning: excess elements in scalar initializer
+  {0x4300, 0x6f},
+           ^~~~
+../src/OV5640.h:618:11: note: (near initialization for 'cfg_init_[53]')
+../src/OV5640.h:619:2: warning: braces around scalar initializer
+  {0x501f, 0x01},
+  ^
+../src/OV5640.h:619:2: note: (near initialization for 'cfg_init_[54]')
+../src/OV5640.h:619:11: warning: excess elements in scalar initializer
+  {0x501f, 0x01},
+           ^~~~
+../src/OV5640.h:619:11: note: (near initialization for 'cfg_init_[54]')
+../src/OV5640.h:621:2: warning: braces around scalar initializer
+  {0x4713, 0x03},
+  ^
+../src/OV5640.h:621:2: note: (near initialization for 'cfg_init_[55]')
+../src/OV5640.h:621:11: warning: excess elements in scalar initializer
+  {0x4713, 0x03},
+           ^~~~
+../src/OV5640.h:621:11: note: (near initialization for 'cfg_init_[55]')
+../src/OV5640.h:622:2: warning: braces around scalar initializer
+  {0x4407, 0x04},
+  ^
+../src/OV5640.h:622:2: note: (near initialization for 'cfg_init_[56]')
+../src/OV5640.h:622:11: warning: excess elements in scalar initializer
+  {0x4407, 0x04},
+           ^~~~
+../src/OV5640.h:622:11: note: (near initialization for 'cfg_init_[56]')
+../src/OV5640.h:623:2: warning: braces around scalar initializer
+  {0x440e, 0x00},
+  ^
+../src/OV5640.h:623:2: note: (near initialization for 'cfg_init_[57]')
+../src/OV5640.h:623:11: warning: excess elements in scalar initializer
+  {0x440e, 0x00},
+           ^~~~
+../src/OV5640.h:623:11: note: (near initialization for 'cfg_init_[57]')
+../src/OV5640.h:624:2: warning: braces around scalar initializer
+  {0x460b, 0x35},
+  ^
+../src/OV5640.h:624:2: note: (near initialization for 'cfg_init_[58]')
+../src/OV5640.h:624:11: warning: excess elements in scalar initializer
+  {0x460b, 0x35},
+           ^~~~
+../src/OV5640.h:624:11: note: (near initialization for 'cfg_init_[58]')
+../src/OV5640.h:626:2: warning: braces around scalar initializer
+  {0x460c, 0x20},
+  ^
+../src/OV5640.h:626:2: note: (near initialization for 'cfg_init_[59]')
+../src/OV5640.h:626:11: warning: excess elements in scalar initializer
+  {0x460c, 0x20},
+           ^~~~
+../src/OV5640.h:626:11: note: (near initialization for 'cfg_init_[59]')
+../src/OV5640.h:628:2: warning: braces around scalar initializer
+  {0x3824, 0x01},
+  ^
+../src/OV5640.h:628:2: note: (near initialization for 'cfg_init_[60]')
+../src/OV5640.h:628:11: warning: excess elements in scalar initializer
+  {0x3824, 0x01},
+           ^~~~
+../src/OV5640.h:628:11: note: (near initialization for 'cfg_init_[60]')
+../src/OV5640.h:645:2: warning: braces around scalar initializer
+  {0x5000, 0x07},
+  ^
+../src/OV5640.h:645:2: note: (near initialization for 'cfg_init_[61]')
+../src/OV5640.h:645:11: warning: excess elements in scalar initializer
+  {0x5000, 0x07},
+           ^~~~
+../src/OV5640.h:645:11: note: (near initialization for 'cfg_init_[61]')
+../src/OV5640.h:647:2: warning: braces around scalar initializer
+  {0x5001, 0x03}
+  ^
+../src/OV5640.h:647:2: note: (near initialization for 'cfg_init_[62]')
+../src/OV5640.h:647:11: warning: excess elements in scalar initializer
+  {0x5001, 0x03}
+           ^~~~
+../src/OV5640.h:647:11: note: (near initialization for 'cfg_init_[62]')
+../src/OV5640.h:655:17: error: expected declaration specifiers or '...' before 'config_word_t'
+ int WriteConfig(config_word_t const* cfg, int size);
+                 ^~~~~~~~~~~~~
+../src/OV5640.c: In function 'Init':
+../src/OV5640.c:72:2: warning: implicit declaration of function 'WriteConfig'; did you mean 'WriteReg'? [-Wimplicit-function-declaration]
+  WriteConfig(cfg_init_, SIZEOF(cfg_init_));
+  ^~~~~~~~~~~
+  WriteReg
+../src/OV5640.c: At top level:
+../src/OV5640.c:149:17: error: expected declaration specifiers or '...' before 'config_word_t'
+ int WriteConfig(config_word_t const* cfg, int size){
+                 ^~~~~~~~~~~~~
+make[1]: *** [src/subdir.mk:29: src/OV5640.o] Error 1
+make: *** [makefile:34: all] Error 2
 
-18:55:29 Build Finished (took 666ms)
+21:38:19 Build Finished (took 699ms)
 

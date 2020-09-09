@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
-<EDKSYSTEM EDWVERSION="1.2" TIMESTAMP="Mon Aug 24 22:48:16 2020" VIVADOVERSION="2019.2">
+<EDKSYSTEM EDWVERSION="1.2" TIMESTAMP="Wed Sep  9 03:26:20 2020" VIVADOVERSION="2019.2">
 
   <SYSTEMINFO ARCH="zynq" BOARD="digilentinc.com:zybo-z7-20:part0:1.0" DEVICE="7z020" NAME="bd_11cc" PACKAGE="clg400" SPEEDGRADE="-1"/>
 
@@ -79,6 +79,46 @@
     <PORT DIR="O" NAME="video_out_tvalid" SIGIS="undef" SIGNAME="vfb_0_vfb_valid">
       <CONNECTIONS>
         <CONNECTION INSTANCE="vfb_0" PORT="vfb_valid"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="I" NAME="mipi_phy_if_clk_hs_n" SIGIS="undef" SIGNAME="phy_clk_hs_rxn">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="phy" PORT="clk_hs_rxn"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="I" NAME="mipi_phy_if_clk_hs_p" SIGIS="undef" SIGNAME="phy_clk_hs_rxp">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="phy" PORT="clk_hs_rxp"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="I" NAME="mipi_phy_if_clk_lp_n" SIGIS="undef" SIGNAME="phy_clk_lp_rxn">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="phy" PORT="clk_lp_rxn"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="I" NAME="mipi_phy_if_clk_lp_p" SIGIS="undef" SIGNAME="phy_clk_lp_rxp">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="phy" PORT="clk_lp_rxp"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="I" LEFT="1" NAME="mipi_phy_if_data_hs_n" RIGHT="0" SIGIS="undef" SIGNAME="phy_data_hs_rxn">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="phy" PORT="data_hs_rxn"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="I" LEFT="1" NAME="mipi_phy_if_data_hs_p" RIGHT="0" SIGIS="undef" SIGNAME="phy_data_hs_rxp">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="phy" PORT="data_hs_rxp"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="I" LEFT="1" NAME="mipi_phy_if_data_lp_n" RIGHT="0" SIGIS="undef" SIGNAME="phy_data_lp_rxn">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="phy" PORT="data_lp_rxn"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="I" LEFT="1" NAME="mipi_phy_if_data_lp_p" RIGHT="0" SIGIS="undef" SIGNAME="phy_data_lp_rxp">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="phy" PORT="data_lp_rxp"/>
       </CONNECTIONS>
     </PORT>
     <PORT DIR="I" LEFT="7" NAME="csirxss_s_axi_araddr" RIGHT="0" SIGIS="undef" SIGNAME="rx_s_axi_araddr">
@@ -164,46 +204,6 @@
     <PORT DIR="I" NAME="csirxss_s_axi_wvalid" SIGIS="undef" SIGNAME="rx_s_axi_wvalid">
       <CONNECTIONS>
         <CONNECTION INSTANCE="rx" PORT="s_axi_wvalid"/>
-      </CONNECTIONS>
-    </PORT>
-    <PORT DIR="I" NAME="mipi_phy_if_clk_hs_n" SIGIS="undef" SIGNAME="phy_clk_hs_rxn">
-      <CONNECTIONS>
-        <CONNECTION INSTANCE="phy" PORT="clk_hs_rxn"/>
-      </CONNECTIONS>
-    </PORT>
-    <PORT DIR="I" NAME="mipi_phy_if_clk_hs_p" SIGIS="undef" SIGNAME="phy_clk_hs_rxp">
-      <CONNECTIONS>
-        <CONNECTION INSTANCE="phy" PORT="clk_hs_rxp"/>
-      </CONNECTIONS>
-    </PORT>
-    <PORT DIR="I" NAME="mipi_phy_if_clk_lp_n" SIGIS="undef" SIGNAME="phy_clk_lp_rxn">
-      <CONNECTIONS>
-        <CONNECTION INSTANCE="phy" PORT="clk_lp_rxn"/>
-      </CONNECTIONS>
-    </PORT>
-    <PORT DIR="I" NAME="mipi_phy_if_clk_lp_p" SIGIS="undef" SIGNAME="phy_clk_lp_rxp">
-      <CONNECTIONS>
-        <CONNECTION INSTANCE="phy" PORT="clk_lp_rxp"/>
-      </CONNECTIONS>
-    </PORT>
-    <PORT DIR="I" LEFT="1" NAME="mipi_phy_if_data_hs_n" RIGHT="0" SIGIS="undef" SIGNAME="phy_data_hs_rxn">
-      <CONNECTIONS>
-        <CONNECTION INSTANCE="phy" PORT="data_hs_rxn"/>
-      </CONNECTIONS>
-    </PORT>
-    <PORT DIR="I" LEFT="1" NAME="mipi_phy_if_data_hs_p" RIGHT="0" SIGIS="undef" SIGNAME="phy_data_hs_rxp">
-      <CONNECTIONS>
-        <CONNECTION INSTANCE="phy" PORT="data_hs_rxp"/>
-      </CONNECTIONS>
-    </PORT>
-    <PORT DIR="I" LEFT="1" NAME="mipi_phy_if_data_lp_n" RIGHT="0" SIGIS="undef" SIGNAME="phy_data_lp_rxn">
-      <CONNECTIONS>
-        <CONNECTION INSTANCE="phy" PORT="data_lp_rxn"/>
-      </CONNECTIONS>
-    </PORT>
-    <PORT DIR="I" LEFT="1" NAME="mipi_phy_if_data_lp_p" RIGHT="0" SIGIS="undef" SIGNAME="phy_data_lp_rxp">
-      <CONNECTIONS>
-        <CONNECTION INSTANCE="phy" PORT="data_lp_rxp"/>
       </CONNECTIONS>
     </PORT>
   </EXTERNALPORTS>

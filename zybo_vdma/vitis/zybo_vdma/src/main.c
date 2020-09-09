@@ -5,6 +5,7 @@
 #include "sleep.h"
 #include "xiicps.h"
 #include "OV5640.h"
+#include "xaxivdma.h"
 
 // I2C parameters
 #define IIC_SCLK_RATE       400000  // clock 100KHz
@@ -25,16 +26,23 @@ uint8_t const dev_ID_l_ = 0x40;
 uint16_t const reg_ID_h = 0x300A;
 uint16_t const reg_ID_l = 0x300B;
 
-int Init(void);
+
+uint16_t const v_res = 1280;
+uint16_t const h_res = 720;
+
+#define DDR_BASE_ADDR XPAR_DDR_MEM_BASEADDR
+#define MEM_BASE_ADDR (DDR_BASE_ADDR + 0x0A000000)
+
+int i2c_Init(void);
 int i2c_write(XIicPs *Iic, u16 _register, u8 _command);
 int i2c_read(XIicPs *Iic, u8* buff, u32 len, u16 i2c_adder);
 int WriteReg(u16 _register, u8 _command);
 int ReadReg(u16 reg);
 int WriteConfig(config_word_t const* cfg, int size);
-
+void VdmaInit(void);
 XIicPs Iic;
 
-int Init(void)
+int i2c_Init(void)
 {
     int Status;
     XIicPs_Config *Config;  /**< configuration information for the device */
@@ -59,6 +67,7 @@ int Init(void)
 
     XIicPs_SetSClk(&Iic, IIC_SCLK_RATE);
     printf("I2C configuration done.\n");
+
 
 
 	//reset
@@ -178,20 +187,128 @@ int WriteConfig(config_word_t const* cfg, int size){
 	}
 }
 
+void VdmaInit(void){
+	XAxiVdma videoDMAController;
+	XStatus status;
 
-int main()
+	XAxiVdma_Config *VideoDMAConfig = XAxiVdma_LookupConfig(XPAR_AXI_VDMA_0_DEVICE_ID);
+
+
+	if (XST_FAILURE == XAxiVdma_CfgInitialize(&videoDMAController, VideoDMAConfig, XPAR_AXI_VDMA_0_BASEADDR)){
+		xil_printf("VideoDMA Did not initialize.\r\n");
+	}
+
+	XAxiVdma_Reset(&videoDMAController, XAXIVDMA_WRITE);
+	while (XAxiVdma_ResetNotDone(&videoDMAController, XAXIVDMA_WRITE));
+
+	/* if (XST_FAILURE == XAxiVdma_SetFrmStore(&videoDMAController, 2, XAXIVDMA_WRITE)){
+		xil_printf("Set Frame Store Failed.");
+	} */
+
+	/////configureWrite/////
+	XAxiVdma_DmaSetup myFrameBuffer;
+	myFrameBuffer.VertSizeInput = v_res;		// 480 vertical pixels.
+	myFrameBuffer.HoriSizeInput = h_res * 4; // 640 horizontal (32-bit pixels).
+	myFrameBuffer.Stride = h_res * 4;		// Dont' worry about the rest of the values.
+	myFrameBuffer.FrameDelay = 0;
+	myFrameBuffer.EnableCircularBuf = 1;
+	myFrameBuffer.EnableSync = 0;
+	myFrameBuffer.PointNum = 0;
+	myFrameBuffer.EnableFrameCounter = 0;
+	myFrameBuffer.FixedFrameStoreAddr = 0;
+	if (XST_FAILURE == XAxiVdma_DmaConfig(&videoDMAController, XAXIVDMA_WRITE, &myFrameBuffer)){
+		xil_printf("DMA Config Failed\r\n");
+	}
+
+	uint32_t addr = MEM_BASE_ADDR;
+	for(int i=0; i<3; i++){
+		myFrameBuffer.FrameStoreStartAddr[i] = addr;
+		xil_printf("VDMA Write Frame %d Addr: 0x%08x\r\n",i, myFrameBuffer.FrameStoreStartAddr[i]);
+		addr += v_res * h_res * 4;
+	}
+
+	myFrameBuffer.FrameStoreStartAddr[0] = MEM_BASE_ADDR;
+	myFrameBuffer.FrameStoreStartAddr[1] = MEM_BASE_ADDR + 4 * v_res * h_res;
+	if (XST_FAILURE == XAxiVdma_DmaSetBufferAddr(&videoDMAController, XAXIVDMA_WRITE, myFrameBuffer.FrameStoreStartAddr)){
+		xil_printf("DMA Set Address Failed Failed\r\n");
+	}
+
+	//Clear errors in SR
+	XAxiVdma_ClearChannelErrors(&videoDMAController.WriteChannel, XAXIVDMA_SR_ERR_ALL_MASK);
+	//Unmask error interrupts
+	XAxiVdma_MaskS2MMErrIntr(&videoDMAController, ~XAXIVDMA_S2MM_IRQ_ERR_ALL_MASK, XAXIVDMA_WRITE);
+	//Enable write channel error and frame count interrupts
+	XAxiVdma_IntrEnable(&videoDMAController, XAXIVDMA_IXR_ERROR_MASK, XAXIVDMA_WRITE);
+
+
+	/////Start DMA Write/////
+	if (XST_FAILURE == XAxiVdma_DmaStart(&videoDMAController, XAXIVDMA_WRITE)){
+		xil_printf("DMA WRITE START FAILED\r\n");
+	}
+
+
+	/////configureRead/////
+	XAxiVdma_DmaSetup ReadFrameBuffer;
+	XAxiVdma_Reset(&videoDMAController, XAXIVDMA_READ);
+	while (XAxiVdma_ResetNotDone(&videoDMAController, XAXIVDMA_READ));
+
+	/* if (XST_FAILURE == XAxiVdma_SetFrmStore(&videoDMAController, 2, XAXIVDMA_READ)){
+		xil_printf("Set Frame Store Failed.");
+	} */
+
+	ReadFrameBuffer.HoriSizeInput = h_res * 4;
+	ReadFrameBuffer.VertSizeInput = v_res;
+	ReadFrameBuffer.Stride = h_res * 4;
+	ReadFrameBuffer.FrameDelay = 1;
+	ReadFrameBuffer.EnableCircularBuf = 1;
+	ReadFrameBuffer.EnableSync = 1;
+	ReadFrameBuffer.PointNum = 0;
+	ReadFrameBuffer.EnableFrameCounter = 0;
+	ReadFrameBuffer.FixedFrameStoreAddr = 0; //park it on 0 until we sync
+	if (XST_FAILURE == XAxiVdma_DmaConfig(&videoDMAController, XAXIVDMA_READ, &ReadFrameBuffer)){
+		xil_printf("DMA Config Failed\r\n");
+	}
+
+	addr = MEM_BASE_ADDR;
+	for(int i=0; i<3; i++){
+		ReadFrameBuffer.FrameStoreStartAddr[i] = addr;
+		xil_printf("VDMA Read Frame %d Addr: 0x%08x\r\n", i, ReadFrameBuffer.FrameStoreStartAddr[i]);
+		addr += v_res * h_res * 4;
+	}
+
+	if (XST_FAILURE == XAxiVdma_DmaSetBufferAddr(&videoDMAController, XAXIVDMA_READ, ReadFrameBuffer.FrameStoreStartAddr)){
+		xil_printf("DMA Set Address Failed Failed\r\n");
+	}
+
+	//Clear errors in SR
+	XAxiVdma_ClearChannelErrors(&videoDMAController.ReadChannel, XAXIVDMA_SR_ERR_ALL_MASK);
+	//Enable read channel error and frame count interrupts
+	XAxiVdma_IntrEnable(&videoDMAController, XAXIVDMA_IXR_ERROR_MASK, XAXIVDMA_READ);
+
+
+	/////Start DMA Read/////
+	if (XST_FAILURE == XAxiVdma_DmaStart(&videoDMAController, XAXIVDMA_READ)){
+		xil_printf("DMA READ START FAILED\r\n");
+	}
+
+
+}
+
+
+int main(void)
 {
 	init_platform();
 
-    if(Init()==XST_SUCCESS){
-    	printf("Camera module initialize complete!\n");
-    }
+	if (i2c_Init() == XST_SUCCESS)
+	{
+		printf("Camera module initialize complete!\n");
+	}
 
-    //set mode
-    //[7]=0 Software reset; [6]=1 Software power down; Default=0x02
+	//set mode
+	//[7]=0 Software reset; [6]=1 Software power down; Default=0x02
 	WriteReg(0x3008, 0x42);
-    WriteConfig(cfg_720p_60fps_, SIZEOF(cfg_720p_60fps_));
-    //[7]=0 Software reset; [6]=0 Software power down; Default=0x02
+	WriteConfig(cfg_720p_60fps_, SIZEOF(cfg_720p_60fps_));
+	//[7]=0 Software reset; [6]=0 Software power down; Default=0x02
 	WriteReg(0x3008, 0x02);
 	printf("mode settings done\n");
 
@@ -203,13 +320,12 @@ int main()
 	WriteReg(0x3008, 0x02);
 	printf("AWB settings done\n");
 
-
 	//set color bar
 	WriteReg(0x503D, 0x80); //enable
-	//WriteReg(0x503D, 0x00); //disable
+							//WriteReg(0x503D, 0x00); //disable
+	VdmaInit();
 
-
-    print("Hello World\n\r");
-    cleanup_platform();
-    return 0;
+	print("Hello World\n\r");
+	cleanup_platform();
+	return 0;
 }
