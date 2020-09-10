@@ -1,22 +1,32 @@
-03:42:38 **** Incremental Build of project design_1_wrapper ****
-buildplatform.bat 54375 design_1_wrapper no_domain_build 
-XSDB Server Channel: tcfchan#10
-03:42:41 **** Incremental Build of configuration Debug for project zybo_vdma ****
+Nothing to build in platform 'design_1_wrapper'
+
+23:26:01 **** Incremental Build of configuration Debug for project zybo_vdma ****
 make all 
 make --no-print-directory pre-build
 a9-linaro-pre-build-step
 ' '
 make --no-print-directory main-build
-make[1]: Nothing to be done for 'main-build'.
-03:42:42 **** Incremental Build of configuration Debug for project zybo_vdma_system ****
-make all 
-Generating bif file for the system project
-generate_system_bif.bat 54375 C:/Github/Zybo_mipi/zybo_vdma/vitis/design_1_wrapper/export/design_1_wrapper/design_1_wrapper.xpfm standalone_domain C:/Users/ivr/Documents/GitHub/Zybo_mipi/zybo_vdma/vitis/zybo_vdma_system/Debug/system.bif
-xpfm path is not valid
-    invoked from within
-"::tcf::eval -progress {apply {{msg} {puts $msg}}} {tcf_send_command tcfchan#0 xsdb eval s es {{::scw::generate_bif -xpfm C:/Github/Zybo_mipi/zybo_vdma/vitis/design_1_wrapper/export/design_1_wrapper/design_1_wrapper.xpfm -domains standalone_domain -bifpath C:/Users/ivr/Documents/GitHub/Zybo_mipi/zybo_vdma/vitis/zybo_vdma_system/Debug/system.bif}}}"
-    (procedure "::tcf::send_command" line 4)
-    invoked from within
-"tcf send_command $::xsdb::curchan xsdb eval s es [list "::scw::generate_bif $GENERATE_BIF_ARGS"]"
-    (file "C:/Xilinx/Vitis/2019.2\scripts\vitis\util\generate_system_bif.tcl" line 25)
-make: *** [makefile:36: sd_card] Error 1
+'Building file: ../src/main.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -IC:/Users/ivr/Documents/GitHub/Zybo_mipi/zybo_vdma/vitis/design_1_wrapper/export/design_1_wrapper/sw/design_1_wrapper/standalone_domain/bspinclude/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+../src/main.c: In function 'VdmaInit':
+../src/main.c:192:10: warning: unused variable 'status' [-Wunused-variable]
+  XStatus status;
+          ^~~~~~
+../src/main.c: In function 'WriteConfig':
+../src/main.c:188:1: warning: control reaches end of non-void function [-Wreturn-type]
+ }
+ ^
+'Finished building: ../src/main.c'
+' '
+'Building target: zybo_vdma.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -LC:/Users/ivr/Documents/GitHub/Zybo_mipi/zybo_vdma/vitis/design_1_wrapper/export/design_1_wrapper/sw/design_1_wrapper/standalone_domain/bsplib/lib -o "zybo_vdma.elf"  ./src/main.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: zybo_vdma.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size zybo_vdma.elf  |tee "zybo_vdma.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  72920	   2728	  23392	  99040	  182e0	zybo_vdma.elf
+'Finished building: zybo_vdma.elf.size'
+' '
