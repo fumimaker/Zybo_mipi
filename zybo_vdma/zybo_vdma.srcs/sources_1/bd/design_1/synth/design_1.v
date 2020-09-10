@@ -1,7 +1,7 @@
 //Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
 //--------------------------------------------------------------------------------
 //Tool Version: Vivado v.2019.2 (win64) Build 2708876 Wed Nov  6 21:40:23 MST 2019
-//Date        : Thu Sep 10 22:58:49 2020
+//Date        : Fri Sep 11 00:51:44 2020
 //Host        : LAPTOP-AG87OV99 running 64-bit major release  (build 9200)
 //Command     : generate_target design_1.bd
 //Design      : design_1
@@ -98,11 +98,10 @@ module design_1
   (* X_INTERFACE_INFO = "xilinx.com:interface:mipi_phy:1.0 mipi_phy_if_0 DATA_LP_P" *) input [1:0]mipi_phy_if_0_data_lp_p;
   (* X_INTERFACE_INFO = "xilinx.com:signal:reset:1.0 RST.RESET_RTL RST" *) (* X_INTERFACE_PARAMETER = "XIL_INTERFACENAME RST.RESET_RTL, INSERT_VIP 0, POLARITY ACTIVE_HIGH" *) input reset_rtl;
 
-  (* CONN_BUS_INFO = "AXI_BayerToRGB_0_m_axis_video xilinx.com:interface:axis:1.0 None TDATA" *) (* DEBUG = "true" *) (* MARK_DEBUG *) wire [31:0]AXI_BayerToRGB_0_m_axis_video_TDATA;
-  (* CONN_BUS_INFO = "AXI_BayerToRGB_0_m_axis_video xilinx.com:interface:axis:1.0 None TLAST" *) (* DEBUG = "true" *) (* MARK_DEBUG *) wire AXI_BayerToRGB_0_m_axis_video_TLAST;
-  (* CONN_BUS_INFO = "AXI_BayerToRGB_0_m_axis_video xilinx.com:interface:axis:1.0 None TREADY" *) (* DEBUG = "true" *) (* MARK_DEBUG *) wire AXI_BayerToRGB_0_m_axis_video_TREADY;
-  (* CONN_BUS_INFO = "AXI_BayerToRGB_0_m_axis_video xilinx.com:interface:axis:1.0 None TUSER" *) (* DEBUG = "true" *) (* MARK_DEBUG *) wire AXI_BayerToRGB_0_m_axis_video_TUSER;
-  (* CONN_BUS_INFO = "AXI_BayerToRGB_0_m_axis_video xilinx.com:interface:axis:1.0 None TVALID" *) (* DEBUG = "true" *) (* MARK_DEBUG *) wire AXI_BayerToRGB_0_m_axis_video_TVALID;
+  (* CONN_BUS_INFO = "AXI_BayerToRGB_0_m_axis_video xilinx.com:interface:axis:1.0 None TDATA" *) (* DONT_TOUCH *) wire [31:0]AXI_BayerToRGB_0_m_axis_video_TDATA;
+  (* CONN_BUS_INFO = "AXI_BayerToRGB_0_m_axis_video xilinx.com:interface:axis:1.0 None TLAST" *) (* DONT_TOUCH *) wire AXI_BayerToRGB_0_m_axis_video_TLAST;
+  (* CONN_BUS_INFO = "AXI_BayerToRGB_0_m_axis_video xilinx.com:interface:axis:1.0 None TUSER" *) (* DONT_TOUCH *) wire AXI_BayerToRGB_0_m_axis_video_TUSER;
+  (* CONN_BUS_INFO = "AXI_BayerToRGB_0_m_axis_video xilinx.com:interface:axis:1.0 None TVALID" *) (* DONT_TOUCH *) wire AXI_BayerToRGB_0_m_axis_video_TVALID;
   wire CLK_1;
   wire [0:0]axi_gpio_0_gpio_io_o;
   wire [31:0]axi_mem_intercon_M00_AXI_ARADDR;
@@ -143,12 +142,11 @@ module design_1
   wire axi_mem_intercon_M00_AXI_WREADY;
   wire [7:0]axi_mem_intercon_M00_AXI_WSTRB;
   wire axi_mem_intercon_M00_AXI_WVALID;
-  (* CONN_BUS_INFO = "axi_vdma_0_M_AXIS_MM2S xilinx.com:interface:axis:1.0 None TDATA" *) (* DONT_TOUCH *) wire [31:0]axi_vdma_0_M_AXIS_MM2S_TDATA;
-  (* CONN_BUS_INFO = "axi_vdma_0_M_AXIS_MM2S xilinx.com:interface:axis:1.0 None TKEEP" *) (* DONT_TOUCH *) wire [3:0]axi_vdma_0_M_AXIS_MM2S_TKEEP;
-  (* CONN_BUS_INFO = "axi_vdma_0_M_AXIS_MM2S xilinx.com:interface:axis:1.0 None TLAST" *) (* DONT_TOUCH *) wire axi_vdma_0_M_AXIS_MM2S_TLAST;
-  (* CONN_BUS_INFO = "axi_vdma_0_M_AXIS_MM2S xilinx.com:interface:axis:1.0 None TREADY" *) (* DONT_TOUCH *) wire axi_vdma_0_M_AXIS_MM2S_TREADY;
-  (* CONN_BUS_INFO = "axi_vdma_0_M_AXIS_MM2S xilinx.com:interface:axis:1.0 None TUSER" *) (* DONT_TOUCH *) wire [0:0]axi_vdma_0_M_AXIS_MM2S_TUSER;
-  (* CONN_BUS_INFO = "axi_vdma_0_M_AXIS_MM2S xilinx.com:interface:axis:1.0 None TVALID" *) (* DONT_TOUCH *) wire axi_vdma_0_M_AXIS_MM2S_TVALID;
+  wire [31:0]axi_vdma_0_M_AXIS_MM2S_TDATA;
+  wire axi_vdma_0_M_AXIS_MM2S_TLAST;
+  wire axi_vdma_0_M_AXIS_MM2S_TREADY;
+  wire [0:0]axi_vdma_0_M_AXIS_MM2S_TUSER;
+  wire axi_vdma_0_M_AXIS_MM2S_TVALID;
   wire [31:0]axi_vdma_0_M_AXI_MM2S_ARADDR;
   wire [1:0]axi_vdma_0_M_AXI_MM2S_ARBURST;
   wire [3:0]axi_vdma_0_M_AXI_MM2S_ARCACHE;
@@ -356,7 +354,7 @@ module design_1
        (.StreamClk(clk_wiz_0_clk_out2),
         .m_axis_video_tdata(AXI_BayerToRGB_0_m_axis_video_TDATA),
         .m_axis_video_tlast(AXI_BayerToRGB_0_m_axis_video_TLAST),
-        .m_axis_video_tready(AXI_BayerToRGB_0_m_axis_video_TREADY),
+        .m_axis_video_tready(1'b1),
         .m_axis_video_tuser(AXI_BayerToRGB_0_m_axis_video_TUSER),
         .m_axis_video_tvalid(AXI_BayerToRGB_0_m_axis_video_TVALID),
         .sStreamReset_n(rst_clk_wiz_0_100M_peripheral_aresetn),
@@ -497,7 +495,6 @@ module design_1
         .m_axi_s2mm_wvalid(axi_vdma_0_M_AXI_S2MM_WVALID),
         .m_axis_mm2s_aclk(clk_wiz_0_clk_out2),
         .m_axis_mm2s_tdata(axi_vdma_0_M_AXIS_MM2S_TDATA),
-        .m_axis_mm2s_tkeep(axi_vdma_0_M_AXIS_MM2S_TKEEP),
         .m_axis_mm2s_tlast(axi_vdma_0_M_AXIS_MM2S_TLAST),
         .m_axis_mm2s_tready(axi_vdma_0_M_AXIS_MM2S_TREADY),
         .m_axis_mm2s_tuser(axi_vdma_0_M_AXIS_MM2S_TUSER),
@@ -520,12 +517,11 @@ module design_1
         .s_axi_lite_wready(ps7_0_axi_periph_M02_AXI_WREADY),
         .s_axi_lite_wvalid(ps7_0_axi_periph_M02_AXI_WVALID),
         .s_axis_s2mm_aclk(clk_wiz_0_clk_out2),
-        .s_axis_s2mm_tdata(AXI_BayerToRGB_0_m_axis_video_TDATA),
+        .s_axis_s2mm_tdata({1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0}),
         .s_axis_s2mm_tkeep({1'b1,1'b1,1'b1,1'b1}),
-        .s_axis_s2mm_tlast(AXI_BayerToRGB_0_m_axis_video_TLAST),
-        .s_axis_s2mm_tready(AXI_BayerToRGB_0_m_axis_video_TREADY),
-        .s_axis_s2mm_tuser(AXI_BayerToRGB_0_m_axis_video_TUSER),
-        .s_axis_s2mm_tvalid(AXI_BayerToRGB_0_m_axis_video_TVALID));
+        .s_axis_s2mm_tlast(1'b0),
+        .s_axis_s2mm_tuser(1'b0),
+        .s_axis_s2mm_tvalid(1'b0));
   design_1_clk_wiz_0_0 clk_wiz_0
        (.clk_in1(CLK_1),
         .clk_out1(clk_wiz_0_clk_out1),
@@ -817,18 +813,12 @@ module design_1
         .mb_debug_sys_rst(1'b0),
         .peripheral_aresetn(rst_ps7_0_50M_peripheral_aresetn),
         .slowest_sync_clk(clk_wiz_0_clk_out2));
-  design_1_system_ila_0_0 system_ila_0
-       (.SLOT_0_AXIS_tdata(axi_vdma_0_M_AXIS_MM2S_TDATA),
-        .SLOT_0_AXIS_tkeep(axi_vdma_0_M_AXIS_MM2S_TKEEP),
-        .SLOT_0_AXIS_tlast(axi_vdma_0_M_AXIS_MM2S_TLAST),
-        .SLOT_0_AXIS_tready(axi_vdma_0_M_AXIS_MM2S_TREADY),
-        .SLOT_0_AXIS_tuser(axi_vdma_0_M_AXIS_MM2S_TUSER),
-        .SLOT_0_AXIS_tvalid(axi_vdma_0_M_AXIS_MM2S_TVALID),
-        .SLOT_1_AXIS_tdata(AXI_BayerToRGB_0_m_axis_video_TDATA),
-        .SLOT_1_AXIS_tlast(AXI_BayerToRGB_0_m_axis_video_TLAST),
-        .SLOT_1_AXIS_tready(AXI_BayerToRGB_0_m_axis_video_TREADY),
-        .SLOT_1_AXIS_tuser(AXI_BayerToRGB_0_m_axis_video_TUSER),
-        .SLOT_1_AXIS_tvalid(AXI_BayerToRGB_0_m_axis_video_TVALID),
+  design_1_system_ila_0_1 system_ila_0
+       (.SLOT_0_AXIS_tdata(AXI_BayerToRGB_0_m_axis_video_TDATA),
+        .SLOT_0_AXIS_tlast(AXI_BayerToRGB_0_m_axis_video_TLAST),
+        .SLOT_0_AXIS_tready(1'b1),
+        .SLOT_0_AXIS_tuser(AXI_BayerToRGB_0_m_axis_video_TUSER),
+        .SLOT_0_AXIS_tvalid(AXI_BayerToRGB_0_m_axis_video_TVALID),
         .clk(clk_wiz_0_clk_out2),
         .resetn(rst_clk_wiz_0_100M_peripheral_aresetn));
   design_1_v_axi4s_vid_out_0_0 v_axi4s_vid_out_0

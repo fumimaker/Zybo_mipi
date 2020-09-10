@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<GenRun Id="impl_1" LaunchPart="xc7z020clg400-1" LaunchTime="1599746354">
+<GenRun Id="impl_1" LaunchPart="xc7z020clg400-1" LaunchTime="1599753121">
   <File Type="BITSTR-BMM" Name="design_1_wrapper_bd.bmm"/>
   <File Type="OPT-METHODOLOGY-DRC" Name="design_1_wrapper_methodology_drc_opted.rpt"/>
   <File Type="INIT-TIMING" Name="design_1_wrapper_timing_summary_init.rpt"/>
@@ -166,4 +166,5 @@
   <BlockFileSet Type="BlockSrcs" Name="design_1_v_tc_0_0"/>
   <BlockFileSet Type="BlockSrcs" Name="design_1_rgb2dvi_0_0"/>
   <BlockFileSet Type="BlockSrcs" Name="design_1_clk_wiz_1_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="design_1_system_ila_0_1"/>
 </GenRun>

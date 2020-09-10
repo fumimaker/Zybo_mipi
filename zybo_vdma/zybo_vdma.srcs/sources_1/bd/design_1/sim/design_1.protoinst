@@ -590,18 +590,6 @@
 						"WVALID": { "actual": "m_axi_s2mm_wvalid"}
 					}
 				},
-				"/axi_vdma_0/S_AXIS_S2MM": {
-					"interface": "xilinx.com:interface:axis:1.0",
-					"ports": {
-						"ACLK": { "actual": "s_axis_s2mm_aclk"},
-						"TDATA": { "actual": "s_axis_s2mm_tdata"},
-						"TKEEP": { "actual": "s_axis_s2mm_tkeep"},
-						"TLAST": { "actual": "s_axis_s2mm_tlast"},
-						"TREADY": { "actual": "s_axis_s2mm_tready"},
-						"TUSER": { "actual": "s_axis_s2mm_tuser"},
-						"TVALID": { "actual": "s_axis_s2mm_tvalid"}
-					}
-				},
 				"/axi_vdma_0/S_AXI_LITE": {
 					"interface": "xilinx.com:interface:aximm:1.0",
 					"ports": {
