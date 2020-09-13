@@ -1,7 +1,7 @@
 Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
 -----------------------------------------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2019.2 (win64) Build 2708876 Wed Nov  6 21:40:23 MST 2019
-| Date         : Sat Sep 12 18:15:07 2020
+| Date         : Mon Sep 14 00:02:25 2020
 | Host         : FUMIMAKER6BEE running 64-bit major release  (build 9200)
 | Command      : report_utilization -file system_wrapper_utilization_synth.rpt -pb system_wrapper_utilization_synth.pb
 | Design       : system_wrapper
@@ -161,7 +161,9 @@ Table of Contents
 | system_vtg_0                   |    1 |
 | system_video_dynclk_0          |    1 |
 | system_v_axi4s_vid_out_0_0     |    1 |
+| system_system_ila_0_1          |    1 |
 | system_rst_vid_clk_dyn_0       |    1 |
+| system_rst_system_150M_0       |    1 |
 | system_rst_clk_wiz_0_50M_0     |    1 |
 | system_rgb2dvi_0_0             |    1 |
 | system_processing_system7_0_0  |    1 |
