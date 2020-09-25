@@ -1,10 +1,10 @@
 -- Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
 -- --------------------------------------------------------------------------------
 -- Tool Version: Vivado v.2019.2 (win64) Build 2708876 Wed Nov  6 21:40:23 MST 2019
--- Date        : Thu Sep 24 21:17:34 2020
--- Host        : LAPTOP-AG87OV99 running 64-bit major release  (build 9200)
+-- Date        : Fri Sep 25 23:34:15 2020
+-- Host        : DESKTOP-5VC2SBS running 64-bit major release  (build 9200)
 -- Command     : write_vhdl -force -mode synth_stub
---               c:/Users/ivr/Documents/GitHub/Zybo_mipi/PL_Ethernet/PL_Ethernet.srcs/sources_1/bd/design_1/ip/design_1_processing_system7_0_0/design_1_processing_system7_0_0_stub.vhdl
+--               C:/Users/fpga/Documents/Github/Zybo_mipi/PL_Ethernet/PL_Ethernet.srcs/sources_1/bd/design_1/ip/design_1_processing_system7_0_0/design_1_processing_system7_0_0_stub.vhdl
 -- Design      : design_1_processing_system7_0_0
 -- Purpose     : Stub declaration of top-level module interface
 -- Device      : xc7z020clg400-1
