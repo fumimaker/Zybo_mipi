@@ -1,8 +1,8 @@
 Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
 ----------------------------------------------------------------------------------------------------------------------------------------------------------------------
 | Tool Version     : Vivado v.2019.2 (win64) Build 2708876 Wed Nov  6 21:40:23 MST 2019
-| Date             : Fri Sep 25 23:36:37 2020
-| Host             : DESKTOP-5VC2SBS running 64-bit major release  (build 9200)
+| Date             : Mon Sep 28 16:40:51 2020
+| Host             : LAPTOP-AG87OV99 running 64-bit major release  (build 9200)
 | Command          : report_power -file design_1_wrapper_power_routed.rpt -pb design_1_wrapper_power_summary_routed.pb -rpx design_1_wrapper_power_routed.rpx
 | Design           : design_1_wrapper
 | Device           : xc7z020clg400-1
@@ -30,14 +30,14 @@ Table of Contents
 ----------
 
 +--------------------------+--------------+
-| Total On-Chip Power (W)  | 1.545        |
+| Total On-Chip Power (W)  | 1.536        |
 | Design Power Budget (W)  | Unspecified* |
 | Power Budget Margin (W)  | NA           |
-| Dynamic (W)              | 1.408        |
+| Dynamic (W)              | 1.399        |
 | Device Static (W)        | 0.137        |
 | Effective TJA (C/W)      | 11.5         |
-| Max Ambient (C)          | 67.2         |
-| Junction Temperature (C) | 42.8         |
+| Max Ambient (C)          | 67.3         |
+| Junction Temperature (C) | 42.7         |
 | Confidence Level         | High         |
 | Setting File             | ---          |
 | Simulation Activity File | ---          |
@@ -56,9 +56,9 @@ Table of Contents
 | Slice Logic  |     0.000 |      134 |       --- |             --- |
 |   Others     |     0.000 |      134 |       --- |             --- |
 | Signals      |     0.000 |        0 |       --- |             --- |
-| PS7          |     1.408 |        1 |       --- |             --- |
+| PS7          |     1.399 |        1 |       --- |             --- |
 | Static Power |     0.137 |          |           |                 |
-| Total        |     1.545 |          |           |                 |
+| Total        |     1.536 |          |           |                 |
 +--------------+-----------+----------+-----------+-----------------+
 
 
@@ -81,9 +81,9 @@ Table of Contents
 | MGTAVcc   |       1.000 |     0.000 |       0.000 |      0.000 |
 | MGTAVtt   |       1.200 |     0.000 |       0.000 |      0.000 |
 | MGTVccaux |       1.800 |     0.000 |       0.000 |      0.000 |
-| Vccpint   |       1.000 |     0.751 |       0.723 |      0.029 |
+| Vccpint   |       1.000 |     0.746 |       0.717 |      0.028 |
 | Vccpaux   |       1.800 |     0.061 |       0.051 |      0.010 |
-| Vccpll    |       1.800 |     0.018 |       0.015 |      0.003 |
+| Vccpll    |       1.800 |     0.017 |       0.014 |      0.003 |
 | Vcco_ddr  |       1.350 |     0.413 |       0.411 |      0.002 |
 | Vcco_mio0 |       3.300 |     0.003 |       0.002 |      0.001 |
 | Vcco_mio1 |       1.800 |     0.003 |       0.002 |      0.001 |
@@ -144,10 +144,10 @@ Table of Contents
 +--------------------------+-----------+
 | Name                     | Power (W) |
 +--------------------------+-----------+
-| design_1_wrapper         |     1.408 |
-|   design_1_i             |     1.408 |
-|     processing_system7_0 |     1.408 |
-|       inst               |     1.408 |
+| design_1_wrapper         |     1.399 |
+|   design_1_i             |     1.399 |
+|     processing_system7_0 |     1.399 |
+|       inst               |     1.399 |
 +--------------------------+-----------+
 
 
