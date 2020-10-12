@@ -36,7 +36,7 @@ int main(int argc, char **argv)
             perror("sendto");
             return -1;
         }
-        usleep(1000*100);
+        usleep(1000*10);
     }
     
 
