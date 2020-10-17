@@ -1,15 +1,10 @@
-01:33:51 **** Incremental Build of configuration Debug for project zybo_vdma_system ****
+14:37:48 **** Incremental Build of configuration Debug for project zybo_vdma_system ****
 make all 
 Generating bif file for the system project
-generate_system_bif.bat 53803 C:/Github/Zybo_mipi/zybo_vdma/vitis/design_1_wrapper/export/design_1_wrapper/design_1_wrapper.xpfm standalone_domain C:/Users/ivr/Documents/GitHub/Zybo_mipi/zybo_vdma/vitis/zybo_vdma_system/Debug/system.bif
-xpfm path is not valid
-    invoked from within
-"::tcf::eval -progress {apply {{msg} {puts $msg}}} {tcf_send_command tcfchan#0 xsdb eval s es {{::scw::generate_bif -xpfm C:/Github/Zybo_mipi/zybo_vdma/vitis/design_1_wrapper/export/design_1_wrapper/design_1_wrapper.xpfm -domains standalone_domain -bifpath C:/Users/ivr/Documents/GitHub/Zybo_mipi/zybo_vdma/vitis/zybo_vdma_system/Debug/system.bif}}}"
-    (procedure "::tcf::send_command" line 4)
-    invoked from within
-"tcf send_command $::xsdb::curchan xsdb eval s es [list "::scw::generate_bif $GENERATE_BIF_ARGS"]"
-    (file "C:/Xilinx/Vitis/2019.2\scripts\vitis\util\generate_system_bif.tcl" line 25)
-make: *** [makefile:36: sd_card] Error 1
+generate_system_bif.bat 51032 C:/Github/Zybo_mipi/zybo_vdma/vitis/design_1_wrapper/export/design_1_wrapper/design_1_wrapper.xpfm standalone_domain C:/Github/Zybo_mipi/zybo_vdma/vitis/zybo_vdma_system/Debug/system.bif
+sdcard_gen --xpfm C:/Github/Zybo_mipi/zybo_vdma/vitis/design_1_wrapper/export/design_1_wrapper/design_1_wrapper.xpfm --sys_config design_1_wrapper --bif C:/Github/Zybo_mipi/zybo_vdma/vitis/zybo_vdma_system/Debug/system.bif --bitstream C:/Github/Zybo_mipi/zybo_vdma/vitis/zybo_vdma/_ide/bitstream/design_1_wrapper.bit --elf C:/Github/Zybo_mipi/zybo_vdma/vitis/zybo_vdma/Debug/zybo_vdma.elf,ps7_cortexa9_0
+creating BOOT.BIN using C:/Github/Zybo_mipi/zybo_vdma/vitis/zybo_vdma/_ide/bitstream/design_1_wrapper.bit
+Running C:/Xilinx/Vitis/2019.2/bin/bootgen  -image C:/Github/Zybo_mipi/zybo_vdma/vitis/zybo_vdma_system/Debug/sd_card_temp/boot.bif -w -o i BOOT.BIN
 
-01:33:53 Build Finished (took 2s.16ms)
+14:37:54 Build Finished (took 6s.617ms)
 

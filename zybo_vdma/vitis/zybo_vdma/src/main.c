@@ -26,7 +26,6 @@ uint8_t const dev_ID_l_ = 0x40;
 uint16_t const reg_ID_h = 0x300A;
 uint16_t const reg_ID_l = 0x300B;
 
-
 uint16_t const v_res = 720;	//垂直720
 uint16_t const h_res = 1280; //水平1280
 
@@ -87,7 +86,7 @@ int i2c_Init(void)
 		char msg[100];
 		snprintf(msg, sizeof(msg), "Got %02x %02x. Expected %02x %02x\r\n", id_h, id_l, dev_ID_h_, dev_ID_l_);
 	}
-	else {
+	else{
 		char msg[100];
 		snprintf(msg, sizeof(msg), "Got %02x %02x. Expected %02x %02x\r\n", id_h, id_l, dev_ID_h_, dev_ID_l_);
 		printf("Camera register matched!\n");
