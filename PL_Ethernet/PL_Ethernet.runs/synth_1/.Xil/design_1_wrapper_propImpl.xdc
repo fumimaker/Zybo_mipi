@@ -1,7 +1,15 @@
-set_property SRC_FILE_INFO {cfile:C:/Github/Zybo_mipi/PL_Ethernet/PL_Ethernet.srcs/constrs_1/imports/Zybo/Zybo_constraints.xdc rfile:../../../PL_Ethernet.srcs/constrs_1/imports/Zybo/Zybo_constraints.xdc id:1} [current_design]
+set_property SRC_FILE_INFO {cfile:C:/Users/fpga/Documents/Github/Zybo_mipi/PL_Ethernet/PL_Ethernet.srcs/constrs_1/imports/Zybo/Zybo_constraints.xdc rfile:../../../PL_Ethernet.srcs/constrs_1/imports/Zybo/Zybo_constraints.xdc id:1} [current_design]
 set_property src_info {type:XDC file:1 line:2 export:INPUT save:INPUT read:READ} [current_design]
 set_property -dict { PACKAGE_PIN K17   IOSTANDARD LVCMOS33 } [get_ports { CLK }]; #IO_L12P_T1_MRCC_35 Sch=sysclk
 set_property src_info {type:XDC file:1 line:3 export:INPUT save:INPUT read:READ} [current_design]
 create_clock -add -name sys_clk_pin -period 8.00 -waveform {0 4} [get_ports { CLK }];
 set_property src_info {type:XDC file:1 line:17 export:INPUT save:INPUT read:READ} [current_design]
 set_property -dict { PACKAGE_PIN Y16   IOSTANDARD LVCMOS33 } [get_ports { RST }]; #IO_L7P_T1_34 Sch=btn[3]
+set_property src_info {type:XDC file:1 line:196 export:INPUT save:INPUT read:READ} [current_design]
+set_property PACKAGE_PIN M14 [get_ports {led_tri_o[0]}]
+set_property src_info {type:XDC file:1 line:197 export:INPUT save:INPUT read:READ} [current_design]
+set_property PACKAGE_PIN M15 [get_ports {led_tri_o[1]}]
+set_property src_info {type:XDC file:1 line:198 export:INPUT save:INPUT read:READ} [current_design]
+set_property PACKAGE_PIN G14 [get_ports {led_tri_o[2]}]
+set_property src_info {type:XDC file:1 line:199 export:INPUT save:INPUT read:READ} [current_design]
+set_property PACKAGE_PIN D18 [get_ports {led_tri_o[3]}]

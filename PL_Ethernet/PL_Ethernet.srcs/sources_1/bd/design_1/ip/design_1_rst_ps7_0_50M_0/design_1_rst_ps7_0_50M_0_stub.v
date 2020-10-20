@@ -1,10 +1,10 @@
 // Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
 // --------------------------------------------------------------------------------
 // Tool Version: Vivado v.2019.2 (win64) Build 2708876 Wed Nov  6 21:40:23 MST 2019
-// Date        : Thu Oct 15 15:45:00 2020
-// Host        : FUMIMAKER6BEE running 64-bit major release  (build 9200)
+// Date        : Tue Oct 20 20:24:25 2020
+// Host        : DESKTOP-5VC2SBS running 64-bit major release  (build 9200)
 // Command     : write_verilog -force -mode synth_stub
-//               c:/Github/Zybo_mipi/PL_Ethernet/PL_Ethernet.srcs/sources_1/bd/design_1/ip/design_1_rst_ps7_0_50M_0/design_1_rst_ps7_0_50M_0_stub.v
+//               C:/Users/fpga/Documents/Github/Zybo_mipi/PL_Ethernet/PL_Ethernet.srcs/sources_1/bd/design_1/ip/design_1_rst_ps7_0_50M_0/design_1_rst_ps7_0_50M_0_stub.v
 // Design      : design_1_rst_ps7_0_50M_0
 // Purpose     : Stub declaration of top-level module interface
 // Device      : xc7z020clg400-1
