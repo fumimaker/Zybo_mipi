@@ -1,6 +1,8 @@
 +--------------------------+--------------------------+----------------------------------------------------------------------------------------------------------+
 |       Launch Clock       |      Capture Clock       |                                                 Pin                                                      |
 +--------------------------+--------------------------+----------------------------------------------------------------------------------------------------------+
+|             pixel_dynclk |clk_out2_system_clk_wiz_0_0 |                        system_i/system_ila_0/U0/ila_lib/U0/ila_core_inst/shifted_data_in_reg[7][0]_srl8/D|
+|             pixel_dynclk |clk_out2_system_clk_wiz_0_0 |system_i/system_ila_0/U0/ila_lib/U0/ila_core_inst/u_trig/U_TM/N_DDR_MODE.G_NMU[0].U_M/allx_typeA_match_detection.ltlib_v1_0_0_allx_typeA_inst/probeDelay1_reg[0]/D|
 |          dphy_hs_clock_p |          dphy_hs_clock_p |              system_i/MIPI_D_PHY_RX_0/U0/DataLaneGen[0].DPHY_LaneSFEN_X/HSDeserializerX/Deserializer/DDLY|
 |          dphy_hs_clock_p |          dphy_hs_clock_p |              system_i/MIPI_D_PHY_RX_0/U0/DataLaneGen[1].DPHY_LaneSFEN_X/HSDeserializerX/Deserializer/DDLY|
 +--------------------------+--------------------------+----------------------------------------------------------------------------------------------------------+

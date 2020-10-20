@@ -228,6 +228,7 @@ public:
 	void readHandler(uint32_t irq_types)
 	{
 		std::cout << "VDMA:read complete" << std::endl;
+		xil_printf("VDMA Frame Addr\r\n");
 	}
 	void writeHandler(uint32_t irq_types)
 	{

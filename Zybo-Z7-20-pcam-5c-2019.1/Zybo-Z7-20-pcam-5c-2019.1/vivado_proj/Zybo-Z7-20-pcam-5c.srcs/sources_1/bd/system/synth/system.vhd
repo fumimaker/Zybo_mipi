@@ -1,7 +1,7 @@
 --Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
 ----------------------------------------------------------------------------------
 --Tool Version: Vivado v.2019.2 (win64) Build 2708876 Wed Nov  6 21:40:23 MST 2019
---Date        : Sun Oct 18 03:32:49 2020
+--Date        : Wed Oct 21 04:07:51 2020
 --Host        : FUMIMAKER6BEE running 64-bit major release  (build 9200)
 --Command     : generate_target system.bd
 --Design      : system
@@ -3448,13 +3448,8 @@ architecture STRUCTURE of system is
     SLOT_0_AXIS_tuser : in STD_LOGIC_VECTOR ( 0 to 0 );
     SLOT_0_AXIS_tvalid : in STD_LOGIC;
     SLOT_0_AXIS_tready : in STD_LOGIC;
-    SLOT_1_AXIS_tdata : in STD_LOGIC_VECTOR ( 23 downto 0 );
-    SLOT_1_AXIS_tkeep : in STD_LOGIC_VECTOR ( 2 downto 0 );
-    SLOT_1_AXIS_tlast : in STD_LOGIC;
-    SLOT_1_AXIS_tuser : in STD_LOGIC_VECTOR ( 0 to 0 );
-    SLOT_1_AXIS_tvalid : in STD_LOGIC;
-    SLOT_1_AXIS_tready : in STD_LOGIC;
-    resetn : in STD_LOGIC
+    resetn : in STD_LOGIC;
+    probe0 : in STD_LOGIC_VECTOR ( 2 downto 0 )
   );
   end component system_system_ila_0_1;
   signal AXI_BayerToRGB_1_AXI_Stream_Master_TDATA : STD_LOGIC_VECTOR ( 31 downto 0 );
@@ -3541,29 +3536,10 @@ architecture STRUCTURE of system is
   signal axi_mem_intercon_M00_AXI_RRESP : STD_LOGIC_VECTOR ( 1 downto 0 );
   signal axi_mem_intercon_M00_AXI_RVALID : STD_LOGIC;
   signal axi_vdma_0_M_AXIS_MM2S_TDATA : STD_LOGIC_VECTOR ( 23 downto 0 );
-  attribute CONN_BUS_INFO of axi_vdma_0_M_AXIS_MM2S_TDATA : signal is "axi_vdma_0_M_AXIS_MM2S xilinx.com:interface:axis:1.0 None TDATA";
-  attribute DEBUG of axi_vdma_0_M_AXIS_MM2S_TDATA : signal is "true";
-  attribute MARK_DEBUG of axi_vdma_0_M_AXIS_MM2S_TDATA : signal is std.standard.true;
-  signal axi_vdma_0_M_AXIS_MM2S_TKEEP : STD_LOGIC_VECTOR ( 2 downto 0 );
-  attribute CONN_BUS_INFO of axi_vdma_0_M_AXIS_MM2S_TKEEP : signal is "axi_vdma_0_M_AXIS_MM2S xilinx.com:interface:axis:1.0 None TKEEP";
-  attribute DEBUG of axi_vdma_0_M_AXIS_MM2S_TKEEP : signal is "true";
-  attribute MARK_DEBUG of axi_vdma_0_M_AXIS_MM2S_TKEEP : signal is std.standard.true;
   signal axi_vdma_0_M_AXIS_MM2S_TLAST : STD_LOGIC;
-  attribute CONN_BUS_INFO of axi_vdma_0_M_AXIS_MM2S_TLAST : signal is "axi_vdma_0_M_AXIS_MM2S xilinx.com:interface:axis:1.0 None TLAST";
-  attribute DEBUG of axi_vdma_0_M_AXIS_MM2S_TLAST : signal is "true";
-  attribute MARK_DEBUG of axi_vdma_0_M_AXIS_MM2S_TLAST : signal is std.standard.true;
   signal axi_vdma_0_M_AXIS_MM2S_TREADY : STD_LOGIC;
-  attribute CONN_BUS_INFO of axi_vdma_0_M_AXIS_MM2S_TREADY : signal is "axi_vdma_0_M_AXIS_MM2S xilinx.com:interface:axis:1.0 None TREADY";
-  attribute DEBUG of axi_vdma_0_M_AXIS_MM2S_TREADY : signal is "true";
-  attribute MARK_DEBUG of axi_vdma_0_M_AXIS_MM2S_TREADY : signal is std.standard.true;
   signal axi_vdma_0_M_AXIS_MM2S_TUSER : STD_LOGIC_VECTOR ( 0 to 0 );
-  attribute CONN_BUS_INFO of axi_vdma_0_M_AXIS_MM2S_TUSER : signal is "axi_vdma_0_M_AXIS_MM2S xilinx.com:interface:axis:1.0 None TUSER";
-  attribute DEBUG of axi_vdma_0_M_AXIS_MM2S_TUSER : signal is "true";
-  attribute MARK_DEBUG of axi_vdma_0_M_AXIS_MM2S_TUSER : signal is std.standard.true;
   signal axi_vdma_0_M_AXIS_MM2S_TVALID : STD_LOGIC;
-  attribute CONN_BUS_INFO of axi_vdma_0_M_AXIS_MM2S_TVALID : signal is "axi_vdma_0_M_AXIS_MM2S xilinx.com:interface:axis:1.0 None TVALID";
-  attribute DEBUG of axi_vdma_0_M_AXIS_MM2S_TVALID : signal is "true";
-  attribute MARK_DEBUG of axi_vdma_0_M_AXIS_MM2S_TVALID : signal is std.standard.true;
   signal axi_vdma_0_M_AXI_MM2S_ARADDR : STD_LOGIC_VECTOR ( 31 downto 0 );
   signal axi_vdma_0_M_AXI_MM2S_ARBURST : STD_LOGIC_VECTOR ( 1 downto 0 );
   signal axi_vdma_0_M_AXI_MM2S_ARCACHE : STD_LOGIC_VECTOR ( 3 downto 0 );
@@ -3809,6 +3785,8 @@ architecture STRUCTURE of system is
   signal v_tc_0_vtiming_out_VBLANK : STD_LOGIC;
   signal v_tc_0_vtiming_out_VSYNC : STD_LOGIC;
   signal xlconcat_0_dout : STD_LOGIC_VECTOR ( 2 downto 0 );
+  attribute DEBUG of xlconcat_0_dout : signal is "true";
+  attribute MARK_DEBUG of xlconcat_0_dout : signal is std.standard.true;
   signal NLW_MIPI_CSI_2_RX_0_aD2Enable_UNCONNECTED : STD_LOGIC;
   signal NLW_MIPI_CSI_2_RX_0_aD3Enable_UNCONNECTED : STD_LOGIC;
   signal NLW_MIPI_D_PHY_RX_0_D0RxClkEsc_UNCONNECTED : STD_LOGIC;
@@ -3840,6 +3818,7 @@ architecture STRUCTURE of system is
   signal NLW_MIPI_D_PHY_RX_0_aD0RxTriggerEsc_UNCONNECTED : STD_LOGIC_VECTOR ( 3 downto 0 );
   signal NLW_MIPI_D_PHY_RX_0_aD1RxDataEsc_UNCONNECTED : STD_LOGIC_VECTOR ( 7 downto 0 );
   signal NLW_MIPI_D_PHY_RX_0_aD1RxTriggerEsc_UNCONNECTED : STD_LOGIC_VECTOR ( 3 downto 0 );
+  signal NLW_axi_vdma_0_m_axis_mm2s_tkeep_UNCONNECTED : STD_LOGIC_VECTOR ( 2 downto 0 );
   signal NLW_axi_vdma_0_mm2s_frame_ptr_out_UNCONNECTED : STD_LOGIC_VECTOR ( 5 downto 0 );
   signal NLW_axi_vdma_0_s2mm_frame_ptr_out_UNCONNECTED : STD_LOGIC_VECTOR ( 5 downto 0 );
   signal NLW_processing_system7_0_S_AXI_HP0_AWREADY_UNCONNECTED : STD_LOGIC;
@@ -4254,7 +4233,7 @@ axi_vdma_0: component system_axi_vdma_0_0
       m_axi_s2mm_wvalid => axi_vdma_0_M_AXI_S2MM_WVALID,
       m_axis_mm2s_aclk => mm_clk_150,
       m_axis_mm2s_tdata(23 downto 0) => axi_vdma_0_M_AXIS_MM2S_TDATA(23 downto 0),
-      m_axis_mm2s_tkeep(2 downto 0) => axi_vdma_0_M_AXIS_MM2S_TKEEP(2 downto 0),
+      m_axis_mm2s_tkeep(2 downto 0) => NLW_axi_vdma_0_m_axis_mm2s_tkeep_UNCONNECTED(2 downto 0),
       m_axis_mm2s_tlast => axi_vdma_0_M_AXIS_MM2S_TLAST,
       m_axis_mm2s_tready => axi_vdma_0_M_AXIS_MM2S_TREADY,
       m_axis_mm2s_tuser(0) => axi_vdma_0_M_AXIS_MM2S_TUSER(0),
@@ -4689,13 +4668,8 @@ system_ila_0: component system_system_ila_0_1
       SLOT_0_AXIS_tready => AXI_GammaCorrection_0_m_axis_video_TREADY,
       SLOT_0_AXIS_tuser(0) => AXI_GammaCorrection_0_m_axis_video_TUSER,
       SLOT_0_AXIS_tvalid => AXI_GammaCorrection_0_m_axis_video_TVALID,
-      SLOT_1_AXIS_tdata(23 downto 0) => axi_vdma_0_M_AXIS_MM2S_TDATA(23 downto 0),
-      SLOT_1_AXIS_tkeep(2 downto 0) => axi_vdma_0_M_AXIS_MM2S_TKEEP(2 downto 0),
-      SLOT_1_AXIS_tlast => axi_vdma_0_M_AXIS_MM2S_TLAST,
-      SLOT_1_AXIS_tready => axi_vdma_0_M_AXIS_MM2S_TREADY,
-      SLOT_1_AXIS_tuser(0) => axi_vdma_0_M_AXIS_MM2S_TUSER(0),
-      SLOT_1_AXIS_tvalid => axi_vdma_0_M_AXIS_MM2S_TVALID,
       clk => mm_clk_150,
+      probe0(2 downto 0) => xlconcat_0_dout(2 downto 0),
       resetn => rst_system_150M_peripheral_aresetn(0)
     );
 v_axi4s_vid_out_0: component system_v_axi4s_vid_out_0_0
