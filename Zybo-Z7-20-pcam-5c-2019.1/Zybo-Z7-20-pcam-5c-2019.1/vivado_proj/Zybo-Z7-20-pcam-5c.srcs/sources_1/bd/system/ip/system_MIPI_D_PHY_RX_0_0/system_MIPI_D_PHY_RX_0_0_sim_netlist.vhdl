@@ -1,10 +1,10 @@
 -- Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
 -- --------------------------------------------------------------------------------
 -- Tool Version: Vivado v.2019.2 (win64) Build 2708876 Wed Nov  6 21:40:23 MST 2019
--- Date        : Sat Sep 12 18:09:26 2020
+-- Date        : Sat Sep 12 18:09:25 2020
 -- Host        : FUMIMAKER6BEE running 64-bit major release  (build 9200)
--- Command     : write_vhdl -force -mode funcsim
---               C:/Github/Zybo-Z7-20-pcam-5c-2019.1/Zybo-Z7-20-pcam-5c-2019.1/vivado_proj/Zybo-Z7-20-pcam-5c.srcs/sources_1/bd/system/ip/system_MIPI_D_PHY_RX_0_0/system_MIPI_D_PHY_RX_0_0_sim_netlist.vhdl
+-- Command     : write_vhdl -force -mode funcsim -rename_top system_MIPI_D_PHY_RX_0_0 -prefix
+--               system_MIPI_D_PHY_RX_0_0_ system_MIPI_D_PHY_RX_0_0_sim_netlist.vhdl
 -- Design      : system_MIPI_D_PHY_RX_0_0
 -- Purpose     : This VHDL netlist is a functional simulation representation of the design and should not be modified or
 --               synthesized. This netlist cannot be used for SDF annotated simulation.
@@ -29,8 +29,6 @@ entity system_MIPI_D_PHY_RX_0_0_GlitchFilter is
     \cDelayCnt_reg[0]_2\ : in STD_LOGIC;
     \cDelayCnt_reg[0]_3\ : in STD_LOGIC
   );
-  attribute ORIG_REF_NAME : string;
-  attribute ORIG_REF_NAME of system_MIPI_D_PHY_RX_0_0_GlitchFilter : entity is "GlitchFilter";
 end system_MIPI_D_PHY_RX_0_0_GlitchFilter;
 
 architecture STRUCTURE of system_MIPI_D_PHY_RX_0_0_GlitchFilter is
@@ -808,8 +806,6 @@ entity system_MIPI_D_PHY_RX_0_0_InputBuffer is
     dphy_clk_lp_n : in STD_LOGIC;
     dphy_clk_lp_p : in STD_LOGIC
   );
-  attribute ORIG_REF_NAME : string;
-  attribute ORIG_REF_NAME of system_MIPI_D_PHY_RX_0_0_InputBuffer : entity is "InputBuffer";
 end system_MIPI_D_PHY_RX_0_0_InputBuffer;
 
 architecture STRUCTURE of system_MIPI_D_PHY_RX_0_0_InputBuffer is
@@ -976,8 +972,6 @@ entity system_MIPI_D_PHY_RX_0_0_MIPI_DPHY_Receiver_S_AXI_Lite is
     s_axi_lite_wdata : in STD_LOGIC_VECTOR ( 31 downto 0 );
     s_axi_lite_wstrb : in STD_LOGIC_VECTOR ( 3 downto 0 )
   );
-  attribute ORIG_REF_NAME : string;
-  attribute ORIG_REF_NAME of system_MIPI_D_PHY_RX_0_0_MIPI_DPHY_Receiver_S_AXI_Lite : entity is "MIPI_DPHY_Receiver_S_AXI_Lite";
 end system_MIPI_D_PHY_RX_0_0_MIPI_DPHY_Receiver_S_AXI_Lite;
 
 architecture STRUCTURE of system_MIPI_D_PHY_RX_0_0_MIPI_DPHY_Receiver_S_AXI_Lite is
@@ -2171,8 +2165,6 @@ entity system_MIPI_D_PHY_RX_0_0_SyncAsync is
     RefClk : in STD_LOGIC;
     AS : in STD_LOGIC_VECTOR ( 0 to 0 )
   );
-  attribute ORIG_REF_NAME : string;
-  attribute ORIG_REF_NAME of system_MIPI_D_PHY_RX_0_0_SyncAsync : entity is "SyncAsync";
 end system_MIPI_D_PHY_RX_0_0_SyncAsync;
 
 architecture STRUCTURE of system_MIPI_D_PHY_RX_0_0_SyncAsync is
@@ -3593,8 +3585,6 @@ entity system_MIPI_D_PHY_RX_0_0_HS_Clocking is
     aHS : in STD_LOGIC;
     AR : in STD_LOGIC_VECTOR ( 0 to 0 )
   );
-  attribute ORIG_REF_NAME : string;
-  attribute ORIG_REF_NAME of system_MIPI_D_PHY_RX_0_0_HS_Clocking : entity is "HS_Clocking";
 end system_MIPI_D_PHY_RX_0_0_HS_Clocking;
 
 architecture STRUCTURE of system_MIPI_D_PHY_RX_0_0_HS_Clocking is
@@ -3682,8 +3672,6 @@ entity system_MIPI_D_PHY_RX_0_0_ResetBridge is
     RefClk : in STD_LOGIC;
     aRst : in STD_LOGIC
   );
-  attribute ORIG_REF_NAME : string;
-  attribute ORIG_REF_NAME of system_MIPI_D_PHY_RX_0_0_ResetBridge : entity is "ResetBridge";
 end system_MIPI_D_PHY_RX_0_0_ResetBridge;
 
 architecture STRUCTURE of system_MIPI_D_PHY_RX_0_0_ResetBridge is
@@ -3836,8 +3824,6 @@ entity system_MIPI_D_PHY_RX_0_0_DPHY_LaneSCNN is
     D : in STD_LOGIC_VECTOR ( 0 to 0 );
     aLP : in STD_LOGIC_VECTOR ( 1 downto 0 )
   );
-  attribute ORIG_REF_NAME : string;
-  attribute ORIG_REF_NAME of system_MIPI_D_PHY_RX_0_0_DPHY_LaneSCNN : entity is "DPHY_LaneSCNN";
 end system_MIPI_D_PHY_RX_0_0_DPHY_LaneSCNN;
 
 architecture STRUCTURE of system_MIPI_D_PHY_RX_0_0_DPHY_LaneSCNN is
@@ -4549,8 +4535,6 @@ entity system_MIPI_D_PHY_RX_0_0_HS_Deserializer is
     dSyncHard_reg : in STD_LOGIC;
     dSyncErr_reg : in STD_LOGIC
   );
-  attribute ORIG_REF_NAME : string;
-  attribute ORIG_REF_NAME of system_MIPI_D_PHY_RX_0_0_HS_Deserializer : entity is "HS_Deserializer";
 end system_MIPI_D_PHY_RX_0_0_HS_Deserializer;
 
 architecture STRUCTURE of system_MIPI_D_PHY_RX_0_0_HS_Deserializer is
@@ -8861,8 +8845,6 @@ entity system_MIPI_D_PHY_RX_0_0_DPHY_LaneSFEN is
     AS : in STD_LOGIC_VECTOR ( 0 to 0 );
     aD0ForceRxmode : in STD_LOGIC
   );
-  attribute ORIG_REF_NAME : string;
-  attribute ORIG_REF_NAME of system_MIPI_D_PHY_RX_0_0_DPHY_LaneSFEN : entity is "DPHY_LaneSFEN";
 end system_MIPI_D_PHY_RX_0_0_DPHY_LaneSFEN;
 
 architecture STRUCTURE of system_MIPI_D_PHY_RX_0_0_DPHY_LaneSFEN is
@@ -10197,8 +10179,6 @@ entity system_MIPI_D_PHY_RX_0_0_MIPI_DPHY_Receiver is
   attribute C_S_AXI_LITE_DATA_WIDTH of system_MIPI_D_PHY_RX_0_0_MIPI_DPHY_Receiver : entity is 32;
   attribute C_S_AXI_LITE_FREQ_HZ : integer;
   attribute C_S_AXI_LITE_FREQ_HZ of system_MIPI_D_PHY_RX_0_0_MIPI_DPHY_Receiver : entity is 100000000;
-  attribute ORIG_REF_NAME : string;
-  attribute ORIG_REF_NAME of system_MIPI_D_PHY_RX_0_0_MIPI_DPHY_Receiver : entity is "MIPI_DPHY_Receiver";
   attribute kAddDelayClk_ps : integer;
   attribute kAddDelayClk_ps of system_MIPI_D_PHY_RX_0_0_MIPI_DPHY_Receiver : entity is 0;
   attribute kAddDelayData0_ps : integer;

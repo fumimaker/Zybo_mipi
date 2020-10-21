@@ -1,8 +1,8 @@
 --Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
 ----------------------------------------------------------------------------------
 --Tool Version: Vivado v.2019.2 (win64) Build 2708876 Wed Nov  6 21:40:23 MST 2019
---Date        : Wed Oct 21 04:07:52 2020
---Host        : FUMIMAKER6BEE running 64-bit major release  (build 9200)
+--Date        : Wed Oct 21 18:33:46 2020
+--Host        : DESKTOP-5VC2SBS running 64-bit major release  (build 9200)
 --Command     : generate_target system.bd
 --Design      : system
 --Purpose     : IP block netlist
@@ -3440,18 +3440,18 @@ architecture STRUCTURE of system is
     peripheral_aresetn : out STD_LOGIC_VECTOR ( 0 to 0 )
   );
   end component system_rst_system_150M_0;
-  component system_system_ila_0_1 is
+  component system_system_ila_0_2 is
   port (
     clk : in STD_LOGIC;
+    probe0 : in STD_LOGIC_VECTOR ( 2 downto 0 );
     SLOT_0_AXIS_tdata : in STD_LOGIC_VECTOR ( 23 downto 0 );
     SLOT_0_AXIS_tlast : in STD_LOGIC;
     SLOT_0_AXIS_tuser : in STD_LOGIC_VECTOR ( 0 to 0 );
     SLOT_0_AXIS_tvalid : in STD_LOGIC;
     SLOT_0_AXIS_tready : in STD_LOGIC;
-    resetn : in STD_LOGIC;
-    probe0 : in STD_LOGIC_VECTOR ( 2 downto 0 )
+    resetn : in STD_LOGIC
   );
-  end component system_system_ila_0_1;
+  end component system_system_ila_0_2;
   signal AXI_BayerToRGB_1_AXI_Stream_Master_TDATA : STD_LOGIC_VECTOR ( 31 downto 0 );
   signal AXI_BayerToRGB_1_AXI_Stream_Master_TLAST : STD_LOGIC;
   signal AXI_BayerToRGB_1_AXI_Stream_Master_TREADY : STD_LOGIC;
@@ -4661,7 +4661,7 @@ rst_vid_clk_dyn: component system_rst_vid_clk_dyn_0
       peripheral_reset(0) => rst_vid_clk_dyn_peripheral_reset(0),
       slowest_sync_clk => PixelClk_Generator_clk_out1
     );
-system_ila_0: component system_system_ila_0_1
+system_ila_0: component system_system_ila_0_2
      port map (
       SLOT_0_AXIS_tdata(23 downto 0) => AXI_GammaCorrection_0_m_axis_video_TDATA(23 downto 0),
       SLOT_0_AXIS_tlast => AXI_GammaCorrection_0_m_axis_video_TLAST,
