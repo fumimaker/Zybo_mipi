@@ -1,4 +1,4 @@
-2020-10-22T21:49:00.251123500255-21:49:00 **** Incremental Build of configuration Debug for project Pcam5C-app ****
+2020-10-22T21:59:26.579708100255-21:59:26 **** Incremental Build of configuration Debug for project Pcam5C-app ****
 000-make all 
 000-make --no-print-directory pre-build
 000-a9-linaro-pre-build-step
@@ -7,18 +7,19 @@
 000-'Building file: ../src/main.cc'
 000-'Invoking: ARM v7 g++ compiler'
 000-arm-none-eabi-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -IC:/Github/Zybo_mipi/Pcam2019/vitis/Pcam5C-2019/export/Pcam5C-2019/sw/Pcam5C-2019/standalone_domain/bspinclude/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.cc"
-000-In file included from ../src/main.cc:7:
-000-../src/ov5640/AXI_VDMA.h: In instantiation of 'void digilent::AXI_VDMA<IrptCtl>::writeHandler(uint32_t) [with IrptCtl = digilent::ScuGicInterruptController; uint32_t = long unsigned int]':
-000/Pcam5C-app/src/ov5640/AXI_VDMA.h61-1-1required from 'digilent::AXI_VDMA<IrptCtl>::AXI_VDMA(uint16_t, uint32_t, IrptCtl&, uint16_t, uint16_t) [with IrptCtl = digilent::ScuGicInterruptController; uint16_t = short unsigned int; uint32_t = long unsigned int]'0-../src/ov5640/AXI_VDMA.h:61:25:   required from 'digilent::AXI_VDMA<IrptCtl>::AXI_VDMA(uint16_t, uint32_t, IrptCtl&, uint16_t, uint16_t) [with IrptCtl = digilent::ScuGicInterruptController; uint16_t = short unsigned int; uint32_t = long unsigned int]'
-000/Pcam5C-app/src/main.cc84-1-1required from here0-../src/main.cc:84:21:   required from here
-000/Pcam5C-app/src/ov5640/AXI_VDMA.h248-1-1invalid conversion from 'char*' to 'char' [-fpermissive]213:../src/ov5640/AXI_VDMA.h:248:13: error: invalid conversion from 'char*' to 'char' [-fpermissive]
-000-    *pointer = (char *)intPointer;
-000-    ~~~~~~~~~^~~~~~~~~~~~~~~~~~~~
-000/Pcam5C-app/src/ov5640/AXI_VDMA.h253-1-1invalid conversion from 'int*' to 'int' [-fpermissive]216:../src/ov5640/AXI_VDMA.h:253:16: error: invalid conversion from 'int*' to 'int' [-fpermissive]
-000-    *intPointer = (int *)pointer; //counter
-000-    ~~~~~~~~~~~~^~~~~~~~~~~~~~~~
-000/Pcam5C-app0-1-1make[1]: *** [src/subdir.mk:23: src/main.o] Error 12-make[1]: *** [src/subdir.mk:23: src/main.o] Error 1
-000/Pcam5C-app0-1-1make: *** [makefile:48: all] Error 22-make: *** [makefile:48: all] Error 2
+000-'Finished building: ../src/main.cc'
+000-' '
+000-'Building target: Pcam5C-app.elf'
+000-'Invoking: ARM v7 g++ linker'
+000-arm-none-eabi-g++ -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -LC:/Github/Zybo_mipi/Pcam2019/vitis/Pcam5C-2019/export/Pcam5C-2019/sw/Pcam5C-2019/standalone_domain/bsplib/lib -o "Pcam5C-app.elf"  ./src/platform/platform.o  ./src/ov5640/OV5640.o  ./src/main.o   -Wl,--start-group,-lxil,-lgcc,-lc,-lstdc++,--end-group
+000-'Finished building target: Pcam5C-app.elf'
+000-' '
+000-'Invoking: ARM v7 Print Size'
+000-arm-none-eabi-size Pcam5C-app.elf  |tee "Pcam5C-app.elf.size"
+000-   text	   data	    bss	    dec	    hex	filename
+000- 633331	   3884	  29776	 666991	  a2d6f	Pcam5C-app.elf
+000-'Finished building: Pcam5C-app.elf.size'
+000-' '
 00255-
-21:49:01 Build Finished (took 948ms)
+21:59:28 Build Finished (took 2s.85ms)
 

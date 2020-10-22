@@ -243,15 +243,9 @@ public:
 		}
 		int address = context_.WriteCfg.FrameStoreStartAddr[prevFrame];
 		char *pointer = (char *)address;//データ用
-		int *intPointer = (int *)address;//カウンタ用
 		for(int i=0; i<1280; i++){
-			*pointer = *intPointer;
-			xil_printf("%p: ", intPointer);
-			for(int j=0; j<3; j++){
-				xil_printf("%x ", *pointer);//1byte print
-				pointer++;
-			}
-			*intPointer = *pointer; //counter
+			xil_printf("%p: %06X ",pointer, ((*pointer << 16) | *(pointer+1) << 8) | *(pointer+2) );
+			pointer += 3;
 			xil_printf("\n\r");
 		}
 		//xil_printf("\n\r");

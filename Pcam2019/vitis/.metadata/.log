@@ -17071,3 +17071,2629 @@ java.io.FileNotFoundException: C:\Github\Zybo_mipi\Pcam2019\vitis\.metadata\.plu
 	at org.eclipse.core.internal.resources.SaveManager.save(SaveManager.java:1145)
 	at org.eclipse.core.internal.resources.DelayedSnapshotJob.run(DelayedSnapshotJob.java:52)
 	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:60)
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-10-22 21:55:38.906
+!MESSAGE XSCT Command: [ ::hsi::utils::set_current_hw_sw C:/Github/Zybo_mipi/Pcam2019/vitis/Pcam5C-2019/export/Pcam5C-2019/hw/system_wrapper.xsa C:/Github/Zybo_mipi/Pcam2019/vitis/Pcam5C-2019/export/Pcam5C-2019/sw/Pcam5C-2019/standalone_domain/system.mss ], Thread: Worker-17: Build Project
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-10-22 21:55:38.914
+!MESSAGE XSCT command with result: [ ::hsi::utils::set_current_hw_sw C:/Github/Zybo_mipi/Pcam2019/vitis/Pcam5C-2019/export/Pcam5C-2019/hw/system_wrapper.xsa C:/Github/Zybo_mipi/Pcam2019/vitis/Pcam5C-2019/export/Pcam5C-2019/sw/Pcam5C-2019/standalone_domain/system.mss ], Result: [null, ]. Thread: Worker-17: Build Project
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-10-22 21:55:38.918
+!MESSAGE XSCT Command: [::hsi::utils::get_hw_sw_details -json C:/Github/Zybo_mipi/Pcam2019/vitis/Pcam5C-2019/export/Pcam5C-2019/hw/system_wrapper.xsa C:/Github/Zybo_mipi/Pcam2019/vitis/Pcam5C-2019/export/Pcam5C-2019/sw/Pcam5C-2019/standalone_domain/system.mss], Thread: Worker-17: Build Project
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-10-22 21:55:38.924
+!MESSAGE XSCT command with result: [::hsi::utils::get_hw_sw_details -json C:/Github/Zybo_mipi/Pcam2019/vitis/Pcam5C-2019/export/Pcam5C-2019/hw/system_wrapper.xsa C:/Github/Zybo_mipi/Pcam2019/vitis/Pcam5C-2019/export/Pcam5C-2019/sw/Pcam5C-2019/standalone_domain/system.mss], Result: [null, {"procname": "ps7_cortexa9_0",
+"osname": "standalone",
+"osver": "7.1",
+}]. Thread: Worker-17: Build Project
+
+!ENTRY com.xilinx.sdk.utils 1 0 2020-10-22 21:55:38.928
+!MESSAGE Generating MD5 hash for file: C:\Github\Zybo_mipi\Pcam2019\vitis\Pcam5C-2019\export\Pcam5C-2019\sw\Pcam5C-2019\standalone_domain\system.mss ...
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-10-22 21:55:38.933
+!MESSAGE XSCT Command: [::hsi::utils::closesw C:/Github/Zybo_mipi/Pcam2019/vitis/Pcam5C-2019/export/Pcam5C-2019/sw/Pcam5C-2019/standalone_domain/system.mss], Thread: Worker-17: Build Project
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-10-22 21:55:38.938
+!MESSAGE XSCT command with result: [::hsi::utils::closesw C:/Github/Zybo_mipi/Pcam2019/vitis/Pcam5C-2019/export/Pcam5C-2019/sw/Pcam5C-2019/standalone_domain/system.mss], Result: [null, ]. Thread: Worker-17: Build Project
+
+!ENTRY com.xilinx.sdk.utils 1 0 2020-10-22 21:55:43.304
+!MESSAGE Tool usage for 'SDX_NO_OP_BUILD' updated to '2'
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-10-22 21:55:46.017
+!MESSAGE XSCT Command: [disconnect tcfchan#2], Thread: Thread-171
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-10-22 21:55:46.022
+!MESSAGE XSCT command with result: [disconnect tcfchan#2], Result: [null, ]. Thread: Thread-171
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-10-22 21:55:46.043
+!MESSAGE XSCT Command: [connect -url tcp:127.0.0.1:3121], Thread: Worker-19: Launching SystemDebugger_Pcam5C-app_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-10-22 21:55:46.054
+!MESSAGE XSCT command with result: [connect -url tcp:127.0.0.1:3121], Result: [null, tcfchan#4]. Thread: Worker-19: Launching SystemDebugger_Pcam5C-app_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-10-22 21:55:46.058
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: Worker-19: Launching SystemDebugger_Pcam5C-app_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-10-22 21:55:46.070
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1* Digilent Zybo Z7 210351A6C9E3A]. Thread: Worker-19: Launching SystemDebugger_Pcam5C-app_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-10-22 21:55:46.074
+!MESSAGE XSCT Command: [version -server], Thread: Worker-19: Launching SystemDebugger_Pcam5C-app_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-10-22 21:55:46.079
+!MESSAGE XSCT command with result: [version -server], Result: [null, 2019.2]. Thread: Worker-19: Launching SystemDebugger_Pcam5C-app_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-10-22 21:55:46.083
+!MESSAGE XSCT Command: [version], Thread: Worker-19: Launching SystemDebugger_Pcam5C-app_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-10-22 21:55:46.087
+!MESSAGE XSCT command with result: [version], Result: [null, xsct 2019.2
+SW Build 2708876 on Wed Nov  6 21:40:23 MST 2019
+Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.]. Thread: Worker-19: Launching SystemDebugger_Pcam5C-app_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-10-22 21:55:46.090
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: Worker-19: Launching SystemDebugger_Pcam5C-app_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-10-22 21:55:46.098
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1* Digilent Zybo Z7 210351A6C9E3A]. Thread: Worker-19: Launching SystemDebugger_Pcam5C-app_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-10-22 21:55:46.102
+!MESSAGE XSCT Command: [jtag targets -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351A6C9E3A" && level==1}], Thread: Worker-19: Launching SystemDebugger_Pcam5C-app_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-10-22 21:55:46.120
+!MESSAGE XSCT command with result: [jtag targets -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351A6C9E3A" && level==1}], Result: [null,      2  arm_dap (idcode 4ba00477 irlen 4)
+     3  xc7z020 (idcode 23727093 irlen 6 fpga)]. Thread: Worker-19: Launching SystemDebugger_Pcam5C-app_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-10-22 21:55:46.124
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: Worker-19: Launching SystemDebugger_Pcam5C-app_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-10-22 21:55:46.133
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1* Digilent Zybo Z7 210351A6C9E3A]. Thread: Worker-19: Launching SystemDebugger_Pcam5C-app_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-10-22 21:55:46.137
+!MESSAGE XSCT Command: [jtag targets -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351A6C9E3A" && level==1}], Thread: Worker-19: Launching SystemDebugger_Pcam5C-app_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-10-22 21:55:46.155
+!MESSAGE XSCT command with result: [jtag targets -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351A6C9E3A" && level==1}], Result: [null,      2  arm_dap (idcode 4ba00477 irlen 4)
+     3  xc7z020 (idcode 23727093 irlen 6 fpga)]. Thread: Worker-19: Launching SystemDebugger_Pcam5C-app_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-10-22 21:55:46.159
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: Worker-19: Launching SystemDebugger_Pcam5C-app_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-10-22 21:55:46.167
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1* Digilent Zybo Z7 210351A6C9E3A]. Thread: Worker-19: Launching SystemDebugger_Pcam5C-app_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-10-22 21:55:46.171
+!MESSAGE XSCT Command: [jtag targets -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351A6C9E3A" && level==1}], Thread: Worker-19: Launching SystemDebugger_Pcam5C-app_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-10-22 21:55:46.188
+!MESSAGE XSCT command with result: [jtag targets -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351A6C9E3A" && level==1}], Result: [null,      2  arm_dap (idcode 4ba00477 irlen 4)
+     3  xc7z020 (idcode 23727093 irlen 6 fpga)]. Thread: Worker-19: Launching SystemDebugger_Pcam5C-app_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-10-22 21:55:46.192
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: Worker-19: Launching SystemDebugger_Pcam5C-app_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-10-22 21:55:46.200
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1* Digilent Zybo Z7 210351A6C9E3A]. Thread: Worker-19: Launching SystemDebugger_Pcam5C-app_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-10-22 21:55:46.204
+!MESSAGE XSCT Command: [jtag targets -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351A6C9E3A" && level==1}], Thread: Worker-19: Launching SystemDebugger_Pcam5C-app_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-10-22 21:55:46.223
+!MESSAGE XSCT command with result: [jtag targets -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351A6C9E3A" && level==1}], Result: [null,      2  arm_dap (idcode 4ba00477 irlen 4)
+     3  xc7z020 (idcode 23727093 irlen 6 fpga)]. Thread: Worker-19: Launching SystemDebugger_Pcam5C-app_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-10-22 21:55:46.227
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: Worker-19: Launching SystemDebugger_Pcam5C-app_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-10-22 21:55:46.235
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1* Digilent Zybo Z7 210351A6C9E3A]. Thread: Worker-19: Launching SystemDebugger_Pcam5C-app_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-10-22 21:55:46.238
+!MESSAGE XSCT Command: [jtag targets -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351A6C9E3A" && level==1}], Thread: Worker-19: Launching SystemDebugger_Pcam5C-app_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-10-22 21:55:46.256
+!MESSAGE XSCT command with result: [jtag targets -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351A6C9E3A" && level==1}], Result: [null,      2  arm_dap (idcode 4ba00477 irlen 4)
+     3  xc7z020 (idcode 23727093 irlen 6 fpga)]. Thread: Worker-19: Launching SystemDebugger_Pcam5C-app_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-10-22 21:55:46.259
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: Worker-19: Launching SystemDebugger_Pcam5C-app_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-10-22 21:55:46.268
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1* Digilent Zybo Z7 210351A6C9E3A]. Thread: Worker-19: Launching SystemDebugger_Pcam5C-app_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-10-22 21:55:46.271
+!MESSAGE XSCT Command: [jtag targets -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351A6C9E3A" && level==1}], Thread: Worker-19: Launching SystemDebugger_Pcam5C-app_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-10-22 21:55:46.289
+!MESSAGE XSCT command with result: [jtag targets -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351A6C9E3A" && level==1}], Result: [null,      2  arm_dap (idcode 4ba00477 irlen 4)
+     3  xc7z020 (idcode 23727093 irlen 6 fpga)]. Thread: Worker-19: Launching SystemDebugger_Pcam5C-app_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-10-22 21:55:46.293
+!MESSAGE XSCT Command: [jtag targets -set -filter {name =~ "Digilent Zybo Z7 210351A6C9E3A" && level == 0}], Thread: Worker-19: Launching SystemDebugger_Pcam5C-app_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-10-22 21:55:46.310
+!MESSAGE XSCT command with result: [jtag targets -set -filter {name =~ "Digilent Zybo Z7 210351A6C9E3A" && level == 0}], Result: [null, ]. Thread: Worker-19: Launching SystemDebugger_Pcam5C-app_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-10-22 21:55:46.314
+!MESSAGE XSCT Command: [jtag frequency], Thread: Worker-19: Launching SystemDebugger_Pcam5C-app_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-10-22 21:55:46.318
+!MESSAGE XSCT command with result: [jtag frequency], Result: [null, 15000000]. Thread: Worker-19: Launching SystemDebugger_Pcam5C-app_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-10-22 21:55:46.322
+!MESSAGE XSCT Command: [targets -set -nocase -filter {name =~"APU*"}], Thread: Worker-19: Launching SystemDebugger_Pcam5C-app_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-10-22 21:55:46.336
+!MESSAGE XSCT command with result: [targets -set -nocase -filter {name =~"APU*"}], Result: [null, ]. Thread: Worker-19: Launching SystemDebugger_Pcam5C-app_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-10-22 21:55:46.340
+!MESSAGE XSCT Command: [rst -system], Thread: Worker-19: Launching SystemDebugger_Pcam5C-app_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-10-22 21:55:46.419
+!MESSAGE XSCT command with result: [rst -system], Result: [null, ]. Thread: Worker-19: Launching SystemDebugger_Pcam5C-app_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-10-22 21:55:46.423
+!MESSAGE XSCT Command: [after 3000], Thread: Worker-19: Launching SystemDebugger_Pcam5C-app_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-10-22 21:55:49.429
+!MESSAGE XSCT command with result: [after 3000], Result: [null, ]. Thread: Worker-19: Launching SystemDebugger_Pcam5C-app_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-10-22 21:55:49.451
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-10-22 21:55:49.462
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1* Digilent Zybo Z7 210351A6C9E3A]. Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-10-22 21:55:49.465
+!MESSAGE XSCT Command: [jtag targets -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351A6C9E3A" && level==1}], Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-10-22 21:55:49.482
+!MESSAGE XSCT command with result: [jtag targets -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351A6C9E3A" && level==1}], Result: [null,      2  arm_dap (idcode 4ba00477 irlen 4)
+     3  xc7z020 (idcode 23727093 irlen 6 fpga)]. Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-10-22 21:55:49.485
+!MESSAGE XSCT Command: [targets -set -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351A6C9E3A" && level==0} -index 1], Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-10-22 21:55:49.504
+!MESSAGE XSCT command with result: [targets -set -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351A6C9E3A" && level==0} -index 1], Result: [null, ]. Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-10-22 21:55:49.508
+!MESSAGE XSCT Command: [fpga -file C:/Github/Zybo_mipi/Pcam2019/vitis/Pcam5C-app/_ide/bitstream/system_wrapper.bit], Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-10-22 21:55:51.839
+!MESSAGE XSCT command with result: [fpga -file C:/Github/Zybo_mipi/Pcam2019/vitis/Pcam5C-app/_ide/bitstream/system_wrapper.bit], Result: [null, ]. Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-10-22 21:55:51.862
+!MESSAGE XSCT Command: [targets -set -nocase -filter {name =~"APU*"}], Thread: Worker-19: Launching SystemDebugger_Pcam5C-app_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-10-22 21:55:51.875
+!MESSAGE XSCT command with result: [targets -set -nocase -filter {name =~"APU*"}], Result: [null, ]. Thread: Worker-19: Launching SystemDebugger_Pcam5C-app_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-10-22 21:55:51.879
+!MESSAGE XSCT Command: [loadhw -hw C:/Github/Zybo_mipi/Pcam2019/vitis/Pcam5C-2019/export/Pcam5C-2019/hw/system_wrapper.xsa -mem-ranges [list {0x40000000 0xbfffffff}]], Thread: Worker-19: Launching SystemDebugger_Pcam5C-app_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-10-22 21:55:54.760
+!MESSAGE XSCT command with result: [loadhw -hw C:/Github/Zybo_mipi/Pcam2019/vitis/Pcam5C-2019/export/Pcam5C-2019/hw/system_wrapper.xsa -mem-ranges [list {0x40000000 0xbfffffff}]], Result: [null, system_wrapper_0]. Thread: Worker-19: Launching SystemDebugger_Pcam5C-app_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-10-22 21:55:54.764
+!MESSAGE XSCT Command: [configparams force-mem-access 1], Thread: Worker-19: Launching SystemDebugger_Pcam5C-app_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-10-22 21:55:54.768
+!MESSAGE XSCT command with result: [configparams force-mem-access 1], Result: [null, ]. Thread: Worker-19: Launching SystemDebugger_Pcam5C-app_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-10-22 21:55:54.771
+!MESSAGE XSCT Command: [targets -set -nocase -filter {name =~"APU*"}], Thread: Worker-19: Launching SystemDebugger_Pcam5C-app_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-10-22 21:55:54.786
+!MESSAGE XSCT command with result: [targets -set -nocase -filter {name =~"APU*"}], Result: [null, ]. Thread: Worker-19: Launching SystemDebugger_Pcam5C-app_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-10-22 21:55:54.790
+!MESSAGE XSCT Command: [source C:/Github/Zybo_mipi/Pcam2019/vitis/Pcam5C-app/_ide/psinit/ps7_init.tcl], Thread: Worker-19: Launching SystemDebugger_Pcam5C-app_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-10-22 21:55:54.794
+!MESSAGE XSCT command with result: [source C:/Github/Zybo_mipi/Pcam2019/vitis/Pcam5C-app/_ide/psinit/ps7_init.tcl], Result: [null, ]. Thread: Worker-19: Launching SystemDebugger_Pcam5C-app_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-10-22 21:55:54.798
+!MESSAGE XSCT Command: [ps7_init], Thread: Worker-19: Launching SystemDebugger_Pcam5C-app_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-10-22 21:55:55.117
+!MESSAGE XSCT command with result: [ps7_init], Result: [null, ]. Thread: Worker-19: Launching SystemDebugger_Pcam5C-app_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-10-22 21:55:55.121
+!MESSAGE XSCT Command: [ps7_post_config], Thread: Worker-19: Launching SystemDebugger_Pcam5C-app_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-10-22 21:55:55.130
+!MESSAGE XSCT command with result: [ps7_post_config], Result: [null, ]. Thread: Worker-19: Launching SystemDebugger_Pcam5C-app_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-10-22 21:55:55.133
+!MESSAGE XSCT Command: [targets -set -nocase -filter {name =~ "*A9*#0"}], Thread: Worker-19: Launching SystemDebugger_Pcam5C-app_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-10-22 21:55:55.146
+!MESSAGE XSCT command with result: [targets -set -nocase -filter {name =~ "*A9*#0"}], Result: [null, ]. Thread: Worker-19: Launching SystemDebugger_Pcam5C-app_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-10-22 21:55:55.150
+!MESSAGE XSCT Command: [dow C:/Github/Zybo_mipi/Pcam2019/vitis/Pcam5C-app/Debug/Pcam5C-app.elf], Thread: Worker-19: Launching SystemDebugger_Pcam5C-app_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-10-22 21:55:56.577
+!MESSAGE XSCT command with result: [dow C:/Github/Zybo_mipi/Pcam2019/vitis/Pcam5C-app/Debug/Pcam5C-app.elf], Result: [null, ]. Thread: Worker-19: Launching SystemDebugger_Pcam5C-app_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-10-22 21:55:56.581
+!MESSAGE XSCT Command: [configparams force-mem-access 0], Thread: Worker-19: Launching SystemDebugger_Pcam5C-app_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-10-22 21:55:56.610
+!MESSAGE XSCT command with result: [configparams force-mem-access 0], Result: [null, ]. Thread: Worker-19: Launching SystemDebugger_Pcam5C-app_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-10-22 21:55:56.657
+!MESSAGE XSCT Command: [targets -set -nocase -filter {name =~ "*A9*#0"}], Thread: Worker-19: Launching SystemDebugger_Pcam5C-app_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-10-22 21:55:56.730
+!MESSAGE XSCT command with result: [targets -set -nocase -filter {name =~ "*A9*#0"}], Result: [null, ]. Thread: Worker-19: Launching SystemDebugger_Pcam5C-app_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-10-22 21:55:56.735
+!MESSAGE XSCT Command: [con], Thread: Worker-19: Launching SystemDebugger_Pcam5C-app_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-10-22 21:55:56.750
+!MESSAGE XSCT command with result: [con], Result: [null, ]. Thread: Worker-19: Launching SystemDebugger_Pcam5C-app_system
+
+!ENTRY com.xilinx.sdk.utils 1 0 2020-10-22 21:55:56.756
+!MESSAGE Tool usage for 'TCF_APP_DEBUG' updated to '2'
+
+!ENTRY com.xilinx.sdk.utils 1 0 2020-10-22 21:55:56.760
+!MESSAGE Tool usage for 'TCF_SYSTEM_DEBUG' updated to '2'
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-10-22 21:56:47.729
+!MESSAGE XSCT Command: [ ::hsi::utils::set_current_hw_sw C:/Github/Zybo_mipi/Pcam2019/vitis/Pcam5C-2019/export/Pcam5C-2019/hw/system_wrapper.xsa C:/Github/Zybo_mipi/Pcam2019/vitis/Pcam5C-2019/export/Pcam5C-2019/sw/Pcam5C-2019/standalone_domain/system.mss ], Thread: Worker-15: Build Project
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-10-22 21:56:47.736
+!MESSAGE XSCT command with result: [ ::hsi::utils::set_current_hw_sw C:/Github/Zybo_mipi/Pcam2019/vitis/Pcam5C-2019/export/Pcam5C-2019/hw/system_wrapper.xsa C:/Github/Zybo_mipi/Pcam2019/vitis/Pcam5C-2019/export/Pcam5C-2019/sw/Pcam5C-2019/standalone_domain/system.mss ], Result: [null, ]. Thread: Worker-15: Build Project
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-10-22 21:56:47.740
+!MESSAGE XSCT Command: [::hsi::utils::get_hw_sw_details -json C:/Github/Zybo_mipi/Pcam2019/vitis/Pcam5C-2019/export/Pcam5C-2019/hw/system_wrapper.xsa C:/Github/Zybo_mipi/Pcam2019/vitis/Pcam5C-2019/export/Pcam5C-2019/sw/Pcam5C-2019/standalone_domain/system.mss], Thread: Worker-15: Build Project
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-10-22 21:56:47.746
+!MESSAGE XSCT command with result: [::hsi::utils::get_hw_sw_details -json C:/Github/Zybo_mipi/Pcam2019/vitis/Pcam5C-2019/export/Pcam5C-2019/hw/system_wrapper.xsa C:/Github/Zybo_mipi/Pcam2019/vitis/Pcam5C-2019/export/Pcam5C-2019/sw/Pcam5C-2019/standalone_domain/system.mss], Result: [null, {"procname": "ps7_cortexa9_0",
+"osname": "standalone",
+"osver": "7.1",
+}]. Thread: Worker-15: Build Project
+
+!ENTRY com.xilinx.sdk.utils 1 0 2020-10-22 21:56:47.750
+!MESSAGE Generating MD5 hash for file: C:\Github\Zybo_mipi\Pcam2019\vitis\Pcam5C-2019\export\Pcam5C-2019\sw\Pcam5C-2019\standalone_domain\system.mss ...
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-10-22 21:56:47.753
+!MESSAGE XSCT Command: [::hsi::utils::closesw C:/Github/Zybo_mipi/Pcam2019/vitis/Pcam5C-2019/export/Pcam5C-2019/sw/Pcam5C-2019/standalone_domain/system.mss], Thread: Worker-15: Build Project
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-10-22 21:56:47.758
+!MESSAGE XSCT command with result: [::hsi::utils::closesw C:/Github/Zybo_mipi/Pcam2019/vitis/Pcam5C-2019/export/Pcam5C-2019/sw/Pcam5C-2019/standalone_domain/system.mss], Result: [null, ]. Thread: Worker-15: Build Project
+
+!ENTRY com.xilinx.sdk.utils 1 0 2020-10-22 21:56:52.044
+!MESSAGE Tool usage for 'SDX_NO_OP_BUILD' updated to '3'
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-10-22 21:56:57.896
+!MESSAGE XSCT Command: [disconnect tcfchan#4], Thread: Thread-237
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-10-22 21:56:57.902
+!MESSAGE XSCT command with result: [disconnect tcfchan#4], Result: [null, ]. Thread: Thread-237
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-10-22 21:56:57.922
+!MESSAGE XSCT Command: [connect -url tcp:127.0.0.1:3121], Thread: Worker-19: Launching SystemDebugger_Pcam5C-app_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-10-22 21:56:57.936
+!MESSAGE XSCT command with result: [connect -url tcp:127.0.0.1:3121], Result: [null, tcfchan#6]. Thread: Worker-19: Launching SystemDebugger_Pcam5C-app_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-10-22 21:56:57.940
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: Worker-19: Launching SystemDebugger_Pcam5C-app_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-10-22 21:56:57.952
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1* Digilent Zybo Z7 210351A6C9E3A]. Thread: Worker-19: Launching SystemDebugger_Pcam5C-app_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-10-22 21:56:57.956
+!MESSAGE XSCT Command: [version -server], Thread: Worker-19: Launching SystemDebugger_Pcam5C-app_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-10-22 21:56:57.960
+!MESSAGE XSCT command with result: [version -server], Result: [null, 2019.2]. Thread: Worker-19: Launching SystemDebugger_Pcam5C-app_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-10-22 21:56:57.965
+!MESSAGE XSCT Command: [version], Thread: Worker-19: Launching SystemDebugger_Pcam5C-app_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-10-22 21:56:57.969
+!MESSAGE XSCT command with result: [version], Result: [null, xsct 2019.2
+SW Build 2708876 on Wed Nov  6 21:40:23 MST 2019
+Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.]. Thread: Worker-19: Launching SystemDebugger_Pcam5C-app_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-10-22 21:56:57.973
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: Worker-19: Launching SystemDebugger_Pcam5C-app_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-10-22 21:56:57.981
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1* Digilent Zybo Z7 210351A6C9E3A]. Thread: Worker-19: Launching SystemDebugger_Pcam5C-app_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-10-22 21:56:57.985
+!MESSAGE XSCT Command: [jtag targets -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351A6C9E3A" && level==1}], Thread: Worker-19: Launching SystemDebugger_Pcam5C-app_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-10-22 21:56:58.004
+!MESSAGE XSCT command with result: [jtag targets -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351A6C9E3A" && level==1}], Result: [null,      2  arm_dap (idcode 4ba00477 irlen 4)
+     3  xc7z020 (idcode 23727093 irlen 6 fpga)]. Thread: Worker-19: Launching SystemDebugger_Pcam5C-app_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-10-22 21:56:58.008
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: Worker-19: Launching SystemDebugger_Pcam5C-app_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-10-22 21:56:58.017
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1* Digilent Zybo Z7 210351A6C9E3A]. Thread: Worker-19: Launching SystemDebugger_Pcam5C-app_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-10-22 21:56:58.021
+!MESSAGE XSCT Command: [jtag targets -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351A6C9E3A" && level==1}], Thread: Worker-19: Launching SystemDebugger_Pcam5C-app_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-10-22 21:56:58.038
+!MESSAGE XSCT command with result: [jtag targets -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351A6C9E3A" && level==1}], Result: [null,      2  arm_dap (idcode 4ba00477 irlen 4)
+     3  xc7z020 (idcode 23727093 irlen 6 fpga)]. Thread: Worker-19: Launching SystemDebugger_Pcam5C-app_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-10-22 21:56:58.042
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: Worker-19: Launching SystemDebugger_Pcam5C-app_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-10-22 21:56:58.050
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1* Digilent Zybo Z7 210351A6C9E3A]. Thread: Worker-19: Launching SystemDebugger_Pcam5C-app_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-10-22 21:56:58.054
+!MESSAGE XSCT Command: [jtag targets -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351A6C9E3A" && level==1}], Thread: Worker-19: Launching SystemDebugger_Pcam5C-app_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-10-22 21:56:58.073
+!MESSAGE XSCT command with result: [jtag targets -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351A6C9E3A" && level==1}], Result: [null,      2  arm_dap (idcode 4ba00477 irlen 4)
+     3  xc7z020 (idcode 23727093 irlen 6 fpga)]. Thread: Worker-19: Launching SystemDebugger_Pcam5C-app_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-10-22 21:56:58.077
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: Worker-19: Launching SystemDebugger_Pcam5C-app_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-10-22 21:56:58.085
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1* Digilent Zybo Z7 210351A6C9E3A]. Thread: Worker-19: Launching SystemDebugger_Pcam5C-app_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-10-22 21:56:58.089
+!MESSAGE XSCT Command: [jtag targets -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351A6C9E3A" && level==1}], Thread: Worker-19: Launching SystemDebugger_Pcam5C-app_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-10-22 21:56:58.110
+!MESSAGE XSCT command with result: [jtag targets -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351A6C9E3A" && level==1}], Result: [null,      2  arm_dap (idcode 4ba00477 irlen 4)
+     3  xc7z020 (idcode 23727093 irlen 6 fpga)]. Thread: Worker-19: Launching SystemDebugger_Pcam5C-app_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-10-22 21:56:58.114
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: Worker-19: Launching SystemDebugger_Pcam5C-app_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-10-22 21:56:58.123
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1* Digilent Zybo Z7 210351A6C9E3A]. Thread: Worker-19: Launching SystemDebugger_Pcam5C-app_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-10-22 21:56:58.127
+!MESSAGE XSCT Command: [jtag targets -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351A6C9E3A" && level==1}], Thread: Worker-19: Launching SystemDebugger_Pcam5C-app_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-10-22 21:56:58.144
+!MESSAGE XSCT command with result: [jtag targets -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351A6C9E3A" && level==1}], Result: [null,      2  arm_dap (idcode 4ba00477 irlen 4)
+     3  xc7z020 (idcode 23727093 irlen 6 fpga)]. Thread: Worker-19: Launching SystemDebugger_Pcam5C-app_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-10-22 21:56:58.149
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: Worker-19: Launching SystemDebugger_Pcam5C-app_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-10-22 21:56:58.157
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1* Digilent Zybo Z7 210351A6C9E3A]. Thread: Worker-19: Launching SystemDebugger_Pcam5C-app_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-10-22 21:56:58.161
+!MESSAGE XSCT Command: [jtag targets -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351A6C9E3A" && level==1}], Thread: Worker-19: Launching SystemDebugger_Pcam5C-app_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-10-22 21:56:58.178
+!MESSAGE XSCT command with result: [jtag targets -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351A6C9E3A" && level==1}], Result: [null,      2  arm_dap (idcode 4ba00477 irlen 4)
+     3  xc7z020 (idcode 23727093 irlen 6 fpga)]. Thread: Worker-19: Launching SystemDebugger_Pcam5C-app_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-10-22 21:56:58.182
+!MESSAGE XSCT Command: [jtag targets -set -filter {name =~ "Digilent Zybo Z7 210351A6C9E3A" && level == 0}], Thread: Worker-19: Launching SystemDebugger_Pcam5C-app_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-10-22 21:56:58.201
+!MESSAGE XSCT command with result: [jtag targets -set -filter {name =~ "Digilent Zybo Z7 210351A6C9E3A" && level == 0}], Result: [null, ]. Thread: Worker-19: Launching SystemDebugger_Pcam5C-app_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-10-22 21:56:58.205
+!MESSAGE XSCT Command: [jtag frequency], Thread: Worker-19: Launching SystemDebugger_Pcam5C-app_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-10-22 21:56:58.209
+!MESSAGE XSCT command with result: [jtag frequency], Result: [null, 15000000]. Thread: Worker-19: Launching SystemDebugger_Pcam5C-app_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-10-22 21:56:58.213
+!MESSAGE XSCT Command: [targets -set -nocase -filter {name =~"APU*"}], Thread: Worker-19: Launching SystemDebugger_Pcam5C-app_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-10-22 21:56:58.227
+!MESSAGE XSCT command with result: [targets -set -nocase -filter {name =~"APU*"}], Result: [null, ]. Thread: Worker-19: Launching SystemDebugger_Pcam5C-app_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-10-22 21:56:58.230
+!MESSAGE XSCT Command: [rst -system], Thread: Worker-19: Launching SystemDebugger_Pcam5C-app_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-10-22 21:56:58.308
+!MESSAGE XSCT command with result: [rst -system], Result: [null, ]. Thread: Worker-19: Launching SystemDebugger_Pcam5C-app_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-10-22 21:56:58.312
+!MESSAGE XSCT Command: [after 3000], Thread: Worker-19: Launching SystemDebugger_Pcam5C-app_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-10-22 21:57:01.316
+!MESSAGE XSCT command with result: [after 3000], Result: [null, ]. Thread: Worker-19: Launching SystemDebugger_Pcam5C-app_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-10-22 21:57:01.345
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-10-22 21:57:01.355
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1* Digilent Zybo Z7 210351A6C9E3A]. Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-10-22 21:57:01.359
+!MESSAGE XSCT Command: [jtag targets -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351A6C9E3A" && level==1}], Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-10-22 21:57:01.375
+!MESSAGE XSCT command with result: [jtag targets -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351A6C9E3A" && level==1}], Result: [null,      2  arm_dap (idcode 4ba00477 irlen 4)
+     3  xc7z020 (idcode 23727093 irlen 6 fpga)]. Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-10-22 21:57:01.379
+!MESSAGE XSCT Command: [targets -set -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351A6C9E3A" && level==0} -index 1], Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-10-22 21:57:01.399
+!MESSAGE XSCT command with result: [targets -set -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351A6C9E3A" && level==0} -index 1], Result: [null, ]. Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-10-22 21:57:01.402
+!MESSAGE XSCT Command: [fpga -file C:/Github/Zybo_mipi/Pcam2019/vitis/Pcam5C-app/_ide/bitstream/system_wrapper.bit], Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-10-22 21:57:03.732
+!MESSAGE XSCT command with result: [fpga -file C:/Github/Zybo_mipi/Pcam2019/vitis/Pcam5C-app/_ide/bitstream/system_wrapper.bit], Result: [null, ]. Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-10-22 21:57:03.774
+!MESSAGE XSCT Command: [targets -set -nocase -filter {name =~"APU*"}], Thread: Worker-19: Launching SystemDebugger_Pcam5C-app_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-10-22 21:57:03.785
+!MESSAGE XSCT command with result: [targets -set -nocase -filter {name =~"APU*"}], Result: [null, ]. Thread: Worker-19: Launching SystemDebugger_Pcam5C-app_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-10-22 21:57:03.789
+!MESSAGE XSCT Command: [loadhw -hw C:/Github/Zybo_mipi/Pcam2019/vitis/Pcam5C-2019/export/Pcam5C-2019/hw/system_wrapper.xsa -mem-ranges [list {0x40000000 0xbfffffff}]], Thread: Worker-19: Launching SystemDebugger_Pcam5C-app_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-10-22 21:57:06.711
+!MESSAGE XSCT command with result: [loadhw -hw C:/Github/Zybo_mipi/Pcam2019/vitis/Pcam5C-2019/export/Pcam5C-2019/hw/system_wrapper.xsa -mem-ranges [list {0x40000000 0xbfffffff}]], Result: [null, system_wrapper_1]. Thread: Worker-19: Launching SystemDebugger_Pcam5C-app_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-10-22 21:57:06.715
+!MESSAGE XSCT Command: [configparams force-mem-access 1], Thread: Worker-19: Launching SystemDebugger_Pcam5C-app_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-10-22 21:57:06.719
+!MESSAGE XSCT command with result: [configparams force-mem-access 1], Result: [null, ]. Thread: Worker-19: Launching SystemDebugger_Pcam5C-app_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-10-22 21:57:06.722
+!MESSAGE XSCT Command: [targets -set -nocase -filter {name =~"APU*"}], Thread: Worker-19: Launching SystemDebugger_Pcam5C-app_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-10-22 21:57:06.740
+!MESSAGE XSCT command with result: [targets -set -nocase -filter {name =~"APU*"}], Result: [null, ]. Thread: Worker-19: Launching SystemDebugger_Pcam5C-app_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-10-22 21:57:06.743
+!MESSAGE XSCT Command: [source C:/Github/Zybo_mipi/Pcam2019/vitis/Pcam5C-app/_ide/psinit/ps7_init.tcl], Thread: Worker-19: Launching SystemDebugger_Pcam5C-app_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-10-22 21:57:06.748
+!MESSAGE XSCT command with result: [source C:/Github/Zybo_mipi/Pcam2019/vitis/Pcam5C-app/_ide/psinit/ps7_init.tcl], Result: [null, ]. Thread: Worker-19: Launching SystemDebugger_Pcam5C-app_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-10-22 21:57:06.752
+!MESSAGE XSCT Command: [ps7_init], Thread: Worker-19: Launching SystemDebugger_Pcam5C-app_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-10-22 21:57:07.049
+!MESSAGE XSCT command with result: [ps7_init], Result: [null, ]. Thread: Worker-19: Launching SystemDebugger_Pcam5C-app_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-10-22 21:57:07.053
+!MESSAGE XSCT Command: [ps7_post_config], Thread: Worker-19: Launching SystemDebugger_Pcam5C-app_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-10-22 21:57:07.062
+!MESSAGE XSCT command with result: [ps7_post_config], Result: [null, ]. Thread: Worker-19: Launching SystemDebugger_Pcam5C-app_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-10-22 21:57:07.065
+!MESSAGE XSCT Command: [targets -set -nocase -filter {name =~ "*A9*#0"}], Thread: Worker-19: Launching SystemDebugger_Pcam5C-app_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-10-22 21:57:07.077
+!MESSAGE XSCT command with result: [targets -set -nocase -filter {name =~ "*A9*#0"}], Result: [null, ]. Thread: Worker-19: Launching SystemDebugger_Pcam5C-app_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-10-22 21:57:07.080
+!MESSAGE XSCT Command: [dow C:/Github/Zybo_mipi/Pcam2019/vitis/Pcam5C-app/Debug/Pcam5C-app.elf], Thread: Worker-19: Launching SystemDebugger_Pcam5C-app_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-10-22 21:57:08.509
+!MESSAGE XSCT command with result: [dow C:/Github/Zybo_mipi/Pcam2019/vitis/Pcam5C-app/Debug/Pcam5C-app.elf], Result: [null, ]. Thread: Worker-19: Launching SystemDebugger_Pcam5C-app_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-10-22 21:57:08.512
+!MESSAGE XSCT Command: [configparams force-mem-access 0], Thread: Worker-19: Launching SystemDebugger_Pcam5C-app_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-10-22 21:57:08.545
+!MESSAGE XSCT command with result: [configparams force-mem-access 0], Result: [null, ]. Thread: Worker-19: Launching SystemDebugger_Pcam5C-app_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-10-22 21:57:08.593
+!MESSAGE XSCT Command: [targets -set -nocase -filter {name =~ "*A9*#0"}], Thread: Worker-19: Launching SystemDebugger_Pcam5C-app_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-10-22 21:57:08.647
+!MESSAGE XSCT command with result: [targets -set -nocase -filter {name =~ "*A9*#0"}], Result: [null, ]. Thread: Worker-19: Launching SystemDebugger_Pcam5C-app_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-10-22 21:57:08.650
+!MESSAGE XSCT Command: [con], Thread: Worker-19: Launching SystemDebugger_Pcam5C-app_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-10-22 21:57:08.658
+!MESSAGE XSCT command with result: [con], Result: [null, ]. Thread: Worker-19: Launching SystemDebugger_Pcam5C-app_system
+
+!ENTRY com.xilinx.sdk.utils 1 0 2020-10-22 21:57:08.662
+!MESSAGE Tool usage for 'TCF_APP_DEBUG' updated to '3'
+
+!ENTRY com.xilinx.sdk.utils 1 0 2020-10-22 21:57:08.666
+!MESSAGE Tool usage for 'TCF_SYSTEM_DEBUG' updated to '3'
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-10-22 21:57:38.749
+!MESSAGE XSCT Command: [ ::hsi::utils::set_current_hw_sw C:/Github/Zybo_mipi/Pcam2019/vitis/Pcam5C-2019/export/Pcam5C-2019/hw/system_wrapper.xsa C:/Github/Zybo_mipi/Pcam2019/vitis/Pcam5C-2019/export/Pcam5C-2019/sw/Pcam5C-2019/standalone_domain/system.mss ], Thread: Worker-15: Build Project
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-10-22 21:57:38.755
+!MESSAGE XSCT command with result: [ ::hsi::utils::set_current_hw_sw C:/Github/Zybo_mipi/Pcam2019/vitis/Pcam5C-2019/export/Pcam5C-2019/hw/system_wrapper.xsa C:/Github/Zybo_mipi/Pcam2019/vitis/Pcam5C-2019/export/Pcam5C-2019/sw/Pcam5C-2019/standalone_domain/system.mss ], Result: [null, ]. Thread: Worker-15: Build Project
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-10-22 21:57:38.759
+!MESSAGE XSCT Command: [::hsi::utils::get_hw_sw_details -json C:/Github/Zybo_mipi/Pcam2019/vitis/Pcam5C-2019/export/Pcam5C-2019/hw/system_wrapper.xsa C:/Github/Zybo_mipi/Pcam2019/vitis/Pcam5C-2019/export/Pcam5C-2019/sw/Pcam5C-2019/standalone_domain/system.mss], Thread: Worker-15: Build Project
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-10-22 21:57:38.765
+!MESSAGE XSCT command with result: [::hsi::utils::get_hw_sw_details -json C:/Github/Zybo_mipi/Pcam2019/vitis/Pcam5C-2019/export/Pcam5C-2019/hw/system_wrapper.xsa C:/Github/Zybo_mipi/Pcam2019/vitis/Pcam5C-2019/export/Pcam5C-2019/sw/Pcam5C-2019/standalone_domain/system.mss], Result: [null, {"procname": "ps7_cortexa9_0",
+"osname": "standalone",
+"osver": "7.1",
+}]. Thread: Worker-15: Build Project
+
+!ENTRY com.xilinx.sdk.utils 1 0 2020-10-22 21:57:38.769
+!MESSAGE Generating MD5 hash for file: C:\Github\Zybo_mipi\Pcam2019\vitis\Pcam5C-2019\export\Pcam5C-2019\sw\Pcam5C-2019\standalone_domain\system.mss ...
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-10-22 21:57:38.772
+!MESSAGE XSCT Command: [::hsi::utils::closesw C:/Github/Zybo_mipi/Pcam2019/vitis/Pcam5C-2019/export/Pcam5C-2019/sw/Pcam5C-2019/standalone_domain/system.mss], Thread: Worker-15: Build Project
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-10-22 21:57:38.777
+!MESSAGE XSCT command with result: [::hsi::utils::closesw C:/Github/Zybo_mipi/Pcam2019/vitis/Pcam5C-2019/export/Pcam5C-2019/sw/Pcam5C-2019/standalone_domain/system.mss], Result: [null, ]. Thread: Worker-15: Build Project
+
+!ENTRY com.xilinx.sdk.utils 1 0 2020-10-22 21:57:41.759
+!MESSAGE Tool usage for 'SDX_NO_OP_BUILD' updated to '4'
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-10-22 21:57:42.438
+!MESSAGE XSCT Command: [disconnect tcfchan#6], Thread: Thread-299
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-10-22 21:57:42.444
+!MESSAGE XSCT command with result: [disconnect tcfchan#6], Result: [null, ]. Thread: Thread-299
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-10-22 21:57:42.461
+!MESSAGE XSCT Command: [connect -url tcp:127.0.0.1:3121], Thread: Worker-14: Launching SystemDebugger_Pcam5C-app_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-10-22 21:57:42.477
+!MESSAGE XSCT command with result: [connect -url tcp:127.0.0.1:3121], Result: [null, tcfchan#8]. Thread: Worker-14: Launching SystemDebugger_Pcam5C-app_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-10-22 21:57:42.481
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: Worker-14: Launching SystemDebugger_Pcam5C-app_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-10-22 21:57:42.493
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1* Digilent Zybo Z7 210351A6C9E3A]. Thread: Worker-14: Launching SystemDebugger_Pcam5C-app_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-10-22 21:57:42.497
+!MESSAGE XSCT Command: [version -server], Thread: Worker-14: Launching SystemDebugger_Pcam5C-app_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-10-22 21:57:42.501
+!MESSAGE XSCT command with result: [version -server], Result: [null, 2019.2]. Thread: Worker-14: Launching SystemDebugger_Pcam5C-app_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-10-22 21:57:42.505
+!MESSAGE XSCT Command: [version], Thread: Worker-14: Launching SystemDebugger_Pcam5C-app_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-10-22 21:57:42.509
+!MESSAGE XSCT command with result: [version], Result: [null, xsct 2019.2
+SW Build 2708876 on Wed Nov  6 21:40:23 MST 2019
+Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.]. Thread: Worker-14: Launching SystemDebugger_Pcam5C-app_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-10-22 21:57:42.513
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: Worker-14: Launching SystemDebugger_Pcam5C-app_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-10-22 21:57:42.521
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1* Digilent Zybo Z7 210351A6C9E3A]. Thread: Worker-14: Launching SystemDebugger_Pcam5C-app_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-10-22 21:57:42.525
+!MESSAGE XSCT Command: [jtag targets -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351A6C9E3A" && level==1}], Thread: Worker-14: Launching SystemDebugger_Pcam5C-app_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-10-22 21:57:42.543
+!MESSAGE XSCT command with result: [jtag targets -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351A6C9E3A" && level==1}], Result: [null,      2  arm_dap (idcode 4ba00477 irlen 4)
+     3  xc7z020 (idcode 23727093 irlen 6 fpga)]. Thread: Worker-14: Launching SystemDebugger_Pcam5C-app_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-10-22 21:57:42.547
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: Worker-14: Launching SystemDebugger_Pcam5C-app_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-10-22 21:57:42.555
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1* Digilent Zybo Z7 210351A6C9E3A]. Thread: Worker-14: Launching SystemDebugger_Pcam5C-app_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-10-22 21:57:42.559
+!MESSAGE XSCT Command: [jtag targets -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351A6C9E3A" && level==1}], Thread: Worker-14: Launching SystemDebugger_Pcam5C-app_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-10-22 21:57:42.578
+!MESSAGE XSCT command with result: [jtag targets -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351A6C9E3A" && level==1}], Result: [null,      2  arm_dap (idcode 4ba00477 irlen 4)
+     3  xc7z020 (idcode 23727093 irlen 6 fpga)]. Thread: Worker-14: Launching SystemDebugger_Pcam5C-app_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-10-22 21:57:42.582
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: Worker-14: Launching SystemDebugger_Pcam5C-app_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-10-22 21:57:42.592
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1* Digilent Zybo Z7 210351A6C9E3A]. Thread: Worker-14: Launching SystemDebugger_Pcam5C-app_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-10-22 21:57:42.596
+!MESSAGE XSCT Command: [jtag targets -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351A6C9E3A" && level==1}], Thread: Worker-14: Launching SystemDebugger_Pcam5C-app_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-10-22 21:57:42.614
+!MESSAGE XSCT command with result: [jtag targets -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351A6C9E3A" && level==1}], Result: [null,      2  arm_dap (idcode 4ba00477 irlen 4)
+     3  xc7z020 (idcode 23727093 irlen 6 fpga)]. Thread: Worker-14: Launching SystemDebugger_Pcam5C-app_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-10-22 21:57:42.618
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: Worker-14: Launching SystemDebugger_Pcam5C-app_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-10-22 21:57:42.627
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1* Digilent Zybo Z7 210351A6C9E3A]. Thread: Worker-14: Launching SystemDebugger_Pcam5C-app_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-10-22 21:57:42.631
+!MESSAGE XSCT Command: [jtag targets -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351A6C9E3A" && level==1}], Thread: Worker-14: Launching SystemDebugger_Pcam5C-app_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-10-22 21:57:42.649
+!MESSAGE XSCT command with result: [jtag targets -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351A6C9E3A" && level==1}], Result: [null,      2  arm_dap (idcode 4ba00477 irlen 4)
+     3  xc7z020 (idcode 23727093 irlen 6 fpga)]. Thread: Worker-14: Launching SystemDebugger_Pcam5C-app_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-10-22 21:57:42.653
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: Worker-14: Launching SystemDebugger_Pcam5C-app_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-10-22 21:57:42.662
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1* Digilent Zybo Z7 210351A6C9E3A]. Thread: Worker-14: Launching SystemDebugger_Pcam5C-app_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-10-22 21:57:42.665
+!MESSAGE XSCT Command: [jtag targets -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351A6C9E3A" && level==1}], Thread: Worker-14: Launching SystemDebugger_Pcam5C-app_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-10-22 21:57:42.683
+!MESSAGE XSCT command with result: [jtag targets -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351A6C9E3A" && level==1}], Result: [null,      2  arm_dap (idcode 4ba00477 irlen 4)
+     3  xc7z020 (idcode 23727093 irlen 6 fpga)]. Thread: Worker-14: Launching SystemDebugger_Pcam5C-app_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-10-22 21:57:42.686
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: Worker-14: Launching SystemDebugger_Pcam5C-app_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-10-22 21:57:42.695
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1* Digilent Zybo Z7 210351A6C9E3A]. Thread: Worker-14: Launching SystemDebugger_Pcam5C-app_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-10-22 21:57:42.698
+!MESSAGE XSCT Command: [jtag targets -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351A6C9E3A" && level==1}], Thread: Worker-14: Launching SystemDebugger_Pcam5C-app_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-10-22 21:57:42.716
+!MESSAGE XSCT command with result: [jtag targets -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351A6C9E3A" && level==1}], Result: [null,      2  arm_dap (idcode 4ba00477 irlen 4)
+     3  xc7z020 (idcode 23727093 irlen 6 fpga)]. Thread: Worker-14: Launching SystemDebugger_Pcam5C-app_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-10-22 21:57:42.719
+!MESSAGE XSCT Command: [jtag targets -set -filter {name =~ "Digilent Zybo Z7 210351A6C9E3A" && level == 0}], Thread: Worker-14: Launching SystemDebugger_Pcam5C-app_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-10-22 21:57:42.737
+!MESSAGE XSCT command with result: [jtag targets -set -filter {name =~ "Digilent Zybo Z7 210351A6C9E3A" && level == 0}], Result: [null, ]. Thread: Worker-14: Launching SystemDebugger_Pcam5C-app_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-10-22 21:57:42.741
+!MESSAGE XSCT Command: [jtag frequency], Thread: Worker-14: Launching SystemDebugger_Pcam5C-app_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-10-22 21:57:42.745
+!MESSAGE XSCT command with result: [jtag frequency], Result: [null, 15000000]. Thread: Worker-14: Launching SystemDebugger_Pcam5C-app_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-10-22 21:57:42.749
+!MESSAGE XSCT Command: [targets -set -nocase -filter {name =~"APU*"}], Thread: Worker-14: Launching SystemDebugger_Pcam5C-app_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-10-22 21:57:42.762
+!MESSAGE XSCT command with result: [targets -set -nocase -filter {name =~"APU*"}], Result: [null, ]. Thread: Worker-14: Launching SystemDebugger_Pcam5C-app_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-10-22 21:57:42.766
+!MESSAGE XSCT Command: [rst -system], Thread: Worker-14: Launching SystemDebugger_Pcam5C-app_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-10-22 21:57:42.844
+!MESSAGE XSCT command with result: [rst -system], Result: [null, ]. Thread: Worker-14: Launching SystemDebugger_Pcam5C-app_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-10-22 21:57:42.848
+!MESSAGE XSCT Command: [after 3000], Thread: Worker-14: Launching SystemDebugger_Pcam5C-app_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-10-22 21:57:45.852
+!MESSAGE XSCT command with result: [after 3000], Result: [null, ]. Thread: Worker-14: Launching SystemDebugger_Pcam5C-app_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-10-22 21:57:45.895
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-10-22 21:57:45.904
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1* Digilent Zybo Z7 210351A6C9E3A]. Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-10-22 21:57:45.908
+!MESSAGE XSCT Command: [jtag targets -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351A6C9E3A" && level==1}], Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-10-22 21:57:45.926
+!MESSAGE XSCT command with result: [jtag targets -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351A6C9E3A" && level==1}], Result: [null,      2  arm_dap (idcode 4ba00477 irlen 4)
+     3  xc7z020 (idcode 23727093 irlen 6 fpga)]. Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-10-22 21:57:45.930
+!MESSAGE XSCT Command: [targets -set -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351A6C9E3A" && level==0} -index 1], Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-10-22 21:57:45.950
+!MESSAGE XSCT command with result: [targets -set -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351A6C9E3A" && level==0} -index 1], Result: [null, ]. Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-10-22 21:57:45.954
+!MESSAGE XSCT Command: [fpga -file C:/Github/Zybo_mipi/Pcam2019/vitis/Pcam5C-app/_ide/bitstream/system_wrapper.bit], Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-10-22 21:57:48.283
+!MESSAGE XSCT command with result: [fpga -file C:/Github/Zybo_mipi/Pcam2019/vitis/Pcam5C-app/_ide/bitstream/system_wrapper.bit], Result: [null, ]. Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-10-22 21:57:48.314
+!MESSAGE XSCT Command: [targets -set -nocase -filter {name =~"APU*"}], Thread: Worker-14: Launching SystemDebugger_Pcam5C-app_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-10-22 21:57:48.326
+!MESSAGE XSCT command with result: [targets -set -nocase -filter {name =~"APU*"}], Result: [null, ]. Thread: Worker-14: Launching SystemDebugger_Pcam5C-app_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-10-22 21:57:48.330
+!MESSAGE XSCT Command: [loadhw -hw C:/Github/Zybo_mipi/Pcam2019/vitis/Pcam5C-2019/export/Pcam5C-2019/hw/system_wrapper.xsa -mem-ranges [list {0x40000000 0xbfffffff}]], Thread: Worker-14: Launching SystemDebugger_Pcam5C-app_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-10-22 21:57:51.262
+!MESSAGE XSCT command with result: [loadhw -hw C:/Github/Zybo_mipi/Pcam2019/vitis/Pcam5C-2019/export/Pcam5C-2019/hw/system_wrapper.xsa -mem-ranges [list {0x40000000 0xbfffffff}]], Result: [null, system_wrapper_2]. Thread: Worker-14: Launching SystemDebugger_Pcam5C-app_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-10-22 21:57:51.266
+!MESSAGE XSCT Command: [configparams force-mem-access 1], Thread: Worker-14: Launching SystemDebugger_Pcam5C-app_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-10-22 21:57:51.270
+!MESSAGE XSCT command with result: [configparams force-mem-access 1], Result: [null, ]. Thread: Worker-14: Launching SystemDebugger_Pcam5C-app_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-10-22 21:57:51.273
+!MESSAGE XSCT Command: [targets -set -nocase -filter {name =~"APU*"}], Thread: Worker-14: Launching SystemDebugger_Pcam5C-app_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-10-22 21:57:51.283
+!MESSAGE XSCT command with result: [targets -set -nocase -filter {name =~"APU*"}], Result: [null, ]. Thread: Worker-14: Launching SystemDebugger_Pcam5C-app_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-10-22 21:57:51.286
+!MESSAGE XSCT Command: [source C:/Github/Zybo_mipi/Pcam2019/vitis/Pcam5C-app/_ide/psinit/ps7_init.tcl], Thread: Worker-14: Launching SystemDebugger_Pcam5C-app_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-10-22 21:57:51.291
+!MESSAGE XSCT command with result: [source C:/Github/Zybo_mipi/Pcam2019/vitis/Pcam5C-app/_ide/psinit/ps7_init.tcl], Result: [null, ]. Thread: Worker-14: Launching SystemDebugger_Pcam5C-app_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-10-22 21:57:51.294
+!MESSAGE XSCT Command: [ps7_init], Thread: Worker-14: Launching SystemDebugger_Pcam5C-app_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-10-22 21:57:51.570
+!MESSAGE XSCT command with result: [ps7_init], Result: [null, ]. Thread: Worker-14: Launching SystemDebugger_Pcam5C-app_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-10-22 21:57:51.573
+!MESSAGE XSCT Command: [ps7_post_config], Thread: Worker-14: Launching SystemDebugger_Pcam5C-app_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-10-22 21:57:51.587
+!MESSAGE XSCT command with result: [ps7_post_config], Result: [null, ]. Thread: Worker-14: Launching SystemDebugger_Pcam5C-app_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-10-22 21:57:51.590
+!MESSAGE XSCT Command: [targets -set -nocase -filter {name =~ "*A9*#0"}], Thread: Worker-14: Launching SystemDebugger_Pcam5C-app_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-10-22 21:57:51.601
+!MESSAGE XSCT command with result: [targets -set -nocase -filter {name =~ "*A9*#0"}], Result: [null, ]. Thread: Worker-14: Launching SystemDebugger_Pcam5C-app_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-10-22 21:57:51.604
+!MESSAGE XSCT Command: [dow C:/Github/Zybo_mipi/Pcam2019/vitis/Pcam5C-app/Debug/Pcam5C-app.elf], Thread: Worker-14: Launching SystemDebugger_Pcam5C-app_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-10-22 21:57:53.035
+!MESSAGE XSCT command with result: [dow C:/Github/Zybo_mipi/Pcam2019/vitis/Pcam5C-app/Debug/Pcam5C-app.elf], Result: [null, ]. Thread: Worker-14: Launching SystemDebugger_Pcam5C-app_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-10-22 21:57:53.039
+!MESSAGE XSCT Command: [configparams force-mem-access 0], Thread: Worker-14: Launching SystemDebugger_Pcam5C-app_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-10-22 21:57:53.062
+!MESSAGE XSCT command with result: [configparams force-mem-access 0], Result: [null, ]. Thread: Worker-14: Launching SystemDebugger_Pcam5C-app_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-10-22 21:57:53.105
+!MESSAGE XSCT Command: [targets -set -nocase -filter {name =~ "*A9*#0"}], Thread: Worker-14: Launching SystemDebugger_Pcam5C-app_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-10-22 21:57:53.165
+!MESSAGE XSCT command with result: [targets -set -nocase -filter {name =~ "*A9*#0"}], Result: [null, ]. Thread: Worker-14: Launching SystemDebugger_Pcam5C-app_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-10-22 21:57:53.169
+!MESSAGE XSCT Command: [con], Thread: Worker-14: Launching SystemDebugger_Pcam5C-app_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-10-22 21:57:53.177
+!MESSAGE XSCT command with result: [con], Result: [null, ]. Thread: Worker-14: Launching SystemDebugger_Pcam5C-app_system
+
+!ENTRY com.xilinx.sdk.utils 1 0 2020-10-22 21:57:53.182
+!MESSAGE Tool usage for 'TCF_APP_DEBUG' updated to '4'
+
+!ENTRY com.xilinx.sdk.utils 1 0 2020-10-22 21:57:53.185
+!MESSAGE Tool usage for 'TCF_SYSTEM_DEBUG' updated to '4'
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-10-22 21:58:16.280
+!MESSAGE XSCT Command: [ ::hsi::utils::set_current_hw_sw C:/Github/Zybo_mipi/Pcam2019/vitis/Pcam5C-2019/export/Pcam5C-2019/hw/system_wrapper.xsa C:/Github/Zybo_mipi/Pcam2019/vitis/Pcam5C-2019/export/Pcam5C-2019/sw/Pcam5C-2019/standalone_domain/system.mss ], Thread: Worker-4: Build Project
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-10-22 21:58:16.287
+!MESSAGE XSCT command with result: [ ::hsi::utils::set_current_hw_sw C:/Github/Zybo_mipi/Pcam2019/vitis/Pcam5C-2019/export/Pcam5C-2019/hw/system_wrapper.xsa C:/Github/Zybo_mipi/Pcam2019/vitis/Pcam5C-2019/export/Pcam5C-2019/sw/Pcam5C-2019/standalone_domain/system.mss ], Result: [null, ]. Thread: Worker-4: Build Project
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-10-22 21:58:16.291
+!MESSAGE XSCT Command: [::hsi::utils::get_hw_sw_details -json C:/Github/Zybo_mipi/Pcam2019/vitis/Pcam5C-2019/export/Pcam5C-2019/hw/system_wrapper.xsa C:/Github/Zybo_mipi/Pcam2019/vitis/Pcam5C-2019/export/Pcam5C-2019/sw/Pcam5C-2019/standalone_domain/system.mss], Thread: Worker-4: Build Project
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-10-22 21:58:16.297
+!MESSAGE XSCT command with result: [::hsi::utils::get_hw_sw_details -json C:/Github/Zybo_mipi/Pcam2019/vitis/Pcam5C-2019/export/Pcam5C-2019/hw/system_wrapper.xsa C:/Github/Zybo_mipi/Pcam2019/vitis/Pcam5C-2019/export/Pcam5C-2019/sw/Pcam5C-2019/standalone_domain/system.mss], Result: [null, {"procname": "ps7_cortexa9_0",
+"osname": "standalone",
+"osver": "7.1",
+}]. Thread: Worker-4: Build Project
+
+!ENTRY com.xilinx.sdk.utils 1 0 2020-10-22 21:58:16.301
+!MESSAGE Generating MD5 hash for file: C:\Github\Zybo_mipi\Pcam2019\vitis\Pcam5C-2019\export\Pcam5C-2019\sw\Pcam5C-2019\standalone_domain\system.mss ...
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-10-22 21:58:16.305
+!MESSAGE XSCT Command: [::hsi::utils::closesw C:/Github/Zybo_mipi/Pcam2019/vitis/Pcam5C-2019/export/Pcam5C-2019/sw/Pcam5C-2019/standalone_domain/system.mss], Thread: Worker-4: Build Project
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-10-22 21:58:16.310
+!MESSAGE XSCT command with result: [::hsi::utils::closesw C:/Github/Zybo_mipi/Pcam2019/vitis/Pcam5C-2019/export/Pcam5C-2019/sw/Pcam5C-2019/standalone_domain/system.mss], Result: [null, ]. Thread: Worker-4: Build Project
+
+!ENTRY com.xilinx.sdk.utils 1 0 2020-10-22 21:58:19.321
+!MESSAGE Tool usage for 'SDX_NO_OP_BUILD' updated to '5'
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-10-22 21:58:20.204
+!MESSAGE XSCT Command: [disconnect tcfchan#8], Thread: Thread-360
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-10-22 21:58:20.210
+!MESSAGE XSCT command with result: [disconnect tcfchan#8], Result: [null, ]. Thread: Thread-360
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-10-22 21:58:20.238
+!MESSAGE XSCT Command: [connect -url tcp:127.0.0.1:3121], Thread: Worker-19: Launching SystemDebugger_Pcam5C-app_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-10-22 21:58:20.250
+!MESSAGE XSCT command with result: [connect -url tcp:127.0.0.1:3121], Result: [null, tcfchan#10]. Thread: Worker-19: Launching SystemDebugger_Pcam5C-app_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-10-22 21:58:20.254
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: Worker-19: Launching SystemDebugger_Pcam5C-app_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-10-22 21:58:20.267
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1* Digilent Zybo Z7 210351A6C9E3A]. Thread: Worker-19: Launching SystemDebugger_Pcam5C-app_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-10-22 21:58:20.271
+!MESSAGE XSCT Command: [version -server], Thread: Worker-19: Launching SystemDebugger_Pcam5C-app_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-10-22 21:58:20.279
+!MESSAGE XSCT command with result: [version -server], Result: [null, 2019.2]. Thread: Worker-19: Launching SystemDebugger_Pcam5C-app_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-10-22 21:58:20.283
+!MESSAGE XSCT Command: [version], Thread: Worker-19: Launching SystemDebugger_Pcam5C-app_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-10-22 21:58:20.287
+!MESSAGE XSCT command with result: [version], Result: [null, xsct 2019.2
+SW Build 2708876 on Wed Nov  6 21:40:23 MST 2019
+Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.]. Thread: Worker-19: Launching SystemDebugger_Pcam5C-app_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-10-22 21:58:20.291
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: Worker-19: Launching SystemDebugger_Pcam5C-app_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-10-22 21:58:20.299
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1* Digilent Zybo Z7 210351A6C9E3A]. Thread: Worker-19: Launching SystemDebugger_Pcam5C-app_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-10-22 21:58:20.303
+!MESSAGE XSCT Command: [jtag targets -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351A6C9E3A" && level==1}], Thread: Worker-19: Launching SystemDebugger_Pcam5C-app_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-10-22 21:58:20.322
+!MESSAGE XSCT command with result: [jtag targets -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351A6C9E3A" && level==1}], Result: [null,      2  arm_dap (idcode 4ba00477 irlen 4)
+     3  xc7z020 (idcode 23727093 irlen 6 fpga)]. Thread: Worker-19: Launching SystemDebugger_Pcam5C-app_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-10-22 21:58:20.326
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: Worker-19: Launching SystemDebugger_Pcam5C-app_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-10-22 21:58:20.335
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1* Digilent Zybo Z7 210351A6C9E3A]. Thread: Worker-19: Launching SystemDebugger_Pcam5C-app_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-10-22 21:58:20.339
+!MESSAGE XSCT Command: [jtag targets -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351A6C9E3A" && level==1}], Thread: Worker-19: Launching SystemDebugger_Pcam5C-app_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-10-22 21:58:20.356
+!MESSAGE XSCT command with result: [jtag targets -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351A6C9E3A" && level==1}], Result: [null,      2  arm_dap (idcode 4ba00477 irlen 4)
+     3  xc7z020 (idcode 23727093 irlen 6 fpga)]. Thread: Worker-19: Launching SystemDebugger_Pcam5C-app_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-10-22 21:58:20.360
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: Worker-19: Launching SystemDebugger_Pcam5C-app_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-10-22 21:58:20.368
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1* Digilent Zybo Z7 210351A6C9E3A]. Thread: Worker-19: Launching SystemDebugger_Pcam5C-app_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-10-22 21:58:20.372
+!MESSAGE XSCT Command: [jtag targets -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351A6C9E3A" && level==1}], Thread: Worker-19: Launching SystemDebugger_Pcam5C-app_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-10-22 21:58:20.390
+!MESSAGE XSCT command with result: [jtag targets -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351A6C9E3A" && level==1}], Result: [null,      2  arm_dap (idcode 4ba00477 irlen 4)
+     3  xc7z020 (idcode 23727093 irlen 6 fpga)]. Thread: Worker-19: Launching SystemDebugger_Pcam5C-app_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-10-22 21:58:20.395
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: Worker-19: Launching SystemDebugger_Pcam5C-app_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-10-22 21:58:20.407
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1* Digilent Zybo Z7 210351A6C9E3A]. Thread: Worker-19: Launching SystemDebugger_Pcam5C-app_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-10-22 21:58:20.412
+!MESSAGE XSCT Command: [jtag targets -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351A6C9E3A" && level==1}], Thread: Worker-19: Launching SystemDebugger_Pcam5C-app_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-10-22 21:58:20.430
+!MESSAGE XSCT command with result: [jtag targets -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351A6C9E3A" && level==1}], Result: [null,      2  arm_dap (idcode 4ba00477 irlen 4)
+     3  xc7z020 (idcode 23727093 irlen 6 fpga)]. Thread: Worker-19: Launching SystemDebugger_Pcam5C-app_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-10-22 21:58:20.434
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: Worker-19: Launching SystemDebugger_Pcam5C-app_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-10-22 21:58:20.442
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1* Digilent Zybo Z7 210351A6C9E3A]. Thread: Worker-19: Launching SystemDebugger_Pcam5C-app_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-10-22 21:58:20.446
+!MESSAGE XSCT Command: [jtag targets -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351A6C9E3A" && level==1}], Thread: Worker-19: Launching SystemDebugger_Pcam5C-app_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-10-22 21:58:20.463
+!MESSAGE XSCT command with result: [jtag targets -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351A6C9E3A" && level==1}], Result: [null,      2  arm_dap (idcode 4ba00477 irlen 4)
+     3  xc7z020 (idcode 23727093 irlen 6 fpga)]. Thread: Worker-19: Launching SystemDebugger_Pcam5C-app_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-10-22 21:58:20.467
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: Worker-19: Launching SystemDebugger_Pcam5C-app_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-10-22 21:58:20.475
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1* Digilent Zybo Z7 210351A6C9E3A]. Thread: Worker-19: Launching SystemDebugger_Pcam5C-app_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-10-22 21:58:20.478
+!MESSAGE XSCT Command: [jtag targets -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351A6C9E3A" && level==1}], Thread: Worker-19: Launching SystemDebugger_Pcam5C-app_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-10-22 21:58:20.497
+!MESSAGE XSCT command with result: [jtag targets -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351A6C9E3A" && level==1}], Result: [null,      2  arm_dap (idcode 4ba00477 irlen 4)
+     3  xc7z020 (idcode 23727093 irlen 6 fpga)]. Thread: Worker-19: Launching SystemDebugger_Pcam5C-app_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-10-22 21:58:20.501
+!MESSAGE XSCT Command: [jtag targets -set -filter {name =~ "Digilent Zybo Z7 210351A6C9E3A" && level == 0}], Thread: Worker-19: Launching SystemDebugger_Pcam5C-app_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-10-22 21:58:20.519
+!MESSAGE XSCT command with result: [jtag targets -set -filter {name =~ "Digilent Zybo Z7 210351A6C9E3A" && level == 0}], Result: [null, ]. Thread: Worker-19: Launching SystemDebugger_Pcam5C-app_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-10-22 21:58:20.522
+!MESSAGE XSCT Command: [jtag frequency], Thread: Worker-19: Launching SystemDebugger_Pcam5C-app_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-10-22 21:58:20.526
+!MESSAGE XSCT command with result: [jtag frequency], Result: [null, 15000000]. Thread: Worker-19: Launching SystemDebugger_Pcam5C-app_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-10-22 21:58:20.530
+!MESSAGE XSCT Command: [targets -set -nocase -filter {name =~"APU*"}], Thread: Worker-19: Launching SystemDebugger_Pcam5C-app_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-10-22 21:58:20.543
+!MESSAGE XSCT command with result: [targets -set -nocase -filter {name =~"APU*"}], Result: [null, ]. Thread: Worker-19: Launching SystemDebugger_Pcam5C-app_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-10-22 21:58:20.547
+!MESSAGE XSCT Command: [rst -system], Thread: Worker-19: Launching SystemDebugger_Pcam5C-app_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-10-22 21:58:20.623
+!MESSAGE XSCT command with result: [rst -system], Result: [null, ]. Thread: Worker-19: Launching SystemDebugger_Pcam5C-app_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-10-22 21:58:20.627
+!MESSAGE XSCT Command: [after 3000], Thread: Worker-19: Launching SystemDebugger_Pcam5C-app_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-10-22 21:58:23.632
+!MESSAGE XSCT command with result: [after 3000], Result: [null, ]. Thread: Worker-19: Launching SystemDebugger_Pcam5C-app_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-10-22 21:58:23.656
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-10-22 21:58:23.665
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1* Digilent Zybo Z7 210351A6C9E3A]. Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-10-22 21:58:23.669
+!MESSAGE XSCT Command: [jtag targets -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351A6C9E3A" && level==1}], Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-10-22 21:58:23.687
+!MESSAGE XSCT command with result: [jtag targets -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351A6C9E3A" && level==1}], Result: [null,      2  arm_dap (idcode 4ba00477 irlen 4)
+     3  xc7z020 (idcode 23727093 irlen 6 fpga)]. Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-10-22 21:58:23.690
+!MESSAGE XSCT Command: [targets -set -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351A6C9E3A" && level==0} -index 1], Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-10-22 21:58:23.711
+!MESSAGE XSCT command with result: [targets -set -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351A6C9E3A" && level==0} -index 1], Result: [null, ]. Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-10-22 21:58:23.715
+!MESSAGE XSCT Command: [fpga -file C:/Github/Zybo_mipi/Pcam2019/vitis/Pcam5C-app/_ide/bitstream/system_wrapper.bit], Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-10-22 21:58:26.047
+!MESSAGE XSCT command with result: [fpga -file C:/Github/Zybo_mipi/Pcam2019/vitis/Pcam5C-app/_ide/bitstream/system_wrapper.bit], Result: [null, ]. Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-10-22 21:58:26.073
+!MESSAGE XSCT Command: [targets -set -nocase -filter {name =~"APU*"}], Thread: Worker-19: Launching SystemDebugger_Pcam5C-app_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-10-22 21:58:26.085
+!MESSAGE XSCT command with result: [targets -set -nocase -filter {name =~"APU*"}], Result: [null, ]. Thread: Worker-19: Launching SystemDebugger_Pcam5C-app_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-10-22 21:58:26.089
+!MESSAGE XSCT Command: [loadhw -hw C:/Github/Zybo_mipi/Pcam2019/vitis/Pcam5C-2019/export/Pcam5C-2019/hw/system_wrapper.xsa -mem-ranges [list {0x40000000 0xbfffffff}]], Thread: Worker-19: Launching SystemDebugger_Pcam5C-app_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-10-22 21:58:29.263
+!MESSAGE XSCT command with result: [loadhw -hw C:/Github/Zybo_mipi/Pcam2019/vitis/Pcam5C-2019/export/Pcam5C-2019/hw/system_wrapper.xsa -mem-ranges [list {0x40000000 0xbfffffff}]], Result: [null, system_wrapper_3]. Thread: Worker-19: Launching SystemDebugger_Pcam5C-app_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-10-22 21:58:29.267
+!MESSAGE XSCT Command: [configparams force-mem-access 1], Thread: Worker-19: Launching SystemDebugger_Pcam5C-app_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-10-22 21:58:29.271
+!MESSAGE XSCT command with result: [configparams force-mem-access 1], Result: [null, ]. Thread: Worker-19: Launching SystemDebugger_Pcam5C-app_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-10-22 21:58:29.274
+!MESSAGE XSCT Command: [targets -set -nocase -filter {name =~"APU*"}], Thread: Worker-19: Launching SystemDebugger_Pcam5C-app_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-10-22 21:58:29.285
+!MESSAGE XSCT command with result: [targets -set -nocase -filter {name =~"APU*"}], Result: [null, ]. Thread: Worker-19: Launching SystemDebugger_Pcam5C-app_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-10-22 21:58:29.288
+!MESSAGE XSCT Command: [source C:/Github/Zybo_mipi/Pcam2019/vitis/Pcam5C-app/_ide/psinit/ps7_init.tcl], Thread: Worker-19: Launching SystemDebugger_Pcam5C-app_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-10-22 21:58:29.293
+!MESSAGE XSCT command with result: [source C:/Github/Zybo_mipi/Pcam2019/vitis/Pcam5C-app/_ide/psinit/ps7_init.tcl], Result: [null, ]. Thread: Worker-19: Launching SystemDebugger_Pcam5C-app_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-10-22 21:58:29.296
+!MESSAGE XSCT Command: [ps7_init], Thread: Worker-19: Launching SystemDebugger_Pcam5C-app_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-10-22 21:58:29.580
+!MESSAGE XSCT command with result: [ps7_init], Result: [null, ]. Thread: Worker-19: Launching SystemDebugger_Pcam5C-app_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-10-22 21:58:29.583
+!MESSAGE XSCT Command: [ps7_post_config], Thread: Worker-19: Launching SystemDebugger_Pcam5C-app_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-10-22 21:58:29.593
+!MESSAGE XSCT command with result: [ps7_post_config], Result: [null, ]. Thread: Worker-19: Launching SystemDebugger_Pcam5C-app_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-10-22 21:58:29.597
+!MESSAGE XSCT Command: [targets -set -nocase -filter {name =~ "*A9*#0"}], Thread: Worker-19: Launching SystemDebugger_Pcam5C-app_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-10-22 21:58:29.608
+!MESSAGE XSCT command with result: [targets -set -nocase -filter {name =~ "*A9*#0"}], Result: [null, ]. Thread: Worker-19: Launching SystemDebugger_Pcam5C-app_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-10-22 21:58:29.611
+!MESSAGE XSCT Command: [dow C:/Github/Zybo_mipi/Pcam2019/vitis/Pcam5C-app/Debug/Pcam5C-app.elf], Thread: Worker-19: Launching SystemDebugger_Pcam5C-app_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-10-22 21:58:31.043
+!MESSAGE XSCT command with result: [dow C:/Github/Zybo_mipi/Pcam2019/vitis/Pcam5C-app/Debug/Pcam5C-app.elf], Result: [null, ]. Thread: Worker-19: Launching SystemDebugger_Pcam5C-app_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-10-22 21:58:31.047
+!MESSAGE XSCT Command: [configparams force-mem-access 0], Thread: Worker-19: Launching SystemDebugger_Pcam5C-app_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-10-22 21:58:31.068
+!MESSAGE XSCT command with result: [configparams force-mem-access 0], Result: [null, ]. Thread: Worker-19: Launching SystemDebugger_Pcam5C-app_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-10-22 21:58:31.124
+!MESSAGE XSCT Command: [targets -set -nocase -filter {name =~ "*A9*#0"}], Thread: Worker-19: Launching SystemDebugger_Pcam5C-app_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-10-22 21:58:31.184
+!MESSAGE XSCT command with result: [targets -set -nocase -filter {name =~ "*A9*#0"}], Result: [null, ]. Thread: Worker-19: Launching SystemDebugger_Pcam5C-app_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-10-22 21:58:31.188
+!MESSAGE XSCT Command: [con], Thread: Worker-19: Launching SystemDebugger_Pcam5C-app_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-10-22 21:58:31.195
+!MESSAGE XSCT command with result: [con], Result: [null, ]. Thread: Worker-19: Launching SystemDebugger_Pcam5C-app_system
+
+!ENTRY com.xilinx.sdk.utils 1 0 2020-10-22 21:58:31.202
+!MESSAGE Tool usage for 'TCF_APP_DEBUG' updated to '5'
+
+!ENTRY com.xilinx.sdk.utils 1 0 2020-10-22 21:58:31.205
+!MESSAGE Tool usage for 'TCF_SYSTEM_DEBUG' updated to '5'
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-10-22 21:58:48.582
+!MESSAGE XSCT Command: [ ::hsi::utils::set_current_hw_sw C:/Github/Zybo_mipi/Pcam2019/vitis/Pcam5C-2019/export/Pcam5C-2019/hw/system_wrapper.xsa C:/Github/Zybo_mipi/Pcam2019/vitis/Pcam5C-2019/export/Pcam5C-2019/sw/Pcam5C-2019/standalone_domain/system.mss ], Thread: Worker-19: Build Project
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-10-22 21:58:48.589
+!MESSAGE XSCT command with result: [ ::hsi::utils::set_current_hw_sw C:/Github/Zybo_mipi/Pcam2019/vitis/Pcam5C-2019/export/Pcam5C-2019/hw/system_wrapper.xsa C:/Github/Zybo_mipi/Pcam2019/vitis/Pcam5C-2019/export/Pcam5C-2019/sw/Pcam5C-2019/standalone_domain/system.mss ], Result: [null, ]. Thread: Worker-19: Build Project
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-10-22 21:58:48.593
+!MESSAGE XSCT Command: [::hsi::utils::get_hw_sw_details -json C:/Github/Zybo_mipi/Pcam2019/vitis/Pcam5C-2019/export/Pcam5C-2019/hw/system_wrapper.xsa C:/Github/Zybo_mipi/Pcam2019/vitis/Pcam5C-2019/export/Pcam5C-2019/sw/Pcam5C-2019/standalone_domain/system.mss], Thread: Worker-19: Build Project
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-10-22 21:58:48.599
+!MESSAGE XSCT command with result: [::hsi::utils::get_hw_sw_details -json C:/Github/Zybo_mipi/Pcam2019/vitis/Pcam5C-2019/export/Pcam5C-2019/hw/system_wrapper.xsa C:/Github/Zybo_mipi/Pcam2019/vitis/Pcam5C-2019/export/Pcam5C-2019/sw/Pcam5C-2019/standalone_domain/system.mss], Result: [null, {"procname": "ps7_cortexa9_0",
+"osname": "standalone",
+"osver": "7.1",
+}]. Thread: Worker-19: Build Project
+
+!ENTRY com.xilinx.sdk.utils 1 0 2020-10-22 21:58:48.603
+!MESSAGE Generating MD5 hash for file: C:\Github\Zybo_mipi\Pcam2019\vitis\Pcam5C-2019\export\Pcam5C-2019\sw\Pcam5C-2019\standalone_domain\system.mss ...
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-10-22 21:58:48.606
+!MESSAGE XSCT Command: [::hsi::utils::closesw C:/Github/Zybo_mipi/Pcam2019/vitis/Pcam5C-2019/export/Pcam5C-2019/sw/Pcam5C-2019/standalone_domain/system.mss], Thread: Worker-19: Build Project
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-10-22 21:58:48.611
+!MESSAGE XSCT command with result: [::hsi::utils::closesw C:/Github/Zybo_mipi/Pcam2019/vitis/Pcam5C-2019/export/Pcam5C-2019/sw/Pcam5C-2019/standalone_domain/system.mss], Result: [null, ]. Thread: Worker-19: Build Project
+
+!ENTRY com.xilinx.sdk.utils 1 0 2020-10-22 21:58:52.860
+!MESSAGE Tool usage for 'SDX_NO_OP_BUILD' updated to '6'
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-10-22 21:58:53.575
+!MESSAGE XSCT Command: [disconnect tcfchan#10], Thread: Thread-421
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-10-22 21:58:53.581
+!MESSAGE XSCT command with result: [disconnect tcfchan#10], Result: [null, ]. Thread: Thread-421
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-10-22 21:58:53.599
+!MESSAGE XSCT Command: [connect -url tcp:127.0.0.1:3121], Thread: Worker-20: Launching SystemDebugger_Pcam5C-app_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-10-22 21:58:53.613
+!MESSAGE XSCT command with result: [connect -url tcp:127.0.0.1:3121], Result: [null, tcfchan#12]. Thread: Worker-20: Launching SystemDebugger_Pcam5C-app_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-10-22 21:58:53.616
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: Worker-20: Launching SystemDebugger_Pcam5C-app_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-10-22 21:58:53.629
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1* Digilent Zybo Z7 210351A6C9E3A]. Thread: Worker-20: Launching SystemDebugger_Pcam5C-app_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-10-22 21:58:53.634
+!MESSAGE XSCT Command: [version -server], Thread: Worker-20: Launching SystemDebugger_Pcam5C-app_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-10-22 21:58:53.638
+!MESSAGE XSCT command with result: [version -server], Result: [null, 2019.2]. Thread: Worker-20: Launching SystemDebugger_Pcam5C-app_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-10-22 21:58:53.642
+!MESSAGE XSCT Command: [version], Thread: Worker-20: Launching SystemDebugger_Pcam5C-app_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-10-22 21:58:53.646
+!MESSAGE XSCT command with result: [version], Result: [null, xsct 2019.2
+SW Build 2708876 on Wed Nov  6 21:40:23 MST 2019
+Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.]. Thread: Worker-20: Launching SystemDebugger_Pcam5C-app_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-10-22 21:58:53.649
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: Worker-20: Launching SystemDebugger_Pcam5C-app_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-10-22 21:58:53.657
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1* Digilent Zybo Z7 210351A6C9E3A]. Thread: Worker-20: Launching SystemDebugger_Pcam5C-app_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-10-22 21:58:53.661
+!MESSAGE XSCT Command: [jtag targets -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351A6C9E3A" && level==1}], Thread: Worker-20: Launching SystemDebugger_Pcam5C-app_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-10-22 21:58:53.679
+!MESSAGE XSCT command with result: [jtag targets -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351A6C9E3A" && level==1}], Result: [null,      2  arm_dap (idcode 4ba00477 irlen 4)
+     3  xc7z020 (idcode 23727093 irlen 6 fpga)]. Thread: Worker-20: Launching SystemDebugger_Pcam5C-app_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-10-22 21:58:53.683
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: Worker-20: Launching SystemDebugger_Pcam5C-app_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-10-22 21:58:53.691
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1* Digilent Zybo Z7 210351A6C9E3A]. Thread: Worker-20: Launching SystemDebugger_Pcam5C-app_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-10-22 21:58:53.695
+!MESSAGE XSCT Command: [jtag targets -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351A6C9E3A" && level==1}], Thread: Worker-20: Launching SystemDebugger_Pcam5C-app_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-10-22 21:58:53.713
+!MESSAGE XSCT command with result: [jtag targets -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351A6C9E3A" && level==1}], Result: [null,      2  arm_dap (idcode 4ba00477 irlen 4)
+     3  xc7z020 (idcode 23727093 irlen 6 fpga)]. Thread: Worker-20: Launching SystemDebugger_Pcam5C-app_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-10-22 21:58:53.717
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: Worker-20: Launching SystemDebugger_Pcam5C-app_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-10-22 21:58:53.726
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1* Digilent Zybo Z7 210351A6C9E3A]. Thread: Worker-20: Launching SystemDebugger_Pcam5C-app_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-10-22 21:58:53.730
+!MESSAGE XSCT Command: [jtag targets -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351A6C9E3A" && level==1}], Thread: Worker-20: Launching SystemDebugger_Pcam5C-app_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-10-22 21:58:53.747
+!MESSAGE XSCT command with result: [jtag targets -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351A6C9E3A" && level==1}], Result: [null,      2  arm_dap (idcode 4ba00477 irlen 4)
+     3  xc7z020 (idcode 23727093 irlen 6 fpga)]. Thread: Worker-20: Launching SystemDebugger_Pcam5C-app_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-10-22 21:58:53.751
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: Worker-20: Launching SystemDebugger_Pcam5C-app_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-10-22 21:58:53.763
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1* Digilent Zybo Z7 210351A6C9E3A]. Thread: Worker-20: Launching SystemDebugger_Pcam5C-app_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-10-22 21:58:53.767
+!MESSAGE XSCT Command: [jtag targets -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351A6C9E3A" && level==1}], Thread: Worker-20: Launching SystemDebugger_Pcam5C-app_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-10-22 21:58:53.785
+!MESSAGE XSCT command with result: [jtag targets -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351A6C9E3A" && level==1}], Result: [null,      2  arm_dap (idcode 4ba00477 irlen 4)
+     3  xc7z020 (idcode 23727093 irlen 6 fpga)]. Thread: Worker-20: Launching SystemDebugger_Pcam5C-app_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-10-22 21:58:53.789
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: Worker-20: Launching SystemDebugger_Pcam5C-app_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-10-22 21:58:53.799
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1* Digilent Zybo Z7 210351A6C9E3A]. Thread: Worker-20: Launching SystemDebugger_Pcam5C-app_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-10-22 21:58:53.803
+!MESSAGE XSCT Command: [jtag targets -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351A6C9E3A" && level==1}], Thread: Worker-20: Launching SystemDebugger_Pcam5C-app_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-10-22 21:58:53.820
+!MESSAGE XSCT command with result: [jtag targets -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351A6C9E3A" && level==1}], Result: [null,      2  arm_dap (idcode 4ba00477 irlen 4)
+     3  xc7z020 (idcode 23727093 irlen 6 fpga)]. Thread: Worker-20: Launching SystemDebugger_Pcam5C-app_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-10-22 21:58:53.824
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: Worker-20: Launching SystemDebugger_Pcam5C-app_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-10-22 21:58:53.833
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1* Digilent Zybo Z7 210351A6C9E3A]. Thread: Worker-20: Launching SystemDebugger_Pcam5C-app_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-10-22 21:58:53.836
+!MESSAGE XSCT Command: [jtag targets -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351A6C9E3A" && level==1}], Thread: Worker-20: Launching SystemDebugger_Pcam5C-app_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-10-22 21:58:53.854
+!MESSAGE XSCT command with result: [jtag targets -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351A6C9E3A" && level==1}], Result: [null,      2  arm_dap (idcode 4ba00477 irlen 4)
+     3  xc7z020 (idcode 23727093 irlen 6 fpga)]. Thread: Worker-20: Launching SystemDebugger_Pcam5C-app_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-10-22 21:58:53.858
+!MESSAGE XSCT Command: [jtag targets -set -filter {name =~ "Digilent Zybo Z7 210351A6C9E3A" && level == 0}], Thread: Worker-20: Launching SystemDebugger_Pcam5C-app_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-10-22 21:58:53.876
+!MESSAGE XSCT command with result: [jtag targets -set -filter {name =~ "Digilent Zybo Z7 210351A6C9E3A" && level == 0}], Result: [null, ]. Thread: Worker-20: Launching SystemDebugger_Pcam5C-app_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-10-22 21:58:53.879
+!MESSAGE XSCT Command: [jtag frequency], Thread: Worker-20: Launching SystemDebugger_Pcam5C-app_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-10-22 21:58:53.883
+!MESSAGE XSCT command with result: [jtag frequency], Result: [null, 15000000]. Thread: Worker-20: Launching SystemDebugger_Pcam5C-app_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-10-22 21:58:53.887
+!MESSAGE XSCT Command: [targets -set -nocase -filter {name =~"APU*"}], Thread: Worker-20: Launching SystemDebugger_Pcam5C-app_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-10-22 21:58:53.900
+!MESSAGE XSCT command with result: [targets -set -nocase -filter {name =~"APU*"}], Result: [null, ]. Thread: Worker-20: Launching SystemDebugger_Pcam5C-app_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-10-22 21:58:53.904
+!MESSAGE XSCT Command: [rst -system], Thread: Worker-20: Launching SystemDebugger_Pcam5C-app_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-10-22 21:58:53.981
+!MESSAGE XSCT command with result: [rst -system], Result: [null, ]. Thread: Worker-20: Launching SystemDebugger_Pcam5C-app_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-10-22 21:58:53.985
+!MESSAGE XSCT Command: [after 3000], Thread: Worker-20: Launching SystemDebugger_Pcam5C-app_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-10-22 21:58:56.991
+!MESSAGE XSCT command with result: [after 3000], Result: [null, ]. Thread: Worker-20: Launching SystemDebugger_Pcam5C-app_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-10-22 21:58:57.026
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-10-22 21:58:57.036
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1* Digilent Zybo Z7 210351A6C9E3A]. Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-10-22 21:58:57.040
+!MESSAGE XSCT Command: [jtag targets -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351A6C9E3A" && level==1}], Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-10-22 21:58:57.057
+!MESSAGE XSCT command with result: [jtag targets -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351A6C9E3A" && level==1}], Result: [null,      2  arm_dap (idcode 4ba00477 irlen 4)
+     3  xc7z020 (idcode 23727093 irlen 6 fpga)]. Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-10-22 21:58:57.061
+!MESSAGE XSCT Command: [targets -set -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351A6C9E3A" && level==0} -index 1], Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-10-22 21:58:57.081
+!MESSAGE XSCT command with result: [targets -set -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351A6C9E3A" && level==0} -index 1], Result: [null, ]. Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-10-22 21:58:57.084
+!MESSAGE XSCT Command: [fpga -file C:/Github/Zybo_mipi/Pcam2019/vitis/Pcam5C-app/_ide/bitstream/system_wrapper.bit], Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-10-22 21:58:59.414
+!MESSAGE XSCT command with result: [fpga -file C:/Github/Zybo_mipi/Pcam2019/vitis/Pcam5C-app/_ide/bitstream/system_wrapper.bit], Result: [null, ]. Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-10-22 21:58:59.439
+!MESSAGE XSCT Command: [targets -set -nocase -filter {name =~"APU*"}], Thread: Worker-20: Launching SystemDebugger_Pcam5C-app_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-10-22 21:58:59.450
+!MESSAGE XSCT command with result: [targets -set -nocase -filter {name =~"APU*"}], Result: [null, ]. Thread: Worker-20: Launching SystemDebugger_Pcam5C-app_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-10-22 21:58:59.454
+!MESSAGE XSCT Command: [loadhw -hw C:/Github/Zybo_mipi/Pcam2019/vitis/Pcam5C-2019/export/Pcam5C-2019/hw/system_wrapper.xsa -mem-ranges [list {0x40000000 0xbfffffff}]], Thread: Worker-20: Launching SystemDebugger_Pcam5C-app_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-10-22 21:59:02.397
+!MESSAGE XSCT command with result: [loadhw -hw C:/Github/Zybo_mipi/Pcam2019/vitis/Pcam5C-2019/export/Pcam5C-2019/hw/system_wrapper.xsa -mem-ranges [list {0x40000000 0xbfffffff}]], Result: [null, system_wrapper_4]. Thread: Worker-20: Launching SystemDebugger_Pcam5C-app_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-10-22 21:59:02.401
+!MESSAGE XSCT Command: [configparams force-mem-access 1], Thread: Worker-20: Launching SystemDebugger_Pcam5C-app_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-10-22 21:59:02.413
+!MESSAGE XSCT command with result: [configparams force-mem-access 1], Result: [null, ]. Thread: Worker-20: Launching SystemDebugger_Pcam5C-app_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-10-22 21:59:02.416
+!MESSAGE XSCT Command: [targets -set -nocase -filter {name =~"APU*"}], Thread: Worker-20: Launching SystemDebugger_Pcam5C-app_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-10-22 21:59:02.427
+!MESSAGE XSCT command with result: [targets -set -nocase -filter {name =~"APU*"}], Result: [null, ]. Thread: Worker-20: Launching SystemDebugger_Pcam5C-app_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-10-22 21:59:02.430
+!MESSAGE XSCT Command: [source C:/Github/Zybo_mipi/Pcam2019/vitis/Pcam5C-app/_ide/psinit/ps7_init.tcl], Thread: Worker-20: Launching SystemDebugger_Pcam5C-app_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-10-22 21:59:02.434
+!MESSAGE XSCT command with result: [source C:/Github/Zybo_mipi/Pcam2019/vitis/Pcam5C-app/_ide/psinit/ps7_init.tcl], Result: [null, ]. Thread: Worker-20: Launching SystemDebugger_Pcam5C-app_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-10-22 21:59:02.438
+!MESSAGE XSCT Command: [ps7_init], Thread: Worker-20: Launching SystemDebugger_Pcam5C-app_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-10-22 21:59:02.726
+!MESSAGE XSCT command with result: [ps7_init], Result: [null, ]. Thread: Worker-20: Launching SystemDebugger_Pcam5C-app_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-10-22 21:59:02.730
+!MESSAGE XSCT Command: [ps7_post_config], Thread: Worker-20: Launching SystemDebugger_Pcam5C-app_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-10-22 21:59:02.738
+!MESSAGE XSCT command with result: [ps7_post_config], Result: [null, ]. Thread: Worker-20: Launching SystemDebugger_Pcam5C-app_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-10-22 21:59:02.742
+!MESSAGE XSCT Command: [targets -set -nocase -filter {name =~ "*A9*#0"}], Thread: Worker-20: Launching SystemDebugger_Pcam5C-app_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-10-22 21:59:02.757
+!MESSAGE XSCT command with result: [targets -set -nocase -filter {name =~ "*A9*#0"}], Result: [null, ]. Thread: Worker-20: Launching SystemDebugger_Pcam5C-app_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-10-22 21:59:02.761
+!MESSAGE XSCT Command: [dow C:/Github/Zybo_mipi/Pcam2019/vitis/Pcam5C-app/Debug/Pcam5C-app.elf], Thread: Worker-20: Launching SystemDebugger_Pcam5C-app_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-10-22 21:59:04.180
+!MESSAGE XSCT command with result: [dow C:/Github/Zybo_mipi/Pcam2019/vitis/Pcam5C-app/Debug/Pcam5C-app.elf], Result: [null, ]. Thread: Worker-20: Launching SystemDebugger_Pcam5C-app_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-10-22 21:59:04.183
+!MESSAGE XSCT Command: [configparams force-mem-access 0], Thread: Worker-20: Launching SystemDebugger_Pcam5C-app_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-10-22 21:59:04.218
+!MESSAGE XSCT command with result: [configparams force-mem-access 0], Result: [null, ]. Thread: Worker-20: Launching SystemDebugger_Pcam5C-app_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-10-22 21:59:04.264
+!MESSAGE XSCT Command: [targets -set -nocase -filter {name =~ "*A9*#0"}], Thread: Worker-20: Launching SystemDebugger_Pcam5C-app_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-10-22 21:59:04.321
+!MESSAGE XSCT command with result: [targets -set -nocase -filter {name =~ "*A9*#0"}], Result: [null, ]. Thread: Worker-20: Launching SystemDebugger_Pcam5C-app_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-10-22 21:59:04.324
+!MESSAGE XSCT Command: [con], Thread: Worker-20: Launching SystemDebugger_Pcam5C-app_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-10-22 21:59:04.332
+!MESSAGE XSCT command with result: [con], Result: [null, ]. Thread: Worker-20: Launching SystemDebugger_Pcam5C-app_system
+
+!ENTRY com.xilinx.sdk.utils 1 0 2020-10-22 21:59:04.337
+!MESSAGE Tool usage for 'TCF_APP_DEBUG' updated to '6'
+
+!ENTRY com.xilinx.sdk.utils 1 0 2020-10-22 21:59:04.341
+!MESSAGE Tool usage for 'TCF_SYSTEM_DEBUG' updated to '6'
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-10-22 21:59:26.474
+!MESSAGE XSCT Command: [ ::hsi::utils::set_current_hw_sw C:/Github/Zybo_mipi/Pcam2019/vitis/Pcam5C-2019/export/Pcam5C-2019/hw/system_wrapper.xsa C:/Github/Zybo_mipi/Pcam2019/vitis/Pcam5C-2019/export/Pcam5C-2019/sw/Pcam5C-2019/standalone_domain/system.mss ], Thread: Worker-15: Build Project
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-10-22 21:59:26.482
+!MESSAGE XSCT command with result: [ ::hsi::utils::set_current_hw_sw C:/Github/Zybo_mipi/Pcam2019/vitis/Pcam5C-2019/export/Pcam5C-2019/hw/system_wrapper.xsa C:/Github/Zybo_mipi/Pcam2019/vitis/Pcam5C-2019/export/Pcam5C-2019/sw/Pcam5C-2019/standalone_domain/system.mss ], Result: [null, ]. Thread: Worker-15: Build Project
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-10-22 21:59:26.486
+!MESSAGE XSCT Command: [::hsi::utils::get_hw_sw_details -json C:/Github/Zybo_mipi/Pcam2019/vitis/Pcam5C-2019/export/Pcam5C-2019/hw/system_wrapper.xsa C:/Github/Zybo_mipi/Pcam2019/vitis/Pcam5C-2019/export/Pcam5C-2019/sw/Pcam5C-2019/standalone_domain/system.mss], Thread: Worker-15: Build Project
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-10-22 21:59:26.492
+!MESSAGE XSCT command with result: [::hsi::utils::get_hw_sw_details -json C:/Github/Zybo_mipi/Pcam2019/vitis/Pcam5C-2019/export/Pcam5C-2019/hw/system_wrapper.xsa C:/Github/Zybo_mipi/Pcam2019/vitis/Pcam5C-2019/export/Pcam5C-2019/sw/Pcam5C-2019/standalone_domain/system.mss], Result: [null, {"procname": "ps7_cortexa9_0",
+"osname": "standalone",
+"osver": "7.1",
+}]. Thread: Worker-15: Build Project
+
+!ENTRY com.xilinx.sdk.utils 1 0 2020-10-22 21:59:26.496
+!MESSAGE Generating MD5 hash for file: C:\Github\Zybo_mipi\Pcam2019\vitis\Pcam5C-2019\export\Pcam5C-2019\sw\Pcam5C-2019\standalone_domain\system.mss ...
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-10-22 21:59:26.500
+!MESSAGE XSCT Command: [::hsi::utils::closesw C:/Github/Zybo_mipi/Pcam2019/vitis/Pcam5C-2019/export/Pcam5C-2019/sw/Pcam5C-2019/standalone_domain/system.mss], Thread: Worker-15: Build Project
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-10-22 21:59:26.505
+!MESSAGE XSCT command with result: [::hsi::utils::closesw C:/Github/Zybo_mipi/Pcam2019/vitis/Pcam5C-2019/export/Pcam5C-2019/sw/Pcam5C-2019/standalone_domain/system.mss], Result: [null, ]. Thread: Worker-15: Build Project
+
+!ENTRY com.xilinx.sdk.utils 1 0 2020-10-22 21:59:30.730
+!MESSAGE Tool usage for 'SDX_NO_OP_BUILD' updated to '7'
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-10-22 21:59:31.399
+!MESSAGE XSCT Command: [disconnect tcfchan#12], Thread: Thread-483
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-10-22 21:59:31.407
+!MESSAGE XSCT command with result: [disconnect tcfchan#12], Result: [null, ]. Thread: Thread-483
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-10-22 21:59:31.427
+!MESSAGE XSCT Command: [connect -url tcp:127.0.0.1:3121], Thread: Worker-17: Launching SystemDebugger_Pcam5C-app_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-10-22 21:59:31.439
+!MESSAGE XSCT command with result: [connect -url tcp:127.0.0.1:3121], Result: [null, tcfchan#14]. Thread: Worker-17: Launching SystemDebugger_Pcam5C-app_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-10-22 21:59:31.443
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: Worker-17: Launching SystemDebugger_Pcam5C-app_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-10-22 21:59:31.453
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1* Digilent Zybo Z7 210351A6C9E3A]. Thread: Worker-17: Launching SystemDebugger_Pcam5C-app_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-10-22 21:59:31.457
+!MESSAGE XSCT Command: [version -server], Thread: Worker-17: Launching SystemDebugger_Pcam5C-app_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-10-22 21:59:31.462
+!MESSAGE XSCT command with result: [version -server], Result: [null, 2019.2]. Thread: Worker-17: Launching SystemDebugger_Pcam5C-app_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-10-22 21:59:31.466
+!MESSAGE XSCT Command: [version], Thread: Worker-17: Launching SystemDebugger_Pcam5C-app_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-10-22 21:59:31.471
+!MESSAGE XSCT command with result: [version], Result: [null, xsct 2019.2
+SW Build 2708876 on Wed Nov  6 21:40:23 MST 2019
+Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.]. Thread: Worker-17: Launching SystemDebugger_Pcam5C-app_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-10-22 21:59:31.475
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: Worker-17: Launching SystemDebugger_Pcam5C-app_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-10-22 21:59:31.483
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1* Digilent Zybo Z7 210351A6C9E3A]. Thread: Worker-17: Launching SystemDebugger_Pcam5C-app_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-10-22 21:59:31.488
+!MESSAGE XSCT Command: [jtag targets -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351A6C9E3A" && level==1}], Thread: Worker-17: Launching SystemDebugger_Pcam5C-app_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-10-22 21:59:31.508
+!MESSAGE XSCT command with result: [jtag targets -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351A6C9E3A" && level==1}], Result: [null,      2  arm_dap (idcode 4ba00477 irlen 4)
+     3  xc7z020 (idcode 23727093 irlen 6 fpga)]. Thread: Worker-17: Launching SystemDebugger_Pcam5C-app_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-10-22 21:59:31.512
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: Worker-17: Launching SystemDebugger_Pcam5C-app_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-10-22 21:59:31.521
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1* Digilent Zybo Z7 210351A6C9E3A]. Thread: Worker-17: Launching SystemDebugger_Pcam5C-app_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-10-22 21:59:31.525
+!MESSAGE XSCT Command: [jtag targets -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351A6C9E3A" && level==1}], Thread: Worker-17: Launching SystemDebugger_Pcam5C-app_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-10-22 21:59:31.544
+!MESSAGE XSCT command with result: [jtag targets -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351A6C9E3A" && level==1}], Result: [null,      2  arm_dap (idcode 4ba00477 irlen 4)
+     3  xc7z020 (idcode 23727093 irlen 6 fpga)]. Thread: Worker-17: Launching SystemDebugger_Pcam5C-app_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-10-22 21:59:31.548
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: Worker-17: Launching SystemDebugger_Pcam5C-app_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-10-22 21:59:31.557
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1* Digilent Zybo Z7 210351A6C9E3A]. Thread: Worker-17: Launching SystemDebugger_Pcam5C-app_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-10-22 21:59:31.561
+!MESSAGE XSCT Command: [jtag targets -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351A6C9E3A" && level==1}], Thread: Worker-17: Launching SystemDebugger_Pcam5C-app_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-10-22 21:59:31.579
+!MESSAGE XSCT command with result: [jtag targets -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351A6C9E3A" && level==1}], Result: [null,      2  arm_dap (idcode 4ba00477 irlen 4)
+     3  xc7z020 (idcode 23727093 irlen 6 fpga)]. Thread: Worker-17: Launching SystemDebugger_Pcam5C-app_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-10-22 21:59:31.583
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: Worker-17: Launching SystemDebugger_Pcam5C-app_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-10-22 21:59:31.592
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1* Digilent Zybo Z7 210351A6C9E3A]. Thread: Worker-17: Launching SystemDebugger_Pcam5C-app_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-10-22 21:59:31.595
+!MESSAGE XSCT Command: [jtag targets -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351A6C9E3A" && level==1}], Thread: Worker-17: Launching SystemDebugger_Pcam5C-app_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-10-22 21:59:31.613
+!MESSAGE XSCT command with result: [jtag targets -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351A6C9E3A" && level==1}], Result: [null,      2  arm_dap (idcode 4ba00477 irlen 4)
+     3  xc7z020 (idcode 23727093 irlen 6 fpga)]. Thread: Worker-17: Launching SystemDebugger_Pcam5C-app_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-10-22 21:59:31.617
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: Worker-17: Launching SystemDebugger_Pcam5C-app_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-10-22 21:59:31.626
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1* Digilent Zybo Z7 210351A6C9E3A]. Thread: Worker-17: Launching SystemDebugger_Pcam5C-app_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-10-22 21:59:31.629
+!MESSAGE XSCT Command: [jtag targets -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351A6C9E3A" && level==1}], Thread: Worker-17: Launching SystemDebugger_Pcam5C-app_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-10-22 21:59:31.646
+!MESSAGE XSCT command with result: [jtag targets -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351A6C9E3A" && level==1}], Result: [null,      2  arm_dap (idcode 4ba00477 irlen 4)
+     3  xc7z020 (idcode 23727093 irlen 6 fpga)]. Thread: Worker-17: Launching SystemDebugger_Pcam5C-app_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-10-22 21:59:31.650
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: Worker-17: Launching SystemDebugger_Pcam5C-app_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-10-22 21:59:31.658
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1* Digilent Zybo Z7 210351A6C9E3A]. Thread: Worker-17: Launching SystemDebugger_Pcam5C-app_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-10-22 21:59:31.661
+!MESSAGE XSCT Command: [jtag targets -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351A6C9E3A" && level==1}], Thread: Worker-17: Launching SystemDebugger_Pcam5C-app_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-10-22 21:59:31.680
+!MESSAGE XSCT command with result: [jtag targets -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351A6C9E3A" && level==1}], Result: [null,      2  arm_dap (idcode 4ba00477 irlen 4)
+     3  xc7z020 (idcode 23727093 irlen 6 fpga)]. Thread: Worker-17: Launching SystemDebugger_Pcam5C-app_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-10-22 21:59:31.684
+!MESSAGE XSCT Command: [jtag targets -set -filter {name =~ "Digilent Zybo Z7 210351A6C9E3A" && level == 0}], Thread: Worker-17: Launching SystemDebugger_Pcam5C-app_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-10-22 21:59:31.703
+!MESSAGE XSCT command with result: [jtag targets -set -filter {name =~ "Digilent Zybo Z7 210351A6C9E3A" && level == 0}], Result: [null, ]. Thread: Worker-17: Launching SystemDebugger_Pcam5C-app_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-10-22 21:59:31.706
+!MESSAGE XSCT Command: [jtag frequency], Thread: Worker-17: Launching SystemDebugger_Pcam5C-app_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-10-22 21:59:31.710
+!MESSAGE XSCT command with result: [jtag frequency], Result: [null, 15000000]. Thread: Worker-17: Launching SystemDebugger_Pcam5C-app_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-10-22 21:59:31.714
+!MESSAGE XSCT Command: [targets -set -nocase -filter {name =~"APU*"}], Thread: Worker-17: Launching SystemDebugger_Pcam5C-app_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-10-22 21:59:31.728
+!MESSAGE XSCT command with result: [targets -set -nocase -filter {name =~"APU*"}], Result: [null, ]. Thread: Worker-17: Launching SystemDebugger_Pcam5C-app_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-10-22 21:59:31.732
+!MESSAGE XSCT Command: [rst -system], Thread: Worker-17: Launching SystemDebugger_Pcam5C-app_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-10-22 21:59:31.809
+!MESSAGE XSCT command with result: [rst -system], Result: [null, ]. Thread: Worker-17: Launching SystemDebugger_Pcam5C-app_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-10-22 21:59:31.813
+!MESSAGE XSCT Command: [after 3000], Thread: Worker-17: Launching SystemDebugger_Pcam5C-app_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-10-22 21:59:34.817
+!MESSAGE XSCT command with result: [after 3000], Result: [null, ]. Thread: Worker-17: Launching SystemDebugger_Pcam5C-app_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-10-22 21:59:34.842
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-10-22 21:59:34.852
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1* Digilent Zybo Z7 210351A6C9E3A]. Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-10-22 21:59:34.856
+!MESSAGE XSCT Command: [jtag targets -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351A6C9E3A" && level==1}], Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-10-22 21:59:34.874
+!MESSAGE XSCT command with result: [jtag targets -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351A6C9E3A" && level==1}], Result: [null,      2  arm_dap (idcode 4ba00477 irlen 4)
+     3  xc7z020 (idcode 23727093 irlen 6 fpga)]. Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-10-22 21:59:34.878
+!MESSAGE XSCT Command: [targets -set -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351A6C9E3A" && level==0} -index 1], Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-10-22 21:59:34.896
+!MESSAGE XSCT command with result: [targets -set -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351A6C9E3A" && level==0} -index 1], Result: [null, ]. Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-10-22 21:59:34.900
+!MESSAGE XSCT Command: [fpga -file C:/Github/Zybo_mipi/Pcam2019/vitis/Pcam5C-app/_ide/bitstream/system_wrapper.bit], Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-10-22 21:59:37.229
+!MESSAGE XSCT command with result: [fpga -file C:/Github/Zybo_mipi/Pcam2019/vitis/Pcam5C-app/_ide/bitstream/system_wrapper.bit], Result: [null, ]. Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-10-22 21:59:37.250
+!MESSAGE XSCT Command: [targets -set -nocase -filter {name =~"APU*"}], Thread: Worker-17: Launching SystemDebugger_Pcam5C-app_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-10-22 21:59:37.262
+!MESSAGE XSCT command with result: [targets -set -nocase -filter {name =~"APU*"}], Result: [null, ]. Thread: Worker-17: Launching SystemDebugger_Pcam5C-app_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-10-22 21:59:37.266
+!MESSAGE XSCT Command: [loadhw -hw C:/Github/Zybo_mipi/Pcam2019/vitis/Pcam5C-2019/export/Pcam5C-2019/hw/system_wrapper.xsa -mem-ranges [list {0x40000000 0xbfffffff}]], Thread: Worker-17: Launching SystemDebugger_Pcam5C-app_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-10-22 21:59:40.155
+!MESSAGE XSCT command with result: [loadhw -hw C:/Github/Zybo_mipi/Pcam2019/vitis/Pcam5C-2019/export/Pcam5C-2019/hw/system_wrapper.xsa -mem-ranges [list {0x40000000 0xbfffffff}]], Result: [null, system_wrapper_5]. Thread: Worker-17: Launching SystemDebugger_Pcam5C-app_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-10-22 21:59:40.159
+!MESSAGE XSCT Command: [configparams force-mem-access 1], Thread: Worker-17: Launching SystemDebugger_Pcam5C-app_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-10-22 21:59:40.163
+!MESSAGE XSCT command with result: [configparams force-mem-access 1], Result: [null, ]. Thread: Worker-17: Launching SystemDebugger_Pcam5C-app_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-10-22 21:59:40.167
+!MESSAGE XSCT Command: [targets -set -nocase -filter {name =~"APU*"}], Thread: Worker-17: Launching SystemDebugger_Pcam5C-app_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-10-22 21:59:40.177
+!MESSAGE XSCT command with result: [targets -set -nocase -filter {name =~"APU*"}], Result: [null, ]. Thread: Worker-17: Launching SystemDebugger_Pcam5C-app_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-10-22 21:59:40.181
+!MESSAGE XSCT Command: [source C:/Github/Zybo_mipi/Pcam2019/vitis/Pcam5C-app/_ide/psinit/ps7_init.tcl], Thread: Worker-17: Launching SystemDebugger_Pcam5C-app_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-10-22 21:59:40.186
+!MESSAGE XSCT command with result: [source C:/Github/Zybo_mipi/Pcam2019/vitis/Pcam5C-app/_ide/psinit/ps7_init.tcl], Result: [null, ]. Thread: Worker-17: Launching SystemDebugger_Pcam5C-app_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-10-22 21:59:40.189
+!MESSAGE XSCT Command: [ps7_init], Thread: Worker-17: Launching SystemDebugger_Pcam5C-app_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-10-22 21:59:40.459
+!MESSAGE XSCT command with result: [ps7_init], Result: [null, ]. Thread: Worker-17: Launching SystemDebugger_Pcam5C-app_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-10-22 21:59:40.463
+!MESSAGE XSCT Command: [ps7_post_config], Thread: Worker-17: Launching SystemDebugger_Pcam5C-app_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-10-22 21:59:40.472
+!MESSAGE XSCT command with result: [ps7_post_config], Result: [null, ]. Thread: Worker-17: Launching SystemDebugger_Pcam5C-app_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-10-22 21:59:40.475
+!MESSAGE XSCT Command: [targets -set -nocase -filter {name =~ "*A9*#0"}], Thread: Worker-17: Launching SystemDebugger_Pcam5C-app_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-10-22 21:59:40.487
+!MESSAGE XSCT command with result: [targets -set -nocase -filter {name =~ "*A9*#0"}], Result: [null, ]. Thread: Worker-17: Launching SystemDebugger_Pcam5C-app_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-10-22 21:59:40.490
+!MESSAGE XSCT Command: [dow C:/Github/Zybo_mipi/Pcam2019/vitis/Pcam5C-app/Debug/Pcam5C-app.elf], Thread: Worker-17: Launching SystemDebugger_Pcam5C-app_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-10-22 21:59:41.916
+!MESSAGE XSCT command with result: [dow C:/Github/Zybo_mipi/Pcam2019/vitis/Pcam5C-app/Debug/Pcam5C-app.elf], Result: [null, ]. Thread: Worker-17: Launching SystemDebugger_Pcam5C-app_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-10-22 21:59:41.920
+!MESSAGE XSCT Command: [configparams force-mem-access 0], Thread: Worker-17: Launching SystemDebugger_Pcam5C-app_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-10-22 21:59:41.952
+!MESSAGE XSCT command with result: [configparams force-mem-access 0], Result: [null, ]. Thread: Worker-17: Launching SystemDebugger_Pcam5C-app_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-10-22 21:59:41.992
+!MESSAGE XSCT Command: [targets -set -nocase -filter {name =~ "*A9*#0"}], Thread: Worker-17: Launching SystemDebugger_Pcam5C-app_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-10-22 21:59:42.053
+!MESSAGE XSCT command with result: [targets -set -nocase -filter {name =~ "*A9*#0"}], Result: [null, ]. Thread: Worker-17: Launching SystemDebugger_Pcam5C-app_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-10-22 21:59:42.057
+!MESSAGE XSCT Command: [con], Thread: Worker-17: Launching SystemDebugger_Pcam5C-app_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-10-22 21:59:42.065
+!MESSAGE XSCT command with result: [con], Result: [null, ]. Thread: Worker-17: Launching SystemDebugger_Pcam5C-app_system
+
+!ENTRY com.xilinx.sdk.utils 1 0 2020-10-22 21:59:42.070
+!MESSAGE Tool usage for 'TCF_APP_DEBUG' updated to '7'
+
+!ENTRY com.xilinx.sdk.utils 1 0 2020-10-22 21:59:42.074
+!MESSAGE Tool usage for 'TCF_SYSTEM_DEBUG' updated to '7'
+
+!ENTRY org.eclipse.core.resources 4 568 2020-10-22 22:00:34.414
+!MESSAGE Could not write metadata for '/RemoteSystemsTempFiles'.
+!STACK 0
+java.io.FileNotFoundException: C:\Github\Zybo_mipi\Pcam2019\vitis\.metadata\.plugins\org.eclipse.core.resources\.projects\RemoteSystemsTempFiles\.markers.snap (指定されたパスが見つかりません。)
+	at java.base/java.io.FileOutputStream.open0(Native Method)
+	at java.base/java.io.FileOutputStream.open(Unknown Source)
+	at java.base/java.io.FileOutputStream.<init>(Unknown Source)
+	at java.base/java.io.FileOutputStream.<init>(Unknown Source)
+	at org.eclipse.core.internal.localstore.SafeChunkyOutputStream.<init>(SafeChunkyOutputStream.java:45)
+	at org.eclipse.core.internal.localstore.SafeChunkyOutputStream.<init>(SafeChunkyOutputStream.java:41)
+	at org.eclipse.core.internal.resources.SaveManager.visitAndSnap(SaveManager.java:1735)
+	at org.eclipse.core.internal.resources.SaveManager.visitAndSnap(SaveManager.java:1816)
+	at org.eclipse.core.internal.resources.SaveManager.save(SaveManager.java:1204)
+	at org.eclipse.core.internal.resources.SaveManager.save(SaveManager.java:1145)
+	at org.eclipse.core.internal.resources.DelayedSnapshotJob.run(DelayedSnapshotJob.java:52)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:60)
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-10-22 22:02:06.425
+!MESSAGE XSCT Command: [disconnect tcfchan#14], Thread: Thread-537
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-10-22 22:02:06.431
+!MESSAGE XSCT command with result: [disconnect tcfchan#14], Result: [null, ]. Thread: Thread-537
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-10-22 22:02:06.466
+!MESSAGE XSCT Command: [connect -url tcp:127.0.0.1:3121], Thread: Worker-16: Launching SystemDebugger_Pcam5C-app_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-10-22 22:02:06.473
+!MESSAGE XSCT command with result: [connect -url tcp:127.0.0.1:3121], Result: [null, tcfchan#15]. Thread: Worker-16: Launching SystemDebugger_Pcam5C-app_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-10-22 22:02:06.477
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: Worker-16: Launching SystemDebugger_Pcam5C-app_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-10-22 22:02:06.490
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1* Digilent Zybo Z7 210351A6C9E3A]. Thread: Worker-16: Launching SystemDebugger_Pcam5C-app_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-10-22 22:02:06.494
+!MESSAGE XSCT Command: [version -server], Thread: Worker-16: Launching SystemDebugger_Pcam5C-app_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-10-22 22:02:06.499
+!MESSAGE XSCT command with result: [version -server], Result: [null, 2019.2]. Thread: Worker-16: Launching SystemDebugger_Pcam5C-app_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-10-22 22:02:06.503
+!MESSAGE XSCT Command: [version], Thread: Worker-16: Launching SystemDebugger_Pcam5C-app_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-10-22 22:02:06.507
+!MESSAGE XSCT command with result: [version], Result: [null, xsct 2019.2
+SW Build 2708876 on Wed Nov  6 21:40:23 MST 2019
+Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.]. Thread: Worker-16: Launching SystemDebugger_Pcam5C-app_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-10-22 22:02:06.511
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: Worker-16: Launching SystemDebugger_Pcam5C-app_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-10-22 22:02:06.520
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1* Digilent Zybo Z7 210351A6C9E3A]. Thread: Worker-16: Launching SystemDebugger_Pcam5C-app_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-10-22 22:02:06.524
+!MESSAGE XSCT Command: [jtag targets -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351A6C9E3A" && level==1}], Thread: Worker-16: Launching SystemDebugger_Pcam5C-app_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-10-22 22:02:06.541
+!MESSAGE XSCT command with result: [jtag targets -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351A6C9E3A" && level==1}], Result: [null,      2  arm_dap (idcode 4ba00477 irlen 4)
+     3  xc7z020 (idcode 23727093 irlen 6 fpga)]. Thread: Worker-16: Launching SystemDebugger_Pcam5C-app_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-10-22 22:02:06.545
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: Worker-16: Launching SystemDebugger_Pcam5C-app_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-10-22 22:02:06.554
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1* Digilent Zybo Z7 210351A6C9E3A]. Thread: Worker-16: Launching SystemDebugger_Pcam5C-app_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-10-22 22:02:06.557
+!MESSAGE XSCT Command: [jtag targets -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351A6C9E3A" && level==1}], Thread: Worker-16: Launching SystemDebugger_Pcam5C-app_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-10-22 22:02:06.575
+!MESSAGE XSCT command with result: [jtag targets -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351A6C9E3A" && level==1}], Result: [null,      2  arm_dap (idcode 4ba00477 irlen 4)
+     3  xc7z020 (idcode 23727093 irlen 6 fpga)]. Thread: Worker-16: Launching SystemDebugger_Pcam5C-app_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-10-22 22:02:06.579
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: Worker-16: Launching SystemDebugger_Pcam5C-app_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-10-22 22:02:06.587
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1* Digilent Zybo Z7 210351A6C9E3A]. Thread: Worker-16: Launching SystemDebugger_Pcam5C-app_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-10-22 22:02:06.591
+!MESSAGE XSCT Command: [jtag targets -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351A6C9E3A" && level==1}], Thread: Worker-16: Launching SystemDebugger_Pcam5C-app_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-10-22 22:02:06.608
+!MESSAGE XSCT command with result: [jtag targets -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351A6C9E3A" && level==1}], Result: [null,      2  arm_dap (idcode 4ba00477 irlen 4)
+     3  xc7z020 (idcode 23727093 irlen 6 fpga)]. Thread: Worker-16: Launching SystemDebugger_Pcam5C-app_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-10-22 22:02:06.612
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: Worker-16: Launching SystemDebugger_Pcam5C-app_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-10-22 22:02:06.620
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1* Digilent Zybo Z7 210351A6C9E3A]. Thread: Worker-16: Launching SystemDebugger_Pcam5C-app_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-10-22 22:02:06.624
+!MESSAGE XSCT Command: [jtag targets -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351A6C9E3A" && level==1}], Thread: Worker-16: Launching SystemDebugger_Pcam5C-app_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-10-22 22:02:06.642
+!MESSAGE XSCT command with result: [jtag targets -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351A6C9E3A" && level==1}], Result: [null,      2  arm_dap (idcode 4ba00477 irlen 4)
+     3  xc7z020 (idcode 23727093 irlen 6 fpga)]. Thread: Worker-16: Launching SystemDebugger_Pcam5C-app_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-10-22 22:02:06.645
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: Worker-16: Launching SystemDebugger_Pcam5C-app_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-10-22 22:02:06.654
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1* Digilent Zybo Z7 210351A6C9E3A]. Thread: Worker-16: Launching SystemDebugger_Pcam5C-app_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-10-22 22:02:06.657
+!MESSAGE XSCT Command: [jtag targets -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351A6C9E3A" && level==1}], Thread: Worker-16: Launching SystemDebugger_Pcam5C-app_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-10-22 22:02:06.675
+!MESSAGE XSCT command with result: [jtag targets -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351A6C9E3A" && level==1}], Result: [null,      2  arm_dap (idcode 4ba00477 irlen 4)
+     3  xc7z020 (idcode 23727093 irlen 6 fpga)]. Thread: Worker-16: Launching SystemDebugger_Pcam5C-app_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-10-22 22:02:06.679
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: Worker-16: Launching SystemDebugger_Pcam5C-app_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-10-22 22:02:06.687
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1* Digilent Zybo Z7 210351A6C9E3A]. Thread: Worker-16: Launching SystemDebugger_Pcam5C-app_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-10-22 22:02:06.691
+!MESSAGE XSCT Command: [jtag targets -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351A6C9E3A" && level==1}], Thread: Worker-16: Launching SystemDebugger_Pcam5C-app_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-10-22 22:02:06.709
+!MESSAGE XSCT command with result: [jtag targets -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351A6C9E3A" && level==1}], Result: [null,      2  arm_dap (idcode 4ba00477 irlen 4)
+     3  xc7z020 (idcode 23727093 irlen 6 fpga)]. Thread: Worker-16: Launching SystemDebugger_Pcam5C-app_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-10-22 22:02:06.712
+!MESSAGE XSCT Command: [jtag targets -set -filter {name =~ "Digilent Zybo Z7 210351A6C9E3A" && level == 0}], Thread: Worker-16: Launching SystemDebugger_Pcam5C-app_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-10-22 22:02:06.730
+!MESSAGE XSCT command with result: [jtag targets -set -filter {name =~ "Digilent Zybo Z7 210351A6C9E3A" && level == 0}], Result: [null, ]. Thread: Worker-16: Launching SystemDebugger_Pcam5C-app_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-10-22 22:02:06.734
+!MESSAGE XSCT Command: [jtag frequency], Thread: Worker-16: Launching SystemDebugger_Pcam5C-app_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-10-22 22:02:06.738
+!MESSAGE XSCT command with result: [jtag frequency], Result: [null, 15000000]. Thread: Worker-16: Launching SystemDebugger_Pcam5C-app_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-10-22 22:02:06.741
+!MESSAGE XSCT Command: [targets -set -nocase -filter {name =~"APU*"}], Thread: Worker-16: Launching SystemDebugger_Pcam5C-app_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-10-22 22:02:06.754
+!MESSAGE XSCT command with result: [targets -set -nocase -filter {name =~"APU*"}], Result: [null, ]. Thread: Worker-16: Launching SystemDebugger_Pcam5C-app_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-10-22 22:02:06.758
+!MESSAGE XSCT Command: [rst -system], Thread: Worker-16: Launching SystemDebugger_Pcam5C-app_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-10-22 22:02:06.833
+!MESSAGE XSCT command with result: [rst -system], Result: [null, ]. Thread: Worker-16: Launching SystemDebugger_Pcam5C-app_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-10-22 22:02:06.837
+!MESSAGE XSCT Command: [after 3000], Thread: Worker-16: Launching SystemDebugger_Pcam5C-app_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-10-22 22:02:09.842
+!MESSAGE XSCT command with result: [after 3000], Result: [null, ]. Thread: Worker-16: Launching SystemDebugger_Pcam5C-app_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-10-22 22:02:09.865
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-10-22 22:02:09.876
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1* Digilent Zybo Z7 210351A6C9E3A]. Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-10-22 22:02:09.879
+!MESSAGE XSCT Command: [jtag targets -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351A6C9E3A" && level==1}], Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-10-22 22:02:09.896
+!MESSAGE XSCT command with result: [jtag targets -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351A6C9E3A" && level==1}], Result: [null,      2  arm_dap (idcode 4ba00477 irlen 4)
+     3  xc7z020 (idcode 23727093 irlen 6 fpga)]. Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-10-22 22:02:09.899
+!MESSAGE XSCT Command: [targets -set -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351A6C9E3A" && level==0} -index 1], Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-10-22 22:02:09.918
+!MESSAGE XSCT command with result: [targets -set -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351A6C9E3A" && level==0} -index 1], Result: [null, ]. Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-10-22 22:02:09.922
+!MESSAGE XSCT Command: [fpga -file C:/Github/Zybo_mipi/Pcam2019/vitis/Pcam5C-app/_ide/bitstream/system_wrapper.bit], Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-10-22 22:02:12.248
+!MESSAGE XSCT command with result: [fpga -file C:/Github/Zybo_mipi/Pcam2019/vitis/Pcam5C-app/_ide/bitstream/system_wrapper.bit], Result: [null, ]. Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-10-22 22:02:12.272
+!MESSAGE XSCT Command: [targets -set -nocase -filter {name =~"APU*"}], Thread: Worker-16: Launching SystemDebugger_Pcam5C-app_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-10-22 22:02:12.283
+!MESSAGE XSCT command with result: [targets -set -nocase -filter {name =~"APU*"}], Result: [null, ]. Thread: Worker-16: Launching SystemDebugger_Pcam5C-app_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-10-22 22:02:12.287
+!MESSAGE XSCT Command: [loadhw -hw C:/Github/Zybo_mipi/Pcam2019/vitis/Pcam5C-2019/export/Pcam5C-2019/hw/system_wrapper.xsa -mem-ranges [list {0x40000000 0xbfffffff}]], Thread: Worker-16: Launching SystemDebugger_Pcam5C-app_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-10-22 22:02:15.459
+!MESSAGE XSCT command with result: [loadhw -hw C:/Github/Zybo_mipi/Pcam2019/vitis/Pcam5C-2019/export/Pcam5C-2019/hw/system_wrapper.xsa -mem-ranges [list {0x40000000 0xbfffffff}]], Result: [null, system_wrapper_6]. Thread: Worker-16: Launching SystemDebugger_Pcam5C-app_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-10-22 22:02:15.463
+!MESSAGE XSCT Command: [configparams force-mem-access 1], Thread: Worker-16: Launching SystemDebugger_Pcam5C-app_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-10-22 22:02:15.467
+!MESSAGE XSCT command with result: [configparams force-mem-access 1], Result: [null, ]. Thread: Worker-16: Launching SystemDebugger_Pcam5C-app_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-10-22 22:02:15.471
+!MESSAGE XSCT Command: [targets -set -nocase -filter {name =~"APU*"}], Thread: Worker-16: Launching SystemDebugger_Pcam5C-app_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-10-22 22:02:15.481
+!MESSAGE XSCT command with result: [targets -set -nocase -filter {name =~"APU*"}], Result: [null, ]. Thread: Worker-16: Launching SystemDebugger_Pcam5C-app_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-10-22 22:02:15.485
+!MESSAGE XSCT Command: [source C:/Github/Zybo_mipi/Pcam2019/vitis/Pcam5C-app/_ide/psinit/ps7_init.tcl], Thread: Worker-16: Launching SystemDebugger_Pcam5C-app_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-10-22 22:02:15.490
+!MESSAGE XSCT command with result: [source C:/Github/Zybo_mipi/Pcam2019/vitis/Pcam5C-app/_ide/psinit/ps7_init.tcl], Result: [null, ]. Thread: Worker-16: Launching SystemDebugger_Pcam5C-app_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-10-22 22:02:15.493
+!MESSAGE XSCT Command: [ps7_init], Thread: Worker-16: Launching SystemDebugger_Pcam5C-app_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-10-22 22:02:15.755
+!MESSAGE XSCT command with result: [ps7_init], Result: [null, ]. Thread: Worker-16: Launching SystemDebugger_Pcam5C-app_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-10-22 22:02:15.759
+!MESSAGE XSCT Command: [ps7_post_config], Thread: Worker-16: Launching SystemDebugger_Pcam5C-app_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-10-22 22:02:15.770
+!MESSAGE XSCT command with result: [ps7_post_config], Result: [null, ]. Thread: Worker-16: Launching SystemDebugger_Pcam5C-app_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-10-22 22:02:15.774
+!MESSAGE XSCT Command: [targets -set -nocase -filter {name =~ "*A9*#0"}], Thread: Worker-16: Launching SystemDebugger_Pcam5C-app_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-10-22 22:02:15.786
+!MESSAGE XSCT command with result: [targets -set -nocase -filter {name =~ "*A9*#0"}], Result: [null, ]. Thread: Worker-16: Launching SystemDebugger_Pcam5C-app_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-10-22 22:02:15.790
+!MESSAGE XSCT Command: [dow C:/Github/Zybo_mipi/Pcam2019/vitis/Pcam5C-app/Debug/Pcam5C-app.elf], Thread: Worker-16: Launching SystemDebugger_Pcam5C-app_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-10-22 22:02:17.223
+!MESSAGE XSCT command with result: [dow C:/Github/Zybo_mipi/Pcam2019/vitis/Pcam5C-app/Debug/Pcam5C-app.elf], Result: [null, ]. Thread: Worker-16: Launching SystemDebugger_Pcam5C-app_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-10-22 22:02:17.227
+!MESSAGE XSCT Command: [configparams force-mem-access 0], Thread: Worker-16: Launching SystemDebugger_Pcam5C-app_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-10-22 22:02:17.248
+!MESSAGE XSCT command with result: [configparams force-mem-access 0], Result: [null, ]. Thread: Worker-16: Launching SystemDebugger_Pcam5C-app_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-10-22 22:02:17.294
+!MESSAGE XSCT Command: [targets -set -nocase -filter {name =~ "*A9*#0"}], Thread: Worker-16: Launching SystemDebugger_Pcam5C-app_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-10-22 22:02:17.361
+!MESSAGE XSCT command with result: [targets -set -nocase -filter {name =~ "*A9*#0"}], Result: [null, ]. Thread: Worker-16: Launching SystemDebugger_Pcam5C-app_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-10-22 22:02:17.364
+!MESSAGE XSCT Command: [con], Thread: Worker-16: Launching SystemDebugger_Pcam5C-app_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-10-22 22:02:17.375
+!MESSAGE XSCT command with result: [con], Result: [null, ]. Thread: Worker-16: Launching SystemDebugger_Pcam5C-app_system
+
+!ENTRY com.xilinx.sdk.utils 1 0 2020-10-22 22:02:17.379
+!MESSAGE Tool usage for 'TCF_APP_DEBUG' updated to '8'
+
+!ENTRY com.xilinx.sdk.utils 1 0 2020-10-22 22:02:17.382
+!MESSAGE Tool usage for 'TCF_SYSTEM_DEBUG' updated to '8'
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-10-22 22:03:04.829
+!MESSAGE XSCT Command: [disconnect tcfchan#15], Thread: Thread-588
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-10-22 22:03:04.835
+!MESSAGE XSCT command with result: [disconnect tcfchan#15], Result: [null, ]. Thread: Thread-588
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-10-22 22:03:04.849
+!MESSAGE XSCT Command: [connect -url tcp:127.0.0.1:3121], Thread: Worker-21: Launching SystemDebugger_Pcam5C-app_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-10-22 22:03:04.867
+!MESSAGE XSCT command with result: [connect -url tcp:127.0.0.1:3121], Result: [null, tcfchan#16]. Thread: Worker-21: Launching SystemDebugger_Pcam5C-app_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-10-22 22:03:04.870
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: Worker-21: Launching SystemDebugger_Pcam5C-app_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-10-22 22:03:04.882
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1* Digilent Zybo Z7 210351A6C9E3A]. Thread: Worker-21: Launching SystemDebugger_Pcam5C-app_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-10-22 22:03:04.886
+!MESSAGE XSCT Command: [version -server], Thread: Worker-21: Launching SystemDebugger_Pcam5C-app_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-10-22 22:03:04.891
+!MESSAGE XSCT command with result: [version -server], Result: [null, 2019.2]. Thread: Worker-21: Launching SystemDebugger_Pcam5C-app_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-10-22 22:03:04.894
+!MESSAGE XSCT Command: [version], Thread: Worker-21: Launching SystemDebugger_Pcam5C-app_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-10-22 22:03:04.898
+!MESSAGE XSCT command with result: [version], Result: [null, xsct 2019.2
+SW Build 2708876 on Wed Nov  6 21:40:23 MST 2019
+Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.]. Thread: Worker-21: Launching SystemDebugger_Pcam5C-app_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-10-22 22:03:04.902
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: Worker-21: Launching SystemDebugger_Pcam5C-app_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-10-22 22:03:04.910
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1* Digilent Zybo Z7 210351A6C9E3A]. Thread: Worker-21: Launching SystemDebugger_Pcam5C-app_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-10-22 22:03:04.914
+!MESSAGE XSCT Command: [jtag targets -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351A6C9E3A" && level==1}], Thread: Worker-21: Launching SystemDebugger_Pcam5C-app_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-10-22 22:03:04.932
+!MESSAGE XSCT command with result: [jtag targets -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351A6C9E3A" && level==1}], Result: [null,      2  arm_dap (idcode 4ba00477 irlen 4)
+     3  xc7z020 (idcode 23727093 irlen 6 fpga)]. Thread: Worker-21: Launching SystemDebugger_Pcam5C-app_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-10-22 22:03:04.935
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: Worker-21: Launching SystemDebugger_Pcam5C-app_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-10-22 22:03:04.944
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1* Digilent Zybo Z7 210351A6C9E3A]. Thread: Worker-21: Launching SystemDebugger_Pcam5C-app_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-10-22 22:03:04.947
+!MESSAGE XSCT Command: [jtag targets -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351A6C9E3A" && level==1}], Thread: Worker-21: Launching SystemDebugger_Pcam5C-app_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-10-22 22:03:04.965
+!MESSAGE XSCT command with result: [jtag targets -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351A6C9E3A" && level==1}], Result: [null,      2  arm_dap (idcode 4ba00477 irlen 4)
+     3  xc7z020 (idcode 23727093 irlen 6 fpga)]. Thread: Worker-21: Launching SystemDebugger_Pcam5C-app_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-10-22 22:03:04.969
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: Worker-21: Launching SystemDebugger_Pcam5C-app_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-10-22 22:03:04.978
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1* Digilent Zybo Z7 210351A6C9E3A]. Thread: Worker-21: Launching SystemDebugger_Pcam5C-app_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-10-22 22:03:04.981
+!MESSAGE XSCT Command: [jtag targets -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351A6C9E3A" && level==1}], Thread: Worker-21: Launching SystemDebugger_Pcam5C-app_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-10-22 22:03:05.001
+!MESSAGE XSCT command with result: [jtag targets -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351A6C9E3A" && level==1}], Result: [null,      2  arm_dap (idcode 4ba00477 irlen 4)
+     3  xc7z020 (idcode 23727093 irlen 6 fpga)]. Thread: Worker-21: Launching SystemDebugger_Pcam5C-app_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-10-22 22:03:05.005
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: Worker-21: Launching SystemDebugger_Pcam5C-app_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-10-22 22:03:05.013
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1* Digilent Zybo Z7 210351A6C9E3A]. Thread: Worker-21: Launching SystemDebugger_Pcam5C-app_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-10-22 22:03:05.017
+!MESSAGE XSCT Command: [jtag targets -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351A6C9E3A" && level==1}], Thread: Worker-21: Launching SystemDebugger_Pcam5C-app_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-10-22 22:03:05.035
+!MESSAGE XSCT command with result: [jtag targets -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351A6C9E3A" && level==1}], Result: [null,      2  arm_dap (idcode 4ba00477 irlen 4)
+     3  xc7z020 (idcode 23727093 irlen 6 fpga)]. Thread: Worker-21: Launching SystemDebugger_Pcam5C-app_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-10-22 22:03:05.038
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: Worker-21: Launching SystemDebugger_Pcam5C-app_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-10-22 22:03:05.047
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1* Digilent Zybo Z7 210351A6C9E3A]. Thread: Worker-21: Launching SystemDebugger_Pcam5C-app_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-10-22 22:03:05.051
+!MESSAGE XSCT Command: [jtag targets -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351A6C9E3A" && level==1}], Thread: Worker-21: Launching SystemDebugger_Pcam5C-app_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-10-22 22:03:05.070
+!MESSAGE XSCT command with result: [jtag targets -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351A6C9E3A" && level==1}], Result: [null,      2  arm_dap (idcode 4ba00477 irlen 4)
+     3  xc7z020 (idcode 23727093 irlen 6 fpga)]. Thread: Worker-21: Launching SystemDebugger_Pcam5C-app_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-10-22 22:03:05.074
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: Worker-21: Launching SystemDebugger_Pcam5C-app_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-10-22 22:03:05.083
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1* Digilent Zybo Z7 210351A6C9E3A]. Thread: Worker-21: Launching SystemDebugger_Pcam5C-app_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-10-22 22:03:05.087
+!MESSAGE XSCT Command: [jtag targets -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351A6C9E3A" && level==1}], Thread: Worker-21: Launching SystemDebugger_Pcam5C-app_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-10-22 22:03:05.106
+!MESSAGE XSCT command with result: [jtag targets -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351A6C9E3A" && level==1}], Result: [null,      2  arm_dap (idcode 4ba00477 irlen 4)
+     3  xc7z020 (idcode 23727093 irlen 6 fpga)]. Thread: Worker-21: Launching SystemDebugger_Pcam5C-app_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-10-22 22:03:05.110
+!MESSAGE XSCT Command: [jtag targets -set -filter {name =~ "Digilent Zybo Z7 210351A6C9E3A" && level == 0}], Thread: Worker-21: Launching SystemDebugger_Pcam5C-app_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-10-22 22:03:05.131
+!MESSAGE XSCT command with result: [jtag targets -set -filter {name =~ "Digilent Zybo Z7 210351A6C9E3A" && level == 0}], Result: [null, ]. Thread: Worker-21: Launching SystemDebugger_Pcam5C-app_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-10-22 22:03:05.135
+!MESSAGE XSCT Command: [jtag frequency], Thread: Worker-21: Launching SystemDebugger_Pcam5C-app_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-10-22 22:03:05.140
+!MESSAGE XSCT command with result: [jtag frequency], Result: [null, 15000000]. Thread: Worker-21: Launching SystemDebugger_Pcam5C-app_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-10-22 22:03:05.145
+!MESSAGE XSCT Command: [targets -set -nocase -filter {name =~"APU*"}], Thread: Worker-21: Launching SystemDebugger_Pcam5C-app_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-10-22 22:03:05.160
+!MESSAGE XSCT command with result: [targets -set -nocase -filter {name =~"APU*"}], Result: [null, ]. Thread: Worker-21: Launching SystemDebugger_Pcam5C-app_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-10-22 22:03:05.165
+!MESSAGE XSCT Command: [rst -system], Thread: Worker-21: Launching SystemDebugger_Pcam5C-app_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-10-22 22:03:05.241
+!MESSAGE XSCT command with result: [rst -system], Result: [null, ]. Thread: Worker-21: Launching SystemDebugger_Pcam5C-app_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-10-22 22:03:05.245
+!MESSAGE XSCT Command: [after 3000], Thread: Worker-21: Launching SystemDebugger_Pcam5C-app_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-10-22 22:03:08.249
+!MESSAGE XSCT command with result: [after 3000], Result: [null, ]. Thread: Worker-21: Launching SystemDebugger_Pcam5C-app_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-10-22 22:03:08.272
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-10-22 22:03:08.283
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1* Digilent Zybo Z7 210351A6C9E3A]. Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-10-22 22:03:08.286
+!MESSAGE XSCT Command: [jtag targets -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351A6C9E3A" && level==1}], Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-10-22 22:03:08.304
+!MESSAGE XSCT command with result: [jtag targets -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351A6C9E3A" && level==1}], Result: [null,      2  arm_dap (idcode 4ba00477 irlen 4)
+     3  xc7z020 (idcode 23727093 irlen 6 fpga)]. Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-10-22 22:03:08.308
+!MESSAGE XSCT Command: [targets -set -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351A6C9E3A" && level==0} -index 1], Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-10-22 22:03:08.327
+!MESSAGE XSCT command with result: [targets -set -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351A6C9E3A" && level==0} -index 1], Result: [null, ]. Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-10-22 22:03:08.330
+!MESSAGE XSCT Command: [fpga -file C:/Github/Zybo_mipi/Pcam2019/vitis/Pcam5C-app/_ide/bitstream/system_wrapper.bit], Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-10-22 22:03:10.658
+!MESSAGE XSCT command with result: [fpga -file C:/Github/Zybo_mipi/Pcam2019/vitis/Pcam5C-app/_ide/bitstream/system_wrapper.bit], Result: [null, ]. Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-10-22 22:03:10.676
+!MESSAGE XSCT Command: [targets -set -nocase -filter {name =~"APU*"}], Thread: Worker-21: Launching SystemDebugger_Pcam5C-app_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-10-22 22:03:10.688
+!MESSAGE XSCT command with result: [targets -set -nocase -filter {name =~"APU*"}], Result: [null, ]. Thread: Worker-21: Launching SystemDebugger_Pcam5C-app_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-10-22 22:03:10.692
+!MESSAGE XSCT Command: [loadhw -hw C:/Github/Zybo_mipi/Pcam2019/vitis/Pcam5C-2019/export/Pcam5C-2019/hw/system_wrapper.xsa -mem-ranges [list {0x40000000 0xbfffffff}]], Thread: Worker-21: Launching SystemDebugger_Pcam5C-app_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-10-22 22:03:13.990
+!MESSAGE XSCT command with result: [loadhw -hw C:/Github/Zybo_mipi/Pcam2019/vitis/Pcam5C-2019/export/Pcam5C-2019/hw/system_wrapper.xsa -mem-ranges [list {0x40000000 0xbfffffff}]], Result: [null, system_wrapper_7]. Thread: Worker-21: Launching SystemDebugger_Pcam5C-app_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-10-22 22:03:13.994
+!MESSAGE XSCT Command: [configparams force-mem-access 1], Thread: Worker-21: Launching SystemDebugger_Pcam5C-app_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-10-22 22:03:13.999
+!MESSAGE XSCT command with result: [configparams force-mem-access 1], Result: [null, ]. Thread: Worker-21: Launching SystemDebugger_Pcam5C-app_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-10-22 22:03:14.003
+!MESSAGE XSCT Command: [targets -set -nocase -filter {name =~"APU*"}], Thread: Worker-21: Launching SystemDebugger_Pcam5C-app_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-10-22 22:03:14.014
+!MESSAGE XSCT command with result: [targets -set -nocase -filter {name =~"APU*"}], Result: [null, ]. Thread: Worker-21: Launching SystemDebugger_Pcam5C-app_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-10-22 22:03:14.018
+!MESSAGE XSCT Command: [source C:/Github/Zybo_mipi/Pcam2019/vitis/Pcam5C-app/_ide/psinit/ps7_init.tcl], Thread: Worker-21: Launching SystemDebugger_Pcam5C-app_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-10-22 22:03:14.023
+!MESSAGE XSCT command with result: [source C:/Github/Zybo_mipi/Pcam2019/vitis/Pcam5C-app/_ide/psinit/ps7_init.tcl], Result: [null, ]. Thread: Worker-21: Launching SystemDebugger_Pcam5C-app_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-10-22 22:03:14.026
+!MESSAGE XSCT Command: [ps7_init], Thread: Worker-21: Launching SystemDebugger_Pcam5C-app_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-10-22 22:03:14.323
+!MESSAGE XSCT command with result: [ps7_init], Result: [null, ]. Thread: Worker-21: Launching SystemDebugger_Pcam5C-app_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-10-22 22:03:14.327
+!MESSAGE XSCT Command: [ps7_post_config], Thread: Worker-21: Launching SystemDebugger_Pcam5C-app_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-10-22 22:03:14.338
+!MESSAGE XSCT command with result: [ps7_post_config], Result: [null, ]. Thread: Worker-21: Launching SystemDebugger_Pcam5C-app_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-10-22 22:03:14.341
+!MESSAGE XSCT Command: [targets -set -nocase -filter {name =~ "*A9*#0"}], Thread: Worker-21: Launching SystemDebugger_Pcam5C-app_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-10-22 22:03:14.352
+!MESSAGE XSCT command with result: [targets -set -nocase -filter {name =~ "*A9*#0"}], Result: [null, ]. Thread: Worker-21: Launching SystemDebugger_Pcam5C-app_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-10-22 22:03:14.356
+!MESSAGE XSCT Command: [dow C:/Github/Zybo_mipi/Pcam2019/vitis/Pcam5C-app/Debug/Pcam5C-app.elf], Thread: Worker-21: Launching SystemDebugger_Pcam5C-app_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-10-22 22:03:15.799
+!MESSAGE XSCT command with result: [dow C:/Github/Zybo_mipi/Pcam2019/vitis/Pcam5C-app/Debug/Pcam5C-app.elf], Result: [null, ]. Thread: Worker-21: Launching SystemDebugger_Pcam5C-app_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-10-22 22:03:15.803
+!MESSAGE XSCT Command: [configparams force-mem-access 0], Thread: Worker-21: Launching SystemDebugger_Pcam5C-app_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-10-22 22:03:15.829
+!MESSAGE XSCT command with result: [configparams force-mem-access 0], Result: [null, ]. Thread: Worker-21: Launching SystemDebugger_Pcam5C-app_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-10-22 22:03:15.873
+!MESSAGE XSCT Command: [targets -set -nocase -filter {name =~ "*A9*#0"}], Thread: Worker-21: Launching SystemDebugger_Pcam5C-app_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-10-22 22:03:15.940
+!MESSAGE XSCT command with result: [targets -set -nocase -filter {name =~ "*A9*#0"}], Result: [null, ]. Thread: Worker-21: Launching SystemDebugger_Pcam5C-app_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-10-22 22:03:15.944
+!MESSAGE XSCT Command: [con], Thread: Worker-21: Launching SystemDebugger_Pcam5C-app_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-10-22 22:03:15.960
+!MESSAGE XSCT command with result: [con], Result: [null, ]. Thread: Worker-21: Launching SystemDebugger_Pcam5C-app_system
+
+!ENTRY com.xilinx.sdk.utils 1 0 2020-10-22 22:03:15.964
+!MESSAGE Tool usage for 'TCF_APP_DEBUG' updated to '9'
+
+!ENTRY com.xilinx.sdk.utils 1 0 2020-10-22 22:03:15.967
+!MESSAGE Tool usage for 'TCF_SYSTEM_DEBUG' updated to '9'
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-10-22 22:03:34.425
+!MESSAGE XSCT Command: [disconnect tcfchan#16], Thread: Thread-638
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-10-22 22:03:34.430
+!MESSAGE XSCT command with result: [disconnect tcfchan#16], Result: [null, ]. Thread: Thread-638
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-10-22 22:03:34.447
+!MESSAGE XSCT Command: [connect -url tcp:127.0.0.1:3121], Thread: Worker-19: Launching SystemDebugger_Pcam5C-app_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-10-22 22:03:34.458
+!MESSAGE XSCT command with result: [connect -url tcp:127.0.0.1:3121], Result: [null, tcfchan#17]. Thread: Worker-19: Launching SystemDebugger_Pcam5C-app_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-10-22 22:03:34.461
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: Worker-19: Launching SystemDebugger_Pcam5C-app_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-10-22 22:03:34.473
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1* Digilent Zybo Z7 210351A6C9E3A]. Thread: Worker-19: Launching SystemDebugger_Pcam5C-app_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-10-22 22:03:34.477
+!MESSAGE XSCT Command: [version -server], Thread: Worker-19: Launching SystemDebugger_Pcam5C-app_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-10-22 22:03:34.485
+!MESSAGE XSCT command with result: [version -server], Result: [null, 2019.2]. Thread: Worker-19: Launching SystemDebugger_Pcam5C-app_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-10-22 22:03:34.489
+!MESSAGE XSCT Command: [version], Thread: Worker-19: Launching SystemDebugger_Pcam5C-app_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-10-22 22:03:34.493
+!MESSAGE XSCT command with result: [version], Result: [null, xsct 2019.2
+SW Build 2708876 on Wed Nov  6 21:40:23 MST 2019
+Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.]. Thread: Worker-19: Launching SystemDebugger_Pcam5C-app_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-10-22 22:03:34.497
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: Worker-19: Launching SystemDebugger_Pcam5C-app_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-10-22 22:03:34.505
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1* Digilent Zybo Z7 210351A6C9E3A]. Thread: Worker-19: Launching SystemDebugger_Pcam5C-app_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-10-22 22:03:34.509
+!MESSAGE XSCT Command: [jtag targets -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351A6C9E3A" && level==1}], Thread: Worker-19: Launching SystemDebugger_Pcam5C-app_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-10-22 22:03:34.526
+!MESSAGE XSCT command with result: [jtag targets -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351A6C9E3A" && level==1}], Result: [null,      2  arm_dap (idcode 4ba00477 irlen 4)
+     3  xc7z020 (idcode 23727093 irlen 6 fpga)]. Thread: Worker-19: Launching SystemDebugger_Pcam5C-app_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-10-22 22:03:34.530
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: Worker-19: Launching SystemDebugger_Pcam5C-app_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-10-22 22:03:34.538
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1* Digilent Zybo Z7 210351A6C9E3A]. Thread: Worker-19: Launching SystemDebugger_Pcam5C-app_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-10-22 22:03:34.542
+!MESSAGE XSCT Command: [jtag targets -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351A6C9E3A" && level==1}], Thread: Worker-19: Launching SystemDebugger_Pcam5C-app_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-10-22 22:03:34.560
+!MESSAGE XSCT command with result: [jtag targets -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351A6C9E3A" && level==1}], Result: [null,      2  arm_dap (idcode 4ba00477 irlen 4)
+     3  xc7z020 (idcode 23727093 irlen 6 fpga)]. Thread: Worker-19: Launching SystemDebugger_Pcam5C-app_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-10-22 22:03:34.563
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: Worker-19: Launching SystemDebugger_Pcam5C-app_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-10-22 22:03:34.572
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1* Digilent Zybo Z7 210351A6C9E3A]. Thread: Worker-19: Launching SystemDebugger_Pcam5C-app_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-10-22 22:03:34.576
+!MESSAGE XSCT Command: [jtag targets -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351A6C9E3A" && level==1}], Thread: Worker-19: Launching SystemDebugger_Pcam5C-app_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-10-22 22:03:34.593
+!MESSAGE XSCT command with result: [jtag targets -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351A6C9E3A" && level==1}], Result: [null,      2  arm_dap (idcode 4ba00477 irlen 4)
+     3  xc7z020 (idcode 23727093 irlen 6 fpga)]. Thread: Worker-19: Launching SystemDebugger_Pcam5C-app_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-10-22 22:03:34.597
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: Worker-19: Launching SystemDebugger_Pcam5C-app_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-10-22 22:03:34.606
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1* Digilent Zybo Z7 210351A6C9E3A]. Thread: Worker-19: Launching SystemDebugger_Pcam5C-app_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-10-22 22:03:34.609
+!MESSAGE XSCT Command: [jtag targets -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351A6C9E3A" && level==1}], Thread: Worker-19: Launching SystemDebugger_Pcam5C-app_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-10-22 22:03:34.627
+!MESSAGE XSCT command with result: [jtag targets -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351A6C9E3A" && level==1}], Result: [null,      2  arm_dap (idcode 4ba00477 irlen 4)
+     3  xc7z020 (idcode 23727093 irlen 6 fpga)]. Thread: Worker-19: Launching SystemDebugger_Pcam5C-app_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-10-22 22:03:34.630
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: Worker-19: Launching SystemDebugger_Pcam5C-app_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-10-22 22:03:34.639
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1* Digilent Zybo Z7 210351A6C9E3A]. Thread: Worker-19: Launching SystemDebugger_Pcam5C-app_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-10-22 22:03:34.642
+!MESSAGE XSCT Command: [jtag targets -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351A6C9E3A" && level==1}], Thread: Worker-19: Launching SystemDebugger_Pcam5C-app_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-10-22 22:03:34.660
+!MESSAGE XSCT command with result: [jtag targets -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351A6C9E3A" && level==1}], Result: [null,      2  arm_dap (idcode 4ba00477 irlen 4)
+     3  xc7z020 (idcode 23727093 irlen 6 fpga)]. Thread: Worker-19: Launching SystemDebugger_Pcam5C-app_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-10-22 22:03:34.664
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: Worker-19: Launching SystemDebugger_Pcam5C-app_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-10-22 22:03:34.672
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1* Digilent Zybo Z7 210351A6C9E3A]. Thread: Worker-19: Launching SystemDebugger_Pcam5C-app_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-10-22 22:03:34.676
+!MESSAGE XSCT Command: [jtag targets -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351A6C9E3A" && level==1}], Thread: Worker-19: Launching SystemDebugger_Pcam5C-app_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-10-22 22:03:34.694
+!MESSAGE XSCT command with result: [jtag targets -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351A6C9E3A" && level==1}], Result: [null,      2  arm_dap (idcode 4ba00477 irlen 4)
+     3  xc7z020 (idcode 23727093 irlen 6 fpga)]. Thread: Worker-19: Launching SystemDebugger_Pcam5C-app_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-10-22 22:03:34.697
+!MESSAGE XSCT Command: [jtag targets -set -filter {name =~ "Digilent Zybo Z7 210351A6C9E3A" && level == 0}], Thread: Worker-19: Launching SystemDebugger_Pcam5C-app_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-10-22 22:03:34.716
+!MESSAGE XSCT command with result: [jtag targets -set -filter {name =~ "Digilent Zybo Z7 210351A6C9E3A" && level == 0}], Result: [null, ]. Thread: Worker-19: Launching SystemDebugger_Pcam5C-app_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-10-22 22:03:34.719
+!MESSAGE XSCT Command: [jtag frequency], Thread: Worker-19: Launching SystemDebugger_Pcam5C-app_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-10-22 22:03:34.723
+!MESSAGE XSCT command with result: [jtag frequency], Result: [null, 15000000]. Thread: Worker-19: Launching SystemDebugger_Pcam5C-app_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-10-22 22:03:34.727
+!MESSAGE XSCT Command: [targets -set -nocase -filter {name =~"APU*"}], Thread: Worker-19: Launching SystemDebugger_Pcam5C-app_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-10-22 22:03:34.744
+!MESSAGE XSCT command with result: [targets -set -nocase -filter {name =~"APU*"}], Result: [null, ]. Thread: Worker-19: Launching SystemDebugger_Pcam5C-app_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-10-22 22:03:34.747
+!MESSAGE XSCT Command: [rst -system], Thread: Worker-19: Launching SystemDebugger_Pcam5C-app_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-10-22 22:03:34.823
+!MESSAGE XSCT command with result: [rst -system], Result: [null, ]. Thread: Worker-19: Launching SystemDebugger_Pcam5C-app_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-10-22 22:03:34.827
+!MESSAGE XSCT Command: [after 3000], Thread: Worker-19: Launching SystemDebugger_Pcam5C-app_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-10-22 22:03:37.831
+!MESSAGE XSCT command with result: [after 3000], Result: [null, ]. Thread: Worker-19: Launching SystemDebugger_Pcam5C-app_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-10-22 22:03:37.860
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-10-22 22:03:37.870
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1* Digilent Zybo Z7 210351A6C9E3A]. Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-10-22 22:03:37.874
+!MESSAGE XSCT Command: [jtag targets -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351A6C9E3A" && level==1}], Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-10-22 22:03:37.892
+!MESSAGE XSCT command with result: [jtag targets -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351A6C9E3A" && level==1}], Result: [null,      2  arm_dap (idcode 4ba00477 irlen 4)
+     3  xc7z020 (idcode 23727093 irlen 6 fpga)]. Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-10-22 22:03:37.896
+!MESSAGE XSCT Command: [targets -set -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351A6C9E3A" && level==0} -index 1], Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-10-22 22:03:37.915
+!MESSAGE XSCT command with result: [targets -set -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351A6C9E3A" && level==0} -index 1], Result: [null, ]. Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-10-22 22:03:37.919
+!MESSAGE XSCT Command: [fpga -file C:/Github/Zybo_mipi/Pcam2019/vitis/Pcam5C-app/_ide/bitstream/system_wrapper.bit], Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-10-22 22:03:40.245
+!MESSAGE XSCT command with result: [fpga -file C:/Github/Zybo_mipi/Pcam2019/vitis/Pcam5C-app/_ide/bitstream/system_wrapper.bit], Result: [null, ]. Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-10-22 22:03:40.263
+!MESSAGE XSCT Command: [targets -set -nocase -filter {name =~"APU*"}], Thread: Worker-19: Launching SystemDebugger_Pcam5C-app_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-10-22 22:03:40.276
+!MESSAGE XSCT command with result: [targets -set -nocase -filter {name =~"APU*"}], Result: [null, ]. Thread: Worker-19: Launching SystemDebugger_Pcam5C-app_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-10-22 22:03:40.280
+!MESSAGE XSCT Command: [loadhw -hw C:/Github/Zybo_mipi/Pcam2019/vitis/Pcam5C-2019/export/Pcam5C-2019/hw/system_wrapper.xsa -mem-ranges [list {0x40000000 0xbfffffff}]], Thread: Worker-19: Launching SystemDebugger_Pcam5C-app_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-10-22 22:03:43.230
+!MESSAGE XSCT command with result: [loadhw -hw C:/Github/Zybo_mipi/Pcam2019/vitis/Pcam5C-2019/export/Pcam5C-2019/hw/system_wrapper.xsa -mem-ranges [list {0x40000000 0xbfffffff}]], Result: [null, system_wrapper_8]. Thread: Worker-19: Launching SystemDebugger_Pcam5C-app_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-10-22 22:03:43.234
+!MESSAGE XSCT Command: [configparams force-mem-access 1], Thread: Worker-19: Launching SystemDebugger_Pcam5C-app_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-10-22 22:03:43.238
+!MESSAGE XSCT command with result: [configparams force-mem-access 1], Result: [null, ]. Thread: Worker-19: Launching SystemDebugger_Pcam5C-app_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-10-22 22:03:43.241
+!MESSAGE XSCT Command: [targets -set -nocase -filter {name =~"APU*"}], Thread: Worker-19: Launching SystemDebugger_Pcam5C-app_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-10-22 22:03:43.251
+!MESSAGE XSCT command with result: [targets -set -nocase -filter {name =~"APU*"}], Result: [null, ]. Thread: Worker-19: Launching SystemDebugger_Pcam5C-app_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-10-22 22:03:43.255
+!MESSAGE XSCT Command: [source C:/Github/Zybo_mipi/Pcam2019/vitis/Pcam5C-app/_ide/psinit/ps7_init.tcl], Thread: Worker-19: Launching SystemDebugger_Pcam5C-app_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-10-22 22:03:43.259
+!MESSAGE XSCT command with result: [source C:/Github/Zybo_mipi/Pcam2019/vitis/Pcam5C-app/_ide/psinit/ps7_init.tcl], Result: [null, ]. Thread: Worker-19: Launching SystemDebugger_Pcam5C-app_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-10-22 22:03:43.262
+!MESSAGE XSCT Command: [ps7_init], Thread: Worker-19: Launching SystemDebugger_Pcam5C-app_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-10-22 22:03:43.523
+!MESSAGE XSCT command with result: [ps7_init], Result: [null, ]. Thread: Worker-19: Launching SystemDebugger_Pcam5C-app_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-10-22 22:03:43.526
+!MESSAGE XSCT Command: [ps7_post_config], Thread: Worker-19: Launching SystemDebugger_Pcam5C-app_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-10-22 22:03:43.535
+!MESSAGE XSCT command with result: [ps7_post_config], Result: [null, ]. Thread: Worker-19: Launching SystemDebugger_Pcam5C-app_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-10-22 22:03:43.539
+!MESSAGE XSCT Command: [targets -set -nocase -filter {name =~ "*A9*#0"}], Thread: Worker-19: Launching SystemDebugger_Pcam5C-app_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-10-22 22:03:43.553
+!MESSAGE XSCT command with result: [targets -set -nocase -filter {name =~ "*A9*#0"}], Result: [null, ]. Thread: Worker-19: Launching SystemDebugger_Pcam5C-app_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-10-22 22:03:43.556
+!MESSAGE XSCT Command: [dow C:/Github/Zybo_mipi/Pcam2019/vitis/Pcam5C-app/Debug/Pcam5C-app.elf], Thread: Worker-19: Launching SystemDebugger_Pcam5C-app_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-10-22 22:03:44.990
+!MESSAGE XSCT command with result: [dow C:/Github/Zybo_mipi/Pcam2019/vitis/Pcam5C-app/Debug/Pcam5C-app.elf], Result: [null, ]. Thread: Worker-19: Launching SystemDebugger_Pcam5C-app_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-10-22 22:03:44.994
+!MESSAGE XSCT Command: [configparams force-mem-access 0], Thread: Worker-19: Launching SystemDebugger_Pcam5C-app_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-10-22 22:03:45.015
+!MESSAGE XSCT command with result: [configparams force-mem-access 0], Result: [null, ]. Thread: Worker-19: Launching SystemDebugger_Pcam5C-app_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-10-22 22:03:45.060
+!MESSAGE XSCT Command: [targets -set -nocase -filter {name =~ "*A9*#0"}], Thread: Worker-19: Launching SystemDebugger_Pcam5C-app_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-10-22 22:03:45.116
+!MESSAGE XSCT command with result: [targets -set -nocase -filter {name =~ "*A9*#0"}], Result: [null, ]. Thread: Worker-19: Launching SystemDebugger_Pcam5C-app_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-10-22 22:03:45.119
+!MESSAGE XSCT Command: [con], Thread: Worker-19: Launching SystemDebugger_Pcam5C-app_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-10-22 22:03:45.128
+!MESSAGE XSCT command with result: [con], Result: [null, ]. Thread: Worker-19: Launching SystemDebugger_Pcam5C-app_system
+
+!ENTRY com.xilinx.sdk.utils 1 0 2020-10-22 22:03:45.132
+!MESSAGE Tool usage for 'TCF_APP_DEBUG' updated to '10'
+
+!ENTRY com.xilinx.sdk.utils 1 0 2020-10-22 22:03:45.135
+!MESSAGE Tool usage for 'TCF_SYSTEM_DEBUG' updated to '10'
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-10-22 22:04:12.808
+!MESSAGE XSCT Command: [disconnect tcfchan#17], Thread: Thread-688
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-10-22 22:04:12.815
+!MESSAGE XSCT command with result: [disconnect tcfchan#17], Result: [null, ]. Thread: Thread-688
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-10-22 22:04:12.828
+!MESSAGE XSCT Command: [connect -url tcp:127.0.0.1:3121], Thread: Worker-21: Launching SystemDebugger_Pcam5C-app_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-10-22 22:04:12.844
+!MESSAGE XSCT command with result: [connect -url tcp:127.0.0.1:3121], Result: [null, tcfchan#18]. Thread: Worker-21: Launching SystemDebugger_Pcam5C-app_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-10-22 22:04:12.848
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: Worker-21: Launching SystemDebugger_Pcam5C-app_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-10-22 22:04:12.860
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1* Digilent Zybo Z7 210351A6C9E3A]. Thread: Worker-21: Launching SystemDebugger_Pcam5C-app_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-10-22 22:04:12.864
+!MESSAGE XSCT Command: [version -server], Thread: Worker-21: Launching SystemDebugger_Pcam5C-app_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-10-22 22:04:12.868
+!MESSAGE XSCT command with result: [version -server], Result: [null, 2019.2]. Thread: Worker-21: Launching SystemDebugger_Pcam5C-app_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-10-22 22:04:12.871
+!MESSAGE XSCT Command: [version], Thread: Worker-21: Launching SystemDebugger_Pcam5C-app_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-10-22 22:04:12.875
+!MESSAGE XSCT command with result: [version], Result: [null, xsct 2019.2
+SW Build 2708876 on Wed Nov  6 21:40:23 MST 2019
+Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.]. Thread: Worker-21: Launching SystemDebugger_Pcam5C-app_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-10-22 22:04:12.879
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: Worker-21: Launching SystemDebugger_Pcam5C-app_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-10-22 22:04:12.887
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1* Digilent Zybo Z7 210351A6C9E3A]. Thread: Worker-21: Launching SystemDebugger_Pcam5C-app_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-10-22 22:04:12.891
+!MESSAGE XSCT Command: [jtag targets -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351A6C9E3A" && level==1}], Thread: Worker-21: Launching SystemDebugger_Pcam5C-app_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-10-22 22:04:12.909
+!MESSAGE XSCT command with result: [jtag targets -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351A6C9E3A" && level==1}], Result: [null,      2  arm_dap (idcode 4ba00477 irlen 4)
+     3  xc7z020 (idcode 23727093 irlen 6 fpga)]. Thread: Worker-21: Launching SystemDebugger_Pcam5C-app_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-10-22 22:04:12.913
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: Worker-21: Launching SystemDebugger_Pcam5C-app_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-10-22 22:04:12.921
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1* Digilent Zybo Z7 210351A6C9E3A]. Thread: Worker-21: Launching SystemDebugger_Pcam5C-app_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-10-22 22:04:12.925
+!MESSAGE XSCT Command: [jtag targets -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351A6C9E3A" && level==1}], Thread: Worker-21: Launching SystemDebugger_Pcam5C-app_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-10-22 22:04:12.944
+!MESSAGE XSCT command with result: [jtag targets -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351A6C9E3A" && level==1}], Result: [null,      2  arm_dap (idcode 4ba00477 irlen 4)
+     3  xc7z020 (idcode 23727093 irlen 6 fpga)]. Thread: Worker-21: Launching SystemDebugger_Pcam5C-app_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-10-22 22:04:12.948
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: Worker-21: Launching SystemDebugger_Pcam5C-app_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-10-22 22:04:12.956
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1* Digilent Zybo Z7 210351A6C9E3A]. Thread: Worker-21: Launching SystemDebugger_Pcam5C-app_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-10-22 22:04:12.960
+!MESSAGE XSCT Command: [jtag targets -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351A6C9E3A" && level==1}], Thread: Worker-21: Launching SystemDebugger_Pcam5C-app_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-10-22 22:04:12.977
+!MESSAGE XSCT command with result: [jtag targets -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351A6C9E3A" && level==1}], Result: [null,      2  arm_dap (idcode 4ba00477 irlen 4)
+     3  xc7z020 (idcode 23727093 irlen 6 fpga)]. Thread: Worker-21: Launching SystemDebugger_Pcam5C-app_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-10-22 22:04:12.981
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: Worker-21: Launching SystemDebugger_Pcam5C-app_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-10-22 22:04:12.991
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1* Digilent Zybo Z7 210351A6C9E3A]. Thread: Worker-21: Launching SystemDebugger_Pcam5C-app_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-10-22 22:04:12.995
+!MESSAGE XSCT Command: [jtag targets -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351A6C9E3A" && level==1}], Thread: Worker-21: Launching SystemDebugger_Pcam5C-app_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-10-22 22:04:13.014
+!MESSAGE XSCT command with result: [jtag targets -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351A6C9E3A" && level==1}], Result: [null,      2  arm_dap (idcode 4ba00477 irlen 4)
+     3  xc7z020 (idcode 23727093 irlen 6 fpga)]. Thread: Worker-21: Launching SystemDebugger_Pcam5C-app_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-10-22 22:04:13.018
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: Worker-21: Launching SystemDebugger_Pcam5C-app_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-10-22 22:04:13.040
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1* Digilent Zybo Z7 210351A6C9E3A]. Thread: Worker-21: Launching SystemDebugger_Pcam5C-app_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-10-22 22:04:13.047
+!MESSAGE XSCT Command: [jtag targets -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351A6C9E3A" && level==1}], Thread: Worker-21: Launching SystemDebugger_Pcam5C-app_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-10-22 22:04:13.069
+!MESSAGE XSCT command with result: [jtag targets -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351A6C9E3A" && level==1}], Result: [null,      2  arm_dap (idcode 4ba00477 irlen 4)
+     3  xc7z020 (idcode 23727093 irlen 6 fpga)]. Thread: Worker-21: Launching SystemDebugger_Pcam5C-app_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-10-22 22:04:13.073
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: Worker-21: Launching SystemDebugger_Pcam5C-app_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-10-22 22:04:13.082
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1* Digilent Zybo Z7 210351A6C9E3A]. Thread: Worker-21: Launching SystemDebugger_Pcam5C-app_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-10-22 22:04:13.085
+!MESSAGE XSCT Command: [jtag targets -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351A6C9E3A" && level==1}], Thread: Worker-21: Launching SystemDebugger_Pcam5C-app_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-10-22 22:04:13.107
+!MESSAGE XSCT command with result: [jtag targets -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351A6C9E3A" && level==1}], Result: [null,      2  arm_dap (idcode 4ba00477 irlen 4)
+     3  xc7z020 (idcode 23727093 irlen 6 fpga)]. Thread: Worker-21: Launching SystemDebugger_Pcam5C-app_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-10-22 22:04:13.110
+!MESSAGE XSCT Command: [jtag targets -set -filter {name =~ "Digilent Zybo Z7 210351A6C9E3A" && level == 0}], Thread: Worker-21: Launching SystemDebugger_Pcam5C-app_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-10-22 22:04:13.128
+!MESSAGE XSCT command with result: [jtag targets -set -filter {name =~ "Digilent Zybo Z7 210351A6C9E3A" && level == 0}], Result: [null, ]. Thread: Worker-21: Launching SystemDebugger_Pcam5C-app_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-10-22 22:04:13.132
+!MESSAGE XSCT Command: [jtag frequency], Thread: Worker-21: Launching SystemDebugger_Pcam5C-app_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-10-22 22:04:13.138
+!MESSAGE XSCT command with result: [jtag frequency], Result: [null, 15000000]. Thread: Worker-21: Launching SystemDebugger_Pcam5C-app_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-10-22 22:04:13.142
+!MESSAGE XSCT Command: [targets -set -nocase -filter {name =~"APU*"}], Thread: Worker-21: Launching SystemDebugger_Pcam5C-app_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-10-22 22:04:13.156
+!MESSAGE XSCT command with result: [targets -set -nocase -filter {name =~"APU*"}], Result: [null, ]. Thread: Worker-21: Launching SystemDebugger_Pcam5C-app_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-10-22 22:04:13.160
+!MESSAGE XSCT Command: [rst -system], Thread: Worker-21: Launching SystemDebugger_Pcam5C-app_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-10-22 22:04:13.239
+!MESSAGE XSCT command with result: [rst -system], Result: [null, ]. Thread: Worker-21: Launching SystemDebugger_Pcam5C-app_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-10-22 22:04:13.242
+!MESSAGE XSCT Command: [after 3000], Thread: Worker-21: Launching SystemDebugger_Pcam5C-app_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-10-22 22:04:16.246
+!MESSAGE XSCT command with result: [after 3000], Result: [null, ]. Thread: Worker-21: Launching SystemDebugger_Pcam5C-app_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-10-22 22:04:16.269
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-10-22 22:04:16.280
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1* Digilent Zybo Z7 210351A6C9E3A]. Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-10-22 22:04:16.283
+!MESSAGE XSCT Command: [jtag targets -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351A6C9E3A" && level==1}], Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-10-22 22:04:16.300
+!MESSAGE XSCT command with result: [jtag targets -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351A6C9E3A" && level==1}], Result: [null,      2  arm_dap (idcode 4ba00477 irlen 4)
+     3  xc7z020 (idcode 23727093 irlen 6 fpga)]. Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-10-22 22:04:16.304
+!MESSAGE XSCT Command: [targets -set -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351A6C9E3A" && level==0} -index 1], Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-10-22 22:04:16.323
+!MESSAGE XSCT command with result: [targets -set -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351A6C9E3A" && level==0} -index 1], Result: [null, ]. Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-10-22 22:04:16.326
+!MESSAGE XSCT Command: [fpga -file C:/Github/Zybo_mipi/Pcam2019/vitis/Pcam5C-app/_ide/bitstream/system_wrapper.bit], Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-10-22 22:04:18.653
+!MESSAGE XSCT command with result: [fpga -file C:/Github/Zybo_mipi/Pcam2019/vitis/Pcam5C-app/_ide/bitstream/system_wrapper.bit], Result: [null, ]. Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-10-22 22:04:18.671
+!MESSAGE XSCT Command: [targets -set -nocase -filter {name =~"APU*"}], Thread: Worker-21: Launching SystemDebugger_Pcam5C-app_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-10-22 22:04:18.683
+!MESSAGE XSCT command with result: [targets -set -nocase -filter {name =~"APU*"}], Result: [null, ]. Thread: Worker-21: Launching SystemDebugger_Pcam5C-app_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-10-22 22:04:18.686
+!MESSAGE XSCT Command: [loadhw -hw C:/Github/Zybo_mipi/Pcam2019/vitis/Pcam5C-2019/export/Pcam5C-2019/hw/system_wrapper.xsa -mem-ranges [list {0x40000000 0xbfffffff}]], Thread: Worker-21: Launching SystemDebugger_Pcam5C-app_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-10-22 22:04:21.489
+!MESSAGE XSCT command with result: [loadhw -hw C:/Github/Zybo_mipi/Pcam2019/vitis/Pcam5C-2019/export/Pcam5C-2019/hw/system_wrapper.xsa -mem-ranges [list {0x40000000 0xbfffffff}]], Result: [null, system_wrapper_9]. Thread: Worker-21: Launching SystemDebugger_Pcam5C-app_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-10-22 22:04:21.493
+!MESSAGE XSCT Command: [configparams force-mem-access 1], Thread: Worker-21: Launching SystemDebugger_Pcam5C-app_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-10-22 22:04:21.498
+!MESSAGE XSCT command with result: [configparams force-mem-access 1], Result: [null, ]. Thread: Worker-21: Launching SystemDebugger_Pcam5C-app_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-10-22 22:04:21.501
+!MESSAGE XSCT Command: [targets -set -nocase -filter {name =~"APU*"}], Thread: Worker-21: Launching SystemDebugger_Pcam5C-app_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-10-22 22:04:21.512
+!MESSAGE XSCT command with result: [targets -set -nocase -filter {name =~"APU*"}], Result: [null, ]. Thread: Worker-21: Launching SystemDebugger_Pcam5C-app_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-10-22 22:04:21.515
+!MESSAGE XSCT Command: [source C:/Github/Zybo_mipi/Pcam2019/vitis/Pcam5C-app/_ide/psinit/ps7_init.tcl], Thread: Worker-21: Launching SystemDebugger_Pcam5C-app_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-10-22 22:04:21.520
+!MESSAGE XSCT command with result: [source C:/Github/Zybo_mipi/Pcam2019/vitis/Pcam5C-app/_ide/psinit/ps7_init.tcl], Result: [null, ]. Thread: Worker-21: Launching SystemDebugger_Pcam5C-app_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-10-22 22:04:21.524
+!MESSAGE XSCT Command: [ps7_init], Thread: Worker-21: Launching SystemDebugger_Pcam5C-app_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-10-22 22:04:21.862
+!MESSAGE XSCT command with result: [ps7_init], Result: [null, ]. Thread: Worker-21: Launching SystemDebugger_Pcam5C-app_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-10-22 22:04:21.866
+!MESSAGE XSCT Command: [ps7_post_config], Thread: Worker-21: Launching SystemDebugger_Pcam5C-app_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-10-22 22:04:21.877
+!MESSAGE XSCT command with result: [ps7_post_config], Result: [null, ]. Thread: Worker-21: Launching SystemDebugger_Pcam5C-app_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-10-22 22:04:21.884
+!MESSAGE XSCT Command: [targets -set -nocase -filter {name =~ "*A9*#0"}], Thread: Worker-21: Launching SystemDebugger_Pcam5C-app_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-10-22 22:04:21.897
+!MESSAGE XSCT command with result: [targets -set -nocase -filter {name =~ "*A9*#0"}], Result: [null, ]. Thread: Worker-21: Launching SystemDebugger_Pcam5C-app_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-10-22 22:04:21.901
+!MESSAGE XSCT Command: [dow C:/Github/Zybo_mipi/Pcam2019/vitis/Pcam5C-app/Debug/Pcam5C-app.elf], Thread: Worker-21: Launching SystemDebugger_Pcam5C-app_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-10-22 22:04:23.324
+!MESSAGE XSCT command with result: [dow C:/Github/Zybo_mipi/Pcam2019/vitis/Pcam5C-app/Debug/Pcam5C-app.elf], Result: [null, ]. Thread: Worker-21: Launching SystemDebugger_Pcam5C-app_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-10-22 22:04:23.328
+!MESSAGE XSCT Command: [configparams force-mem-access 0], Thread: Worker-21: Launching SystemDebugger_Pcam5C-app_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-10-22 22:04:23.350
+!MESSAGE XSCT command with result: [configparams force-mem-access 0], Result: [null, ]. Thread: Worker-21: Launching SystemDebugger_Pcam5C-app_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-10-22 22:04:23.404
+!MESSAGE XSCT Command: [targets -set -nocase -filter {name =~ "*A9*#0"}], Thread: Worker-21: Launching SystemDebugger_Pcam5C-app_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-10-22 22:04:23.462
+!MESSAGE XSCT command with result: [targets -set -nocase -filter {name =~ "*A9*#0"}], Result: [null, ]. Thread: Worker-21: Launching SystemDebugger_Pcam5C-app_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-10-22 22:04:23.466
+!MESSAGE XSCT Command: [con], Thread: Worker-21: Launching SystemDebugger_Pcam5C-app_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-10-22 22:04:23.474
+!MESSAGE XSCT command with result: [con], Result: [null, ]. Thread: Worker-21: Launching SystemDebugger_Pcam5C-app_system
+
+!ENTRY com.xilinx.sdk.utils 1 0 2020-10-22 22:04:23.479
+!MESSAGE Tool usage for 'TCF_APP_DEBUG' updated to '11'
+
+!ENTRY com.xilinx.sdk.utils 1 0 2020-10-22 22:04:23.483
+!MESSAGE Tool usage for 'TCF_SYSTEM_DEBUG' updated to '11'
+
+!ENTRY org.eclipse.core.resources 4 568 2020-10-22 22:07:14.841
+!MESSAGE Could not write metadata for '/RemoteSystemsTempFiles'.
+!STACK 0
+java.io.FileNotFoundException: C:\Github\Zybo_mipi\Pcam2019\vitis\.metadata\.plugins\org.eclipse.core.resources\.projects\RemoteSystemsTempFiles\.markers.snap (指定されたパスが見つかりません。)
+	at java.base/java.io.FileOutputStream.open0(Native Method)
+	at java.base/java.io.FileOutputStream.open(Unknown Source)
+	at java.base/java.io.FileOutputStream.<init>(Unknown Source)
+	at java.base/java.io.FileOutputStream.<init>(Unknown Source)
+	at org.eclipse.core.internal.localstore.SafeChunkyOutputStream.<init>(SafeChunkyOutputStream.java:45)
+	at org.eclipse.core.internal.localstore.SafeChunkyOutputStream.<init>(SafeChunkyOutputStream.java:41)
+	at org.eclipse.core.internal.resources.SaveManager.visitAndSnap(SaveManager.java:1735)
+	at org.eclipse.core.internal.resources.SaveManager.visitAndSnap(SaveManager.java:1816)
+	at org.eclipse.core.internal.resources.SaveManager.save(SaveManager.java:1204)
+	at org.eclipse.core.internal.resources.SaveManager.save(SaveManager.java:1145)
+	at org.eclipse.core.internal.resources.DelayedSnapshotJob.run(DelayedSnapshotJob.java:52)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:60)
