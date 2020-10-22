@@ -1,4 +1,4 @@
-22:48:36 **** Incremental Build of configuration Debug for project Pcam5C-app_system ****
+23:10:04 **** Incremental Build of configuration Debug for project Pcam5C-app_system ****
 make all 
 Generating bif file for the system project
 generate_system_bif.bat 61004 C:/Github/Zybo-Z7-20-pcam-5c-2019.1/vitis/Pcam5C-2019/export/Pcam5C-2019/Pcam5C-2019.xpfm standalone_domain C:/Github/Zybo_mipi/Pcam2019/vitis/Pcam5C-app_system/Debug/system.bif
@@ -11,5 +11,5 @@ xpfm path is not valid
     (file "C:/Xilinx/Vitis/2019.2\scripts\vitis\util\generate_system_bif.tcl" line 25)
 make: *** [makefile:36: sd_card] Error 1
 
-22:48:37 Build Finished (took 1s.327ms)
+23:10:05 Build Finished (took 1s.382ms)
 

@@ -1,4 +1,4 @@
-22:48:33 **** Incremental Build of configuration Debug for project Pcam5C-app ****
+23:10:01 **** Incremental Build of configuration Debug for project Pcam5C-app ****
 make all 
 make --no-print-directory pre-build
 a9-linaro-pre-build-step
@@ -17,9 +17,9 @@ arm-none-eabi-g++ -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=non
 'Invoking: ARM v7 Print Size'
 arm-none-eabi-size Pcam5C-app.elf  |tee "Pcam5C-app.elf.size"
    text	   data	    bss	    dec	    hex	filename
- 633379	   3884	  29776	 667039	  a2d9f	Pcam5C-app.elf
+ 633463	   3884	  29776	 667123	  a2df3	Pcam5C-app.elf
 'Finished building: Pcam5C-app.elf.size'
 ' '
 
-22:48:35 Build Finished (took 2s.133ms)
+23:10:03 Build Finished (took 2s.87ms)
 

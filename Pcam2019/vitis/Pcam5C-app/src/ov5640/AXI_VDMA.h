@@ -244,13 +244,12 @@ public:
 		int address = context_.WriteCfg.FrameStoreStartAddr[prevFrame];
 		char *pointer = (char *)address;//データ用
 		for(int i=0; i<1280; i++){
-			for(int j=0; j<720; j++){
-				xil_printf("%x : %p: %06X ",address, pointer, ((*pointer << 16) | *(pointer+1) << 8) | *(pointer+2) );
+			for(int j=0; j<1; j++){
+				xil_printf("%x : %p: %06X ", address, pointer, ((*pointer << 16) | *(pointer+1) << 8) | *(pointer+2) );
 							pointer += 3;
 							xil_printf("\n\r");
 			}
 		}
-		//xil_printf("\n\r");
 	}
 	void readErrorHandler(uint32_t mask)
 	{
