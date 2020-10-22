@@ -1,0 +1,31 @@
+Nothing to build in platform 'design_1_wrapper'
+
+00:37:45 **** Incremental Build of configuration Debug for project server ****
+make all 
+make --no-print-directory pre-build
+a9-linaro-pre-build-step
+' '
+make --no-print-directory main-build
+'Building file: ../src/main.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -IC:/Github/Zybo_mipi/LWIP/server_vitis/design_1_wrapper/export/design_1_wrapper/sw/design_1_wrapper/standalone_domain/bspinclude/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+'Finished building: ../src/main.c'
+' '
+'Building target: server.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -LC:/Github/Zybo_mipi/LWIP/server_vitis/design_1_wrapper/export/design_1_wrapper/sw/design_1_wrapper/standalone_domain/bsplib/lib -o "server.elf"  ./src/i2c_access.o ./src/iic_phyreset.o ./src/main.o ./src/platform.o ./src/platform_mb.o ./src/platform_zynq.o ./src/platform_zynqmp.o ./src/sfp.o ./src/si5324.o ./src/udp_perf_server.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group -Wl,--start-group,-lxil,-llwip4,-lgcc,-lc,--end-group
+'Finished building target: server.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size server.elf  |tee "server.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+ 139648	   3432	31578400	31721480	1e40808	server.elf
+'Finished building: server.elf.size'
+' '
+00:37:46 **** Incremental Build of configuration Debug for project server_system ****
+make all 
+Generating bif file for the system project
+generate_system_bif.bat 57280 C:/Github/Zybo_mipi/LWIP/server_vitis/design_1_wrapper/export/design_1_wrapper/design_1_wrapper.xpfm standalone_domain C:/Github/Zybo_mipi/LWIP/server_vitis/server_system/Debug/system.bif
+sdcard_gen --xpfm C:/Github/Zybo_mipi/LWIP/server_vitis/design_1_wrapper/export/design_1_wrapper/design_1_wrapper.xpfm --sys_config design_1_wrapper --bif C:/Github/Zybo_mipi/LWIP/server_vitis/server_system/Debug/system.bif --bitstream C:/Github/Zybo_mipi/LWIP/server_vitis/server/_ide/bitstream/design_1_wrapper.bit --elf C:/Github/Zybo_mipi/LWIP/server_vitis/server/Debug/server.elf,ps7_cortexa9_0
+creating BOOT.BIN using C:/Github/Zybo_mipi/LWIP/server_vitis/server/_ide/bitstream/design_1_wrapper.bit
+Running C:/Xilinx/Vitis/2019.2/bin/bootgen  -image C:/Github/Zybo_mipi/LWIP/server_vitis/server_system/Debug/sd_card_temp/boot.bif -w -o i BOOT.BIN

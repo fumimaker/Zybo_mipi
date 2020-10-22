@@ -1,0 +1,10 @@
+00:37:46 **** Incremental Build of configuration Debug for project server_system ****
+make all 
+Generating bif file for the system project
+generate_system_bif.bat 57280 C:/Github/Zybo_mipi/LWIP/server_vitis/design_1_wrapper/export/design_1_wrapper/design_1_wrapper.xpfm standalone_domain C:/Github/Zybo_mipi/LWIP/server_vitis/server_system/Debug/system.bif
+sdcard_gen --xpfm C:/Github/Zybo_mipi/LWIP/server_vitis/design_1_wrapper/export/design_1_wrapper/design_1_wrapper.xpfm --sys_config design_1_wrapper --bif C:/Github/Zybo_mipi/LWIP/server_vitis/server_system/Debug/system.bif --bitstream C:/Github/Zybo_mipi/LWIP/server_vitis/server/_ide/bitstream/design_1_wrapper.bit --elf C:/Github/Zybo_mipi/LWIP/server_vitis/server/Debug/server.elf,ps7_cortexa9_0
+creating BOOT.BIN using C:/Github/Zybo_mipi/LWIP/server_vitis/server/_ide/bitstream/design_1_wrapper.bit
+Running C:/Xilinx/Vitis/2019.2/bin/bootgen  -image C:/Github/Zybo_mipi/LWIP/server_vitis/server_system/Debug/sd_card_temp/boot.bif -w -o i BOOT.BIN
+
+00:37:51 Build Finished (took 4s.626ms)
+
