@@ -241,11 +241,18 @@ public:
 		else{
 			prevFrame = currentFrame - 1;
 		}
-		int address = context_.WriteCfg.FrameStoreStartAddr[prevFrame]; //get prev frame address
-		int *pointer = address;
-		for(int i=0; i<1280*3; i++){ //3byte
-			xil_printf("%x ", pointer);//1byte print
+		int address = context_.WriteCfg.FrameStoreStartAddr[prevFrame];
+		char *pointer = (char *)address;
+		int *intPointer = (int *)address;//‚±‚Á‚¿‚Å‚·‚·‚ß‚é
+		for(int i=0; i<1280; i++){
+			xil_printf("%p: ", pointer);
+			for(int j=0; j<3; j++){
+				xil_printf("%x ", *pointer);//1byte print
+				*pointer++;
+			}
+			xil_printf("\n\r");
 		}
+		//xil_printf("\n\r");
 	}
 	void readErrorHandler(uint32_t mask)
 	{
