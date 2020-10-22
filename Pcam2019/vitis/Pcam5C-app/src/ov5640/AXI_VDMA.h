@@ -242,14 +242,16 @@ public:
 			prevFrame = currentFrame - 1;
 		}
 		int address = context_.WriteCfg.FrameStoreStartAddr[prevFrame];
-		char *pointer = (char *)address;
-		int *intPointer = (int *)address;//こっちですすめる
+		char *pointer = (char *)address;//データ用
+		int *intPointer = (int *)address;//カウンタ用
 		for(int i=0; i<1280; i++){
-			xil_printf("%p: ", pointer);
+			*pointer = *intPointer;
+			xil_printf("%p: ", intPointer);
 			for(int j=0; j<3; j++){
 				xil_printf("%x ", *pointer);//1byte print
-				*pointer++;
+				pointer++;
 			}
+			*intPointer = *pointer; //counter
 			xil_printf("\n\r");
 		}
 		//xil_printf("\n\r");
