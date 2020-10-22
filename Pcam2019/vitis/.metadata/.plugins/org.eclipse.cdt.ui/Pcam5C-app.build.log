@@ -1,0 +1,25 @@
+00:09:54 **** Incremental Build of configuration Debug for project Pcam5C-app ****
+make all 
+make --no-print-directory pre-build
+a9-linaro-pre-build-step
+' '
+make --no-print-directory main-build
+'Building file: ../src/main.cc'
+'Invoking: ARM v7 g++ compiler'
+arm-none-eabi-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -IC:/git/Zybo-Z7-20-pcam-5c-2019.1/vitis/Pcam5C-2019/export/Pcam5C-2019/sw/Pcam5C-2019/standalone_domain/bspinclude/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.cc"
+'Finished building: ../src/main.cc'
+' '
+'Building target: Pcam5C-app.elf'
+'Invoking: ARM v7 g++ linker'
+arm-none-eabi-g++ -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -LC:/git/Zybo-Z7-20-pcam-5c-2019.1/vitis/Pcam5C-2019/export/Pcam5C-2019/sw/Pcam5C-2019/standalone_domain/bsplib/lib -o "Pcam5C-app.elf"  ./src/platform/platform.o  ./src/ov5640/OV5640.o  ./src/main.o   -Wl,--start-group,-lxil,-lgcc,-lc,-lstdc++,--end-group
+'Finished building target: Pcam5C-app.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size Pcam5C-app.elf  |tee "Pcam5C-app.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+ 633379	   3884	  29776	 667039	  a2d9f	Pcam5C-app.elf
+'Finished building: Pcam5C-app.elf.size'
+' '
+
+00:09:56 Build Finished (took 2s.486ms)
+
