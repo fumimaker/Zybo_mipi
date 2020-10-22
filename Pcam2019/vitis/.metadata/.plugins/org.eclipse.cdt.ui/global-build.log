@@ -1,6 +1,6 @@
 Nothing to build in platform 'Pcam5C-2019'
 
-21:59:26 **** Incremental Build of configuration Debug for project Pcam5C-app ****
+22:48:33 **** Incremental Build of configuration Debug for project Pcam5C-app ****
 make all 
 make --no-print-directory pre-build
 a9-linaro-pre-build-step
@@ -19,10 +19,10 @@ arm-none-eabi-g++ -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=non
 'Invoking: ARM v7 Print Size'
 arm-none-eabi-size Pcam5C-app.elf  |tee "Pcam5C-app.elf.size"
    text	   data	    bss	    dec	    hex	filename
- 633331	   3884	  29776	 666991	  a2d6f	Pcam5C-app.elf
+ 633379	   3884	  29776	 667039	  a2d9f	Pcam5C-app.elf
 'Finished building: Pcam5C-app.elf.size'
 ' '
-21:59:29 **** Incremental Build of configuration Debug for project Pcam5C-app_system ****
+22:48:36 **** Incremental Build of configuration Debug for project Pcam5C-app_system ****
 make all 
 Generating bif file for the system project
 generate_system_bif.bat 61004 C:/Github/Zybo-Z7-20-pcam-5c-2019.1/vitis/Pcam5C-2019/export/Pcam5C-2019/Pcam5C-2019.xpfm standalone_domain C:/Github/Zybo_mipi/Pcam2019/vitis/Pcam5C-app_system/Debug/system.bif
