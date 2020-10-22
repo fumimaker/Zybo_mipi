@@ -46,7 +46,6 @@ class AXI_VDMA
 		/* The counter to tell VDMA on how many frames the interrupt should happen*/
 		unsigned int number_of_frame_count;
 	} vdma_context_t;
-	volatile int counter = 0, counter2=0;
 public:
 	// Shim function to extract function object from CallbackRef and call it
 	// This should call our member function handlers below
@@ -233,13 +232,18 @@ public:
 	}
 	void writeHandler(uint32_t irq_types)
 	{
-		std::cout << "VDMA:write complete" << std::endl;
+		//std::cout << "VDMA:write complete" << std::endl;
 		int currentFrame = XAxiVdma_CurrFrameStore(&drv_inst_, XAXIVDMA_WRITE);
-		xil_printf("Current Frame %d\r\n", currentFrame);
-		counter++;
-		if(counter>29){
-			counter2++;
-			counter=0;
+		int prevFrame = 0;
+		if(currentFrame==0){
+			prevFrame = 2;
+		}
+		else{
+			prevFrame = currentFrame - 1;
+		}
+		int address = context_.WriteCfg.FrameStoreStartAddr[prevFrame]; //get prev frame address
+		for(int i=0; i<1280*3; i++){ //3byte
+			xil_printf("%x ", address+i);//1byte print
 		}
 	}
 	void readErrorHandler(uint32_t mask)
