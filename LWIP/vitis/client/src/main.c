@@ -180,9 +180,11 @@ int main(void)
 	/* print app header */
 	print_app_header();
 
+
 	/* start the application*/
 	start_application();
 	xil_printf("\r\n");
+
 
 	while (1) {
 		if (TcpFastTmrFlag) {

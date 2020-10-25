@@ -167,7 +167,7 @@ static void udp_packet_send(u8_t finished)
 		if (finished == FINISH)
 			packet_id = -1;
 
-		payload[0] = htonl(packet_id);
+		payload[0] = htonl(packet_id);//packet_id: デバッグしたらなぜか０が初期値になっていた
 
 		while (retries) {
 			err = udp_send(pcb[i], packet);
@@ -279,6 +279,7 @@ void start_application(void)
 			return;
 		}
 	}
+
 	/* Wait for successful connection */
 	usleep(10);
 	reset_stats();
