@@ -36,8 +36,8 @@ static struct perf_stats client;
 static char send_buf[UDP_SEND_BUFSIZE];
 
 static char frame_data[SIZE_OF_FRAME];
-
-int hello = 0;
+static char *frame_pointer;
+static int ptrCounter = 0;
 
 #define FINISH	1
 /* Report interval time in ms */
@@ -243,22 +243,33 @@ void transfer_data(void)
 			}
 		}
 
-		if (END_TIME) { //END_TIME
-			/* this session is time-limited */
+		/*if (END_TIME) { //END_TIME
+			/* this session is time-limited
 			u64_t diff_ms = now - client.start_time;
 			if (diff_ms >= END_TIME) { //diff_ms >= END_TIME
 				/* time specified is over,
-				 * close the connection */
+				 * close the connection *
 				udp_packet_send(FINISH);
 				udp_conn_report(diff_ms, UDP_DONE_CLIENT);
 				xil_printf("UDP test passed Successfully\n\r");
 				xil_printf("UDP send packet Successfully: %lld\n\r", client.cnt_datagrams);
 				return;
 			}
+		}*/
+
+		if ( (SIZE_OF_FRAME - ptrCounter) < ( UDP_SEND_BUFSIZE - sizeof(int) ) ) { // １回のサイズに満たない端数になったら端数とFINISH送って終了
+			xil_printf("ptrCounter: %d\n\r", (SIZE_OF_FRAME - ptrCounter));
+			udp_packet_send(FINISH);
+			u64_t diff_ms = now - client.start_time;
+			udp_conn_report(diff_ms, UDP_DONE_CLIENT);
+			xil_printf("UDP test passed Successfully\n\r");
+			xil_printf("UDP send packet Successfully:\n\r");
+			return;
 		}
 	}
-
+	//1~1925回(0~1924)
 	udp_packet_send(!FINISH);
+	ptrCounter += UDP_SEND_BUFSIZE-sizeof(int);//+=1436
 }
 
 void start_application(void)
@@ -270,7 +281,7 @@ void start_application(void)
 	err = inet_aton(UDP_SERVER_IP_ADDRESS, &remote_addr);
 	if (!err) {
 		xil_printf("Invalid Server IP address: %d\r\n", err);
-		return NULL;
+		return;
 	}
 
 	for (i = 0; i < NUM_OF_PARALLEL_CLIENTS; i++) {
@@ -278,14 +289,14 @@ void start_application(void)
 		pcb[i] = udp_new();
 		if (!pcb[i]) {
 			xil_printf("Error in PCB creation. out of memory\r\n");
-			return NULL;
+			return;
 		}
 
 		err = udp_connect(pcb[i], &remote_addr, UDP_CONN_PORT);
 		if (err != ERR_OK) {
 			xil_printf("udp_client: Error on udp_connect: %d\r\n", err);
 			udp_remove(pcb[i]);
-			return NULL;
+			return;
 		}
 	}
 
@@ -307,10 +318,10 @@ void start_application(void)
 	for(u64 i=0; i<SIZE_OF_FRAME; i++){
 		frame_data[i] = i % 256;
 	}
-	char *frame_pointer = &frame_data[0];
+	frame_pointer = &frame_data[0];
 	for(int i=0; i<100; i++){
 		xil_printf("%02x ",*frame_pointer+i);
 	}
 	xil_printf("\r\n");
-	return frame_pointer;
+	//xil_printf("sendTimes %d ",SEND_TIMES);
 }

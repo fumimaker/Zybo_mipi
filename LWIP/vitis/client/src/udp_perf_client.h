@@ -103,11 +103,11 @@ struct perf_stats {
 #define UDP_SEND_BUFSIZE 1440
 
 /* MAX UDP send retries */
-#define MAX_SEND_RETRY 10
+#define MAX_SEND_RETRY 	10
 
 /* Number of parallel UDP clients */
 #define NUM_OF_PARALLEL_CLIENTS 1
 
-#define SIZE_OF_FRAME 1280*720*3
+#define SIZE_OF_FRAME 	1280*720*3
 
 #endif /* __UDP_PERF_CLIENT_H_ */

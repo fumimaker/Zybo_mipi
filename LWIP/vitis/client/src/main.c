@@ -47,14 +47,14 @@ extern volatile int dhcp_timoutcntr;
 extern volatile int TcpFastTmrFlag;
 extern volatile int TcpSlowTmrFlag;
 
-extern int hello;
+extern char *frame_pointer;
 
 #define DEFAULT_IP_ADDRESS	"192.168.1.10"
 #define DEFAULT_IP_MASK		"255.255.255.0"
 #define DEFAULT_GW_ADDRESS	"192.168.1.1"
 
 void platform_enable_interrupts(void);
-char *start_application(void);
+void start_application(void);
 void transfer_data(void);
 void print_app_header(void);
 
@@ -185,11 +185,7 @@ int main(void)
 
 
 	/* start the application*/
-	char *framePtr = start_application();
-	if(framePtr==NULL){
-		return -1;
-	}
-	xil_printf("\r\n");
+	start_application();
 
 
 	while (1) {
