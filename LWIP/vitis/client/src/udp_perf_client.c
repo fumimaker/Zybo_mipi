@@ -37,6 +37,8 @@ static char send_buf[UDP_SEND_BUFSIZE];
 
 static char frame_data[SIZE_OF_FRAME];
 
+int hello = 0;
+
 #define FINISH	1
 /* Report interval time in ms */
 #define REPORT_INTERVAL_TIME (INTERIM_REPORT_INTERVAL * 1000)
@@ -268,7 +270,7 @@ void start_application(void)
 	err = inet_aton(UDP_SERVER_IP_ADDRESS, &remote_addr);
 	if (!err) {
 		xil_printf("Invalid Server IP address: %d\r\n", err);
-		return;
+		return NULL;
 	}
 
 	for (i = 0; i < NUM_OF_PARALLEL_CLIENTS; i++) {
@@ -276,14 +278,14 @@ void start_application(void)
 		pcb[i] = udp_new();
 		if (!pcb[i]) {
 			xil_printf("Error in PCB creation. out of memory\r\n");
-			return;
+			return NULL;
 		}
 
 		err = udp_connect(pcb[i], &remote_addr, UDP_CONN_PORT);
 		if (err != ERR_OK) {
 			xil_printf("udp_client: Error on udp_connect: %d\r\n", err);
 			udp_remove(pcb[i]);
-			return;
+			return NULL;
 		}
 	}
 
@@ -305,5 +307,10 @@ void start_application(void)
 	for(u64 i=0; i<SIZE_OF_FRAME; i++){
 		frame_data[i] = i % 256;
 	}
-
+	char *frame_pointer = &frame_data[0];
+	for(int i=0; i<100; i++){
+		xil_printf("%02x ",*frame_pointer+i);
+	}
+	xil_printf("\r\n");
+	return frame_pointer;
 }
