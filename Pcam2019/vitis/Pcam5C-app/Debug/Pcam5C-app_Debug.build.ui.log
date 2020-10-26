@@ -1,9 +1,19 @@
-2020-10-22T23:10:01.489086800255-23:10:01 **** Incremental Build of configuration Debug for project Pcam5C-app ****
+2020-10-26T21:30:05.552542500255-21:30:05 **** Build of configuration Debug for project Pcam5C-app ****
 000-make all 
 000-make --no-print-directory pre-build
 000-a9-linaro-pre-build-step
 000-' '
 000-make --no-print-directory main-build
+000-'Building file: ../src/platform/platform.c'
+000-'Invoking: ARM v7 g++ compiler'
+000-arm-none-eabi-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/platform/platform.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -IC:/Github/Zybo_mipi/Pcam2019/vitis/Pcam5C-2019/export/Pcam5C-2019/sw/Pcam5C-2019/standalone_domain/bspinclude/include -MMD -MP -MF"src/platform/platform.d" -MT"src/platform/platform.o" -o "src/platform/platform.o" "../src/platform/platform.c"
+000-'Finished building: ../src/platform/platform.c'
+000-' '
+000-'Building file: ../src/ov5640/OV5640.cpp'
+000-'Invoking: ARM v7 g++ compiler'
+000-arm-none-eabi-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/ov5640/OV5640.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -IC:/Github/Zybo_mipi/Pcam2019/vitis/Pcam5C-2019/export/Pcam5C-2019/sw/Pcam5C-2019/standalone_domain/bspinclude/include -MMD -MP -MF"src/ov5640/OV5640.d" -MT"src/ov5640/OV5640.o" -o "src/ov5640/OV5640.o" "../src/ov5640/OV5640.cpp"
+000-'Finished building: ../src/ov5640/OV5640.cpp'
+000-' '
 000-'Building file: ../src/main.cc'
 000-'Invoking: ARM v7 g++ compiler'
 000-arm-none-eabi-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -IC:/Github/Zybo_mipi/Pcam2019/vitis/Pcam5C-2019/export/Pcam5C-2019/sw/Pcam5C-2019/standalone_domain/bspinclude/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.cc"
@@ -17,9 +27,9 @@
 000-'Invoking: ARM v7 Print Size'
 000-arm-none-eabi-size Pcam5C-app.elf  |tee "Pcam5C-app.elf.size"
 000-   text	   data	    bss	    dec	    hex	filename
-000- 633463	   3884	  29776	 667123	  a2df3	Pcam5C-app.elf
+000- 633379	   3884	  29776	 667039	  a2d9f	Pcam5C-app.elf
 000-'Finished building: Pcam5C-app.elf.size'
 000-' '
 00255-
-23:10:03 Build Finished (took 2s.87ms)
+21:30:09 Build Finished (took 4s.98ms)
 

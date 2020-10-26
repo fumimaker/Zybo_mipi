@@ -1,4 +1,4 @@
-21:20:05 **** Incremental Build of configuration Debug for project client ****
+21:22:39 **** Incremental Build of configuration Debug for project client ****
 make all 
 make --no-print-directory pre-build
 a9-linaro-pre-build-step
@@ -17,9 +17,9 @@ arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=non
 'Invoking: ARM v7 Print Size'
 arm-none-eabi-size client.elf  |tee "client.elf.size"
    text	   data	    bss	    dec	    hex	filename
- 140040	   3432	34724128	34867600	2140990	client.elf
+ 139944	   3432	34724128	34867504	2140930	client.elf
 'Finished building: client.elf.size'
 ' '
 
-21:20:06 Build Finished (took 920ms)
+21:22:40 Build Finished (took 972ms)
 

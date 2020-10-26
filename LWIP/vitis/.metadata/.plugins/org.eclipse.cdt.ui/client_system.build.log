@@ -1,4 +1,4 @@
-21:20:07 **** Incremental Build of configuration Debug for project client_system ****
+21:22:40 **** Incremental Build of configuration Debug for project client_system ****
 make all 
 Generating bif file for the system project
 generate_system_bif.bat 51457 C:/Github/Zybo_mipi/LWIP/vitis/design_1_wrapper/export/design_1_wrapper/design_1_wrapper.xpfm standalone_domain C:/Github/Zybo_mipi/LWIP/vitis/client_system/Debug/system.bif
@@ -8,5 +8,5 @@ Error: platform file not found: C:/Github/Zybo_mipi/LWIP/vitis/design_1_wrapper/
 Running C:/Xilinx/Vitis/2019.2/bin/bootgen  -image C:/Github/Zybo_mipi/LWIP/vitis/client_system/Debug/sd_card_temp/boot.bif -w -o i BOOT.BIN
 [ERROR]  : Can't read file - C:/Github/Zybo_mipi/LWIP/vitis/design_1_wrapper/export/design_1_wrapper/sw/design_1_wrapper/boot/fsbl.elf
 
-21:20:11 Build Finished (took 4s.718ms)
+21:22:45 Build Finished (took 4s.654ms)
 
