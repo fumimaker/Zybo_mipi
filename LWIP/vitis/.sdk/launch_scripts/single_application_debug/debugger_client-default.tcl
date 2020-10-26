@@ -14,4 +14,5 @@ ps7_post_config
 targets -set -nocase -filter {name =~ "*A9*#0"}
 dow C:/Github/Zybo_mipi/LWIP/vitis/client/Debug/client.elf
 configparams force-mem-access 0
-bpadd -addr &main
+targets -set -nocase -filter {name =~ "*A9*#0"}
+con

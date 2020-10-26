@@ -83,6 +83,7 @@ struct perf_stats {
 	u64_t start_time;
 	u64_t total_bytes;
 	u64_t cnt_datagrams;
+	u32_t packet_id;
 	struct interim_report i_report;
 };
 
@@ -93,10 +94,10 @@ struct perf_stats {
 #define UDP_CONN_PORT 5001
 
 /* time in seconds to transmit packets */
-#define UDP_TIME_INTERVAL 300
+#define UDP_TIME_INTERVAL 1
 
 /* Server to connect with */
-#define UDP_SERVER_IP_ADDRESS "192.168.1.100"
+#define UDP_SERVER_IP_ADDRESS "192.168.11.217"
 
 /* UDP buffer length in bytes */
 #define UDP_SEND_BUFSIZE 1440
@@ -105,6 +106,8 @@ struct perf_stats {
 #define MAX_SEND_RETRY 10
 
 /* Number of parallel UDP clients */
-#define NUM_OF_PARALLEL_CLIENTS 2
+#define NUM_OF_PARALLEL_CLIENTS 1
+
+#define SIZE_OF_FRAME 1280*720*3
 
 #endif /* __UDP_PERF_CLIENT_H_ */

@@ -133,6 +133,7 @@ int main(void)
 
 	xil_printf("\r\n\r\n");
 	xil_printf("-----lwIP RAW Mode UDP Client Application-----\r\n");
+	xil_printf("-----Powered by fumimaker-----\r\n");
 
 	/* initialize lwIP */
 	lwip_init();
@@ -198,6 +199,7 @@ int main(void)
 		xemacif_input(netif);
 		transfer_data();
 	}
+
 
 	/* never reached */
 	cleanup_platform();
