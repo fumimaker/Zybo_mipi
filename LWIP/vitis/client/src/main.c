@@ -47,7 +47,6 @@ extern volatile int dhcp_timoutcntr;
 extern volatile int TcpFastTmrFlag;
 extern volatile int TcpSlowTmrFlag;
 
-extern char *frame_pointer;
 
 #define DEFAULT_IP_ADDRESS	"192.168.1.10"
 #define DEFAULT_IP_MASK		"255.255.255.0"

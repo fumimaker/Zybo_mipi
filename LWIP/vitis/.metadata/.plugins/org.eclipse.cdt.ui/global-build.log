@@ -1,6 +1,6 @@
 Nothing to build in platform 'design_1_wrapper'
 
-19:40:12 **** Incremental Build of configuration Debug for project client ****
+21:20:05 **** Incremental Build of configuration Debug for project client ****
 make all 
 make --no-print-directory pre-build
 a9-linaro-pre-build-step
@@ -9,13 +9,6 @@ make --no-print-directory main-build
 'Building file: ../src/udp_perf_client.c'
 'Invoking: ARM v7 gcc compiler'
 arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/udp_perf_client.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -IC:/Github/Zybo_mipi/LWIP/vitis/design_1_wrapper/export/design_1_wrapper/sw/design_1_wrapper/standalone_domain/bspinclude/include -MMD -MP -MF"src/udp_perf_client.d" -MT"src/udp_perf_client.o" -o "src/udp_perf_client.o" "../src/udp_perf_client.c"
-../src/udp_perf_client.c: In function 'transfer_data':
-../src/udp_perf_client.c:247:4: warning: "/*" within comment [-Wcomment]
-    /* this session is time-limited
-     
-../src/udp_perf_client.c:250:5: warning: "/*" within comment [-Wcomment]
-     /* time specified is over,
-      
 'Finished building: ../src/udp_perf_client.c'
 ' '
 'Building target: client.elf'
@@ -29,7 +22,7 @@ arm-none-eabi-size client.elf  |tee "client.elf.size"
  140040	   3432	34724128	34867600	2140990	client.elf
 'Finished building: client.elf.size'
 ' '
-19:40:14 **** Incremental Build of configuration Debug for project client_system ****
+21:20:07 **** Incremental Build of configuration Debug for project client_system ****
 make all 
 Generating bif file for the system project
 generate_system_bif.bat 51457 C:/Github/Zybo_mipi/LWIP/vitis/design_1_wrapper/export/design_1_wrapper/design_1_wrapper.xpfm standalone_domain C:/Github/Zybo_mipi/LWIP/vitis/client_system/Debug/system.bif
