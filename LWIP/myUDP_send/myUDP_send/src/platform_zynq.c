@@ -86,8 +86,7 @@ void dhcp_fine_tmr();
 void dhcp_coarse_tmr();
 #endif
 
-void
-timer_callback(XScuTimer * TimerInstance)
+void timer_callback(XScuTimer * TimerInstance)
 {
 	/* we need to call tcp_fasttmr & tcp_slowtmr at intervals specified
 	 * by lwIP. It is not important that the timing is absoluetly accurate.

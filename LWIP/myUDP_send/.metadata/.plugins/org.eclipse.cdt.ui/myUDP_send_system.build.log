@@ -1,4 +1,4 @@
-19:19:24 **** Incremental Build of configuration Debug for project myUDP_send_system ****
+20:47:31 **** Incremental Build of configuration Debug for project myUDP_send_system ****
 make all 
 Generating bif file for the system project
 generate_system_bif.bat 63671 C:/Github/Zybo_mipi/LWIP/myUDP_send/design_1_wrapper/export/design_1_wrapper/design_1_wrapper.xpfm standalone_domain C:/Github/Zybo_mipi/LWIP/myUDP_send/myUDP_send_system/Debug/system.bif
@@ -8,5 +8,5 @@ Error: platform file not found: C:/Github/Zybo_mipi/LWIP/myUDP_send/design_1_wra
 Running C:/Xilinx/Vitis/2019.2/bin/bootgen  -image C:/Github/Zybo_mipi/LWIP/myUDP_send/myUDP_send_system/Debug/sd_card_temp/boot.bif -w -o i BOOT.BIN
 [ERROR]  : Can't read file - C:/Github/Zybo_mipi/LWIP/myUDP_send/design_1_wrapper/export/design_1_wrapper/sw/design_1_wrapper/boot/fsbl.elf
 
-19:19:31 Build Finished (took 6s.687ms)
+20:47:36 Build Finished (took 4s.909ms)
 
