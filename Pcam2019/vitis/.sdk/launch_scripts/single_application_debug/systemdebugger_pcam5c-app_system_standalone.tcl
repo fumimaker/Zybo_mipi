@@ -14,5 +14,4 @@ ps7_post_config
 targets -set -nocase -filter {name =~ "*A9*#0"}
 dow C:/Github/Zybo_mipi/Pcam2019/vitis/Pcam5C-app/Debug/Pcam5C-app.elf
 configparams force-mem-access 0
-targets -set -nocase -filter {name =~ "*A9*#0"}
-con
+bpadd -addr &main

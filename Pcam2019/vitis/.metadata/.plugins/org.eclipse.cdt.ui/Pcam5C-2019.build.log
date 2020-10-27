@@ -1,10 +1,6 @@
-21:29:28 **** Build of project Pcam5C-2019 ****
-buildplatform.bat 63678 Pcam5C-2019  
-XSDB Server Channel: tcfchan#1
-Reading the platform  : "Pcam5C-2019"
-Building the zynq_fsbl application.
-make: Nothing to be done for 'all'.
-
+19:22:38 **** Build of project Pcam5C-2019 ****
+buildplatform.bat 62415 Pcam5C-2019  
+XSDB Server Channel: tcfchan#15
 Building the BSP Library for domain  - standalone_domain on processor ps7_cortexa9_0
 "Running Make include in ps7_cortexa9_0/libsrc/axivdma_v6_6/src"
 
@@ -65,6 +61,12 @@ artfiles -g -Wall -Wextra"
 make -C ps7_cortexa9_0/libsrc/iicps_v3_10/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ASSEMBLER=arm-none-eabi-as"
  "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nost
 artfiles -g -Wall -Wextra"
+
+"Running Make include in ps7_cortexa9_0/libsrc/lwip211_v1_1/src"
+
+make -C ps7_cortexa9_0/libsrc/lwip211_v1_1/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ASSEMBLER=arm-none-eabi-as
+" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nos
+tartfiles -g -Wall -Wextra"
 
 "Running Make include in ps7_cortexa9_0/libsrc/MIPI_CSI_2_RX_v1_0/src"
 
@@ -218,6 +220,33 @@ files -g -Wall -Wextra"
 
 "Compiling iicps"
 
+"Running Make libs in ps7_cortexa9_0/libsrc/lwip211_v1_1/src"
+
+make -C ps7_cortexa9_0/libsrc/lwip211_v1_1/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ASSEMBLER=arm-none-eabi-as" "
+ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostar
+tfiles -g -Wall -Wextra"
+
+"Compiling lwip src and adapter files"
+
+In file included from ../../../include/xemacps.h:347,
+                 from ../../../include/netif/xemacpsif.h:56,
+                 from contrib/ports/xilinx/netif/xemacpsif_dma.c:37:
+contrib/ports/xilinx/netif/xemacpsif_dma.c: In function 'init_dma':
+../../../include/xemacps_hw.h:613:23: warning: 'bdrxterminate' may be used uninitialized in this function [-Wmaybe-uninitialized]
+ #define XEmacPs_Out32 Xil_Out32
+                       ^~~~~~~~~
+contrib/ports/xilinx/netif/xemacpsif_dma.c:561:14: note: 'bdrxterminate' was declared here
+  XEmacPs_Bd *bdrxterminate;
+              ^~~~~~~~~~~~~
+In file included from ../../../include/xemacps.h:348,
+                 from ../../../include/netif/xemacpsif.h:56,
+                 from contrib/ports/xilinx/netif/xemacpsif_dma.c:37:
+../../../include/xemacps_bd.h:140:12: warning: 'bdtxterminate' may be used uninitialized in this function [-Wmaybe-uninitialized]
+  (*(u32 *)((UINTPTR)((void*)(BaseAddress)) + (u32)(Offset)))
+            ^
+contrib/ports/xilinx/netif/xemacpsif_dma.c:560:14: note: 'bdtxterminate' was declared here
+  XEmacPs_Bd *bdtxterminate;
+              ^~~~~~~~~~~~~
 "Running Make libs in ps7_cortexa9_0/libsrc/MIPI_CSI_2_RX_v1_0/src"
 
 make -C ps7_cortexa9_0/libsrc/MIPI_CSI_2_RX_v1_0/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ASSEMBLER=arm-none-eabi
@@ -333,5 +362,5 @@ files -g -Wall -Wextra"
 'Finished building libraries'
 
 
-21:30:01 Build Finished (took 32s.971ms)
+19:23:16 Build Finished (took 37s.865ms)
 

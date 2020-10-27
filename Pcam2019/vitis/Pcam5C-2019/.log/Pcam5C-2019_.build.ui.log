@@ -1,10 +1,6 @@
-2020-10-26T21:29:28.821254800255-21:29:28 **** Build of project Pcam5C-2019 ****
-000-buildplatform.bat 63678 Pcam5C-2019  
-000-XSDB Server Channel: tcfchan#1
-000-Reading the platform  : "Pcam5C-2019"
-000-Building the zynq_fsbl application.
-000-make: Nothing to be done for 'all'.
-000-
+2020-10-27T19:22:38.543613700255-19:22:38 **** Build of project Pcam5C-2019 ****
+000-buildplatform.bat 62415 Pcam5C-2019  
+000-XSDB Server Channel: tcfchan#15
 000-Building the BSP Library for domain  - standalone_domain on processor ps7_cortexa9_0
 000-"Running Make include in ps7_cortexa9_0/libsrc/axivdma_v6_6/src"
 000-
@@ -65,6 +61,12 @@
 000-make -C ps7_cortexa9_0/libsrc/iicps_v3_10/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ASSEMBLER=arm-none-eabi-as"
 000- "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nost
 000-artfiles -g -Wall -Wextra"
+000-
+000-"Running Make include in ps7_cortexa9_0/libsrc/lwip211_v1_1/src"
+000-
+000-make -C ps7_cortexa9_0/libsrc/lwip211_v1_1/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ASSEMBLER=arm-none-eabi-as
+000-" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nos
+000-tartfiles -g -Wall -Wextra"
 000-
 000-"Running Make include in ps7_cortexa9_0/libsrc/MIPI_CSI_2_RX_v1_0/src"
 000-
@@ -218,6 +220,33 @@
 000-
 000-"Compiling iicps"
 000-
+000-"Running Make libs in ps7_cortexa9_0/libsrc/lwip211_v1_1/src"
+000-
+000-make -C ps7_cortexa9_0/libsrc/lwip211_v1_1/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ASSEMBLER=arm-none-eabi-as" "
+000-ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostar
+000-tfiles -g -Wall -Wextra"
+000-
+000-"Compiling lwip src and adapter files"
+000-
+000-In file included from ../../../include/xemacps.h:347,
+000-                 from ../../../include/netif/xemacpsif.h:56,
+000-                 from contrib/ports/xilinx/netif/xemacpsif_dma.c:37:
+000-contrib/ports/xilinx/netif/xemacpsif_dma.c: In function 'init_dma':
+000/Pcam5C-2019/ps7_cortexa9_0/standalone_domain/bsp/ps7_cortexa9_0/include/xemacps_hw.h613-1-1'bdrxterminate' may be used uninitialized in this function [-Wmaybe-uninitialized]1-../../../include/xemacps_hw.h:613:23: warning: 'bdrxterminate' may be used uninitialized in this function [-Wmaybe-uninitialized]
+000- #define XEmacPs_Out32 Xil_Out32
+000-                       ^~~~~~~~~
+000/Pcam5C-2019/ps7_cortexa9_0/standalone_domain/bsp/ps7_cortexa9_0/libsrc/lwip211_v1_1/src/contrib/ports/xilinx/netif/xemacpsif_dma.c561-1-1'bdrxterminate' was declared here0-contrib/ports/xilinx/netif/xemacpsif_dma.c:561:14: note: 'bdrxterminate' was declared here
+000-  XEmacPs_Bd *bdrxterminate;
+000-              ^~~~~~~~~~~~~
+000-In file included from ../../../include/xemacps.h:348,
+000-                 from ../../../include/netif/xemacpsif.h:56,
+000-                 from contrib/ports/xilinx/netif/xemacpsif_dma.c:37:
+000/Pcam5C-2019/ps7_cortexa9_0/standalone_domain/bsp/ps7_cortexa9_0/include/xemacps_bd.h140-1-1'bdtxterminate' may be used uninitialized in this function [-Wmaybe-uninitialized]1-../../../include/xemacps_bd.h:140:12: warning: 'bdtxterminate' may be used uninitialized in this function [-Wmaybe-uninitialized]
+000-  (*(u32 *)((UINTPTR)((void*)(BaseAddress)) + (u32)(Offset)))
+000-            ^
+000/Pcam5C-2019/ps7_cortexa9_0/standalone_domain/bsp/ps7_cortexa9_0/libsrc/lwip211_v1_1/src/contrib/ports/xilinx/netif/xemacpsif_dma.c560-1-1'bdtxterminate' was declared here0-contrib/ports/xilinx/netif/xemacpsif_dma.c:560:14: note: 'bdtxterminate' was declared here
+000-  XEmacPs_Bd *bdtxterminate;
+000-              ^~~~~~~~~~~~~
 000-"Running Make libs in ps7_cortexa9_0/libsrc/MIPI_CSI_2_RX_v1_0/src"
 000-
 000-make -C ps7_cortexa9_0/libsrc/MIPI_CSI_2_RX_v1_0/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ASSEMBLER=arm-none-eabi
@@ -333,5 +362,5 @@
 000-'Finished building libraries'
 000-
 00255-
-21:30:01 Build Finished (took 32s.971ms)
+19:23:16 Build Finished (took 37s.865ms)
 

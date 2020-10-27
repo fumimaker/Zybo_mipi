@@ -17,7 +17,7 @@ RMDIR = rm -rf
 SDCARD_GEN = sdcard_gen
 GENERATE_BIF = ::scw::generate_bif
 
-XPFM_PATH = C:/Github/Zybo-Z7-20-pcam-5c-2019.1/vitis/Pcam5C-2019/export/Pcam5C-2019/Pcam5C-2019.xpfm
+XPFM_PATH = C:/Github/Zybo_mipi/Zybo-Z7-20-pcam-5c-2019.1/vitis/Pcam5C-2019/export/Pcam5C-2019/Pcam5C-2019.xpfm
 SYS_CONFIG = Pcam5C-2019
 DOMAINS = standalone_domain
 BIF_PATH = C:/Github/Zybo_mipi/Pcam2019/vitis/Pcam5C-app_system/Debug/system.bif
@@ -33,7 +33,7 @@ all: sd_card
 
 sd_card:
 	-@echo Generating bif file for the system project
-	generate_system_bif.bat 61004 ${XPFM_PATH} ${DOMAINS} ${BIF_PATH}
+	generate_system_bif.bat 62415 ${XPFM_PATH} ${DOMAINS} ${BIF_PATH}
 	${SDCARD_GEN} --xpfm ${XPFM_PATH} --sys_config ${SYS_CONFIG} --bif ${BIF_PATH} --bitstream ${BITSTREAM_PATH} ${SD_FILES}
 
 clean:
