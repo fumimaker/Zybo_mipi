@@ -25414,3 +25414,6 @@ java.io.FileNotFoundException: C:\Github\Zybo_mipi\Pcam2019\vitis\.metadata\.plu
 	at org.eclipse.core.internal.resources.SaveManager.save(SaveManager.java:1145)
 	at org.eclipse.core.internal.resources.DelayedSnapshotJob.run(DelayedSnapshotJob.java:52)
 	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:60)
+
+!ENTRY org.eclipse.ui 4 4 2020-10-28 18:22:42.954
+!MESSAGE Conflicting handlers for com.xilinx.sdx.system.core.importSourcesCommand: {com.xilinx.sdx.system.core.handler.ImportSourcesHandler@e8d2805} vs {com.xilinx.sdx.system.core.handler.ImportSourcesHandler}
