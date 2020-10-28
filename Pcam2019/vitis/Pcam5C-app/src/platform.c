@@ -54,14 +54,12 @@
 
 
 
-//#include "xparameters.h"
 #include "xparameters_ps.h"	/* defines XPAR values */
-//#include "xil_cache.h"
+
 #include "xscugic.h"
-//#include "lwip/tcp.h"
 #include "lwip/tcp.h"
 #include "xil_printf.h"
-//#include "platform_config.h"
+
 #include "netif/xadapter.h"
 #ifdef PLATFORM_ZYNQ
 #include "xscutimer.h"

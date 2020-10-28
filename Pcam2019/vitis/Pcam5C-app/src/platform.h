@@ -50,6 +50,6 @@ void enable_caches();
 void ps_reset();
 void platform_setup_timer();
 void platform_enable_interrupts();
-u64_t get_time_ms();
+u64 get_time_ms();
 
 #endif
