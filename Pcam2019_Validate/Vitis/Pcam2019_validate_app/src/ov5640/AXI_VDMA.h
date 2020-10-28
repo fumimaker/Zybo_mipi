@@ -241,6 +241,7 @@ public:
 		else{
 			prevFrame = currentFrame - 1;
 		}
+
 		int address = context_.WriteCfg.FrameStoreStartAddr[prevFrame];
 		char *pointer = (char *)address;//データ用
 		for(int i=0; i<1280; i++){

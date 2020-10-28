@@ -4253,3 +4253,10 @@ java.lang.RuntimeException: XSCT server calls should not be made from TCF thread
 21:52:43 INFO  : Checking for BSP changes to sync application flags for project 'Pcam5C-app'...
 22:38:11 INFO  : Successfully done sdx_reload_mss "C:/Github/Zybo_mipi/Pcam2019/vitis/Pcam5C-2019/ps7_cortexa9_0/standalone_domain/bsp/system.mss"
 22:38:11 INFO  : No changes in MSS file content so sources will not be generated.
+00:55:39 INFO  : Launching XSCT server: xsct.bat -n  -interactive C:\Github\Zybo_mipi\Pcam2019\vitis\temp_xsdb_launch_script.tcl
+00:55:41 INFO  : XSCT server has started successfully.
+00:55:41 INFO  : Successfully done setting XSCT server connection channel  
+00:55:41 INFO  : plnx-install-location is set to ''
+00:55:41 INFO  : Successfully done setting workspace for the tool. 
+00:55:43 INFO  : Successfully done query RDI_DATADIR 
+00:55:43 INFO  : Registering command handlers for Vitis TCF services

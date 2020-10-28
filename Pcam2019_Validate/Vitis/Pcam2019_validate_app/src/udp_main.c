@@ -27,7 +27,13 @@ void platform_enable_interrupts(void);
 void start_application(void);
 void transfer_data(void);
 void print_app_header(void);
+
 int udp_main(void);
+int udp_loop(void);
+static void print_ip_settings(ip_addr_t *ip, ip_addr_t *mask, ip_addr_t *gw);
+static void print_ip(char *msg, ip_addr_t *ip);
+static void assign_default_ip(ip_addr_t *ip, ip_addr_t *mask, ip_addr_t *gw);
+
 
 #if defined (__arm__) && !defined (ARMR5)
 #if XPAR_GIGE_PCS_PMA_SGMII_CORE_PRESENT == 1 || \
@@ -44,7 +50,7 @@ int IicPhyReset(void);
 #endif
 
 struct netif server_netif;
-
+struct netif *netif;
 static void print_ip(char *msg, ip_addr_t *ip)
 {
 	print(msg);
@@ -80,7 +86,6 @@ static void assign_default_ip(ip_addr_t *ip, ip_addr_t *mask, ip_addr_t *gw)
 
 int udp_main(void)
 {
-	struct netif *netif;
 
 	/* the mac address of the board. this should be unique per board */
 	unsigned char mac_ethernet_address[] = {
@@ -157,6 +162,11 @@ int udp_main(void)
 	start_application();
 	xil_printf("\r\n");
 
+	//return 0;
+}
+
+
+int udp_loop(void){
 	while (1) {
 		if (TcpFastTmrFlag) {
 			tcp_fasttmr();
@@ -169,9 +179,6 @@ int udp_main(void)
 		xemacif_input(netif);
 		transfer_data(); /* データを送信 */
 	}
-
 	/* never reached */
 	cleanup_platform();
-
-	return 0;
 }

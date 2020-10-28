@@ -173,7 +173,7 @@ static void udp_packet_send(u8_t finished)
 		payload = (int*) (packet->payload);
 
 		int id = ptrCounter/(UDP_SEND_BUFSIZE-sizeof(int)); // 何番目のパケットか計算
-		//xil_printf("%d \n\r", id);
+		xil_printf("%d \n\r", id);
 		if (finished == FINISH){
 			packet_id = -1;
 			id = -1;
@@ -251,7 +251,7 @@ void transfer_data(void)
 		// １回のサイズに満たない端数になったら端数とFINISH送って終了
 		// HDの場合は1436bute*1926(0-1925)回目で500byte余る計算になる。
 		if ( (SIZE_OF_FRAME - ptrCounter) < ( UDP_SEND_BUFSIZE - sizeof(int) ) ) { //Amari
-			//xil_printf("remain packet %d byte\n\r", (SIZE_OF_FRAME - ptrCounter));
+			xil_printf("remain packet %d byte\n\r", (SIZE_OF_FRAME - ptrCounter));
 			udp_packet_send(FINISH);
 			u64_t diff_ms = now - client.start_time;
 			udp_conn_report(diff_ms, UDP_DONE_CLIENT);

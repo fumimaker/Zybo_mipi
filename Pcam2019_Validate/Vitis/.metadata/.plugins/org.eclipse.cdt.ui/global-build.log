@@ -1,24 +1,33 @@
 Nothing to build in platform 'Pcam2019_Validate'
 
-00:42:31 **** Incremental Build of configuration Debug for project Pcam2019_validate_app ****
+01:42:32 **** Incremental Build of configuration Debug for project Pcam2019_validate_app ****
 make all 
 make --no-print-directory pre-build
 a9-linaro-pre-build-step
 ' '
 make --no-print-directory main-build
+'Building file: ../src/main.cc'
+'Invoking: ARM v7 g++ compiler'
+arm-none-eabi-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -IC:/Github/Zybo_mipi/Pcam2019_Validate/Vitis/Pcam2019_Validate/export/Pcam2019_Validate/sw/Pcam2019_Validate/standalone_domain/bspinclude/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.cc"
+'Finished building: ../src/main.cc'
+' '
 'Building file: ../src/udp_main.c'
 'Invoking: ARM v7 g++ compiler'
 arm-none-eabi-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/udp_main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -IC:/Github/Zybo_mipi/Pcam2019_Validate/Vitis/Pcam2019_Validate/export/Pcam2019_Validate/sw/Pcam2019_Validate/standalone_domain/bspinclude/include -MMD -MP -MF"src/udp_main.d" -MT"src/udp_main.o" -o "src/udp_main.o" "../src/udp_main.c"
 ../src/udp_main.c: In function 'void print_ip_settings(ip_addr_t*, ip_addr_t*, ip_addr_t*)':
-../src/udp_main.c:57:33: warning: ISO C++ forbids converting a string constant to 'char*' [-Wwrite-strings]
+../src/udp_main.c:63:33: warning: ISO C++ forbids converting a string constant to 'char*' [-Wwrite-strings]
   print_ip("Board IP:       ", ip);
                                  ^
-../src/udp_main.c:58:35: warning: ISO C++ forbids converting a string constant to 'char*' [-Wwrite-strings]
+../src/udp_main.c:64:35: warning: ISO C++ forbids converting a string constant to 'char*' [-Wwrite-strings]
   print_ip("Netmask :       ", mask);
                                    ^
-../src/udp_main.c:59:33: warning: ISO C++ forbids converting a string constant to 'char*' [-Wwrite-strings]
+../src/udp_main.c:65:33: warning: ISO C++ forbids converting a string constant to 'char*' [-Wwrite-strings]
   print_ip("Gateway :       ", gw);
                                  ^
+../src/udp_main.c: In function 'int udp_main()':
+../src/udp_main.c:166:1: warning: control reaches end of non-void function [-Wreturn-type]
+ }
+ ^
 'Finished building: ../src/udp_main.c'
 ' '
 'Building target: Pcam2019_validate_app.elf'
@@ -29,10 +38,10 @@ arm-none-eabi-g++ -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=non
 'Invoking: ARM v7 Print Size'
 arm-none-eabi-size Pcam2019_validate_app.elf  |tee "Pcam2019_validate_app.elf.size"
    text	   data	    bss	    dec	    hex	filename
- 710983	   3948	31512864	32227795	1ebc1d3	Pcam2019_validate_app.elf
+ 711515	   3948	34658592	35374055	21bc3e7	Pcam2019_validate_app.elf
 'Finished building: Pcam2019_validate_app.elf.size'
 ' '
-00:42:33 **** Incremental Build of configuration Debug for project Pcam2019_validate_app_system ****
+01:42:35 **** Incremental Build of configuration Debug for project Pcam2019_validate_app_system ****
 make all 
 Generating bif file for the system project
 generate_system_bif.bat 55673 C:/Github/Zybo_mipi/Pcam2019_Validate/Vitis/Pcam2019_Validate/export/Pcam2019_Validate/Pcam2019_Validate.xpfm standalone_domain C:/Github/Zybo_mipi/Pcam2019_Validate/Vitis/Pcam2019_validate_app_system/Debug/system.bif
