@@ -10,7 +10,8 @@
 #include "MIPI_CSI_2_RX.h"
 #include "platform.h"
 
-
+#include "udp_perf_client.h"
+#include "udp_main.h"
 
 #define IRPT_CTL_DEVID 		XPAR_PS7_SCUGIC_0_DEVICE_ID
 #define GPIO_DEVID			XPAR_PS7_GPIO_0_DEVICE_ID
@@ -85,7 +86,7 @@ int main()
 			VDMA_S2MM_IRPT_ID);
 	VideoOutput vid(XPAR_VTC_0_DEVICE_ID, XPAR_VIDEO_DYNCLK_DEVICE_ID);
 
-	pipeline_mode_change(vdma_driver, cam, vid, Resolution::R1920_1080_60_PP, OV5640_cfg::mode_t::MODE_1080P_1920_1080_30fps);
+	pipeline_mode_change(vdma_driver, cam, vid, Resolution::R1280_720_60_PP, OV5640_cfg::mode_t::MODE_720P_1280_720_60fps);
 
 
 	xil_printf("Video init done.\r\n");
@@ -99,6 +100,8 @@ int main()
 	uint8_t read_char5 = 0;
 	uint16_t reg_addr;
 	uint8_t reg_value;
+
+	udp_main();
 
 	while (1) {
 		xil_printf("\r\n\r\n\r\nPcam 5C MAIN OPTIONS\r\n");

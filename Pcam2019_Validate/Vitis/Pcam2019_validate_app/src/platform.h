@@ -38,11 +38,18 @@
 #define IS_Z7020 ((( Xil_In32 (XPS_SYS_CTRL_BASEADDR + 0x530) >> 12 ) & 0x1F) == (7))
 #define IS_Z7010 ((( Xil_In32 (XPS_SYS_CTRL_BASEADDR + 0x530) >> 12 ) & 0x1F) == (2))
 
+#ifdef __MICROBLAZE__
+void timer_callback();
+#endif
+
 void init_platform();
 void cleanup_platform();
 void flush_dcache();
 void disable_caches();
 void enable_caches();
 void ps_reset();
+void platform_setup_timer();
+void platform_enable_interrupts();
+unsigned long int get_time_ms();
 
 #endif
