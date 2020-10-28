@@ -1,6 +1,5 @@
 #include "xparameters.h"
 
-#include "platform/platform.h"
 #include "ov5640/OV5640.h"
 #include "ov5640/ScuGicInterruptController.h"
 #include "ov5640/PS_GPIO.h"
@@ -9,8 +8,9 @@
 
 #include "MIPI_D_PHY_RX.h"
 #include "MIPI_CSI_2_RX.h"
+#include "platform.h"
 
-#
+
 
 #define IRPT_CTL_DEVID 		XPAR_PS7_SCUGIC_0_DEVICE_ID
 #define GPIO_DEVID			XPAR_PS7_GPIO_0_DEVICE_ID

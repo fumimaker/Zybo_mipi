@@ -213,7 +213,7 @@ public:
 		//Unmask error interrupts
 		XAxiVdma_MaskS2MMErrIntr(&drv_inst_, ~XAXIVDMA_S2MM_IRQ_ERR_ALL_MASK, XAXIVDMA_WRITE);
 		//Enable write channel error and frame count interrupts
-		XAxiVdma_IntrEnable(&drv_inst_, XAXIVDMA_IXR_ERROR_MASK, XAXIVDMA_WRITE);
+		XAxiVdma_IntrEnable(&drv_inst_, XAXIVDMA_IXR_ERROR_MASK|XAXIVDMA_IXR_FRMCNT_MASK, XAXIVDMA_WRITE);//add |XAXIVDMA_IXR_FRMCNT_MASK
 	}
 	void enableWrite()
 	{
@@ -228,10 +228,28 @@ public:
 	void readHandler(uint32_t irq_types)
 	{
 		std::cout << "VDMA:read complete" << std::endl;
+
 	}
 	void writeHandler(uint32_t irq_types)
 	{
-		std::cout << "VDMA:write complete" << std::endl;
+		//std::cout << "VDMA:write complete" << std::endl;
+		int currentFrame = XAxiVdma_CurrFrameStore(&drv_inst_, XAXIVDMA_WRITE);
+		int prevFrame = 0;
+		if(currentFrame==0){
+			prevFrame = 2;
+		}
+		else{
+			prevFrame = currentFrame - 1;
+		}
+		int address = context_.WriteCfg.FrameStoreStartAddr[prevFrame];
+		char *pointer = (char *)address;//データ用
+		for(int i=0; i<1280; i++){
+			for(int j=0; j<1; j++){
+				xil_printf("%x : %p: %06X ", address, pointer, ((*pointer << 16) | *(pointer+1) << 8) | *(pointer+2) );
+							pointer += 3;
+							xil_printf("\n\r");
+			}
+		}
 	}
 	void readErrorHandler(uint32_t mask)
 	{

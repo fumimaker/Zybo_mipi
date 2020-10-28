@@ -13147,3 +13147,111 @@ Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.]. Thread: Worker-15: Launc
 
 !ENTRY org.eclipse.ui 4 4 2020-10-28 22:21:16.209
 !MESSAGE Conflicting handlers for com.xilinx.sdx.system.core.importSourcesCommand: {com.xilinx.sdx.system.core.handler.ImportSourcesHandler@6cdea0fe} vs {com.xilinx.sdx.system.core.handler.ImportSourcesHandler}
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-10-28 22:22:47.437
+!MESSAGE XSCT Command: [ ::hsi::utils::set_current_hw_sw C:/Github/Zybo_mipi/Pcam2019_Validate/Vitis/Pcam2019_Validate/export/Pcam2019_Validate/hw/system_wrapper.xsa C:/Github/Zybo_mipi/Pcam2019_Validate/Vitis/Pcam2019_Validate/export/Pcam2019_Validate/sw/Pcam2019_Validate/standalone_domain/system.mss ], Thread: Worker-20: Build Project
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-10-28 22:22:47.452
+!MESSAGE XSCT command with result: [ ::hsi::utils::set_current_hw_sw C:/Github/Zybo_mipi/Pcam2019_Validate/Vitis/Pcam2019_Validate/export/Pcam2019_Validate/hw/system_wrapper.xsa C:/Github/Zybo_mipi/Pcam2019_Validate/Vitis/Pcam2019_Validate/export/Pcam2019_Validate/sw/Pcam2019_Validate/standalone_domain/system.mss ], Result: [null, ]. Thread: Worker-20: Build Project
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-10-28 22:22:47.456
+!MESSAGE XSCT Command: [::hsi::utils::get_hw_sw_details -json C:/Github/Zybo_mipi/Pcam2019_Validate/Vitis/Pcam2019_Validate/export/Pcam2019_Validate/hw/system_wrapper.xsa C:/Github/Zybo_mipi/Pcam2019_Validate/Vitis/Pcam2019_Validate/export/Pcam2019_Validate/sw/Pcam2019_Validate/standalone_domain/system.mss], Thread: Worker-20: Build Project
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-10-28 22:22:47.466
+!MESSAGE XSCT command with result: [::hsi::utils::get_hw_sw_details -json C:/Github/Zybo_mipi/Pcam2019_Validate/Vitis/Pcam2019_Validate/export/Pcam2019_Validate/hw/system_wrapper.xsa C:/Github/Zybo_mipi/Pcam2019_Validate/Vitis/Pcam2019_Validate/export/Pcam2019_Validate/sw/Pcam2019_Validate/standalone_domain/system.mss], Result: [null, {"procname": "ps7_cortexa9_0",
+"osname": "standalone",
+"osver": "7.1",
+}]. Thread: Worker-20: Build Project
+
+!ENTRY com.xilinx.sdk.utils 1 0 2020-10-28 22:22:47.471
+!MESSAGE Generating MD5 hash for file: C:\Github\Zybo_mipi\Pcam2019_Validate\Vitis\Pcam2019_Validate\export\Pcam2019_Validate\sw\Pcam2019_Validate\standalone_domain\system.mss ...
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-10-28 22:22:47.475
+!MESSAGE XSCT Command: [::hsi::utils::closesw C:/Github/Zybo_mipi/Pcam2019_Validate/Vitis/Pcam2019_Validate/export/Pcam2019_Validate/sw/Pcam2019_Validate/standalone_domain/system.mss], Thread: Worker-20: Build Project
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-10-28 22:22:47.481
+!MESSAGE XSCT command with result: [::hsi::utils::closesw C:/Github/Zybo_mipi/Pcam2019_Validate/Vitis/Pcam2019_Validate/export/Pcam2019_Validate/sw/Pcam2019_Validate/standalone_domain/system.mss], Result: [null, ]. Thread: Worker-20: Build Project
+
+!ENTRY com.xilinx.sdk.utils 1 0 2020-10-28 22:22:55.236
+!MESSAGE Tool usage for 'SDX_NO_OP_BUILD' updated to '8'
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-10-28 22:23:31.286
+!MESSAGE XSCT Command: [ ::hsi::utils::set_current_hw_sw C:/Github/Zybo_mipi/Pcam2019_Validate/Vitis/Pcam2019_Validate/export/Pcam2019_Validate/hw/system_wrapper.xsa C:/Github/Zybo_mipi/Pcam2019_Validate/Vitis/Pcam2019_Validate/export/Pcam2019_Validate/sw/Pcam2019_Validate/standalone_domain/system.mss ], Thread: Worker-10: Build Project
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-10-28 22:23:31.296
+!MESSAGE XSCT command with result: [ ::hsi::utils::set_current_hw_sw C:/Github/Zybo_mipi/Pcam2019_Validate/Vitis/Pcam2019_Validate/export/Pcam2019_Validate/hw/system_wrapper.xsa C:/Github/Zybo_mipi/Pcam2019_Validate/Vitis/Pcam2019_Validate/export/Pcam2019_Validate/sw/Pcam2019_Validate/standalone_domain/system.mss ], Result: [null, ]. Thread: Worker-10: Build Project
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-10-28 22:23:31.301
+!MESSAGE XSCT Command: [::hsi::utils::get_hw_sw_details -json C:/Github/Zybo_mipi/Pcam2019_Validate/Vitis/Pcam2019_Validate/export/Pcam2019_Validate/hw/system_wrapper.xsa C:/Github/Zybo_mipi/Pcam2019_Validate/Vitis/Pcam2019_Validate/export/Pcam2019_Validate/sw/Pcam2019_Validate/standalone_domain/system.mss], Thread: Worker-10: Build Project
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-10-28 22:23:31.308
+!MESSAGE XSCT command with result: [::hsi::utils::get_hw_sw_details -json C:/Github/Zybo_mipi/Pcam2019_Validate/Vitis/Pcam2019_Validate/export/Pcam2019_Validate/hw/system_wrapper.xsa C:/Github/Zybo_mipi/Pcam2019_Validate/Vitis/Pcam2019_Validate/export/Pcam2019_Validate/sw/Pcam2019_Validate/standalone_domain/system.mss], Result: [null, {"procname": "ps7_cortexa9_0",
+"osname": "standalone",
+"osver": "7.1",
+}]. Thread: Worker-10: Build Project
+
+!ENTRY com.xilinx.sdk.utils 1 0 2020-10-28 22:23:31.313
+!MESSAGE Generating MD5 hash for file: C:\Github\Zybo_mipi\Pcam2019_Validate\Vitis\Pcam2019_Validate\export\Pcam2019_Validate\sw\Pcam2019_Validate\standalone_domain\system.mss ...
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-10-28 22:23:31.318
+!MESSAGE XSCT Command: [::hsi::utils::closesw C:/Github/Zybo_mipi/Pcam2019_Validate/Vitis/Pcam2019_Validate/export/Pcam2019_Validate/sw/Pcam2019_Validate/standalone_domain/system.mss], Thread: Worker-10: Build Project
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-10-28 22:23:31.326
+!MESSAGE XSCT command with result: [::hsi::utils::closesw C:/Github/Zybo_mipi/Pcam2019_Validate/Vitis/Pcam2019_Validate/export/Pcam2019_Validate/sw/Pcam2019_Validate/standalone_domain/system.mss], Result: [null, ]. Thread: Worker-10: Build Project
+
+!ENTRY com.xilinx.sdk.utils 1 0 2020-10-28 22:23:39.428
+!MESSAGE Tool usage for 'SDX_NO_OP_BUILD' updated to '9'
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-10-28 22:26:29.160
+!MESSAGE XSCT Command: [ ::hsi::utils::set_current_hw_sw C:/Github/Zybo_mipi/Pcam2019_Validate/Vitis/Pcam2019_Validate/export/Pcam2019_Validate/hw/system_wrapper.xsa C:/Github/Zybo_mipi/Pcam2019_Validate/Vitis/Pcam2019_Validate/export/Pcam2019_Validate/sw/Pcam2019_Validate/standalone_domain/system.mss ], Thread: Worker-24: Build Project
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-10-28 22:26:29.169
+!MESSAGE XSCT command with result: [ ::hsi::utils::set_current_hw_sw C:/Github/Zybo_mipi/Pcam2019_Validate/Vitis/Pcam2019_Validate/export/Pcam2019_Validate/hw/system_wrapper.xsa C:/Github/Zybo_mipi/Pcam2019_Validate/Vitis/Pcam2019_Validate/export/Pcam2019_Validate/sw/Pcam2019_Validate/standalone_domain/system.mss ], Result: [null, ]. Thread: Worker-24: Build Project
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-10-28 22:26:29.174
+!MESSAGE XSCT Command: [::hsi::utils::get_hw_sw_details -json C:/Github/Zybo_mipi/Pcam2019_Validate/Vitis/Pcam2019_Validate/export/Pcam2019_Validate/hw/system_wrapper.xsa C:/Github/Zybo_mipi/Pcam2019_Validate/Vitis/Pcam2019_Validate/export/Pcam2019_Validate/sw/Pcam2019_Validate/standalone_domain/system.mss], Thread: Worker-24: Build Project
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-10-28 22:26:29.180
+!MESSAGE XSCT command with result: [::hsi::utils::get_hw_sw_details -json C:/Github/Zybo_mipi/Pcam2019_Validate/Vitis/Pcam2019_Validate/export/Pcam2019_Validate/hw/system_wrapper.xsa C:/Github/Zybo_mipi/Pcam2019_Validate/Vitis/Pcam2019_Validate/export/Pcam2019_Validate/sw/Pcam2019_Validate/standalone_domain/system.mss], Result: [null, {"procname": "ps7_cortexa9_0",
+"osname": "standalone",
+"osver": "7.1",
+}]. Thread: Worker-24: Build Project
+
+!ENTRY com.xilinx.sdk.utils 1 0 2020-10-28 22:26:29.184
+!MESSAGE Generating MD5 hash for file: C:\Github\Zybo_mipi\Pcam2019_Validate\Vitis\Pcam2019_Validate\export\Pcam2019_Validate\sw\Pcam2019_Validate\standalone_domain\system.mss ...
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-10-28 22:26:29.189
+!MESSAGE XSCT Command: [::hsi::utils::closesw C:/Github/Zybo_mipi/Pcam2019_Validate/Vitis/Pcam2019_Validate/export/Pcam2019_Validate/sw/Pcam2019_Validate/standalone_domain/system.mss], Thread: Worker-24: Build Project
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-10-28 22:26:29.195
+!MESSAGE XSCT command with result: [::hsi::utils::closesw C:/Github/Zybo_mipi/Pcam2019_Validate/Vitis/Pcam2019_Validate/export/Pcam2019_Validate/sw/Pcam2019_Validate/standalone_domain/system.mss], Result: [null, ]. Thread: Worker-24: Build Project
+
+!ENTRY com.xilinx.sdk.utils 1 0 2020-10-28 22:26:37.583
+!MESSAGE Tool usage for 'SDX_NO_OP_BUILD' updated to '10'
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-10-28 22:27:46.664
+!MESSAGE XSCT Command: [ ::hsi::utils::set_current_hw_sw C:/Github/Zybo_mipi/Pcam2019_Validate/Vitis/Pcam2019_Validate/export/Pcam2019_Validate/hw/system_wrapper.xsa C:/Github/Zybo_mipi/Pcam2019_Validate/Vitis/Pcam2019_Validate/export/Pcam2019_Validate/sw/Pcam2019_Validate/standalone_domain/system.mss ], Thread: Worker-20: Building Workspace
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-10-28 22:27:46.673
+!MESSAGE XSCT command with result: [ ::hsi::utils::set_current_hw_sw C:/Github/Zybo_mipi/Pcam2019_Validate/Vitis/Pcam2019_Validate/export/Pcam2019_Validate/hw/system_wrapper.xsa C:/Github/Zybo_mipi/Pcam2019_Validate/Vitis/Pcam2019_Validate/export/Pcam2019_Validate/sw/Pcam2019_Validate/standalone_domain/system.mss ], Result: [null, ]. Thread: Worker-20: Building Workspace
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-10-28 22:27:46.677
+!MESSAGE XSCT Command: [::hsi::utils::get_hw_sw_details -json C:/Github/Zybo_mipi/Pcam2019_Validate/Vitis/Pcam2019_Validate/export/Pcam2019_Validate/hw/system_wrapper.xsa C:/Github/Zybo_mipi/Pcam2019_Validate/Vitis/Pcam2019_Validate/export/Pcam2019_Validate/sw/Pcam2019_Validate/standalone_domain/system.mss], Thread: Worker-20: Building Workspace
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-10-28 22:27:46.682
+!MESSAGE XSCT command with result: [::hsi::utils::get_hw_sw_details -json C:/Github/Zybo_mipi/Pcam2019_Validate/Vitis/Pcam2019_Validate/export/Pcam2019_Validate/hw/system_wrapper.xsa C:/Github/Zybo_mipi/Pcam2019_Validate/Vitis/Pcam2019_Validate/export/Pcam2019_Validate/sw/Pcam2019_Validate/standalone_domain/system.mss], Result: [null, {"procname": "ps7_cortexa9_0",
+"osname": "standalone",
+"osver": "7.1",
+}]. Thread: Worker-20: Building Workspace
+
+!ENTRY com.xilinx.sdk.utils 1 0 2020-10-28 22:27:46.686
+!MESSAGE Generating MD5 hash for file: C:\Github\Zybo_mipi\Pcam2019_Validate\Vitis\Pcam2019_Validate\export\Pcam2019_Validate\sw\Pcam2019_Validate\standalone_domain\system.mss ...
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-10-28 22:27:46.689
+!MESSAGE XSCT Command: [::hsi::utils::closesw C:/Github/Zybo_mipi/Pcam2019_Validate/Vitis/Pcam2019_Validate/export/Pcam2019_Validate/sw/Pcam2019_Validate/standalone_domain/system.mss], Thread: Worker-20: Building Workspace
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-10-28 22:27:46.693
+!MESSAGE XSCT command with result: [::hsi::utils::closesw C:/Github/Zybo_mipi/Pcam2019_Validate/Vitis/Pcam2019_Validate/export/Pcam2019_Validate/sw/Pcam2019_Validate/standalone_domain/system.mss], Result: [null, ]. Thread: Worker-20: Building Workspace
+
+!ENTRY com.xilinx.sdk.utils 1 0 2020-10-28 22:27:55.378
+!MESSAGE Tool usage for 'SDX_NO_OP_BUILD' updated to '11'
