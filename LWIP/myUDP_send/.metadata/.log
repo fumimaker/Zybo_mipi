@@ -8720,3 +8720,1362 @@ java.lang.Error
 
 !ENTRY com.xilinx.sdk.utils 1 0 2020-10-27 21:47:19.971
 !MESSAGE Executed Webtalk command
+!SESSION 2020-10-28 16:15:54.538 -----------------------------------------------
+eclipse.buildId=2019.2
+java.version=9.0.4
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=ja_JP
+Command-line arguments:  -os win32 -ws win32 -arch x86_64
+
+!ENTRY org.eclipse.emf.ecore 2 0 2020-10-28 16:16:04.532
+!MESSAGE Both 'com.autoesl.autopilot.ui.models' and 'com.autoesl.autopilot.ui.models' register a package for 'com.autoesl.autopilot.solution'
+
+!ENTRY org.eclipse.ui 4 4 2020-10-28 16:16:11.388
+!MESSAGE Conflicting handlers for com.xilinx.sdx.system.core.importSourcesCommand: {com.xilinx.sdx.system.core.handler.ImportSourcesHandler} vs {com.xilinx.sdx.system.core.handler.ImportSourcesHandler}
+
+!ENTRY org.eclipse.ui 4 4 2020-10-28 16:16:11.399
+!MESSAGE Conflicting handlers for com.xilinx.sdx.system.core.importSourcesCommand: {com.xilinx.sdx.system.core.handler.ImportSourcesHandler} vs {com.xilinx.sdx.system.core.handler.ImportSourcesHandler}
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-10-28 16:16:13.184
+!MESSAGE XSCT Command: [::hsi::utils::init_repo], Thread: Worker-4: Initializing 'standalone_domain' bsp settings UI...
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-10-28 16:16:13.193
+!MESSAGE XSCT Command: [platform read {C:\Github\Zybo_mipi\LWIP\myUDP_send\design_1_wrapper\platform.spr}], Thread: Worker-1: Initializing the platform to enable editing
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-10-28 16:16:13.216
+!MESSAGE XSCT Command: [plnx-install-path  ; ::scw::scw_mode gui], Thread: Thread-5
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-10-28 16:16:13.221
+!MESSAGE XSCT Command: [set sdk::sdk_chan tcfchan#0], Thread: Thread-12
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-10-28 16:16:13.232
+!MESSAGE XSCT Command: [::hsi::utils::openhw C:/Github/Zybo_mipi/LWIP/myUDP_send/design_1_wrapper/hw/design_1_wrapper.xsa], Thread: Worker-2: Initializing hardware specification UI...
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-10-28 16:16:13.431
+!MESSAGE XSCT command with result: [::hsi::utils::init_repo], Result: [null, ]. Thread: Worker-4: Initializing 'standalone_domain' bsp settings UI...
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-10-28 16:16:13.435
+!MESSAGE XSCT Command: [set query_var1 $::env(RDI_DATADIR)], Thread: Worker-4: Initializing 'standalone_domain' bsp settings UI...
+
+!ENTRY org.eclipse.egit.ui 2 0 2020-10-28 16:16:15.157
+!MESSAGE Warning: The environment variable HOME is not set. The following directory will be used to store the Git
+user global configuration and to define the default location to store repositories: 'C:\Users\fpga'. If this is
+not correct please set the HOME environment variable and restart Eclipse. Otherwise Git for Windows and
+EGit might behave differently since they see different configuration options.
+This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-10-28 16:16:19.685
+!MESSAGE XSCT command with result: [platform read {C:\Github\Zybo_mipi\LWIP\myUDP_send\design_1_wrapper\platform.spr}], Result: [null, ]. Thread: Worker-1: Initializing the platform to enable editing
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-10-28 16:16:19.689
+!MESSAGE XSCT command with result: [plnx-install-path  ; ::scw::scw_mode gui], Result: [null, ]. Thread: Thread-5
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-10-28 16:16:19.693
+!MESSAGE XSCT Command: [platform active {design_1_wrapper}], Thread: Worker-1: Initializing the platform to enable editing
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-10-28 16:16:19.697
+!MESSAGE XSCT command with result: [set sdk::sdk_chan tcfchan#0], Result: [null, tcfchan#0]. Thread: Thread-12
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-10-28 16:16:19.702
+!MESSAGE XSCT command with result: [::hsi::utils::openhw C:/Github/Zybo_mipi/LWIP/myUDP_send/design_1_wrapper/hw/design_1_wrapper.xsa], Result: [null, ]. Thread: Worker-2: Initializing hardware specification UI...
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-10-28 16:16:19.707
+!MESSAGE XSCT Command: [setws C:/Github/Zybo_mipi/LWIP/myUDP_send], Thread: Thread-12
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-10-28 16:16:19.710
+!MESSAGE XSCT command with result: [set query_var1 $::env(RDI_DATADIR)], Result: [null, C:/Xilinx/Vitis/2019.2/data]. Thread: Worker-4: Initializing 'standalone_domain' bsp settings UI...
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-10-28 16:16:19.715
+!MESSAGE XSCT command with result: [platform active {design_1_wrapper}], Result: [null, ]. Thread: Worker-1: Initializing the platform to enable editing
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-10-28 16:16:19.720
+!MESSAGE XSCT Command: [::scw::get_hw_path], Thread: Worker-4: Initializing 'standalone_domain' bsp settings UI...
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-10-28 16:16:19.725
+!MESSAGE XSCT command with result: [setws C:/Github/Zybo_mipi/LWIP/myUDP_send], Result: [null, ]. Thread: Thread-12
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-10-28 16:16:19.731
+!MESSAGE XSCT command with result: [::scw::get_hw_path], Result: [null, C:/Github/Zybo_mipi/LWIP/myUDP_send/design_1_wrapper/hw/design_1_wrapper.xsa]. Thread: Worker-4: Initializing 'standalone_domain' bsp settings UI...
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-10-28 16:16:19.736
+!MESSAGE XSCT Command: [::scw::regenerate_psinit C:/Github/Zybo_mipi/LWIP/myUDP_send/design_1_wrapper/hw/design_1_wrapper.xsa], Thread: Worker-4: Initializing 'standalone_domain' bsp settings UI...
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-10-28 16:16:19.742
+!MESSAGE XSCT command with result: [::scw::regenerate_psinit C:/Github/Zybo_mipi/LWIP/myUDP_send/design_1_wrapper/hw/design_1_wrapper.xsa], Result: [null, ]. Thread: Worker-4: Initializing 'standalone_domain' bsp settings UI...
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-10-28 16:16:19.748
+!MESSAGE XSCT Command: [::scw::get_mss_path], Thread: Worker-4: Initializing 'standalone_domain' bsp settings UI...
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-10-28 16:16:19.813
+!MESSAGE XSCT command with result: [::scw::get_mss_path], Result: [null, C:/Github/Zybo_mipi/LWIP/myUDP_send/design_1_wrapper/ps7_cortexa9_0/standalone_domain/bsp/system.mss]. Thread: Worker-4: Initializing 'standalone_domain' bsp settings UI...
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-10-28 16:16:19.823
+!MESSAGE XSCT Command: [ ::hsi::utils::set_current_hw_sw C:/Github/Zybo_mipi/LWIP/myUDP_send/design_1_wrapper/hw/design_1_wrapper.xsa C:/Github/Zybo_mipi/LWIP/myUDP_send/design_1_wrapper/ps7_cortexa9_0/standalone_domain/bsp/system.mss ], Thread: Worker-4: Initializing 'standalone_domain' bsp settings UI...
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-10-28 16:16:19.830
+!MESSAGE XSCT command with result: [ ::hsi::utils::set_current_hw_sw C:/Github/Zybo_mipi/LWIP/myUDP_send/design_1_wrapper/hw/design_1_wrapper.xsa C:/Github/Zybo_mipi/LWIP/myUDP_send/design_1_wrapper/ps7_cortexa9_0/standalone_domain/bsp/system.mss ], Result: [null, ]. Thread: Worker-4: Initializing 'standalone_domain' bsp settings UI...
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-10-28 16:16:19.834
+!MESSAGE XSCT Command: [::hsi::utils::get_hw_sw_details -json C:/Github/Zybo_mipi/LWIP/myUDP_send/design_1_wrapper/hw/design_1_wrapper.xsa C:/Github/Zybo_mipi/LWIP/myUDP_send/design_1_wrapper/ps7_cortexa9_0/standalone_domain/bsp/system.mss], Thread: Worker-4: Initializing 'standalone_domain' bsp settings UI...
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-10-28 16:16:19.841
+!MESSAGE XSCT command with result: [::hsi::utils::get_hw_sw_details -json C:/Github/Zybo_mipi/LWIP/myUDP_send/design_1_wrapper/hw/design_1_wrapper.xsa C:/Github/Zybo_mipi/LWIP/myUDP_send/design_1_wrapper/ps7_cortexa9_0/standalone_domain/bsp/system.mss], Result: [null, {"procname": "ps7_cortexa9_0",
+"osname": "standalone",
+"osver": "7.1",
+}]. Thread: Worker-4: Initializing 'standalone_domain' bsp settings UI...
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-10-28 16:16:19.853
+!MESSAGE XSCT Command: [hsi::utils::get_supported_os -json C:/Github/Zybo_mipi/LWIP/myUDP_send/design_1_wrapper/hw/design_1_wrapper.xsa], Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-10-28 16:16:19.869
+!MESSAGE XSCT command with result: [hsi::utils::get_supported_os -json C:/Github/Zybo_mipi/LWIP/myUDP_send/design_1_wrapper/hw/design_1_wrapper.xsa], Result: [null, {"ps7_cortexa9_0": {"freertos10_xilinx_v1_4": {"name": "freertos10_xilinx",
+"version": "1.4",
+"desc": "This Xilinx FreeRTOS port is based on FreeRTOS kernel version 10.1.1",
+"compilerflags": "",
+"linkerflags": "-Wl,--start-group,-lxil,-lfreertos,-lgcc,-lc,--end-group",
+"repo": "C:/Xilinx/Vitis/2019.2/data/embeddedsw/ThirdParty/bsp/freertos10_xilinx_v1_4",
+},
+"standalone_v7_1": {"name": "standalone",
+"version": "7.1",
+"desc": "Standalone is a simple, low-level software layer. It provides access to basic processor features such as caches, interrupts and exceptions as well as the basic features of a hosted environment, such as standard input and output, profiling, abort and exit.",
+"compilerflags": "",
+"linkerflags": "-Wl,--start-group,-lxil,-lgcc,-lc,--end-group",
+"repo": "C:/Xilinx/Vitis/2019.2/data/embeddedsw/lib/bsp/standalone_v7_1",
+},
+},
+"ps7_cortexa9_1": {"freertos10_xilinx_v1_4": {"name": "freertos10_xilinx",
+"version": "1.4",
+"desc": "This Xilinx FreeRTOS port is based on FreeRTOS kernel version 10.1.1",
+"compilerflags": "",
+"linkerflags": "-Wl,--start-group,-lxil,-lfreertos,-lgcc,-lc,--end-group",
+"repo": "C:/Xilinx/Vitis/2019.2/data/embeddedsw/ThirdParty/bsp/freertos10_xilinx_v1_4",
+},
+"standalone_v7_1": {"name": "standalone",
+"version": "7.1",
+"desc": "Standalone is a simple, low-level software layer. It provides access to basic processor features such as caches, interrupts and exceptions as well as the basic features of a hosted environment, such as standard input and output, profiling, abort and exit.",
+"compilerflags": "",
+"linkerflags": "-Wl,--start-group,-lxil,-lgcc,-lc,--end-group",
+"repo": "C:/Xilinx/Vitis/2019.2/data/embeddedsw/lib/bsp/standalone_v7_1",
+},
+},
+}]. Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-10-28 16:16:19.888
+!MESSAGE XSCT Command: [::hsi::utils::get_connected_periphs C:/Github/Zybo_mipi/LWIP/myUDP_send/design_1_wrapper/hw/design_1_wrapper.xsa ps7_cortexa9_0], Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-10-28 16:16:19.895
+!MESSAGE XSCT command with result: [::hsi::utils::get_connected_periphs C:/Github/Zybo_mipi/LWIP/myUDP_send/design_1_wrapper/hw/design_1_wrapper.xsa ps7_cortexa9_0], Result: [null, ps7_afi_0 ps7_afi_1 ps7_afi_2 ps7_afi_3 ps7_coresight_comp_0 ps7_ddr_0 ps7_ddrc_0 ps7_dev_cfg_0 ps7_dma_ns ps7_dma_s ps7_ethernet_0 ps7_globaltimer_0 ps7_gpio_0 ps7_gpv_0 ps7_intc_dist_0 ps7_iop_bus_config_0 ps7_l2cachec_0 ps7_ocmc_0 ps7_pl310_0 ps7_pmu_0 ps7_qspi_0 ps7_qspi_linear_0 ps7_ram_0 ps7_ram_1 ps7_scuc_0 ps7_scugic_0 ps7_scutimer_0 ps7_scuwdt_0 ps7_sd_0 ps7_slcr_0 ps7_uart_1 ps7_usb_0 ps7_xadc_0]. Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-10-28 16:16:19.900
+!MESSAGE XSCT Command: [::hsi::utils::get_drivers_for_sw -json C:/Github/Zybo_mipi/LWIP/myUDP_send/design_1_wrapper/hw/design_1_wrapper.xsa C:/Github/Zybo_mipi/LWIP/myUDP_send/design_1_wrapper/ps7_cortexa9_0/standalone_domain/bsp/system.mss], Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-10-28 16:16:19.909
+!MESSAGE XSCT command with result: [::hsi::utils::get_drivers_for_sw -json C:/Github/Zybo_mipi/LWIP/myUDP_send/design_1_wrapper/hw/design_1_wrapper.xsa C:/Github/Zybo_mipi/LWIP/myUDP_send/design_1_wrapper/ps7_cortexa9_0/standalone_domain/bsp/system.mss], Result: [null, {"ps7_afi_0": {"name": "generic",
+"ver": "2.0",
+},
+"ps7_afi_1": {"name": "generic",
+"ver": "2.0",
+},
+"ps7_afi_2": {"name": "generic",
+"ver": "2.0",
+},
+"ps7_afi_3": {"name": "generic",
+"ver": "2.0",
+},
+"ps7_coresight_comp_0": {"name": "coresightps_dcc",
+"ver": "1.6",
+},
+"ps7_ddr_0": {"name": "ddrps",
+"ver": "1.0",
+},
+"ps7_ddrc_0": {"name": "generic",
+"ver": "2.0",
+},
+"ps7_dev_cfg_0": {"name": "devcfg",
+"ver": "3.5",
+},
+"ps7_dma_ns": {"name": "dmaps",
+"ver": "2.5",
+},
+"ps7_dma_s": {"name": "dmaps",
+"ver": "2.5",
+},
+"ps7_ethernet_0": {"name": "emacps",
+"ver": "3.10",
+},
+"ps7_globaltimer_0": {"name": "generic",
+"ver": "2.0",
+},
+"ps7_gpio_0": {"name": "gpiops",
+"ver": "3.6",
+},
+"ps7_gpv_0": {"name": "generic",
+"ver": "2.0",
+},
+"ps7_intc_dist_0": {"name": "generic",
+"ver": "2.0",
+},
+"ps7_iop_bus_config_0": {"name": "generic",
+"ver": "2.0",
+},
+"ps7_l2cachec_0": {"name": "generic",
+"ver": "2.0",
+},
+"ps7_ocmc_0": {"name": "generic",
+"ver": "2.0",
+},
+"ps7_pl310_0": {"name": "generic",
+"ver": "2.0",
+},
+"ps7_pmu_0": {"name": "generic",
+"ver": "2.0",
+},
+"ps7_qspi_0": {"name": "qspips",
+"ver": "3.6",
+},
+"ps7_qspi_linear_0": {"name": "generic",
+"ver": "2.0",
+},
+"ps7_ram_0": {"name": "generic",
+"ver": "2.0",
+},
+"ps7_ram_1": {"name": "generic",
+"ver": "2.0",
+},
+"ps7_scuc_0": {"name": "generic",
+"ver": "2.0",
+},
+"ps7_scugic_0": {"name": "scugic",
+"ver": "4.1",
+},
+"ps7_scutimer_0": {"name": "scutimer",
+"ver": "2.1",
+},
+"ps7_scuwdt_0": {"name": "scuwdt",
+"ver": "2.1",
+},
+"ps7_sd_0": {"name": "sdps",
+"ver": "3.8",
+},
+"ps7_slcr_0": {"name": "generic",
+"ver": "2.0",
+},
+"ps7_uart_1": {"name": "uartps",
+"ver": "3.8",
+},
+"ps7_usb_0": {"name": "usbps",
+"ver": "2.4",
+},
+"ps7_xadc_0": {"name": "xadcps",
+"ver": "2.3",
+},
+"ps7_cortexa9_0": {"name": "cpu_cortexa9",
+"ver": "2.8",
+},
+}]. Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-10-28 16:16:19.915
+!MESSAGE XSCT Command: [hsi::utils::get_drivers_for_hw -json C:/Github/Zybo_mipi/LWIP/myUDP_send/design_1_wrapper/hw/design_1_wrapper.xsa], Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-10-28 16:16:20.025
+!MESSAGE XSCT command with result: [hsi::utils::get_drivers_for_hw -json C:/Github/Zybo_mipi/LWIP/myUDP_send/design_1_wrapper/hw/design_1_wrapper.xsa], Result: [null, {"processing_system7_0": {"version": "5.5",
+"driver_info": {"generic": {"name": "generic",
+"version": "2.0",
+"repo": "C:/Xilinx/Vitis/2019.2/data/embeddedsw/XilinxProcessorIPLib/drivers/generic_v2_0",
+},
+},
+},
+"ps7_clockc_0": {"version": "1.00.a",
+"driver_info": {"generic": {"name": "generic",
+"version": "2.0",
+"repo": "C:/Xilinx/Vitis/2019.2/data/embeddedsw/XilinxProcessorIPLib/drivers/generic_v2_0",
+},
+},
+},
+"ps7_uart_1": {"version": "1.00.a",
+"driver_info": {"generic": {"name": "generic",
+"version": "2.0",
+"repo": "C:/Xilinx/Vitis/2019.2/data/embeddedsw/XilinxProcessorIPLib/drivers/generic_v2_0",
+},
+"uartps_v3_8": {"name": "uartps",
+"version": "3.8",
+"repo": "C:/Xilinx/Vitis/2019.2/data/embeddedsw/XilinxProcessorIPLib/drivers/uartps_v3_8",
+"compilerflags": "",
+"linkerflags": "",
+},
+},
+},
+"ps7_pl310_0": {"version": "1.00.a",
+"driver_info": {"generic": {"name": "generic",
+"version": "2.0",
+"repo": "C:/Xilinx/Vitis/2019.2/data/embeddedsw/XilinxProcessorIPLib/drivers/generic_v2_0",
+},
+},
+},
+"ps7_pmu_0": {"version": "1.00.a",
+"driver_info": {"generic": {"name": "generic",
+"version": "2.0",
+"repo": "C:/Xilinx/Vitis/2019.2/data/embeddedsw/XilinxProcessorIPLib/drivers/generic_v2_0",
+},
+},
+},
+"ps7_qspi_0": {"version": "1.00.a",
+"driver_info": {"generic": {"name": "generic",
+"version": "2.0",
+"repo": "C:/Xilinx/Vitis/2019.2/data/embeddedsw/XilinxProcessorIPLib/drivers/generic_v2_0",
+},
+"qspips_v3_6": {"name": "qspips",
+"version": "3.6",
+"repo": "C:/Xilinx/Vitis/2019.2/data/embeddedsw/XilinxProcessorIPLib/drivers/qspips_v3_6",
+"compilerflags": "",
+"linkerflags": "",
+},
+},
+},
+"ps7_qspi_linear_0": {"version": "1.00.a",
+"driver_info": {"generic": {"name": "generic",
+"version": "2.0",
+"repo": "C:/Xilinx/Vitis/2019.2/data/embeddedsw/XilinxProcessorIPLib/drivers/generic_v2_0",
+},
+},
+},
+"ps7_axi_interconnect_0": {"version": "1.00.a",
+"driver_info": {"generic": {"name": "generic",
+"version": "2.0",
+"repo": "C:/Xilinx/Vitis/2019.2/data/embeddedsw/XilinxProcessorIPLib/drivers/generic_v2_0",
+},
+},
+},
+"ps7_cortexa9_0": {"version": "5.2",
+"driver_info": {"generic": {"name": "generic",
+"version": "2.0",
+"repo": "C:/Xilinx/Vitis/2019.2/data/embeddedsw/XilinxProcessorIPLib/drivers/generic_v2_0",
+},
+"cpu_cortexa9_v2_8": {"name": "cpu_cortexa9",
+"version": "2.8",
+"repo": "C:/Xilinx/Vitis/2019.2/data/embeddedsw/XilinxProcessorIPLib/drivers/cpu_cortexa9_v2_8",
+"compilerflags": "",
+"linkerflags": "",
+},
+},
+},
+"ps7_cortexa9_1": {"version": "5.2",
+"driver_info": {"generic": {"name": "generic",
+"version": "2.0",
+"repo": "C:/Xilinx/Vitis/2019.2/data/embeddedsw/XilinxProcessorIPLib/drivers/generic_v2_0",
+},
+"cpu_cortexa9_v2_8": {"name": "cpu_cortexa9",
+"version": "2.8",
+"repo": "C:/Xilinx/Vitis/2019.2/data/embeddedsw/XilinxProcessorIPLib/drivers/cpu_cortexa9_v2_8",
+"compilerflags": "",
+"linkerflags": "",
+},
+},
+},
+"ps7_ddr_0": {"version": "1.00.a",
+"driver_info": {"generic": {"name": "generic",
+"version": "2.0",
+"repo": "C:/Xilinx/Vitis/2019.2/data/embeddedsw/XilinxProcessorIPLib/drivers/generic_v2_0",
+},
+"ddrps_v1_0": {"name": "ddrps",
+"version": "1.0",
+"repo": "C:/Xilinx/Vitis/2019.2/data/embeddedsw/XilinxProcessorIPLib/drivers/ddrps_v1_0",
+"compilerflags": "",
+"linkerflags": "",
+},
+},
+},
+"ps7_ethernet_0": {"version": "1.00.a",
+"driver_info": {"generic": {"name": "generic",
+"version": "2.0",
+"repo": "C:/Xilinx/Vitis/2019.2/data/embeddedsw/XilinxProcessorIPLib/drivers/generic_v2_0",
+},
+"emacps_v3_10": {"name": "emacps",
+"version": "3.10",
+"repo": "C:/Xilinx/Vitis/2019.2/data/embeddedsw/XilinxProcessorIPLib/drivers/emacps_v3_10",
+"compilerflags": "",
+"linkerflags": "",
+},
+},
+},
+"ps7_usb_0": {"version": "1.00.a",
+"driver_info": {"generic": {"name": "generic",
+"version": "2.0",
+"repo": "C:/Xilinx/Vitis/2019.2/data/embeddedsw/XilinxProcessorIPLib/drivers/generic_v2_0",
+},
+"usbps_v2_4": {"name": "usbps",
+"version": "2.4",
+"repo": "C:/Xilinx/Vitis/2019.2/data/embeddedsw/XilinxProcessorIPLib/drivers/usbps_v2_4",
+"compilerflags": "",
+"linkerflags": "",
+},
+},
+},
+"ps7_sd_0": {"version": "1.00.a",
+"driver_info": {"generic": {"name": "generic",
+"version": "2.0",
+"repo": "C:/Xilinx/Vitis/2019.2/data/embeddedsw/XilinxProcessorIPLib/drivers/generic_v2_0",
+},
+"sdps_v3_8": {"name": "sdps",
+"version": "3.8",
+"repo": "C:/Xilinx/Vitis/2019.2/data/embeddedsw/XilinxProcessorIPLib/drivers/sdps_v3_8",
+"compilerflags": "",
+"linkerflags": "",
+},
+},
+},
+"ps7_gpio_0": {"version": "1.00.a",
+"driver_info": {"generic": {"name": "generic",
+"version": "2.0",
+"repo": "C:/Xilinx/Vitis/2019.2/data/embeddedsw/XilinxProcessorIPLib/drivers/generic_v2_0",
+},
+"gpiops_v3_6": {"name": "gpiops",
+"version": "3.6",
+"repo": "C:/Xilinx/Vitis/2019.2/data/embeddedsw/XilinxProcessorIPLib/drivers/gpiops_v3_6",
+"compilerflags": "",
+"linkerflags": "",
+},
+},
+},
+"ps7_ddrc_0": {"version": "1.00.a",
+"driver_info": {"generic": {"name": "generic",
+"version": "2.0",
+"repo": "C:/Xilinx/Vitis/2019.2/data/embeddedsw/XilinxProcessorIPLib/drivers/generic_v2_0",
+},
+},
+},
+"ps7_dev_cfg_0": {"version": "1.00.a",
+"driver_info": {"generic": {"name": "generic",
+"version": "2.0",
+"repo": "C:/Xilinx/Vitis/2019.2/data/embeddedsw/XilinxProcessorIPLib/drivers/generic_v2_0",
+},
+"devcfg_v3_5": {"name": "devcfg",
+"version": "3.5",
+"repo": "C:/Xilinx/Vitis/2019.2/data/embeddedsw/XilinxProcessorIPLib/drivers/devcfg_v3_5",
+"compilerflags": "",
+"linkerflags": "",
+},
+},
+},
+"ps7_xadc_0": {"version": "1.00.a",
+"driver_info": {"generic": {"name": "generic",
+"version": "2.0",
+"repo": "C:/Xilinx/Vitis/2019.2/data/embeddedsw/XilinxProcessorIPLib/drivers/generic_v2_0",
+},
+"xadcps_v2_3": {"name": "xadcps",
+"version": "2.3",
+"repo": "C:/Xilinx/Vitis/2019.2/data/embeddedsw/XilinxProcessorIPLib/drivers/xadcps_v2_3",
+"compilerflags": "",
+"linkerflags": "",
+},
+},
+},
+"ps7_ocmc_0": {"version": "1.00.a",
+"driver_info": {"generic": {"name": "generic",
+"version": "2.0",
+"repo": "C:/Xilinx/Vitis/2019.2/data/embeddedsw/XilinxProcessorIPLib/drivers/generic_v2_0",
+},
+},
+},
+"ps7_coresight_comp_0": {"version": "1.00.a",
+"driver_info": {"generic": {"name": "generic",
+"version": "2.0",
+"repo": "C:/Xilinx/Vitis/2019.2/data/embeddedsw/XilinxProcessorIPLib/drivers/generic_v2_0",
+},
+"coresightps_dcc_v1_6": {"name": "coresightps_dcc",
+"version": "1.6",
+"repo": "C:/Xilinx/Vitis/2019.2/data/embeddedsw/XilinxProcessorIPLib/drivers/coresightps_dcc_v1_6",
+"compilerflags": "",
+"linkerflags": "",
+},
+},
+},
+"ps7_gpv_0": {"version": "1.00.a",
+"driver_info": {"generic": {"name": "generic",
+"version": "2.0",
+"repo": "C:/Xilinx/Vitis/2019.2/data/embeddedsw/XilinxProcessorIPLib/drivers/generic_v2_0",
+},
+},
+},
+"ps7_scuc_0": {"version": "1.00.a",
+"driver_info": {"generic": {"name": "generic",
+"version": "2.0",
+"repo": "C:/Xilinx/Vitis/2019.2/data/embeddedsw/XilinxProcessorIPLib/drivers/generic_v2_0",
+},
+},
+},
+"ps7_globaltimer_0": {"version": "1.00.a",
+"driver_info": {"generic": {"name": "generic",
+"version": "2.0",
+"repo": "C:/Xilinx/Vitis/2019.2/data/embeddedsw/XilinxProcessorIPLib/drivers/generic_v2_0",
+},
+},
+},
+"ps7_intc_dist_0": {"version": "1.00.a",
+"driver_info": {"generic": {"name": "generic",
+"version": "2.0",
+"repo": "C:/Xilinx/Vitis/2019.2/data/embeddedsw/XilinxProcessorIPLib/drivers/generic_v2_0",
+},
+},
+},
+"ps7_l2cachec_0": {"version": "1.00.a",
+"driver_info": {"generic": {"name": "generic",
+"version": "2.0",
+"repo": "C:/Xilinx/Vitis/2019.2/data/embeddedsw/XilinxProcessorIPLib/drivers/generic_v2_0",
+},
+},
+},
+"ps7_dma_s": {"version": "1.00.a",
+"driver_info": {"generic": {"name": "generic",
+"version": "2.0",
+"repo": "C:/Xilinx/Vitis/2019.2/data/embeddedsw/XilinxProcessorIPLib/drivers/generic_v2_0",
+},
+"dmaps_v2_5": {"name": "dmaps",
+"version": "2.5",
+"repo": "C:/Xilinx/Vitis/2019.2/data/embeddedsw/XilinxProcessorIPLib/drivers/dmaps_v2_5",
+"compilerflags": "",
+"linkerflags": "",
+},
+},
+},
+"ps7_iop_bus_config_0": {"version": "1.00.a",
+"driver_info": {"generic": {"name": "generic",
+"version": "2.0",
+"repo": "C:/Xilinx/Vitis/2019.2/data/embeddedsw/XilinxProcessorIPLib/drivers/generic_v2_0",
+},
+},
+},
+"ps7_ram_0": {"version": "1.00.a",
+"driver_info": {"generic": {"name": "generic",
+"version": "2.0",
+"repo": "C:/Xilinx/Vitis/2019.2/data/embeddedsw/XilinxProcessorIPLib/drivers/generic_v2_0",
+},
+},
+},
+"ps7_ram_1": {"version": "1.00.a",
+"driver_info": {"generic": {"name": "generic",
+"version": "2.0",
+"repo": "C:/Xilinx/Vitis/2019.2/data/embeddedsw/XilinxProcessorIPLib/drivers/generic_v2_0",
+},
+},
+},
+"ps7_scugic_0": {"version": "1.00.a",
+"driver_info": {"generic": {"name": "generic",
+"version": "2.0",
+"repo": "C:/Xilinx/Vitis/2019.2/data/embeddedsw/XilinxProcessorIPLib/drivers/generic_v2_0",
+},
+"scugic_v4_1": {"name": "scugic",
+"version": "4.1",
+"repo": "C:/Xilinx/Vitis/2019.2/data/embeddedsw/XilinxProcessorIPLib/drivers/scugic_v4_1",
+"compilerflags": "",
+"linkerflags": "",
+},
+},
+},
+"ps7_scutimer_0": {"version": "1.00.a",
+"driver_info": {"generic": {"name": "generic",
+"version": "2.0",
+"repo": "C:/Xilinx/Vitis/2019.2/data/embeddedsw/XilinxProcessorIPLib/drivers/generic_v2_0",
+},
+"scutimer_v2_1": {"name": "scutimer",
+"version": "2.1",
+"repo": "C:/Xilinx/Vitis/2019.2/data/embeddedsw/XilinxProcessorIPLib/drivers/scutimer_v2_1",
+"compilerflags": "",
+"linkerflags": "",
+},
+},
+},
+"ps7_scuwdt_0": {"version": "1.00.a",
+"driver_info": {"generic": {"name": "generic",
+"version": "2.0",
+"repo": "C:/Xilinx/Vitis/2019.2/data/embeddedsw/XilinxProcessorIPLib/drivers/generic_v2_0",
+},
+"scuwdt_v2_1": {"name": "scuwdt",
+"version": "2.1",
+"repo": "C:/Xilinx/Vitis/2019.2/data/embeddedsw/XilinxProcessorIPLib/drivers/scuwdt_v2_1",
+"compilerflags": "",
+"linkerflags": "",
+},
+},
+},
+"ps7_slcr_0": {"version": "1.00.a",
+"driver_info": {"generic": {"name": "generic",
+"version": "2.0",
+"repo": "C:/Xilinx/Vitis/2019.2/data/embeddedsw/XilinxProcessorIPLib/drivers/generic_v2_0",
+},
+},
+},
+"ps7_dma_ns": {"version": "1.00.a",
+"driver_info": {"generic": {"name": "generic",
+"version": "2.0",
+"repo": "C:/Xilinx/Vitis/2019.2/data/embeddedsw/XilinxProcessorIPLib/drivers/generic_v2_0",
+},
+"dmaps_v2_5": {"name": "dmaps",
+"version": "2.5",
+"repo": "C:/Xilinx/Vitis/2019.2/data/embeddedsw/XilinxProcessorIPLib/drivers/dmaps_v2_5",
+"compilerflags": "",
+"linkerflags": "",
+},
+},
+},
+"ps7_afi_0": {"version": "1.00.a",
+"driver_info": {"generic": {"name": "generic",
+"version": "2.0",
+"repo": "C:/Xilinx/Vitis/2019.2/data/embeddedsw/XilinxProcessorIPLib/drivers/generic_v2_0",
+},
+},
+},
+"ps7_afi_1": {"version": "1.00.a",
+"driver_info": {"generic": {"name": "generic",
+"version": "2.0",
+"repo": "C:/Xilinx/Vitis/2019.2/data/embeddedsw/XilinxProcessorIPLib/drivers/generic_v2_0",
+},
+},
+},
+"ps7_afi_2": {"version": "1.00.a",
+"driver_info": {"generic": {"name": "generic",
+"version": "2.0",
+"repo": "C:/Xilinx/Vitis/2019.2/data/embeddedsw/XilinxProcessorIPLib/drivers/generic_v2_0",
+},
+},
+},
+"ps7_afi_3": {"version": "1.00.a",
+"driver_info": {"generic": {"name": "generic",
+"version": "2.0",
+"repo": "C:/Xilinx/Vitis/2019.2/data/embeddedsw/XilinxProcessorIPLib/drivers/generic_v2_0",
+},
+},
+},
+"ps7_m_axi_gp0": {"version": "1.00.a",
+"driver_info": {"generic": {"name": "generic",
+"version": "2.0",
+"repo": "C:/Xilinx/Vitis/2019.2/data/embeddedsw/XilinxProcessorIPLib/drivers/generic_v2_0",
+},
+},
+},
+}]. Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-10-28 16:16:20.201
+!MESSAGE XSCT Command: [::hsi::utils::get_libs_from_sw C:/Github/Zybo_mipi/LWIP/myUDP_send/design_1_wrapper/hw/design_1_wrapper.xsa C:/Github/Zybo_mipi/LWIP/myUDP_send/design_1_wrapper/ps7_cortexa9_0/standalone_domain/bsp/system.mss], Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-10-28 16:16:20.207
+!MESSAGE XSCT command with result: [::hsi::utils::get_libs_from_sw C:/Github/Zybo_mipi/LWIP/myUDP_send/design_1_wrapper/hw/design_1_wrapper.xsa C:/Github/Zybo_mipi/LWIP/myUDP_send/design_1_wrapper/ps7_cortexa9_0/standalone_domain/bsp/system.mss], Result: [null, lwip211]. Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-10-28 16:16:20.211
+!MESSAGE XSCT Command: [::hsi::utils::get_sw_libs -json C:/Github/Zybo_mipi/LWIP/myUDP_send/design_1_wrapper/hw/design_1_wrapper.xsa C:/Github/Zybo_mipi/LWIP/myUDP_send/design_1_wrapper/ps7_cortexa9_0/standalone_domain/bsp/system.mss], Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-10-28 16:16:20.220
+!MESSAGE XSCT command with result: [::hsi::utils::get_sw_libs -json C:/Github/Zybo_mipi/LWIP/myUDP_send/design_1_wrapper/hw/design_1_wrapper.xsa C:/Github/Zybo_mipi/LWIP/myUDP_send/design_1_wrapper/ps7_cortexa9_0/standalone_domain/bsp/system.mss], Result: [null, {"lwip211": "1.1",
+}]. Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-10-28 16:16:20.226
+!MESSAGE XSCT Command: [hsi get_property REPOSITORY [hsi get_sw_cores -filter {NAME == "lwip211" && VERSION == "1.1"  && TYPE == "LIBRARY"}]], Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-10-28 16:16:20.234
+!MESSAGE XSCT command with result: [hsi get_property REPOSITORY [hsi get_sw_cores -filter {NAME == "lwip211" && VERSION == "1.1"  && TYPE == "LIBRARY"}]], Result: [null, C:/Xilinx/Vitis/2019.2/data\embeddedsw\ThirdParty\sw_services\lwip211_v1_1]. Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-10-28 16:16:20.242
+!MESSAGE XSCT Command: [hsi get_property REPOSITORY [hsi get_sw_cores -filter {NAME == "lwip211" && VERSION == "1.1"  && TYPE == "LIBRARY"}]], Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-10-28 16:16:20.250
+!MESSAGE XSCT command with result: [hsi get_property REPOSITORY [hsi get_sw_cores -filter {NAME == "lwip211" && VERSION == "1.1"  && TYPE == "LIBRARY"}]], Result: [null, C:/Xilinx/Vitis/2019.2/data\embeddedsw\ThirdParty\sw_services\lwip211_v1_1]. Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-10-28 16:16:20.325
+!MESSAGE XSCT Command: [::scw::sdx_reload_mss], Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-10-28 16:16:21.032
+!MESSAGE XSCT command with result: [::scw::sdx_reload_mss], Result: [null, ]. Thread: main
+
+!ENTRY org.eclipse.ui 4 4 2020-10-28 16:54:06.255
+!MESSAGE Conflicting handlers for com.xilinx.sdx.system.core.importSourcesCommand: {com.xilinx.sdx.system.core.handler.ImportSourcesHandler@71865688} vs {com.xilinx.sdx.system.core.handler.ImportSourcesHandler}
+
+!ENTRY org.eclipse.launchbar.core 2 0 2020-10-28 16:54:32.957
+!MESSAGE Enablement expression is missing for descriptor type org.eclipse.cdt.debug.core.coreBuildDescriptorType
+
+!ENTRY org.eclipse.launchbar.core 2 0 2020-10-28 16:54:32.962
+!MESSAGE Enablement expression is missing for config provider for org.eclipse.cdt.debug.core.coreBuildDescriptorType
+
+!ENTRY org.eclipse.launchbar.core 2 0 2020-10-28 16:54:32.967
+!MESSAGE Enablement expression is missing for config provider for org.eclipse.cdt.debug.core.coreBuildDescriptorType
+
+!ENTRY org.eclipse.jface 4 0 2020-10-28 17:03:09.006
+!MESSAGE /icons/elcl16/watchpoint_co.gif
+!STACK 0
+java.io.FileNotFoundException: /icons/elcl16/watchpoint_co.gif
+	at org.eclipse.osgi.storage.url.bundleentry.Handler.findBundleEntry(Handler.java:51)
+	at org.eclipse.osgi.storage.url.BundleResourceHandler.openConnection(BundleResourceHandler.java:169)
+	at java.base/java.net.URL.openConnection(Unknown Source)
+	at org.eclipse.core.internal.boot.PlatformURLConnection.connect(PlatformURLConnection.java:112)
+	at org.eclipse.core.internal.boot.PlatformURLConnection.getURLAsLocal(PlatformURLConnection.java:237)
+	at org.eclipse.core.internal.runtime.PlatformURLConverter.toFileURL(PlatformURLConverter.java:34)
+	at org.eclipse.core.runtime.FileLocator.toFileURL(FileLocator.java:255)
+	at org.eclipse.jface.resource.URLImageDescriptor.getFilePath(URLImageDescriptor.java:230)
+	at org.eclipse.jface.resource.URLImageDescriptor.access$2(URLImageDescriptor.java:218)
+	at org.eclipse.jface.resource.URLImageDescriptor$URLImageFileNameProvider.getImagePath(URLImageDescriptor.java:54)
+	at org.eclipse.swt.internal.DPIUtil.validateAndGetImagePathAtZoom(DPIUtil.java:416)
+	at org.eclipse.swt.graphics.Image.<init>(Image.java:684)
+	at org.eclipse.jface.resource.URLImageDescriptor.createImage(URLImageDescriptor.java:261)
+	at org.eclipse.jface.resource.ImageDescriptor.createResource(ImageDescriptor.java:180)
+	at org.eclipse.jface.resource.DeviceResourceManager.allocate(DeviceResourceManager.java:52)
+	at org.eclipse.jface.resource.AbstractResourceManager.create(AbstractResourceManager.java:85)
+	at org.eclipse.jface.resource.LocalResourceManager.allocate(LocalResourceManager.java:69)
+	at org.eclipse.jface.resource.AbstractResourceManager.create(AbstractResourceManager.java:85)
+	at org.eclipse.jface.resource.ResourceManager.createImage(ResourceManager.java:172)
+	at org.eclipse.e4.ui.workbench.renderers.swt.AbstractContributionItem.getImage(AbstractContributionItem.java:148)
+	at org.eclipse.e4.ui.workbench.renderers.swt.AbstractContributionItem.updateIcons(AbstractContributionItem.java:174)
+	at org.eclipse.e4.ui.workbench.renderers.swt.AbstractContributionItem.update(AbstractContributionItem.java:124)
+	at org.eclipse.e4.ui.workbench.renderers.swt.AbstractContributionItem.fill(AbstractContributionItem.java:261)
+	at org.eclipse.jface.action.MenuManager.doItemFill(MenuManager.java:728)
+	at org.eclipse.jface.action.MenuManager.update(MenuManager.java:810)
+	at org.eclipse.jface.action.MenuManager.update(MenuManager.java:669)
+	at org.eclipse.e4.ui.workbench.renderers.swt.MenuManagerRenderer.scheduleManagerUpdate(MenuManagerRenderer.java:1219)
+	at org.eclipse.e4.ui.workbench.renderers.swt.MenuManagerRenderer.processContents(MenuManagerRenderer.java:649)
+	at org.eclipse.e4.ui.workbench.renderers.swt.MenuManagerRenderer.subscribeTopicChildAdded(MenuManagerRenderer.java:324)
+	at jdk.internal.reflect.GeneratedMethodAccessor20.invoke(Unknown Source)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.base/java.lang.reflect.Method.invoke(Unknown Source)
+	at org.eclipse.e4.core.internal.di.MethodRequestor.execute(MethodRequestor.java:55)
+	at org.eclipse.e4.ui.internal.di.UIEventObjectSupplier$UIEventHandler$1.run(UIEventObjectSupplier.java:64)
+	at org.eclipse.swt.widgets.Synchronizer.syncExec(Synchronizer.java:233)
+	at org.eclipse.ui.internal.UISynchronizer.syncExec(UISynchronizer.java:144)
+	at org.eclipse.swt.widgets.Display.syncExec(Display.java:4567)
+	at org.eclipse.e4.ui.internal.workbench.swt.E4Application$1.syncExec(E4Application.java:212)
+	at org.eclipse.e4.ui.internal.di.UIEventObjectSupplier$UIEventHandler.handleEvent(UIEventObjectSupplier.java:61)
+	at org.eclipse.equinox.internal.event.EventHandlerWrapper.handleEvent(EventHandlerWrapper.java:201)
+	at org.eclipse.equinox.internal.event.EventHandlerTracker.dispatchEvent(EventHandlerTracker.java:196)
+	at org.eclipse.equinox.internal.event.EventHandlerTracker.dispatchEvent(EventHandlerTracker.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:230)
+	at org.eclipse.osgi.framework.eventmgr.ListenerQueue.dispatchEventSynchronous(ListenerQueue.java:148)
+	at org.eclipse.equinox.internal.event.EventAdminImpl.dispatchEvent(EventAdminImpl.java:135)
+	at org.eclipse.equinox.internal.event.EventAdminImpl.sendEvent(EventAdminImpl.java:78)
+	at org.eclipse.equinox.internal.event.EventComponent.sendEvent(EventComponent.java:39)
+	at org.eclipse.e4.ui.services.internal.events.EventBroker.send(EventBroker.java:52)
+	at org.eclipse.e4.ui.internal.workbench.UIEventPublisher.notifyChanged(UIEventPublisher.java:60)
+	at org.eclipse.emf.common.notify.impl.BasicNotifierImpl.eNotify(BasicNotifierImpl.java:374)
+	at org.eclipse.emf.ecore.util.EcoreEList.dispatchNotification(EcoreEList.java:249)
+	at org.eclipse.emf.common.notify.impl.NotifyingListImpl.addUnique(NotifyingListImpl.java:356)
+	at org.eclipse.emf.common.util.AbstractEList.add(AbstractEList.java:340)
+	at org.eclipse.e4.ui.workbench.renderers.swt.ContributionRecord.mergeIntoModel(ContributionRecord.java:250)
+	at org.eclipse.e4.ui.workbench.renderers.swt.MenuManagerRenderer.processAddition(MenuManagerRenderer.java:546)
+	at org.eclipse.e4.ui.workbench.renderers.swt.MenuManagerRenderer.generateContributions(MenuManagerRenderer.java:525)
+	at org.eclipse.e4.ui.workbench.renderers.swt.MenuManagerRenderer.processContributions(MenuManagerRenderer.java:493)
+	at org.eclipse.ui.internal.PopupMenuExtender.addMenuContributions(PopupMenuExtender.java:410)
+	at org.eclipse.ui.internal.PopupMenuExtender.menuAboutToShow(PopupMenuExtender.java:382)
+	at org.eclipse.jface.action.MenuManager.fireAboutToShow(MenuManager.java:339)
+	at org.eclipse.jface.action.MenuManager.handleAboutToShow(MenuManager.java:470)
+	at org.eclipse.jface.action.MenuManager.access$1(MenuManager.java:465)
+	at org.eclipse.jface.action.MenuManager$2.menuShown(MenuManager.java:497)
+	at org.eclipse.swt.widgets.TypedListener.handleEvent(TypedListener.java:256)
+	at org.eclipse.swt.widgets.EventTable.sendEvent(EventTable.java:86)
+	at org.eclipse.swt.widgets.Display.sendEvent(Display.java:4118)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1052)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1076)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1057)
+	at org.eclipse.swt.widgets.Control.WM_INITMENUPOPUP(Control.java:5125)
+	at org.eclipse.swt.widgets.Control.windowProc(Control.java:4794)
+	at org.eclipse.swt.widgets.Canvas.windowProc(Canvas.java:345)
+	at org.eclipse.swt.widgets.Decorations.windowProc(Decorations.java:1499)
+	at org.eclipse.swt.widgets.Shell.windowProc(Shell.java:2159)
+	at org.eclipse.swt.widgets.Display.windowProc(Display.java:4757)
+	at org.eclipse.swt.internal.win32.OS.TrackPopupMenu(Native Method)
+	at org.eclipse.swt.widgets.Menu._setVisible(Menu.java:250)
+	at org.eclipse.swt.widgets.Display.runPopups(Display.java:3972)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3528)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$5.run(PartRenderingEngine.java:1170)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:336)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.run(PartRenderingEngine.java:1059)
+	at org.eclipse.e4.ui.internal.workbench.E4Workbench.createAndRunUI(E4Workbench.java:153)
+	at org.eclipse.ui.internal.Workbench.lambda$3(Workbench.java:667)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:336)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:597)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:148)
+	at com.xilinx.ide.application.ui.Application.start(Application.java:78)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:196)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:134)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:104)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:388)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:243)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.base/java.lang.reflect.Method.invoke(Unknown Source)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:656)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:592)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1498)
+
+!ENTRY org.eclipse.jface 4 0 2020-10-28 17:03:17.911
+!MESSAGE /icons/elcl16/watchpoint_co.gif
+!STACK 0
+java.io.FileNotFoundException: /icons/elcl16/watchpoint_co.gif
+	at org.eclipse.osgi.storage.url.bundleentry.Handler.findBundleEntry(Handler.java:51)
+	at org.eclipse.osgi.storage.url.BundleResourceHandler.openConnection(BundleResourceHandler.java:169)
+	at java.base/java.net.URL.openConnection(Unknown Source)
+	at org.eclipse.core.internal.boot.PlatformURLConnection.connect(PlatformURLConnection.java:112)
+	at org.eclipse.core.internal.boot.PlatformURLConnection.getURLAsLocal(PlatformURLConnection.java:237)
+	at org.eclipse.core.internal.runtime.PlatformURLConverter.toFileURL(PlatformURLConverter.java:34)
+	at org.eclipse.core.runtime.FileLocator.toFileURL(FileLocator.java:255)
+	at org.eclipse.jface.resource.URLImageDescriptor.getFilePath(URLImageDescriptor.java:230)
+	at org.eclipse.jface.resource.URLImageDescriptor.access$2(URLImageDescriptor.java:218)
+	at org.eclipse.jface.resource.URLImageDescriptor$URLImageFileNameProvider.getImagePath(URLImageDescriptor.java:54)
+	at org.eclipse.swt.internal.DPIUtil.validateAndGetImagePathAtZoom(DPIUtil.java:416)
+	at org.eclipse.swt.graphics.Image.<init>(Image.java:684)
+	at org.eclipse.jface.resource.URLImageDescriptor.createImage(URLImageDescriptor.java:261)
+	at org.eclipse.jface.resource.ImageDescriptor.createResource(ImageDescriptor.java:180)
+	at org.eclipse.jface.resource.DeviceResourceManager.allocate(DeviceResourceManager.java:52)
+	at org.eclipse.jface.resource.AbstractResourceManager.create(AbstractResourceManager.java:85)
+	at org.eclipse.jface.resource.LocalResourceManager.allocate(LocalResourceManager.java:69)
+	at org.eclipse.jface.resource.AbstractResourceManager.create(AbstractResourceManager.java:85)
+	at org.eclipse.jface.resource.ResourceManager.createImage(ResourceManager.java:172)
+	at org.eclipse.e4.ui.workbench.renderers.swt.AbstractContributionItem.getImage(AbstractContributionItem.java:148)
+	at org.eclipse.e4.ui.workbench.renderers.swt.AbstractContributionItem.updateIcons(AbstractContributionItem.java:174)
+	at org.eclipse.e4.ui.workbench.renderers.swt.AbstractContributionItem.update(AbstractContributionItem.java:124)
+	at org.eclipse.e4.ui.workbench.renderers.swt.AbstractContributionItem.fill(AbstractContributionItem.java:261)
+	at org.eclipse.jface.action.MenuManager.doItemFill(MenuManager.java:728)
+	at org.eclipse.jface.action.MenuManager.update(MenuManager.java:810)
+	at org.eclipse.jface.action.MenuManager.update(MenuManager.java:669)
+	at org.eclipse.e4.ui.workbench.renderers.swt.MenuManagerRenderer.scheduleManagerUpdate(MenuManagerRenderer.java:1219)
+	at org.eclipse.e4.ui.workbench.renderers.swt.MenuManagerRenderer.processContents(MenuManagerRenderer.java:649)
+	at org.eclipse.e4.ui.workbench.renderers.swt.MenuManagerRenderer.subscribeTopicChildAdded(MenuManagerRenderer.java:324)
+	at jdk.internal.reflect.GeneratedMethodAccessor20.invoke(Unknown Source)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.base/java.lang.reflect.Method.invoke(Unknown Source)
+	at org.eclipse.e4.core.internal.di.MethodRequestor.execute(MethodRequestor.java:55)
+	at org.eclipse.e4.ui.internal.di.UIEventObjectSupplier$UIEventHandler$1.run(UIEventObjectSupplier.java:64)
+	at org.eclipse.swt.widgets.Synchronizer.syncExec(Synchronizer.java:233)
+	at org.eclipse.ui.internal.UISynchronizer.syncExec(UISynchronizer.java:144)
+	at org.eclipse.swt.widgets.Display.syncExec(Display.java:4567)
+	at org.eclipse.e4.ui.internal.workbench.swt.E4Application$1.syncExec(E4Application.java:212)
+	at org.eclipse.e4.ui.internal.di.UIEventObjectSupplier$UIEventHandler.handleEvent(UIEventObjectSupplier.java:61)
+	at org.eclipse.equinox.internal.event.EventHandlerWrapper.handleEvent(EventHandlerWrapper.java:201)
+	at org.eclipse.equinox.internal.event.EventHandlerTracker.dispatchEvent(EventHandlerTracker.java:196)
+	at org.eclipse.equinox.internal.event.EventHandlerTracker.dispatchEvent(EventHandlerTracker.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:230)
+	at org.eclipse.osgi.framework.eventmgr.ListenerQueue.dispatchEventSynchronous(ListenerQueue.java:148)
+	at org.eclipse.equinox.internal.event.EventAdminImpl.dispatchEvent(EventAdminImpl.java:135)
+	at org.eclipse.equinox.internal.event.EventAdminImpl.sendEvent(EventAdminImpl.java:78)
+	at org.eclipse.equinox.internal.event.EventComponent.sendEvent(EventComponent.java:39)
+	at org.eclipse.e4.ui.services.internal.events.EventBroker.send(EventBroker.java:52)
+	at org.eclipse.e4.ui.internal.workbench.UIEventPublisher.notifyChanged(UIEventPublisher.java:60)
+	at org.eclipse.emf.common.notify.impl.BasicNotifierImpl.eNotify(BasicNotifierImpl.java:374)
+	at org.eclipse.emf.ecore.util.EcoreEList.dispatchNotification(EcoreEList.java:249)
+	at org.eclipse.emf.common.notify.impl.NotifyingListImpl.addUnique(NotifyingListImpl.java:356)
+	at org.eclipse.emf.common.util.AbstractEList.add(AbstractEList.java:340)
+	at org.eclipse.e4.ui.workbench.renderers.swt.ContributionRecord.mergeIntoModel(ContributionRecord.java:250)
+	at org.eclipse.e4.ui.workbench.renderers.swt.MenuManagerRenderer.processAddition(MenuManagerRenderer.java:546)
+	at org.eclipse.e4.ui.workbench.renderers.swt.MenuManagerRenderer.generateContributions(MenuManagerRenderer.java:525)
+	at org.eclipse.e4.ui.workbench.renderers.swt.MenuManagerRenderer.processContributions(MenuManagerRenderer.java:493)
+	at org.eclipse.ui.internal.PopupMenuExtender.addMenuContributions(PopupMenuExtender.java:410)
+	at org.eclipse.ui.internal.PopupMenuExtender.menuAboutToShow(PopupMenuExtender.java:382)
+	at org.eclipse.jface.action.MenuManager.fireAboutToShow(MenuManager.java:339)
+	at org.eclipse.jface.action.MenuManager.handleAboutToShow(MenuManager.java:470)
+	at org.eclipse.jface.action.MenuManager.access$1(MenuManager.java:465)
+	at org.eclipse.jface.action.MenuManager$2.menuShown(MenuManager.java:497)
+	at org.eclipse.swt.widgets.TypedListener.handleEvent(TypedListener.java:256)
+	at org.eclipse.swt.widgets.EventTable.sendEvent(EventTable.java:86)
+	at org.eclipse.swt.widgets.Display.sendEvent(Display.java:4118)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1052)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1076)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1057)
+	at org.eclipse.swt.widgets.Control.WM_INITMENUPOPUP(Control.java:5125)
+	at org.eclipse.swt.widgets.Control.windowProc(Control.java:4794)
+	at org.eclipse.swt.widgets.Canvas.windowProc(Canvas.java:345)
+	at org.eclipse.swt.widgets.Decorations.windowProc(Decorations.java:1499)
+	at org.eclipse.swt.widgets.Shell.windowProc(Shell.java:2159)
+	at org.eclipse.swt.widgets.Display.windowProc(Display.java:4757)
+	at org.eclipse.swt.internal.win32.OS.TrackPopupMenu(Native Method)
+	at org.eclipse.swt.widgets.Menu._setVisible(Menu.java:250)
+	at org.eclipse.swt.widgets.Display.runPopups(Display.java:3972)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3528)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$5.run(PartRenderingEngine.java:1170)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:336)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.run(PartRenderingEngine.java:1059)
+	at org.eclipse.e4.ui.internal.workbench.E4Workbench.createAndRunUI(E4Workbench.java:153)
+	at org.eclipse.ui.internal.Workbench.lambda$3(Workbench.java:667)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:336)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:597)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:148)
+	at com.xilinx.ide.application.ui.Application.start(Application.java:78)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:196)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:134)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:104)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:388)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:243)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.base/java.lang.reflect.Method.invoke(Unknown Source)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:656)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:592)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1498)
+
+!ENTRY org.eclipse.jface 4 0 2020-10-28 17:03:21.463
+!MESSAGE /icons/elcl16/watchpoint_co.gif
+!STACK 0
+java.io.FileNotFoundException: /icons/elcl16/watchpoint_co.gif
+	at org.eclipse.osgi.storage.url.bundleentry.Handler.findBundleEntry(Handler.java:51)
+	at org.eclipse.osgi.storage.url.BundleResourceHandler.openConnection(BundleResourceHandler.java:169)
+	at java.base/java.net.URL.openConnection(Unknown Source)
+	at org.eclipse.core.internal.boot.PlatformURLConnection.connect(PlatformURLConnection.java:112)
+	at org.eclipse.core.internal.boot.PlatformURLConnection.getURLAsLocal(PlatformURLConnection.java:237)
+	at org.eclipse.core.internal.runtime.PlatformURLConverter.toFileURL(PlatformURLConverter.java:34)
+	at org.eclipse.core.runtime.FileLocator.toFileURL(FileLocator.java:255)
+	at org.eclipse.jface.resource.URLImageDescriptor.getFilePath(URLImageDescriptor.java:230)
+	at org.eclipse.jface.resource.URLImageDescriptor.access$2(URLImageDescriptor.java:218)
+	at org.eclipse.jface.resource.URLImageDescriptor$URLImageFileNameProvider.getImagePath(URLImageDescriptor.java:54)
+	at org.eclipse.swt.internal.DPIUtil.validateAndGetImagePathAtZoom(DPIUtil.java:416)
+	at org.eclipse.swt.graphics.Image.<init>(Image.java:684)
+	at org.eclipse.jface.resource.URLImageDescriptor.createImage(URLImageDescriptor.java:261)
+	at org.eclipse.jface.resource.ImageDescriptor.createResource(ImageDescriptor.java:180)
+	at org.eclipse.jface.resource.DeviceResourceManager.allocate(DeviceResourceManager.java:52)
+	at org.eclipse.jface.resource.AbstractResourceManager.create(AbstractResourceManager.java:85)
+	at org.eclipse.jface.resource.LocalResourceManager.allocate(LocalResourceManager.java:69)
+	at org.eclipse.jface.resource.AbstractResourceManager.create(AbstractResourceManager.java:85)
+	at org.eclipse.jface.resource.ResourceManager.createImage(ResourceManager.java:172)
+	at org.eclipse.e4.ui.workbench.renderers.swt.AbstractContributionItem.getImage(AbstractContributionItem.java:148)
+	at org.eclipse.e4.ui.workbench.renderers.swt.AbstractContributionItem.updateIcons(AbstractContributionItem.java:174)
+	at org.eclipse.e4.ui.workbench.renderers.swt.AbstractContributionItem.update(AbstractContributionItem.java:124)
+	at org.eclipse.e4.ui.workbench.renderers.swt.AbstractContributionItem.fill(AbstractContributionItem.java:261)
+	at org.eclipse.jface.action.MenuManager.doItemFill(MenuManager.java:728)
+	at org.eclipse.jface.action.MenuManager.update(MenuManager.java:810)
+	at org.eclipse.jface.action.MenuManager.update(MenuManager.java:669)
+	at org.eclipse.e4.ui.workbench.renderers.swt.MenuManagerRenderer.scheduleManagerUpdate(MenuManagerRenderer.java:1219)
+	at org.eclipse.e4.ui.workbench.renderers.swt.MenuManagerRenderer.processContents(MenuManagerRenderer.java:649)
+	at org.eclipse.e4.ui.workbench.renderers.swt.MenuManagerRenderer.subscribeTopicChildAdded(MenuManagerRenderer.java:324)
+	at jdk.internal.reflect.GeneratedMethodAccessor20.invoke(Unknown Source)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.base/java.lang.reflect.Method.invoke(Unknown Source)
+	at org.eclipse.e4.core.internal.di.MethodRequestor.execute(MethodRequestor.java:55)
+	at org.eclipse.e4.ui.internal.di.UIEventObjectSupplier$UIEventHandler$1.run(UIEventObjectSupplier.java:64)
+	at org.eclipse.swt.widgets.Synchronizer.syncExec(Synchronizer.java:233)
+	at org.eclipse.ui.internal.UISynchronizer.syncExec(UISynchronizer.java:144)
+	at org.eclipse.swt.widgets.Display.syncExec(Display.java:4567)
+	at org.eclipse.e4.ui.internal.workbench.swt.E4Application$1.syncExec(E4Application.java:212)
+	at org.eclipse.e4.ui.internal.di.UIEventObjectSupplier$UIEventHandler.handleEvent(UIEventObjectSupplier.java:61)
+	at org.eclipse.equinox.internal.event.EventHandlerWrapper.handleEvent(EventHandlerWrapper.java:201)
+	at org.eclipse.equinox.internal.event.EventHandlerTracker.dispatchEvent(EventHandlerTracker.java:196)
+	at org.eclipse.equinox.internal.event.EventHandlerTracker.dispatchEvent(EventHandlerTracker.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:230)
+	at org.eclipse.osgi.framework.eventmgr.ListenerQueue.dispatchEventSynchronous(ListenerQueue.java:148)
+	at org.eclipse.equinox.internal.event.EventAdminImpl.dispatchEvent(EventAdminImpl.java:135)
+	at org.eclipse.equinox.internal.event.EventAdminImpl.sendEvent(EventAdminImpl.java:78)
+	at org.eclipse.equinox.internal.event.EventComponent.sendEvent(EventComponent.java:39)
+	at org.eclipse.e4.ui.services.internal.events.EventBroker.send(EventBroker.java:52)
+	at org.eclipse.e4.ui.internal.workbench.UIEventPublisher.notifyChanged(UIEventPublisher.java:60)
+	at org.eclipse.emf.common.notify.impl.BasicNotifierImpl.eNotify(BasicNotifierImpl.java:374)
+	at org.eclipse.emf.ecore.util.EcoreEList.dispatchNotification(EcoreEList.java:249)
+	at org.eclipse.emf.common.notify.impl.NotifyingListImpl.addUnique(NotifyingListImpl.java:356)
+	at org.eclipse.emf.common.util.AbstractEList.add(AbstractEList.java:340)
+	at org.eclipse.e4.ui.workbench.renderers.swt.ContributionRecord.mergeIntoModel(ContributionRecord.java:250)
+	at org.eclipse.e4.ui.workbench.renderers.swt.MenuManagerRenderer.processAddition(MenuManagerRenderer.java:546)
+	at org.eclipse.e4.ui.workbench.renderers.swt.MenuManagerRenderer.generateContributions(MenuManagerRenderer.java:525)
+	at org.eclipse.e4.ui.workbench.renderers.swt.MenuManagerRenderer.processContributions(MenuManagerRenderer.java:493)
+	at org.eclipse.ui.internal.PopupMenuExtender.addMenuContributions(PopupMenuExtender.java:410)
+	at org.eclipse.ui.internal.PopupMenuExtender.menuAboutToShow(PopupMenuExtender.java:382)
+	at org.eclipse.jface.action.MenuManager.fireAboutToShow(MenuManager.java:339)
+	at org.eclipse.jface.action.MenuManager.handleAboutToShow(MenuManager.java:470)
+	at org.eclipse.jface.action.MenuManager.access$1(MenuManager.java:465)
+	at org.eclipse.jface.action.MenuManager$2.menuShown(MenuManager.java:497)
+	at org.eclipse.swt.widgets.TypedListener.handleEvent(TypedListener.java:256)
+	at org.eclipse.swt.widgets.EventTable.sendEvent(EventTable.java:86)
+	at org.eclipse.swt.widgets.Display.sendEvent(Display.java:4118)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1052)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1076)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1057)
+	at org.eclipse.swt.widgets.Control.WM_INITMENUPOPUP(Control.java:5125)
+	at org.eclipse.swt.widgets.Control.windowProc(Control.java:4794)
+	at org.eclipse.swt.widgets.Canvas.windowProc(Canvas.java:345)
+	at org.eclipse.swt.widgets.Decorations.windowProc(Decorations.java:1499)
+	at org.eclipse.swt.widgets.Shell.windowProc(Shell.java:2159)
+	at org.eclipse.swt.widgets.Display.windowProc(Display.java:4757)
+	at org.eclipse.swt.internal.win32.OS.TrackPopupMenu(Native Method)
+	at org.eclipse.swt.widgets.Menu._setVisible(Menu.java:250)
+	at org.eclipse.swt.widgets.Display.runPopups(Display.java:3972)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3528)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$5.run(PartRenderingEngine.java:1170)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:336)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.run(PartRenderingEngine.java:1059)
+	at org.eclipse.e4.ui.internal.workbench.E4Workbench.createAndRunUI(E4Workbench.java:153)
+	at org.eclipse.ui.internal.Workbench.lambda$3(Workbench.java:667)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:336)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:597)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:148)
+	at com.xilinx.ide.application.ui.Application.start(Application.java:78)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:196)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:134)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:104)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:388)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:243)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.base/java.lang.reflect.Method.invoke(Unknown Source)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:656)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:592)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1498)
+
+!ENTRY org.eclipse.jface 4 0 2020-10-28 17:03:35.844
+!MESSAGE /icons/elcl16/watchpoint_co.gif
+!STACK 0
+java.io.FileNotFoundException: /icons/elcl16/watchpoint_co.gif
+	at org.eclipse.osgi.storage.url.bundleentry.Handler.findBundleEntry(Handler.java:51)
+	at org.eclipse.osgi.storage.url.BundleResourceHandler.openConnection(BundleResourceHandler.java:169)
+	at java.base/java.net.URL.openConnection(Unknown Source)
+	at org.eclipse.core.internal.boot.PlatformURLConnection.connect(PlatformURLConnection.java:112)
+	at org.eclipse.core.internal.boot.PlatformURLConnection.getURLAsLocal(PlatformURLConnection.java:237)
+	at org.eclipse.core.internal.runtime.PlatformURLConverter.toFileURL(PlatformURLConverter.java:34)
+	at org.eclipse.core.runtime.FileLocator.toFileURL(FileLocator.java:255)
+	at org.eclipse.jface.resource.URLImageDescriptor.getFilePath(URLImageDescriptor.java:230)
+	at org.eclipse.jface.resource.URLImageDescriptor.access$2(URLImageDescriptor.java:218)
+	at org.eclipse.jface.resource.URLImageDescriptor$URLImageFileNameProvider.getImagePath(URLImageDescriptor.java:54)
+	at org.eclipse.swt.internal.DPIUtil.validateAndGetImagePathAtZoom(DPIUtil.java:416)
+	at org.eclipse.swt.graphics.Image.<init>(Image.java:684)
+	at org.eclipse.jface.resource.URLImageDescriptor.createImage(URLImageDescriptor.java:261)
+	at org.eclipse.jface.resource.ImageDescriptor.createResource(ImageDescriptor.java:180)
+	at org.eclipse.jface.resource.DeviceResourceManager.allocate(DeviceResourceManager.java:52)
+	at org.eclipse.jface.resource.AbstractResourceManager.create(AbstractResourceManager.java:85)
+	at org.eclipse.jface.resource.LocalResourceManager.allocate(LocalResourceManager.java:69)
+	at org.eclipse.jface.resource.AbstractResourceManager.create(AbstractResourceManager.java:85)
+	at org.eclipse.jface.resource.ResourceManager.createImage(ResourceManager.java:172)
+	at org.eclipse.e4.ui.workbench.renderers.swt.AbstractContributionItem.getImage(AbstractContributionItem.java:148)
+	at org.eclipse.e4.ui.workbench.renderers.swt.AbstractContributionItem.updateIcons(AbstractContributionItem.java:174)
+	at org.eclipse.e4.ui.workbench.renderers.swt.AbstractContributionItem.update(AbstractContributionItem.java:124)
+	at org.eclipse.e4.ui.workbench.renderers.swt.AbstractContributionItem.fill(AbstractContributionItem.java:261)
+	at org.eclipse.jface.action.MenuManager.doItemFill(MenuManager.java:728)
+	at org.eclipse.jface.action.MenuManager.update(MenuManager.java:810)
+	at org.eclipse.jface.action.MenuManager.update(MenuManager.java:669)
+	at org.eclipse.e4.ui.workbench.renderers.swt.MenuManagerRenderer.scheduleManagerUpdate(MenuManagerRenderer.java:1219)
+	at org.eclipse.e4.ui.workbench.renderers.swt.MenuManagerRenderer.processContents(MenuManagerRenderer.java:649)
+	at org.eclipse.e4.ui.workbench.renderers.swt.MenuManagerRenderer.subscribeTopicChildAdded(MenuManagerRenderer.java:324)
+	at jdk.internal.reflect.GeneratedMethodAccessor20.invoke(Unknown Source)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.base/java.lang.reflect.Method.invoke(Unknown Source)
+	at org.eclipse.e4.core.internal.di.MethodRequestor.execute(MethodRequestor.java:55)
+	at org.eclipse.e4.ui.internal.di.UIEventObjectSupplier$UIEventHandler$1.run(UIEventObjectSupplier.java:64)
+	at org.eclipse.swt.widgets.Synchronizer.syncExec(Synchronizer.java:233)
+	at org.eclipse.ui.internal.UISynchronizer.syncExec(UISynchronizer.java:144)
+	at org.eclipse.swt.widgets.Display.syncExec(Display.java:4567)
+	at org.eclipse.e4.ui.internal.workbench.swt.E4Application$1.syncExec(E4Application.java:212)
+	at org.eclipse.e4.ui.internal.di.UIEventObjectSupplier$UIEventHandler.handleEvent(UIEventObjectSupplier.java:61)
+	at org.eclipse.equinox.internal.event.EventHandlerWrapper.handleEvent(EventHandlerWrapper.java:201)
+	at org.eclipse.equinox.internal.event.EventHandlerTracker.dispatchEvent(EventHandlerTracker.java:196)
+	at org.eclipse.equinox.internal.event.EventHandlerTracker.dispatchEvent(EventHandlerTracker.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:230)
+	at org.eclipse.osgi.framework.eventmgr.ListenerQueue.dispatchEventSynchronous(ListenerQueue.java:148)
+	at org.eclipse.equinox.internal.event.EventAdminImpl.dispatchEvent(EventAdminImpl.java:135)
+	at org.eclipse.equinox.internal.event.EventAdminImpl.sendEvent(EventAdminImpl.java:78)
+	at org.eclipse.equinox.internal.event.EventComponent.sendEvent(EventComponent.java:39)
+	at org.eclipse.e4.ui.services.internal.events.EventBroker.send(EventBroker.java:52)
+	at org.eclipse.e4.ui.internal.workbench.UIEventPublisher.notifyChanged(UIEventPublisher.java:60)
+	at org.eclipse.emf.common.notify.impl.BasicNotifierImpl.eNotify(BasicNotifierImpl.java:374)
+	at org.eclipse.emf.ecore.util.EcoreEList.dispatchNotification(EcoreEList.java:249)
+	at org.eclipse.emf.common.notify.impl.NotifyingListImpl.addUnique(NotifyingListImpl.java:356)
+	at org.eclipse.emf.common.util.AbstractEList.add(AbstractEList.java:340)
+	at org.eclipse.e4.ui.workbench.renderers.swt.ContributionRecord.mergeIntoModel(ContributionRecord.java:250)
+	at org.eclipse.e4.ui.workbench.renderers.swt.MenuManagerRenderer.processAddition(MenuManagerRenderer.java:546)
+	at org.eclipse.e4.ui.workbench.renderers.swt.MenuManagerRenderer.generateContributions(MenuManagerRenderer.java:525)
+	at org.eclipse.e4.ui.workbench.renderers.swt.MenuManagerRenderer.processContributions(MenuManagerRenderer.java:493)
+	at org.eclipse.ui.internal.PopupMenuExtender.addMenuContributions(PopupMenuExtender.java:410)
+	at org.eclipse.ui.internal.PopupMenuExtender.menuAboutToShow(PopupMenuExtender.java:382)
+	at org.eclipse.jface.action.MenuManager.fireAboutToShow(MenuManager.java:339)
+	at org.eclipse.jface.action.MenuManager.handleAboutToShow(MenuManager.java:470)
+	at org.eclipse.jface.action.MenuManager.access$1(MenuManager.java:465)
+	at org.eclipse.jface.action.MenuManager$2.menuShown(MenuManager.java:497)
+	at org.eclipse.swt.widgets.TypedListener.handleEvent(TypedListener.java:256)
+	at org.eclipse.swt.widgets.EventTable.sendEvent(EventTable.java:86)
+	at org.eclipse.swt.widgets.Display.sendEvent(Display.java:4118)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1052)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1076)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1057)
+	at org.eclipse.swt.widgets.Control.WM_INITMENUPOPUP(Control.java:5125)
+	at org.eclipse.swt.widgets.Control.windowProc(Control.java:4794)
+	at org.eclipse.swt.widgets.Canvas.windowProc(Canvas.java:345)
+	at org.eclipse.swt.widgets.Decorations.windowProc(Decorations.java:1499)
+	at org.eclipse.swt.widgets.Shell.windowProc(Shell.java:2159)
+	at org.eclipse.swt.widgets.Display.windowProc(Display.java:4757)
+	at org.eclipse.swt.internal.win32.OS.TrackPopupMenu(Native Method)
+	at org.eclipse.swt.widgets.Menu._setVisible(Menu.java:250)
+	at org.eclipse.swt.widgets.Display.runPopups(Display.java:3972)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3528)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$5.run(PartRenderingEngine.java:1170)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:336)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.run(PartRenderingEngine.java:1059)
+	at org.eclipse.e4.ui.internal.workbench.E4Workbench.createAndRunUI(E4Workbench.java:153)
+	at org.eclipse.ui.internal.Workbench.lambda$3(Workbench.java:667)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:336)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:597)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:148)
+	at com.xilinx.ide.application.ui.Application.start(Application.java:78)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:196)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:134)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:104)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:388)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:243)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.base/java.lang.reflect.Method.invoke(Unknown Source)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:656)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:592)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1498)
+
+!ENTRY org.eclipse.jface 4 0 2020-10-28 17:03:49.062
+!MESSAGE /icons/elcl16/watchpoint_co.gif
+!STACK 0
+java.io.FileNotFoundException: /icons/elcl16/watchpoint_co.gif
+	at org.eclipse.osgi.storage.url.bundleentry.Handler.findBundleEntry(Handler.java:51)
+	at org.eclipse.osgi.storage.url.BundleResourceHandler.openConnection(BundleResourceHandler.java:169)
+	at java.base/java.net.URL.openConnection(Unknown Source)
+	at org.eclipse.core.internal.boot.PlatformURLConnection.connect(PlatformURLConnection.java:112)
+	at org.eclipse.core.internal.boot.PlatformURLConnection.getURLAsLocal(PlatformURLConnection.java:237)
+	at org.eclipse.core.internal.runtime.PlatformURLConverter.toFileURL(PlatformURLConverter.java:34)
+	at org.eclipse.core.runtime.FileLocator.toFileURL(FileLocator.java:255)
+	at org.eclipse.jface.resource.URLImageDescriptor.getFilePath(URLImageDescriptor.java:230)
+	at org.eclipse.jface.resource.URLImageDescriptor.access$2(URLImageDescriptor.java:218)
+	at org.eclipse.jface.resource.URLImageDescriptor$URLImageFileNameProvider.getImagePath(URLImageDescriptor.java:54)
+	at org.eclipse.swt.internal.DPIUtil.validateAndGetImagePathAtZoom(DPIUtil.java:416)
+	at org.eclipse.swt.graphics.Image.<init>(Image.java:684)
+	at org.eclipse.jface.resource.URLImageDescriptor.createImage(URLImageDescriptor.java:261)
+	at org.eclipse.jface.resource.ImageDescriptor.createResource(ImageDescriptor.java:180)
+	at org.eclipse.jface.resource.DeviceResourceManager.allocate(DeviceResourceManager.java:52)
+	at org.eclipse.jface.resource.AbstractResourceManager.create(AbstractResourceManager.java:85)
+	at org.eclipse.jface.resource.LocalResourceManager.allocate(LocalResourceManager.java:69)
+	at org.eclipse.jface.resource.AbstractResourceManager.create(AbstractResourceManager.java:85)
+	at org.eclipse.jface.resource.ResourceManager.createImage(ResourceManager.java:172)
+	at org.eclipse.e4.ui.workbench.renderers.swt.AbstractContributionItem.getImage(AbstractContributionItem.java:148)
+	at org.eclipse.e4.ui.workbench.renderers.swt.AbstractContributionItem.updateIcons(AbstractContributionItem.java:174)
+	at org.eclipse.e4.ui.workbench.renderers.swt.AbstractContributionItem.update(AbstractContributionItem.java:124)
+	at org.eclipse.e4.ui.workbench.renderers.swt.AbstractContributionItem.fill(AbstractContributionItem.java:261)
+	at org.eclipse.jface.action.MenuManager.doItemFill(MenuManager.java:728)
+	at org.eclipse.jface.action.MenuManager.update(MenuManager.java:810)
+	at org.eclipse.jface.action.MenuManager.update(MenuManager.java:669)
+	at org.eclipse.e4.ui.workbench.renderers.swt.MenuManagerRenderer.scheduleManagerUpdate(MenuManagerRenderer.java:1219)
+	at org.eclipse.e4.ui.workbench.renderers.swt.MenuManagerRenderer.processContents(MenuManagerRenderer.java:649)
+	at org.eclipse.e4.ui.workbench.renderers.swt.MenuManagerRenderer.subscribeTopicChildAdded(MenuManagerRenderer.java:324)
+	at jdk.internal.reflect.GeneratedMethodAccessor20.invoke(Unknown Source)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.base/java.lang.reflect.Method.invoke(Unknown Source)
+	at org.eclipse.e4.core.internal.di.MethodRequestor.execute(MethodRequestor.java:55)
+	at org.eclipse.e4.ui.internal.di.UIEventObjectSupplier$UIEventHandler$1.run(UIEventObjectSupplier.java:64)
+	at org.eclipse.swt.widgets.Synchronizer.syncExec(Synchronizer.java:233)
+	at org.eclipse.ui.internal.UISynchronizer.syncExec(UISynchronizer.java:144)
+	at org.eclipse.swt.widgets.Display.syncExec(Display.java:4567)
+	at org.eclipse.e4.ui.internal.workbench.swt.E4Application$1.syncExec(E4Application.java:212)
+	at org.eclipse.e4.ui.internal.di.UIEventObjectSupplier$UIEventHandler.handleEvent(UIEventObjectSupplier.java:61)
+	at org.eclipse.equinox.internal.event.EventHandlerWrapper.handleEvent(EventHandlerWrapper.java:201)
+	at org.eclipse.equinox.internal.event.EventHandlerTracker.dispatchEvent(EventHandlerTracker.java:196)
+	at org.eclipse.equinox.internal.event.EventHandlerTracker.dispatchEvent(EventHandlerTracker.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:230)
+	at org.eclipse.osgi.framework.eventmgr.ListenerQueue.dispatchEventSynchronous(ListenerQueue.java:148)
+	at org.eclipse.equinox.internal.event.EventAdminImpl.dispatchEvent(EventAdminImpl.java:135)
+	at org.eclipse.equinox.internal.event.EventAdminImpl.sendEvent(EventAdminImpl.java:78)
+	at org.eclipse.equinox.internal.event.EventComponent.sendEvent(EventComponent.java:39)
+	at org.eclipse.e4.ui.services.internal.events.EventBroker.send(EventBroker.java:52)
+	at org.eclipse.e4.ui.internal.workbench.UIEventPublisher.notifyChanged(UIEventPublisher.java:60)
+	at org.eclipse.emf.common.notify.impl.BasicNotifierImpl.eNotify(BasicNotifierImpl.java:374)
+	at org.eclipse.emf.ecore.util.EcoreEList.dispatchNotification(EcoreEList.java:249)
+	at org.eclipse.emf.common.notify.impl.NotifyingListImpl.addUnique(NotifyingListImpl.java:356)
+	at org.eclipse.emf.common.util.AbstractEList.add(AbstractEList.java:340)
+	at org.eclipse.e4.ui.workbench.renderers.swt.ContributionRecord.mergeIntoModel(ContributionRecord.java:250)
+	at org.eclipse.e4.ui.workbench.renderers.swt.MenuManagerRenderer.processAddition(MenuManagerRenderer.java:546)
+	at org.eclipse.e4.ui.workbench.renderers.swt.MenuManagerRenderer.generateContributions(MenuManagerRenderer.java:525)
+	at org.eclipse.e4.ui.workbench.renderers.swt.MenuManagerRenderer.processContributions(MenuManagerRenderer.java:493)
+	at org.eclipse.ui.internal.PopupMenuExtender.addMenuContributions(PopupMenuExtender.java:410)
+	at org.eclipse.ui.internal.PopupMenuExtender.menuAboutToShow(PopupMenuExtender.java:382)
+	at org.eclipse.jface.action.MenuManager.fireAboutToShow(MenuManager.java:339)
+	at org.eclipse.jface.action.MenuManager.handleAboutToShow(MenuManager.java:470)
+	at org.eclipse.jface.action.MenuManager.access$1(MenuManager.java:465)
+	at org.eclipse.jface.action.MenuManager$2.menuShown(MenuManager.java:497)
+	at org.eclipse.swt.widgets.TypedListener.handleEvent(TypedListener.java:256)
+	at org.eclipse.swt.widgets.EventTable.sendEvent(EventTable.java:86)
+	at org.eclipse.swt.widgets.Display.sendEvent(Display.java:4118)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1052)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1076)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1057)
+	at org.eclipse.swt.widgets.Control.WM_INITMENUPOPUP(Control.java:5125)
+	at org.eclipse.swt.widgets.Control.windowProc(Control.java:4794)
+	at org.eclipse.swt.widgets.Canvas.windowProc(Canvas.java:345)
+	at org.eclipse.swt.widgets.Decorations.windowProc(Decorations.java:1499)
+	at org.eclipse.swt.widgets.Shell.windowProc(Shell.java:2159)
+	at org.eclipse.swt.widgets.Display.windowProc(Display.java:4757)
+	at org.eclipse.swt.internal.win32.OS.TrackPopupMenu(Native Method)
+	at org.eclipse.swt.widgets.Menu._setVisible(Menu.java:250)
+	at org.eclipse.swt.widgets.Display.runPopups(Display.java:3972)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3528)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$5.run(PartRenderingEngine.java:1170)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:336)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.run(PartRenderingEngine.java:1059)
+	at org.eclipse.e4.ui.internal.workbench.E4Workbench.createAndRunUI(E4Workbench.java:153)
+	at org.eclipse.ui.internal.Workbench.lambda$3(Workbench.java:667)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:336)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:597)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:148)
+	at com.xilinx.ide.application.ui.Application.start(Application.java:78)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:196)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:134)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:104)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:388)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:243)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.base/java.lang.reflect.Method.invoke(Unknown Source)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:656)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:592)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1498)
+
+!ENTRY org.eclipse.jface 4 0 2020-10-28 17:04:47.425
+!MESSAGE /icons/elcl16/watchpoint_co.gif
+!STACK 0
+java.io.FileNotFoundException: /icons/elcl16/watchpoint_co.gif
+	at org.eclipse.osgi.storage.url.bundleentry.Handler.findBundleEntry(Handler.java:51)
+	at org.eclipse.osgi.storage.url.BundleResourceHandler.openConnection(BundleResourceHandler.java:169)
+	at java.base/java.net.URL.openConnection(Unknown Source)
+	at org.eclipse.core.internal.boot.PlatformURLConnection.connect(PlatformURLConnection.java:112)
+	at org.eclipse.core.internal.boot.PlatformURLConnection.getURLAsLocal(PlatformURLConnection.java:237)
+	at org.eclipse.core.internal.runtime.PlatformURLConverter.toFileURL(PlatformURLConverter.java:34)
+	at org.eclipse.core.runtime.FileLocator.toFileURL(FileLocator.java:255)
+	at org.eclipse.jface.resource.URLImageDescriptor.getFilePath(URLImageDescriptor.java:230)
+	at org.eclipse.jface.resource.URLImageDescriptor.access$2(URLImageDescriptor.java:218)
+	at org.eclipse.jface.resource.URLImageDescriptor$URLImageFileNameProvider.getImagePath(URLImageDescriptor.java:54)
+	at org.eclipse.swt.internal.DPIUtil.validateAndGetImagePathAtZoom(DPIUtil.java:416)
+	at org.eclipse.swt.graphics.Image.<init>(Image.java:684)
+	at org.eclipse.jface.resource.URLImageDescriptor.createImage(URLImageDescriptor.java:261)
+	at org.eclipse.jface.resource.ImageDescriptor.createResource(ImageDescriptor.java:180)
+	at org.eclipse.jface.resource.DeviceResourceManager.allocate(DeviceResourceManager.java:52)
+	at org.eclipse.jface.resource.AbstractResourceManager.create(AbstractResourceManager.java:85)
+	at org.eclipse.jface.resource.LocalResourceManager.allocate(LocalResourceManager.java:69)
+	at org.eclipse.jface.resource.AbstractResourceManager.create(AbstractResourceManager.java:85)
+	at org.eclipse.jface.resource.ResourceManager.createImage(ResourceManager.java:172)
+	at org.eclipse.e4.ui.workbench.renderers.swt.AbstractContributionItem.getImage(AbstractContributionItem.java:148)
+	at org.eclipse.e4.ui.workbench.renderers.swt.AbstractContributionItem.updateIcons(AbstractContributionItem.java:174)
+	at org.eclipse.e4.ui.workbench.renderers.swt.AbstractContributionItem.update(AbstractContributionItem.java:124)
+	at org.eclipse.e4.ui.workbench.renderers.swt.AbstractContributionItem.fill(AbstractContributionItem.java:261)
+	at org.eclipse.jface.action.MenuManager.doItemFill(MenuManager.java:728)
+	at org.eclipse.jface.action.MenuManager.update(MenuManager.java:810)
+	at org.eclipse.jface.action.MenuManager.update(MenuManager.java:669)
+	at org.eclipse.e4.ui.workbench.renderers.swt.MenuManagerRenderer.scheduleManagerUpdate(MenuManagerRenderer.java:1219)
+	at org.eclipse.e4.ui.workbench.renderers.swt.MenuManagerRenderer.processContents(MenuManagerRenderer.java:649)
+	at org.eclipse.e4.ui.workbench.renderers.swt.MenuManagerRenderer.subscribeTopicChildAdded(MenuManagerRenderer.java:324)
+	at jdk.internal.reflect.GeneratedMethodAccessor20.invoke(Unknown Source)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.base/java.lang.reflect.Method.invoke(Unknown Source)
+	at org.eclipse.e4.core.internal.di.MethodRequestor.execute(MethodRequestor.java:55)
+	at org.eclipse.e4.ui.internal.di.UIEventObjectSupplier$UIEventHandler$1.run(UIEventObjectSupplier.java:64)
+	at org.eclipse.swt.widgets.Synchronizer.syncExec(Synchronizer.java:233)
+	at org.eclipse.ui.internal.UISynchronizer.syncExec(UISynchronizer.java:144)
+	at org.eclipse.swt.widgets.Display.syncExec(Display.java:4567)
+	at org.eclipse.e4.ui.internal.workbench.swt.E4Application$1.syncExec(E4Application.java:212)
+	at org.eclipse.e4.ui.internal.di.UIEventObjectSupplier$UIEventHandler.handleEvent(UIEventObjectSupplier.java:61)
+	at org.eclipse.equinox.internal.event.EventHandlerWrapper.handleEvent(EventHandlerWrapper.java:201)
+	at org.eclipse.equinox.internal.event.EventHandlerTracker.dispatchEvent(EventHandlerTracker.java:196)
+	at org.eclipse.equinox.internal.event.EventHandlerTracker.dispatchEvent(EventHandlerTracker.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:230)
+	at org.eclipse.osgi.framework.eventmgr.ListenerQueue.dispatchEventSynchronous(ListenerQueue.java:148)
+	at org.eclipse.equinox.internal.event.EventAdminImpl.dispatchEvent(EventAdminImpl.java:135)
+	at org.eclipse.equinox.internal.event.EventAdminImpl.sendEvent(EventAdminImpl.java:78)
+	at org.eclipse.equinox.internal.event.EventComponent.sendEvent(EventComponent.java:39)
+	at org.eclipse.e4.ui.services.internal.events.EventBroker.send(EventBroker.java:52)
+	at org.eclipse.e4.ui.internal.workbench.UIEventPublisher.notifyChanged(UIEventPublisher.java:60)
+	at org.eclipse.emf.common.notify.impl.BasicNotifierImpl.eNotify(BasicNotifierImpl.java:374)
+	at org.eclipse.emf.ecore.util.EcoreEList.dispatchNotification(EcoreEList.java:249)
+	at org.eclipse.emf.common.notify.impl.NotifyingListImpl.addUnique(NotifyingListImpl.java:356)
+	at org.eclipse.emf.common.util.AbstractEList.add(AbstractEList.java:340)
+	at org.eclipse.e4.ui.workbench.renderers.swt.ContributionRecord.mergeIntoModel(ContributionRecord.java:250)
+	at org.eclipse.e4.ui.workbench.renderers.swt.MenuManagerRenderer.processAddition(MenuManagerRenderer.java:546)
+	at org.eclipse.e4.ui.workbench.renderers.swt.MenuManagerRenderer.generateContributions(MenuManagerRenderer.java:525)
+	at org.eclipse.e4.ui.workbench.renderers.swt.MenuManagerRenderer.processContributions(MenuManagerRenderer.java:493)
+	at org.eclipse.ui.internal.PopupMenuExtender.addMenuContributions(PopupMenuExtender.java:410)
+	at org.eclipse.ui.internal.PopupMenuExtender.menuAboutToShow(PopupMenuExtender.java:382)
+	at org.eclipse.jface.action.MenuManager.fireAboutToShow(MenuManager.java:339)
+	at org.eclipse.jface.action.MenuManager.handleAboutToShow(MenuManager.java:470)
+	at org.eclipse.jface.action.MenuManager.access$1(MenuManager.java:465)
+	at org.eclipse.jface.action.MenuManager$2.menuShown(MenuManager.java:497)
+	at org.eclipse.swt.widgets.TypedListener.handleEvent(TypedListener.java:256)
+	at org.eclipse.swt.widgets.EventTable.sendEvent(EventTable.java:86)
+	at org.eclipse.swt.widgets.Display.sendEvent(Display.java:4118)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1052)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1076)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1057)
+	at org.eclipse.swt.widgets.Control.WM_INITMENUPOPUP(Control.java:5125)
+	at org.eclipse.swt.widgets.Control.windowProc(Control.java:4794)
+	at org.eclipse.swt.widgets.Canvas.windowProc(Canvas.java:345)
+	at org.eclipse.swt.widgets.Decorations.windowProc(Decorations.java:1499)
+	at org.eclipse.swt.widgets.Shell.windowProc(Shell.java:2159)
+	at org.eclipse.swt.widgets.Display.windowProc(Display.java:4757)
+	at org.eclipse.swt.internal.win32.OS.TrackPopupMenu(Native Method)
+	at org.eclipse.swt.widgets.Menu._setVisible(Menu.java:250)
+	at org.eclipse.swt.widgets.Display.runPopups(Display.java:3972)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3528)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$5.run(PartRenderingEngine.java:1170)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:336)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.run(PartRenderingEngine.java:1059)
+	at org.eclipse.e4.ui.internal.workbench.E4Workbench.createAndRunUI(E4Workbench.java:153)
+	at org.eclipse.ui.internal.Workbench.lambda$3(Workbench.java:667)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:336)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:597)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:148)
+	at com.xilinx.ide.application.ui.Application.start(Application.java:78)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:196)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:134)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:104)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:388)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:243)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.base/java.lang.reflect.Method.invoke(Unknown Source)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:656)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:592)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1498)
+!SESSION 2020-10-28 17:45:05.967 -----------------------------------------------
+eclipse.buildId=2019.2
+java.version=9.0.4
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=ja_JP
+Command-line arguments:  -os win32 -ws win32 -arch x86_64
+
+!ENTRY org.eclipse.emf.ecore 2 0 2020-10-28 17:45:47.081
+!MESSAGE Both 'com.autoesl.autopilot.ui.models' and 'com.autoesl.autopilot.ui.models' register a package for 'com.autoesl.autopilot.solution'
+
+!ENTRY org.eclipse.ui 4 4 2020-10-28 17:45:56.799
+!MESSAGE Conflicting handlers for com.xilinx.sdx.system.core.importSourcesCommand: {com.xilinx.sdx.system.core.handler.ImportSourcesHandler} vs {com.xilinx.sdx.system.core.handler.ImportSourcesHandler}
+
+!ENTRY org.eclipse.ui 4 4 2020-10-28 17:45:56.811
+!MESSAGE Conflicting handlers for com.xilinx.sdx.system.core.importSourcesCommand: {com.xilinx.sdx.system.core.handler.ImportSourcesHandler} vs {com.xilinx.sdx.system.core.handler.ImportSourcesHandler}
+
+!ENTRY org.eclipse.egit.ui 2 0 2020-10-28 17:46:00.377
+!MESSAGE Warning: The environment variable HOME is not set. The following directory will be used to store the Git
+user global configuration and to define the default location to store repositories: 'C:\Users\fpga'. If this is
+not correct please set the HOME environment variable and restart Eclipse. Otherwise Git for Windows and
+EGit might behave differently since they see different configuration options.
+This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-10-28 17:46:00.572
+!MESSAGE XSCT Command: [plnx-install-path  ; ::scw::scw_mode gui], Thread: Thread-5
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-10-28 17:46:00.578
+!MESSAGE XSCT Command: [::hsi::utils::init_repo], Thread: Worker-0: Initializing s/w repositories
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-10-28 17:46:00.585
+!MESSAGE XSCT Command: [set sdk::sdk_chan tcfchan#0], Thread: Thread-15
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-10-28 17:46:00.592
+!MESSAGE XSCT command with result: [plnx-install-path  ; ::scw::scw_mode gui], Result: [null, ]. Thread: Thread-5
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-10-28 17:46:04.370
+!MESSAGE XSCT command with result: [::hsi::utils::init_repo], Result: [null, ]. Thread: Worker-0: Initializing s/w repositories
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-10-28 17:46:04.374
+!MESSAGE XSCT command with result: [set sdk::sdk_chan tcfchan#0], Result: [null, tcfchan#0]. Thread: Thread-15
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-10-28 17:46:04.379
+!MESSAGE XSCT Command: [set query_var1 $::env(RDI_DATADIR)], Thread: Worker-0: Initializing s/w repositories
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-10-28 17:46:04.383
+!MESSAGE XSCT Command: [setws C:/Github/Zybo_mipi/LWIP/myUDP_send], Thread: Thread-15
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-10-28 17:46:04.387
+!MESSAGE XSCT command with result: [set query_var1 $::env(RDI_DATADIR)], Result: [null, C:/Xilinx/Vitis/2019.2/data]. Thread: Worker-0: Initializing s/w repositories
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-10-28 17:46:04.392
+!MESSAGE XSCT command with result: [setws C:/Github/Zybo_mipi/LWIP/myUDP_send], Result: [null, ]. Thread: Thread-15

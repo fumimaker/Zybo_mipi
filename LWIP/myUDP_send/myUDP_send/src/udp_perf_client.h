@@ -39,6 +39,8 @@
 #include "platform.h"
 #include <sleep.h>
 
+//udp_perf_client
+
 /* used as indices into kLabel[] */
 enum {
 	KCONV_UNIT,

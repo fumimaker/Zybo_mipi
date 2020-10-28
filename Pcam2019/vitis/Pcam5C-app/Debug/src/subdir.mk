@@ -13,6 +13,7 @@ C_SRCS += \
 ../src/i2c_access.c \
 ../src/iic_phyreset.c \
 ../src/main.c \
+../src/platform.c \
 ../src/sfp.c \
 ../src/si5324.c \
 ../src/udp_perf_client.c 
@@ -24,6 +25,7 @@ OBJS += \
 ./src/i2c_access.o \
 ./src/iic_phyreset.o \
 ./src/main.o \
+./src/platform.o \
 ./src/sfp.o \
 ./src/si5324.o \
 ./src/udp_perf_client.o 
@@ -32,6 +34,7 @@ C_DEPS += \
 ./src/i2c_access.d \
 ./src/iic_phyreset.d \
 ./src/main.d \
+./src/platform.d \
 ./src/sfp.d \
 ./src/si5324.d \
 ./src/udp_perf_client.d 

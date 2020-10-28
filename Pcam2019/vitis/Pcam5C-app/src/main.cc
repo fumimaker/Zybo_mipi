@@ -1,7 +1,5 @@
 #include "xparameters.h"
 
-#include "platform/platform.h"
-#include "platform/platform_config.h"
 #include "ov5640/OV5640.h"
 #include "ov5640/ScuGicInterruptController.h"
 #include "ov5640/PS_GPIO.h"
@@ -20,6 +18,8 @@
 #include "xil_cache.h"
 #include "netif/xadapter.h"
 #include <stdio.h>
+#include "platform.h"
+#include "platform_config.h"
 
 #define IRPT_CTL_DEVID 		XPAR_PS7_SCUGIC_0_DEVICE_ID
 #define GPIO_DEVID			XPAR_PS7_GPIO_0_DEVICE_ID

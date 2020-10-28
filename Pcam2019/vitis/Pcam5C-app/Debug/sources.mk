@@ -26,5 +26,4 @@ ELFSIZE :=
 SUBDIRS := \
 src \
 src/ov5640 \
-src/platform \
 
