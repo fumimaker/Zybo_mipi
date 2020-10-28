@@ -4238,3 +4238,16 @@ java.lang.RuntimeException: XSCT server calls should not be made from TCF thread
 20:39:00 INFO  : Successfully done sdx_reload_mss "C:/Github/Zybo_mipi/Pcam2019/vitis/Pcam5C-2019/ps7_cortexa9_0/standalone_domain/bsp/system.mss"
 20:39:00 INFO  : No changes in MSS file content so sources will not be generated.
 21:01:08 INFO  : Checking for BSP changes to sync application flags for project 'Pcam5C-app'...
+21:18:13 INFO  : Checking for BSP changes to sync application flags for project 'Pcam5C-app'...
+21:50:51 INFO  : Launching XSCT server: xsct.bat -n  -interactive C:\Github\Zybo_mipi\Pcam2019\vitis\temp_xsdb_launch_script.tcl
+21:50:53 INFO  : XSCT server has started successfully.
+21:50:53 INFO  : plnx-install-location is set to ''
+21:50:53 INFO  : Successfully done setting XSCT server connection channel  
+21:50:53 INFO  : Successfully done setting workspace for the tool. 
+21:50:54 INFO  : Successfully done query RDI_DATADIR 
+21:50:55 INFO  : Registering command handlers for Vitis TCF services
+21:52:04 INFO  : Successfully done sdx_reload_mss "C:/Github/Zybo_mipi/Pcam2019/vitis/Pcam5C-2019/zynq_fsbl/zynq_fsbl_bsp/system.mss"
+21:52:05 INFO  : Successfully done sdx_reload_mss "C:/Github/Zybo_mipi/Pcam2019/vitis/Pcam5C-2019/zynq_fsbl/zynq_fsbl_bsp/system.mss"
+21:52:12 INFO  : Successfully done sdx_reload_mss "C:/Github/Zybo_mipi/Pcam2019/vitis/Pcam5C-2019/ps7_cortexa9_0/standalone_domain/bsp/system.mss"
+21:52:12 INFO  : No changes in MSS file content so sources will not be generated.
+21:52:43 INFO  : Checking for BSP changes to sync application flags for project 'Pcam5C-app'...

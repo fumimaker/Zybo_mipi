@@ -1,9 +1,14 @@
-2020-10-28T21:01:08.400417200255-21:01:08 **** Incremental Build of configuration Debug for project Pcam5C-app ****
+2020-10-28T21:52:47.395120600255-21:52:47 **** Incremental Build of configuration Debug for project Pcam5C-app ****
 000-make all 
 000-make --no-print-directory pre-build
 000-a9-linaro-pre-build-step
 000-' '
 000-make --no-print-directory main-build
+000-'Building file: ../src/main.cc'
+000-'Invoking: ARM v7 g++ compiler'
+000-arm-none-eabi-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -IC:/Github/Zybo_mipi/Zybo-Z7-20-pcam-5c-2019.1/vitis/Pcam5C-2019/export/Pcam5C-2019/sw/Pcam5C-2019/standalone_domain/bspinclude/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.cc"
+000-'Finished building: ../src/main.cc'
+000-' '
 000-'Building file: ../src/platform.c'
 000-'Invoking: ARM v7 g++ compiler'
 000-arm-none-eabi-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/platform.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -IC:/Github/Zybo_mipi/Zybo-Z7-20-pcam-5c-2019.1/vitis/Pcam5C-2019/export/Pcam5C-2019/sw/Pcam5C-2019/standalone_domain/bspinclude/include -MMD -MP -MF"src/platform.d" -MT"src/platform.o" -o "src/platform.o" "../src/platform.c"
@@ -14,5 +19,5 @@
 000/Pcam5C-app0-1-1make[1]: *** [src/subdir.mk:48: src/platform.o] Error 12-make[1]: *** [src/subdir.mk:48: src/platform.o] Error 1
 000/Pcam5C-app0-1-1make: *** [makefile:47: all] Error 22-make: *** [makefile:47: all] Error 2
 00255-
-21:01:08 Build Finished (took 526ms)
+21:52:49 Build Finished (took 1s.792ms)
 

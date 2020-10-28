@@ -1,0 +1,25 @@
+22:21:09 **** Incremental Build of configuration Debug for project Pcam2019_validate_app ****
+make all 
+make --no-print-directory pre-build
+a9-linaro-pre-build-step
+' '
+make --no-print-directory main-build
+'Building file: ../src/platform/platform.c'
+'Invoking: ARM v7 g++ compiler'
+arm-none-eabi-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/platform/platform.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -IC:/Github/Zybo_mipi/Pcam2019_Validate/Vitis/Pcam2019_Validate/export/Pcam2019_Validate/sw/Pcam2019_Validate/standalone_domain/bspinclude/include -MMD -MP -MF"src/platform/platform.d" -MT"src/platform/platform.o" -o "src/platform/platform.o" "../src/platform/platform.c"
+'Finished building: ../src/platform/platform.c'
+' '
+'Building target: Pcam2019_validate_app.elf'
+'Invoking: ARM v7 g++ linker'
+arm-none-eabi-g++ -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -LC:/Github/Zybo_mipi/Pcam2019_Validate/Vitis/Pcam2019_Validate/export/Pcam2019_Validate/sw/Pcam2019_Validate/standalone_domain/bsplib/lib -o "Pcam2019_validate_app.elf"  ./src/platform/platform.o  ./src/ov5640/OV5640.o  ./src/main.o   -Wl,--start-group,-lxil,-lgcc,-lc,-lstdc++,--end-group -Wl,--start-group,-lxil,-llwip4,-lgcc,-lc,--end-group
+'Finished building target: Pcam2019_validate_app.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size Pcam2019_validate_app.elf  |tee "Pcam2019_validate_app.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+ 633147	   3884	  29776	 666807	  a2cb7	Pcam2019_validate_app.elf
+'Finished building: Pcam2019_validate_app.elf.size'
+' '
+
+22:21:10 Build Finished (took 1s.62ms)
+
