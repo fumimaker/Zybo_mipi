@@ -11,6 +11,8 @@
 #include "lwip/inet.h"
 #include "xil_cache.h"
 
+#include "udp_perf_client.h"
+
 #if LWIP_DHCP==1
 #include "lwip/dhcp.h"
 extern volatile int dhcp_timoutcntr;
@@ -23,10 +25,7 @@ extern volatile int TcpSlowTmrFlag;
 #define DEFAULT_IP_MASK		"255.255.255.0"
 #define DEFAULT_GW_ADDRESS	"192.168.1.1"
 
-void platform_enable_interrupts(void);
-void start_application(void);
-void transfer_data(void);
-void print_app_header(void);
+
 
 int udp_main(void);
 int udp_loop(void);
@@ -162,23 +161,22 @@ int udp_main(void)
 	start_application();
 	xil_printf("\r\n");
 
-	//return 0;
 }
 
 
 int udp_loop(void){
-	while (1) {
-		if (TcpFastTmrFlag) {
-			tcp_fasttmr();
-			TcpFastTmrFlag = 0;
-		}
-		if (TcpSlowTmrFlag) {
-			tcp_slowtmr();
-			TcpSlowTmrFlag = 0;
-		}
-		xemacif_input(netif);
-		transfer_data(); /* データを送信 */
+
+	if (TcpFastTmrFlag) {
+		tcp_fasttmr();
+		TcpFastTmrFlag = 0;
 	}
+	if (TcpSlowTmrFlag) {
+		tcp_slowtmr();
+		TcpSlowTmrFlag = 0;
+	}
+	xemacif_input(netif);
+	transfer_data(); /* データを送信 */
+
 	/* never reached */
-	cleanup_platform();
+	//cleanup_platform();
 }

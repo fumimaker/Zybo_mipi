@@ -133,6 +133,7 @@ static void udp_packet_send(u8_t finished)
 			xil_printf("error allocating pbuf to send\r\n");
 			return;
 		} else {
+			// frame_pointer+ptrCounterの先頭からBUSIZE-int(1436)分payload+1にコピー
 			//4byte(int)開けて1436byteのデータをコピーする
 			memcpy((int*)packet->payload+1, frame_pointer+ptrCounter, UDP_SEND_BUFSIZE-sizeof(int));
 		}
@@ -140,8 +141,8 @@ static void udp_packet_send(u8_t finished)
 		/* always increment the id */
 		payload = (int*) (packet->payload);
 
-		int id = ptrCounter/(UDP_SEND_BUFSIZE-sizeof(int)); // 何番目のパケットか計算
-		xil_printf("%d \n\r", id);
+		int id = ptrCounter/(UDP_SEND_BUFSIZE-sizeof(int)); // 1440-4を何回送ったかを計算
+		xil_printf("Add:%x %d \n\r",frame_pointer, id);
 		if (finished == FINISH){
 			packet_id = -1;
 			id = -1;
@@ -193,7 +194,7 @@ static void udp_packet_send(u8_t finished)
 }
 
 /** Transmit data on a udp session */
-void transfer_data(int *address)
+void transfer_data(void)
 {
 	int i = 0;
 	for (i = 0; i < NUM_OF_PARALLEL_CLIENTS; i++) {
@@ -218,7 +219,8 @@ void transfer_data(int *address)
 
 		// １回のサイズに満たない端数になったら端数とFINISH送って終了
 		// HDの場合は1436bute*1926(0-1925)回目で500byte余る計算になる。
-		if ( (SIZE_OF_FRAME - ptrCounter) < ( UDP_SEND_BUFSIZE - sizeof(int) ) ) { //Amari
+
+		if ( (SIZE_OF_FRAME - ptrCounter) < ( UDP_SEND_BUFSIZE - sizeof(int) ) ) { //あまりを計算
 			xil_printf("remain packet %d byte\n\r", (SIZE_OF_FRAME - ptrCounter));
 			udp_packet_send(FINISH);
 			u64_t diff_ms = now - client.start_time;
@@ -267,17 +269,25 @@ void start_application(void)
 
 
 	/* initialize data buffer being sent with same as used in iperf */
-	for (i = 0; i < UDP_SEND_BUFSIZE; i++){
-		if(i<4){
-			send_buf[i] = 0;
-		}
-		else{
-			send_buf[i] = (i % 256);
-		}
-	}
+//	for (i = 0; i < UDP_SEND_BUFSIZE; i++){
+//		if(i<4){
+//			send_buf[i] = 0;
+//		}
+//		else{
+//			send_buf[i] = (i % 256);
+//		}
+//	}
 
 	for(u64 i=0; i<SIZE_OF_FRAME; i++){ // 初期化するだけ
 		frame_data[i] = i % 256;
 	}
-	frame_pointer = &frame_data[0];
+	//frame_pointer = &frame_data[0];
+}
+
+//Write完了の割り込みのたびに呼ばれる。
+//前のフレームのポインターを渡してくるのでframe_pointerに入れる。
+void update_address(char *pointer){
+	// frame_pointerにコピペ
+	frame_pointer = pointer;
+	xil_printf("update address\r\n");
 }

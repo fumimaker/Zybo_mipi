@@ -1,17 +1,31 @@
-04:22:05 **** Incremental Build of project Pcam5C-2019 ****
-buildplatform.bat 52887 Pcam5C-2019 no_domain_build 
-XSDB Server Channel: tcfchan#20
-04:22:09 **** Incremental Build of configuration Debug for project Pcam5C-app ****
+Nothing to build in platform 'Pcam5C-2019'
+
+20:57:24 **** Incremental Build of configuration Debug for project Pcam5C-app ****
 make all 
 make --no-print-directory pre-build
 a9-linaro-pre-build-step
 ' '
 make --no-print-directory main-build
-make[1]: Nothing to be done for 'main-build'.
-04:22:10 **** Incremental Build of configuration Debug for project Pcam5C-app_system ****
+'Building file: ../src/main.cc'
+'Invoking: ARM v7 g++ compiler'
+arm-none-eabi-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -IC:/Github/Zybo_mipi/Zybo-Z7-20-pcam-5c-2019.1/vitis/Pcam5C-2019/export/Pcam5C-2019/sw/Pcam5C-2019/standalone_domain/bspinclude/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.cc"
+'Finished building: ../src/main.cc'
+' '
+'Building target: Pcam5C-app.elf'
+'Invoking: ARM v7 g++ linker'
+arm-none-eabi-g++ -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -LC:/Github/Zybo_mipi/Zybo-Z7-20-pcam-5c-2019.1/vitis/Pcam5C-2019/export/Pcam5C-2019/sw/Pcam5C-2019/standalone_domain/bsplib/lib -o "Pcam5C-app.elf"  ./src/platform/platform.o  ./src/ov5640/OV5640.o  ./src/main.o   -Wl,--start-group,-lxil,-lgcc,-lc,-lstdc++,--end-group
+'Finished building target: Pcam5C-app.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size Pcam5C-app.elf  |tee "Pcam5C-app.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+ 633187	   3884	  29776	 666847	  a2cdf	Pcam5C-app.elf
+'Finished building: Pcam5C-app.elf.size'
+' '
+20:57:27 **** Incremental Build of configuration Debug for project Pcam5C-app_system ****
 make all 
 Generating bif file for the system project
-generate_system_bif.bat 52887 C:/Github/Zybo-Z7-20-pcam-5c-2019.1/vitis/Pcam5C-2019/export/Pcam5C-2019/Pcam5C-2019.xpfm standalone_domain C:/Github/Zybo_mipi/Zybo-Z7-20-pcam-5c-2019.1/vitis/Pcam5C-app_system/Debug/system.bif
+generate_system_bif.bat 57069 C:/Github/Zybo-Z7-20-pcam-5c-2019.1/vitis/Pcam5C-2019/export/Pcam5C-2019/Pcam5C-2019.xpfm standalone_domain C:/Github/Zybo_mipi/Zybo-Z7-20-pcam-5c-2019.1/vitis/Pcam5C-app_system/Debug/system.bif
 xpfm path is not valid
     invoked from within
 "::tcf::eval -progress {apply {{msg} {puts $msg}}} {tcf_send_command tcfchan#0 xsdb eval s es {{::scw::generate_bif -xpfm C:/Github/Zybo-Z7-20-pcam-5c-2019.1/vitis/Pcam5C-2019/export/Pcam5C-2019/Pcam5C-2019.xpfm -domains standalone_domain -bifpath C:/Github/Zybo_mipi/Zybo-Z7-20-pcam-5c-2019.1/vitis/Pcam5C-app_system/Debug/system.bif}}}"

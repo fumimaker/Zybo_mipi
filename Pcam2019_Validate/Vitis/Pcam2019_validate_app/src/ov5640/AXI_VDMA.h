@@ -12,6 +12,7 @@
 #include <functional>
 
 #include "xaxivdma.h"
+#include "../udp_perf_client.h"
 
 #define STRINGIZE(x) STRINGIZE2(x)
 #define STRINGIZE2(x) #x
@@ -242,8 +243,9 @@ public:
 			prevFrame = currentFrame - 1;
 		}
 
-		int address = context_.WriteCfg.FrameStoreStartAddr[prevFrame];
+		int address = context_.WriteCfg.FrameStoreStartAddr[prevFrame]; //アドレスをintで持ってる
 		char *pointer = (char *)address;//データ用
+		update_address(pointer);
 		for(int i=0; i<1280; i++){
 			for(int j=0; j<1; j++){
 				xil_printf("%x : %p: %06X ", address, pointer, ((*pointer << 16) | *(pointer+1) << 8) | *(pointer+2) );

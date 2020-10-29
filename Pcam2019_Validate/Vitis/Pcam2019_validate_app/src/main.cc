@@ -87,11 +87,19 @@ int main()
 	VideoOutput vid(XPAR_VTC_0_DEVICE_ID, XPAR_VIDEO_DYNCLK_DEVICE_ID);
 
 	pipeline_mode_change(vdma_driver, cam, vid, Resolution::R1280_720_60_PP, OV5640_cfg::mode_t::MODE_720P_1280_720_60fps);
-
-
 	xil_printf("Video init done.\r\n");
 
+	udp_main();
+	xil_printf("LWIP init done.\r\n");
 
+	xil_printf("udp send start.\r\n");
+	while(1){
+		udp_loop();
+	}
+
+
+
+	//never reached
 	// Liquid lens control
 	uint8_t read_char0 = 0;
 	uint8_t read_char1 = 0;
@@ -101,7 +109,7 @@ int main()
 	uint16_t reg_addr;
 	uint8_t reg_value;
 
-	udp_main();
+
 
 
 	while (1) {
