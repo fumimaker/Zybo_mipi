@@ -264,7 +264,7 @@ disable_caches()
 void
 init_platform()
 {
-   enable_caches();
+   enable_caches(); //do anything on arm
 
     Xil_Out32(XSLCR_UNLOCK_ADDR, XSLCR_UNLOCK_CODE);
     //Reset PL
@@ -274,8 +274,8 @@ init_platform()
 
     Xil_Out32(XSLCR_BASEADDR+0x4, 0x767B); //Lock back XSLCR
 
-    platform_setup_timer();
-	platform_setup_interrupts();
+//    platform_setup_timer();
+//	platform_setup_interrupts();
 
     /* if we have a uart 16550, then that needs to be initialized */
 #ifdef STDOUT_IS_16550

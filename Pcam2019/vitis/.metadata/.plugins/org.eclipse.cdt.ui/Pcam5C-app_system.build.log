@@ -1,10 +1,10 @@
-19:14:37 **** Build of configuration Debug for project Pcam5C-app_system ****
+22:00:01 **** Incremental Build of configuration Debug for project Pcam5C-app_system ****
 make all 
 Generating bif file for the system project
-generate_system_bif.bat 56539 C:/Github/Zybo_mipi/Zybo-Z7-20-pcam-5c-2019.1/vitis/Pcam5C-2019/export/Pcam5C-2019/Pcam5C-2019.xpfm standalone_domain C:/Github/Zybo_mipi/Pcam2019/vitis/Pcam5C-app_system/Debug/system.bif
+generate_system_bif.bat 53175 C:/Github/Zybo_mipi/Zybo-Z7-20-pcam-5c-2019.1/vitis/Pcam5C-2019/export/Pcam5C-2019/Pcam5C-2019.xpfm standalone_domain C:/Github/Zybo_mipi/Pcam2019/vitis/Pcam5C-app_system/Debug/system.bif
 sdcard_gen --xpfm C:/Github/Zybo_mipi/Zybo-Z7-20-pcam-5c-2019.1/vitis/Pcam5C-2019/export/Pcam5C-2019/Pcam5C-2019.xpfm --sys_config Pcam5C-2019 --bif C:/Github/Zybo_mipi/Pcam2019/vitis/Pcam5C-app_system/Debug/system.bif --bitstream C:/Github/Zybo_mipi/Pcam2019/vitis/Pcam5C-app/_ide/bitstream/system_wrapper.bit --elf C:/Github/Zybo_mipi/Pcam2019/vitis/Pcam5C-app/Debug/Pcam5C-app.elf,ps7_cortexa9_0
 ELF does not exist: C:/Github/Zybo_mipi/Pcam2019/vitis/Pcam5C-app/Debug/Pcam5C-app.elf
 make: *** [makefile:37: sd_card] Error 1
 
-19:14:39 Build Finished (took 2s.453ms)
+22:00:03 Build Finished (took 2s.235ms)
 

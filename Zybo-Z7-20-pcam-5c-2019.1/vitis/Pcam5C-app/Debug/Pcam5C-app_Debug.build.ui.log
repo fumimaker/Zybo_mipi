@@ -1,9 +1,19 @@
-2020-10-30T19:34:49.856377900255-19:34:49 **** Incremental Build of configuration Debug for project Pcam5C-app ****
+2020-11-01T00:58:30.823044500255-00:58:30 **** Incremental Build of configuration Debug for project Pcam5C-app ****
 000-make all 
 000-make --no-print-directory pre-build
 000-a9-linaro-pre-build-step
 000-' '
 000-make --no-print-directory main-build
+000-'Building file: ../src/platform/platform.c'
+000-'Invoking: ARM v7 g++ compiler'
+000-arm-none-eabi-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/platform/platform.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -IC:/Github/Zybo_mipi/Zybo-Z7-20-pcam-5c-2019.1/vitis/Pcam5C-2019/export/Pcam5C-2019/sw/Pcam5C-2019/standalone_domain/bspinclude/include -MMD -MP -MF"src/platform/platform.d" -MT"src/platform/platform.o" -o "src/platform/platform.o" "../src/platform/platform.c"
+000-'Finished building: ../src/platform/platform.c'
+000-' '
+000-'Building file: ../src/ov5640/OV5640.cpp'
+000-'Invoking: ARM v7 g++ compiler'
+000-arm-none-eabi-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/ov5640/OV5640.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -IC:/Github/Zybo_mipi/Zybo-Z7-20-pcam-5c-2019.1/vitis/Pcam5C-2019/export/Pcam5C-2019/sw/Pcam5C-2019/standalone_domain/bspinclude/include -MMD -MP -MF"src/ov5640/OV5640.d" -MT"src/ov5640/OV5640.o" -o "src/ov5640/OV5640.o" "../src/ov5640/OV5640.cpp"
+000-'Finished building: ../src/ov5640/OV5640.cpp'
+000-' '
 000-'Building file: ../src/main.cc'
 000-'Invoking: ARM v7 g++ compiler'
 000-arm-none-eabi-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -IC:/Github/Zybo_mipi/Zybo-Z7-20-pcam-5c-2019.1/vitis/Pcam5C-2019/export/Pcam5C-2019/sw/Pcam5C-2019/standalone_domain/bspinclude/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.cc"
@@ -21,5 +31,5 @@
 000-'Finished building: Pcam5C-app.elf.size'
 000-' '
 00255-
-19:34:52 Build Finished (took 2s.693ms)
+00:58:34 Build Finished (took 3s.458ms)
 

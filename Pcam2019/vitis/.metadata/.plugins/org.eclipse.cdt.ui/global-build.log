@@ -1,5 +1,5 @@
-19:13:49 **** Build of project Pcam5C-2019 ****
-buildplatform.bat 56539 Pcam5C-2019  
+21:59:19 **** Incremental Build of project Pcam5C-2019 ****
+buildplatform.bat 53175 Pcam5C-2019 standalone_domain,zynq_fsbl 
 XSDB Server Channel: tcfchan#1
 Reading the platform  : "Pcam5C-2019"
 Building the zynq_fsbl application.
@@ -346,32 +346,12 @@ files -g -Wall -Wextra"
 
 'Finished building libraries'
 
-19:14:33 **** Build of configuration Debug for project Pcam5C-app ****
+21:59:59 **** Incremental Build of configuration Debug for project Pcam5C-app ****
 make all 
 make --no-print-directory pre-build
 a9-linaro-pre-build-step
 ' '
 make --no-print-directory main-build
-'Building file: ../src/ov5640/OV5640.cpp'
-'Invoking: ARM v7 g++ compiler'
-arm-none-eabi-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/ov5640/OV5640.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -IC:/Github/Zybo_mipi/Zybo-Z7-20-pcam-5c-2019.1/vitis/Pcam5C-2019/export/Pcam5C-2019/sw/Pcam5C-2019/standalone_domain/bspinclude/include -MMD -MP -MF"src/ov5640/OV5640.d" -MT"src/ov5640/OV5640.o" -o "src/ov5640/OV5640.o" "../src/ov5640/OV5640.cpp"
-'Finished building: ../src/ov5640/OV5640.cpp'
-' '
-'Building file: ../src/i2c_access.c'
-'Invoking: ARM v7 g++ compiler'
-arm-none-eabi-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/i2c_access.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -IC:/Github/Zybo_mipi/Zybo-Z7-20-pcam-5c-2019.1/vitis/Pcam5C-2019/export/Pcam5C-2019/sw/Pcam5C-2019/standalone_domain/bspinclude/include -MMD -MP -MF"src/i2c_access.d" -MT"src/i2c_access.o" -o "src/i2c_access.o" "../src/i2c_access.c"
-'Finished building: ../src/i2c_access.c'
-' '
-'Building file: ../src/iic_phyreset.c'
-'Invoking: ARM v7 g++ compiler'
-arm-none-eabi-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/iic_phyreset.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -IC:/Github/Zybo_mipi/Zybo-Z7-20-pcam-5c-2019.1/vitis/Pcam5C-2019/export/Pcam5C-2019/sw/Pcam5C-2019/standalone_domain/bspinclude/include -MMD -MP -MF"src/iic_phyreset.d" -MT"src/iic_phyreset.o" -o "src/iic_phyreset.o" "../src/iic_phyreset.c"
-'Finished building: ../src/iic_phyreset.c'
-' '
-'Building file: ../src/main.cc'
-'Invoking: ARM v7 g++ compiler'
-arm-none-eabi-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -IC:/Github/Zybo_mipi/Zybo-Z7-20-pcam-5c-2019.1/vitis/Pcam5C-2019/export/Pcam5C-2019/sw/Pcam5C-2019/standalone_domain/bspinclude/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.cc"
-'Finished building: ../src/main.cc'
-' '
 'Building file: ../src/platform.c'
 'Invoking: ARM v7 g++ compiler'
 arm-none-eabi-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/platform.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -IC:/Github/Zybo_mipi/Zybo-Z7-20-pcam-5c-2019.1/vitis/Pcam5C-2019/export/Pcam5C-2019/sw/Pcam5C-2019/standalone_domain/bspinclude/include -MMD -MP -MF"src/platform.d" -MT"src/platform.o" -o "src/platform.o" "../src/platform.c"
@@ -381,10 +361,10 @@ arm-none-eabi-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/platform.o" -mcpu=
 compilation terminated.
 make[1]: *** [src/subdir.mk:48: src/platform.o] Error 1
 make: *** [makefile:47: all] Error 2
-19:14:37 **** Build of configuration Debug for project Pcam5C-app_system ****
+22:00:01 **** Incremental Build of configuration Debug for project Pcam5C-app_system ****
 make all 
 Generating bif file for the system project
-generate_system_bif.bat 56539 C:/Github/Zybo_mipi/Zybo-Z7-20-pcam-5c-2019.1/vitis/Pcam5C-2019/export/Pcam5C-2019/Pcam5C-2019.xpfm standalone_domain C:/Github/Zybo_mipi/Pcam2019/vitis/Pcam5C-app_system/Debug/system.bif
+generate_system_bif.bat 53175 C:/Github/Zybo_mipi/Zybo-Z7-20-pcam-5c-2019.1/vitis/Pcam5C-2019/export/Pcam5C-2019/Pcam5C-2019.xpfm standalone_domain C:/Github/Zybo_mipi/Pcam2019/vitis/Pcam5C-app_system/Debug/system.bif
 sdcard_gen --xpfm C:/Github/Zybo_mipi/Zybo-Z7-20-pcam-5c-2019.1/vitis/Pcam5C-2019/export/Pcam5C-2019/Pcam5C-2019.xpfm --sys_config Pcam5C-2019 --bif C:/Github/Zybo_mipi/Pcam2019/vitis/Pcam5C-app_system/Debug/system.bif --bitstream C:/Github/Zybo_mipi/Pcam2019/vitis/Pcam5C-app/_ide/bitstream/system_wrapper.bit --elf C:/Github/Zybo_mipi/Pcam2019/vitis/Pcam5C-app/Debug/Pcam5C-app.elf,ps7_cortexa9_0
 ELF does not exist: C:/Github/Zybo_mipi/Pcam2019/vitis/Pcam5C-app/Debug/Pcam5C-app.elf
 make: *** [makefile:37: sd_card] Error 1

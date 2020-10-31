@@ -82,14 +82,8 @@ int main()
 {
 	init_platform();
 
-
 	udp_main(); //init
 	xil_printf("LWIP init done.\r\n");
-
-	xil_printf("udp send start.\r\n");
-	while(1){
-		udp_loop();
-	}
 
 	ScuGicInterruptController irpt_ctl(IRPT_CTL_DEVID);
 	PS_GPIO<ScuGicInterruptController> gpio_driver(GPIO_DEVID, irpt_ctl, GPIO_IRPT_ID);
@@ -102,6 +96,11 @@ int main()
 	pipeline_mode_change(vdma_driver, cam, vid, Resolution::R1280_720_60_PP, OV5640_cfg::mode_t::MODE_720P_1280_720_60fps);
 	xil_printf("Video init done.\r\n");
 
+	xil_printf("udp send start.\r\n");
+	while(1){
+		udp_loop();
+	}
+
 	//never reached
 	// Liquid lens control
 //	uint8_t read_char0 = 0;
@@ -112,8 +111,6 @@ int main()
 //	uint16_t reg_addr;
 //	uint8_t reg_value;
 
-
-	//while(1);
 
 //	while (1) {
 //		xil_printf("\r\n\r\n\r\nPcam 5C MAIN OPTIONS\r\n");

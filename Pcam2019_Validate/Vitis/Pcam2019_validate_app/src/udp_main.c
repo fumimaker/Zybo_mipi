@@ -106,7 +106,9 @@ int udp_main(void)
 	IicPhyReset();
 #endif
 
-	init_platform();
+	//init_platform(); // ‚±‚ê‚ª’†g‚¾‚Á‚½
+	platform_setup_timer();
+	platform_setup_interrupts();
 
 	xil_printf("\r\n\r\n");
 	xil_printf("-----lwIP RAW Mode UDP Client Application-----\r\n");

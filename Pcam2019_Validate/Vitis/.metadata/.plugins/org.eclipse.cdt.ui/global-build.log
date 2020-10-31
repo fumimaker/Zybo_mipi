@@ -1,15 +1,95 @@
 Nothing to build in platform 'Pcam2019_Validate'
 
-00:42:52 **** Incremental Build of configuration Debug for project Pcam2019_validate_app ****
+01:18:26 **** Incremental Build of configuration Debug for project Pcam2019_validate_app ****
 make all 
 make --no-print-directory pre-build
 a9-linaro-pre-build-step
 ' '
 make --no-print-directory main-build
+'Building file: ../src/ov5640/OV5640.cpp'
+'Invoking: ARM v7 g++ compiler'
+arm-none-eabi-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/ov5640/OV5640.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -IC:/Github/Zybo_mipi/Pcam2019_Validate/Vitis/Pcam2019_Validate/export/Pcam2019_Validate/sw/Pcam2019_Validate/standalone_domain/bspinclude/include -MMD -MP -MF"src/ov5640/OV5640.d" -MT"src/ov5640/OV5640.o" -o "src/ov5640/OV5640.o" "../src/ov5640/OV5640.cpp"
+'Finished building: ../src/ov5640/OV5640.cpp'
+' '
+'Building file: ../src/i2c_access.c'
+'Invoking: ARM v7 g++ compiler'
+arm-none-eabi-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/i2c_access.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -IC:/Github/Zybo_mipi/Pcam2019_Validate/Vitis/Pcam2019_Validate/export/Pcam2019_Validate/sw/Pcam2019_Validate/standalone_domain/bspinclude/include -MMD -MP -MF"src/i2c_access.d" -MT"src/i2c_access.o" -o "src/i2c_access.o" "../src/i2c_access.c"
+'Finished building: ../src/i2c_access.c'
+' '
+'Building file: ../src/iic_phyreset.c'
+'Invoking: ARM v7 g++ compiler'
+arm-none-eabi-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/iic_phyreset.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -IC:/Github/Zybo_mipi/Pcam2019_Validate/Vitis/Pcam2019_Validate/export/Pcam2019_Validate/sw/Pcam2019_Validate/standalone_domain/bspinclude/include -MMD -MP -MF"src/iic_phyreset.d" -MT"src/iic_phyreset.o" -o "src/iic_phyreset.o" "../src/iic_phyreset.c"
+'Finished building: ../src/iic_phyreset.c'
+' '
 'Building file: ../src/main.cc'
 'Invoking: ARM v7 g++ compiler'
 arm-none-eabi-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -IC:/Github/Zybo_mipi/Pcam2019_Validate/Vitis/Pcam2019_Validate/export/Pcam2019_Validate/sw/Pcam2019_Validate/standalone_domain/bspinclude/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.cc"
 'Finished building: ../src/main.cc'
+' '
+'Building file: ../src/platform.c'
+'Invoking: ARM v7 g++ compiler'
+arm-none-eabi-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/platform.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -IC:/Github/Zybo_mipi/Pcam2019_Validate/Vitis/Pcam2019_Validate/export/Pcam2019_Validate/sw/Pcam2019_Validate/standalone_domain/bspinclude/include -MMD -MP -MF"src/platform.d" -MT"src/platform.o" -o "src/platform.o" "../src/platform.c"
+In file included from ../src/platform.c:63:
+C:/Github/Zybo_mipi/Pcam2019_Validate/Vitis/Pcam2019_Validate/export/Pcam2019_Validate/sw/Pcam2019_Validate/standalone_domain/bspinclude/include/xtime_l.h:85:70: note: #pragma message: For the sleep routines, Global timer is being used
+ #pragma message ("For the sleep routines, Global timer is being used")
+                                                                      ^
+'Finished building: ../src/platform.c'
+' '
+'Building file: ../src/sfp.c'
+'Invoking: ARM v7 g++ compiler'
+arm-none-eabi-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/sfp.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -IC:/Github/Zybo_mipi/Pcam2019_Validate/Vitis/Pcam2019_Validate/export/Pcam2019_Validate/sw/Pcam2019_Validate/standalone_domain/bspinclude/include -MMD -MP -MF"src/sfp.d" -MT"src/sfp.o" -o "src/sfp.o" "../src/sfp.c"
+'Finished building: ../src/sfp.c'
+' '
+'Building file: ../src/si5324.c'
+'Invoking: ARM v7 g++ compiler'
+arm-none-eabi-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/si5324.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -IC:/Github/Zybo_mipi/Pcam2019_Validate/Vitis/Pcam2019_Validate/export/Pcam2019_Validate/sw/Pcam2019_Validate/standalone_domain/bspinclude/include -MMD -MP -MF"src/si5324.d" -MT"src/si5324.o" -o "src/si5324.o" "../src/si5324.c"
+'Finished building: ../src/si5324.c'
+' '
+'Building file: ../src/udp_main.c'
+'Invoking: ARM v7 g++ compiler'
+arm-none-eabi-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/udp_main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -IC:/Github/Zybo_mipi/Pcam2019_Validate/Vitis/Pcam2019_Validate/export/Pcam2019_Validate/sw/Pcam2019_Validate/standalone_domain/bspinclude/include -MMD -MP -MF"src/udp_main.d" -MT"src/udp_main.o" -o "src/udp_main.o" "../src/udp_main.c"
+../src/udp_main.c: In function 'void print_ip_settings(ip_addr_t*, ip_addr_t*, ip_addr_t*)':
+../src/udp_main.c:62:33: warning: ISO C++ forbids converting a string constant to 'char*' [-Wwrite-strings]
+  print_ip("Board IP:       ", ip);
+                                 ^
+../src/udp_main.c:63:35: warning: ISO C++ forbids converting a string constant to 'char*' [-Wwrite-strings]
+  print_ip("Netmask :       ", mask);
+                                   ^
+../src/udp_main.c:64:33: warning: ISO C++ forbids converting a string constant to 'char*' [-Wwrite-strings]
+  print_ip("Gateway :       ", gw);
+                                 ^
+../src/udp_main.c: In function 'int udp_loop()':
+../src/udp_main.c:185:1: warning: no return statement in function returning non-void [-Wreturn-type]
+ }
+ ^
+'Finished building: ../src/udp_main.c'
+' '
+'Building file: ../src/udp_perf_client.c'
+'Invoking: ARM v7 g++ compiler'
+arm-none-eabi-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/udp_perf_client.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -IC:/Github/Zybo_mipi/Pcam2019_Validate/Vitis/Pcam2019_Validate/export/Pcam2019_Validate/sw/Pcam2019_Validate/standalone_domain/bspinclude/include -MMD -MP -MF"src/udp_perf_client.d" -MT"src/udp_perf_client.o" -o "src/udp_perf_client.o" "../src/udp_perf_client.c"
+../src/udp_perf_client.c: In function 'void transfer_data()':
+../src/udp_perf_client.c:16:37: warning: '*' in boolean context, suggest '&&' instead [-Wint-in-bool-context]
+ #define END_TIME (UDP_TIME_INTERVAL * 1000)
+                  ~~~~~~~~~~~~~~~~~~~^~~~~~~
+../src/udp_perf_client.c:207:6: note: in expansion of macro 'END_TIME'
+  if (END_TIME || REPORT_INTERVAL_TIME) { //END_TIME
+      ^~~~~~~~
+../src/udp_perf_client.c:14:55: warning: '*' in boolean context, suggest '&&' instead [-Wint-in-bool-context]
+ #define REPORT_INTERVAL_TIME (INTERIM_REPORT_INTERVAL * 1000)
+                              ~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~
+../src/udp_perf_client.c:207:18: note: in expansion of macro 'REPORT_INTERVAL_TIME'
+  if (END_TIME || REPORT_INTERVAL_TIME) { //END_TIME
+                  ^~~~~~~~~~~~~~~~~~~~
+../src/udp_perf_client.c:14:55: warning: '*' in boolean context, suggest '&&' instead [-Wint-in-bool-context]
+ #define REPORT_INTERVAL_TIME (INTERIM_REPORT_INTERVAL * 1000)
+                              ~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~
+../src/udp_perf_client.c:209:7: note: in expansion of macro 'REPORT_INTERVAL_TIME'
+   if (REPORT_INTERVAL_TIME) {
+       ^~~~~~~~~~~~~~~~~~~~
+../src/udp_perf_client.c:225:36: warning: comparison of integer expressions of different signedness: 'int' and 'unsigned int' [-Wsign-compare]
+  if ( (SIZE_OF_FRAME - ptrCounter) < ( UDP_SEND_BUFSIZE - sizeof(int) ) ) {
+       ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+'Finished building: ../src/udp_perf_client.c'
 ' '
 'Building target: Pcam2019_validate_app.elf'
 'Invoking: ARM v7 g++ linker'
@@ -19,13 +99,13 @@ arm-none-eabi-g++ -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=non
 'Invoking: ARM v7 Print Size'
 arm-none-eabi-size Pcam2019_validate_app.elf  |tee "Pcam2019_validate_app.elf.size"
    text	   data	    bss	    dec	    hex	filename
- 672303	   3708	31512864	32188875	1eb29cb	Pcam2019_validate_app.elf
+ 706751	   3948	31512864	32223563	1ebb14b	Pcam2019_validate_app.elf
 'Finished building: Pcam2019_validate_app.elf.size'
 ' '
-00:42:55 **** Incremental Build of configuration Debug for project Pcam2019_validate_app_system ****
+01:18:31 **** Incremental Build of configuration Debug for project Pcam2019_validate_app_system ****
 make all 
 Generating bif file for the system project
-generate_system_bif.bat 64554 C:/Github/Zybo_mipi/Pcam2019_Validate/Vitis/Pcam2019_Validate/export/Pcam2019_Validate/Pcam2019_Validate.xpfm standalone_domain C:/Github/Zybo_mipi/Pcam2019_Validate/Vitis/Pcam2019_validate_app_system/Debug/system.bif
+generate_system_bif.bat 50813 C:/Github/Zybo_mipi/Pcam2019_Validate/Vitis/Pcam2019_Validate/export/Pcam2019_Validate/Pcam2019_Validate.xpfm standalone_domain C:/Github/Zybo_mipi/Pcam2019_Validate/Vitis/Pcam2019_validate_app_system/Debug/system.bif
 sdcard_gen --xpfm C:/Github/Zybo_mipi/Pcam2019_Validate/Vitis/Pcam2019_Validate/export/Pcam2019_Validate/Pcam2019_Validate.xpfm --sys_config Pcam2019_Validate --bif C:/Github/Zybo_mipi/Pcam2019_Validate/Vitis/Pcam2019_validate_app_system/Debug/system.bif --bitstream C:/Github/Zybo_mipi/Pcam2019_Validate/Vitis/Pcam2019_validate_app/_ide/bitstream/system_wrapper.bit --elf C:/Github/Zybo_mipi/Pcam2019_Validate/Vitis/Pcam2019_validate_app/Debug/Pcam2019_validate_app.elf,ps7_cortexa9_0
 creating BOOT.BIN using C:/Github/Zybo_mipi/Pcam2019_Validate/Vitis/Pcam2019_validate_app/_ide/bitstream/system_wrapper.bit
 Running C:/Xilinx/Vitis/2019.2/bin/bootgen  -image C:/Github/Zybo_mipi/Pcam2019_Validate/Vitis/Pcam2019_validate_app_system/Debug/sd_card_temp/boot.bif -w -o i BOOT.BIN
