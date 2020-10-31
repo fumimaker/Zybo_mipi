@@ -51,5 +51,6 @@ void ps_reset();
 void platform_setup_timer();
 void platform_enable_interrupts();
 unsigned long int get_time_ms();
+void delay_ms(unsigned long int);
 
 #endif

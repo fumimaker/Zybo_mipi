@@ -219,8 +219,7 @@ xemacif_input_thread(struct netif *netif)
 }
 #endif
 
-int
-xemacif_input(struct netif *netif)
+int xemacif_input(struct netif *netif)
 {
 	struct xemac_s *emac = (struct xemac_s *)netif->state;
 

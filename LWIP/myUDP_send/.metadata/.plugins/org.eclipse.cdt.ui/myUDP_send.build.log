@@ -1,17 +1,13 @@
-20:47:29 **** Incremental Build of configuration Debug for project myUDP_send ****
+22:08:25 **** Incremental Build of configuration Debug for project myUDP_send ****
 make all 
 make --no-print-directory pre-build
 a9-linaro-pre-build-step
 ' '
 make --no-print-directory main-build
-'Building file: ../src/platform_zynq.c'
+'Building file: ../src/udp_perf_client.c'
 'Invoking: ARM v7 gcc compiler'
-arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/platform_zynq.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -IC:/Github/Zybo_mipi/LWIP/myUDP_send/design_1_wrapper/export/design_1_wrapper/sw/design_1_wrapper/standalone_domain/bspinclude/include -MMD -MP -MF"src/platform_zynq.d" -MT"src/platform_zynq.o" -o "src/platform_zynq.o" "../src/platform_zynq.c"
-In file included from ../src/platform_zynq.c:60:
-C:/Github/Zybo_mipi/LWIP/myUDP_send/design_1_wrapper/export/design_1_wrapper/sw/design_1_wrapper/standalone_domain/bspinclude/include/xtime_l.h:85:9: note: #pragma message: For the sleep routines, Global timer is being used
- #pragma message ("For the sleep routines, Global timer is being used")
-         ^~~~~~~
-'Finished building: ../src/platform_zynq.c'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/udp_perf_client.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -IC:/Github/Zybo_mipi/LWIP/myUDP_send/design_1_wrapper/export/design_1_wrapper/sw/design_1_wrapper/standalone_domain/bspinclude/include -MMD -MP -MF"src/udp_perf_client.d" -MT"src/udp_perf_client.o" -o "src/udp_perf_client.o" "../src/udp_perf_client.c"
+'Finished building: ../src/udp_perf_client.c'
 ' '
 'Building target: myUDP_send.elf'
 'Invoking: ARM v7 gcc linker'
@@ -21,9 +17,9 @@ arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=non
 'Invoking: ARM v7 Print Size'
 arm-none-eabi-size myUDP_send.elf  |tee "myUDP_send.elf.size"
    text	   data	    bss	    dec	    hex	filename
- 139616	   3432	31578400	31721448	1e407e8	myUDP_send.elf
+ 139552	   3432	31578400	31721384	1e407a8	myUDP_send.elf
 'Finished building: myUDP_send.elf.size'
 ' '
 
-20:47:30 Build Finished (took 1s.24ms)
+22:08:26 Build Finished (took 915ms)
 

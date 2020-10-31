@@ -3,9 +3,9 @@
 extern struct netif server_netif;
 static struct udp_pcb *pcb[NUM_OF_PARALLEL_CLIENTS];
 static struct perf_stats client;
-static char send_buf[UDP_SEND_BUFSIZE];
+//static char send_buf[UDP_SEND_BUFSIZE];
 
-static char frame_data[SIZE_OF_FRAME];
+//static char frame_data[SIZE_OF_FRAME];
 static char *frame_pointer;
 static int ptrCounter = 0;
 
@@ -142,13 +142,13 @@ static void udp_packet_send(u8_t finished)
 		payload = (int*) (packet->payload);
 
 		int id = ptrCounter/(UDP_SEND_BUFSIZE-sizeof(int)); // 1440-4を何回送ったかを計算
-		xil_printf("Add:%x %d \n\r",frame_pointer, id);
+		xil_printf("id: %d\n\r",id);
 		if (finished == FINISH){
 			packet_id = -1;
 			id = -1;
+			xil_printf("FINISHED==1: %d\r\n", finished);
 		}
 		payload[0] = htonl(id); // 開けておいた4byteに番目を追加
-
 
 		while (retries) {
 			err = udp_send(pcb[i], packet); // UDP SEND
@@ -190,6 +190,7 @@ static void udp_packet_send(u8_t finished)
 		#endif /* __aarch64__ */
 
 	}
+	//xil_printf("udp_packet_send done\r\n");
 	packet_id++; // テストで送ったパケットの識別子、個数
 }
 
@@ -202,8 +203,9 @@ void transfer_data(void)
 			return;
 	}
 
+	u64_t now=0;
 	if (END_TIME || REPORT_INTERVAL_TIME) { //END_TIME
-		u64_t now = get_time_ms();
+		now = get_time_ms();
 		if (REPORT_INTERVAL_TIME) {
 			if (client.i_report.start_time) {
 				u64_t diff_ms = now - client.i_report.start_time;
@@ -216,24 +218,25 @@ void transfer_data(void)
 				client.i_report.start_time = now;
 			}
 		}
-
-		// １回のサイズに満たない端数になったら端数とFINISH送って終了
-		// HDの場合は1436bute*1926(0-1925)回目で500byte余る計算になる。
-
-		if ( (SIZE_OF_FRAME - ptrCounter) < ( UDP_SEND_BUFSIZE - sizeof(int) ) ) { //あまりを計算
-			xil_printf("remain packet %d byte\n\r", (SIZE_OF_FRAME - ptrCounter));
-			udp_packet_send(FINISH);
-			u64_t diff_ms = now - client.start_time;
-			udp_conn_report(diff_ms, UDP_DONE_CLIENT);
-			xil_printf("UDP test passed Successfully\n\r");
-			xil_printf("UDP send packet Successfully:\n\r");
-			return;
-		}
 	}
+
+	// １回のサイズに満たない端数になったら端数とFINISH送って終了
+	// HDの場合は1436byte*1926(0-1925)回目で500byte余る計算になる。
+	if ( (SIZE_OF_FRAME - ptrCounter) < ( UDP_SEND_BUFSIZE - sizeof(int) ) ) {
+		xil_printf("remain packet %d byte\n\r", (SIZE_OF_FRAME - ptrCounter));
+		udp_packet_send(FINISH);
+		u64_t diff_ms = now - client.start_time;
+		udp_conn_report(diff_ms, UDP_DONE_CLIENT);
+		xil_printf("UDP test passed Successfully\n\r");
+		xil_printf("UDP send packet Successfully:\n\r");
+		return;
+	}
+
 	//1~1925回(0~1924)
 	udp_packet_send(!FINISH);
 	ptrCounter += UDP_SEND_BUFSIZE-sizeof(int);//+=1436byte
 }
+
 
 void start_application(void)
 {
@@ -267,6 +270,8 @@ void start_application(void)
 	usleep(10);
 	reset_stats();
 
+	xil_printf("\r\n\r\nstart_application\r\n\r\n");
+
 
 	/* initialize data buffer being sent with same as used in iperf */
 //	for (i = 0; i < UDP_SEND_BUFSIZE; i++){
@@ -278,16 +283,18 @@ void start_application(void)
 //		}
 //	}
 
-	for(u64 i=0; i<SIZE_OF_FRAME; i++){ // 初期化するだけ
-		frame_data[i] = i % 256;
-	}
+//	for(u64 i=0; i<SIZE_OF_FRAME; i++){ // 初期化するだけ
+//		frame_data[i] = i % 256;
+//	}
 	//frame_pointer = &frame_data[0];
 }
+
+
 
 //Write完了の割り込みのたびに呼ばれる。
 //前のフレームのポインターを渡してくるのでframe_pointerに入れる。
 void update_address(char *pointer){
 	// frame_pointerにコピペ
 	frame_pointer = pointer;
-	xil_printf("update address\r\n");
+	//xil_printf("update address 0x%x\r\n",frame_pointer);
 }

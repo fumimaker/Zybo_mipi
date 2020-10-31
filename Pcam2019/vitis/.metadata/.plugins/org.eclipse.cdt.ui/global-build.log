@@ -1,22 +1,16 @@
-21:52:14 **** Incremental Build of project Pcam5C-2019 ****
-buildplatform.bat 55091 Pcam5C-2019 zynq_fsbl 
+19:13:49 **** Build of project Pcam5C-2019 ****
+buildplatform.bat 56539 Pcam5C-2019  
 XSDB Server Channel: tcfchan#1
+Reading the platform  : "Pcam5C-2019"
 Building the zynq_fsbl application.
-make -C zynq_fsbl_bsp
+make: Nothing to be done for 'all'.
 
-make[1]: Entering directory 'C:/Github/Zybo_mipi/Pcam2019/vitis/Pcam5C-2019/zynq_fsbl/zynq_fsbl_bsp'
-
+Building the BSP Library for domain  - standalone_domain on processor ps7_cortexa9_0
 "Running Make include in ps7_cortexa9_0/libsrc/axivdma_v6_6/src"
 
 make -C ps7_cortexa9_0/libsrc/axivdma_v6_6/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ASSEMBLER=arm-none-eabi-as
 " "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nos
 tartfiles -g -Wall -Wextra"
-
-make[2]: Entering directory 'C:/Github/Zybo_mipi/Pcam2019/vitis/Pcam5C-2019/zynq_fsbl/zynq_fsbl_bsp/ps7_cortexa9_0/libsrc/axivd
-ma_v6_6/src'
-
-make[2]: Leaving directory 'C:/Github/Zybo_mipi/Pcam2019/vitis/Pcam5C-2019/zynq_fsbl/zynq_fsbl_bsp/ps7_cortexa9_0/libsrc/axivdm
-a_v6_6/src'
 
 "Running Make include in ps7_cortexa9_0/libsrc/clk_wiz_v1_2/src"
 
@@ -24,23 +18,11 @@ make -C ps7_cortexa9_0/libsrc/clk_wiz_v1_2/src -s include  "SHELL=CMD" "COMPILER
 " "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nos
 tartfiles -g -Wall -Wextra"
 
-make[2]: Entering directory 'C:/Github/Zybo_mipi/Pcam2019/vitis/Pcam5C-2019/zynq_fsbl/zynq_fsbl_bsp/ps7_cortexa9_0/libsrc/clk_w
-iz_v1_2/src'
-
-make[2]: Leaving directory 'C:/Github/Zybo_mipi/Pcam2019/vitis/Pcam5C-2019/zynq_fsbl/zynq_fsbl_bsp/ps7_cortexa9_0/libsrc/clk_wi
-z_v1_2/src'
-
 "Running Make include in ps7_cortexa9_0/libsrc/coresightps_dcc_v1_6/src"
 
 make -C ps7_cortexa9_0/libsrc/coresightps_dcc_v1_6/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ASSEMBLER=arm-none
 -eabi-as" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=h
 ard -nostartfiles -g -Wall -Wextra"
-
-make[2]: Entering directory 'C:/Github/Zybo_mipi/Pcam2019/vitis/Pcam5C-2019/zynq_fsbl/zynq_fsbl_bsp/ps7_cortexa9_0/libsrc/cores
-ightps_dcc_v1_6/src'
-
-make[2]: Leaving directory 'C:/Github/Zybo_mipi/Pcam2019/vitis/Pcam5C-2019/zynq_fsbl/zynq_fsbl_bsp/ps7_cortexa9_0/libsrc/coresi
-ghtps_dcc_v1_6/src'
 
 "Running Make include in ps7_cortexa9_0/libsrc/cpu_cortexa9_v2_8/src"
 
@@ -48,23 +30,11 @@ make -C ps7_cortexa9_0/libsrc/cpu_cortexa9_v2_8/src -s include  "SHELL=CMD" "COM
 bi-as" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard
  -nostartfiles -g -Wall -Wextra"
 
-make[2]: Entering directory 'C:/Github/Zybo_mipi/Pcam2019/vitis/Pcam5C-2019/zynq_fsbl/zynq_fsbl_bsp/ps7_cortexa9_0/libsrc/cpu_c
-ortexa9_v2_8/src'
-
-make[2]: Leaving directory 'C:/Github/Zybo_mipi/Pcam2019/vitis/Pcam5C-2019/zynq_fsbl/zynq_fsbl_bsp/ps7_cortexa9_0/libsrc/cpu_co
-rtexa9_v2_8/src'
-
 "Running Make include in ps7_cortexa9_0/libsrc/ddrps_v1_0/src"
 
 make -C ps7_cortexa9_0/libsrc/ddrps_v1_0/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ASSEMBLER=arm-none-eabi-as" 
 "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nosta
 rtfiles -g -Wall -Wextra"
-
-make[2]: Entering directory 'C:/Github/Zybo_mipi/Pcam2019/vitis/Pcam5C-2019/zynq_fsbl/zynq_fsbl_bsp/ps7_cortexa9_0/libsrc/ddrps
-_v1_0/src'
-
-make[2]: Leaving directory 'C:/Github/Zybo_mipi/Pcam2019/vitis/Pcam5C-2019/zynq_fsbl/zynq_fsbl_bsp/ps7_cortexa9_0/libsrc/ddrps_
-v1_0/src'
 
 "Running Make include in ps7_cortexa9_0/libsrc/devcfg_v3_5/src"
 
@@ -72,23 +42,11 @@ make -C ps7_cortexa9_0/libsrc/devcfg_v3_5/src -s include  "SHELL=CMD" "COMPILER=
  "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nost
 artfiles -g -Wall -Wextra"
 
-make[2]: Entering directory 'C:/Github/Zybo_mipi/Pcam2019/vitis/Pcam5C-2019/zynq_fsbl/zynq_fsbl_bsp/ps7_cortexa9_0/libsrc/devcf
-g_v3_5/src'
-
-make[2]: Leaving directory 'C:/Github/Zybo_mipi/Pcam2019/vitis/Pcam5C-2019/zynq_fsbl/zynq_fsbl_bsp/ps7_cortexa9_0/libsrc/devcfg
-_v3_5/src'
-
 "Running Make include in ps7_cortexa9_0/libsrc/dmaps_v2_5/src"
 
 make -C ps7_cortexa9_0/libsrc/dmaps_v2_5/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ASSEMBLER=arm-none-eabi-as" 
 "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nosta
 rtfiles -g -Wall -Wextra"
-
-make[2]: Entering directory 'C:/Github/Zybo_mipi/Pcam2019/vitis/Pcam5C-2019/zynq_fsbl/zynq_fsbl_bsp/ps7_cortexa9_0/libsrc/dmaps
-_v2_5/src'
-
-make[2]: Leaving directory 'C:/Github/Zybo_mipi/Pcam2019/vitis/Pcam5C-2019/zynq_fsbl/zynq_fsbl_bsp/ps7_cortexa9_0/libsrc/dmaps_
-v2_5/src'
 
 "Running Make include in ps7_cortexa9_0/libsrc/emacps_v3_10/src"
 
@@ -96,23 +54,11 @@ make -C ps7_cortexa9_0/libsrc/emacps_v3_10/src -s include  "SHELL=CMD" "COMPILER
 " "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nos
 tartfiles -g -Wall -Wextra"
 
-make[2]: Entering directory 'C:/Github/Zybo_mipi/Pcam2019/vitis/Pcam5C-2019/zynq_fsbl/zynq_fsbl_bsp/ps7_cortexa9_0/libsrc/emacp
-s_v3_10/src'
-
-make[2]: Leaving directory 'C:/Github/Zybo_mipi/Pcam2019/vitis/Pcam5C-2019/zynq_fsbl/zynq_fsbl_bsp/ps7_cortexa9_0/libsrc/emacps
-_v3_10/src'
-
 "Running Make include in ps7_cortexa9_0/libsrc/gpiops_v3_6/src"
 
 make -C ps7_cortexa9_0/libsrc/gpiops_v3_6/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ASSEMBLER=arm-none-eabi-as"
  "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nost
 artfiles -g -Wall -Wextra"
-
-make[2]: Entering directory 'C:/Github/Zybo_mipi/Pcam2019/vitis/Pcam5C-2019/zynq_fsbl/zynq_fsbl_bsp/ps7_cortexa9_0/libsrc/gpiop
-s_v3_6/src'
-
-make[2]: Leaving directory 'C:/Github/Zybo_mipi/Pcam2019/vitis/Pcam5C-2019/zynq_fsbl/zynq_fsbl_bsp/ps7_cortexa9_0/libsrc/gpiops
-_v3_6/src'
 
 "Running Make include in ps7_cortexa9_0/libsrc/iicps_v3_10/src"
 
@@ -120,11 +66,11 @@ make -C ps7_cortexa9_0/libsrc/iicps_v3_10/src -s include  "SHELL=CMD" "COMPILER=
  "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nost
 artfiles -g -Wall -Wextra"
 
-make[2]: Entering directory 'C:/Github/Zybo_mipi/Pcam2019/vitis/Pcam5C-2019/zynq_fsbl/zynq_fsbl_bsp/ps7_cortexa9_0/libsrc/iicps
-_v3_10/src'
+"Running Make include in ps7_cortexa9_0/libsrc/lwip211_v1_1/src"
 
-make[2]: Leaving directory 'C:/Github/Zybo_mipi/Pcam2019/vitis/Pcam5C-2019/zynq_fsbl/zynq_fsbl_bsp/ps7_cortexa9_0/libsrc/iicps_
-v3_10/src'
+make -C ps7_cortexa9_0/libsrc/lwip211_v1_1/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ASSEMBLER=arm-none-eabi-as
+" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nos
+tartfiles -g -Wall -Wextra"
 
 "Running Make include in ps7_cortexa9_0/libsrc/MIPI_CSI_2_RX_v1_0/src"
 
@@ -132,23 +78,11 @@ make -C ps7_cortexa9_0/libsrc/MIPI_CSI_2_RX_v1_0/src -s include  "SHELL=CMD" "CO
 abi-as" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=har
 d -nostartfiles -g -Wall -Wextra"
 
-make[2]: Entering directory 'C:/Github/Zybo_mipi/Pcam2019/vitis/Pcam5C-2019/zynq_fsbl/zynq_fsbl_bsp/ps7_cortexa9_0/libsrc/MIPI_
-CSI_2_RX_v1_0/src'
-
-make[2]: Leaving directory 'C:/Github/Zybo_mipi/Pcam2019/vitis/Pcam5C-2019/zynq_fsbl/zynq_fsbl_bsp/ps7_cortexa9_0/libsrc/MIPI_C
-SI_2_RX_v1_0/src'
-
 "Running Make include in ps7_cortexa9_0/libsrc/MIPI_D_PHY_RX_v1_0/src"
 
 make -C ps7_cortexa9_0/libsrc/MIPI_D_PHY_RX_v1_0/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ASSEMBLER=arm-none-e
 abi-as" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=har
 d -nostartfiles -g -Wall -Wextra"
-
-make[2]: Entering directory 'C:/Github/Zybo_mipi/Pcam2019/vitis/Pcam5C-2019/zynq_fsbl/zynq_fsbl_bsp/ps7_cortexa9_0/libsrc/MIPI_
-D_PHY_RX_v1_0/src'
-
-make[2]: Leaving directory 'C:/Github/Zybo_mipi/Pcam2019/vitis/Pcam5C-2019/zynq_fsbl/zynq_fsbl_bsp/ps7_cortexa9_0/libsrc/MIPI_D
-_PHY_RX_v1_0/src'
 
 "Running Make include in ps7_cortexa9_0/libsrc/qspips_v3_6/src"
 
@@ -156,23 +90,11 @@ make -C ps7_cortexa9_0/libsrc/qspips_v3_6/src -s include  "SHELL=CMD" "COMPILER=
  "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nost
 artfiles -g -Wall -Wextra"
 
-make[2]: Entering directory 'C:/Github/Zybo_mipi/Pcam2019/vitis/Pcam5C-2019/zynq_fsbl/zynq_fsbl_bsp/ps7_cortexa9_0/libsrc/qspip
-s_v3_6/src'
-
-make[2]: Leaving directory 'C:/Github/Zybo_mipi/Pcam2019/vitis/Pcam5C-2019/zynq_fsbl/zynq_fsbl_bsp/ps7_cortexa9_0/libsrc/qspips
-_v3_6/src'
-
 "Running Make include in ps7_cortexa9_0/libsrc/scugic_v4_1/src"
 
 make -C ps7_cortexa9_0/libsrc/scugic_v4_1/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ASSEMBLER=arm-none-eabi-as"
  "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nost
 artfiles -g -Wall -Wextra"
-
-make[2]: Entering directory 'C:/Github/Zybo_mipi/Pcam2019/vitis/Pcam5C-2019/zynq_fsbl/zynq_fsbl_bsp/ps7_cortexa9_0/libsrc/scugi
-c_v4_1/src'
-
-make[2]: Leaving directory 'C:/Github/Zybo_mipi/Pcam2019/vitis/Pcam5C-2019/zynq_fsbl/zynq_fsbl_bsp/ps7_cortexa9_0/libsrc/scugic
-_v4_1/src'
 
 "Running Make include in ps7_cortexa9_0/libsrc/scutimer_v2_1/src"
 
@@ -180,23 +102,11 @@ make -C ps7_cortexa9_0/libsrc/scutimer_v2_1/src -s include  "SHELL=CMD" "COMPILE
 s" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -no
 startfiles -g -Wall -Wextra"
 
-make[2]: Entering directory 'C:/Github/Zybo_mipi/Pcam2019/vitis/Pcam5C-2019/zynq_fsbl/zynq_fsbl_bsp/ps7_cortexa9_0/libsrc/scuti
-mer_v2_1/src'
-
-make[2]: Leaving directory 'C:/Github/Zybo_mipi/Pcam2019/vitis/Pcam5C-2019/zynq_fsbl/zynq_fsbl_bsp/ps7_cortexa9_0/libsrc/scutim
-er_v2_1/src'
-
 "Running Make include in ps7_cortexa9_0/libsrc/scuwdt_v2_1/src"
 
 make -C ps7_cortexa9_0/libsrc/scuwdt_v2_1/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ASSEMBLER=arm-none-eabi-as"
  "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nost
 artfiles -g -Wall -Wextra"
-
-make[2]: Entering directory 'C:/Github/Zybo_mipi/Pcam2019/vitis/Pcam5C-2019/zynq_fsbl/zynq_fsbl_bsp/ps7_cortexa9_0/libsrc/scuwd
-t_v2_1/src'
-
-make[2]: Leaving directory 'C:/Github/Zybo_mipi/Pcam2019/vitis/Pcam5C-2019/zynq_fsbl/zynq_fsbl_bsp/ps7_cortexa9_0/libsrc/scuwdt
-_v2_1/src'
 
 "Running Make include in ps7_cortexa9_0/libsrc/sdps_v3_8/src"
 
@@ -204,29 +114,11 @@ make -C ps7_cortexa9_0/libsrc/sdps_v3_8/src -s include  "SHELL=CMD" "COMPILER=ar
 ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostar
 tfiles -g -Wall -Wextra"
 
-make[2]: Entering directory 'C:/Github/Zybo_mipi/Pcam2019/vitis/Pcam5C-2019/zynq_fsbl/zynq_fsbl_bsp/ps7_cortexa9_0/libsrc/sdps_
-v3_8/src'
-
-make[2]: Leaving directory 'C:/Github/Zybo_mipi/Pcam2019/vitis/Pcam5C-2019/zynq_fsbl/zynq_fsbl_bsp/ps7_cortexa9_0/libsrc/sdps_v
-3_8/src'
-
 "Running Make include in ps7_cortexa9_0/libsrc/standalone_v7_1/src"
 
 make -C ps7_cortexa9_0/libsrc/standalone_v7_1/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ASSEMBLER=arm-none-eabi
 -as" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -
 nostartfiles -g -Wall -Wextra"
-
-make[2]: Entering directory 'C:/Github/Zybo_mipi/Pcam2019/vitis/Pcam5C-2019/zynq_fsbl/zynq_fsbl_bsp/ps7_cortexa9_0/libsrc/stand
-alone_v7_1/src'
-
-make[3]: Entering directory 'C:/Github/Zybo_mipi/Pcam2019/vitis/Pcam5C-2019/zynq_fsbl/zynq_fsbl_bsp/ps7_cortexa9_0/libsrc/stand
-alone_v7_1/src/profile'
-
-make[3]: Leaving directory 'C:/Github/Zybo_mipi/Pcam2019/vitis/Pcam5C-2019/zynq_fsbl/zynq_fsbl_bsp/ps7_cortexa9_0/libsrc/standa
-lone_v7_1/src/profile'
-
-make[2]: Leaving directory 'C:/Github/Zybo_mipi/Pcam2019/vitis/Pcam5C-2019/zynq_fsbl/zynq_fsbl_bsp/ps7_cortexa9_0/libsrc/standa
-lone_v7_1/src'
 
 "Running Make include in ps7_cortexa9_0/libsrc/uartps_v3_8/src"
 
@@ -234,23 +126,11 @@ make -C ps7_cortexa9_0/libsrc/uartps_v3_8/src -s include  "SHELL=CMD" "COMPILER=
  "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nost
 artfiles -g -Wall -Wextra"
 
-make[2]: Entering directory 'C:/Github/Zybo_mipi/Pcam2019/vitis/Pcam5C-2019/zynq_fsbl/zynq_fsbl_bsp/ps7_cortexa9_0/libsrc/uartp
-s_v3_8/src'
-
-make[2]: Leaving directory 'C:/Github/Zybo_mipi/Pcam2019/vitis/Pcam5C-2019/zynq_fsbl/zynq_fsbl_bsp/ps7_cortexa9_0/libsrc/uartps
-_v3_8/src'
-
 "Running Make include in ps7_cortexa9_0/libsrc/usbps_v2_4/src"
 
 make -C ps7_cortexa9_0/libsrc/usbps_v2_4/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ASSEMBLER=arm-none-eabi-as" 
 "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nosta
 rtfiles -g -Wall -Wextra"
-
-make[2]: Entering directory 'C:/Github/Zybo_mipi/Pcam2019/vitis/Pcam5C-2019/zynq_fsbl/zynq_fsbl_bsp/ps7_cortexa9_0/libsrc/usbps
-_v2_4/src'
-
-make[2]: Leaving directory 'C:/Github/Zybo_mipi/Pcam2019/vitis/Pcam5C-2019/zynq_fsbl/zynq_fsbl_bsp/ps7_cortexa9_0/libsrc/usbps_
-v2_4/src'
 
 "Running Make include in ps7_cortexa9_0/libsrc/vtc_v8_0/src"
 
@@ -258,47 +138,11 @@ make -C ps7_cortexa9_0/libsrc/vtc_v8_0/src -s include  "SHELL=CMD" "COMPILER=arm
 RCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostart
 files -g -Wall -Wextra"
 
-make[2]: Entering directory 'C:/Github/Zybo_mipi/Pcam2019/vitis/Pcam5C-2019/zynq_fsbl/zynq_fsbl_bsp/ps7_cortexa9_0/libsrc/vtc_v
-8_0/src'
-
-make[2]: Leaving directory 'C:/Github/Zybo_mipi/Pcam2019/vitis/Pcam5C-2019/zynq_fsbl/zynq_fsbl_bsp/ps7_cortexa9_0/libsrc/vtc_v8
-_0/src'
-
 "Running Make include in ps7_cortexa9_0/libsrc/xadcps_v2_3/src"
 
 make -C ps7_cortexa9_0/libsrc/xadcps_v2_3/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ASSEMBLER=arm-none-eabi-as"
  "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nost
 artfiles -g -Wall -Wextra"
-
-make[2]: Entering directory 'C:/Github/Zybo_mipi/Pcam2019/vitis/Pcam5C-2019/zynq_fsbl/zynq_fsbl_bsp/ps7_cortexa9_0/libsrc/xadcp
-s_v2_3/src'
-
-make[2]: Leaving directory 'C:/Github/Zybo_mipi/Pcam2019/vitis/Pcam5C-2019/zynq_fsbl/zynq_fsbl_bsp/ps7_cortexa9_0/libsrc/xadcps
-_v2_3/src'
-
-"Running Make include in ps7_cortexa9_0/libsrc/xilffs_v4_2/src"
-
-make -C ps7_cortexa9_0/libsrc/xilffs_v4_2/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ASSEMBLER=arm-none-eabi-as"
- "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nost
-artfiles -g -Wall -Wextra"
-
-make[2]: Entering directory 'C:/Github/Zybo_mipi/Pcam2019/vitis/Pcam5C-2019/zynq_fsbl/zynq_fsbl_bsp/ps7_cortexa9_0/libsrc/xilff
-s_v4_2/src'
-
-make[2]: Leaving directory 'C:/Github/Zybo_mipi/Pcam2019/vitis/Pcam5C-2019/zynq_fsbl/zynq_fsbl_bsp/ps7_cortexa9_0/libsrc/xilffs
-_v4_2/src'
-
-"Running Make include in ps7_cortexa9_0/libsrc/xilrsa_v1_5/src"
-
-make -C ps7_cortexa9_0/libsrc/xilrsa_v1_5/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ASSEMBLER=arm-none-eabi-as"
- "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nost
-artfiles -g -Wall -Wextra"
-
-make[2]: Entering directory 'C:/Github/Zybo_mipi/Pcam2019/vitis/Pcam5C-2019/zynq_fsbl/zynq_fsbl_bsp/ps7_cortexa9_0/libsrc/xilrs
-a_v1_5/src'
-
-make[2]: Leaving directory 'C:/Github/Zybo_mipi/Pcam2019/vitis/Pcam5C-2019/zynq_fsbl/zynq_fsbl_bsp/ps7_cortexa9_0/libsrc/xilrsa
-_v1_5/src'
 
 "Running Make libs in ps7_cortexa9_0/libsrc/axivdma_v6_6/src"
 
@@ -306,20 +150,7 @@ make -C ps7_cortexa9_0/libsrc/axivdma_v6_6/src -s libs  "SHELL=CMD" "COMPILER=ar
 ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostar
 tfiles -g -Wall -Wextra"
 
-make[2]: Entering directory 'C:/Github/Zybo_mipi/Pcam2019/vitis/Pcam5C-2019/zynq_fsbl/zynq_fsbl_bsp/ps7_cortexa9_0/libsrc/axivd
-ma_v6_6/src'
-
 "Compiling axivdma"
-
-arm-none-eabi-ar: creating ../../../lib/libxil.a
-make[3]: Entering directory 'C:/Github/Zybo_mipi/Pcam2019/vitis/Pcam5C-2019/zynq_fsbl/zynq_fsbl_bsp/ps7_cortexa9_0/libsrc/axivd
-ma_v6_6/src'
-
-make[3]: Leaving directory 'C:/Github/Zybo_mipi/Pcam2019/vitis/Pcam5C-2019/zynq_fsbl/zynq_fsbl_bsp/ps7_cortexa9_0/libsrc/axivdm
-a_v6_6/src'
-
-make[2]: Leaving directory 'C:/Github/Zybo_mipi/Pcam2019/vitis/Pcam5C-2019/zynq_fsbl/zynq_fsbl_bsp/ps7_cortexa9_0/libsrc/axivdm
-a_v6_6/src'
 
 "Running Make libs in ps7_cortexa9_0/libsrc/clk_wiz_v1_2/src"
 
@@ -327,19 +158,7 @@ make -C ps7_cortexa9_0/libsrc/clk_wiz_v1_2/src -s libs  "SHELL=CMD" "COMPILER=ar
 ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostar
 tfiles -g -Wall -Wextra"
 
-make[2]: Entering directory 'C:/Github/Zybo_mipi/Pcam2019/vitis/Pcam5C-2019/zynq_fsbl/zynq_fsbl_bsp/ps7_cortexa9_0/libsrc/clk_w
-iz_v1_2/src'
-
 "Compiling Clkocking Wizard"
-
-make[3]: Entering directory 'C:/Github/Zybo_mipi/Pcam2019/vitis/Pcam5C-2019/zynq_fsbl/zynq_fsbl_bsp/ps7_cortexa9_0/libsrc/clk_w
-iz_v1_2/src'
-
-make[3]: Leaving directory 'C:/Github/Zybo_mipi/Pcam2019/vitis/Pcam5C-2019/zynq_fsbl/zynq_fsbl_bsp/ps7_cortexa9_0/libsrc/clk_wi
-z_v1_2/src'
-
-make[2]: Leaving directory 'C:/Github/Zybo_mipi/Pcam2019/vitis/Pcam5C-2019/zynq_fsbl/zynq_fsbl_bsp/ps7_cortexa9_0/libsrc/clk_wi
-z_v1_2/src'
 
 "Running Make libs in ps7_cortexa9_0/libsrc/coresightps_dcc_v1_6/src"
 
@@ -347,13 +166,7 @@ make -C ps7_cortexa9_0/libsrc/coresightps_dcc_v1_6/src -s libs  "SHELL=CMD" "COM
 bi-as" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard
  -nostartfiles -g -Wall -Wextra"
 
-make[2]: Entering directory 'C:/Github/Zybo_mipi/Pcam2019/vitis/Pcam5C-2019/zynq_fsbl/zynq_fsbl_bsp/ps7_cortexa9_0/libsrc/cores
-ightps_dcc_v1_6/src'
-
 "Compiling coresightps_dcc"
-
-make[2]: Leaving directory 'C:/Github/Zybo_mipi/Pcam2019/vitis/Pcam5C-2019/zynq_fsbl/zynq_fsbl_bsp/ps7_cortexa9_0/libsrc/coresi
-ghtps_dcc_v1_6/src'
 
 "Running Make libs in ps7_cortexa9_0/libsrc/cpu_cortexa9_v2_8/src"
 
@@ -361,13 +174,7 @@ make -C ps7_cortexa9_0/libsrc/cpu_cortexa9_v2_8/src -s libs  "SHELL=CMD" "COMPIL
 as" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -n
 ostartfiles -g -Wall -Wextra"
 
-make[2]: Entering directory 'C:/Github/Zybo_mipi/Pcam2019/vitis/Pcam5C-2019/zynq_fsbl/zynq_fsbl_bsp/ps7_cortexa9_0/libsrc/cpu_c
-ortexa9_v2_8/src'
-
 "Compiling cpu_cortexa9"
-
-make[2]: Leaving directory 'C:/Github/Zybo_mipi/Pcam2019/vitis/Pcam5C-2019/zynq_fsbl/zynq_fsbl_bsp/ps7_cortexa9_0/libsrc/cpu_co
-rtexa9_v2_8/src'
 
 "Running Make libs in ps7_cortexa9_0/libsrc/ddrps_v1_0/src"
 
@@ -375,13 +182,7 @@ make -C ps7_cortexa9_0/libsrc/ddrps_v1_0/src -s libs  "SHELL=CMD" "COMPILER=arm-
 CHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartf
 iles -g -Wall -Wextra"
 
-make[2]: Entering directory 'C:/Github/Zybo_mipi/Pcam2019/vitis/Pcam5C-2019/zynq_fsbl/zynq_fsbl_bsp/ps7_cortexa9_0/libsrc/ddrps
-_v1_0/src'
-
 "Compiling ddrps"
-
-make[2]: Leaving directory 'C:/Github/Zybo_mipi/Pcam2019/vitis/Pcam5C-2019/zynq_fsbl/zynq_fsbl_bsp/ps7_cortexa9_0/libsrc/ddrps_
-v1_0/src'
 
 "Running Make libs in ps7_cortexa9_0/libsrc/devcfg_v3_5/src"
 
@@ -389,13 +190,7 @@ make -C ps7_cortexa9_0/libsrc/devcfg_v3_5/src -s libs  "SHELL=CMD" "COMPILER=arm
 RCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostart
 files -g -Wall -Wextra"
 
-make[2]: Entering directory 'C:/Github/Zybo_mipi/Pcam2019/vitis/Pcam5C-2019/zynq_fsbl/zynq_fsbl_bsp/ps7_cortexa9_0/libsrc/devcf
-g_v3_5/src'
-
 "Compiling devcfg"
-
-make[2]: Leaving directory 'C:/Github/Zybo_mipi/Pcam2019/vitis/Pcam5C-2019/zynq_fsbl/zynq_fsbl_bsp/ps7_cortexa9_0/libsrc/devcfg
-_v3_5/src'
 
 "Running Make libs in ps7_cortexa9_0/libsrc/dmaps_v2_5/src"
 
@@ -403,13 +198,7 @@ make -C ps7_cortexa9_0/libsrc/dmaps_v2_5/src -s libs  "SHELL=CMD" "COMPILER=arm-
 CHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartf
 iles -g -Wall -Wextra"
 
-make[2]: Entering directory 'C:/Github/Zybo_mipi/Pcam2019/vitis/Pcam5C-2019/zynq_fsbl/zynq_fsbl_bsp/ps7_cortexa9_0/libsrc/dmaps
-_v2_5/src'
-
 "Compiling dmaps"
-
-make[2]: Leaving directory 'C:/Github/Zybo_mipi/Pcam2019/vitis/Pcam5C-2019/zynq_fsbl/zynq_fsbl_bsp/ps7_cortexa9_0/libsrc/dmaps_
-v2_5/src'
 
 "Running Make libs in ps7_cortexa9_0/libsrc/emacps_v3_10/src"
 
@@ -417,13 +206,7 @@ make -C ps7_cortexa9_0/libsrc/emacps_v3_10/src -s libs  "SHELL=CMD" "COMPILER=ar
 ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostar
 tfiles -g -Wall -Wextra"
 
-make[2]: Entering directory 'C:/Github/Zybo_mipi/Pcam2019/vitis/Pcam5C-2019/zynq_fsbl/zynq_fsbl_bsp/ps7_cortexa9_0/libsrc/emacp
-s_v3_10/src'
-
 "Compiling emacps"
-
-make[2]: Leaving directory 'C:/Github/Zybo_mipi/Pcam2019/vitis/Pcam5C-2019/zynq_fsbl/zynq_fsbl_bsp/ps7_cortexa9_0/libsrc/emacps
-_v3_10/src'
 
 "Running Make libs in ps7_cortexa9_0/libsrc/gpiops_v3_6/src"
 
@@ -431,13 +214,7 @@ make -C ps7_cortexa9_0/libsrc/gpiops_v3_6/src -s libs  "SHELL=CMD" "COMPILER=arm
 RCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostart
 files -g -Wall -Wextra"
 
-make[2]: Entering directory 'C:/Github/Zybo_mipi/Pcam2019/vitis/Pcam5C-2019/zynq_fsbl/zynq_fsbl_bsp/ps7_cortexa9_0/libsrc/gpiop
-s_v3_6/src'
-
 "Compiling gpiops"
-
-make[2]: Leaving directory 'C:/Github/Zybo_mipi/Pcam2019/vitis/Pcam5C-2019/zynq_fsbl/zynq_fsbl_bsp/ps7_cortexa9_0/libsrc/gpiops
-_v3_6/src'
 
 "Running Make libs in ps7_cortexa9_0/libsrc/iicps_v3_10/src"
 
@@ -445,13 +222,15 @@ make -C ps7_cortexa9_0/libsrc/iicps_v3_10/src -s libs  "SHELL=CMD" "COMPILER=arm
 RCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostart
 files -g -Wall -Wextra"
 
-make[2]: Entering directory 'C:/Github/Zybo_mipi/Pcam2019/vitis/Pcam5C-2019/zynq_fsbl/zynq_fsbl_bsp/ps7_cortexa9_0/libsrc/iicps
-_v3_10/src'
-
 "Compiling iicps"
 
-make[2]: Leaving directory 'C:/Github/Zybo_mipi/Pcam2019/vitis/Pcam5C-2019/zynq_fsbl/zynq_fsbl_bsp/ps7_cortexa9_0/libsrc/iicps_
-v3_10/src'
+"Running Make libs in ps7_cortexa9_0/libsrc/lwip211_v1_1/src"
+
+make -C ps7_cortexa9_0/libsrc/lwip211_v1_1/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ASSEMBLER=arm-none-eabi-as" "
+ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostar
+tfiles -g -Wall -Wextra"
+
+"Compiling lwip src and adapter files"
 
 "Running Make libs in ps7_cortexa9_0/libsrc/MIPI_CSI_2_RX_v1_0/src"
 
@@ -459,19 +238,7 @@ make -C ps7_cortexa9_0/libsrc/MIPI_CSI_2_RX_v1_0/src -s libs  "SHELL=CMD" "COMPI
 -as" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -
 nostartfiles -g -Wall -Wextra"
 
-make[2]: Entering directory 'C:/Github/Zybo_mipi/Pcam2019/vitis/Pcam5C-2019/zynq_fsbl/zynq_fsbl_bsp/ps7_cortexa9_0/libsrc/MIPI_
-CSI_2_RX_v1_0/src'
-
 "Compiling MIPI_CSI_2_RX..."
-
-make[3]: Entering directory 'C:/Github/Zybo_mipi/Pcam2019/vitis/Pcam5C-2019/zynq_fsbl/zynq_fsbl_bsp/ps7_cortexa9_0/libsrc/MIPI_
-CSI_2_RX_v1_0/src'
-
-make[3]: Leaving directory 'C:/Github/Zybo_mipi/Pcam2019/vitis/Pcam5C-2019/zynq_fsbl/zynq_fsbl_bsp/ps7_cortexa9_0/libsrc/MIPI_C
-SI_2_RX_v1_0/src'
-
-make[2]: Leaving directory 'C:/Github/Zybo_mipi/Pcam2019/vitis/Pcam5C-2019/zynq_fsbl/zynq_fsbl_bsp/ps7_cortexa9_0/libsrc/MIPI_C
-SI_2_RX_v1_0/src'
 
 "Running Make libs in ps7_cortexa9_0/libsrc/MIPI_D_PHY_RX_v1_0/src"
 
@@ -479,19 +246,7 @@ make -C ps7_cortexa9_0/libsrc/MIPI_D_PHY_RX_v1_0/src -s libs  "SHELL=CMD" "COMPI
 -as" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -
 nostartfiles -g -Wall -Wextra"
 
-make[2]: Entering directory 'C:/Github/Zybo_mipi/Pcam2019/vitis/Pcam5C-2019/zynq_fsbl/zynq_fsbl_bsp/ps7_cortexa9_0/libsrc/MIPI_
-D_PHY_RX_v1_0/src'
-
 "Compiling MIPI_D_PHY_RX..."
-
-make[3]: Entering directory 'C:/Github/Zybo_mipi/Pcam2019/vitis/Pcam5C-2019/zynq_fsbl/zynq_fsbl_bsp/ps7_cortexa9_0/libsrc/MIPI_
-D_PHY_RX_v1_0/src'
-
-make[3]: Leaving directory 'C:/Github/Zybo_mipi/Pcam2019/vitis/Pcam5C-2019/zynq_fsbl/zynq_fsbl_bsp/ps7_cortexa9_0/libsrc/MIPI_D
-_PHY_RX_v1_0/src'
-
-make[2]: Leaving directory 'C:/Github/Zybo_mipi/Pcam2019/vitis/Pcam5C-2019/zynq_fsbl/zynq_fsbl_bsp/ps7_cortexa9_0/libsrc/MIPI_D
-_PHY_RX_v1_0/src'
 
 "Running Make libs in ps7_cortexa9_0/libsrc/qspips_v3_6/src"
 
@@ -499,13 +254,7 @@ make -C ps7_cortexa9_0/libsrc/qspips_v3_6/src -s libs  "SHELL=CMD" "COMPILER=arm
 RCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostart
 files -g -Wall -Wextra"
 
-make[2]: Entering directory 'C:/Github/Zybo_mipi/Pcam2019/vitis/Pcam5C-2019/zynq_fsbl/zynq_fsbl_bsp/ps7_cortexa9_0/libsrc/qspip
-s_v3_6/src'
-
 "Compiling qspips"
-
-make[2]: Leaving directory 'C:/Github/Zybo_mipi/Pcam2019/vitis/Pcam5C-2019/zynq_fsbl/zynq_fsbl_bsp/ps7_cortexa9_0/libsrc/qspips
-_v3_6/src'
 
 "Running Make libs in ps7_cortexa9_0/libsrc/scugic_v4_1/src"
 
@@ -513,13 +262,7 @@ make -C ps7_cortexa9_0/libsrc/scugic_v4_1/src -s libs  "SHELL=CMD" "COMPILER=arm
 RCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostart
 files -g -Wall -Wextra"
 
-make[2]: Entering directory 'C:/Github/Zybo_mipi/Pcam2019/vitis/Pcam5C-2019/zynq_fsbl/zynq_fsbl_bsp/ps7_cortexa9_0/libsrc/scugi
-c_v4_1/src'
-
 "Compiling scugic"
-
-make[2]: Leaving directory 'C:/Github/Zybo_mipi/Pcam2019/vitis/Pcam5C-2019/zynq_fsbl/zynq_fsbl_bsp/ps7_cortexa9_0/libsrc/scugic
-_v4_1/src'
 
 "Running Make libs in ps7_cortexa9_0/libsrc/scutimer_v2_1/src"
 
@@ -527,13 +270,7 @@ make -C ps7_cortexa9_0/libsrc/scutimer_v2_1/src -s libs  "SHELL=CMD" "COMPILER=a
 "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nosta
 rtfiles -g -Wall -Wextra"
 
-make[2]: Entering directory 'C:/Github/Zybo_mipi/Pcam2019/vitis/Pcam5C-2019/zynq_fsbl/zynq_fsbl_bsp/ps7_cortexa9_0/libsrc/scuti
-mer_v2_1/src'
-
 "Compiling scutimer"
-
-make[2]: Leaving directory 'C:/Github/Zybo_mipi/Pcam2019/vitis/Pcam5C-2019/zynq_fsbl/zynq_fsbl_bsp/ps7_cortexa9_0/libsrc/scutim
-er_v2_1/src'
 
 "Running Make libs in ps7_cortexa9_0/libsrc/scuwdt_v2_1/src"
 
@@ -541,13 +278,7 @@ make -C ps7_cortexa9_0/libsrc/scuwdt_v2_1/src -s libs  "SHELL=CMD" "COMPILER=arm
 RCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostart
 files -g -Wall -Wextra"
 
-make[2]: Entering directory 'C:/Github/Zybo_mipi/Pcam2019/vitis/Pcam5C-2019/zynq_fsbl/zynq_fsbl_bsp/ps7_cortexa9_0/libsrc/scuwd
-t_v2_1/src'
-
 "Compiling scuwdt"
-
-make[2]: Leaving directory 'C:/Github/Zybo_mipi/Pcam2019/vitis/Pcam5C-2019/zynq_fsbl/zynq_fsbl_bsp/ps7_cortexa9_0/libsrc/scuwdt
-_v2_1/src'
 
 "Running Make libs in ps7_cortexa9_0/libsrc/sdps_v3_8/src"
 
@@ -555,13 +286,7 @@ make -C ps7_cortexa9_0/libsrc/sdps_v3_8/src -s libs  "SHELL=CMD" "COMPILER=arm-n
 HIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfi
 les -g -Wall -Wextra"
 
-make[2]: Entering directory 'C:/Github/Zybo_mipi/Pcam2019/vitis/Pcam5C-2019/zynq_fsbl/zynq_fsbl_bsp/ps7_cortexa9_0/libsrc/sdps_
-v3_8/src'
-
 "Compiling sdps"
-
-make[2]: Leaving directory 'C:/Github/Zybo_mipi/Pcam2019/vitis/Pcam5C-2019/zynq_fsbl/zynq_fsbl_bsp/ps7_cortexa9_0/libsrc/sdps_v
-3_8/src'
 
 "Running Make libs in ps7_cortexa9_0/libsrc/standalone_v7_1/src"
 
@@ -569,12 +294,13 @@ make -C ps7_cortexa9_0/libsrc/standalone_v7_1/src -s libs  "SHELL=CMD" "COMPILER
 " "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nos
 tartfiles -g -Wall -Wextra"
 
-make[2]: Entering directory 'C:/Github/Zybo_mipi/Pcam2019/vitis/Pcam5C-2019/zynq_fsbl/zynq_fsbl_bsp/ps7_cortexa9_0/libsrc/stand
-alone_v7_1/src'
-
 "Compiling standalone"
 
 In file included from usleep.c:54:
+xtime_l.h:85:9: note: #pragma message: For the sleep routines, Global timer is being used
+ #pragma message ("For the sleep routines, Global timer is being used")
+         ^~~~~~~
+In file included from sleep.c:51:
 xtime_l.h:85:9: note: #pragma message: For the sleep routines, Global timer is being used
  #pragma message ("For the sleep routines, Global timer is being used")
          ^~~~~~~
@@ -586,26 +312,13 @@ In file included from xtime_l.c:47:
 xtime_l.h:85:9: note: #pragma message: For the sleep routines, Global timer is being used
  #pragma message ("For the sleep routines, Global timer is being used")
          ^~~~~~~
-In file included from sleep.c:51:
-xtime_l.h:85:9: note: #pragma message: For the sleep routines, Global timer is being used
- #pragma message ("For the sleep routines, Global timer is being used")
-         ^~~~~~~
-make[2]: Leaving directory 'C:/Github/Zybo_mipi/Pcam2019/vitis/Pcam5C-2019/zynq_fsbl/zynq_fsbl_bsp/ps7_cortexa9_0/libsrc/standa
-lone_v7_1/src'
-
 "Running Make libs in ps7_cortexa9_0/libsrc/uartps_v3_8/src"
 
 make -C ps7_cortexa9_0/libsrc/uartps_v3_8/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ASSEMBLER=arm-none-eabi-as" "A
 RCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostart
 files -g -Wall -Wextra"
 
-make[2]: Entering directory 'C:/Github/Zybo_mipi/Pcam2019/vitis/Pcam5C-2019/zynq_fsbl/zynq_fsbl_bsp/ps7_cortexa9_0/libsrc/uartp
-s_v3_8/src'
-
 "Compiling uartps"
-
-make[2]: Leaving directory 'C:/Github/Zybo_mipi/Pcam2019/vitis/Pcam5C-2019/zynq_fsbl/zynq_fsbl_bsp/ps7_cortexa9_0/libsrc/uartps
-_v3_8/src'
 
 "Running Make libs in ps7_cortexa9_0/libsrc/usbps_v2_4/src"
 
@@ -613,13 +326,7 @@ make -C ps7_cortexa9_0/libsrc/usbps_v2_4/src -s libs  "SHELL=CMD" "COMPILER=arm-
 CHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartf
 iles -g -Wall -Wextra"
 
-make[2]: Entering directory 'C:/Github/Zybo_mipi/Pcam2019/vitis/Pcam5C-2019/zynq_fsbl/zynq_fsbl_bsp/ps7_cortexa9_0/libsrc/usbps
-_v2_4/src'
-
 "Compiling usbps"
-
-make[2]: Leaving directory 'C:/Github/Zybo_mipi/Pcam2019/vitis/Pcam5C-2019/zynq_fsbl/zynq_fsbl_bsp/ps7_cortexa9_0/libsrc/usbps_
-v2_4/src'
 
 "Running Make libs in ps7_cortexa9_0/libsrc/vtc_v8_0/src"
 
@@ -627,19 +334,7 @@ make -C ps7_cortexa9_0/libsrc/vtc_v8_0/src -s libs  "SHELL=CMD" "COMPILER=arm-no
 IVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfil
 es -g -Wall -Wextra"
 
-make[2]: Entering directory 'C:/Github/Zybo_mipi/Pcam2019/vitis/Pcam5C-2019/zynq_fsbl/zynq_fsbl_bsp/ps7_cortexa9_0/libsrc/vtc_v
-8_0/src'
-
 "Compiling video timing controller"
-
-make[3]: Entering directory 'C:/Github/Zybo_mipi/Pcam2019/vitis/Pcam5C-2019/zynq_fsbl/zynq_fsbl_bsp/ps7_cortexa9_0/libsrc/vtc_v
-8_0/src'
-
-make[3]: Leaving directory 'C:/Github/Zybo_mipi/Pcam2019/vitis/Pcam5C-2019/zynq_fsbl/zynq_fsbl_bsp/ps7_cortexa9_0/libsrc/vtc_v8
-_0/src'
-
-make[2]: Leaving directory 'C:/Github/Zybo_mipi/Pcam2019/vitis/Pcam5C-2019/zynq_fsbl/zynq_fsbl_bsp/ps7_cortexa9_0/libsrc/vtc_v8
-_0/src'
 
 "Running Make libs in ps7_cortexa9_0/libsrc/xadcps_v2_3/src"
 
@@ -647,100 +342,31 @@ make -C ps7_cortexa9_0/libsrc/xadcps_v2_3/src -s libs  "SHELL=CMD" "COMPILER=arm
 RCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostart
 files -g -Wall -Wextra"
 
-make[2]: Entering directory 'C:/Github/Zybo_mipi/Pcam2019/vitis/Pcam5C-2019/zynq_fsbl/zynq_fsbl_bsp/ps7_cortexa9_0/libsrc/xadcp
-s_v2_3/src'
-
 "Compiling xadcps"
-
-make[2]: Leaving directory 'C:/Github/Zybo_mipi/Pcam2019/vitis/Pcam5C-2019/zynq_fsbl/zynq_fsbl_bsp/ps7_cortexa9_0/libsrc/xadcps
-_v2_3/src'
-
-"Running Make libs in ps7_cortexa9_0/libsrc/xilffs_v4_2/src"
-
-make -C ps7_cortexa9_0/libsrc/xilffs_v4_2/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ASSEMBLER=arm-none-eabi-as" "A
-RCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostart
-files -g -Wall -Wextra"
-
-make[2]: Entering directory 'C:/Github/Zybo_mipi/Pcam2019/vitis/Pcam5C-2019/zynq_fsbl/zynq_fsbl_bsp/ps7_cortexa9_0/libsrc/xilff
-s_v4_2/src'
-
-"Compiling XilFFs Library"
-
-make[2]: Leaving directory 'C:/Github/Zybo_mipi/Pcam2019/vitis/Pcam5C-2019/zynq_fsbl/zynq_fsbl_bsp/ps7_cortexa9_0/libsrc/xilffs
-_v4_2/src'
-
-"Running Make libs in ps7_cortexa9_0/libsrc/xilrsa_v1_5/src"
-
-make -C ps7_cortexa9_0/libsrc/xilrsa_v1_5/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ASSEMBLER=arm-none-eabi-as" "A
-RCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostart
-files -g -Wall -Wextra"
-
-make[2]: Entering directory 'C:/Github/Zybo_mipi/Pcam2019/vitis/Pcam5C-2019/zynq_fsbl/zynq_fsbl_bsp/ps7_cortexa9_0/libsrc/xilrs
-a_v1_5/src'
-
-make[2]: Leaving directory 'C:/Github/Zybo_mipi/Pcam2019/vitis/Pcam5C-2019/zynq_fsbl/zynq_fsbl_bsp/ps7_cortexa9_0/libsrc/xilrsa
-_v1_5/src'
 
 'Finished building libraries'
 
-make[1]: Leaving directory 'C:/Github/Zybo_mipi/Pcam2019/vitis/Pcam5C-2019/zynq_fsbl/zynq_fsbl_bsp'
-
-arm-none-eabi-gcc -MMD -MP       -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard   -c sd.c -o sd.o -Izynq_fsbl_bsp/ps7_cortexa9_0/
-include -I.
-
-arm-none-eabi-gcc -MMD -MP       -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard   -c nand.c -o nand.o -Izynq_fsbl_bsp/ps7_cortexa
-9_0/include -I.
-
-arm-none-eabi-gcc -MMD -MP       -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard   -c nor.c -o nor.o -Izynq_fsbl_bsp/ps7_cortexa9_
-0/include -I.
-
-arm-none-eabi-gcc -MMD -MP       -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard   -c image_mover.c -o image_mover.o -Izynq_fsbl_b
-sp/ps7_cortexa9_0/include -I.
-
-arm-none-eabi-gcc -MMD -MP       -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard   -c md5.c -o md5.o -Izynq_fsbl_bsp/ps7_cortexa9_
-0/include -I.
-
-arm-none-eabi-gcc -MMD -MP       -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard   -c fsbl_hooks.c -o fsbl_hooks.o -Izynq_fsbl_bsp
-/ps7_cortexa9_0/include -I.
-
-arm-none-eabi-gcc -MMD -MP       -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard   -c main.c -o main.o -Izynq_fsbl_bsp/ps7_cortexa
-9_0/include -I.
-
-In file included from main.c:135:
-zynq_fsbl_bsp/ps7_cortexa9_0/include/xtime_l.h:85:9: note: #pragma message: For the sleep routines, Global timer is being used
- #pragma message ("For the sleep routines, Global timer is being used")
-         ^~~~~~~
-arm-none-eabi-gcc -MMD -MP       -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard   -c rsa.c -o rsa.o -Izynq_fsbl_bsp/ps7_cortexa9_
-0/include -I.
-
-arm-none-eabi-gcc -MMD -MP       -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard   -c qspi.c -o qspi.o -Izynq_fsbl_bsp/ps7_cortexa
-9_0/include -I.
-
-arm-none-eabi-gcc -MMD -MP       -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard   -c ps7_init.c -o ps7_init.o -Izynq_fsbl_bsp/ps7
-_cortexa9_0/include -I.
-
-arm-none-eabi-gcc -MMD -MP       -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard   -c pcap.c -o pcap.o -Izynq_fsbl_bsp/ps7_cortexa
-9_0/include -I.
-
-In file included from pcap.c:98:
-zynq_fsbl_bsp/ps7_cortexa9_0/include/xtime_l.h:85:9: note: #pragma message: For the sleep routines, Global timer is being used
- #pragma message ("For the sleep routines, Global timer is being used")
-         ^~~~~~~
-arm-none-eabi-gcc -MMD -MP       -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard   -c fsbl_handoff.S -o fsbl_handoff.o -Izynq_fsbl
-_bsp/ps7_cortexa9_0/include -I.
-
-arm-none-eabi-gcc -o executable.elf  sd.o  nand.o  nor.o  image_mover.o  md5.o  fsbl_hooks.o  main.o  rsa.o  qspi.o  ps7_init.o
-  pcap.o  fsbl_handoff.o -MMD -MP       -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard   -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=
-hard -Wl,-build-id=none -specs=Xilinx.spec  -lrsa -Wl,--start-group,-lxil,-lgcc,-lc,--end-group -Wl,--start-group,-lxilffs,-lxi
-l,-lgcc,-lc,--end-group -Wl,--start-group,-lrsa,-lxil,-lgcc,-lc,--end-group                                          -Wl,--gc-s
-ections -Lzynq_fsbl_bsp/ps7_cortexa9_0/lib -L./ -Tlscript.ld
-
-21:52:47 **** Incremental Build of configuration Debug for project Pcam5C-app ****
+19:14:33 **** Build of configuration Debug for project Pcam5C-app ****
 make all 
 make --no-print-directory pre-build
 a9-linaro-pre-build-step
 ' '
 make --no-print-directory main-build
+'Building file: ../src/ov5640/OV5640.cpp'
+'Invoking: ARM v7 g++ compiler'
+arm-none-eabi-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/ov5640/OV5640.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -IC:/Github/Zybo_mipi/Zybo-Z7-20-pcam-5c-2019.1/vitis/Pcam5C-2019/export/Pcam5C-2019/sw/Pcam5C-2019/standalone_domain/bspinclude/include -MMD -MP -MF"src/ov5640/OV5640.d" -MT"src/ov5640/OV5640.o" -o "src/ov5640/OV5640.o" "../src/ov5640/OV5640.cpp"
+'Finished building: ../src/ov5640/OV5640.cpp'
+' '
+'Building file: ../src/i2c_access.c'
+'Invoking: ARM v7 g++ compiler'
+arm-none-eabi-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/i2c_access.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -IC:/Github/Zybo_mipi/Zybo-Z7-20-pcam-5c-2019.1/vitis/Pcam5C-2019/export/Pcam5C-2019/sw/Pcam5C-2019/standalone_domain/bspinclude/include -MMD -MP -MF"src/i2c_access.d" -MT"src/i2c_access.o" -o "src/i2c_access.o" "../src/i2c_access.c"
+'Finished building: ../src/i2c_access.c'
+' '
+'Building file: ../src/iic_phyreset.c'
+'Invoking: ARM v7 g++ compiler'
+arm-none-eabi-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/iic_phyreset.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -IC:/Github/Zybo_mipi/Zybo-Z7-20-pcam-5c-2019.1/vitis/Pcam5C-2019/export/Pcam5C-2019/sw/Pcam5C-2019/standalone_domain/bspinclude/include -MMD -MP -MF"src/iic_phyreset.d" -MT"src/iic_phyreset.o" -o "src/iic_phyreset.o" "../src/iic_phyreset.c"
+'Finished building: ../src/iic_phyreset.c'
+' '
 'Building file: ../src/main.cc'
 'Invoking: ARM v7 g++ compiler'
 arm-none-eabi-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -IC:/Github/Zybo_mipi/Zybo-Z7-20-pcam-5c-2019.1/vitis/Pcam5C-2019/export/Pcam5C-2019/sw/Pcam5C-2019/standalone_domain/bspinclude/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.cc"
@@ -755,10 +381,10 @@ arm-none-eabi-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/platform.o" -mcpu=
 compilation terminated.
 make[1]: *** [src/subdir.mk:48: src/platform.o] Error 1
 make: *** [makefile:47: all] Error 2
-21:52:49 **** Incremental Build of configuration Debug for project Pcam5C-app_system ****
+19:14:37 **** Build of configuration Debug for project Pcam5C-app_system ****
 make all 
 Generating bif file for the system project
-generate_system_bif.bat 55091 C:/Github/Zybo_mipi/Zybo-Z7-20-pcam-5c-2019.1/vitis/Pcam5C-2019/export/Pcam5C-2019/Pcam5C-2019.xpfm standalone_domain C:/Github/Zybo_mipi/Pcam2019/vitis/Pcam5C-app_system/Debug/system.bif
+generate_system_bif.bat 56539 C:/Github/Zybo_mipi/Zybo-Z7-20-pcam-5c-2019.1/vitis/Pcam5C-2019/export/Pcam5C-2019/Pcam5C-2019.xpfm standalone_domain C:/Github/Zybo_mipi/Pcam2019/vitis/Pcam5C-app_system/Debug/system.bif
 sdcard_gen --xpfm C:/Github/Zybo_mipi/Zybo-Z7-20-pcam-5c-2019.1/vitis/Pcam5C-2019/export/Pcam5C-2019/Pcam5C-2019.xpfm --sys_config Pcam5C-2019 --bif C:/Github/Zybo_mipi/Pcam2019/vitis/Pcam5C-app_system/Debug/system.bif --bitstream C:/Github/Zybo_mipi/Pcam2019/vitis/Pcam5C-app/_ide/bitstream/system_wrapper.bit --elf C:/Github/Zybo_mipi/Pcam2019/vitis/Pcam5C-app/Debug/Pcam5C-app.elf,ps7_cortexa9_0
 ELF does not exist: C:/Github/Zybo_mipi/Pcam2019/vitis/Pcam5C-app/Debug/Pcam5C-app.elf
 make: *** [makefile:37: sd_card] Error 1

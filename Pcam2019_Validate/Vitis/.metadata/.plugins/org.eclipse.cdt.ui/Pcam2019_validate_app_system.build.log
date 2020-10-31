@@ -1,10 +1,10 @@
-21:02:54 **** Incremental Build of configuration Debug for project Pcam2019_validate_app_system ****
+00:42:55 **** Incremental Build of configuration Debug for project Pcam2019_validate_app_system ****
 make all 
 Generating bif file for the system project
-generate_system_bif.bat 56185 C:/Github/Zybo_mipi/Pcam2019_Validate/Vitis/Pcam2019_Validate/export/Pcam2019_Validate/Pcam2019_Validate.xpfm standalone_domain C:/Github/Zybo_mipi/Pcam2019_Validate/Vitis/Pcam2019_validate_app_system/Debug/system.bif
+generate_system_bif.bat 64554 C:/Github/Zybo_mipi/Pcam2019_Validate/Vitis/Pcam2019_Validate/export/Pcam2019_Validate/Pcam2019_Validate.xpfm standalone_domain C:/Github/Zybo_mipi/Pcam2019_Validate/Vitis/Pcam2019_validate_app_system/Debug/system.bif
 sdcard_gen --xpfm C:/Github/Zybo_mipi/Pcam2019_Validate/Vitis/Pcam2019_Validate/export/Pcam2019_Validate/Pcam2019_Validate.xpfm --sys_config Pcam2019_Validate --bif C:/Github/Zybo_mipi/Pcam2019_Validate/Vitis/Pcam2019_validate_app_system/Debug/system.bif --bitstream C:/Github/Zybo_mipi/Pcam2019_Validate/Vitis/Pcam2019_validate_app/_ide/bitstream/system_wrapper.bit --elf C:/Github/Zybo_mipi/Pcam2019_Validate/Vitis/Pcam2019_validate_app/Debug/Pcam2019_validate_app.elf,ps7_cortexa9_0
 creating BOOT.BIN using C:/Github/Zybo_mipi/Pcam2019_Validate/Vitis/Pcam2019_validate_app/_ide/bitstream/system_wrapper.bit
 Running C:/Xilinx/Vitis/2019.2/bin/bootgen  -image C:/Github/Zybo_mipi/Pcam2019_Validate/Vitis/Pcam2019_validate_app_system/Debug/sd_card_temp/boot.bif -w -o i BOOT.BIN
 
-21:02:59 Build Finished (took 4s.867ms)
+00:42:59 Build Finished (took 4s.856ms)
 

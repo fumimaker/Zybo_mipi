@@ -1,4 +1,4 @@
-2020-10-29T20:57:24.59747800255-20:57:24 **** Incremental Build of configuration Debug for project Pcam5C-app ****
+2020-10-30T19:34:49.856377900255-19:34:49 **** Incremental Build of configuration Debug for project Pcam5C-app ****
 000-make all 
 000-make --no-print-directory pre-build
 000-a9-linaro-pre-build-step
@@ -17,9 +17,9 @@
 000-'Invoking: ARM v7 Print Size'
 000-arm-none-eabi-size Pcam5C-app.elf  |tee "Pcam5C-app.elf.size"
 000-   text	   data	    bss	    dec	    hex	filename
-000- 633187	   3884	  29776	 666847	  a2cdf	Pcam5C-app.elf
+000- 633475	   3884	  29776	 667135	  a2dff	Pcam5C-app.elf
 000-'Finished building: Pcam5C-app.elf.size'
 000-' '
 00255-
-20:57:26 Build Finished (took 2s.133ms)
+19:34:52 Build Finished (took 2s.693ms)
 

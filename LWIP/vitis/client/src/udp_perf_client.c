@@ -173,7 +173,7 @@ static void udp_packet_send(u8_t finished)
 		payload = (int*) (packet->payload);
 
 		int id = ptrCounter/(UDP_SEND_BUFSIZE-sizeof(int)); // 何番目のパケットか計算
-		xil_printf("%d \n\r", id);
+		//xil_printf("%d \n\r", id);
 		if (finished == FINISH){
 			packet_id = -1;
 			id = -1;

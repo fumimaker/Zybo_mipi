@@ -306,5 +306,10 @@ unsigned long int get_time_ms()
 	return (tCur/COUNTS_PER_MILLI_SECOND);
 }
 
+void delay_ms(unsigned long int time){
+	int _delta = get_time_ms();
+	while(get_time_ms()-_delta<time);
+}
+
 #endif
 

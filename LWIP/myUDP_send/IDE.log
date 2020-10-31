@@ -62,3 +62,158 @@
 01:04:59 INFO  : Successfully done setting workspace for the tool. 
 01:05:01 INFO  : Successfully done query RDI_DATADIR 
 01:05:01 INFO  : Registering command handlers for Vitis TCF services
+21:58:05 INFO  : Launching XSCT server: xsct.bat -n  -interactive C:\Github\Zybo_mipi\LWIP\myUDP_send\temp_xsdb_launch_script.tcl
+21:58:07 INFO  : XSCT server has started successfully.
+21:58:07 INFO  : plnx-install-location is set to ''
+21:58:07 INFO  : Successfully done setting XSCT server connection channel  
+21:58:07 INFO  : Successfully done setting workspace for the tool. 
+21:58:08 INFO  : Successfully done query RDI_DATADIR 
+21:58:09 INFO  : Registering command handlers for Vitis TCF services
+21:59:27 INFO  : Successfully done sdx_reload_mss "C:/Github/Zybo_mipi/LWIP/myUDP_send/design_1_wrapper/ps7_cortexa9_0/standalone_domain/bsp/system.mss"
+21:59:57 INFO  : Successfully done sdx_reload_mss "C:/Github/Zybo_mipi/LWIP/myUDP_send/design_1_wrapper/ps7_cortexa9_0/standalone_domain/bsp/system.mss"
+21:59:57 INFO  : No changes in MSS file content so sources will not be generated.
+22:04:38 INFO  : Checking for BSP changes to sync application flags for project 'myUDP_send'...
+22:05:32 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+22:05:32 INFO  : Jtag cable 'Digilent Zybo Z7 210351A6C9E3A' is selected.
+22:05:32 INFO  : 'jtag frequency' command is executed.
+22:05:32 INFO  : Context for 'APU' is selected.
+22:05:32 INFO  : System reset is completed.
+22:05:35 INFO  : 'after 3000' command is executed.
+22:05:35 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351A6C9E3A" && level==0} -index 1' command is executed.
+22:05:38 INFO  : FPGA configured successfully with bitstream "C:/Github/Zybo_mipi/LWIP/myUDP_send/myUDP_send/_ide/bitstream/design_1_wrapper.bit"
+22:05:38 INFO  : Context for 'APU' is selected.
+22:05:38 INFO  : Hardware design information is loaded from 'C:/Github/Zybo_mipi/LWIP/myUDP_send/design_1_wrapper/export/design_1_wrapper/hw/design_1_wrapper.xsa'.
+22:05:38 INFO  : 'configparams force-mem-access 1' command is executed.
+22:05:38 INFO  : Context for 'APU' is selected.
+22:05:38 INFO  : Sourcing of 'C:/Github/Zybo_mipi/LWIP/myUDP_send/myUDP_send/_ide/psinit/ps7_init.tcl' is done.
+22:05:38 INFO  : 'ps7_init' command is executed.
+22:05:38 INFO  : 'ps7_post_config' command is executed.
+22:05:38 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+22:05:39 INFO  : The application 'C:/Github/Zybo_mipi/LWIP/myUDP_send/myUDP_send/Debug/myUDP_send.elf' is downloaded to processor 'ps7_cortexa9_0'.
+22:05:39 INFO  : 'configparams force-mem-access 0' command is executed.
+22:05:39 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~"APU*"}
+rst -system
+after 3000
+targets -set -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351A6C9E3A" && level==0} -index 1
+fpga -file C:/Github/Zybo_mipi/LWIP/myUDP_send/myUDP_send/_ide/bitstream/design_1_wrapper.bit
+targets -set -nocase -filter {name =~"APU*"}
+loadhw -hw C:/Github/Zybo_mipi/LWIP/myUDP_send/design_1_wrapper/export/design_1_wrapper/hw/design_1_wrapper.xsa -mem-ranges [list {0x40000000 0xbfffffff}]
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*"}
+source C:/Github/Zybo_mipi/LWIP/myUDP_send/myUDP_send/_ide/psinit/ps7_init.tcl
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "*A9*#0"}
+dow C:/Github/Zybo_mipi/LWIP/myUDP_send/myUDP_send/Debug/myUDP_send.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+22:05:39 INFO  : Memory regions updated for context APU
+22:05:39 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+22:05:39 INFO  : 'con' command is executed.
+22:05:39 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*A9*#0"}
+con
+----------------End of Script----------------
+
+22:05:39 INFO  : Launch script is exported to file 'C:\Github\Zybo_mipi\LWIP\myUDP_send\.sdk\launch_scripts\single_application_debug\systemdebugger_myudp_send_system_standalone.tcl'
+22:06:20 INFO  : Checking for BSP changes to sync application flags for project 'myUDP_send'...
+22:06:36 INFO  : Disconnected from the channel tcfchan#2.
+22:06:36 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+22:06:37 INFO  : Jtag cable 'Digilent Zybo Z7 210351A6C9E3A' is selected.
+22:06:37 INFO  : 'jtag frequency' command is executed.
+22:06:37 INFO  : Context for 'APU' is selected.
+22:06:37 INFO  : System reset is completed.
+22:06:40 INFO  : 'after 3000' command is executed.
+22:06:40 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351A6C9E3A" && level==0} -index 1' command is executed.
+22:06:42 INFO  : FPGA configured successfully with bitstream "C:/Github/Zybo_mipi/LWIP/myUDP_send/myUDP_send/_ide/bitstream/design_1_wrapper.bit"
+22:06:42 INFO  : Context for 'APU' is selected.
+22:06:42 INFO  : Hardware design information is loaded from 'C:/Github/Zybo_mipi/LWIP/myUDP_send/design_1_wrapper/export/design_1_wrapper/hw/design_1_wrapper.xsa'.
+22:06:42 INFO  : 'configparams force-mem-access 1' command is executed.
+22:06:42 INFO  : Context for 'APU' is selected.
+22:06:42 INFO  : Sourcing of 'C:/Github/Zybo_mipi/LWIP/myUDP_send/myUDP_send/_ide/psinit/ps7_init.tcl' is done.
+22:06:43 INFO  : 'ps7_init' command is executed.
+22:06:43 INFO  : 'ps7_post_config' command is executed.
+22:06:43 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+22:06:43 INFO  : The application 'C:/Github/Zybo_mipi/LWIP/myUDP_send/myUDP_send/Debug/myUDP_send.elf' is downloaded to processor 'ps7_cortexa9_0'.
+22:06:43 INFO  : 'configparams force-mem-access 0' command is executed.
+22:06:43 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~"APU*"}
+rst -system
+after 3000
+targets -set -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351A6C9E3A" && level==0} -index 1
+fpga -file C:/Github/Zybo_mipi/LWIP/myUDP_send/myUDP_send/_ide/bitstream/design_1_wrapper.bit
+targets -set -nocase -filter {name =~"APU*"}
+loadhw -hw C:/Github/Zybo_mipi/LWIP/myUDP_send/design_1_wrapper/export/design_1_wrapper/hw/design_1_wrapper.xsa -mem-ranges [list {0x40000000 0xbfffffff}]
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*"}
+source C:/Github/Zybo_mipi/LWIP/myUDP_send/myUDP_send/_ide/psinit/ps7_init.tcl
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "*A9*#0"}
+dow C:/Github/Zybo_mipi/LWIP/myUDP_send/myUDP_send/Debug/myUDP_send.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+22:06:43 INFO  : Memory regions updated for context APU
+22:06:43 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+22:06:43 INFO  : 'con' command is executed.
+22:06:43 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*A9*#0"}
+con
+----------------End of Script----------------
+
+22:06:43 INFO  : Launch script is exported to file 'C:\Github\Zybo_mipi\LWIP\myUDP_send\.sdk\launch_scripts\single_application_debug\systemdebugger_myudp_send_system_standalone.tcl'
+22:07:45 INFO  : Checking for BSP changes to sync application flags for project 'myUDP_send'...
+22:07:59 INFO  : Disconnected from the channel tcfchan#4.
+22:08:00 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+22:08:00 INFO  : Jtag cable 'Digilent Zybo Z7 210351A6C9E3A' is selected.
+22:08:00 INFO  : 'jtag frequency' command is executed.
+22:08:00 INFO  : Context for 'APU' is selected.
+22:08:00 INFO  : System reset is completed.
+22:08:03 INFO  : 'after 3000' command is executed.
+22:08:03 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351A6C9E3A" && level==0} -index 1' command is executed.
+22:08:05 INFO  : FPGA configured successfully with bitstream "C:/Github/Zybo_mipi/LWIP/myUDP_send/myUDP_send/_ide/bitstream/design_1_wrapper.bit"
+22:08:05 INFO  : Context for 'APU' is selected.
+22:08:05 INFO  : Hardware design information is loaded from 'C:/Github/Zybo_mipi/LWIP/myUDP_send/design_1_wrapper/export/design_1_wrapper/hw/design_1_wrapper.xsa'.
+22:08:05 INFO  : 'configparams force-mem-access 1' command is executed.
+22:08:06 INFO  : Context for 'APU' is selected.
+22:08:06 INFO  : Sourcing of 'C:/Github/Zybo_mipi/LWIP/myUDP_send/myUDP_send/_ide/psinit/ps7_init.tcl' is done.
+22:08:06 INFO  : 'ps7_init' command is executed.
+22:08:06 INFO  : 'ps7_post_config' command is executed.
+22:08:06 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+22:08:06 INFO  : The application 'C:/Github/Zybo_mipi/LWIP/myUDP_send/myUDP_send/Debug/myUDP_send.elf' is downloaded to processor 'ps7_cortexa9_0'.
+22:08:06 INFO  : 'configparams force-mem-access 0' command is executed.
+22:08:06 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~"APU*"}
+rst -system
+after 3000
+targets -set -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351A6C9E3A" && level==0} -index 1
+fpga -file C:/Github/Zybo_mipi/LWIP/myUDP_send/myUDP_send/_ide/bitstream/design_1_wrapper.bit
+targets -set -nocase -filter {name =~"APU*"}
+loadhw -hw C:/Github/Zybo_mipi/LWIP/myUDP_send/design_1_wrapper/export/design_1_wrapper/hw/design_1_wrapper.xsa -mem-ranges [list {0x40000000 0xbfffffff}]
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*"}
+source C:/Github/Zybo_mipi/LWIP/myUDP_send/myUDP_send/_ide/psinit/ps7_init.tcl
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "*A9*#0"}
+dow C:/Github/Zybo_mipi/LWIP/myUDP_send/myUDP_send/Debug/myUDP_send.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+22:08:06 INFO  : Memory regions updated for context APU
+22:08:06 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+22:08:06 INFO  : 'con' command is executed.
+22:08:06 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*A9*#0"}
+con
+----------------End of Script----------------
+
+22:08:06 INFO  : Launch script is exported to file 'C:\Github\Zybo_mipi\LWIP\myUDP_send\.sdk\launch_scripts\single_application_debug\systemdebugger_myudp_send_system_standalone.tcl'
+22:08:25 INFO  : Checking for BSP changes to sync application flags for project 'myUDP_send'...
+23:03:28 INFO  : Disconnected from the channel tcfchan#6.

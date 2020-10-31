@@ -50,7 +50,7 @@
 #define SOFT_RST_MASK					(0x00000001)
 #define SLCR_LOCK_KEY_VALUE             0x767B
 #define SLCR_UNLOCK_KEY_VALUE           0xDF0D
-#define FPGA_RST_CTRL					s0x240
+#define FPGA_RST_CTRL					0x240
 
 
 
