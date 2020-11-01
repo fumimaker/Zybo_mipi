@@ -1,6 +1,6 @@
 Nothing to build in platform 'design_1_wrapper'
 
-21:25:21 **** Incremental Build of configuration Debug for project client ****
+23:49:45 **** Incremental Build of configuration Debug for project client ****
 make all 
 make --no-print-directory pre-build
 a9-linaro-pre-build-step
@@ -9,6 +9,10 @@ make --no-print-directory main-build
 'Building file: ../src/udp_perf_client.c'
 'Invoking: ARM v7 gcc compiler'
 arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/udp_perf_client.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -IC:/Github/Zybo_mipi/LWIP/vitis/design_1_wrapper/export/design_1_wrapper/sw/design_1_wrapper/standalone_domain/bspinclude/include -MMD -MP -MF"src/udp_perf_client.d" -MT"src/udp_perf_client.o" -o "src/udp_perf_client.o" "../src/udp_perf_client.c"
+../src/udp_perf_client.c: In function 'udp_packet_send':
+../src/udp_perf_client.c:169:16: warning: initialization of 'int *' from incompatible pointer type 'char *' [-Wincompatible-pointer-types]
+    int *addr = frame_pointer+ptrCounter;
+                ^~~~~~~~~~~~~
 'Finished building: ../src/udp_perf_client.c'
 ' '
 'Building target: client.elf'
@@ -22,10 +26,10 @@ arm-none-eabi-size client.elf  |tee "client.elf.size"
  140032	   3432	34724128	34867592	2140988	client.elf
 'Finished building: client.elf.size'
 ' '
-21:25:22 **** Incremental Build of configuration Debug for project client_system ****
+23:49:46 **** Incremental Build of configuration Debug for project client_system ****
 make all 
 Generating bif file for the system project
-generate_system_bif.bat 64687 C:/Github/Zybo_mipi/LWIP/vitis/design_1_wrapper/export/design_1_wrapper/design_1_wrapper.xpfm standalone_domain C:/Github/Zybo_mipi/LWIP/vitis/client_system/Debug/system.bif
+generate_system_bif.bat 61538 C:/Github/Zybo_mipi/LWIP/vitis/design_1_wrapper/export/design_1_wrapper/design_1_wrapper.xpfm standalone_domain C:/Github/Zybo_mipi/LWIP/vitis/client_system/Debug/system.bif
 sdcard_gen --xpfm C:/Github/Zybo_mipi/LWIP/vitis/design_1_wrapper/export/design_1_wrapper/design_1_wrapper.xpfm --sys_config design_1_wrapper --bif C:/Github/Zybo_mipi/LWIP/vitis/client_system/Debug/system.bif --bitstream C:/Github/Zybo_mipi/LWIP/vitis/client/_ide/bitstream/design_1_wrapper.bit --elf C:/Github/Zybo_mipi/LWIP/vitis/client/Debug/client.elf,ps7_cortexa9_0
 creating BOOT.BIN using C:/Github/Zybo_mipi/LWIP/vitis/client/_ide/bitstream/design_1_wrapper.bit
 Error: platform file not found: C:/Github/Zybo_mipi/LWIP/vitis/design_1_wrapper/export/design_1_wrapper/sw/design_1_wrapper/boot/fsbl.elf

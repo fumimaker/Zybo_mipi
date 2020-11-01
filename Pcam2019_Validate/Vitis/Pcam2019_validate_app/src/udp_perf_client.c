@@ -6,8 +6,8 @@ static struct perf_stats client;
 //static char send_buf[UDP_SEND_BUFSIZE];
 
 //static char frame_data[SIZE_OF_FRAME];
-static char *frame_pointer;
-static int ptrCounter = 0;
+char *frame_pointer;
+u64 ptrCounter = 0;
 
 #define FINISH	1
 /* Report interval time in ms */
@@ -135,6 +135,10 @@ static void udp_packet_send(u8_t finished)
 		} else {
 			// frame_pointer+ptrCounterの先頭からBUSIZE-int(1436)分payload+1にコピー
 			//4byte(int)開けて1436byteのデータをコピーする
+
+			frame_pointer = (char *)0xA000000; //FIX
+//			char *addr = frame_pointer+ptrCounter;
+//			u32 addrnum = *addr;
 			memcpy((int*)packet->payload+1, frame_pointer+ptrCounter, UDP_SEND_BUFSIZE-sizeof(int));
 		}
 
@@ -143,6 +147,9 @@ static void udp_packet_send(u8_t finished)
 
 		int id = ptrCounter/(UDP_SEND_BUFSIZE-sizeof(int)); // 1440-4を何回送ったかを計算
 		xil_printf("id: %d\n\r",id);
+		if(id==135){
+			xil_printf("135 times\r\n");
+		}
 		if (finished == FINISH){
 			packet_id = -1;
 			id = -1;

@@ -166,7 +166,8 @@ static void udp_packet_send(u8_t finished)
 			return;
 		} else {
 			//4byte(int)開けて1436byteのデータをコピーする
-			memcpy((int*)packet->payload+1, frame_pointer+ptrCounter, UDP_SEND_BUFSIZE-sizeof(int));
+			int *addr = frame_pointer+ptrCounter;
+			memcpy((int*)packet->payload+1, addr, UDP_SEND_BUFSIZE-sizeof(int));
 		}
 
 		/* always increment the id */

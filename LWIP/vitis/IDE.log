@@ -3439,3 +3439,196 @@ con
 21:25:11 INFO  : Launch script is exported to file 'C:\Github\Zybo_mipi\LWIP\vitis\.sdk\launch_scripts\single_application_debug\debugger_client-default.tcl'
 21:25:21 INFO  : Checking for BSP changes to sync application flags for project 'client'...
 21:38:55 INFO  : Disconnected from the channel tcfchan#21.
+23:47:03 INFO  : Launching XSCT server: xsct.bat -n  -interactive C:\Github\Zybo_mipi\LWIP\vitis\temp_xsdb_launch_script.tcl
+23:47:05 INFO  : XSCT server has started successfully.
+23:47:05 INFO  : Successfully done setting XSCT server connection channel  
+23:47:05 INFO  : plnx-install-location is set to ''
+23:47:05 INFO  : Successfully done setting workspace for the tool. 
+23:47:07 INFO  : Successfully done query RDI_DATADIR 
+23:47:08 INFO  : Registering command handlers for Vitis TCF services
+23:47:31 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+23:47:31 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+23:47:31 INFO  : Jtag cable 'Digilent Zybo Z7 210351A6C9E3A' is selected.
+23:47:31 INFO  : Jtag cable 'Digilent Zybo Z7 210351A6C9E3A' is selected.
+23:47:31 INFO  : 'jtag frequency' command is executed.
+23:47:31 INFO  : 'jtag frequency' command is executed.
+23:47:31 INFO  : Context for 'APU' is selected.
+23:47:31 INFO  : Context for 'APU' is selected.
+23:47:31 INFO  : System reset is completed.
+23:47:31 INFO  : System reset is completed.
+23:47:34 INFO  : 'after 3000' command is executed.
+23:47:37 INFO  : 'after 3000' command is executed.
+23:47:37 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351A6C9E3A" && level==0} -index 1' command is executed.
+23:47:40 INFO  : FPGA configured successfully with bitstream "C:/Github/Zybo_mipi/LWIP/vitis/client/_ide/bitstream/design_1_wrapper.bit"
+23:47:40 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351A6C9E3A" && level==0} -index 1' command is executed.
+23:47:42 INFO  : FPGA configured successfully with bitstream "C:/Github/Zybo_mipi/LWIP/vitis/client/_ide/bitstream/design_1_wrapper.bit"
+23:47:42 INFO  : Context for 'APU' is selected.
+23:47:42 INFO  : Hardware design information is loaded from 'C:/Github/Zybo_mipi/LWIP/vitis/design_1_wrapper/export/design_1_wrapper/hw/design_1_wrapper.xsa'.
+23:47:42 INFO  : Context for 'APU' is selected.
+23:47:42 INFO  : 'configparams force-mem-access 1' command is executed.
+23:47:42 INFO  : Hardware design information is loaded from 'C:/Github/Zybo_mipi/LWIP/vitis/design_1_wrapper/export/design_1_wrapper/hw/design_1_wrapper.xsa'.
+23:47:42 INFO  : Context for 'APU' is selected.
+23:47:42 INFO  : 'configparams force-mem-access 1' command is executed.
+23:47:42 INFO  : Sourcing of 'C:/Github/Zybo_mipi/LWIP/vitis/client/_ide/psinit/ps7_init.tcl' is done.
+23:47:42 INFO  : Context for 'APU' is selected.
+23:47:42 INFO  : 'ps7_init' command is executed.
+23:47:42 INFO  : Sourcing of 'C:/Github/Zybo_mipi/LWIP/vitis/client/_ide/psinit/ps7_init.tcl' is done.
+23:47:42 INFO  : 'ps7_post_config' command is executed.
+23:47:43 INFO  : 'ps7_init' command is executed.
+23:47:43 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+23:47:43 INFO  : 'ps7_post_config' command is executed.
+23:47:43 INFO  : The application 'C:/Github/Zybo_mipi/LWIP/vitis/client/Debug/client.elf' is downloaded to processor 'ps7_cortexa9_0'.
+23:47:43 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+23:47:43 INFO  : 'configparams force-mem-access 0' command is executed.
+23:47:43 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~"APU*"}
+rst -system
+after 3000
+targets -set -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351A6C9E3A" && level==0} -index 1
+fpga -file C:/Github/Zybo_mipi/LWIP/vitis/client/_ide/bitstream/design_1_wrapper.bit
+targets -set -nocase -filter {name =~"APU*"}
+loadhw -hw C:/Github/Zybo_mipi/LWIP/vitis/design_1_wrapper/export/design_1_wrapper/hw/design_1_wrapper.xsa -mem-ranges [list {0x40000000 0xbfffffff}]
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*"}
+source C:/Github/Zybo_mipi/LWIP/vitis/client/_ide/psinit/ps7_init.tcl
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "*A9*#0"}
+dow C:/Github/Zybo_mipi/LWIP/vitis/client/Debug/client.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+23:47:44 INFO  : The application 'C:/Github/Zybo_mipi/LWIP/vitis/client/Debug/client.elf' is downloaded to processor 'ps7_cortexa9_0'.
+23:47:44 INFO  : 'configparams force-mem-access 0' command is executed.
+23:47:44 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~"APU*"}
+rst -system
+after 3000
+targets -set -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351A6C9E3A" && level==0} -index 1
+fpga -file C:/Github/Zybo_mipi/LWIP/vitis/client/_ide/bitstream/design_1_wrapper.bit
+targets -set -nocase -filter {name =~"APU*"}
+loadhw -hw C:/Github/Zybo_mipi/LWIP/vitis/design_1_wrapper/export/design_1_wrapper/hw/design_1_wrapper.xsa -mem-ranges [list {0x40000000 0xbfffffff}]
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*"}
+source C:/Github/Zybo_mipi/LWIP/vitis/client/_ide/psinit/ps7_init.tcl
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "*A9*#0"}
+dow C:/Github/Zybo_mipi/LWIP/vitis/client/Debug/client.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+23:47:44 INFO  : Memory regions updated for context APU
+23:47:44 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+23:47:44 INFO  : Memory regions updated for context APU
+23:47:44 INFO  : 'con' command is executed.
+23:47:44 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*A9*#0"}
+con
+----------------End of Script----------------
+
+23:47:44 INFO  : Launch script is exported to file 'C:\Github\Zybo_mipi\LWIP\vitis\.sdk\launch_scripts\single_application_debug\debugger_client-default.tcl'
+23:47:44 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+23:47:44 ERROR : Already running
+23:48:57 INFO  : Checking for BSP changes to sync application flags for project 'client'...
+23:49:02 ERROR : (XSDB Server)ERROR: [Hsi 55-1571] The design file C:/Github/Zybo_mipi/LWIP/vitis/design_1_wrapper/export/design_1_wrapper/hw/design_1_wrapper.xsa is already opened
+
+23:49:09 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+23:49:09 INFO  : Jtag cable 'Digilent Zybo Z7 210351A6C9E3A' is selected.
+23:49:09 INFO  : 'jtag frequency' command is executed.
+23:49:09 INFO  : Context for 'APU' is selected.
+23:49:09 INFO  : System reset is completed.
+23:49:12 INFO  : 'after 3000' command is executed.
+23:49:13 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351A6C9E3A" && level==0} -index 1' command is executed.
+23:49:15 INFO  : FPGA configured successfully with bitstream "C:/Github/Zybo_mipi/LWIP/vitis/client/_ide/bitstream/design_1_wrapper.bit"
+23:49:15 INFO  : Context for 'APU' is selected.
+23:49:15 INFO  : Hardware design information is loaded from 'C:/Github/Zybo_mipi/LWIP/vitis/design_1_wrapper/export/design_1_wrapper/hw/design_1_wrapper.xsa'.
+23:49:15 INFO  : 'configparams force-mem-access 1' command is executed.
+23:49:15 INFO  : Context for 'APU' is selected.
+23:49:15 INFO  : Sourcing of 'C:/Github/Zybo_mipi/LWIP/vitis/client/_ide/psinit/ps7_init.tcl' is done.
+23:49:15 INFO  : 'ps7_init' command is executed.
+23:49:15 INFO  : 'ps7_post_config' command is executed.
+23:49:15 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+23:49:16 INFO  : The application 'C:/Github/Zybo_mipi/LWIP/vitis/client/Debug/client.elf' is downloaded to processor 'ps7_cortexa9_0'.
+23:49:16 INFO  : 'configparams force-mem-access 0' command is executed.
+23:49:16 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~"APU*"}
+rst -system
+after 3000
+targets -set -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351A6C9E3A" && level==0} -index 1
+fpga -file C:/Github/Zybo_mipi/LWIP/vitis/client/_ide/bitstream/design_1_wrapper.bit
+targets -set -nocase -filter {name =~"APU*"}
+loadhw -hw C:/Github/Zybo_mipi/LWIP/vitis/design_1_wrapper/export/design_1_wrapper/hw/design_1_wrapper.xsa -mem-ranges [list {0x40000000 0xbfffffff}]
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*"}
+source C:/Github/Zybo_mipi/LWIP/vitis/client/_ide/psinit/ps7_init.tcl
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "*A9*#0"}
+dow C:/Github/Zybo_mipi/LWIP/vitis/client/Debug/client.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+23:49:16 INFO  : Memory regions updated for context APU
+23:49:16 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+23:49:16 INFO  : 'con' command is executed.
+23:49:16 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*A9*#0"}
+con
+----------------End of Script----------------
+
+23:49:16 INFO  : Launch script is exported to file 'C:\Github\Zybo_mipi\LWIP\vitis\.sdk\launch_scripts\single_application_debug\debugger_client-default.tcl'
+23:49:45 INFO  : Checking for BSP changes to sync application flags for project 'client'...
+23:49:48 ERROR : (XSDB Server)ERROR: [Hsi 55-1571] The design file C:/Github/Zybo_mipi/LWIP/vitis/design_1_wrapper/export/design_1_wrapper/hw/design_1_wrapper.xsa is already opened
+
+23:49:55 INFO  : Disconnected from the channel tcfchan#1.
+23:49:56 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+23:49:56 INFO  : Jtag cable 'Digilent Zybo Z7 210351A6C9E3A' is selected.
+23:49:56 INFO  : 'jtag frequency' command is executed.
+23:49:56 INFO  : Context for 'APU' is selected.
+23:49:56 INFO  : System reset is completed.
+23:49:59 INFO  : 'after 3000' command is executed.
+23:49:59 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351A6C9E3A" && level==0} -index 1' command is executed.
+23:50:01 INFO  : FPGA configured successfully with bitstream "C:/Github/Zybo_mipi/LWIP/vitis/client/_ide/bitstream/design_1_wrapper.bit"
+23:50:02 INFO  : Context for 'APU' is selected.
+23:50:04 INFO  : Hardware design information is loaded from 'C:/Github/Zybo_mipi/LWIP/vitis/design_1_wrapper/export/design_1_wrapper/hw/design_1_wrapper.xsa'.
+23:50:04 INFO  : 'configparams force-mem-access 1' command is executed.
+23:50:04 INFO  : Context for 'APU' is selected.
+23:50:04 INFO  : Sourcing of 'C:/Github/Zybo_mipi/LWIP/vitis/client/_ide/psinit/ps7_init.tcl' is done.
+23:50:04 INFO  : 'ps7_init' command is executed.
+23:50:04 INFO  : 'ps7_post_config' command is executed.
+23:50:04 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+23:50:04 INFO  : The application 'C:/Github/Zybo_mipi/LWIP/vitis/client/Debug/client.elf' is downloaded to processor 'ps7_cortexa9_0'.
+23:50:04 INFO  : 'configparams force-mem-access 0' command is executed.
+23:50:04 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~"APU*"}
+rst -system
+after 3000
+targets -set -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351A6C9E3A" && level==0} -index 1
+fpga -file C:/Github/Zybo_mipi/LWIP/vitis/client/_ide/bitstream/design_1_wrapper.bit
+targets -set -nocase -filter {name =~"APU*"}
+loadhw -hw C:/Github/Zybo_mipi/LWIP/vitis/design_1_wrapper/export/design_1_wrapper/hw/design_1_wrapper.xsa -mem-ranges [list {0x40000000 0xbfffffff}]
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*"}
+source C:/Github/Zybo_mipi/LWIP/vitis/client/_ide/psinit/ps7_init.tcl
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "*A9*#0"}
+dow C:/Github/Zybo_mipi/LWIP/vitis/client/Debug/client.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+23:50:04 INFO  : Memory regions updated for context APU
+23:50:04 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+23:50:04 INFO  : 'con' command is executed.
+23:50:04 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*A9*#0"}
+con
+----------------End of Script----------------
+
+23:50:04 INFO  : Launch script is exported to file 'C:\Github\Zybo_mipi\LWIP\vitis\.sdk\launch_scripts\single_application_debug\debugger_client-default.tcl'
+23:55:10 INFO  : Disconnected from the channel tcfchan#4.

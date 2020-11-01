@@ -96,6 +96,8 @@ int main()
 	pipeline_mode_change(vdma_driver, cam, vid, Resolution::R1280_720_60_PP, OV5640_cfg::mode_t::MODE_720P_1280_720_60fps);
 	xil_printf("Video init done.\r\n");
 
+
+
 	xil_printf("udp send start.\r\n");
 	while(1){
 		udp_loop();
