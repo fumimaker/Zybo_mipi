@@ -42,7 +42,7 @@ public:
 
 		XGpioPs_SetOutputEnablePin(&drv_inst_, CAM_EN_PIN, 0);
 		XGpioPs_SetDirectionPin(&drv_inst_, CAM_EN_PIN, 1); //Output
-	   XGpioPs_WritePin(&drv_inst_, CAM_EN_PIN, 1);
+	    XGpioPs_WritePin(&drv_inst_, CAM_EN_PIN, 1);
 		XGpioPs_SetOutputEnablePin(&drv_inst_, CAM_EN_PIN, 1);
 
 	}
