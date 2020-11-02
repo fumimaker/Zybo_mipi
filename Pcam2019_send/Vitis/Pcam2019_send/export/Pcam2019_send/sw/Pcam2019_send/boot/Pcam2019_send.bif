@@ -1,0 +1,7 @@
+/*Pcam2019_send*/
+the_ROM_image:
+{
+  [bootloader]<Pcam2019_send/boot/fsbl.elf>
+   <bitstream> 
+  <elf,ps7_cortexa9_0>
+}
