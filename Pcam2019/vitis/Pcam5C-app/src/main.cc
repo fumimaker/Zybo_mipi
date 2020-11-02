@@ -1,6 +1,5 @@
 #include "xparameters.h"
 
-#include "platform/platform.h"
 #include "ov5640/OV5640.h"
 #include "ov5640/ScuGicInterruptController.h"
 #include "ov5640/PS_GPIO.h"
@@ -10,6 +9,17 @@
 #include "MIPI_D_PHY_RX.h"
 #include "MIPI_CSI_2_RX.h"
 
+#include "lwipopts.h"
+#include "xil_printf.h"
+#include "sleep.h"
+#include "lwip/priv/tcp_priv.h"
+#include "lwip/init.h"
+#include "lwip/inet.h"
+#include "xil_cache.h"
+#include "netif/xadapter.h"
+#include <stdio.h>
+#include "platform.h"
+#include "platform_config.h"
 
 #define IRPT_CTL_DEVID 		XPAR_PS7_SCUGIC_0_DEVICE_ID
 #define GPIO_DEVID			XPAR_PS7_GPIO_0_DEVICE_ID
@@ -84,7 +94,8 @@ int main()
 			VDMA_S2MM_IRPT_ID);
 	VideoOutput vid(XPAR_VTC_0_DEVICE_ID, XPAR_VIDEO_DYNCLK_DEVICE_ID);
 
-	pipeline_mode_change(vdma_driver, cam, vid, Resolution::R1920_1080_60_PP, OV5640_cfg::mode_t::MODE_1080P_1920_1080_30fps);
+	//pipeline_mode_change(vdma_driver, cam, vid, Resolution::R1920_1080_60_PP, OV5640_cfg::mode_t::MODE_1080P_1920_1080_30fps);
+	pipeline_mode_change(vdma_driver, cam, vid, Resolution::R1280_720_60_PP, OV5640_cfg::mode_t::MODE_720P_1280_720_60fps);
 
 	xil_printf("Video init done.\r\n");
 
