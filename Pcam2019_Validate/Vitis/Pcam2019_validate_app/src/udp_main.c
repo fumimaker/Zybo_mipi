@@ -107,8 +107,8 @@ int udp_main(void)
 #endif
 
 	//init_platform(); // ‚±‚ê‚ª’†g‚¾‚Á‚½
-	platform_setup_timer();
-	platform_setup_interrupts();
+	//platform_setup_timer();
+	//platform_setup_interrupts();
 
 	xil_printf("\r\n\r\n");
 	xil_printf("-----lwIP RAW Mode UDP Client Application-----\r\n");
@@ -125,7 +125,7 @@ int udp_main(void)
 	netif_set_default(netif);
 
 	/* now enable interrupts */
-	platform_enable_interrupts();
+	//platform_enable_interrupts();
 
 	/* specify that the network if is up */
 	netif_set_up(netif);

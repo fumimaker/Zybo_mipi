@@ -11,12 +11,9 @@
 #include "xscugic.h"
 #include "lwip/tcp.h"
 #include "netif/xadapter.h"
+#include "TIMER_Client.h"
+#include "lwip/dhcp.h"
 
-#define INTC_DEVICE_ID		XPAR_SCUGIC_SINGLE_DEVICE_ID
-#define TIMER_DEVICE_ID		XPAR_SCUTIMER_DEVICE_ID
-#define INTC_BASE_ADDR		XPAR_SCUGIC_0_CPU_BASEADDR
-#define INTC_DIST_BASE_ADDR	XPAR_SCUGIC_0_DIST_BASEADDR
-#define TIMER_IRPT_INTR		XPAR_SCUTIMER_INTR
 #define STRINGIZE(x) STRINGIZE2(x)
 #define STRINGIZE2(x) #x
 #define LINE_STRING STRINGIZE(__LINE__)
@@ -39,7 +36,6 @@ extern struct netif server_netif;
 
 volatile int TcpFastTmrFlag = 0;
 volatile int TcpSlowTmrFlag = 0;
-
 
 namespace digilent {
 template <typename IrptCtl>
@@ -81,7 +77,6 @@ public:
 	#endif
 		XScuTimer_ClearInterruptStatus(TimerInstance);
 	}
-
 	PS_TIMER(uint16_t dev_id, IrptCtl& irpt_ctl, uint16_t irpt_id) :
 		drv_inst_(), irpt_ctl_(irpt_ctl){
 
@@ -113,6 +108,10 @@ public:
 		irpt_ctl_.registerHandler(irpt_id, (Xil_InterruptHandler)timer_callback, &drv_inst_);
 		irpt_ctl_.enableInterrupt(irpt_id);
 		irpt_ctl_.enableInterrupts();
+
+		Xil_ExceptionEnableMask(XIL_EXCEPTION_IRQ);
+		XScuTimer_EnableInterrupt(&drv_inst_);
+		XScuTimer_Start(&drv_inst_);
 	}
 
 private:
