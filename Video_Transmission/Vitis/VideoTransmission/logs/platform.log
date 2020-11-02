@@ -1,0 +1,1646 @@
+TRACE::2020-11-02.20:40:17::SCWPlatform::Trying to open the hw design at C:/Github/Zybo_mipi/Video_Transmission/Vitis/VideoTransmission/hw/system_wrapper.xsa
+TRACE::2020-11-02.20:40:17::SCWPlatform::DSA given C:/Github/Zybo_mipi/Video_Transmission/Vitis/VideoTransmission/hw/system_wrapper.xsa
+TRACE::2020-11-02.20:40:17::SCWPlatform::DSA absoulate path C:/Github/Zybo_mipi/Video_Transmission/Vitis/VideoTransmission/hw/system_wrapper.xsa
+TRACE::2020-11-02.20:40:19::SCWPlatform::DSA directory C:/Github/Zybo_mipi/Video_Transmission/Vitis/VideoTransmission/hw
+TRACE::2020-11-02.20:40:19::SCWPlatform:: Platform Path C:/Github/Zybo_mipi/Video_Transmission/Vitis/VideoTransmission/hw/system_wrapper.xsa
+TRACE::2020-11-02.20:40:19::SCWPlatform:: Unique name xilinx:::0.0
+TRACE::2020-11-02.20:40:19::SCWPlatform::Do not have an existing db opened. 
+TRACE::2020-11-02.20:40:23::SCWPlatform::Opened new HwDB with name system_wrapper_0
+TRACE::2020-11-02.20:40:23::SCWWriter::formatted JSON is {
+	"platformName":	"VideoTransmission",
+	"sprVersion":	"2.0",
+	"mode":	"gui",
+	"dsaType":	"Fixed",
+	"platformDesc":	"VideoTransmission",
+	"platHandOff":	"C:/Github/Zybo_mipi/Video_Transmission/VideoTransmission/system_wrapper.xsa",
+	"platIntHandOff":	"<platformDir>/hw/system_wrapper.xsa",
+	"deviceType":	"zynq",
+	"platIsPrebuiltAutogen":	"false",
+	"platIsNoBootBsp":	"false",
+	"hasFsblMakeHasChanges":	"false",
+	"hasPmufwMakeHasChanges":	"false",
+	"platPreBuiltFlag":	false,
+	"platformSamplesDir":	""
+}
+TRACE::2020-11-02.20:40:23::SCWWriter::formatted JSON is {
+	"platformName":	"VideoTransmission",
+	"sprVersion":	"2.0",
+	"mode":	"gui",
+	"dsaType":	"Fixed",
+	"platformDesc":	"VideoTransmission",
+	"platHandOff":	"C:/Github/Zybo_mipi/Video_Transmission/VideoTransmission/system_wrapper.xsa",
+	"platIntHandOff":	"<platformDir>/hw/system_wrapper.xsa",
+	"deviceType":	"zynq",
+	"platIsPrebuiltAutogen":	"false",
+	"platIsNoBootBsp":	"false",
+	"hasFsblMakeHasChanges":	"false",
+	"hasPmufwMakeHasChanges":	"false",
+	"platPreBuiltFlag":	false,
+	"platformSamplesDir":	"",
+	"platActiveSys":	"VideoTransmission",
+	"systems":	[{
+			"systemName":	"VideoTransmission",
+			"systemDesc":	"VideoTransmission",
+			"sysIsBootAutoGen":	"true",
+			"systemDispName":	"VideoTransmission"
+		}]
+}
+TRACE::2020-11-02.20:40:23::SCWPlatform::Boot application domains not present, creating them
+TRACE::2020-11-02.20:40:23::SCWDomain::checking for install qemu data   : 
+TRACE::2020-11-02.20:40:23::SCWDomain:: Using the QEMU Data from install at  : C:/Xilinx/Vitis/2019.2/data/emulation/platforms/zynq/qemu/
+TRACE::2020-11-02.20:40:23::SCWDomain:: Using the QEMU args  from install at  : C:/Xilinx/Vitis/2019.2/data/emulation/platforms/zynq/qemu/qemu_args.txt
+TRACE::2020-11-02.20:40:23::SCWPlatform::Trying to open the hw design at C:/Github/Zybo_mipi/Video_Transmission/Vitis/VideoTransmission/hw/system_wrapper.xsa
+TRACE::2020-11-02.20:40:23::SCWPlatform::DSA given C:/Github/Zybo_mipi/Video_Transmission/Vitis/VideoTransmission/hw/system_wrapper.xsa
+TRACE::2020-11-02.20:40:23::SCWPlatform::DSA absoulate path C:/Github/Zybo_mipi/Video_Transmission/Vitis/VideoTransmission/hw/system_wrapper.xsa
+TRACE::2020-11-02.20:40:23::SCWPlatform::DSA directory C:/Github/Zybo_mipi/Video_Transmission/Vitis/VideoTransmission/hw
+TRACE::2020-11-02.20:40:23::SCWPlatform:: Platform Path C:/Github/Zybo_mipi/Video_Transmission/Vitis/VideoTransmission/hw/system_wrapper.xsa
+TRACE::2020-11-02.20:40:23::SCWPlatform:: Unique name xilinx:::0.0
+TRACE::2020-11-02.20:40:23::SCWPlatform::Trying to set the existing hwdb with name system_wrapper_0
+TRACE::2020-11-02.20:40:23::SCWPlatform::Opened existing hwdb system_wrapper_0
+TRACE::2020-11-02.20:40:23::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2020-11-02.20:40:23::SCWPlatform::Trying to open the hw design at C:/Github/Zybo_mipi/Video_Transmission/Vitis/VideoTransmission/hw/system_wrapper.xsa
+TRACE::2020-11-02.20:40:23::SCWPlatform::DSA given C:/Github/Zybo_mipi/Video_Transmission/Vitis/VideoTransmission/hw/system_wrapper.xsa
+TRACE::2020-11-02.20:40:23::SCWPlatform::DSA absoulate path C:/Github/Zybo_mipi/Video_Transmission/Vitis/VideoTransmission/hw/system_wrapper.xsa
+TRACE::2020-11-02.20:40:23::SCWPlatform::DSA directory C:/Github/Zybo_mipi/Video_Transmission/Vitis/VideoTransmission/hw
+TRACE::2020-11-02.20:40:23::SCWPlatform:: Platform Path C:/Github/Zybo_mipi/Video_Transmission/Vitis/VideoTransmission/hw/system_wrapper.xsa
+TRACE::2020-11-02.20:40:23::SCWPlatform:: Unique name xilinx:::0.0
+TRACE::2020-11-02.20:40:23::SCWPlatform::Trying to set the existing hwdb with name system_wrapper_0
+TRACE::2020-11-02.20:40:23::SCWPlatform::Opened existing hwdb system_wrapper_0
+TRACE::2020-11-02.20:40:23::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2020-11-02.20:40:23::SCWPlatform::Boot application domain added for zynq_fsbl
+TRACE::2020-11-02.20:40:23::SCWPlatform::Generating the sources  .
+TRACE::2020-11-02.20:40:23::SCWBDomain::Generating boot domain sources.
+TRACE::2020-11-02.20:40:23::SCWBDomain:: Generating the zynq_fsbl Application.
+TRACE::2020-11-02.20:40:23::SCWPlatform::Trying to open the hw design at C:/Github/Zybo_mipi/Video_Transmission/Vitis/VideoTransmission/hw/system_wrapper.xsa
+TRACE::2020-11-02.20:40:23::SCWPlatform::DSA given C:/Github/Zybo_mipi/Video_Transmission/Vitis/VideoTransmission/hw/system_wrapper.xsa
+TRACE::2020-11-02.20:40:23::SCWPlatform::DSA absoulate path C:/Github/Zybo_mipi/Video_Transmission/Vitis/VideoTransmission/hw/system_wrapper.xsa
+TRACE::2020-11-02.20:40:23::SCWPlatform::DSA directory C:/Github/Zybo_mipi/Video_Transmission/Vitis/VideoTransmission/hw
+TRACE::2020-11-02.20:40:23::SCWPlatform:: Platform Path C:/Github/Zybo_mipi/Video_Transmission/Vitis/VideoTransmission/hw/system_wrapper.xsa
+TRACE::2020-11-02.20:40:23::SCWPlatform:: Unique name xilinx:::0.0
+TRACE::2020-11-02.20:40:23::SCWPlatform::Trying to set the existing hwdb with name system_wrapper_0
+TRACE::2020-11-02.20:40:23::SCWPlatform::Opened existing hwdb system_wrapper_0
+TRACE::2020-11-02.20:40:23::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2020-11-02.20:40:23::SCWMssOS::Checking the sw design at  C:/Github/Zybo_mipi/Video_Transmission/Vitis/VideoTransmission/zynq_fsbl/zynq_fsbl_bsp/system.mss
+TRACE::2020-11-02.20:40:23::SCWMssOS::DEBUG:  swdes dump  
+TRACE::2020-11-02.20:40:23::SCWMssOS::No sw design opened at  C:/Github/Zybo_mipi/Video_Transmission/Vitis/VideoTransmission/zynq_fsbl/zynq_fsbl_bsp/system.mss
+TRACE::2020-11-02.20:40:23::SCWMssOS::mss does not exists at C:/Github/Zybo_mipi/Video_Transmission/Vitis/VideoTransmission/zynq_fsbl/zynq_fsbl_bsp/system.mss
+TRACE::2020-11-02.20:40:23::SCWMssOS::Creating sw design at  C:/Github/Zybo_mipi/Video_Transmission/Vitis/VideoTransmission/zynq_fsbl/zynq_fsbl_bsp/system.mss
+TRACE::2020-11-02.20:40:23::SCWMssOS::Adding the swdes entry, created swdb C:/Github/Zybo_mipi/Video_Transmission/Vitis/VideoTransmission/zynq_fsbl/zynq_fsbl_bsp/system.mss with des name C:/Github/Zybo_mipi/Video_Transmission/Vitis/VideoTransmission/zynq_fsbl/zynq_fsbl_bsp/system.mss
+TRACE::2020-11-02.20:40:23::SCWMssOS::updating the scw layer changes to swdes at   C:/Github/Zybo_mipi/Video_Transmission/Vitis/VideoTransmission/zynq_fsbl/zynq_fsbl_bsp/system.mss
+TRACE::2020-11-02.20:40:23::SCWMssOS::Writing mss at C:/Github/Zybo_mipi/Video_Transmission/Vitis/VideoTransmission/zynq_fsbl/zynq_fsbl_bsp/system.mss
+TRACE::2020-11-02.20:40:23::SCWMssOS::Completed writing the mss file at C:/Github/Zybo_mipi/Video_Transmission/Vitis/VideoTransmission/zynq_fsbl/zynq_fsbl_bsp
+TRACE::2020-11-02.20:40:23::SCWMssOS::Picking up changes from newly written mss file into SCW Layer. 
+TRACE::2020-11-02.20:40:23::SCWMssOS::Updated the changes from newly written mss file into SCW Layer. 
+TRACE::2020-11-02.20:40:23::SCWBDomain::Completed writing the mss file at C:/Github/Zybo_mipi/Video_Transmission/Vitis/VideoTransmission/zynq_fsbl/zynq_fsbl_bsp
+TRACE::2020-11-02.20:40:34::SCWPlatform::Generating sources Done.
+TRACE::2020-11-02.20:40:34::SCWPlatform::Trying to open the hw design at C:/Github/Zybo_mipi/Video_Transmission/Vitis/VideoTransmission/hw/system_wrapper.xsa
+TRACE::2020-11-02.20:40:34::SCWPlatform::DSA given C:/Github/Zybo_mipi/Video_Transmission/Vitis/VideoTransmission/hw/system_wrapper.xsa
+TRACE::2020-11-02.20:40:34::SCWPlatform::DSA absoulate path C:/Github/Zybo_mipi/Video_Transmission/Vitis/VideoTransmission/hw/system_wrapper.xsa
+TRACE::2020-11-02.20:40:34::SCWPlatform::DSA directory C:/Github/Zybo_mipi/Video_Transmission/Vitis/VideoTransmission/hw
+TRACE::2020-11-02.20:40:34::SCWPlatform:: Platform Path C:/Github/Zybo_mipi/Video_Transmission/Vitis/VideoTransmission/hw/system_wrapper.xsa
+TRACE::2020-11-02.20:40:34::SCWPlatform:: Unique name xilinx:::0.0
+TRACE::2020-11-02.20:40:34::SCWPlatform::Trying to set the existing hwdb with name system_wrapper_0
+TRACE::2020-11-02.20:40:34::SCWPlatform::Opened existing hwdb system_wrapper_0
+TRACE::2020-11-02.20:40:34::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2020-11-02.20:40:34::SCWMssOS::Checking the sw design at  C:/Github/Zybo_mipi/Video_Transmission/Vitis/VideoTransmission/zynq_fsbl/zynq_fsbl_bsp/system.mss
+TRACE::2020-11-02.20:40:34::SCWMssOS::DEBUG:  swdes dump  C:/Github/Zybo_mipi/Video_Transmission/Vitis/VideoTransmission/zynq_fsbl/zynq_fsbl_bsp/system.mss|C:/Github/Zybo_mipi/Video_Transmission/Vitis/VideoTransmission/zynq_fsbl/zynq_fsbl_bsp/system.mss||
+
+KEYINFO::2020-11-02.20:40:34::SCWMssOS::Could not open the swdb for C:/Github/Zybo_mipi/Video_Transmission/Vitis/VideoTransmission/zynq_fsbl/zynq_fsbl_bsp/system.mss
+KEYINFO::2020-11-02.20:40:34::SCWMssOS::Could not open the sw design at  C:/Github/Zybo_mipi/Video_Transmission/Vitis/VideoTransmission/zynq_fsbl/zynq_fsbl_bsp/system.mss
+ERROR: [Hsi 55-1558] Software Design C:/Github/Zybo_mipi/Video_Transmission/Vitis/VideoTransmission/zynq_fsbl/zynq_fsbl_bsp/system.mss is not found
+
+TRACE::2020-11-02.20:40:34::SCWMssOS::Cleared the swdb table entry
+TRACE::2020-11-02.20:40:34::SCWMssOS::No sw design opened at  C:/Github/Zybo_mipi/Video_Transmission/Vitis/VideoTransmission/zynq_fsbl/zynq_fsbl_bsp/system.mss
+TRACE::2020-11-02.20:40:34::SCWMssOS::mss exists loading the mss file  C:/Github/Zybo_mipi/Video_Transmission/Vitis/VideoTransmission/zynq_fsbl/zynq_fsbl_bsp/system.mss
+TRACE::2020-11-02.20:40:34::SCWMssOS::Opened the sw design from mss  C:/Github/Zybo_mipi/Video_Transmission/Vitis/VideoTransmission/zynq_fsbl/zynq_fsbl_bsp/system.mss
+TRACE::2020-11-02.20:40:34::SCWMssOS::Adding the swdes entry C:/Github/Zybo_mipi/Video_Transmission/Vitis/VideoTransmission/zynq_fsbl/zynq_fsbl_bsp/system.mss with des name system
+TRACE::2020-11-02.20:40:34::SCWMssOS::updating the scw layer about changes
+TRACE::2020-11-02.20:40:34::SCWMssOS::Opened the sw design.  C:/Github/Zybo_mipi/Video_Transmission/Vitis/VideoTransmission/zynq_fsbl/zynq_fsbl_bsp/system.mss
+TRACE::2020-11-02.20:40:34::SCWPlatform::Trying to open the hw design at C:/Github/Zybo_mipi/Video_Transmission/Vitis/VideoTransmission/hw/system_wrapper.xsa
+TRACE::2020-11-02.20:40:34::SCWPlatform::DSA given C:/Github/Zybo_mipi/Video_Transmission/Vitis/VideoTransmission/hw/system_wrapper.xsa
+TRACE::2020-11-02.20:40:34::SCWPlatform::DSA absoulate path C:/Github/Zybo_mipi/Video_Transmission/Vitis/VideoTransmission/hw/system_wrapper.xsa
+TRACE::2020-11-02.20:40:34::SCWPlatform::DSA directory C:/Github/Zybo_mipi/Video_Transmission/Vitis/VideoTransmission/hw
+TRACE::2020-11-02.20:40:34::SCWPlatform:: Platform Path C:/Github/Zybo_mipi/Video_Transmission/Vitis/VideoTransmission/hw/system_wrapper.xsa
+TRACE::2020-11-02.20:40:34::SCWPlatform:: Unique name xilinx:::0.0
+TRACE::2020-11-02.20:40:34::SCWPlatform::Trying to set the existing hwdb with name system_wrapper_0
+TRACE::2020-11-02.20:40:34::SCWPlatform::Opened existing hwdb system_wrapper_0
+TRACE::2020-11-02.20:40:34::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2020-11-02.20:40:34::SCWMssOS::Checking the sw design at  C:/Github/Zybo_mipi/Video_Transmission/Vitis/VideoTransmission/zynq_fsbl/zynq_fsbl_bsp/system.mss
+TRACE::2020-11-02.20:40:34::SCWMssOS::DEBUG:  swdes dump  C:/Github/Zybo_mipi/Video_Transmission/Vitis/VideoTransmission/zynq_fsbl/zynq_fsbl_bsp/system.mss|system||
+
+TRACE::2020-11-02.20:40:34::SCWMssOS::Sw design exists and opened at  C:/Github/Zybo_mipi/Video_Transmission/Vitis/VideoTransmission/zynq_fsbl/zynq_fsbl_bsp/system.mss
+TRACE::2020-11-02.20:40:34::SCWPlatform::Trying to open the hw design at C:/Github/Zybo_mipi/Video_Transmission/Vitis/VideoTransmission/hw/system_wrapper.xsa
+TRACE::2020-11-02.20:40:34::SCWPlatform::DSA given C:/Github/Zybo_mipi/Video_Transmission/Vitis/VideoTransmission/hw/system_wrapper.xsa
+TRACE::2020-11-02.20:40:34::SCWPlatform::DSA absoulate path C:/Github/Zybo_mipi/Video_Transmission/Vitis/VideoTransmission/hw/system_wrapper.xsa
+TRACE::2020-11-02.20:40:34::SCWPlatform::DSA directory C:/Github/Zybo_mipi/Video_Transmission/Vitis/VideoTransmission/hw
+TRACE::2020-11-02.20:40:34::SCWPlatform:: Platform Path C:/Github/Zybo_mipi/Video_Transmission/Vitis/VideoTransmission/hw/system_wrapper.xsa
+TRACE::2020-11-02.20:40:34::SCWPlatform:: Unique name xilinx:::0.0
+TRACE::2020-11-02.20:40:34::SCWPlatform::Trying to set the existing hwdb with name system_wrapper_0
+TRACE::2020-11-02.20:40:34::SCWPlatform::Opened existing hwdb system_wrapper_0
+TRACE::2020-11-02.20:40:34::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2020-11-02.20:40:34::SCWMssOS::Checking the sw design at  C:/Github/Zybo_mipi/Video_Transmission/Vitis/VideoTransmission/zynq_fsbl/zynq_fsbl_bsp/system.mss
+TRACE::2020-11-02.20:40:34::SCWMssOS::DEBUG:  swdes dump  C:/Github/Zybo_mipi/Video_Transmission/Vitis/VideoTransmission/zynq_fsbl/zynq_fsbl_bsp/system.mss|system||
+
+TRACE::2020-11-02.20:40:34::SCWMssOS::Sw design exists and opened at  C:/Github/Zybo_mipi/Video_Transmission/Vitis/VideoTransmission/zynq_fsbl/zynq_fsbl_bsp/system.mss
+TRACE::2020-11-02.20:40:34::SCWPlatform::Trying to open the hw design at C:/Github/Zybo_mipi/Video_Transmission/Vitis/VideoTransmission/hw/system_wrapper.xsa
+TRACE::2020-11-02.20:40:34::SCWPlatform::DSA given C:/Github/Zybo_mipi/Video_Transmission/Vitis/VideoTransmission/hw/system_wrapper.xsa
+TRACE::2020-11-02.20:40:34::SCWPlatform::DSA absoulate path C:/Github/Zybo_mipi/Video_Transmission/Vitis/VideoTransmission/hw/system_wrapper.xsa
+TRACE::2020-11-02.20:40:34::SCWPlatform::DSA directory C:/Github/Zybo_mipi/Video_Transmission/Vitis/VideoTransmission/hw
+TRACE::2020-11-02.20:40:34::SCWPlatform:: Platform Path C:/Github/Zybo_mipi/Video_Transmission/Vitis/VideoTransmission/hw/system_wrapper.xsa
+TRACE::2020-11-02.20:40:34::SCWPlatform:: Unique name xilinx:::0.0
+TRACE::2020-11-02.20:40:34::SCWPlatform::Trying to set the existing hwdb with name system_wrapper_0
+TRACE::2020-11-02.20:40:34::SCWPlatform::Opened existing hwdb system_wrapper_0
+TRACE::2020-11-02.20:40:34::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2020-11-02.20:40:34::SCWMssOS::Checking the sw design at  C:/Github/Zybo_mipi/Video_Transmission/Vitis/VideoTransmission/zynq_fsbl/zynq_fsbl_bsp/system.mss
+TRACE::2020-11-02.20:40:34::SCWMssOS::DEBUG:  swdes dump  C:/Github/Zybo_mipi/Video_Transmission/Vitis/VideoTransmission/zynq_fsbl/zynq_fsbl_bsp/system.mss|system||
+
+TRACE::2020-11-02.20:40:34::SCWMssOS::Sw design exists and opened at  C:/Github/Zybo_mipi/Video_Transmission/Vitis/VideoTransmission/zynq_fsbl/zynq_fsbl_bsp/system.mss
+TRACE::2020-11-02.20:40:34::SCWWriter::formatted JSON is {
+	"platformName":	"VideoTransmission",
+	"sprVersion":	"2.0",
+	"mode":	"gui",
+	"dsaType":	"Fixed",
+	"platformDesc":	"VideoTransmission",
+	"platHandOff":	"C:/Github/Zybo_mipi/Video_Transmission/VideoTransmission/system_wrapper.xsa",
+	"platIntHandOff":	"<platformDir>/hw/system_wrapper.xsa",
+	"deviceType":	"zynq",
+	"platIsPrebuiltAutogen":	"false",
+	"platIsNoBootBsp":	"false",
+	"platFsblTarget":	"ps7_cortexa9_0",
+	"hasFsblMakeHasChanges":	"false",
+	"hasPmufwMakeHasChanges":	"false",
+	"platPreBuiltFlag":	false,
+	"platformSamplesDir":	"",
+	"platActiveSys":	"VideoTransmission",
+	"systems":	[{
+			"systemName":	"VideoTransmission",
+			"systemDesc":	"VideoTransmission",
+			"sysIsBootAutoGen":	"true",
+			"systemDispName":	"VideoTransmission",
+			"sysActiveDom":	"zynq_fsbl",
+			"sysDefaultDom":	"",
+			"domains":	[{
+					"domainName":	"zynq_fsbl",
+					"domainDispName":	"zynq_fsbl",
+					"domainDesc":	"FSBL Application BSP - Auto Generated.",
+					"processors":	"ps7_cortexa9_0",
+					"os":	"standalone",
+					"sdxOs":	"standalone",
+					"debugEnable":	"",
+					"domRuntimes":	["cpp"],
+					"swRepo":	"",
+					"mssOsVer":	"7.1",
+					"mssFile":	"",
+					"md5Digest":	"a9a07a0ab1ed09c8d3a2a026668b55e2",
+					"compatibleApp":	"zynq_fsbl",
+					"domType":	"bootDomain",
+					"appSettings":	{
+						"appCompilerFlags":	"",
+						"appLinkerFlags":	""
+					},
+					"addedLibs":	["xilffs:4.2", "xilrsa:1.5"],
+					"libOptions":	{
+						"libsContainingOptions":	[]
+					},
+					"prebuiltLibs":	{
+						"prebuiltIncPath":	[],
+						"prebuiltLibPath":	[]
+					},
+					"isolation":	{
+					}
+				}]
+		}]
+}
+TRACE::2020-11-02.20:40:34::SCWDomain::checking for install qemu data   : 
+TRACE::2020-11-02.20:40:34::SCWDomain:: Using the QEMU Data from install at  : C:/Xilinx/Vitis/2019.2/data/emulation/platforms/zynq/qemu/
+TRACE::2020-11-02.20:40:34::SCWDomain:: Using the QEMU args  from install at  : C:/Xilinx/Vitis/2019.2/data/emulation/platforms/zynq/qemu/qemu_args.txt
+TRACE::2020-11-02.20:40:34::SCWPlatform::Trying to open the hw design at C:/Github/Zybo_mipi/Video_Transmission/Vitis/VideoTransmission/hw/system_wrapper.xsa
+TRACE::2020-11-02.20:40:34::SCWPlatform::DSA given C:/Github/Zybo_mipi/Video_Transmission/Vitis/VideoTransmission/hw/system_wrapper.xsa
+TRACE::2020-11-02.20:40:34::SCWPlatform::DSA absoulate path C:/Github/Zybo_mipi/Video_Transmission/Vitis/VideoTransmission/hw/system_wrapper.xsa
+TRACE::2020-11-02.20:40:34::SCWPlatform::DSA directory C:/Github/Zybo_mipi/Video_Transmission/Vitis/VideoTransmission/hw
+TRACE::2020-11-02.20:40:34::SCWPlatform:: Platform Path C:/Github/Zybo_mipi/Video_Transmission/Vitis/VideoTransmission/hw/system_wrapper.xsa
+TRACE::2020-11-02.20:40:34::SCWPlatform:: Unique name xilinx:::0.0
+TRACE::2020-11-02.20:40:34::SCWPlatform::Trying to set the existing hwdb with name system_wrapper_0
+TRACE::2020-11-02.20:40:34::SCWPlatform::Opened existing hwdb system_wrapper_0
+TRACE::2020-11-02.20:40:34::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2020-11-02.20:40:34::SCWPlatform::Trying to open the hw design at C:/Github/Zybo_mipi/Video_Transmission/Vitis/VideoTransmission/hw/system_wrapper.xsa
+TRACE::2020-11-02.20:40:34::SCWPlatform::DSA given C:/Github/Zybo_mipi/Video_Transmission/Vitis/VideoTransmission/hw/system_wrapper.xsa
+TRACE::2020-11-02.20:40:34::SCWPlatform::DSA absoulate path C:/Github/Zybo_mipi/Video_Transmission/Vitis/VideoTransmission/hw/system_wrapper.xsa
+TRACE::2020-11-02.20:40:34::SCWPlatform::DSA directory C:/Github/Zybo_mipi/Video_Transmission/Vitis/VideoTransmission/hw
+TRACE::2020-11-02.20:40:34::SCWPlatform:: Platform Path C:/Github/Zybo_mipi/Video_Transmission/Vitis/VideoTransmission/hw/system_wrapper.xsa
+TRACE::2020-11-02.20:40:34::SCWPlatform:: Unique name xilinx:::0.0
+TRACE::2020-11-02.20:40:34::SCWPlatform::Trying to set the existing hwdb with name system_wrapper_0
+TRACE::2020-11-02.20:40:34::SCWPlatform::Opened existing hwdb system_wrapper_0
+TRACE::2020-11-02.20:40:34::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2020-11-02.20:40:34::SCWMssOS::Checking the sw design at  C:/Github/Zybo_mipi/Video_Transmission/Vitis/VideoTransmission/ps7_cortexa9_0/standalone_domain/bsp/system.mss
+TRACE::2020-11-02.20:40:34::SCWMssOS::DEBUG:  swdes dump  C:/Github/Zybo_mipi/Video_Transmission/Vitis/VideoTransmission/zynq_fsbl/zynq_fsbl_bsp/system.mss|system||
+
+TRACE::2020-11-02.20:40:34::SCWMssOS::No sw design opened at  C:/Github/Zybo_mipi/Video_Transmission/Vitis/VideoTransmission/ps7_cortexa9_0/standalone_domain/bsp/system.mss
+TRACE::2020-11-02.20:40:34::SCWMssOS::mss does not exists at C:/Github/Zybo_mipi/Video_Transmission/Vitis/VideoTransmission/ps7_cortexa9_0/standalone_domain/bsp/system.mss
+TRACE::2020-11-02.20:40:34::SCWMssOS::Creating sw design at  C:/Github/Zybo_mipi/Video_Transmission/Vitis/VideoTransmission/ps7_cortexa9_0/standalone_domain/bsp/system.mss
+TRACE::2020-11-02.20:40:34::SCWMssOS::Adding the swdes entry, created swdb C:/Github/Zybo_mipi/Video_Transmission/Vitis/VideoTransmission/ps7_cortexa9_0/standalone_domain/bsp/system.mss with des name C:/Github/Zybo_mipi/Video_Transmission/Vitis/VideoTransmission/ps7_cortexa9_0/standalone_domain/bsp/system.mss
+TRACE::2020-11-02.20:40:34::SCWMssOS::updating the scw layer changes to swdes at   C:/Github/Zybo_mipi/Video_Transmission/Vitis/VideoTransmission/ps7_cortexa9_0/standalone_domain/bsp/system.mss
+TRACE::2020-11-02.20:40:34::SCWMssOS::Writing mss at C:/Github/Zybo_mipi/Video_Transmission/Vitis/VideoTransmission/ps7_cortexa9_0/standalone_domain/bsp/system.mss
+TRACE::2020-11-02.20:40:34::SCWMssOS::Completed writing the mss file at C:/Github/Zybo_mipi/Video_Transmission/Vitis/VideoTransmission/ps7_cortexa9_0/standalone_domain/bsp
+TRACE::2020-11-02.20:40:34::SCWMssOS::Picking up changes from newly written mss file into SCW Layer. 
+TRACE::2020-11-02.20:40:34::SCWMssOS::Updated the changes from newly written mss file into SCW Layer. 
+TRACE::2020-11-02.20:40:34::SCWPlatform::Trying to open the hw design at C:/Github/Zybo_mipi/Video_Transmission/Vitis/VideoTransmission/hw/system_wrapper.xsa
+TRACE::2020-11-02.20:40:34::SCWPlatform::DSA given C:/Github/Zybo_mipi/Video_Transmission/Vitis/VideoTransmission/hw/system_wrapper.xsa
+TRACE::2020-11-02.20:40:34::SCWPlatform::DSA absoulate path C:/Github/Zybo_mipi/Video_Transmission/Vitis/VideoTransmission/hw/system_wrapper.xsa
+TRACE::2020-11-02.20:40:34::SCWPlatform::DSA directory C:/Github/Zybo_mipi/Video_Transmission/Vitis/VideoTransmission/hw
+TRACE::2020-11-02.20:40:34::SCWPlatform:: Platform Path C:/Github/Zybo_mipi/Video_Transmission/Vitis/VideoTransmission/hw/system_wrapper.xsa
+TRACE::2020-11-02.20:40:34::SCWPlatform:: Unique name xilinx:::0.0
+TRACE::2020-11-02.20:40:34::SCWPlatform::Trying to set the existing hwdb with name system_wrapper_0
+TRACE::2020-11-02.20:40:34::SCWPlatform::Opened existing hwdb system_wrapper_0
+TRACE::2020-11-02.20:40:34::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2020-11-02.20:40:34::SCWMssOS::Checking the sw design at  C:/Github/Zybo_mipi/Video_Transmission/Vitis/VideoTransmission/zynq_fsbl/zynq_fsbl_bsp/system.mss
+TRACE::2020-11-02.20:40:34::SCWMssOS::DEBUG:  swdes dump  C:/Github/Zybo_mipi/Video_Transmission/Vitis/VideoTransmission/ps7_cortexa9_0/standalone_domain/bsp/system.mss|C:/Github/Zybo_mipi/Video_Transmission/Vitis/VideoTransmission/ps7_cortexa9_0/standalone_domain/bsp/system.mss||
+C:/Github/Zybo_mipi/Video_Transmission/Vitis/VideoTransmission/zynq_fsbl/zynq_fsbl_bsp/system.mss|system||
+
+TRACE::2020-11-02.20:40:34::SCWMssOS::Sw design exists and opened at  C:/Github/Zybo_mipi/Video_Transmission/Vitis/VideoTransmission/zynq_fsbl/zynq_fsbl_bsp/system.mss
+TRACE::2020-11-02.20:40:34::SCWPlatform::Trying to open the hw design at C:/Github/Zybo_mipi/Video_Transmission/Vitis/VideoTransmission/hw/system_wrapper.xsa
+TRACE::2020-11-02.20:40:34::SCWPlatform::DSA given C:/Github/Zybo_mipi/Video_Transmission/Vitis/VideoTransmission/hw/system_wrapper.xsa
+TRACE::2020-11-02.20:40:34::SCWPlatform::DSA absoulate path C:/Github/Zybo_mipi/Video_Transmission/Vitis/VideoTransmission/hw/system_wrapper.xsa
+TRACE::2020-11-02.20:40:34::SCWPlatform::DSA directory C:/Github/Zybo_mipi/Video_Transmission/Vitis/VideoTransmission/hw
+TRACE::2020-11-02.20:40:34::SCWPlatform:: Platform Path C:/Github/Zybo_mipi/Video_Transmission/Vitis/VideoTransmission/hw/system_wrapper.xsa
+TRACE::2020-11-02.20:40:34::SCWPlatform:: Unique name xilinx:::0.0
+TRACE::2020-11-02.20:40:34::SCWPlatform::Trying to set the existing hwdb with name system_wrapper_0
+TRACE::2020-11-02.20:40:34::SCWPlatform::Opened existing hwdb system_wrapper_0
+TRACE::2020-11-02.20:40:34::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2020-11-02.20:40:34::SCWMssOS::Checking the sw design at  C:/Github/Zybo_mipi/Video_Transmission/Vitis/VideoTransmission/zynq_fsbl/zynq_fsbl_bsp/system.mss
+TRACE::2020-11-02.20:40:34::SCWMssOS::DEBUG:  swdes dump  C:/Github/Zybo_mipi/Video_Transmission/Vitis/VideoTransmission/ps7_cortexa9_0/standalone_domain/bsp/system.mss|C:/Github/Zybo_mipi/Video_Transmission/Vitis/VideoTransmission/ps7_cortexa9_0/standalone_domain/bsp/system.mss||
+C:/Github/Zybo_mipi/Video_Transmission/Vitis/VideoTransmission/zynq_fsbl/zynq_fsbl_bsp/system.mss|system||
+
+TRACE::2020-11-02.20:40:34::SCWMssOS::Sw design exists and opened at  C:/Github/Zybo_mipi/Video_Transmission/Vitis/VideoTransmission/zynq_fsbl/zynq_fsbl_bsp/system.mss
+TRACE::2020-11-02.20:40:34::SCWPlatform::Trying to open the hw design at C:/Github/Zybo_mipi/Video_Transmission/Vitis/VideoTransmission/hw/system_wrapper.xsa
+TRACE::2020-11-02.20:40:34::SCWPlatform::DSA given C:/Github/Zybo_mipi/Video_Transmission/Vitis/VideoTransmission/hw/system_wrapper.xsa
+TRACE::2020-11-02.20:40:34::SCWPlatform::DSA absoulate path C:/Github/Zybo_mipi/Video_Transmission/Vitis/VideoTransmission/hw/system_wrapper.xsa
+TRACE::2020-11-02.20:40:34::SCWPlatform::DSA directory C:/Github/Zybo_mipi/Video_Transmission/Vitis/VideoTransmission/hw
+TRACE::2020-11-02.20:40:34::SCWPlatform:: Platform Path C:/Github/Zybo_mipi/Video_Transmission/Vitis/VideoTransmission/hw/system_wrapper.xsa
+TRACE::2020-11-02.20:40:34::SCWPlatform:: Unique name xilinx:::0.0
+TRACE::2020-11-02.20:40:34::SCWPlatform::Trying to set the existing hwdb with name system_wrapper_0
+TRACE::2020-11-02.20:40:34::SCWPlatform::Opened existing hwdb system_wrapper_0
+TRACE::2020-11-02.20:40:34::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2020-11-02.20:40:34::SCWMssOS::Checking the sw design at  C:/Github/Zybo_mipi/Video_Transmission/Vitis/VideoTransmission/zynq_fsbl/zynq_fsbl_bsp/system.mss
+TRACE::2020-11-02.20:40:34::SCWMssOS::DEBUG:  swdes dump  C:/Github/Zybo_mipi/Video_Transmission/Vitis/VideoTransmission/ps7_cortexa9_0/standalone_domain/bsp/system.mss|C:/Github/Zybo_mipi/Video_Transmission/Vitis/VideoTransmission/ps7_cortexa9_0/standalone_domain/bsp/system.mss||
+C:/Github/Zybo_mipi/Video_Transmission/Vitis/VideoTransmission/zynq_fsbl/zynq_fsbl_bsp/system.mss|system||
+
+TRACE::2020-11-02.20:40:34::SCWMssOS::Sw design exists and opened at  C:/Github/Zybo_mipi/Video_Transmission/Vitis/VideoTransmission/zynq_fsbl/zynq_fsbl_bsp/system.mss
+TRACE::2020-11-02.20:40:34::SCWPlatform::Trying to open the hw design at C:/Github/Zybo_mipi/Video_Transmission/Vitis/VideoTransmission/hw/system_wrapper.xsa
+TRACE::2020-11-02.20:40:34::SCWPlatform::DSA given C:/Github/Zybo_mipi/Video_Transmission/Vitis/VideoTransmission/hw/system_wrapper.xsa
+TRACE::2020-11-02.20:40:34::SCWPlatform::DSA absoulate path C:/Github/Zybo_mipi/Video_Transmission/Vitis/VideoTransmission/hw/system_wrapper.xsa
+TRACE::2020-11-02.20:40:34::SCWPlatform::DSA directory C:/Github/Zybo_mipi/Video_Transmission/Vitis/VideoTransmission/hw
+TRACE::2020-11-02.20:40:34::SCWPlatform:: Platform Path C:/Github/Zybo_mipi/Video_Transmission/Vitis/VideoTransmission/hw/system_wrapper.xsa
+TRACE::2020-11-02.20:40:34::SCWPlatform:: Unique name xilinx:::0.0
+TRACE::2020-11-02.20:40:34::SCWPlatform::Trying to set the existing hwdb with name system_wrapper_0
+TRACE::2020-11-02.20:40:34::SCWPlatform::Opened existing hwdb system_wrapper_0
+TRACE::2020-11-02.20:40:34::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2020-11-02.20:40:34::SCWMssOS::Checking the sw design at  C:/Github/Zybo_mipi/Video_Transmission/Vitis/VideoTransmission/ps7_cortexa9_0/standalone_domain/bsp/system.mss
+TRACE::2020-11-02.20:40:34::SCWMssOS::DEBUG:  swdes dump  C:/Github/Zybo_mipi/Video_Transmission/Vitis/VideoTransmission/ps7_cortexa9_0/standalone_domain/bsp/system.mss|C:/Github/Zybo_mipi/Video_Transmission/Vitis/VideoTransmission/ps7_cortexa9_0/standalone_domain/bsp/system.mss||
+C:/Github/Zybo_mipi/Video_Transmission/Vitis/VideoTransmission/zynq_fsbl/zynq_fsbl_bsp/system.mss|system||
+
+TRACE::2020-11-02.20:40:34::SCWMssOS::Sw design exists and opened at  C:/Github/Zybo_mipi/Video_Transmission/Vitis/VideoTransmission/ps7_cortexa9_0/standalone_domain/bsp/system.mss
+TRACE::2020-11-02.20:40:34::SCWPlatform::Trying to open the hw design at C:/Github/Zybo_mipi/Video_Transmission/Vitis/VideoTransmission/hw/system_wrapper.xsa
+TRACE::2020-11-02.20:40:34::SCWPlatform::DSA given C:/Github/Zybo_mipi/Video_Transmission/Vitis/VideoTransmission/hw/system_wrapper.xsa
+TRACE::2020-11-02.20:40:34::SCWPlatform::DSA absoulate path C:/Github/Zybo_mipi/Video_Transmission/Vitis/VideoTransmission/hw/system_wrapper.xsa
+TRACE::2020-11-02.20:40:34::SCWPlatform::DSA directory C:/Github/Zybo_mipi/Video_Transmission/Vitis/VideoTransmission/hw
+TRACE::2020-11-02.20:40:34::SCWPlatform:: Platform Path C:/Github/Zybo_mipi/Video_Transmission/Vitis/VideoTransmission/hw/system_wrapper.xsa
+TRACE::2020-11-02.20:40:34::SCWPlatform:: Unique name xilinx:::0.0
+TRACE::2020-11-02.20:40:34::SCWPlatform::Trying to set the existing hwdb with name system_wrapper_0
+TRACE::2020-11-02.20:40:34::SCWPlatform::Opened existing hwdb system_wrapper_0
+TRACE::2020-11-02.20:40:34::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2020-11-02.20:40:34::SCWMssOS::Checking the sw design at  C:/Github/Zybo_mipi/Video_Transmission/Vitis/VideoTransmission/ps7_cortexa9_0/standalone_domain/bsp/system.mss
+TRACE::2020-11-02.20:40:34::SCWMssOS::DEBUG:  swdes dump  C:/Github/Zybo_mipi/Video_Transmission/Vitis/VideoTransmission/ps7_cortexa9_0/standalone_domain/bsp/system.mss|C:/Github/Zybo_mipi/Video_Transmission/Vitis/VideoTransmission/ps7_cortexa9_0/standalone_domain/bsp/system.mss||
+C:/Github/Zybo_mipi/Video_Transmission/Vitis/VideoTransmission/zynq_fsbl/zynq_fsbl_bsp/system.mss|system||
+
+TRACE::2020-11-02.20:40:34::SCWMssOS::Sw design exists and opened at  C:/Github/Zybo_mipi/Video_Transmission/Vitis/VideoTransmission/ps7_cortexa9_0/standalone_domain/bsp/system.mss
+TRACE::2020-11-02.20:40:34::SCWPlatform::Trying to open the hw design at C:/Github/Zybo_mipi/Video_Transmission/Vitis/VideoTransmission/hw/system_wrapper.xsa
+TRACE::2020-11-02.20:40:34::SCWPlatform::DSA given C:/Github/Zybo_mipi/Video_Transmission/Vitis/VideoTransmission/hw/system_wrapper.xsa
+TRACE::2020-11-02.20:40:34::SCWPlatform::DSA absoulate path C:/Github/Zybo_mipi/Video_Transmission/Vitis/VideoTransmission/hw/system_wrapper.xsa
+TRACE::2020-11-02.20:40:34::SCWPlatform::DSA directory C:/Github/Zybo_mipi/Video_Transmission/Vitis/VideoTransmission/hw
+TRACE::2020-11-02.20:40:34::SCWPlatform:: Platform Path C:/Github/Zybo_mipi/Video_Transmission/Vitis/VideoTransmission/hw/system_wrapper.xsa
+TRACE::2020-11-02.20:40:34::SCWPlatform:: Unique name xilinx:::0.0
+TRACE::2020-11-02.20:40:34::SCWPlatform::Trying to set the existing hwdb with name system_wrapper_0
+TRACE::2020-11-02.20:40:34::SCWPlatform::Opened existing hwdb system_wrapper_0
+TRACE::2020-11-02.20:40:34::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2020-11-02.20:40:34::SCWMssOS::Checking the sw design at  C:/Github/Zybo_mipi/Video_Transmission/Vitis/VideoTransmission/ps7_cortexa9_0/standalone_domain/bsp/system.mss
+TRACE::2020-11-02.20:40:34::SCWMssOS::DEBUG:  swdes dump  C:/Github/Zybo_mipi/Video_Transmission/Vitis/VideoTransmission/ps7_cortexa9_0/standalone_domain/bsp/system.mss|C:/Github/Zybo_mipi/Video_Transmission/Vitis/VideoTransmission/ps7_cortexa9_0/standalone_domain/bsp/system.mss||
+C:/Github/Zybo_mipi/Video_Transmission/Vitis/VideoTransmission/zynq_fsbl/zynq_fsbl_bsp/system.mss|system||
+
+TRACE::2020-11-02.20:40:34::SCWMssOS::Sw design exists and opened at  C:/Github/Zybo_mipi/Video_Transmission/Vitis/VideoTransmission/ps7_cortexa9_0/standalone_domain/bsp/system.mss
+TRACE::2020-11-02.20:40:34::SCWWriter::formatted JSON is {
+	"platformName":	"VideoTransmission",
+	"sprVersion":	"2.0",
+	"mode":	"gui",
+	"dsaType":	"Fixed",
+	"platformDesc":	"VideoTransmission",
+	"platHandOff":	"C:/Github/Zybo_mipi/Video_Transmission/VideoTransmission/system_wrapper.xsa",
+	"platIntHandOff":	"<platformDir>/hw/system_wrapper.xsa",
+	"deviceType":	"zynq",
+	"platIsPrebuiltAutogen":	"false",
+	"platIsNoBootBsp":	"false",
+	"platFsblTarget":	"ps7_cortexa9_0",
+	"hasFsblMakeHasChanges":	"false",
+	"hasPmufwMakeHasChanges":	"false",
+	"platPreBuiltFlag":	false,
+	"platformSamplesDir":	"",
+	"platActiveSys":	"VideoTransmission",
+	"systems":	[{
+			"systemName":	"VideoTransmission",
+			"systemDesc":	"VideoTransmission",
+			"sysIsBootAutoGen":	"true",
+			"systemDispName":	"VideoTransmission",
+			"sysActiveDom":	"standalone_domain",
+			"sysDefaultDom":	"standalone_domain",
+			"domains":	[{
+					"domainName":	"zynq_fsbl",
+					"domainDispName":	"zynq_fsbl",
+					"domainDesc":	"FSBL Application BSP - Auto Generated.",
+					"processors":	"ps7_cortexa9_0",
+					"os":	"standalone",
+					"sdxOs":	"standalone",
+					"debugEnable":	"",
+					"domRuntimes":	["cpp"],
+					"swRepo":	"",
+					"mssOsVer":	"7.1",
+					"mssFile":	"",
+					"md5Digest":	"a9a07a0ab1ed09c8d3a2a026668b55e2",
+					"compatibleApp":	"zynq_fsbl",
+					"domType":	"bootDomain",
+					"appSettings":	{
+						"appCompilerFlags":	"",
+						"appLinkerFlags":	""
+					},
+					"addedLibs":	["xilffs:4.2", "xilrsa:1.5"],
+					"libOptions":	{
+						"libsContainingOptions":	[]
+					},
+					"prebuiltLibs":	{
+						"prebuiltIncPath":	[],
+						"prebuiltLibPath":	[]
+					},
+					"isolation":	{
+					}
+				}, {
+					"domainName":	"standalone_domain",
+					"domainDispName":	"standalone_domain",
+					"domainDesc":	"standalone_domain",
+					"processors":	"ps7_cortexa9_0",
+					"os":	"standalone",
+					"sdxOs":	"standalone",
+					"qemuArgs":	"C:/Xilinx/Vitis/2019.2/data/emulation/platforms/zynq/qemu/qemu_args.txt",
+					"qemuData":	"C:/Xilinx/Vitis/2019.2/data/emulation/platforms/zynq/qemu/",
+					"debugEnable":	"False",
+					"domRuntimes":	["cpp"],
+					"swRepo":	"",
+					"mssOsVer":	"7.1",
+					"mssFile":	"",
+					"md5Digest":	"",
+					"compatibleApp":	"",
+					"domType":	"mssDomain",
+					"appSettings":	{
+						"appCompilerFlags":	"",
+						"appLinkerFlags":	""
+					},
+					"addedLibs":	[],
+					"libOptions":	{
+						"libsContainingOptions":	[]
+					},
+					"prebuiltLibs":	{
+						"prebuiltIncPath":	[],
+						"prebuiltLibPath":	[]
+					},
+					"isolation":	{
+					}
+				}]
+		}]
+}
+TRACE::2020-11-02.20:40:34::SCWPlatform::Trying to open the hw design at C:/Github/Zybo_mipi/Video_Transmission/Vitis/VideoTransmission/hw/system_wrapper.xsa
+TRACE::2020-11-02.20:40:34::SCWPlatform::DSA given C:/Github/Zybo_mipi/Video_Transmission/Vitis/VideoTransmission/hw/system_wrapper.xsa
+TRACE::2020-11-02.20:40:34::SCWPlatform::DSA absoulate path C:/Github/Zybo_mipi/Video_Transmission/Vitis/VideoTransmission/hw/system_wrapper.xsa
+TRACE::2020-11-02.20:40:34::SCWPlatform::DSA directory C:/Github/Zybo_mipi/Video_Transmission/Vitis/VideoTransmission/hw
+TRACE::2020-11-02.20:40:34::SCWPlatform:: Platform Path C:/Github/Zybo_mipi/Video_Transmission/Vitis/VideoTransmission/hw/system_wrapper.xsa
+TRACE::2020-11-02.20:40:34::SCWPlatform:: Unique name xilinx:::0.0
+TRACE::2020-11-02.20:40:34::SCWPlatform::Trying to set the existing hwdb with name system_wrapper_0
+TRACE::2020-11-02.20:40:34::SCWPlatform::Opened existing hwdb system_wrapper_0
+TRACE::2020-11-02.20:40:34::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2020-11-02.20:40:34::SCWMssOS::Checking the sw design at  C:/Github/Zybo_mipi/Video_Transmission/Vitis/VideoTransmission/ps7_cortexa9_0/standalone_domain/bsp/system.mss
+TRACE::2020-11-02.20:40:34::SCWMssOS::DEBUG:  swdes dump  C:/Github/Zybo_mipi/Video_Transmission/Vitis/VideoTransmission/ps7_cortexa9_0/standalone_domain/bsp/system.mss|C:/Github/Zybo_mipi/Video_Transmission/Vitis/VideoTransmission/ps7_cortexa9_0/standalone_domain/bsp/system.mss||
+C:/Github/Zybo_mipi/Video_Transmission/Vitis/VideoTransmission/zynq_fsbl/zynq_fsbl_bsp/system.mss|system||
+
+TRACE::2020-11-02.20:40:34::SCWMssOS::Sw design exists and opened at  C:/Github/Zybo_mipi/Video_Transmission/Vitis/VideoTransmission/ps7_cortexa9_0/standalone_domain/bsp/system.mss
+TRACE::2020-11-02.20:40:34::SCWMssOS::Completed writing the mss file at C:/Github/Zybo_mipi/Video_Transmission/Vitis/VideoTransmission/ps7_cortexa9_0/standalone_domain/bsp
+TRACE::2020-11-02.20:40:34::SCWMssOS::Forcing BSP Sources regeneration.
+LOG::2020-11-02.20:40:37::SCWPlatform::Started generating the artifacts platform VideoTransmission
+TRACE::2020-11-02.20:40:37::SCWPlatform::Sanity checking of platform is completed
+LOG::2020-11-02.20:40:37::SCWPlatform::Started generating the artifacts for system configuration VideoTransmission
+LOG::2020-11-02.20:40:37::SCWSystem::Checking the domain zynq_fsbl
+LOG::2020-11-02.20:40:37::SCWSystem::Doing application build for :  zynq_fsbl
+TRACE::2020-11-02.20:40:37::SCWBDomain::Not a forced makefile updation, No changes are present. 
+TRACE::2020-11-02.20:40:37::SCWDomain::Skipping the build for domain :  zynq_fsbl
+LOG::2020-11-02.20:40:37::SCWSystem::Checking the domain standalone_domain
+LOG::2020-11-02.20:40:37::SCWSystem::Not a boot domain 
+LOG::2020-11-02.20:40:37::SCWSystem::Started Processing the domain standalone_domain
+TRACE::2020-11-02.20:40:37::SCWDomain::Generating domain artifcats
+TRACE::2020-11-02.20:40:37::SCWMssOS::Generating standalone artifcats
+TRACE::2020-11-02.20:40:37::SCWMssOS::Copying the qemu file from  C:/Xilinx/Vitis/2019.2/data/emulation/platforms/zynq/qemu/qemu_args.txt To C:/Github/Zybo_mipi/Video_Transmission/Vitis/VideoTransmission/export/VideoTransmission/sw/VideoTransmission/qemu/
+TRACE::2020-11-02.20:40:37::SCWMssOS::Copying the qemu file from  C:/Xilinx/Vitis/2019.2/data/emulation/platforms/zynq/qemu/qemu_args.txt To C:/Github/Zybo_mipi/Video_Transmission/Vitis/VideoTransmission/export/VideoTransmission/sw/VideoTransmission/standalone_domain/qemu/
+TRACE::2020-11-02.20:40:37::SCWMssOS:: Copying the user libraries. 
+TRACE::2020-11-02.20:40:37::SCWPlatform::Trying to open the hw design at C:/Github/Zybo_mipi/Video_Transmission/Vitis/VideoTransmission/hw/system_wrapper.xsa
+TRACE::2020-11-02.20:40:37::SCWPlatform::DSA given C:/Github/Zybo_mipi/Video_Transmission/Vitis/VideoTransmission/hw/system_wrapper.xsa
+TRACE::2020-11-02.20:40:37::SCWPlatform::DSA absoulate path C:/Github/Zybo_mipi/Video_Transmission/Vitis/VideoTransmission/hw/system_wrapper.xsa
+TRACE::2020-11-02.20:40:37::SCWPlatform::DSA directory C:/Github/Zybo_mipi/Video_Transmission/Vitis/VideoTransmission/hw
+TRACE::2020-11-02.20:40:37::SCWPlatform:: Platform Path C:/Github/Zybo_mipi/Video_Transmission/Vitis/VideoTransmission/hw/system_wrapper.xsa
+TRACE::2020-11-02.20:40:37::SCWPlatform:: Unique name xilinx:::0.0
+TRACE::2020-11-02.20:40:37::SCWPlatform::Trying to set the existing hwdb with name system_wrapper_0
+TRACE::2020-11-02.20:40:37::SCWPlatform::Opened existing hwdb system_wrapper_0
+TRACE::2020-11-02.20:40:37::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2020-11-02.20:40:37::SCWMssOS::Checking the sw design at  C:/Github/Zybo_mipi/Video_Transmission/Vitis/VideoTransmission/ps7_cortexa9_0/standalone_domain/bsp/system.mss
+TRACE::2020-11-02.20:40:37::SCWMssOS::DEBUG:  swdes dump  C:/Github/Zybo_mipi/Video_Transmission/Vitis/VideoTransmission/ps7_cortexa9_0/standalone_domain/bsp/system.mss|C:/Github/Zybo_mipi/Video_Transmission/Vitis/VideoTransmission/ps7_cortexa9_0/standalone_domain/bsp/system.mss||
+C:/Github/Zybo_mipi/Video_Transmission/Vitis/VideoTransmission/zynq_fsbl/zynq_fsbl_bsp/system.mss|system||
+
+KEYINFO::2020-11-02.20:40:37::SCWMssOS::Could not open the swdb for C:/Github/Zybo_mipi/Video_Transmission/Vitis/VideoTransmission/ps7_cortexa9_0/standalone_domain/bsp/system.mss
+KEYINFO::2020-11-02.20:40:37::SCWMssOS::Could not open the sw design at  C:/Github/Zybo_mipi/Video_Transmission/Vitis/VideoTransmission/ps7_cortexa9_0/standalone_domain/bsp/system.mss
+ERROR: [Hsi 55-1558] Software Design C:/Github/Zybo_mipi/Video_Transmission/Vitis/VideoTransmission/ps7_cortexa9_0/standalone_domain/bsp/system.mss is not found
+
+TRACE::2020-11-02.20:40:37::SCWMssOS::Cleared the swdb table entry
+TRACE::2020-11-02.20:40:37::SCWMssOS::No sw design opened at  C:/Github/Zybo_mipi/Video_Transmission/Vitis/VideoTransmission/ps7_cortexa9_0/standalone_domain/bsp/system.mss
+TRACE::2020-11-02.20:40:37::SCWMssOS::mss exists loading the mss file  C:/Github/Zybo_mipi/Video_Transmission/Vitis/VideoTransmission/ps7_cortexa9_0/standalone_domain/bsp/system.mss
+TRACE::2020-11-02.20:40:37::SCWMssOS::Opened the sw design from mss  C:/Github/Zybo_mipi/Video_Transmission/Vitis/VideoTransmission/ps7_cortexa9_0/standalone_domain/bsp/system.mss
+TRACE::2020-11-02.20:40:37::SCWMssOS::Adding the swdes entry C:/Github/Zybo_mipi/Video_Transmission/Vitis/VideoTransmission/ps7_cortexa9_0/standalone_domain/bsp/system.mss with des name system_0
+TRACE::2020-11-02.20:40:37::SCWMssOS::updating the scw layer about changes
+TRACE::2020-11-02.20:40:37::SCWMssOS::Opened the sw design.  C:/Github/Zybo_mipi/Video_Transmission/Vitis/VideoTransmission/ps7_cortexa9_0/standalone_domain/bsp/system.mss
+TRACE::2020-11-02.20:40:37::SCWMssOS::Completed writing the mss file at C:/Github/Zybo_mipi/Video_Transmission/Vitis/VideoTransmission/ps7_cortexa9_0/standalone_domain/bsp
+TRACE::2020-11-02.20:40:37::SCWMssOS::Mss edits present, copying mssfile into export location C:/Github/Zybo_mipi/Video_Transmission/Vitis/VideoTransmission/ps7_cortexa9_0/standalone_domain/bsp/system.mss
+TRACE::2020-11-02.20:40:37::SCWMssOS::bsp generated is upto date with the mss file. Skipping bsp generation.
+TRACE::2020-11-02.20:40:37::SCWMssOS::BSP is already built. skipping the bsp build ... 
+TRACE::2020-11-02.20:40:37::SCWDomain::Skipping the build for domain :  standalone_domain
+TRACE::2020-11-02.20:40:37::SCWMssOS::skipping the bsp build ... 
+TRACE::2020-11-02.20:40:37::SCWMssOS::Copying to export directory.
+TRACE::2020-11-02.20:40:37::SCWMssOS:: Checking if to create the Supporting Applications
+TRACE::2020-11-02.20:40:37::SCWMssOS:: No Linux domain exists, trying to generate FSBL 
+TRACE::2020-11-02.20:40:37::SCWMssOS:: Completed Standalone Artifacts creation 
+LOG::2020-11-02.20:40:37::SCWSystem::Completed Processing the domain standalone_domain
+LOG::2020-11-02.20:40:37::SCWSystem::Completed Processing the sysconfig VideoTransmission
+LOG::2020-11-02.20:40:37::SCWPlatform::Completed generating the artifacts for system configuration VideoTransmission
+TRACE::2020-11-02.20:40:37::SCWPlatform::Started preparing the platform 
+TRACE::2020-11-02.20:40:37::SCWSystem::Writing the bif file for system config VideoTransmission
+TRACE::2020-11-02.20:40:37::SCWSystem::dir created 
+TRACE::2020-11-02.20:40:37::SCWSystem::Writing the bif 
+TRACE::2020-11-02.20:40:37::SCWPlatform::Started writing the spfm file 
+TRACE::2020-11-02.20:40:37::SCWPlatform::Started writing the xpfm file 
+TRACE::2020-11-02.20:40:37::SCWPlatform::Completed generating the platform
+TRACE::2020-11-02.20:40:37::SCWPlatform::Trying to open the hw design at C:/Github/Zybo_mipi/Video_Transmission/Vitis/VideoTransmission/hw/system_wrapper.xsa
+TRACE::2020-11-02.20:40:37::SCWPlatform::DSA given C:/Github/Zybo_mipi/Video_Transmission/Vitis/VideoTransmission/hw/system_wrapper.xsa
+TRACE::2020-11-02.20:40:37::SCWPlatform::DSA absoulate path C:/Github/Zybo_mipi/Video_Transmission/Vitis/VideoTransmission/hw/system_wrapper.xsa
+TRACE::2020-11-02.20:40:37::SCWPlatform::DSA directory C:/Github/Zybo_mipi/Video_Transmission/Vitis/VideoTransmission/hw
+TRACE::2020-11-02.20:40:37::SCWPlatform:: Platform Path C:/Github/Zybo_mipi/Video_Transmission/Vitis/VideoTransmission/hw/system_wrapper.xsa
+TRACE::2020-11-02.20:40:37::SCWPlatform:: Unique name xilinx:::0.0
+TRACE::2020-11-02.20:40:37::SCWPlatform::Trying to set the existing hwdb with name system_wrapper_0
+TRACE::2020-11-02.20:40:37::SCWPlatform::Opened existing hwdb system_wrapper_0
+TRACE::2020-11-02.20:40:37::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2020-11-02.20:40:37::SCWMssOS::Checking the sw design at  C:/Github/Zybo_mipi/Video_Transmission/Vitis/VideoTransmission/zynq_fsbl/zynq_fsbl_bsp/system.mss
+TRACE::2020-11-02.20:40:37::SCWMssOS::DEBUG:  swdes dump  C:/Github/Zybo_mipi/Video_Transmission/Vitis/VideoTransmission/ps7_cortexa9_0/standalone_domain/bsp/system.mss|system_0||
+C:/Github/Zybo_mipi/Video_Transmission/Vitis/VideoTransmission/zynq_fsbl/zynq_fsbl_bsp/system.mss|system||
+
+TRACE::2020-11-02.20:40:37::SCWMssOS::Sw design exists and opened at  C:/Github/Zybo_mipi/Video_Transmission/Vitis/VideoTransmission/zynq_fsbl/zynq_fsbl_bsp/system.mss
+TRACE::2020-11-02.20:40:37::SCWPlatform::Trying to open the hw design at C:/Github/Zybo_mipi/Video_Transmission/Vitis/VideoTransmission/hw/system_wrapper.xsa
+TRACE::2020-11-02.20:40:37::SCWPlatform::DSA given C:/Github/Zybo_mipi/Video_Transmission/Vitis/VideoTransmission/hw/system_wrapper.xsa
+TRACE::2020-11-02.20:40:37::SCWPlatform::DSA absoulate path C:/Github/Zybo_mipi/Video_Transmission/Vitis/VideoTransmission/hw/system_wrapper.xsa
+TRACE::2020-11-02.20:40:37::SCWPlatform::DSA directory C:/Github/Zybo_mipi/Video_Transmission/Vitis/VideoTransmission/hw
+TRACE::2020-11-02.20:40:37::SCWPlatform:: Platform Path C:/Github/Zybo_mipi/Video_Transmission/Vitis/VideoTransmission/hw/system_wrapper.xsa
+TRACE::2020-11-02.20:40:37::SCWPlatform:: Unique name xilinx:::0.0
+TRACE::2020-11-02.20:40:37::SCWPlatform::Trying to set the existing hwdb with name system_wrapper_0
+TRACE::2020-11-02.20:40:37::SCWPlatform::Opened existing hwdb system_wrapper_0
+TRACE::2020-11-02.20:40:37::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2020-11-02.20:40:37::SCWMssOS::Checking the sw design at  C:/Github/Zybo_mipi/Video_Transmission/Vitis/VideoTransmission/zynq_fsbl/zynq_fsbl_bsp/system.mss
+TRACE::2020-11-02.20:40:37::SCWMssOS::DEBUG:  swdes dump  C:/Github/Zybo_mipi/Video_Transmission/Vitis/VideoTransmission/ps7_cortexa9_0/standalone_domain/bsp/system.mss|system_0||
+C:/Github/Zybo_mipi/Video_Transmission/Vitis/VideoTransmission/zynq_fsbl/zynq_fsbl_bsp/system.mss|system||
+
+TRACE::2020-11-02.20:40:37::SCWMssOS::Sw design exists and opened at  C:/Github/Zybo_mipi/Video_Transmission/Vitis/VideoTransmission/zynq_fsbl/zynq_fsbl_bsp/system.mss
+TRACE::2020-11-02.20:40:37::SCWPlatform::Trying to open the hw design at C:/Github/Zybo_mipi/Video_Transmission/Vitis/VideoTransmission/hw/system_wrapper.xsa
+TRACE::2020-11-02.20:40:37::SCWPlatform::DSA given C:/Github/Zybo_mipi/Video_Transmission/Vitis/VideoTransmission/hw/system_wrapper.xsa
+TRACE::2020-11-02.20:40:37::SCWPlatform::DSA absoulate path C:/Github/Zybo_mipi/Video_Transmission/Vitis/VideoTransmission/hw/system_wrapper.xsa
+TRACE::2020-11-02.20:40:37::SCWPlatform::DSA directory C:/Github/Zybo_mipi/Video_Transmission/Vitis/VideoTransmission/hw
+TRACE::2020-11-02.20:40:37::SCWPlatform:: Platform Path C:/Github/Zybo_mipi/Video_Transmission/Vitis/VideoTransmission/hw/system_wrapper.xsa
+TRACE::2020-11-02.20:40:37::SCWPlatform:: Unique name xilinx:::0.0
+TRACE::2020-11-02.20:40:37::SCWPlatform::Trying to set the existing hwdb with name system_wrapper_0
+TRACE::2020-11-02.20:40:37::SCWPlatform::Opened existing hwdb system_wrapper_0
+TRACE::2020-11-02.20:40:37::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2020-11-02.20:40:37::SCWMssOS::Checking the sw design at  C:/Github/Zybo_mipi/Video_Transmission/Vitis/VideoTransmission/zynq_fsbl/zynq_fsbl_bsp/system.mss
+TRACE::2020-11-02.20:40:37::SCWMssOS::DEBUG:  swdes dump  C:/Github/Zybo_mipi/Video_Transmission/Vitis/VideoTransmission/ps7_cortexa9_0/standalone_domain/bsp/system.mss|system_0||
+C:/Github/Zybo_mipi/Video_Transmission/Vitis/VideoTransmission/zynq_fsbl/zynq_fsbl_bsp/system.mss|system||
+
+TRACE::2020-11-02.20:40:37::SCWMssOS::Sw design exists and opened at  C:/Github/Zybo_mipi/Video_Transmission/Vitis/VideoTransmission/zynq_fsbl/zynq_fsbl_bsp/system.mss
+TRACE::2020-11-02.20:40:37::SCWPlatform::Trying to open the hw design at C:/Github/Zybo_mipi/Video_Transmission/Vitis/VideoTransmission/hw/system_wrapper.xsa
+TRACE::2020-11-02.20:40:37::SCWPlatform::DSA given C:/Github/Zybo_mipi/Video_Transmission/Vitis/VideoTransmission/hw/system_wrapper.xsa
+TRACE::2020-11-02.20:40:37::SCWPlatform::DSA absoulate path C:/Github/Zybo_mipi/Video_Transmission/Vitis/VideoTransmission/hw/system_wrapper.xsa
+TRACE::2020-11-02.20:40:37::SCWPlatform::DSA directory C:/Github/Zybo_mipi/Video_Transmission/Vitis/VideoTransmission/hw
+TRACE::2020-11-02.20:40:37::SCWPlatform:: Platform Path C:/Github/Zybo_mipi/Video_Transmission/Vitis/VideoTransmission/hw/system_wrapper.xsa
+TRACE::2020-11-02.20:40:37::SCWPlatform:: Unique name xilinx:::0.0
+TRACE::2020-11-02.20:40:37::SCWPlatform::Trying to set the existing hwdb with name system_wrapper_0
+TRACE::2020-11-02.20:40:37::SCWPlatform::Opened existing hwdb system_wrapper_0
+TRACE::2020-11-02.20:40:37::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2020-11-02.20:40:37::SCWMssOS::Checking the sw design at  C:/Github/Zybo_mipi/Video_Transmission/Vitis/VideoTransmission/ps7_cortexa9_0/standalone_domain/bsp/system.mss
+TRACE::2020-11-02.20:40:37::SCWMssOS::DEBUG:  swdes dump  C:/Github/Zybo_mipi/Video_Transmission/Vitis/VideoTransmission/ps7_cortexa9_0/standalone_domain/bsp/system.mss|system_0||
+C:/Github/Zybo_mipi/Video_Transmission/Vitis/VideoTransmission/zynq_fsbl/zynq_fsbl_bsp/system.mss|system||
+
+TRACE::2020-11-02.20:40:37::SCWMssOS::Sw design exists and opened at  C:/Github/Zybo_mipi/Video_Transmission/Vitis/VideoTransmission/ps7_cortexa9_0/standalone_domain/bsp/system.mss
+TRACE::2020-11-02.20:40:37::SCWPlatform::Trying to open the hw design at C:/Github/Zybo_mipi/Video_Transmission/Vitis/VideoTransmission/hw/system_wrapper.xsa
+TRACE::2020-11-02.20:40:37::SCWPlatform::DSA given C:/Github/Zybo_mipi/Video_Transmission/Vitis/VideoTransmission/hw/system_wrapper.xsa
+TRACE::2020-11-02.20:40:37::SCWPlatform::DSA absoulate path C:/Github/Zybo_mipi/Video_Transmission/Vitis/VideoTransmission/hw/system_wrapper.xsa
+TRACE::2020-11-02.20:40:37::SCWPlatform::DSA directory C:/Github/Zybo_mipi/Video_Transmission/Vitis/VideoTransmission/hw
+TRACE::2020-11-02.20:40:37::SCWPlatform:: Platform Path C:/Github/Zybo_mipi/Video_Transmission/Vitis/VideoTransmission/hw/system_wrapper.xsa
+TRACE::2020-11-02.20:40:37::SCWPlatform:: Unique name xilinx:::0.0
+TRACE::2020-11-02.20:40:37::SCWPlatform::Trying to set the existing hwdb with name system_wrapper_0
+TRACE::2020-11-02.20:40:37::SCWPlatform::Opened existing hwdb system_wrapper_0
+TRACE::2020-11-02.20:40:37::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2020-11-02.20:40:37::SCWMssOS::Checking the sw design at  C:/Github/Zybo_mipi/Video_Transmission/Vitis/VideoTransmission/ps7_cortexa9_0/standalone_domain/bsp/system.mss
+TRACE::2020-11-02.20:40:37::SCWMssOS::DEBUG:  swdes dump  C:/Github/Zybo_mipi/Video_Transmission/Vitis/VideoTransmission/ps7_cortexa9_0/standalone_domain/bsp/system.mss|system_0||
+C:/Github/Zybo_mipi/Video_Transmission/Vitis/VideoTransmission/zynq_fsbl/zynq_fsbl_bsp/system.mss|system||
+
+TRACE::2020-11-02.20:40:37::SCWMssOS::Sw design exists and opened at  C:/Github/Zybo_mipi/Video_Transmission/Vitis/VideoTransmission/ps7_cortexa9_0/standalone_domain/bsp/system.mss
+TRACE::2020-11-02.20:40:37::SCWPlatform::Trying to open the hw design at C:/Github/Zybo_mipi/Video_Transmission/Vitis/VideoTransmission/hw/system_wrapper.xsa
+TRACE::2020-11-02.20:40:37::SCWPlatform::DSA given C:/Github/Zybo_mipi/Video_Transmission/Vitis/VideoTransmission/hw/system_wrapper.xsa
+TRACE::2020-11-02.20:40:37::SCWPlatform::DSA absoulate path C:/Github/Zybo_mipi/Video_Transmission/Vitis/VideoTransmission/hw/system_wrapper.xsa
+TRACE::2020-11-02.20:40:37::SCWPlatform::DSA directory C:/Github/Zybo_mipi/Video_Transmission/Vitis/VideoTransmission/hw
+TRACE::2020-11-02.20:40:37::SCWPlatform:: Platform Path C:/Github/Zybo_mipi/Video_Transmission/Vitis/VideoTransmission/hw/system_wrapper.xsa
+TRACE::2020-11-02.20:40:37::SCWPlatform:: Unique name xilinx:::0.0
+TRACE::2020-11-02.20:40:37::SCWPlatform::Trying to set the existing hwdb with name system_wrapper_0
+TRACE::2020-11-02.20:40:37::SCWPlatform::Opened existing hwdb system_wrapper_0
+TRACE::2020-11-02.20:40:37::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2020-11-02.20:40:37::SCWMssOS::Checking the sw design at  C:/Github/Zybo_mipi/Video_Transmission/Vitis/VideoTransmission/ps7_cortexa9_0/standalone_domain/bsp/system.mss
+TRACE::2020-11-02.20:40:37::SCWMssOS::DEBUG:  swdes dump  C:/Github/Zybo_mipi/Video_Transmission/Vitis/VideoTransmission/ps7_cortexa9_0/standalone_domain/bsp/system.mss|system_0||
+C:/Github/Zybo_mipi/Video_Transmission/Vitis/VideoTransmission/zynq_fsbl/zynq_fsbl_bsp/system.mss|system||
+
+TRACE::2020-11-02.20:40:37::SCWMssOS::Sw design exists and opened at  C:/Github/Zybo_mipi/Video_Transmission/Vitis/VideoTransmission/ps7_cortexa9_0/standalone_domain/bsp/system.mss
+TRACE::2020-11-02.20:40:37::SCWWriter::formatted JSON is {
+	"platformName":	"VideoTransmission",
+	"sprVersion":	"2.0",
+	"mode":	"gui",
+	"dsaType":	"Fixed",
+	"platformDesc":	"VideoTransmission",
+	"platHandOff":	"C:/Github/Zybo_mipi/Video_Transmission/VideoTransmission/system_wrapper.xsa",
+	"platIntHandOff":	"<platformDir>/hw/system_wrapper.xsa",
+	"deviceType":	"zynq",
+	"platIsPrebuiltAutogen":	"false",
+	"platIsNoBootBsp":	"false",
+	"platFsblTarget":	"ps7_cortexa9_0",
+	"hasFsblMakeHasChanges":	"false",
+	"hasPmufwMakeHasChanges":	"false",
+	"platPreBuiltFlag":	false,
+	"platformSamplesDir":	"",
+	"platActiveSys":	"VideoTransmission",
+	"systems":	[{
+			"systemName":	"VideoTransmission",
+			"systemDesc":	"VideoTransmission",
+			"sysIsBootAutoGen":	"true",
+			"systemDispName":	"VideoTransmission",
+			"sysActiveDom":	"standalone_domain",
+			"sysDefaultDom":	"standalone_domain",
+			"domains":	[{
+					"domainName":	"zynq_fsbl",
+					"domainDispName":	"zynq_fsbl",
+					"domainDesc":	"FSBL Application BSP - Auto Generated.",
+					"processors":	"ps7_cortexa9_0",
+					"os":	"standalone",
+					"sdxOs":	"standalone",
+					"debugEnable":	"",
+					"domRuntimes":	["cpp"],
+					"swRepo":	"",
+					"mssOsVer":	"7.1",
+					"mssFile":	"",
+					"md5Digest":	"a9a07a0ab1ed09c8d3a2a026668b55e2",
+					"compatibleApp":	"zynq_fsbl",
+					"domType":	"bootDomain",
+					"appSettings":	{
+						"appCompilerFlags":	"",
+						"appLinkerFlags":	""
+					},
+					"addedLibs":	["xilffs:4.2", "xilrsa:1.5"],
+					"libOptions":	{
+						"libsContainingOptions":	[]
+					},
+					"prebuiltLibs":	{
+						"prebuiltIncPath":	[],
+						"prebuiltLibPath":	[]
+					},
+					"isolation":	{
+					}
+				}, {
+					"domainName":	"standalone_domain",
+					"domainDispName":	"standalone_domain",
+					"domainDesc":	"standalone_domain",
+					"processors":	"ps7_cortexa9_0",
+					"os":	"standalone",
+					"sdxOs":	"standalone",
+					"qemuArgs":	"C:/Xilinx/Vitis/2019.2/data/emulation/platforms/zynq/qemu/qemu_args.txt",
+					"qemuData":	"C:/Xilinx/Vitis/2019.2/data/emulation/platforms/zynq/qemu/",
+					"debugEnable":	"False",
+					"domRuntimes":	["cpp"],
+					"swRepo":	"",
+					"mssOsVer":	"7.1",
+					"mssFile":	"",
+					"md5Digest":	"ddce2d666a90134d9500630be813f080",
+					"compatibleApp":	"",
+					"domType":	"mssDomain",
+					"appSettings":	{
+						"appCompilerFlags":	"",
+						"appLinkerFlags":	""
+					},
+					"addedLibs":	[],
+					"libOptions":	{
+						"libsContainingOptions":	[]
+					},
+					"prebuiltLibs":	{
+						"prebuiltIncPath":	[],
+						"prebuiltLibPath":	[]
+					},
+					"isolation":	{
+					}
+				}]
+		}]
+}
+KEYINFO::2020-11-02.20:40:37::SCWPlatform::updated the xpfm file.
+TRACE::2020-11-02.20:40:37::SCWPlatform::Trying to open the hw design at C:/Github/Zybo_mipi/Video_Transmission/Vitis/VideoTransmission/hw/system_wrapper.xsa
+TRACE::2020-11-02.20:40:37::SCWPlatform::DSA given C:/Github/Zybo_mipi/Video_Transmission/Vitis/VideoTransmission/hw/system_wrapper.xsa
+TRACE::2020-11-02.20:40:37::SCWPlatform::DSA absoulate path C:/Github/Zybo_mipi/Video_Transmission/Vitis/VideoTransmission/hw/system_wrapper.xsa
+TRACE::2020-11-02.20:40:37::SCWPlatform::DSA directory C:/Github/Zybo_mipi/Video_Transmission/Vitis/VideoTransmission/hw
+TRACE::2020-11-02.20:40:37::SCWPlatform:: Platform Path C:/Github/Zybo_mipi/Video_Transmission/Vitis/VideoTransmission/hw/system_wrapper.xsa
+TRACE::2020-11-02.20:40:37::SCWPlatform:: Unique name xilinx:::0.0
+TRACE::2020-11-02.20:40:37::SCWPlatform::Trying to set the existing hwdb with name system_wrapper_0
+TRACE::2020-11-02.20:40:37::SCWPlatform::Opened existing hwdb system_wrapper_0
+TRACE::2020-11-02.20:40:37::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2020-11-02.20:40:37::SCWMssOS::Checking the sw design at  C:/Github/Zybo_mipi/Video_Transmission/Vitis/VideoTransmission/ps7_cortexa9_0/standalone_domain/bsp/system.mss
+TRACE::2020-11-02.20:40:37::SCWMssOS::DEBUG:  swdes dump  C:/Github/Zybo_mipi/Video_Transmission/Vitis/VideoTransmission/ps7_cortexa9_0/standalone_domain/bsp/system.mss|system_0||
+C:/Github/Zybo_mipi/Video_Transmission/Vitis/VideoTransmission/zynq_fsbl/zynq_fsbl_bsp/system.mss|system||
+
+TRACE::2020-11-02.20:40:37::SCWMssOS::Sw design exists and opened at  C:/Github/Zybo_mipi/Video_Transmission/Vitis/VideoTransmission/ps7_cortexa9_0/standalone_domain/bsp/system.mss
+TRACE::2020-11-02.20:40:37::SCWPlatform::Trying to open the hw design at C:/Github/Zybo_mipi/Video_Transmission/Vitis/VideoTransmission/hw/system_wrapper.xsa
+TRACE::2020-11-02.20:40:37::SCWPlatform::DSA given C:/Github/Zybo_mipi/Video_Transmission/Vitis/VideoTransmission/hw/system_wrapper.xsa
+TRACE::2020-11-02.20:40:37::SCWPlatform::DSA absoulate path C:/Github/Zybo_mipi/Video_Transmission/Vitis/VideoTransmission/hw/system_wrapper.xsa
+TRACE::2020-11-02.20:40:37::SCWPlatform::DSA directory C:/Github/Zybo_mipi/Video_Transmission/Vitis/VideoTransmission/hw
+TRACE::2020-11-02.20:40:37::SCWPlatform:: Platform Path C:/Github/Zybo_mipi/Video_Transmission/Vitis/VideoTransmission/hw/system_wrapper.xsa
+TRACE::2020-11-02.20:40:37::SCWPlatform:: Unique name xilinx:::0.0
+TRACE::2020-11-02.20:40:37::SCWPlatform::Trying to set the existing hwdb with name system_wrapper_0
+TRACE::2020-11-02.20:40:37::SCWPlatform::Opened existing hwdb system_wrapper_0
+TRACE::2020-11-02.20:40:37::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2020-11-02.20:40:37::SCWMssOS::Checking the sw design at  C:/Github/Zybo_mipi/Video_Transmission/Vitis/VideoTransmission/zynq_fsbl/zynq_fsbl_bsp/system.mss
+TRACE::2020-11-02.20:40:37::SCWMssOS::DEBUG:  swdes dump  C:/Github/Zybo_mipi/Video_Transmission/Vitis/VideoTransmission/ps7_cortexa9_0/standalone_domain/bsp/system.mss|system_0||
+C:/Github/Zybo_mipi/Video_Transmission/Vitis/VideoTransmission/zynq_fsbl/zynq_fsbl_bsp/system.mss|system||
+
+TRACE::2020-11-02.20:40:37::SCWMssOS::Sw design exists and opened at  C:/Github/Zybo_mipi/Video_Transmission/Vitis/VideoTransmission/zynq_fsbl/zynq_fsbl_bsp/system.mss
+TRACE::2020-11-02.20:40:37::SCWPlatform::Trying to open the hw design at C:/Github/Zybo_mipi/Video_Transmission/Vitis/VideoTransmission/hw/system_wrapper.xsa
+TRACE::2020-11-02.20:40:37::SCWPlatform::DSA given C:/Github/Zybo_mipi/Video_Transmission/Vitis/VideoTransmission/hw/system_wrapper.xsa
+TRACE::2020-11-02.20:40:37::SCWPlatform::DSA absoulate path C:/Github/Zybo_mipi/Video_Transmission/Vitis/VideoTransmission/hw/system_wrapper.xsa
+TRACE::2020-11-02.20:40:37::SCWPlatform::DSA directory C:/Github/Zybo_mipi/Video_Transmission/Vitis/VideoTransmission/hw
+TRACE::2020-11-02.20:40:37::SCWPlatform:: Platform Path C:/Github/Zybo_mipi/Video_Transmission/Vitis/VideoTransmission/hw/system_wrapper.xsa
+TRACE::2020-11-02.20:40:37::SCWPlatform:: Unique name xilinx:::0.0
+TRACE::2020-11-02.20:40:37::SCWPlatform::Trying to set the existing hwdb with name system_wrapper_0
+TRACE::2020-11-02.20:40:37::SCWPlatform::Opened existing hwdb system_wrapper_0
+TRACE::2020-11-02.20:40:37::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2020-11-02.20:40:37::SCWMssOS::Checking the sw design at  C:/Github/Zybo_mipi/Video_Transmission/Vitis/VideoTransmission/zynq_fsbl/zynq_fsbl_bsp/system.mss
+TRACE::2020-11-02.20:40:37::SCWMssOS::DEBUG:  swdes dump  C:/Github/Zybo_mipi/Video_Transmission/Vitis/VideoTransmission/ps7_cortexa9_0/standalone_domain/bsp/system.mss|system_0||
+C:/Github/Zybo_mipi/Video_Transmission/Vitis/VideoTransmission/zynq_fsbl/zynq_fsbl_bsp/system.mss|system||
+
+TRACE::2020-11-02.20:40:37::SCWMssOS::Sw design exists and opened at  C:/Github/Zybo_mipi/Video_Transmission/Vitis/VideoTransmission/zynq_fsbl/zynq_fsbl_bsp/system.mss
+TRACE::2020-11-02.20:40:37::SCWPlatform::Trying to open the hw design at C:/Github/Zybo_mipi/Video_Transmission/Vitis/VideoTransmission/hw/system_wrapper.xsa
+TRACE::2020-11-02.20:40:37::SCWPlatform::DSA given C:/Github/Zybo_mipi/Video_Transmission/Vitis/VideoTransmission/hw/system_wrapper.xsa
+TRACE::2020-11-02.20:40:37::SCWPlatform::DSA absoulate path C:/Github/Zybo_mipi/Video_Transmission/Vitis/VideoTransmission/hw/system_wrapper.xsa
+TRACE::2020-11-02.20:40:37::SCWPlatform::DSA directory C:/Github/Zybo_mipi/Video_Transmission/Vitis/VideoTransmission/hw
+TRACE::2020-11-02.20:40:37::SCWPlatform:: Platform Path C:/Github/Zybo_mipi/Video_Transmission/Vitis/VideoTransmission/hw/system_wrapper.xsa
+TRACE::2020-11-02.20:40:37::SCWPlatform:: Unique name xilinx:::0.0
+TRACE::2020-11-02.20:40:37::SCWPlatform::Trying to set the existing hwdb with name system_wrapper_0
+TRACE::2020-11-02.20:40:37::SCWPlatform::Opened existing hwdb system_wrapper_0
+TRACE::2020-11-02.20:40:37::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2020-11-02.20:40:37::SCWMssOS::Checking the sw design at  C:/Github/Zybo_mipi/Video_Transmission/Vitis/VideoTransmission/zynq_fsbl/zynq_fsbl_bsp/system.mss
+TRACE::2020-11-02.20:40:37::SCWMssOS::DEBUG:  swdes dump  C:/Github/Zybo_mipi/Video_Transmission/Vitis/VideoTransmission/ps7_cortexa9_0/standalone_domain/bsp/system.mss|system_0||
+C:/Github/Zybo_mipi/Video_Transmission/Vitis/VideoTransmission/zynq_fsbl/zynq_fsbl_bsp/system.mss|system||
+
+TRACE::2020-11-02.20:40:37::SCWMssOS::Sw design exists and opened at  C:/Github/Zybo_mipi/Video_Transmission/Vitis/VideoTransmission/zynq_fsbl/zynq_fsbl_bsp/system.mss
+TRACE::2020-11-02.20:40:37::SCWPlatform::Trying to open the hw design at C:/Github/Zybo_mipi/Video_Transmission/Vitis/VideoTransmission/hw/system_wrapper.xsa
+TRACE::2020-11-02.20:40:37::SCWPlatform::DSA given C:/Github/Zybo_mipi/Video_Transmission/Vitis/VideoTransmission/hw/system_wrapper.xsa
+TRACE::2020-11-02.20:40:37::SCWPlatform::DSA absoulate path C:/Github/Zybo_mipi/Video_Transmission/Vitis/VideoTransmission/hw/system_wrapper.xsa
+TRACE::2020-11-02.20:40:37::SCWPlatform::DSA directory C:/Github/Zybo_mipi/Video_Transmission/Vitis/VideoTransmission/hw
+TRACE::2020-11-02.20:40:37::SCWPlatform:: Platform Path C:/Github/Zybo_mipi/Video_Transmission/Vitis/VideoTransmission/hw/system_wrapper.xsa
+TRACE::2020-11-02.20:40:37::SCWPlatform:: Unique name xilinx:::0.0
+TRACE::2020-11-02.20:40:37::SCWPlatform::Trying to set the existing hwdb with name system_wrapper_0
+TRACE::2020-11-02.20:40:37::SCWPlatform::Opened existing hwdb system_wrapper_0
+TRACE::2020-11-02.20:40:37::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2020-11-02.20:40:37::SCWMssOS::Checking the sw design at  C:/Github/Zybo_mipi/Video_Transmission/Vitis/VideoTransmission/ps7_cortexa9_0/standalone_domain/bsp/system.mss
+TRACE::2020-11-02.20:40:37::SCWMssOS::DEBUG:  swdes dump  C:/Github/Zybo_mipi/Video_Transmission/Vitis/VideoTransmission/ps7_cortexa9_0/standalone_domain/bsp/system.mss|system_0||
+C:/Github/Zybo_mipi/Video_Transmission/Vitis/VideoTransmission/zynq_fsbl/zynq_fsbl_bsp/system.mss|system||
+
+TRACE::2020-11-02.20:40:37::SCWMssOS::Sw design exists and opened at  C:/Github/Zybo_mipi/Video_Transmission/Vitis/VideoTransmission/ps7_cortexa9_0/standalone_domain/bsp/system.mss
+TRACE::2020-11-02.20:40:37::SCWPlatform::Trying to open the hw design at C:/Github/Zybo_mipi/Video_Transmission/Vitis/VideoTransmission/hw/system_wrapper.xsa
+TRACE::2020-11-02.20:40:37::SCWPlatform::DSA given C:/Github/Zybo_mipi/Video_Transmission/Vitis/VideoTransmission/hw/system_wrapper.xsa
+TRACE::2020-11-02.20:40:37::SCWPlatform::DSA absoulate path C:/Github/Zybo_mipi/Video_Transmission/Vitis/VideoTransmission/hw/system_wrapper.xsa
+TRACE::2020-11-02.20:40:37::SCWPlatform::DSA directory C:/Github/Zybo_mipi/Video_Transmission/Vitis/VideoTransmission/hw
+TRACE::2020-11-02.20:40:37::SCWPlatform:: Platform Path C:/Github/Zybo_mipi/Video_Transmission/Vitis/VideoTransmission/hw/system_wrapper.xsa
+TRACE::2020-11-02.20:40:37::SCWPlatform:: Unique name xilinx:::0.0
+TRACE::2020-11-02.20:40:37::SCWPlatform::Trying to set the existing hwdb with name system_wrapper_0
+TRACE::2020-11-02.20:40:37::SCWPlatform::Opened existing hwdb system_wrapper_0
+TRACE::2020-11-02.20:40:37::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2020-11-02.20:40:38::SCWMssOS::Checking the sw design at  C:/Github/Zybo_mipi/Video_Transmission/Vitis/VideoTransmission/ps7_cortexa9_0/standalone_domain/bsp/system.mss
+TRACE::2020-11-02.20:40:38::SCWMssOS::DEBUG:  swdes dump  C:/Github/Zybo_mipi/Video_Transmission/Vitis/VideoTransmission/ps7_cortexa9_0/standalone_domain/bsp/system.mss|system_0||
+C:/Github/Zybo_mipi/Video_Transmission/Vitis/VideoTransmission/zynq_fsbl/zynq_fsbl_bsp/system.mss|system||
+
+TRACE::2020-11-02.20:40:38::SCWMssOS::Sw design exists and opened at  C:/Github/Zybo_mipi/Video_Transmission/Vitis/VideoTransmission/ps7_cortexa9_0/standalone_domain/bsp/system.mss
+TRACE::2020-11-02.20:40:38::SCWPlatform::Trying to open the hw design at C:/Github/Zybo_mipi/Video_Transmission/Vitis/VideoTransmission/hw/system_wrapper.xsa
+TRACE::2020-11-02.20:40:38::SCWPlatform::DSA given C:/Github/Zybo_mipi/Video_Transmission/Vitis/VideoTransmission/hw/system_wrapper.xsa
+TRACE::2020-11-02.20:40:38::SCWPlatform::DSA absoulate path C:/Github/Zybo_mipi/Video_Transmission/Vitis/VideoTransmission/hw/system_wrapper.xsa
+TRACE::2020-11-02.20:40:38::SCWPlatform::DSA directory C:/Github/Zybo_mipi/Video_Transmission/Vitis/VideoTransmission/hw
+TRACE::2020-11-02.20:40:38::SCWPlatform:: Platform Path C:/Github/Zybo_mipi/Video_Transmission/Vitis/VideoTransmission/hw/system_wrapper.xsa
+TRACE::2020-11-02.20:40:38::SCWPlatform:: Unique name xilinx:::0.0
+TRACE::2020-11-02.20:40:38::SCWPlatform::Trying to set the existing hwdb with name system_wrapper_0
+TRACE::2020-11-02.20:40:38::SCWPlatform::Opened existing hwdb system_wrapper_0
+TRACE::2020-11-02.20:40:38::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2020-11-02.20:40:38::SCWMssOS::Checking the sw design at  C:/Github/Zybo_mipi/Video_Transmission/Vitis/VideoTransmission/ps7_cortexa9_0/standalone_domain/bsp/system.mss
+TRACE::2020-11-02.20:40:38::SCWMssOS::DEBUG:  swdes dump  C:/Github/Zybo_mipi/Video_Transmission/Vitis/VideoTransmission/ps7_cortexa9_0/standalone_domain/bsp/system.mss|system_0||
+C:/Github/Zybo_mipi/Video_Transmission/Vitis/VideoTransmission/zynq_fsbl/zynq_fsbl_bsp/system.mss|system||
+
+TRACE::2020-11-02.20:40:38::SCWMssOS::Sw design exists and opened at  C:/Github/Zybo_mipi/Video_Transmission/Vitis/VideoTransmission/ps7_cortexa9_0/standalone_domain/bsp/system.mss
+TRACE::2020-11-02.20:40:38::SCWWriter::formatted JSON is {
+	"platformName":	"VideoTransmission",
+	"sprVersion":	"2.0",
+	"mode":	"gui",
+	"dsaType":	"Fixed",
+	"platformDesc":	"VideoTransmission",
+	"platHandOff":	"C:/Github/Zybo_mipi/Video_Transmission/VideoTransmission/system_wrapper.xsa",
+	"platIntHandOff":	"<platformDir>/hw/system_wrapper.xsa",
+	"deviceType":	"zynq",
+	"platIsPrebuiltAutogen":	"false",
+	"platIsNoBootBsp":	"false",
+	"platFsblTarget":	"ps7_cortexa9_0",
+	"hasFsblMakeHasChanges":	"false",
+	"hasPmufwMakeHasChanges":	"false",
+	"platPreBuiltFlag":	false,
+	"platformSamplesDir":	"",
+	"platActiveSys":	"VideoTransmission",
+	"systems":	[{
+			"systemName":	"VideoTransmission",
+			"systemDesc":	"VideoTransmission",
+			"sysIsBootAutoGen":	"true",
+			"systemDispName":	"VideoTransmission",
+			"sysActiveDom":	"standalone_domain",
+			"sysDefaultDom":	"standalone_domain",
+			"domains":	[{
+					"domainName":	"zynq_fsbl",
+					"domainDispName":	"zynq_fsbl",
+					"domainDesc":	"FSBL Application BSP - Auto Generated.",
+					"processors":	"ps7_cortexa9_0",
+					"os":	"standalone",
+					"sdxOs":	"standalone",
+					"debugEnable":	"",
+					"domRuntimes":	["cpp"],
+					"swRepo":	"",
+					"mssOsVer":	"7.1",
+					"mssFile":	"",
+					"md5Digest":	"a9a07a0ab1ed09c8d3a2a026668b55e2",
+					"compatibleApp":	"zynq_fsbl",
+					"domType":	"bootDomain",
+					"appSettings":	{
+						"appCompilerFlags":	"",
+						"appLinkerFlags":	""
+					},
+					"addedLibs":	["xilffs:4.2", "xilrsa:1.5"],
+					"libOptions":	{
+						"libsContainingOptions":	[]
+					},
+					"prebuiltLibs":	{
+						"prebuiltIncPath":	[],
+						"prebuiltLibPath":	[]
+					},
+					"isolation":	{
+					}
+				}, {
+					"domainName":	"standalone_domain",
+					"domainDispName":	"standalone_domain",
+					"domainDesc":	"standalone_domain",
+					"processors":	"ps7_cortexa9_0",
+					"os":	"standalone",
+					"sdxOs":	"standalone",
+					"qemuArgs":	"C:/Xilinx/Vitis/2019.2/data/emulation/platforms/zynq/qemu/qemu_args.txt",
+					"qemuData":	"C:/Xilinx/Vitis/2019.2/data/emulation/platforms/zynq/qemu/",
+					"debugEnable":	"False",
+					"domRuntimes":	["cpp"],
+					"swRepo":	"",
+					"mssOsVer":	"7.1",
+					"mssFile":	"",
+					"md5Digest":	"ddce2d666a90134d9500630be813f080",
+					"compatibleApp":	"",
+					"domType":	"mssDomain",
+					"appSettings":	{
+						"appCompilerFlags":	"",
+						"appLinkerFlags":	""
+					},
+					"addedLibs":	[],
+					"libOptions":	{
+						"libsContainingOptions":	[]
+					},
+					"prebuiltLibs":	{
+						"prebuiltIncPath":	[],
+						"prebuiltLibPath":	[]
+					},
+					"isolation":	{
+					}
+				}]
+		}]
+}
+TRACE::2020-11-02.20:40:38::SCWPlatform::Trying to open the hw design at C:/Github/Zybo_mipi/Video_Transmission/Vitis/VideoTransmission/hw/system_wrapper.xsa
+TRACE::2020-11-02.20:40:38::SCWPlatform::DSA given C:/Github/Zybo_mipi/Video_Transmission/Vitis/VideoTransmission/hw/system_wrapper.xsa
+TRACE::2020-11-02.20:40:38::SCWPlatform::DSA absoulate path C:/Github/Zybo_mipi/Video_Transmission/Vitis/VideoTransmission/hw/system_wrapper.xsa
+TRACE::2020-11-02.20:40:38::SCWPlatform::DSA directory C:/Github/Zybo_mipi/Video_Transmission/Vitis/VideoTransmission/hw
+TRACE::2020-11-02.20:40:38::SCWPlatform:: Platform Path C:/Github/Zybo_mipi/Video_Transmission/Vitis/VideoTransmission/hw/system_wrapper.xsa
+TRACE::2020-11-02.20:40:38::SCWPlatform:: Unique name xilinx:::0.0
+TRACE::2020-11-02.20:40:38::SCWPlatform::Trying to set the existing hwdb with name system_wrapper_0
+TRACE::2020-11-02.20:40:38::SCWPlatform::Opened existing hwdb system_wrapper_0
+TRACE::2020-11-02.20:40:38::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2020-11-02.20:40:38::SCWMssOS::Checking the sw design at  C:/Github/Zybo_mipi/Video_Transmission/Vitis/VideoTransmission/ps7_cortexa9_0/standalone_domain/bsp/system.mss
+TRACE::2020-11-02.20:40:38::SCWMssOS::DEBUG:  swdes dump  C:/Github/Zybo_mipi/Video_Transmission/Vitis/VideoTransmission/ps7_cortexa9_0/standalone_domain/bsp/system.mss|system_0||
+C:/Github/Zybo_mipi/Video_Transmission/Vitis/VideoTransmission/zynq_fsbl/zynq_fsbl_bsp/system.mss|system||
+
+TRACE::2020-11-02.20:40:38::SCWMssOS::Sw design exists and opened at  C:/Github/Zybo_mipi/Video_Transmission/Vitis/VideoTransmission/ps7_cortexa9_0/standalone_domain/bsp/system.mss
+TRACE::2020-11-02.20:40:38::SCWPlatform::Trying to open the hw design at C:/Github/Zybo_mipi/Video_Transmission/Vitis/VideoTransmission/hw/system_wrapper.xsa
+TRACE::2020-11-02.20:40:38::SCWPlatform::DSA given C:/Github/Zybo_mipi/Video_Transmission/Vitis/VideoTransmission/hw/system_wrapper.xsa
+TRACE::2020-11-02.20:40:38::SCWPlatform::DSA absoulate path C:/Github/Zybo_mipi/Video_Transmission/Vitis/VideoTransmission/hw/system_wrapper.xsa
+TRACE::2020-11-02.20:40:38::SCWPlatform::DSA directory C:/Github/Zybo_mipi/Video_Transmission/Vitis/VideoTransmission/hw
+TRACE::2020-11-02.20:40:38::SCWPlatform:: Platform Path C:/Github/Zybo_mipi/Video_Transmission/Vitis/VideoTransmission/hw/system_wrapper.xsa
+TRACE::2020-11-02.20:40:38::SCWPlatform:: Unique name xilinx:::0.0
+TRACE::2020-11-02.20:40:38::SCWPlatform::Trying to set the existing hwdb with name system_wrapper_0
+TRACE::2020-11-02.20:40:38::SCWPlatform::Opened existing hwdb system_wrapper_0
+TRACE::2020-11-02.20:40:38::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2020-11-02.20:40:38::SCWMssOS::Checking the sw design at  C:/Github/Zybo_mipi/Video_Transmission/Vitis/VideoTransmission/ps7_cortexa9_0/standalone_domain/bsp/system.mss
+TRACE::2020-11-02.20:40:38::SCWMssOS::DEBUG:  swdes dump  C:/Github/Zybo_mipi/Video_Transmission/Vitis/VideoTransmission/ps7_cortexa9_0/standalone_domain/bsp/system.mss|system_0||
+C:/Github/Zybo_mipi/Video_Transmission/Vitis/VideoTransmission/zynq_fsbl/zynq_fsbl_bsp/system.mss|system||
+
+TRACE::2020-11-02.20:40:38::SCWMssOS::Sw design exists and opened at  C:/Github/Zybo_mipi/Video_Transmission/Vitis/VideoTransmission/ps7_cortexa9_0/standalone_domain/bsp/system.mss
+TRACE::2020-11-02.20:40:38::SCWPlatform::Trying to open the hw design at C:/Github/Zybo_mipi/Video_Transmission/Vitis/VideoTransmission/hw/system_wrapper.xsa
+TRACE::2020-11-02.20:40:38::SCWPlatform::DSA given C:/Github/Zybo_mipi/Video_Transmission/Vitis/VideoTransmission/hw/system_wrapper.xsa
+TRACE::2020-11-02.20:40:38::SCWPlatform::DSA absoulate path C:/Github/Zybo_mipi/Video_Transmission/Vitis/VideoTransmission/hw/system_wrapper.xsa
+TRACE::2020-11-02.20:40:38::SCWPlatform::DSA directory C:/Github/Zybo_mipi/Video_Transmission/Vitis/VideoTransmission/hw
+TRACE::2020-11-02.20:40:38::SCWPlatform:: Platform Path C:/Github/Zybo_mipi/Video_Transmission/Vitis/VideoTransmission/hw/system_wrapper.xsa
+TRACE::2020-11-02.20:40:38::SCWPlatform:: Unique name xilinx:::0.0
+TRACE::2020-11-02.20:40:38::SCWPlatform::Trying to set the existing hwdb with name system_wrapper_0
+TRACE::2020-11-02.20:40:38::SCWPlatform::Opened existing hwdb system_wrapper_0
+TRACE::2020-11-02.20:40:38::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2020-11-02.20:40:38::SCWMssOS::Checking the sw design at  C:/Github/Zybo_mipi/Video_Transmission/Vitis/VideoTransmission/ps7_cortexa9_0/standalone_domain/bsp/system.mss
+TRACE::2020-11-02.20:40:38::SCWMssOS::DEBUG:  swdes dump  C:/Github/Zybo_mipi/Video_Transmission/Vitis/VideoTransmission/ps7_cortexa9_0/standalone_domain/bsp/system.mss|system_0||
+C:/Github/Zybo_mipi/Video_Transmission/Vitis/VideoTransmission/zynq_fsbl/zynq_fsbl_bsp/system.mss|system||
+
+TRACE::2020-11-02.20:40:38::SCWMssOS::Sw design exists and opened at  C:/Github/Zybo_mipi/Video_Transmission/Vitis/VideoTransmission/ps7_cortexa9_0/standalone_domain/bsp/system.mss
+TRACE::2020-11-02.20:40:38::SCWPlatform::Trying to open the hw design at C:/Github/Zybo_mipi/Video_Transmission/Vitis/VideoTransmission/hw/system_wrapper.xsa
+TRACE::2020-11-02.20:40:38::SCWPlatform::DSA given C:/Github/Zybo_mipi/Video_Transmission/Vitis/VideoTransmission/hw/system_wrapper.xsa
+TRACE::2020-11-02.20:40:38::SCWPlatform::DSA absoulate path C:/Github/Zybo_mipi/Video_Transmission/Vitis/VideoTransmission/hw/system_wrapper.xsa
+TRACE::2020-11-02.20:40:38::SCWPlatform::DSA directory C:/Github/Zybo_mipi/Video_Transmission/Vitis/VideoTransmission/hw
+TRACE::2020-11-02.20:40:38::SCWPlatform:: Platform Path C:/Github/Zybo_mipi/Video_Transmission/Vitis/VideoTransmission/hw/system_wrapper.xsa
+TRACE::2020-11-02.20:40:38::SCWPlatform:: Unique name xilinx:::0.0
+TRACE::2020-11-02.20:40:38::SCWPlatform::Trying to set the existing hwdb with name system_wrapper_0
+TRACE::2020-11-02.20:40:38::SCWPlatform::Opened existing hwdb system_wrapper_0
+TRACE::2020-11-02.20:40:38::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2020-11-02.20:40:38::SCWMssOS::Checking the sw design at  C:/Github/Zybo_mipi/Video_Transmission/Vitis/VideoTransmission/zynq_fsbl/zynq_fsbl_bsp/system.mss
+TRACE::2020-11-02.20:40:38::SCWMssOS::DEBUG:  swdes dump  C:/Github/Zybo_mipi/Video_Transmission/Vitis/VideoTransmission/ps7_cortexa9_0/standalone_domain/bsp/system.mss|system_0||
+C:/Github/Zybo_mipi/Video_Transmission/Vitis/VideoTransmission/zynq_fsbl/zynq_fsbl_bsp/system.mss|system||
+
+TRACE::2020-11-02.20:40:38::SCWMssOS::Sw design exists and opened at  C:/Github/Zybo_mipi/Video_Transmission/Vitis/VideoTransmission/zynq_fsbl/zynq_fsbl_bsp/system.mss
+TRACE::2020-11-02.20:40:38::SCWPlatform::Trying to open the hw design at C:/Github/Zybo_mipi/Video_Transmission/Vitis/VideoTransmission/hw/system_wrapper.xsa
+TRACE::2020-11-02.20:40:38::SCWPlatform::DSA given C:/Github/Zybo_mipi/Video_Transmission/Vitis/VideoTransmission/hw/system_wrapper.xsa
+TRACE::2020-11-02.20:40:38::SCWPlatform::DSA absoulate path C:/Github/Zybo_mipi/Video_Transmission/Vitis/VideoTransmission/hw/system_wrapper.xsa
+TRACE::2020-11-02.20:40:38::SCWPlatform::DSA directory C:/Github/Zybo_mipi/Video_Transmission/Vitis/VideoTransmission/hw
+TRACE::2020-11-02.20:40:38::SCWPlatform:: Platform Path C:/Github/Zybo_mipi/Video_Transmission/Vitis/VideoTransmission/hw/system_wrapper.xsa
+TRACE::2020-11-02.20:40:38::SCWPlatform:: Unique name xilinx:::0.0
+TRACE::2020-11-02.20:40:38::SCWPlatform::Trying to set the existing hwdb with name system_wrapper_0
+TRACE::2020-11-02.20:40:38::SCWPlatform::Opened existing hwdb system_wrapper_0
+TRACE::2020-11-02.20:40:38::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2020-11-02.20:40:38::SCWMssOS::Checking the sw design at  C:/Github/Zybo_mipi/Video_Transmission/Vitis/VideoTransmission/zynq_fsbl/zynq_fsbl_bsp/system.mss
+TRACE::2020-11-02.20:40:38::SCWMssOS::DEBUG:  swdes dump  C:/Github/Zybo_mipi/Video_Transmission/Vitis/VideoTransmission/ps7_cortexa9_0/standalone_domain/bsp/system.mss|system_0||
+C:/Github/Zybo_mipi/Video_Transmission/Vitis/VideoTransmission/zynq_fsbl/zynq_fsbl_bsp/system.mss|system||
+
+TRACE::2020-11-02.20:40:38::SCWMssOS::Sw design exists and opened at  C:/Github/Zybo_mipi/Video_Transmission/Vitis/VideoTransmission/zynq_fsbl/zynq_fsbl_bsp/system.mss
+TRACE::2020-11-02.20:40:38::SCWPlatform::Trying to open the hw design at C:/Github/Zybo_mipi/Video_Transmission/Vitis/VideoTransmission/hw/system_wrapper.xsa
+TRACE::2020-11-02.20:40:38::SCWPlatform::DSA given C:/Github/Zybo_mipi/Video_Transmission/Vitis/VideoTransmission/hw/system_wrapper.xsa
+TRACE::2020-11-02.20:40:38::SCWPlatform::DSA absoulate path C:/Github/Zybo_mipi/Video_Transmission/Vitis/VideoTransmission/hw/system_wrapper.xsa
+TRACE::2020-11-02.20:40:38::SCWPlatform::DSA directory C:/Github/Zybo_mipi/Video_Transmission/Vitis/VideoTransmission/hw
+TRACE::2020-11-02.20:40:38::SCWPlatform:: Platform Path C:/Github/Zybo_mipi/Video_Transmission/Vitis/VideoTransmission/hw/system_wrapper.xsa
+TRACE::2020-11-02.20:40:38::SCWPlatform:: Unique name xilinx:::0.0
+TRACE::2020-11-02.20:40:38::SCWPlatform::Trying to set the existing hwdb with name system_wrapper_0
+TRACE::2020-11-02.20:40:38::SCWPlatform::Opened existing hwdb system_wrapper_0
+TRACE::2020-11-02.20:40:38::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2020-11-02.20:40:38::SCWMssOS::Checking the sw design at  C:/Github/Zybo_mipi/Video_Transmission/Vitis/VideoTransmission/zynq_fsbl/zynq_fsbl_bsp/system.mss
+TRACE::2020-11-02.20:40:38::SCWMssOS::DEBUG:  swdes dump  C:/Github/Zybo_mipi/Video_Transmission/Vitis/VideoTransmission/ps7_cortexa9_0/standalone_domain/bsp/system.mss|system_0||
+C:/Github/Zybo_mipi/Video_Transmission/Vitis/VideoTransmission/zynq_fsbl/zynq_fsbl_bsp/system.mss|system||
+
+TRACE::2020-11-02.20:40:38::SCWMssOS::Sw design exists and opened at  C:/Github/Zybo_mipi/Video_Transmission/Vitis/VideoTransmission/zynq_fsbl/zynq_fsbl_bsp/system.mss
+TRACE::2020-11-02.20:40:38::SCWPlatform::Trying to open the hw design at C:/Github/Zybo_mipi/Video_Transmission/Vitis/VideoTransmission/hw/system_wrapper.xsa
+TRACE::2020-11-02.20:40:38::SCWPlatform::DSA given C:/Github/Zybo_mipi/Video_Transmission/Vitis/VideoTransmission/hw/system_wrapper.xsa
+TRACE::2020-11-02.20:40:38::SCWPlatform::DSA absoulate path C:/Github/Zybo_mipi/Video_Transmission/Vitis/VideoTransmission/hw/system_wrapper.xsa
+TRACE::2020-11-02.20:40:38::SCWPlatform::DSA directory C:/Github/Zybo_mipi/Video_Transmission/Vitis/VideoTransmission/hw
+TRACE::2020-11-02.20:40:38::SCWPlatform:: Platform Path C:/Github/Zybo_mipi/Video_Transmission/Vitis/VideoTransmission/hw/system_wrapper.xsa
+TRACE::2020-11-02.20:40:38::SCWPlatform:: Unique name xilinx:::0.0
+TRACE::2020-11-02.20:40:38::SCWPlatform::Trying to set the existing hwdb with name system_wrapper_0
+TRACE::2020-11-02.20:40:38::SCWPlatform::Opened existing hwdb system_wrapper_0
+TRACE::2020-11-02.20:40:38::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2020-11-02.20:40:38::SCWMssOS::Checking the sw design at  C:/Github/Zybo_mipi/Video_Transmission/Vitis/VideoTransmission/ps7_cortexa9_0/standalone_domain/bsp/system.mss
+TRACE::2020-11-02.20:40:38::SCWMssOS::DEBUG:  swdes dump  C:/Github/Zybo_mipi/Video_Transmission/Vitis/VideoTransmission/ps7_cortexa9_0/standalone_domain/bsp/system.mss|system_0||
+C:/Github/Zybo_mipi/Video_Transmission/Vitis/VideoTransmission/zynq_fsbl/zynq_fsbl_bsp/system.mss|system||
+
+TRACE::2020-11-02.20:40:38::SCWMssOS::Sw design exists and opened at  C:/Github/Zybo_mipi/Video_Transmission/Vitis/VideoTransmission/ps7_cortexa9_0/standalone_domain/bsp/system.mss
+TRACE::2020-11-02.20:40:38::SCWPlatform::Trying to open the hw design at C:/Github/Zybo_mipi/Video_Transmission/Vitis/VideoTransmission/hw/system_wrapper.xsa
+TRACE::2020-11-02.20:40:38::SCWPlatform::DSA given C:/Github/Zybo_mipi/Video_Transmission/Vitis/VideoTransmission/hw/system_wrapper.xsa
+TRACE::2020-11-02.20:40:38::SCWPlatform::DSA absoulate path C:/Github/Zybo_mipi/Video_Transmission/Vitis/VideoTransmission/hw/system_wrapper.xsa
+TRACE::2020-11-02.20:40:38::SCWPlatform::DSA directory C:/Github/Zybo_mipi/Video_Transmission/Vitis/VideoTransmission/hw
+TRACE::2020-11-02.20:40:38::SCWPlatform:: Platform Path C:/Github/Zybo_mipi/Video_Transmission/Vitis/VideoTransmission/hw/system_wrapper.xsa
+TRACE::2020-11-02.20:40:38::SCWPlatform:: Unique name xilinx:::0.0
+TRACE::2020-11-02.20:40:38::SCWPlatform::Trying to set the existing hwdb with name system_wrapper_0
+TRACE::2020-11-02.20:40:38::SCWPlatform::Opened existing hwdb system_wrapper_0
+TRACE::2020-11-02.20:40:38::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2020-11-02.20:40:38::SCWMssOS::Checking the sw design at  C:/Github/Zybo_mipi/Video_Transmission/Vitis/VideoTransmission/ps7_cortexa9_0/standalone_domain/bsp/system.mss
+TRACE::2020-11-02.20:40:38::SCWMssOS::DEBUG:  swdes dump  C:/Github/Zybo_mipi/Video_Transmission/Vitis/VideoTransmission/ps7_cortexa9_0/standalone_domain/bsp/system.mss|system_0||
+C:/Github/Zybo_mipi/Video_Transmission/Vitis/VideoTransmission/zynq_fsbl/zynq_fsbl_bsp/system.mss|system||
+
+TRACE::2020-11-02.20:40:38::SCWMssOS::Sw design exists and opened at  C:/Github/Zybo_mipi/Video_Transmission/Vitis/VideoTransmission/ps7_cortexa9_0/standalone_domain/bsp/system.mss
+TRACE::2020-11-02.20:40:38::SCWPlatform::Trying to open the hw design at C:/Github/Zybo_mipi/Video_Transmission/Vitis/VideoTransmission/hw/system_wrapper.xsa
+TRACE::2020-11-02.20:40:38::SCWPlatform::DSA given C:/Github/Zybo_mipi/Video_Transmission/Vitis/VideoTransmission/hw/system_wrapper.xsa
+TRACE::2020-11-02.20:40:38::SCWPlatform::DSA absoulate path C:/Github/Zybo_mipi/Video_Transmission/Vitis/VideoTransmission/hw/system_wrapper.xsa
+TRACE::2020-11-02.20:40:38::SCWPlatform::DSA directory C:/Github/Zybo_mipi/Video_Transmission/Vitis/VideoTransmission/hw
+TRACE::2020-11-02.20:40:38::SCWPlatform:: Platform Path C:/Github/Zybo_mipi/Video_Transmission/Vitis/VideoTransmission/hw/system_wrapper.xsa
+TRACE::2020-11-02.20:40:38::SCWPlatform:: Unique name xilinx:::0.0
+TRACE::2020-11-02.20:40:38::SCWPlatform::Trying to set the existing hwdb with name system_wrapper_0
+TRACE::2020-11-02.20:40:38::SCWPlatform::Opened existing hwdb system_wrapper_0
+TRACE::2020-11-02.20:40:38::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2020-11-02.20:40:38::SCWMssOS::Checking the sw design at  C:/Github/Zybo_mipi/Video_Transmission/Vitis/VideoTransmission/ps7_cortexa9_0/standalone_domain/bsp/system.mss
+TRACE::2020-11-02.20:40:38::SCWMssOS::DEBUG:  swdes dump  C:/Github/Zybo_mipi/Video_Transmission/Vitis/VideoTransmission/ps7_cortexa9_0/standalone_domain/bsp/system.mss|system_0||
+C:/Github/Zybo_mipi/Video_Transmission/Vitis/VideoTransmission/zynq_fsbl/zynq_fsbl_bsp/system.mss|system||
+
+TRACE::2020-11-02.20:40:38::SCWMssOS::Sw design exists and opened at  C:/Github/Zybo_mipi/Video_Transmission/Vitis/VideoTransmission/ps7_cortexa9_0/standalone_domain/bsp/system.mss
+TRACE::2020-11-02.20:40:38::SCWWriter::formatted JSON is {
+	"platformName":	"VideoTransmission",
+	"sprVersion":	"2.0",
+	"mode":	"gui",
+	"dsaType":	"Fixed",
+	"platformDesc":	"VideoTransmission",
+	"platHandOff":	"C:/Github/Zybo_mipi/Video_Transmission/VideoTransmission/system_wrapper.xsa",
+	"platIntHandOff":	"<platformDir>/hw/system_wrapper.xsa",
+	"deviceType":	"zynq",
+	"platIsPrebuiltAutogen":	"false",
+	"platIsNoBootBsp":	"false",
+	"platFsblTarget":	"ps7_cortexa9_0",
+	"hasFsblMakeHasChanges":	"false",
+	"hasPmufwMakeHasChanges":	"false",
+	"platPreBuiltFlag":	false,
+	"platformSamplesDir":	"",
+	"platActiveSys":	"VideoTransmission",
+	"systems":	[{
+			"systemName":	"VideoTransmission",
+			"systemDesc":	"VideoTransmission",
+			"sysIsBootAutoGen":	"true",
+			"systemDispName":	"VideoTransmission",
+			"sysActiveDom":	"standalone_domain",
+			"sysDefaultDom":	"standalone_domain",
+			"domains":	[{
+					"domainName":	"zynq_fsbl",
+					"domainDispName":	"zynq_fsbl",
+					"domainDesc":	"FSBL Application BSP - Auto Generated.",
+					"processors":	"ps7_cortexa9_0",
+					"os":	"standalone",
+					"sdxOs":	"standalone",
+					"debugEnable":	"",
+					"domRuntimes":	["cpp"],
+					"swRepo":	"",
+					"mssOsVer":	"7.1",
+					"mssFile":	"",
+					"md5Digest":	"a9a07a0ab1ed09c8d3a2a026668b55e2",
+					"compatibleApp":	"zynq_fsbl",
+					"domType":	"bootDomain",
+					"appSettings":	{
+						"appCompilerFlags":	"",
+						"appLinkerFlags":	""
+					},
+					"addedLibs":	["xilffs:4.2", "xilrsa:1.5"],
+					"libOptions":	{
+						"libsContainingOptions":	[]
+					},
+					"prebuiltLibs":	{
+						"prebuiltIncPath":	[],
+						"prebuiltLibPath":	[]
+					},
+					"isolation":	{
+					}
+				}, {
+					"domainName":	"standalone_domain",
+					"domainDispName":	"standalone on ps7_cortexa9_0",
+					"domainDesc":	"standalone_domain",
+					"processors":	"ps7_cortexa9_0",
+					"os":	"standalone",
+					"sdxOs":	"standalone",
+					"qemuArgs":	"C:/Xilinx/Vitis/2019.2/data/emulation/platforms/zynq/qemu/qemu_args.txt",
+					"qemuData":	"C:/Xilinx/Vitis/2019.2/data/emulation/platforms/zynq/qemu/",
+					"debugEnable":	"False",
+					"domRuntimes":	["cpp"],
+					"swRepo":	"",
+					"mssOsVer":	"7.1",
+					"mssFile":	"",
+					"md5Digest":	"ddce2d666a90134d9500630be813f080",
+					"compatibleApp":	"",
+					"domType":	"mssDomain",
+					"appSettings":	{
+						"appCompilerFlags":	"",
+						"appLinkerFlags":	""
+					},
+					"addedLibs":	[],
+					"libOptions":	{
+						"libsContainingOptions":	[]
+					},
+					"prebuiltLibs":	{
+						"prebuiltIncPath":	[],
+						"prebuiltLibPath":	[]
+					},
+					"isolation":	{
+					}
+				}]
+		}]
+}
+TRACE::2020-11-02.20:40:38::SCWPlatform::Trying to open the hw design at C:/Github/Zybo_mipi/Video_Transmission/Vitis/VideoTransmission/hw/system_wrapper.xsa
+TRACE::2020-11-02.20:40:38::SCWPlatform::DSA given C:/Github/Zybo_mipi/Video_Transmission/Vitis/VideoTransmission/hw/system_wrapper.xsa
+TRACE::2020-11-02.20:40:38::SCWPlatform::DSA absoulate path C:/Github/Zybo_mipi/Video_Transmission/Vitis/VideoTransmission/hw/system_wrapper.xsa
+TRACE::2020-11-02.20:40:38::SCWPlatform::DSA directory C:/Github/Zybo_mipi/Video_Transmission/Vitis/VideoTransmission/hw
+TRACE::2020-11-02.20:40:38::SCWPlatform:: Platform Path C:/Github/Zybo_mipi/Video_Transmission/Vitis/VideoTransmission/hw/system_wrapper.xsa
+TRACE::2020-11-02.20:40:38::SCWPlatform:: Unique name xilinx:::0.0
+TRACE::2020-11-02.20:40:38::SCWPlatform::Trying to set the existing hwdb with name system_wrapper_0
+TRACE::2020-11-02.20:40:38::SCWPlatform::Opened existing hwdb system_wrapper_0
+TRACE::2020-11-02.20:40:38::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2020-11-02.20:40:38::SCWMssOS::Checking the sw design at  C:/Github/Zybo_mipi/Video_Transmission/Vitis/VideoTransmission/zynq_fsbl/zynq_fsbl_bsp/system.mss
+TRACE::2020-11-02.20:40:38::SCWMssOS::DEBUG:  swdes dump  C:/Github/Zybo_mipi/Video_Transmission/Vitis/VideoTransmission/ps7_cortexa9_0/standalone_domain/bsp/system.mss|system_0||
+C:/Github/Zybo_mipi/Video_Transmission/Vitis/VideoTransmission/zynq_fsbl/zynq_fsbl_bsp/system.mss|system||
+
+TRACE::2020-11-02.20:40:38::SCWMssOS::Sw design exists and opened at  C:/Github/Zybo_mipi/Video_Transmission/Vitis/VideoTransmission/zynq_fsbl/zynq_fsbl_bsp/system.mss
+TRACE::2020-11-02.20:40:38::SCWPlatform::Trying to open the hw design at C:/Github/Zybo_mipi/Video_Transmission/Vitis/VideoTransmission/hw/system_wrapper.xsa
+TRACE::2020-11-02.20:40:38::SCWPlatform::DSA given C:/Github/Zybo_mipi/Video_Transmission/Vitis/VideoTransmission/hw/system_wrapper.xsa
+TRACE::2020-11-02.20:40:38::SCWPlatform::DSA absoulate path C:/Github/Zybo_mipi/Video_Transmission/Vitis/VideoTransmission/hw/system_wrapper.xsa
+TRACE::2020-11-02.20:40:38::SCWPlatform::DSA directory C:/Github/Zybo_mipi/Video_Transmission/Vitis/VideoTransmission/hw
+TRACE::2020-11-02.20:40:38::SCWPlatform:: Platform Path C:/Github/Zybo_mipi/Video_Transmission/Vitis/VideoTransmission/hw/system_wrapper.xsa
+TRACE::2020-11-02.20:40:38::SCWPlatform:: Unique name xilinx:::0.0
+TRACE::2020-11-02.20:40:38::SCWPlatform::Trying to set the existing hwdb with name system_wrapper_0
+TRACE::2020-11-02.20:40:38::SCWPlatform::Opened existing hwdb system_wrapper_0
+TRACE::2020-11-02.20:40:38::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2020-11-02.20:40:38::SCWMssOS::Checking the sw design at  C:/Github/Zybo_mipi/Video_Transmission/Vitis/VideoTransmission/zynq_fsbl/zynq_fsbl_bsp/system.mss
+TRACE::2020-11-02.20:40:38::SCWMssOS::DEBUG:  swdes dump  C:/Github/Zybo_mipi/Video_Transmission/Vitis/VideoTransmission/ps7_cortexa9_0/standalone_domain/bsp/system.mss|system_0||
+C:/Github/Zybo_mipi/Video_Transmission/Vitis/VideoTransmission/zynq_fsbl/zynq_fsbl_bsp/system.mss|system||
+
+TRACE::2020-11-02.20:40:38::SCWMssOS::Sw design exists and opened at  C:/Github/Zybo_mipi/Video_Transmission/Vitis/VideoTransmission/zynq_fsbl/zynq_fsbl_bsp/system.mss
+TRACE::2020-11-02.20:40:38::SCWPlatform::Trying to open the hw design at C:/Github/Zybo_mipi/Video_Transmission/Vitis/VideoTransmission/hw/system_wrapper.xsa
+TRACE::2020-11-02.20:40:38::SCWPlatform::DSA given C:/Github/Zybo_mipi/Video_Transmission/Vitis/VideoTransmission/hw/system_wrapper.xsa
+TRACE::2020-11-02.20:40:38::SCWPlatform::DSA absoulate path C:/Github/Zybo_mipi/Video_Transmission/Vitis/VideoTransmission/hw/system_wrapper.xsa
+TRACE::2020-11-02.20:40:38::SCWPlatform::DSA directory C:/Github/Zybo_mipi/Video_Transmission/Vitis/VideoTransmission/hw
+TRACE::2020-11-02.20:40:38::SCWPlatform:: Platform Path C:/Github/Zybo_mipi/Video_Transmission/Vitis/VideoTransmission/hw/system_wrapper.xsa
+TRACE::2020-11-02.20:40:38::SCWPlatform:: Unique name xilinx:::0.0
+TRACE::2020-11-02.20:40:38::SCWPlatform::Trying to set the existing hwdb with name system_wrapper_0
+TRACE::2020-11-02.20:40:38::SCWPlatform::Opened existing hwdb system_wrapper_0
+TRACE::2020-11-02.20:40:38::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2020-11-02.20:40:38::SCWMssOS::Checking the sw design at  C:/Github/Zybo_mipi/Video_Transmission/Vitis/VideoTransmission/zynq_fsbl/zynq_fsbl_bsp/system.mss
+TRACE::2020-11-02.20:40:38::SCWMssOS::DEBUG:  swdes dump  C:/Github/Zybo_mipi/Video_Transmission/Vitis/VideoTransmission/ps7_cortexa9_0/standalone_domain/bsp/system.mss|system_0||
+C:/Github/Zybo_mipi/Video_Transmission/Vitis/VideoTransmission/zynq_fsbl/zynq_fsbl_bsp/system.mss|system||
+
+TRACE::2020-11-02.20:40:38::SCWMssOS::Sw design exists and opened at  C:/Github/Zybo_mipi/Video_Transmission/Vitis/VideoTransmission/zynq_fsbl/zynq_fsbl_bsp/system.mss
+TRACE::2020-11-02.20:40:38::SCWPlatform::Trying to open the hw design at C:/Github/Zybo_mipi/Video_Transmission/Vitis/VideoTransmission/hw/system_wrapper.xsa
+TRACE::2020-11-02.20:40:38::SCWPlatform::DSA given C:/Github/Zybo_mipi/Video_Transmission/Vitis/VideoTransmission/hw/system_wrapper.xsa
+TRACE::2020-11-02.20:40:38::SCWPlatform::DSA absoulate path C:/Github/Zybo_mipi/Video_Transmission/Vitis/VideoTransmission/hw/system_wrapper.xsa
+TRACE::2020-11-02.20:40:38::SCWPlatform::DSA directory C:/Github/Zybo_mipi/Video_Transmission/Vitis/VideoTransmission/hw
+TRACE::2020-11-02.20:40:38::SCWPlatform:: Platform Path C:/Github/Zybo_mipi/Video_Transmission/Vitis/VideoTransmission/hw/system_wrapper.xsa
+TRACE::2020-11-02.20:40:38::SCWPlatform:: Unique name xilinx:::0.0
+TRACE::2020-11-02.20:40:38::SCWPlatform::Trying to set the existing hwdb with name system_wrapper_0
+TRACE::2020-11-02.20:40:38::SCWPlatform::Opened existing hwdb system_wrapper_0
+TRACE::2020-11-02.20:40:38::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2020-11-02.20:40:38::SCWMssOS::Checking the sw design at  C:/Github/Zybo_mipi/Video_Transmission/Vitis/VideoTransmission/ps7_cortexa9_0/standalone_domain/bsp/system.mss
+TRACE::2020-11-02.20:40:38::SCWMssOS::DEBUG:  swdes dump  C:/Github/Zybo_mipi/Video_Transmission/Vitis/VideoTransmission/ps7_cortexa9_0/standalone_domain/bsp/system.mss|system_0||
+C:/Github/Zybo_mipi/Video_Transmission/Vitis/VideoTransmission/zynq_fsbl/zynq_fsbl_bsp/system.mss|system||
+
+TRACE::2020-11-02.20:40:38::SCWMssOS::Sw design exists and opened at  C:/Github/Zybo_mipi/Video_Transmission/Vitis/VideoTransmission/ps7_cortexa9_0/standalone_domain/bsp/system.mss
+TRACE::2020-11-02.20:40:38::SCWPlatform::Trying to open the hw design at C:/Github/Zybo_mipi/Video_Transmission/Vitis/VideoTransmission/hw/system_wrapper.xsa
+TRACE::2020-11-02.20:40:38::SCWPlatform::DSA given C:/Github/Zybo_mipi/Video_Transmission/Vitis/VideoTransmission/hw/system_wrapper.xsa
+TRACE::2020-11-02.20:40:38::SCWPlatform::DSA absoulate path C:/Github/Zybo_mipi/Video_Transmission/Vitis/VideoTransmission/hw/system_wrapper.xsa
+TRACE::2020-11-02.20:40:38::SCWPlatform::DSA directory C:/Github/Zybo_mipi/Video_Transmission/Vitis/VideoTransmission/hw
+TRACE::2020-11-02.20:40:38::SCWPlatform:: Platform Path C:/Github/Zybo_mipi/Video_Transmission/Vitis/VideoTransmission/hw/system_wrapper.xsa
+TRACE::2020-11-02.20:40:38::SCWPlatform:: Unique name xilinx:::0.0
+TRACE::2020-11-02.20:40:38::SCWPlatform::Trying to set the existing hwdb with name system_wrapper_0
+TRACE::2020-11-02.20:40:38::SCWPlatform::Opened existing hwdb system_wrapper_0
+TRACE::2020-11-02.20:40:38::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2020-11-02.20:40:38::SCWMssOS::Checking the sw design at  C:/Github/Zybo_mipi/Video_Transmission/Vitis/VideoTransmission/ps7_cortexa9_0/standalone_domain/bsp/system.mss
+TRACE::2020-11-02.20:40:38::SCWMssOS::DEBUG:  swdes dump  C:/Github/Zybo_mipi/Video_Transmission/Vitis/VideoTransmission/ps7_cortexa9_0/standalone_domain/bsp/system.mss|system_0||
+C:/Github/Zybo_mipi/Video_Transmission/Vitis/VideoTransmission/zynq_fsbl/zynq_fsbl_bsp/system.mss|system||
+
+TRACE::2020-11-02.20:40:38::SCWMssOS::Sw design exists and opened at  C:/Github/Zybo_mipi/Video_Transmission/Vitis/VideoTransmission/ps7_cortexa9_0/standalone_domain/bsp/system.mss
+TRACE::2020-11-02.20:40:38::SCWPlatform::Trying to open the hw design at C:/Github/Zybo_mipi/Video_Transmission/Vitis/VideoTransmission/hw/system_wrapper.xsa
+TRACE::2020-11-02.20:40:38::SCWPlatform::DSA given C:/Github/Zybo_mipi/Video_Transmission/Vitis/VideoTransmission/hw/system_wrapper.xsa
+TRACE::2020-11-02.20:40:38::SCWPlatform::DSA absoulate path C:/Github/Zybo_mipi/Video_Transmission/Vitis/VideoTransmission/hw/system_wrapper.xsa
+TRACE::2020-11-02.20:40:38::SCWPlatform::DSA directory C:/Github/Zybo_mipi/Video_Transmission/Vitis/VideoTransmission/hw
+TRACE::2020-11-02.20:40:38::SCWPlatform:: Platform Path C:/Github/Zybo_mipi/Video_Transmission/Vitis/VideoTransmission/hw/system_wrapper.xsa
+TRACE::2020-11-02.20:40:38::SCWPlatform:: Unique name xilinx:::0.0
+TRACE::2020-11-02.20:40:38::SCWPlatform::Trying to set the existing hwdb with name system_wrapper_0
+TRACE::2020-11-02.20:40:38::SCWPlatform::Opened existing hwdb system_wrapper_0
+TRACE::2020-11-02.20:40:38::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2020-11-02.20:40:38::SCWMssOS::Checking the sw design at  C:/Github/Zybo_mipi/Video_Transmission/Vitis/VideoTransmission/ps7_cortexa9_0/standalone_domain/bsp/system.mss
+TRACE::2020-11-02.20:40:38::SCWMssOS::DEBUG:  swdes dump  C:/Github/Zybo_mipi/Video_Transmission/Vitis/VideoTransmission/ps7_cortexa9_0/standalone_domain/bsp/system.mss|system_0||
+C:/Github/Zybo_mipi/Video_Transmission/Vitis/VideoTransmission/zynq_fsbl/zynq_fsbl_bsp/system.mss|system||
+
+TRACE::2020-11-02.20:40:38::SCWMssOS::Sw design exists and opened at  C:/Github/Zybo_mipi/Video_Transmission/Vitis/VideoTransmission/ps7_cortexa9_0/standalone_domain/bsp/system.mss
+TRACE::2020-11-02.20:40:38::SCWWriter::formatted JSON is {
+	"platformName":	"VideoTransmission",
+	"sprVersion":	"2.0",
+	"mode":	"gui",
+	"dsaType":	"Fixed",
+	"platformDesc":	"VideoTransmission",
+	"platHandOff":	"C:/Github/Zybo_mipi/Video_Transmission/VideoTransmission/system_wrapper.xsa",
+	"platIntHandOff":	"<platformDir>/hw/system_wrapper.xsa",
+	"deviceType":	"zynq",
+	"platIsPrebuiltAutogen":	"false",
+	"platIsNoBootBsp":	"false",
+	"platFsblTarget":	"ps7_cortexa9_0",
+	"hasFsblMakeHasChanges":	"false",
+	"hasPmufwMakeHasChanges":	"false",
+	"platPreBuiltFlag":	false,
+	"platformSamplesDir":	"",
+	"platActiveSys":	"VideoTransmission",
+	"systems":	[{
+			"systemName":	"VideoTransmission",
+			"systemDesc":	"VideoTransmission",
+			"sysIsBootAutoGen":	"true",
+			"systemDispName":	"VideoTransmission",
+			"sysActiveDom":	"standalone_domain",
+			"sysDefaultDom":	"standalone_domain",
+			"domains":	[{
+					"domainName":	"zynq_fsbl",
+					"domainDispName":	"zynq_fsbl",
+					"domainDesc":	"FSBL Application BSP - Auto Generated.",
+					"processors":	"ps7_cortexa9_0",
+					"os":	"standalone",
+					"sdxOs":	"standalone",
+					"debugEnable":	"",
+					"domRuntimes":	["cpp"],
+					"swRepo":	"",
+					"mssOsVer":	"7.1",
+					"mssFile":	"",
+					"md5Digest":	"a9a07a0ab1ed09c8d3a2a026668b55e2",
+					"compatibleApp":	"zynq_fsbl",
+					"domType":	"bootDomain",
+					"appSettings":	{
+						"appCompilerFlags":	"",
+						"appLinkerFlags":	""
+					},
+					"addedLibs":	["xilffs:4.2", "xilrsa:1.5"],
+					"libOptions":	{
+						"libsContainingOptions":	[]
+					},
+					"prebuiltLibs":	{
+						"prebuiltIncPath":	[],
+						"prebuiltLibPath":	[]
+					},
+					"isolation":	{
+					}
+				}, {
+					"domainName":	"standalone_domain",
+					"domainDispName":	"standalone on ps7_cortexa9_0",
+					"domainDesc":	"standalone_domain",
+					"processors":	"ps7_cortexa9_0",
+					"os":	"standalone",
+					"sdxOs":	"standalone",
+					"qemuArgs":	"C:/Xilinx/Vitis/2019.2/data/emulation/platforms/zynq/qemu/qemu_args.txt",
+					"qemuData":	"C:/Xilinx/Vitis/2019.2/data/emulation/platforms/zynq/qemu/",
+					"debugEnable":	"False",
+					"domRuntimes":	["cpp"],
+					"swRepo":	"",
+					"mssOsVer":	"7.1",
+					"mssFile":	"",
+					"md5Digest":	"ddce2d666a90134d9500630be813f080",
+					"compatibleApp":	"",
+					"domType":	"mssDomain",
+					"appSettings":	{
+						"appCompilerFlags":	"",
+						"appLinkerFlags":	""
+					},
+					"addedLibs":	[],
+					"libOptions":	{
+						"libsContainingOptions":	[]
+					},
+					"prebuiltLibs":	{
+						"prebuiltIncPath":	[],
+						"prebuiltLibPath":	[]
+					},
+					"isolation":	{
+					}
+				}]
+		}]
+}
+TRACE::2020-11-02.20:40:39::SCWPlatform::Clearing the existing platform
+TRACE::2020-11-02.20:40:39::SCWSystem::Clearing the existing sysconfig
+TRACE::2020-11-02.20:40:39::SCWBDomain::clearing the fsbl build
+TRACE::2020-11-02.20:40:39::SCWMssOS::Removing the swdes entry for  C:/Github/Zybo_mipi/Video_Transmission/Vitis/VideoTransmission/zynq_fsbl/zynq_fsbl_bsp/system.mss
+TRACE::2020-11-02.20:40:39::SCWMssOS::Removing the swdes entry for  C:/Github/Zybo_mipi/Video_Transmission/Vitis/VideoTransmission/ps7_cortexa9_0/standalone_domain/bsp/system.mss
+TRACE::2020-11-02.20:40:39::SCWSystem::Clearing the domains completed.
+TRACE::2020-11-02.20:40:39::SCWPlatform::Clearing the opened hw db.
+TRACE::2020-11-02.20:40:39::SCWPlatform::DSA given C:/Github/Zybo_mipi/Video_Transmission/Vitis/VideoTransmission/hw/system_wrapper.xsa
+TRACE::2020-11-02.20:40:39::SCWPlatform::DSA absoulate path C:/Github/Zybo_mipi/Video_Transmission/Vitis/VideoTransmission/hw/system_wrapper.xsa
+TRACE::2020-11-02.20:40:39::SCWPlatform:: Platform location is C:/Github/Zybo_mipi/Video_Transmission/Vitis/VideoTransmission/hw
+TRACE::2020-11-02.20:40:39::SCWPlatform:: Platform Path C:/Github/Zybo_mipi/Video_Transmission/Vitis/VideoTransmission/hw/system_wrapper.xsa
+TRACE::2020-11-02.20:40:39::SCWPlatform:: Unique name xilinx:::0.0
+TRACE::2020-11-02.20:40:39::SCWPlatform::Removing the HwDB with name C:/Github/Zybo_mipi/Video_Transmission/Vitis/VideoTransmission/hw/system_wrapper.xsa
+TRACE::2020-11-02.20:40:39::SCWPlatform::Trying to open the hw design at C:/Github/Zybo_mipi/Video_Transmission/Vitis/VideoTransmission/hw/system_wrapper.xsa
+TRACE::2020-11-02.20:40:39::SCWPlatform::DSA given C:/Github/Zybo_mipi/Video_Transmission/Vitis/VideoTransmission/hw/system_wrapper.xsa
+TRACE::2020-11-02.20:40:39::SCWPlatform::DSA absoulate path C:/Github/Zybo_mipi/Video_Transmission/Vitis/VideoTransmission/hw/system_wrapper.xsa
+TRACE::2020-11-02.20:40:39::SCWPlatform::DSA directory C:/Github/Zybo_mipi/Video_Transmission/Vitis/VideoTransmission/hw
+TRACE::2020-11-02.20:40:39::SCWPlatform:: Platform Path C:/Github/Zybo_mipi/Video_Transmission/Vitis/VideoTransmission/hw/system_wrapper.xsa
+TRACE::2020-11-02.20:40:39::SCWPlatform:: Unique name xilinx:::0.0
+TRACE::2020-11-02.20:40:39::SCWPlatform::Do not have an existing db opened. 
+TRACE::2020-11-02.20:40:43::SCWPlatform::Opened new HwDB with name system_wrapper_1
+TRACE::2020-11-02.20:40:43::SCWReader::Active system found as  VideoTransmission
+TRACE::2020-11-02.20:40:43::SCWReader::Handling sysconfig VideoTransmission
+TRACE::2020-11-02.20:40:43::SCWDomain::checking for install qemu data   : 
+TRACE::2020-11-02.20:40:43::SCWDomain:: Using the QEMU Data from install at  : C:/Xilinx/Vitis/2019.2/data/emulation/platforms/zynq/qemu/
+TRACE::2020-11-02.20:40:43::SCWDomain:: Using the QEMU args  from install at  : C:/Xilinx/Vitis/2019.2/data/emulation/platforms/zynq/qemu/qemu_args.txt
+TRACE::2020-11-02.20:40:43::SCWPlatform::Trying to open the hw design at C:/Github/Zybo_mipi/Video_Transmission/Vitis/VideoTransmission/hw/system_wrapper.xsa
+TRACE::2020-11-02.20:40:43::SCWPlatform::DSA given C:/Github/Zybo_mipi/Video_Transmission/Vitis/VideoTransmission/hw/system_wrapper.xsa
+TRACE::2020-11-02.20:40:43::SCWPlatform::DSA absoulate path C:/Github/Zybo_mipi/Video_Transmission/Vitis/VideoTransmission/hw/system_wrapper.xsa
+TRACE::2020-11-02.20:40:43::SCWPlatform::DSA directory C:/Github/Zybo_mipi/Video_Transmission/Vitis/VideoTransmission/hw
+TRACE::2020-11-02.20:40:43::SCWPlatform:: Platform Path C:/Github/Zybo_mipi/Video_Transmission/Vitis/VideoTransmission/hw/system_wrapper.xsa
+TRACE::2020-11-02.20:40:43::SCWPlatform:: Unique name xilinx:::0.0
+TRACE::2020-11-02.20:40:43::SCWPlatform::Trying to set the existing hwdb with name system_wrapper_1
+TRACE::2020-11-02.20:40:43::SCWPlatform::Opened existing hwdb system_wrapper_1
+TRACE::2020-11-02.20:40:43::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2020-11-02.20:40:43::SCWPlatform::Trying to open the hw design at C:/Github/Zybo_mipi/Video_Transmission/Vitis/VideoTransmission/hw/system_wrapper.xsa
+TRACE::2020-11-02.20:40:43::SCWPlatform::DSA given C:/Github/Zybo_mipi/Video_Transmission/Vitis/VideoTransmission/hw/system_wrapper.xsa
+TRACE::2020-11-02.20:40:43::SCWPlatform::DSA absoulate path C:/Github/Zybo_mipi/Video_Transmission/Vitis/VideoTransmission/hw/system_wrapper.xsa
+TRACE::2020-11-02.20:40:43::SCWPlatform::DSA directory C:/Github/Zybo_mipi/Video_Transmission/Vitis/VideoTransmission/hw
+TRACE::2020-11-02.20:40:43::SCWPlatform:: Platform Path C:/Github/Zybo_mipi/Video_Transmission/Vitis/VideoTransmission/hw/system_wrapper.xsa
+TRACE::2020-11-02.20:40:43::SCWPlatform:: Unique name xilinx:::0.0
+TRACE::2020-11-02.20:40:43::SCWPlatform::Trying to set the existing hwdb with name system_wrapper_1
+TRACE::2020-11-02.20:40:43::SCWPlatform::Opened existing hwdb system_wrapper_1
+TRACE::2020-11-02.20:40:43::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2020-11-02.20:40:43::SCWReader::Boot application domain added for zynq_fsbl
+TRACE::2020-11-02.20:40:43::SCWPlatform::Trying to open the hw design at C:/Github/Zybo_mipi/Video_Transmission/Vitis/VideoTransmission/hw/system_wrapper.xsa
+TRACE::2020-11-02.20:40:43::SCWPlatform::DSA given C:/Github/Zybo_mipi/Video_Transmission/Vitis/VideoTransmission/hw/system_wrapper.xsa
+TRACE::2020-11-02.20:40:43::SCWPlatform::DSA absoulate path C:/Github/Zybo_mipi/Video_Transmission/Vitis/VideoTransmission/hw/system_wrapper.xsa
+TRACE::2020-11-02.20:40:43::SCWPlatform::DSA directory C:/Github/Zybo_mipi/Video_Transmission/Vitis/VideoTransmission/hw
+TRACE::2020-11-02.20:40:43::SCWPlatform:: Platform Path C:/Github/Zybo_mipi/Video_Transmission/Vitis/VideoTransmission/hw/system_wrapper.xsa
+TRACE::2020-11-02.20:40:43::SCWPlatform:: Unique name xilinx:::0.0
+TRACE::2020-11-02.20:40:43::SCWPlatform::Trying to set the existing hwdb with name system_wrapper_1
+TRACE::2020-11-02.20:40:43::SCWPlatform::Opened existing hwdb system_wrapper_1
+TRACE::2020-11-02.20:40:43::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2020-11-02.20:40:43::SCWMssOS::Checking the sw design at  C:/Github/Zybo_mipi/Video_Transmission/Vitis/VideoTransmission/zynq_fsbl/zynq_fsbl_bsp/system.mss
+TRACE::2020-11-02.20:40:43::SCWMssOS::DEBUG:  swdes dump  
+TRACE::2020-11-02.20:40:43::SCWMssOS::No sw design opened at  C:/Github/Zybo_mipi/Video_Transmission/Vitis/VideoTransmission/zynq_fsbl/zynq_fsbl_bsp/system.mss
+TRACE::2020-11-02.20:40:43::SCWMssOS::mss exists loading the mss file  C:/Github/Zybo_mipi/Video_Transmission/Vitis/VideoTransmission/zynq_fsbl/zynq_fsbl_bsp/system.mss
+TRACE::2020-11-02.20:40:43::SCWMssOS::Opened the sw design from mss  C:/Github/Zybo_mipi/Video_Transmission/Vitis/VideoTransmission/zynq_fsbl/zynq_fsbl_bsp/system.mss
+TRACE::2020-11-02.20:40:43::SCWMssOS::Adding the swdes entry C:/Github/Zybo_mipi/Video_Transmission/Vitis/VideoTransmission/zynq_fsbl/zynq_fsbl_bsp/system.mss with des name system
+TRACE::2020-11-02.20:40:43::SCWMssOS::updating the scw layer about changes
+TRACE::2020-11-02.20:40:43::SCWMssOS::Opened the sw design.  C:/Github/Zybo_mipi/Video_Transmission/Vitis/VideoTransmission/zynq_fsbl/zynq_fsbl_bsp/system.mss
+TRACE::2020-11-02.20:40:43::SCWPlatform::Trying to open the hw design at C:/Github/Zybo_mipi/Video_Transmission/Vitis/VideoTransmission/hw/system_wrapper.xsa
+TRACE::2020-11-02.20:40:43::SCWPlatform::DSA given C:/Github/Zybo_mipi/Video_Transmission/Vitis/VideoTransmission/hw/system_wrapper.xsa
+TRACE::2020-11-02.20:40:43::SCWPlatform::DSA absoulate path C:/Github/Zybo_mipi/Video_Transmission/Vitis/VideoTransmission/hw/system_wrapper.xsa
+TRACE::2020-11-02.20:40:43::SCWPlatform::DSA directory C:/Github/Zybo_mipi/Video_Transmission/Vitis/VideoTransmission/hw
+TRACE::2020-11-02.20:40:43::SCWPlatform:: Platform Path C:/Github/Zybo_mipi/Video_Transmission/Vitis/VideoTransmission/hw/system_wrapper.xsa
+TRACE::2020-11-02.20:40:43::SCWPlatform:: Unique name xilinx:::0.0
+TRACE::2020-11-02.20:40:43::SCWPlatform::Trying to set the existing hwdb with name system_wrapper_1
+TRACE::2020-11-02.20:40:43::SCWPlatform::Opened existing hwdb system_wrapper_1
+TRACE::2020-11-02.20:40:43::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2020-11-02.20:40:43::SCWMssOS::Checking the sw design at  C:/Github/Zybo_mipi/Video_Transmission/Vitis/VideoTransmission/zynq_fsbl/zynq_fsbl_bsp/system.mss
+TRACE::2020-11-02.20:40:43::SCWMssOS::DEBUG:  swdes dump  C:/Github/Zybo_mipi/Video_Transmission/Vitis/VideoTransmission/zynq_fsbl/zynq_fsbl_bsp/system.mss|system||
+
+TRACE::2020-11-02.20:40:43::SCWMssOS::Sw design exists and opened at  C:/Github/Zybo_mipi/Video_Transmission/Vitis/VideoTransmission/zynq_fsbl/zynq_fsbl_bsp/system.mss
+TRACE::2020-11-02.20:40:43::SCWMssOS:: library already available in sw design:  xilffs:4.2
+TRACE::2020-11-02.20:40:43::SCWPlatform::Trying to open the hw design at C:/Github/Zybo_mipi/Video_Transmission/Vitis/VideoTransmission/hw/system_wrapper.xsa
+TRACE::2020-11-02.20:40:43::SCWPlatform::DSA given C:/Github/Zybo_mipi/Video_Transmission/Vitis/VideoTransmission/hw/system_wrapper.xsa
+TRACE::2020-11-02.20:40:43::SCWPlatform::DSA absoulate path C:/Github/Zybo_mipi/Video_Transmission/Vitis/VideoTransmission/hw/system_wrapper.xsa
+TRACE::2020-11-02.20:40:43::SCWPlatform::DSA directory C:/Github/Zybo_mipi/Video_Transmission/Vitis/VideoTransmission/hw
+TRACE::2020-11-02.20:40:43::SCWPlatform:: Platform Path C:/Github/Zybo_mipi/Video_Transmission/Vitis/VideoTransmission/hw/system_wrapper.xsa
+TRACE::2020-11-02.20:40:43::SCWPlatform:: Unique name xilinx:::0.0
+TRACE::2020-11-02.20:40:43::SCWPlatform::Trying to set the existing hwdb with name system_wrapper_1
+TRACE::2020-11-02.20:40:43::SCWPlatform::Opened existing hwdb system_wrapper_1
+TRACE::2020-11-02.20:40:43::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2020-11-02.20:40:43::SCWMssOS::Checking the sw design at  C:/Github/Zybo_mipi/Video_Transmission/Vitis/VideoTransmission/zynq_fsbl/zynq_fsbl_bsp/system.mss
+TRACE::2020-11-02.20:40:43::SCWMssOS::DEBUG:  swdes dump  C:/Github/Zybo_mipi/Video_Transmission/Vitis/VideoTransmission/zynq_fsbl/zynq_fsbl_bsp/system.mss|system||
+
+TRACE::2020-11-02.20:40:43::SCWMssOS::Sw design exists and opened at  C:/Github/Zybo_mipi/Video_Transmission/Vitis/VideoTransmission/zynq_fsbl/zynq_fsbl_bsp/system.mss
+TRACE::2020-11-02.20:40:43::SCWMssOS:: library already available in sw design:  xilrsa:1.5
+TRACE::2020-11-02.20:40:43::SCWReader::Adding prebuilt librarypaths as   
+TRACE::2020-11-02.20:40:43::SCWReader::Adding prebuilt incpaths  as   
+TRACE::2020-11-02.20:40:43::SCWPlatform::Trying to open the hw design at C:/Github/Zybo_mipi/Video_Transmission/Vitis/VideoTransmission/hw/system_wrapper.xsa
+TRACE::2020-11-02.20:40:43::SCWPlatform::DSA given C:/Github/Zybo_mipi/Video_Transmission/Vitis/VideoTransmission/hw/system_wrapper.xsa
+TRACE::2020-11-02.20:40:43::SCWPlatform::DSA absoulate path C:/Github/Zybo_mipi/Video_Transmission/Vitis/VideoTransmission/hw/system_wrapper.xsa
+TRACE::2020-11-02.20:40:43::SCWPlatform::DSA directory C:/Github/Zybo_mipi/Video_Transmission/Vitis/VideoTransmission/hw
+TRACE::2020-11-02.20:40:43::SCWPlatform:: Platform Path C:/Github/Zybo_mipi/Video_Transmission/Vitis/VideoTransmission/hw/system_wrapper.xsa
+TRACE::2020-11-02.20:40:43::SCWPlatform:: Unique name xilinx:::0.0
+TRACE::2020-11-02.20:40:43::SCWPlatform::Trying to set the existing hwdb with name system_wrapper_1
+TRACE::2020-11-02.20:40:43::SCWPlatform::Opened existing hwdb system_wrapper_1
+TRACE::2020-11-02.20:40:43::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2020-11-02.20:40:43::SCWMssOS::Checking the sw design at  C:/Github/Zybo_mipi/Video_Transmission/Vitis/VideoTransmission/zynq_fsbl/zynq_fsbl_bsp/system.mss
+TRACE::2020-11-02.20:40:43::SCWMssOS::DEBUG:  swdes dump  C:/Github/Zybo_mipi/Video_Transmission/Vitis/VideoTransmission/zynq_fsbl/zynq_fsbl_bsp/system.mss|system||
+
+TRACE::2020-11-02.20:40:43::SCWMssOS::Sw design exists and opened at  C:/Github/Zybo_mipi/Video_Transmission/Vitis/VideoTransmission/zynq_fsbl/zynq_fsbl_bsp/system.mss
+TRACE::2020-11-02.20:40:43::SCWReader::No isolation master present  
+TRACE::2020-11-02.20:40:43::SCWDomain::checking for install qemu data   : 
+TRACE::2020-11-02.20:40:43::SCWDomain:: Using the QEMU Data from install at  : C:/Xilinx/Vitis/2019.2/data/emulation/platforms/zynq/qemu/
+TRACE::2020-11-02.20:40:43::SCWDomain:: Using the QEMU args  from install at  : C:/Xilinx/Vitis/2019.2/data/emulation/platforms/zynq/qemu/qemu_args.txt
+TRACE::2020-11-02.20:40:43::SCWPlatform::Trying to open the hw design at C:/Github/Zybo_mipi/Video_Transmission/Vitis/VideoTransmission/hw/system_wrapper.xsa
+TRACE::2020-11-02.20:40:43::SCWPlatform::DSA given C:/Github/Zybo_mipi/Video_Transmission/Vitis/VideoTransmission/hw/system_wrapper.xsa
+TRACE::2020-11-02.20:40:43::SCWPlatform::DSA absoulate path C:/Github/Zybo_mipi/Video_Transmission/Vitis/VideoTransmission/hw/system_wrapper.xsa
+TRACE::2020-11-02.20:40:43::SCWPlatform::DSA directory C:/Github/Zybo_mipi/Video_Transmission/Vitis/VideoTransmission/hw
+TRACE::2020-11-02.20:40:43::SCWPlatform:: Platform Path C:/Github/Zybo_mipi/Video_Transmission/Vitis/VideoTransmission/hw/system_wrapper.xsa
+TRACE::2020-11-02.20:40:43::SCWPlatform:: Unique name xilinx:::0.0
+TRACE::2020-11-02.20:40:43::SCWPlatform::Trying to set the existing hwdb with name system_wrapper_1
+TRACE::2020-11-02.20:40:43::SCWPlatform::Opened existing hwdb system_wrapper_1
+TRACE::2020-11-02.20:40:43::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2020-11-02.20:40:43::SCWPlatform::Trying to open the hw design at C:/Github/Zybo_mipi/Video_Transmission/Vitis/VideoTransmission/hw/system_wrapper.xsa
+TRACE::2020-11-02.20:40:43::SCWPlatform::DSA given C:/Github/Zybo_mipi/Video_Transmission/Vitis/VideoTransmission/hw/system_wrapper.xsa
+TRACE::2020-11-02.20:40:43::SCWPlatform::DSA absoulate path C:/Github/Zybo_mipi/Video_Transmission/Vitis/VideoTransmission/hw/system_wrapper.xsa
+TRACE::2020-11-02.20:40:43::SCWPlatform::DSA directory C:/Github/Zybo_mipi/Video_Transmission/Vitis/VideoTransmission/hw
+TRACE::2020-11-02.20:40:43::SCWPlatform:: Platform Path C:/Github/Zybo_mipi/Video_Transmission/Vitis/VideoTransmission/hw/system_wrapper.xsa
+TRACE::2020-11-02.20:40:43::SCWPlatform:: Unique name xilinx:::0.0
+TRACE::2020-11-02.20:40:43::SCWPlatform::Trying to set the existing hwdb with name system_wrapper_1
+TRACE::2020-11-02.20:40:43::SCWPlatform::Opened existing hwdb system_wrapper_1
+TRACE::2020-11-02.20:40:43::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2020-11-02.20:40:43::SCWMssOS::Checking the sw design at  C:/Github/Zybo_mipi/Video_Transmission/Vitis/VideoTransmission/ps7_cortexa9_0/standalone_domain/bsp/system.mss
+TRACE::2020-11-02.20:40:43::SCWMssOS::DEBUG:  swdes dump  C:/Github/Zybo_mipi/Video_Transmission/Vitis/VideoTransmission/zynq_fsbl/zynq_fsbl_bsp/system.mss|system||
+
+TRACE::2020-11-02.20:40:43::SCWMssOS::No sw design opened at  C:/Github/Zybo_mipi/Video_Transmission/Vitis/VideoTransmission/ps7_cortexa9_0/standalone_domain/bsp/system.mss
+TRACE::2020-11-02.20:40:43::SCWMssOS::mss exists loading the mss file  C:/Github/Zybo_mipi/Video_Transmission/Vitis/VideoTransmission/ps7_cortexa9_0/standalone_domain/bsp/system.mss
+TRACE::2020-11-02.20:40:43::SCWMssOS::Opened the sw design from mss  C:/Github/Zybo_mipi/Video_Transmission/Vitis/VideoTransmission/ps7_cortexa9_0/standalone_domain/bsp/system.mss
+TRACE::2020-11-02.20:40:43::SCWMssOS::Adding the swdes entry C:/Github/Zybo_mipi/Video_Transmission/Vitis/VideoTransmission/ps7_cortexa9_0/standalone_domain/bsp/system.mss with des name system_0
+TRACE::2020-11-02.20:40:43::SCWMssOS::updating the scw layer about changes
+TRACE::2020-11-02.20:40:43::SCWMssOS::Opened the sw design.  C:/Github/Zybo_mipi/Video_Transmission/Vitis/VideoTransmission/ps7_cortexa9_0/standalone_domain/bsp/system.mss
+TRACE::2020-11-02.20:40:43::SCWReader::Adding prebuilt librarypaths as   
+TRACE::2020-11-02.20:40:43::SCWReader::Adding prebuilt incpaths  as   
+TRACE::2020-11-02.20:40:43::SCWPlatform::Trying to open the hw design at C:/Github/Zybo_mipi/Video_Transmission/Vitis/VideoTransmission/hw/system_wrapper.xsa
+TRACE::2020-11-02.20:40:43::SCWPlatform::DSA given C:/Github/Zybo_mipi/Video_Transmission/Vitis/VideoTransmission/hw/system_wrapper.xsa
+TRACE::2020-11-02.20:40:43::SCWPlatform::DSA absoulate path C:/Github/Zybo_mipi/Video_Transmission/Vitis/VideoTransmission/hw/system_wrapper.xsa
+TRACE::2020-11-02.20:40:43::SCWPlatform::DSA directory C:/Github/Zybo_mipi/Video_Transmission/Vitis/VideoTransmission/hw
+TRACE::2020-11-02.20:40:43::SCWPlatform:: Platform Path C:/Github/Zybo_mipi/Video_Transmission/Vitis/VideoTransmission/hw/system_wrapper.xsa
+TRACE::2020-11-02.20:40:43::SCWPlatform:: Unique name xilinx:::0.0
+TRACE::2020-11-02.20:40:43::SCWPlatform::Trying to set the existing hwdb with name system_wrapper_1
+TRACE::2020-11-02.20:40:43::SCWPlatform::Opened existing hwdb system_wrapper_1
+TRACE::2020-11-02.20:40:43::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2020-11-02.20:40:43::SCWMssOS::Checking the sw design at  C:/Github/Zybo_mipi/Video_Transmission/Vitis/VideoTransmission/ps7_cortexa9_0/standalone_domain/bsp/system.mss
+TRACE::2020-11-02.20:40:43::SCWMssOS::DEBUG:  swdes dump  C:/Github/Zybo_mipi/Video_Transmission/Vitis/VideoTransmission/ps7_cortexa9_0/standalone_domain/bsp/system.mss|system_0||
+C:/Github/Zybo_mipi/Video_Transmission/Vitis/VideoTransmission/zynq_fsbl/zynq_fsbl_bsp/system.mss|system||
+
+TRACE::2020-11-02.20:40:43::SCWMssOS::Sw design exists and opened at  C:/Github/Zybo_mipi/Video_Transmission/Vitis/VideoTransmission/ps7_cortexa9_0/standalone_domain/bsp/system.mss
+TRACE::2020-11-02.20:40:43::SCWReader::No isolation master present  
+TRACE::2020-11-02.20:40:43::SCWPlatform::Trying to open the hw design at C:/Github/Zybo_mipi/Video_Transmission/Vitis/VideoTransmission/hw/system_wrapper.xsa
+TRACE::2020-11-02.20:40:43::SCWPlatform::DSA given C:/Github/Zybo_mipi/Video_Transmission/Vitis/VideoTransmission/hw/system_wrapper.xsa
+TRACE::2020-11-02.20:40:43::SCWPlatform::DSA absoulate path C:/Github/Zybo_mipi/Video_Transmission/Vitis/VideoTransmission/hw/system_wrapper.xsa
+TRACE::2020-11-02.20:40:43::SCWPlatform::DSA directory C:/Github/Zybo_mipi/Video_Transmission/Vitis/VideoTransmission/hw
+TRACE::2020-11-02.20:40:43::SCWPlatform:: Platform Path C:/Github/Zybo_mipi/Video_Transmission/Vitis/VideoTransmission/hw/system_wrapper.xsa
+TRACE::2020-11-02.20:40:43::SCWPlatform:: Unique name xilinx:::0.0
+TRACE::2020-11-02.20:40:43::SCWPlatform::Trying to set the existing hwdb with name system_wrapper_1
+TRACE::2020-11-02.20:40:43::SCWPlatform::Opened existing hwdb system_wrapper_1
+TRACE::2020-11-02.20:40:43::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2020-11-02.20:40:43::SCWMssOS::Checking the sw design at  C:/Github/Zybo_mipi/Video_Transmission/Vitis/VideoTransmission/zynq_fsbl/zynq_fsbl_bsp/system.mss
+TRACE::2020-11-02.20:40:43::SCWMssOS::DEBUG:  swdes dump  C:/Github/Zybo_mipi/Video_Transmission/Vitis/VideoTransmission/ps7_cortexa9_0/standalone_domain/bsp/system.mss|system_0||
+C:/Github/Zybo_mipi/Video_Transmission/Vitis/VideoTransmission/zynq_fsbl/zynq_fsbl_bsp/system.mss|system||
+
+TRACE::2020-11-02.20:40:43::SCWMssOS::Sw design exists and opened at  C:/Github/Zybo_mipi/Video_Transmission/Vitis/VideoTransmission/zynq_fsbl/zynq_fsbl_bsp/system.mss
+TRACE::2020-11-02.20:40:43::SCWPlatform::Trying to open the hw design at C:/Github/Zybo_mipi/Video_Transmission/Vitis/VideoTransmission/hw/system_wrapper.xsa
+TRACE::2020-11-02.20:40:43::SCWPlatform::DSA given C:/Github/Zybo_mipi/Video_Transmission/Vitis/VideoTransmission/hw/system_wrapper.xsa
+TRACE::2020-11-02.20:40:43::SCWPlatform::DSA absoulate path C:/Github/Zybo_mipi/Video_Transmission/Vitis/VideoTransmission/hw/system_wrapper.xsa
+TRACE::2020-11-02.20:40:43::SCWPlatform::DSA directory C:/Github/Zybo_mipi/Video_Transmission/Vitis/VideoTransmission/hw
+TRACE::2020-11-02.20:40:43::SCWPlatform:: Platform Path C:/Github/Zybo_mipi/Video_Transmission/Vitis/VideoTransmission/hw/system_wrapper.xsa
+TRACE::2020-11-02.20:40:43::SCWPlatform:: Unique name xilinx:::0.0
+TRACE::2020-11-02.20:40:43::SCWPlatform::Trying to set the existing hwdb with name system_wrapper_1
+TRACE::2020-11-02.20:40:43::SCWPlatform::Opened existing hwdb system_wrapper_1
+TRACE::2020-11-02.20:40:43::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2020-11-02.20:40:43::SCWMssOS::Checking the sw design at  C:/Github/Zybo_mipi/Video_Transmission/Vitis/VideoTransmission/ps7_cortexa9_0/standalone_domain/bsp/system.mss
+TRACE::2020-11-02.20:40:43::SCWMssOS::DEBUG:  swdes dump  C:/Github/Zybo_mipi/Video_Transmission/Vitis/VideoTransmission/ps7_cortexa9_0/standalone_domain/bsp/system.mss|system_0||
+C:/Github/Zybo_mipi/Video_Transmission/Vitis/VideoTransmission/zynq_fsbl/zynq_fsbl_bsp/system.mss|system||
+
+TRACE::2020-11-02.20:40:43::SCWMssOS::Sw design exists and opened at  C:/Github/Zybo_mipi/Video_Transmission/Vitis/VideoTransmission/ps7_cortexa9_0/standalone_domain/bsp/system.mss
+TRACE::2020-11-02.20:40:44::SCWMssOS::In reload Mss file.
+TRACE::2020-11-02.20:40:44::SCWPlatform::Trying to open the hw design at C:/Github/Zybo_mipi/Video_Transmission/Vitis/VideoTransmission/hw/system_wrapper.xsa
+TRACE::2020-11-02.20:40:44::SCWPlatform::DSA given C:/Github/Zybo_mipi/Video_Transmission/Vitis/VideoTransmission/hw/system_wrapper.xsa
+TRACE::2020-11-02.20:40:44::SCWPlatform::DSA absoulate path C:/Github/Zybo_mipi/Video_Transmission/Vitis/VideoTransmission/hw/system_wrapper.xsa
+TRACE::2020-11-02.20:40:44::SCWPlatform::DSA directory C:/Github/Zybo_mipi/Video_Transmission/Vitis/VideoTransmission/hw
+TRACE::2020-11-02.20:40:44::SCWPlatform:: Platform Path C:/Github/Zybo_mipi/Video_Transmission/Vitis/VideoTransmission/hw/system_wrapper.xsa
+TRACE::2020-11-02.20:40:44::SCWPlatform:: Unique name xilinx:::0.0
+TRACE::2020-11-02.20:40:44::SCWPlatform::Trying to set the existing hwdb with name system_wrapper_1
+TRACE::2020-11-02.20:40:44::SCWPlatform::Opened existing hwdb system_wrapper_1
+TRACE::2020-11-02.20:40:44::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2020-11-02.20:40:44::SCWMssOS::Checking the sw design at  C:/Github/Zybo_mipi/Video_Transmission/Vitis/VideoTransmission/ps7_cortexa9_0/standalone_domain/bsp/system.mss
+TRACE::2020-11-02.20:40:44::SCWMssOS::DEBUG:  swdes dump  C:/Github/Zybo_mipi/Video_Transmission/Vitis/VideoTransmission/ps7_cortexa9_0/standalone_domain/bsp/system.mss|system_0||
+C:/Github/Zybo_mipi/Video_Transmission/Vitis/VideoTransmission/zynq_fsbl/zynq_fsbl_bsp/system.mss|system||
+
+KEYINFO::2020-11-02.20:40:44::SCWMssOS::Could not open the swdb for system_0
+KEYINFO::2020-11-02.20:40:44::SCWMssOS::Could not open the sw design at  system_0
+ERROR: [Hsi 55-1558] Software Design system_0 is not found
+
+TRACE::2020-11-02.20:40:44::SCWMssOS::Cleared the swdb table entry
+TRACE::2020-11-02.20:40:44::SCWMssOS::No sw design opened at  C:/Github/Zybo_mipi/Video_Transmission/Vitis/VideoTransmission/ps7_cortexa9_0/standalone_domain/bsp/system.mss
+TRACE::2020-11-02.20:40:44::SCWMssOS::mss exists loading the mss file  C:/Github/Zybo_mipi/Video_Transmission/Vitis/VideoTransmission/ps7_cortexa9_0/standalone_domain/bsp/system.mss
+TRACE::2020-11-02.20:40:44::SCWMssOS::Opened the sw design from mss  C:/Github/Zybo_mipi/Video_Transmission/Vitis/VideoTransmission/ps7_cortexa9_0/standalone_domain/bsp/system.mss
+TRACE::2020-11-02.20:40:44::SCWMssOS::Adding the swdes entry C:/Github/Zybo_mipi/Video_Transmission/Vitis/VideoTransmission/ps7_cortexa9_0/standalone_domain/bsp/system.mss with des name system_0
+TRACE::2020-11-02.20:40:44::SCWMssOS::updating the scw layer about changes
+TRACE::2020-11-02.20:40:44::SCWMssOS::Opened the sw design.  C:/Github/Zybo_mipi/Video_Transmission/Vitis/VideoTransmission/ps7_cortexa9_0/standalone_domain/bsp/system.mss
+TRACE::2020-11-02.20:40:44::SCWPlatform::Trying to open the hw design at C:/Github/Zybo_mipi/Video_Transmission/Vitis/VideoTransmission/hw/system_wrapper.xsa
+TRACE::2020-11-02.20:40:44::SCWPlatform::DSA given C:/Github/Zybo_mipi/Video_Transmission/Vitis/VideoTransmission/hw/system_wrapper.xsa
+TRACE::2020-11-02.20:40:44::SCWPlatform::DSA absoulate path C:/Github/Zybo_mipi/Video_Transmission/Vitis/VideoTransmission/hw/system_wrapper.xsa
+TRACE::2020-11-02.20:40:44::SCWPlatform::DSA directory C:/Github/Zybo_mipi/Video_Transmission/Vitis/VideoTransmission/hw
+TRACE::2020-11-02.20:40:44::SCWPlatform:: Platform Path C:/Github/Zybo_mipi/Video_Transmission/Vitis/VideoTransmission/hw/system_wrapper.xsa
+TRACE::2020-11-02.20:40:44::SCWPlatform:: Unique name xilinx:::0.0
+TRACE::2020-11-02.20:40:44::SCWPlatform::Trying to set the existing hwdb with name system_wrapper_1
+TRACE::2020-11-02.20:40:44::SCWPlatform::Opened existing hwdb system_wrapper_1
+TRACE::2020-11-02.20:40:44::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2020-11-02.20:40:44::SCWMssOS::Checking the sw design at  C:/Github/Zybo_mipi/Video_Transmission/Vitis/VideoTransmission/ps7_cortexa9_0/standalone_domain/bsp/system.mss
+TRACE::2020-11-02.20:40:44::SCWMssOS::DEBUG:  swdes dump  C:/Github/Zybo_mipi/Video_Transmission/Vitis/VideoTransmission/ps7_cortexa9_0/standalone_domain/bsp/system.mss|system_0||
+C:/Github/Zybo_mipi/Video_Transmission/Vitis/VideoTransmission/zynq_fsbl/zynq_fsbl_bsp/system.mss|system||
+
+TRACE::2020-11-02.20:40:44::SCWMssOS::Sw design exists and opened at  C:/Github/Zybo_mipi/Video_Transmission/Vitis/VideoTransmission/ps7_cortexa9_0/standalone_domain/bsp/system.mss
+TRACE::2020-11-02.20:40:44::SCWMssOS::Removing the swdes entry for  C:/Github/Zybo_mipi/Video_Transmission/Vitis/VideoTransmission/ps7_cortexa9_0/standalone_domain/bsp/system.mss
+TRACE::2020-11-02.20:40:44::SCWMssOS::In reload Mss file.
+TRACE::2020-11-02.20:40:44::SCWPlatform::Trying to open the hw design at C:/Github/Zybo_mipi/Video_Transmission/Vitis/VideoTransmission/hw/system_wrapper.xsa
+TRACE::2020-11-02.20:40:44::SCWPlatform::DSA given C:/Github/Zybo_mipi/Video_Transmission/Vitis/VideoTransmission/hw/system_wrapper.xsa
+TRACE::2020-11-02.20:40:44::SCWPlatform::DSA absoulate path C:/Github/Zybo_mipi/Video_Transmission/Vitis/VideoTransmission/hw/system_wrapper.xsa
+TRACE::2020-11-02.20:40:44::SCWPlatform::DSA directory C:/Github/Zybo_mipi/Video_Transmission/Vitis/VideoTransmission/hw
+TRACE::2020-11-02.20:40:44::SCWPlatform:: Platform Path C:/Github/Zybo_mipi/Video_Transmission/Vitis/VideoTransmission/hw/system_wrapper.xsa
+TRACE::2020-11-02.20:40:44::SCWPlatform:: Unique name xilinx:::0.0
+TRACE::2020-11-02.20:40:44::SCWPlatform::Trying to set the existing hwdb with name system_wrapper_1
+TRACE::2020-11-02.20:40:44::SCWPlatform::Opened existing hwdb system_wrapper_1
+TRACE::2020-11-02.20:40:44::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2020-11-02.20:40:44::SCWMssOS::Checking the sw design at  C:/Github/Zybo_mipi/Video_Transmission/Vitis/VideoTransmission/ps7_cortexa9_0/standalone_domain/bsp/system.mss
+TRACE::2020-11-02.20:40:44::SCWMssOS::DEBUG:  swdes dump  C:/Github/Zybo_mipi/Video_Transmission/Vitis/VideoTransmission/zynq_fsbl/zynq_fsbl_bsp/system.mss|system||
+
+TRACE::2020-11-02.20:40:44::SCWMssOS::No sw design opened at  C:/Github/Zybo_mipi/Video_Transmission/Vitis/VideoTransmission/ps7_cortexa9_0/standalone_domain/bsp/system.mss
+TRACE::2020-11-02.20:40:44::SCWMssOS::mss exists loading the mss file  C:/Github/Zybo_mipi/Video_Transmission/Vitis/VideoTransmission/ps7_cortexa9_0/standalone_domain/bsp/system.mss
+TRACE::2020-11-02.20:40:44::SCWMssOS::Opened the sw design from mss  C:/Github/Zybo_mipi/Video_Transmission/Vitis/VideoTransmission/ps7_cortexa9_0/standalone_domain/bsp/system.mss
+TRACE::2020-11-02.20:40:44::SCWMssOS::Adding the swdes entry C:/Github/Zybo_mipi/Video_Transmission/Vitis/VideoTransmission/ps7_cortexa9_0/standalone_domain/bsp/system.mss with des name system_0
+TRACE::2020-11-02.20:40:44::SCWMssOS::updating the scw layer about changes
+TRACE::2020-11-02.20:40:44::SCWMssOS::Opened the sw design.  C:/Github/Zybo_mipi/Video_Transmission/Vitis/VideoTransmission/ps7_cortexa9_0/standalone_domain/bsp/system.mss
+TRACE::2020-11-02.20:40:44::SCWPlatform::Trying to open the hw design at C:/Github/Zybo_mipi/Video_Transmission/Vitis/VideoTransmission/hw/system_wrapper.xsa
+TRACE::2020-11-02.20:40:44::SCWPlatform::DSA given C:/Github/Zybo_mipi/Video_Transmission/Vitis/VideoTransmission/hw/system_wrapper.xsa
+TRACE::2020-11-02.20:40:44::SCWPlatform::DSA absoulate path C:/Github/Zybo_mipi/Video_Transmission/Vitis/VideoTransmission/hw/system_wrapper.xsa
+TRACE::2020-11-02.20:40:44::SCWPlatform::DSA directory C:/Github/Zybo_mipi/Video_Transmission/Vitis/VideoTransmission/hw
+TRACE::2020-11-02.20:40:45::SCWPlatform:: Platform Path C:/Github/Zybo_mipi/Video_Transmission/Vitis/VideoTransmission/hw/system_wrapper.xsa
+TRACE::2020-11-02.20:40:45::SCWPlatform:: Unique name xilinx:::0.0
+TRACE::2020-11-02.20:40:45::SCWPlatform::Trying to set the existing hwdb with name system_wrapper_1
+TRACE::2020-11-02.20:40:45::SCWPlatform::Opened existing hwdb system_wrapper_1
+TRACE::2020-11-02.20:40:45::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2020-11-02.20:40:45::SCWMssOS::Checking the sw design at  C:/Github/Zybo_mipi/Video_Transmission/Vitis/VideoTransmission/ps7_cortexa9_0/standalone_domain/bsp/system.mss
+TRACE::2020-11-02.20:40:45::SCWMssOS::DEBUG:  swdes dump  C:/Github/Zybo_mipi/Video_Transmission/Vitis/VideoTransmission/ps7_cortexa9_0/standalone_domain/bsp/system.mss|system_0||
+C:/Github/Zybo_mipi/Video_Transmission/Vitis/VideoTransmission/zynq_fsbl/zynq_fsbl_bsp/system.mss|system||
+
+TRACE::2020-11-02.20:40:45::SCWMssOS::Sw design exists and opened at  C:/Github/Zybo_mipi/Video_Transmission/Vitis/VideoTransmission/ps7_cortexa9_0/standalone_domain/bsp/system.mss
+TRACE::2020-11-02.20:40:45::SCWMssOS::Removing the swdes entry for  C:/Github/Zybo_mipi/Video_Transmission/Vitis/VideoTransmission/ps7_cortexa9_0/standalone_domain/bsp/system.mss
+TRACE::2020-11-02.20:41:09::SCWPlatform::Trying to open the hw design at C:/Github/Zybo_mipi/Video_Transmission/Vitis/VideoTransmission/hw/system_wrapper.xsa
+TRACE::2020-11-02.20:41:09::SCWPlatform::DSA given C:/Github/Zybo_mipi/Video_Transmission/Vitis/VideoTransmission/hw/system_wrapper.xsa
+TRACE::2020-11-02.20:41:09::SCWPlatform::DSA absoulate path C:/Github/Zybo_mipi/Video_Transmission/Vitis/VideoTransmission/hw/system_wrapper.xsa
+TRACE::2020-11-02.20:41:09::SCWPlatform::DSA directory C:/Github/Zybo_mipi/Video_Transmission/Vitis/VideoTransmission/hw
+TRACE::2020-11-02.20:41:09::SCWPlatform:: Platform Path C:/Github/Zybo_mipi/Video_Transmission/Vitis/VideoTransmission/hw/system_wrapper.xsa
+TRACE::2020-11-02.20:41:09::SCWPlatform:: Unique name xilinx:::0.0
+TRACE::2020-11-02.20:41:09::SCWPlatform::Trying to set the existing hwdb with name system_wrapper_1
+TRACE::2020-11-02.20:41:09::SCWPlatform::Opened existing hwdb system_wrapper_1
+TRACE::2020-11-02.20:41:09::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2020-11-02.20:41:09::SCWMssOS::Checking the sw design at  C:/Github/Zybo_mipi/Video_Transmission/Vitis/VideoTransmission/ps7_cortexa9_0/standalone_domain/bsp/system.mss
+TRACE::2020-11-02.20:41:09::SCWMssOS::DEBUG:  swdes dump  C:/Github/Zybo_mipi/Video_Transmission/Vitis/VideoTransmission/zynq_fsbl/zynq_fsbl_bsp/system.mss|system||
+
+TRACE::2020-11-02.20:41:09::SCWMssOS::No sw design opened at  C:/Github/Zybo_mipi/Video_Transmission/Vitis/VideoTransmission/ps7_cortexa9_0/standalone_domain/bsp/system.mss
+TRACE::2020-11-02.20:41:09::SCWMssOS::mss exists loading the mss file  C:/Github/Zybo_mipi/Video_Transmission/Vitis/VideoTransmission/ps7_cortexa9_0/standalone_domain/bsp/system.mss
+TRACE::2020-11-02.20:41:09::SCWMssOS::Opened the sw design from mss  C:/Github/Zybo_mipi/Video_Transmission/Vitis/VideoTransmission/ps7_cortexa9_0/standalone_domain/bsp/system.mss
+TRACE::2020-11-02.20:41:09::SCWMssOS::Adding the swdes entry C:/Github/Zybo_mipi/Video_Transmission/Vitis/VideoTransmission/ps7_cortexa9_0/standalone_domain/bsp/system.mss with des name system_0
+TRACE::2020-11-02.20:41:09::SCWMssOS::updating the scw layer about changes
+TRACE::2020-11-02.20:41:09::SCWMssOS::Opened the sw design.  C:/Github/Zybo_mipi/Video_Transmission/Vitis/VideoTransmission/ps7_cortexa9_0/standalone_domain/bsp/system.mss
+TRACE::2020-11-02.20:41:13::SCWPlatform::Trying to open the hw design at C:/Github/Zybo_mipi/Video_Transmission/Vitis/VideoTransmission/hw/system_wrapper.xsa
+TRACE::2020-11-02.20:41:13::SCWPlatform::DSA given C:/Github/Zybo_mipi/Video_Transmission/Vitis/VideoTransmission/hw/system_wrapper.xsa
+TRACE::2020-11-02.20:41:13::SCWPlatform::DSA absoulate path C:/Github/Zybo_mipi/Video_Transmission/Vitis/VideoTransmission/hw/system_wrapper.xsa
+TRACE::2020-11-02.20:41:13::SCWPlatform::DSA directory C:/Github/Zybo_mipi/Video_Transmission/Vitis/VideoTransmission/hw
+TRACE::2020-11-02.20:41:13::SCWPlatform:: Platform Path C:/Github/Zybo_mipi/Video_Transmission/Vitis/VideoTransmission/hw/system_wrapper.xsa
+TRACE::2020-11-02.20:41:13::SCWPlatform:: Unique name xilinx:::0.0
+TRACE::2020-11-02.20:41:13::SCWPlatform::Trying to set the existing hwdb with name system_wrapper_1
+TRACE::2020-11-02.20:41:13::SCWPlatform::Opened existing hwdb system_wrapper_1
+TRACE::2020-11-02.20:41:13::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2020-11-02.20:41:13::SCWMssOS::Checking the sw design at  C:/Github/Zybo_mipi/Video_Transmission/Vitis/VideoTransmission/ps7_cortexa9_0/standalone_domain/bsp/system.mss
+TRACE::2020-11-02.20:41:13::SCWMssOS::DEBUG:  swdes dump  C:/Github/Zybo_mipi/Video_Transmission/Vitis/VideoTransmission/ps7_cortexa9_0/standalone_domain/bsp/system.mss|system_0||
+C:/Github/Zybo_mipi/Video_Transmission/Vitis/VideoTransmission/zynq_fsbl/zynq_fsbl_bsp/system.mss|system||
+
+TRACE::2020-11-02.20:41:13::SCWMssOS::Sw design exists and opened at  C:/Github/Zybo_mipi/Video_Transmission/Vitis/VideoTransmission/ps7_cortexa9_0/standalone_domain/bsp/system.mss
+TRACE::2020-11-02.20:41:13::SCWMssOS::Adding Library:  lwip211:1.1
+TRACE::2020-11-02.20:41:13::SCWMssOS::Added Library:  lwip211
+TRACE::2020-11-02.20:41:24::SCWPlatform::Trying to open the hw design at C:/Github/Zybo_mipi/Video_Transmission/Vitis/VideoTransmission/hw/system_wrapper.xsa
+TRACE::2020-11-02.20:41:24::SCWPlatform::DSA given C:/Github/Zybo_mipi/Video_Transmission/Vitis/VideoTransmission/hw/system_wrapper.xsa
+TRACE::2020-11-02.20:41:24::SCWPlatform::DSA absoulate path C:/Github/Zybo_mipi/Video_Transmission/Vitis/VideoTransmission/hw/system_wrapper.xsa
+TRACE::2020-11-02.20:41:24::SCWPlatform::DSA directory C:/Github/Zybo_mipi/Video_Transmission/Vitis/VideoTransmission/hw
+TRACE::2020-11-02.20:41:24::SCWPlatform:: Platform Path C:/Github/Zybo_mipi/Video_Transmission/Vitis/VideoTransmission/hw/system_wrapper.xsa
+TRACE::2020-11-02.20:41:24::SCWPlatform:: Unique name xilinx:::0.0
+TRACE::2020-11-02.20:41:24::SCWPlatform::Trying to set the existing hwdb with name system_wrapper_1
+TRACE::2020-11-02.20:41:24::SCWPlatform::Opened existing hwdb system_wrapper_1
+TRACE::2020-11-02.20:41:24::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2020-11-02.20:41:24::SCWMssOS::Checking the sw design at  C:/Github/Zybo_mipi/Video_Transmission/Vitis/VideoTransmission/ps7_cortexa9_0/standalone_domain/bsp/system.mss
+TRACE::2020-11-02.20:41:24::SCWMssOS::DEBUG:  swdes dump  C:/Github/Zybo_mipi/Video_Transmission/Vitis/VideoTransmission/ps7_cortexa9_0/standalone_domain/bsp/system.mss|system_0||
+C:/Github/Zybo_mipi/Video_Transmission/Vitis/VideoTransmission/zynq_fsbl/zynq_fsbl_bsp/system.mss|system||
+
+TRACE::2020-11-02.20:41:24::SCWMssOS::Sw design exists and opened at  C:/Github/Zybo_mipi/Video_Transmission/Vitis/VideoTransmission/ps7_cortexa9_0/standalone_domain/bsp/system.mss
+TRACE::2020-11-02.20:41:24::SCWPlatform::Trying to open the hw design at C:/Github/Zybo_mipi/Video_Transmission/Vitis/VideoTransmission/hw/system_wrapper.xsa
+TRACE::2020-11-02.20:41:24::SCWPlatform::DSA given C:/Github/Zybo_mipi/Video_Transmission/Vitis/VideoTransmission/hw/system_wrapper.xsa
+TRACE::2020-11-02.20:41:24::SCWPlatform::DSA absoulate path C:/Github/Zybo_mipi/Video_Transmission/Vitis/VideoTransmission/hw/system_wrapper.xsa
+TRACE::2020-11-02.20:41:24::SCWPlatform::DSA directory C:/Github/Zybo_mipi/Video_Transmission/Vitis/VideoTransmission/hw
+TRACE::2020-11-02.20:41:24::SCWPlatform:: Platform Path C:/Github/Zybo_mipi/Video_Transmission/Vitis/VideoTransmission/hw/system_wrapper.xsa
+TRACE::2020-11-02.20:41:24::SCWPlatform:: Unique name xilinx:::0.0
+TRACE::2020-11-02.20:41:24::SCWPlatform::Trying to set the existing hwdb with name system_wrapper_1
+TRACE::2020-11-02.20:41:24::SCWPlatform::Opened existing hwdb system_wrapper_1
+TRACE::2020-11-02.20:41:24::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2020-11-02.20:41:24::SCWMssOS::Checking the sw design at  C:/Github/Zybo_mipi/Video_Transmission/Vitis/VideoTransmission/ps7_cortexa9_0/standalone_domain/bsp/system.mss
+TRACE::2020-11-02.20:41:24::SCWMssOS::DEBUG:  swdes dump  C:/Github/Zybo_mipi/Video_Transmission/Vitis/VideoTransmission/ps7_cortexa9_0/standalone_domain/bsp/system.mss|system_0||
+C:/Github/Zybo_mipi/Video_Transmission/Vitis/VideoTransmission/zynq_fsbl/zynq_fsbl_bsp/system.mss|system||
+
+TRACE::2020-11-02.20:41:24::SCWMssOS::Sw design exists and opened at  C:/Github/Zybo_mipi/Video_Transmission/Vitis/VideoTransmission/ps7_cortexa9_0/standalone_domain/bsp/system.mss
+TRACE::2020-11-02.20:41:31::SCWPlatform::Trying to open the hw design at C:/Github/Zybo_mipi/Video_Transmission/Vitis/VideoTransmission/hw/system_wrapper.xsa
+TRACE::2020-11-02.20:41:31::SCWPlatform::DSA given C:/Github/Zybo_mipi/Video_Transmission/Vitis/VideoTransmission/hw/system_wrapper.xsa
+TRACE::2020-11-02.20:41:31::SCWPlatform::DSA absoulate path C:/Github/Zybo_mipi/Video_Transmission/Vitis/VideoTransmission/hw/system_wrapper.xsa
+TRACE::2020-11-02.20:41:31::SCWPlatform::DSA directory C:/Github/Zybo_mipi/Video_Transmission/Vitis/VideoTransmission/hw
+TRACE::2020-11-02.20:41:31::SCWPlatform:: Platform Path C:/Github/Zybo_mipi/Video_Transmission/Vitis/VideoTransmission/hw/system_wrapper.xsa
+TRACE::2020-11-02.20:41:31::SCWPlatform:: Unique name xilinx:::0.0
+TRACE::2020-11-02.20:41:31::SCWPlatform::Trying to set the existing hwdb with name system_wrapper_1
+TRACE::2020-11-02.20:41:31::SCWPlatform::Opened existing hwdb system_wrapper_1
+TRACE::2020-11-02.20:41:31::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2020-11-02.20:41:31::SCWMssOS::Checking the sw design at  C:/Github/Zybo_mipi/Video_Transmission/Vitis/VideoTransmission/ps7_cortexa9_0/standalone_domain/bsp/system.mss
+TRACE::2020-11-02.20:41:31::SCWMssOS::DEBUG:  swdes dump  C:/Github/Zybo_mipi/Video_Transmission/Vitis/VideoTransmission/ps7_cortexa9_0/standalone_domain/bsp/system.mss|system_0||
+C:/Github/Zybo_mipi/Video_Transmission/Vitis/VideoTransmission/zynq_fsbl/zynq_fsbl_bsp/system.mss|system||
+
+TRACE::2020-11-02.20:41:31::SCWMssOS::Sw design exists and opened at  C:/Github/Zybo_mipi/Video_Transmission/Vitis/VideoTransmission/ps7_cortexa9_0/standalone_domain/bsp/system.mss
+TRACE::2020-11-02.20:41:31::SCWPlatform::Trying to open the hw design at C:/Github/Zybo_mipi/Video_Transmission/Vitis/VideoTransmission/hw/system_wrapper.xsa
+TRACE::2020-11-02.20:41:31::SCWPlatform::DSA given C:/Github/Zybo_mipi/Video_Transmission/Vitis/VideoTransmission/hw/system_wrapper.xsa
+TRACE::2020-11-02.20:41:31::SCWPlatform::DSA absoulate path C:/Github/Zybo_mipi/Video_Transmission/Vitis/VideoTransmission/hw/system_wrapper.xsa
+TRACE::2020-11-02.20:41:31::SCWPlatform::DSA directory C:/Github/Zybo_mipi/Video_Transmission/Vitis/VideoTransmission/hw
+TRACE::2020-11-02.20:41:31::SCWPlatform:: Platform Path C:/Github/Zybo_mipi/Video_Transmission/Vitis/VideoTransmission/hw/system_wrapper.xsa
+TRACE::2020-11-02.20:41:31::SCWPlatform:: Unique name xilinx:::0.0
+TRACE::2020-11-02.20:41:31::SCWPlatform::Trying to set the existing hwdb with name system_wrapper_1
+TRACE::2020-11-02.20:41:31::SCWPlatform::Opened existing hwdb system_wrapper_1
+TRACE::2020-11-02.20:41:31::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2020-11-02.20:41:31::SCWMssOS::Checking the sw design at  C:/Github/Zybo_mipi/Video_Transmission/Vitis/VideoTransmission/ps7_cortexa9_0/standalone_domain/bsp/system.mss
+TRACE::2020-11-02.20:41:31::SCWMssOS::DEBUG:  swdes dump  C:/Github/Zybo_mipi/Video_Transmission/Vitis/VideoTransmission/ps7_cortexa9_0/standalone_domain/bsp/system.mss|system_0||
+C:/Github/Zybo_mipi/Video_Transmission/Vitis/VideoTransmission/zynq_fsbl/zynq_fsbl_bsp/system.mss|system||
+
+TRACE::2020-11-02.20:41:31::SCWMssOS::Sw design exists and opened at  C:/Github/Zybo_mipi/Video_Transmission/Vitis/VideoTransmission/ps7_cortexa9_0/standalone_domain/bsp/system.mss
+TRACE::2020-11-02.20:41:39::SCWPlatform::Trying to open the hw design at C:/Github/Zybo_mipi/Video_Transmission/Vitis/VideoTransmission/hw/system_wrapper.xsa
+TRACE::2020-11-02.20:41:39::SCWPlatform::DSA given C:/Github/Zybo_mipi/Video_Transmission/Vitis/VideoTransmission/hw/system_wrapper.xsa
+TRACE::2020-11-02.20:41:39::SCWPlatform::DSA absoulate path C:/Github/Zybo_mipi/Video_Transmission/Vitis/VideoTransmission/hw/system_wrapper.xsa
+TRACE::2020-11-02.20:41:39::SCWPlatform::DSA directory C:/Github/Zybo_mipi/Video_Transmission/Vitis/VideoTransmission/hw
+TRACE::2020-11-02.20:41:39::SCWPlatform:: Platform Path C:/Github/Zybo_mipi/Video_Transmission/Vitis/VideoTransmission/hw/system_wrapper.xsa
+TRACE::2020-11-02.20:41:39::SCWPlatform:: Unique name xilinx:::0.0
+TRACE::2020-11-02.20:41:39::SCWPlatform::Trying to set the existing hwdb with name system_wrapper_1
+TRACE::2020-11-02.20:41:39::SCWPlatform::Opened existing hwdb system_wrapper_1
+TRACE::2020-11-02.20:41:39::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2020-11-02.20:41:39::SCWMssOS::Checking the sw design at  C:/Github/Zybo_mipi/Video_Transmission/Vitis/VideoTransmission/ps7_cortexa9_0/standalone_domain/bsp/system.mss
+TRACE::2020-11-02.20:41:39::SCWMssOS::DEBUG:  swdes dump  C:/Github/Zybo_mipi/Video_Transmission/Vitis/VideoTransmission/ps7_cortexa9_0/standalone_domain/bsp/system.mss|system_0||
+C:/Github/Zybo_mipi/Video_Transmission/Vitis/VideoTransmission/zynq_fsbl/zynq_fsbl_bsp/system.mss|system||
+
+TRACE::2020-11-02.20:41:39::SCWMssOS::Sw design exists and opened at  C:/Github/Zybo_mipi/Video_Transmission/Vitis/VideoTransmission/ps7_cortexa9_0/standalone_domain/bsp/system.mss
+TRACE::2020-11-02.20:41:39::SCWPlatform::Trying to open the hw design at C:/Github/Zybo_mipi/Video_Transmission/Vitis/VideoTransmission/hw/system_wrapper.xsa
+TRACE::2020-11-02.20:41:39::SCWPlatform::DSA given C:/Github/Zybo_mipi/Video_Transmission/Vitis/VideoTransmission/hw/system_wrapper.xsa
+TRACE::2020-11-02.20:41:39::SCWPlatform::DSA absoulate path C:/Github/Zybo_mipi/Video_Transmission/Vitis/VideoTransmission/hw/system_wrapper.xsa
+TRACE::2020-11-02.20:41:39::SCWPlatform::DSA directory C:/Github/Zybo_mipi/Video_Transmission/Vitis/VideoTransmission/hw
+TRACE::2020-11-02.20:41:39::SCWPlatform:: Platform Path C:/Github/Zybo_mipi/Video_Transmission/Vitis/VideoTransmission/hw/system_wrapper.xsa
+TRACE::2020-11-02.20:41:39::SCWPlatform:: Unique name xilinx:::0.0
+TRACE::2020-11-02.20:41:39::SCWPlatform::Trying to set the existing hwdb with name system_wrapper_1
+TRACE::2020-11-02.20:41:39::SCWPlatform::Opened existing hwdb system_wrapper_1
+TRACE::2020-11-02.20:41:39::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2020-11-02.20:41:39::SCWMssOS::Checking the sw design at  C:/Github/Zybo_mipi/Video_Transmission/Vitis/VideoTransmission/ps7_cortexa9_0/standalone_domain/bsp/system.mss
+TRACE::2020-11-02.20:41:39::SCWMssOS::DEBUG:  swdes dump  C:/Github/Zybo_mipi/Video_Transmission/Vitis/VideoTransmission/ps7_cortexa9_0/standalone_domain/bsp/system.mss|system_0||
+C:/Github/Zybo_mipi/Video_Transmission/Vitis/VideoTransmission/zynq_fsbl/zynq_fsbl_bsp/system.mss|system||
+
+TRACE::2020-11-02.20:41:39::SCWMssOS::Sw design exists and opened at  C:/Github/Zybo_mipi/Video_Transmission/Vitis/VideoTransmission/ps7_cortexa9_0/standalone_domain/bsp/system.mss
+TRACE::2020-11-02.20:42:42::SCWMssOS::In reload Mss file.
+TRACE::2020-11-02.20:42:42::SCWPlatform::Trying to open the hw design at C:/Github/Zybo_mipi/Video_Transmission/Vitis/VideoTransmission/hw/system_wrapper.xsa
+TRACE::2020-11-02.20:42:42::SCWPlatform::DSA given C:/Github/Zybo_mipi/Video_Transmission/Vitis/VideoTransmission/hw/system_wrapper.xsa
+TRACE::2020-11-02.20:42:42::SCWPlatform::DSA absoulate path C:/Github/Zybo_mipi/Video_Transmission/Vitis/VideoTransmission/hw/system_wrapper.xsa
+TRACE::2020-11-02.20:42:42::SCWPlatform::DSA directory C:/Github/Zybo_mipi/Video_Transmission/Vitis/VideoTransmission/hw
+TRACE::2020-11-02.20:42:42::SCWPlatform:: Platform Path C:/Github/Zybo_mipi/Video_Transmission/Vitis/VideoTransmission/hw/system_wrapper.xsa
+TRACE::2020-11-02.20:42:42::SCWPlatform:: Unique name xilinx:::0.0
+TRACE::2020-11-02.20:42:42::SCWPlatform::Trying to set the existing hwdb with name system_wrapper_1
+TRACE::2020-11-02.20:42:42::SCWPlatform::Opened existing hwdb system_wrapper_1
+TRACE::2020-11-02.20:42:42::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2020-11-02.20:42:42::SCWMssOS::Checking the sw design at  C:/Github/Zybo_mipi/Video_Transmission/Vitis/VideoTransmission/ps7_cortexa9_0/standalone_domain/bsp/system.mss
+TRACE::2020-11-02.20:42:42::SCWMssOS::DEBUG:  swdes dump  C:/Github/Zybo_mipi/Video_Transmission/Vitis/VideoTransmission/ps7_cortexa9_0/standalone_domain/bsp/system.mss|system_0||
+C:/Github/Zybo_mipi/Video_Transmission/Vitis/VideoTransmission/zynq_fsbl/zynq_fsbl_bsp/system.mss|system||
+
+KEYINFO::2020-11-02.20:42:42::SCWMssOS::Could not open the swdb for system_0
+KEYINFO::2020-11-02.20:42:42::SCWMssOS::Could not open the sw design at  system_0
+ERROR: [Hsi 55-1558] Software Design system_0 is not found
+
+TRACE::2020-11-02.20:42:42::SCWMssOS::Cleared the swdb table entry
+TRACE::2020-11-02.20:42:42::SCWMssOS::No sw design opened at  C:/Github/Zybo_mipi/Video_Transmission/Vitis/VideoTransmission/ps7_cortexa9_0/standalone_domain/bsp/system.mss
+TRACE::2020-11-02.20:42:42::SCWMssOS::mss exists loading the mss file  C:/Github/Zybo_mipi/Video_Transmission/Vitis/VideoTransmission/ps7_cortexa9_0/standalone_domain/bsp/system.mss
+TRACE::2020-11-02.20:42:42::SCWMssOS::Opened the sw design from mss  C:/Github/Zybo_mipi/Video_Transmission/Vitis/VideoTransmission/ps7_cortexa9_0/standalone_domain/bsp/system.mss
+TRACE::2020-11-02.20:42:42::SCWMssOS::Adding the swdes entry C:/Github/Zybo_mipi/Video_Transmission/Vitis/VideoTransmission/ps7_cortexa9_0/standalone_domain/bsp/system.mss with des name system_0
+TRACE::2020-11-02.20:42:42::SCWMssOS::updating the scw layer about changes
+TRACE::2020-11-02.20:42:42::SCWMssOS::Opened the sw design.  C:/Github/Zybo_mipi/Video_Transmission/Vitis/VideoTransmission/ps7_cortexa9_0/standalone_domain/bsp/system.mss
+TRACE::2020-11-02.20:42:42::SCWPlatform::Trying to open the hw design at C:/Github/Zybo_mipi/Video_Transmission/Vitis/VideoTransmission/hw/system_wrapper.xsa
+TRACE::2020-11-02.20:42:42::SCWPlatform::DSA given C:/Github/Zybo_mipi/Video_Transmission/Vitis/VideoTransmission/hw/system_wrapper.xsa
+TRACE::2020-11-02.20:42:42::SCWPlatform::DSA absoulate path C:/Github/Zybo_mipi/Video_Transmission/Vitis/VideoTransmission/hw/system_wrapper.xsa
+TRACE::2020-11-02.20:42:42::SCWPlatform::DSA directory C:/Github/Zybo_mipi/Video_Transmission/Vitis/VideoTransmission/hw
+TRACE::2020-11-02.20:42:42::SCWPlatform:: Platform Path C:/Github/Zybo_mipi/Video_Transmission/Vitis/VideoTransmission/hw/system_wrapper.xsa
+TRACE::2020-11-02.20:42:42::SCWPlatform:: Unique name xilinx:::0.0
+TRACE::2020-11-02.20:42:42::SCWPlatform::Trying to set the existing hwdb with name system_wrapper_1
+TRACE::2020-11-02.20:42:42::SCWPlatform::Opened existing hwdb system_wrapper_1
+TRACE::2020-11-02.20:42:42::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2020-11-02.20:42:42::SCWMssOS::Checking the sw design at  C:/Github/Zybo_mipi/Video_Transmission/Vitis/VideoTransmission/ps7_cortexa9_0/standalone_domain/bsp/system.mss
+TRACE::2020-11-02.20:42:42::SCWMssOS::DEBUG:  swdes dump  C:/Github/Zybo_mipi/Video_Transmission/Vitis/VideoTransmission/ps7_cortexa9_0/standalone_domain/bsp/system.mss|system_0||
+C:/Github/Zybo_mipi/Video_Transmission/Vitis/VideoTransmission/zynq_fsbl/zynq_fsbl_bsp/system.mss|system||
+
+TRACE::2020-11-02.20:42:42::SCWMssOS::Sw design exists and opened at  C:/Github/Zybo_mipi/Video_Transmission/Vitis/VideoTransmission/ps7_cortexa9_0/standalone_domain/bsp/system.mss
+TRACE::2020-11-02.20:42:42::SCWMssOS::Removing the swdes entry for  C:/Github/Zybo_mipi/Video_Transmission/Vitis/VideoTransmission/ps7_cortexa9_0/standalone_domain/bsp/system.mss
