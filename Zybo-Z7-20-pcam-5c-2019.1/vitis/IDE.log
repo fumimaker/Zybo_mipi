@@ -884,3 +884,754 @@ con
 17:01:34 INFO  : Successfully done setting workspace for the tool. 
 17:01:37 INFO  : Successfully done query RDI_DATADIR 
 17:01:37 INFO  : Registering command handlers for Vitis TCF services
+20:52:48 INFO  : Launching XSCT server: xsct.bat -n  -interactive C:\Github\Zybo_mipi\Zybo-Z7-20-pcam-5c-2019.1\vitis\temp_xsdb_launch_script.tcl
+20:52:50 INFO  : XSCT server has started successfully.
+20:52:50 INFO  : plnx-install-location is set to ''
+20:52:50 INFO  : Successfully done setting XSCT server connection channel  
+20:52:50 INFO  : Successfully done setting workspace for the tool. 
+20:52:54 INFO  : Successfully done query RDI_DATADIR 
+20:52:54 INFO  : Registering command handlers for Vitis TCF services
+20:53:31 INFO  : Checking for BSP changes to sync application flags for project 'Pcam5C-app'...
+20:53:41 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+20:53:42 INFO  : Jtag cable 'Digilent Zybo Z7 210351A6C9E3A' is selected.
+20:53:42 INFO  : 'jtag frequency' command is executed.
+20:53:42 INFO  : Context for 'APU' is selected.
+20:53:42 INFO  : System reset is completed.
+20:53:45 INFO  : 'after 3000' command is executed.
+20:53:45 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351A6C9E3A" && level==0} -index 1' command is executed.
+20:53:47 INFO  : FPGA configured successfully with bitstream "C:/Github/Zybo_mipi/Zybo-Z7-20-pcam-5c-2019.1/vitis/Pcam5C-app/_ide/bitstream/system_wrapper.bit"
+20:53:47 INFO  : Context for 'APU' is selected.
+20:53:47 INFO  : Hardware design information is loaded from 'C:/Github/Zybo_mipi/Zybo-Z7-20-pcam-5c-2019.1/vitis/Pcam5C-2019/export/Pcam5C-2019/hw/system_wrapper.xsa'.
+20:53:48 INFO  : 'configparams force-mem-access 1' command is executed.
+20:53:48 INFO  : Context for 'APU' is selected.
+20:53:48 INFO  : Sourcing of 'C:/Github/Zybo_mipi/Zybo-Z7-20-pcam-5c-2019.1/vitis/Pcam5C-app/_ide/psinit/ps7_init.tcl' is done.
+20:53:48 INFO  : 'ps7_init' command is executed.
+20:53:48 INFO  : 'ps7_post_config' command is executed.
+20:53:48 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+20:53:49 INFO  : The application 'C:/Github/Zybo_mipi/Zybo-Z7-20-pcam-5c-2019.1/vitis/Pcam5C-app/Debug/Pcam5C-app.elf' is downloaded to processor 'ps7_cortexa9_0'.
+20:53:49 INFO  : 'configparams force-mem-access 0' command is executed.
+20:53:49 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~"APU*"}
+rst -system
+after 3000
+targets -set -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351A6C9E3A" && level==0} -index 1
+fpga -file C:/Github/Zybo_mipi/Zybo-Z7-20-pcam-5c-2019.1/vitis/Pcam5C-app/_ide/bitstream/system_wrapper.bit
+targets -set -nocase -filter {name =~"APU*"}
+loadhw -hw C:/Github/Zybo_mipi/Zybo-Z7-20-pcam-5c-2019.1/vitis/Pcam5C-2019/export/Pcam5C-2019/hw/system_wrapper.xsa -mem-ranges [list {0x40000000 0xbfffffff}]
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*"}
+source C:/Github/Zybo_mipi/Zybo-Z7-20-pcam-5c-2019.1/vitis/Pcam5C-app/_ide/psinit/ps7_init.tcl
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "*A9*#0"}
+dow C:/Github/Zybo_mipi/Zybo-Z7-20-pcam-5c-2019.1/vitis/Pcam5C-app/Debug/Pcam5C-app.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+20:53:49 INFO  : Memory regions updated for context APU
+20:53:50 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+20:53:50 INFO  : 'con' command is executed.
+20:53:50 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*A9*#0"}
+con
+----------------End of Script----------------
+
+20:53:50 INFO  : Launch script is exported to file 'C:\Github\Zybo_mipi\Zybo-Z7-20-pcam-5c-2019.1\vitis\.sdk\launch_scripts\single_application_debug\systemdebugger_pcam5c-app_system_standalone.tcl'
+20:53:56 INFO  : Disconnected from the channel tcfchan#3.
+20:53:57 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+20:53:57 INFO  : Jtag cable 'Digilent Zybo Z7 210351A6C9E3A' is selected.
+20:53:57 INFO  : 'jtag frequency' command is executed.
+20:53:57 INFO  : Context for 'APU' is selected.
+20:53:57 INFO  : System reset is completed.
+20:54:00 INFO  : 'after 3000' command is executed.
+20:54:00 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351A6C9E3A" && level==0} -index 1' command is executed.
+20:54:02 INFO  : FPGA configured successfully with bitstream "C:/Github/Zybo_mipi/Zybo-Z7-20-pcam-5c-2019.1/vitis/Pcam5C-app/_ide/bitstream/system_wrapper.bit"
+20:54:02 INFO  : Context for 'APU' is selected.
+20:54:02 INFO  : Hardware design information is loaded from 'C:/Github/Zybo_mipi/Zybo-Z7-20-pcam-5c-2019.1/vitis/Pcam5C-2019/export/Pcam5C-2019/hw/system_wrapper.xsa'.
+20:54:02 INFO  : 'configparams force-mem-access 1' command is executed.
+20:54:02 INFO  : Context for 'APU' is selected.
+20:54:02 INFO  : Sourcing of 'C:/Github/Zybo_mipi/Zybo-Z7-20-pcam-5c-2019.1/vitis/Pcam5C-app/_ide/psinit/ps7_init.tcl' is done.
+20:54:03 INFO  : 'ps7_init' command is executed.
+20:54:03 INFO  : 'ps7_post_config' command is executed.
+20:54:03 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+20:54:04 INFO  : The application 'C:/Github/Zybo_mipi/Zybo-Z7-20-pcam-5c-2019.1/vitis/Pcam5C-app/Debug/Pcam5C-app.elf' is downloaded to processor 'ps7_cortexa9_0'.
+20:54:04 INFO  : 'configparams force-mem-access 0' command is executed.
+20:54:04 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~"APU*"}
+rst -system
+after 3000
+targets -set -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351A6C9E3A" && level==0} -index 1
+fpga -file C:/Github/Zybo_mipi/Zybo-Z7-20-pcam-5c-2019.1/vitis/Pcam5C-app/_ide/bitstream/system_wrapper.bit
+targets -set -nocase -filter {name =~"APU*"}
+loadhw -hw C:/Github/Zybo_mipi/Zybo-Z7-20-pcam-5c-2019.1/vitis/Pcam5C-2019/export/Pcam5C-2019/hw/system_wrapper.xsa -mem-ranges [list {0x40000000 0xbfffffff}]
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*"}
+source C:/Github/Zybo_mipi/Zybo-Z7-20-pcam-5c-2019.1/vitis/Pcam5C-app/_ide/psinit/ps7_init.tcl
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "*A9*#0"}
+dow C:/Github/Zybo_mipi/Zybo-Z7-20-pcam-5c-2019.1/vitis/Pcam5C-app/Debug/Pcam5C-app.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+20:54:04 INFO  : Memory regions updated for context APU
+20:54:05 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+20:54:05 INFO  : 'con' command is executed.
+20:54:05 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*A9*#0"}
+con
+----------------End of Script----------------
+
+20:54:05 INFO  : Launch script is exported to file 'C:\Github\Zybo_mipi\Zybo-Z7-20-pcam-5c-2019.1\vitis\.sdk\launch_scripts\single_application_debug\systemdebugger_pcam5c-app_system_standalone.tcl'
+20:57:24 INFO  : Checking for BSP changes to sync application flags for project 'Pcam5C-app'...
+20:57:29 INFO  : Disconnected from the channel tcfchan#4.
+20:57:29 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+20:57:30 INFO  : Jtag cable 'Digilent Zybo Z7 210351A6C9E3A' is selected.
+20:57:30 INFO  : 'jtag frequency' command is executed.
+20:57:30 INFO  : Context for 'APU' is selected.
+20:57:30 INFO  : System reset is completed.
+20:57:33 INFO  : 'after 3000' command is executed.
+20:57:33 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351A6C9E3A" && level==0} -index 1' command is executed.
+20:57:35 INFO  : FPGA configured successfully with bitstream "C:/Github/Zybo_mipi/Zybo-Z7-20-pcam-5c-2019.1/vitis/Pcam5C-app/_ide/bitstream/system_wrapper.bit"
+20:57:35 INFO  : Context for 'APU' is selected.
+20:57:35 INFO  : Hardware design information is loaded from 'C:/Github/Zybo_mipi/Zybo-Z7-20-pcam-5c-2019.1/vitis/Pcam5C-2019/export/Pcam5C-2019/hw/system_wrapper.xsa'.
+20:57:35 INFO  : 'configparams force-mem-access 1' command is executed.
+20:57:35 INFO  : Context for 'APU' is selected.
+20:57:35 INFO  : Sourcing of 'C:/Github/Zybo_mipi/Zybo-Z7-20-pcam-5c-2019.1/vitis/Pcam5C-app/_ide/psinit/ps7_init.tcl' is done.
+20:57:36 INFO  : 'ps7_init' command is executed.
+20:57:36 INFO  : 'ps7_post_config' command is executed.
+20:57:36 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+20:57:37 INFO  : The application 'C:/Github/Zybo_mipi/Zybo-Z7-20-pcam-5c-2019.1/vitis/Pcam5C-app/Debug/Pcam5C-app.elf' is downloaded to processor 'ps7_cortexa9_0'.
+20:57:37 INFO  : 'configparams force-mem-access 0' command is executed.
+20:57:37 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~"APU*"}
+rst -system
+after 3000
+targets -set -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351A6C9E3A" && level==0} -index 1
+fpga -file C:/Github/Zybo_mipi/Zybo-Z7-20-pcam-5c-2019.1/vitis/Pcam5C-app/_ide/bitstream/system_wrapper.bit
+targets -set -nocase -filter {name =~"APU*"}
+loadhw -hw C:/Github/Zybo_mipi/Zybo-Z7-20-pcam-5c-2019.1/vitis/Pcam5C-2019/export/Pcam5C-2019/hw/system_wrapper.xsa -mem-ranges [list {0x40000000 0xbfffffff}]
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*"}
+source C:/Github/Zybo_mipi/Zybo-Z7-20-pcam-5c-2019.1/vitis/Pcam5C-app/_ide/psinit/ps7_init.tcl
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "*A9*#0"}
+dow C:/Github/Zybo_mipi/Zybo-Z7-20-pcam-5c-2019.1/vitis/Pcam5C-app/Debug/Pcam5C-app.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+20:57:37 INFO  : Memory regions updated for context APU
+20:57:37 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+20:57:37 INFO  : 'con' command is executed.
+20:57:37 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*A9*#0"}
+con
+----------------End of Script----------------
+
+20:57:37 INFO  : Launch script is exported to file 'C:\Github\Zybo_mipi\Zybo-Z7-20-pcam-5c-2019.1\vitis\.sdk\launch_scripts\single_application_debug\systemdebugger_pcam5c-app_system_standalone.tcl'
+21:03:52 INFO  : Disconnected from the channel tcfchan#6.
+19:22:20 INFO  : Launching XSCT server: xsct.bat -n  -interactive C:\Github\Zybo_mipi\Zybo-Z7-20-pcam-5c-2019.1\vitis\temp_xsdb_launch_script.tcl
+19:22:22 INFO  : XSCT server has started successfully.
+19:22:22 INFO  : Successfully done setting XSCT server connection channel  
+19:22:22 INFO  : plnx-install-location is set to ''
+19:22:22 INFO  : Successfully done setting workspace for the tool. 
+19:22:24 INFO  : Successfully done query RDI_DATADIR 
+19:22:25 INFO  : Registering command handlers for Vitis TCF services
+19:22:42 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+19:22:42 INFO  : Jtag cable 'Digilent Zybo Z7 210351A6C9E3A' is selected.
+19:22:42 INFO  : 'jtag frequency' command is executed.
+19:22:42 INFO  : Context for 'APU' is selected.
+19:22:42 INFO  : System reset is completed.
+19:22:45 INFO  : 'after 3000' command is executed.
+19:22:45 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351A6C9E3A" && level==0} -index 1' command is executed.
+19:22:48 INFO  : FPGA configured successfully with bitstream "C:/Github/Zybo_mipi/Zybo-Z7-20-pcam-5c-2019.1/vitis/Pcam5C-app/_ide/bitstream/system_wrapper.bit"
+19:22:48 INFO  : Context for 'APU' is selected.
+19:22:48 INFO  : Hardware design information is loaded from 'C:/Github/Zybo_mipi/Zybo-Z7-20-pcam-5c-2019.1/vitis/Pcam5C-2019/export/Pcam5C-2019/hw/system_wrapper.xsa'.
+19:22:48 INFO  : 'configparams force-mem-access 1' command is executed.
+19:22:48 INFO  : Context for 'APU' is selected.
+19:22:48 INFO  : Sourcing of 'C:/Github/Zybo_mipi/Zybo-Z7-20-pcam-5c-2019.1/vitis/Pcam5C-app/_ide/psinit/ps7_init.tcl' is done.
+19:22:48 INFO  : 'ps7_init' command is executed.
+19:22:48 INFO  : 'ps7_post_config' command is executed.
+19:22:48 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+19:22:50 INFO  : The application 'C:/Github/Zybo_mipi/Zybo-Z7-20-pcam-5c-2019.1/vitis/Pcam5C-app/Debug/Pcam5C-app.elf' is downloaded to processor 'ps7_cortexa9_0'.
+19:22:50 INFO  : 'configparams force-mem-access 0' command is executed.
+19:22:50 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~"APU*"}
+rst -system
+after 3000
+targets -set -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351A6C9E3A" && level==0} -index 1
+fpga -file C:/Github/Zybo_mipi/Zybo-Z7-20-pcam-5c-2019.1/vitis/Pcam5C-app/_ide/bitstream/system_wrapper.bit
+targets -set -nocase -filter {name =~"APU*"}
+loadhw -hw C:/Github/Zybo_mipi/Zybo-Z7-20-pcam-5c-2019.1/vitis/Pcam5C-2019/export/Pcam5C-2019/hw/system_wrapper.xsa -mem-ranges [list {0x40000000 0xbfffffff}]
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*"}
+source C:/Github/Zybo_mipi/Zybo-Z7-20-pcam-5c-2019.1/vitis/Pcam5C-app/_ide/psinit/ps7_init.tcl
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "*A9*#0"}
+dow C:/Github/Zybo_mipi/Zybo-Z7-20-pcam-5c-2019.1/vitis/Pcam5C-app/Debug/Pcam5C-app.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+19:22:50 INFO  : Memory regions updated for context APU
+19:22:50 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+19:22:50 INFO  : 'con' command is executed.
+19:22:50 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*A9*#0"}
+con
+----------------End of Script----------------
+
+19:22:50 INFO  : Launch script is exported to file 'C:\Github\Zybo_mipi\Zybo-Z7-20-pcam-5c-2019.1\vitis\.sdk\launch_scripts\single_application_debug\systemdebugger_pcam5c-app_system_standalone.tcl'
+19:24:02 INFO  : Checking for BSP changes to sync application flags for project 'Pcam5C-app'...
+19:24:08 INFO  : Disconnected from the channel tcfchan#1.
+19:24:08 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+19:24:08 INFO  : Jtag cable 'Digilent Zybo Z7 210351A6C9E3A' is selected.
+19:24:08 INFO  : 'jtag frequency' command is executed.
+19:24:08 INFO  : Context for 'APU' is selected.
+19:24:08 INFO  : System reset is completed.
+19:24:11 INFO  : 'after 3000' command is executed.
+19:24:11 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351A6C9E3A" && level==0} -index 1' command is executed.
+19:24:14 INFO  : FPGA configured successfully with bitstream "C:/Github/Zybo_mipi/Zybo-Z7-20-pcam-5c-2019.1/vitis/Pcam5C-app/_ide/bitstream/system_wrapper.bit"
+19:24:14 INFO  : Context for 'APU' is selected.
+19:24:17 INFO  : Hardware design information is loaded from 'C:/Github/Zybo_mipi/Zybo-Z7-20-pcam-5c-2019.1/vitis/Pcam5C-2019/export/Pcam5C-2019/hw/system_wrapper.xsa'.
+19:24:17 INFO  : 'configparams force-mem-access 1' command is executed.
+19:24:17 INFO  : Context for 'APU' is selected.
+19:24:17 INFO  : Sourcing of 'C:/Github/Zybo_mipi/Zybo-Z7-20-pcam-5c-2019.1/vitis/Pcam5C-app/_ide/psinit/ps7_init.tcl' is done.
+19:24:17 INFO  : 'ps7_init' command is executed.
+19:24:17 INFO  : 'ps7_post_config' command is executed.
+19:24:17 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+19:24:19 INFO  : The application 'C:/Github/Zybo_mipi/Zybo-Z7-20-pcam-5c-2019.1/vitis/Pcam5C-app/Debug/Pcam5C-app.elf' is downloaded to processor 'ps7_cortexa9_0'.
+19:24:19 INFO  : 'configparams force-mem-access 0' command is executed.
+19:24:19 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~"APU*"}
+rst -system
+after 3000
+targets -set -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351A6C9E3A" && level==0} -index 1
+fpga -file C:/Github/Zybo_mipi/Zybo-Z7-20-pcam-5c-2019.1/vitis/Pcam5C-app/_ide/bitstream/system_wrapper.bit
+targets -set -nocase -filter {name =~"APU*"}
+loadhw -hw C:/Github/Zybo_mipi/Zybo-Z7-20-pcam-5c-2019.1/vitis/Pcam5C-2019/export/Pcam5C-2019/hw/system_wrapper.xsa -mem-ranges [list {0x40000000 0xbfffffff}]
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*"}
+source C:/Github/Zybo_mipi/Zybo-Z7-20-pcam-5c-2019.1/vitis/Pcam5C-app/_ide/psinit/ps7_init.tcl
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "*A9*#0"}
+dow C:/Github/Zybo_mipi/Zybo-Z7-20-pcam-5c-2019.1/vitis/Pcam5C-app/Debug/Pcam5C-app.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+19:24:19 INFO  : Memory regions updated for context APU
+19:24:19 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+19:24:19 INFO  : 'con' command is executed.
+19:24:19 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*A9*#0"}
+con
+----------------End of Script----------------
+
+19:24:19 INFO  : Launch script is exported to file 'C:\Github\Zybo_mipi\Zybo-Z7-20-pcam-5c-2019.1\vitis\.sdk\launch_scripts\single_application_debug\systemdebugger_pcam5c-app_system_standalone.tcl'
+19:25:09 INFO  : Checking for BSP changes to sync application flags for project 'Pcam5C-app'...
+19:25:21 INFO  : Checking for BSP changes to sync application flags for project 'Pcam5C-app'...
+19:25:31 INFO  : Disconnected from the channel tcfchan#3.
+19:25:31 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+19:25:31 INFO  : Jtag cable 'Digilent Zybo Z7 210351A6C9E3A' is selected.
+19:25:31 INFO  : 'jtag frequency' command is executed.
+19:25:31 INFO  : Context for 'APU' is selected.
+19:25:31 INFO  : System reset is completed.
+19:25:34 INFO  : 'after 3000' command is executed.
+19:25:34 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351A6C9E3A" && level==0} -index 1' command is executed.
+19:25:36 INFO  : FPGA configured successfully with bitstream "C:/Github/Zybo_mipi/Zybo-Z7-20-pcam-5c-2019.1/vitis/Pcam5C-app/_ide/bitstream/system_wrapper.bit"
+19:25:36 INFO  : Context for 'APU' is selected.
+19:25:40 INFO  : Hardware design information is loaded from 'C:/Github/Zybo_mipi/Zybo-Z7-20-pcam-5c-2019.1/vitis/Pcam5C-2019/export/Pcam5C-2019/hw/system_wrapper.xsa'.
+19:25:40 INFO  : 'configparams force-mem-access 1' command is executed.
+19:25:40 INFO  : Context for 'APU' is selected.
+19:25:40 INFO  : Sourcing of 'C:/Github/Zybo_mipi/Zybo-Z7-20-pcam-5c-2019.1/vitis/Pcam5C-app/_ide/psinit/ps7_init.tcl' is done.
+19:25:40 INFO  : 'ps7_init' command is executed.
+19:25:40 INFO  : 'ps7_post_config' command is executed.
+19:25:40 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+19:25:41 INFO  : The application 'C:/Github/Zybo_mipi/Zybo-Z7-20-pcam-5c-2019.1/vitis/Pcam5C-app/Debug/Pcam5C-app.elf' is downloaded to processor 'ps7_cortexa9_0'.
+19:25:41 INFO  : 'configparams force-mem-access 0' command is executed.
+19:25:41 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~"APU*"}
+rst -system
+after 3000
+targets -set -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351A6C9E3A" && level==0} -index 1
+fpga -file C:/Github/Zybo_mipi/Zybo-Z7-20-pcam-5c-2019.1/vitis/Pcam5C-app/_ide/bitstream/system_wrapper.bit
+targets -set -nocase -filter {name =~"APU*"}
+loadhw -hw C:/Github/Zybo_mipi/Zybo-Z7-20-pcam-5c-2019.1/vitis/Pcam5C-2019/export/Pcam5C-2019/hw/system_wrapper.xsa -mem-ranges [list {0x40000000 0xbfffffff}]
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*"}
+source C:/Github/Zybo_mipi/Zybo-Z7-20-pcam-5c-2019.1/vitis/Pcam5C-app/_ide/psinit/ps7_init.tcl
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "*A9*#0"}
+dow C:/Github/Zybo_mipi/Zybo-Z7-20-pcam-5c-2019.1/vitis/Pcam5C-app/Debug/Pcam5C-app.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+19:25:42 INFO  : Memory regions updated for context APU
+19:25:42 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+19:25:42 INFO  : 'con' command is executed.
+19:25:42 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*A9*#0"}
+con
+----------------End of Script----------------
+
+19:25:42 INFO  : Launch script is exported to file 'C:\Github\Zybo_mipi\Zybo-Z7-20-pcam-5c-2019.1\vitis\.sdk\launch_scripts\single_application_debug\systemdebugger_pcam5c-app_system_standalone.tcl'
+19:25:59 INFO  : Checking for BSP changes to sync application flags for project 'Pcam5C-app'...
+19:26:08 INFO  : Checking for BSP changes to sync application flags for project 'Pcam5C-app'...
+19:26:14 INFO  : Disconnected from the channel tcfchan#5.
+19:26:14 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+19:26:15 INFO  : Jtag cable 'Digilent Zybo Z7 210351A6C9E3A' is selected.
+19:26:15 INFO  : 'jtag frequency' command is executed.
+19:26:15 INFO  : Context for 'APU' is selected.
+19:26:15 INFO  : System reset is completed.
+19:26:18 INFO  : 'after 3000' command is executed.
+19:26:18 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351A6C9E3A" && level==0} -index 1' command is executed.
+19:26:20 INFO  : FPGA configured successfully with bitstream "C:/Github/Zybo_mipi/Zybo-Z7-20-pcam-5c-2019.1/vitis/Pcam5C-app/_ide/bitstream/system_wrapper.bit"
+19:26:20 INFO  : Context for 'APU' is selected.
+19:26:23 INFO  : Hardware design information is loaded from 'C:/Github/Zybo_mipi/Zybo-Z7-20-pcam-5c-2019.1/vitis/Pcam5C-2019/export/Pcam5C-2019/hw/system_wrapper.xsa'.
+19:26:23 INFO  : 'configparams force-mem-access 1' command is executed.
+19:26:23 INFO  : Context for 'APU' is selected.
+19:26:23 INFO  : Sourcing of 'C:/Github/Zybo_mipi/Zybo-Z7-20-pcam-5c-2019.1/vitis/Pcam5C-app/_ide/psinit/ps7_init.tcl' is done.
+19:26:24 INFO  : 'ps7_init' command is executed.
+19:26:24 INFO  : 'ps7_post_config' command is executed.
+19:26:24 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+19:26:25 INFO  : The application 'C:/Github/Zybo_mipi/Zybo-Z7-20-pcam-5c-2019.1/vitis/Pcam5C-app/Debug/Pcam5C-app.elf' is downloaded to processor 'ps7_cortexa9_0'.
+19:26:25 INFO  : 'configparams force-mem-access 0' command is executed.
+19:26:25 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~"APU*"}
+rst -system
+after 3000
+targets -set -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351A6C9E3A" && level==0} -index 1
+fpga -file C:/Github/Zybo_mipi/Zybo-Z7-20-pcam-5c-2019.1/vitis/Pcam5C-app/_ide/bitstream/system_wrapper.bit
+targets -set -nocase -filter {name =~"APU*"}
+loadhw -hw C:/Github/Zybo_mipi/Zybo-Z7-20-pcam-5c-2019.1/vitis/Pcam5C-2019/export/Pcam5C-2019/hw/system_wrapper.xsa -mem-ranges [list {0x40000000 0xbfffffff}]
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*"}
+source C:/Github/Zybo_mipi/Zybo-Z7-20-pcam-5c-2019.1/vitis/Pcam5C-app/_ide/psinit/ps7_init.tcl
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "*A9*#0"}
+dow C:/Github/Zybo_mipi/Zybo-Z7-20-pcam-5c-2019.1/vitis/Pcam5C-app/Debug/Pcam5C-app.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+19:26:25 INFO  : Memory regions updated for context APU
+19:26:25 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+19:26:25 INFO  : 'con' command is executed.
+19:26:25 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*A9*#0"}
+con
+----------------End of Script----------------
+
+19:26:25 INFO  : Launch script is exported to file 'C:\Github\Zybo_mipi\Zybo-Z7-20-pcam-5c-2019.1\vitis\.sdk\launch_scripts\single_application_debug\systemdebugger_pcam5c-app_system_standalone.tcl'
+19:29:55 INFO  : Checking for BSP changes to sync application flags for project 'Pcam5C-app'...
+19:30:03 INFO  : Disconnected from the channel tcfchan#8.
+19:30:03 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+19:30:04 INFO  : Jtag cable 'Digilent Zybo Z7 210351A6C9E3A' is selected.
+19:30:04 INFO  : 'jtag frequency' command is executed.
+19:30:04 INFO  : Context for 'APU' is selected.
+19:30:04 INFO  : System reset is completed.
+19:30:07 INFO  : 'after 3000' command is executed.
+19:30:07 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351A6C9E3A" && level==0} -index 1' command is executed.
+19:30:09 INFO  : FPGA configured successfully with bitstream "C:/Github/Zybo_mipi/Zybo-Z7-20-pcam-5c-2019.1/vitis/Pcam5C-app/_ide/bitstream/system_wrapper.bit"
+19:30:09 INFO  : Context for 'APU' is selected.
+19:30:12 INFO  : Hardware design information is loaded from 'C:/Github/Zybo_mipi/Zybo-Z7-20-pcam-5c-2019.1/vitis/Pcam5C-2019/export/Pcam5C-2019/hw/system_wrapper.xsa'.
+19:30:12 INFO  : 'configparams force-mem-access 1' command is executed.
+19:30:12 INFO  : Context for 'APU' is selected.
+19:30:12 INFO  : Sourcing of 'C:/Github/Zybo_mipi/Zybo-Z7-20-pcam-5c-2019.1/vitis/Pcam5C-app/_ide/psinit/ps7_init.tcl' is done.
+19:30:13 INFO  : 'ps7_init' command is executed.
+19:30:13 INFO  : 'ps7_post_config' command is executed.
+19:30:13 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+19:30:14 INFO  : The application 'C:/Github/Zybo_mipi/Zybo-Z7-20-pcam-5c-2019.1/vitis/Pcam5C-app/Debug/Pcam5C-app.elf' is downloaded to processor 'ps7_cortexa9_0'.
+19:30:14 INFO  : 'configparams force-mem-access 0' command is executed.
+19:30:14 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~"APU*"}
+rst -system
+after 3000
+targets -set -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351A6C9E3A" && level==0} -index 1
+fpga -file C:/Github/Zybo_mipi/Zybo-Z7-20-pcam-5c-2019.1/vitis/Pcam5C-app/_ide/bitstream/system_wrapper.bit
+targets -set -nocase -filter {name =~"APU*"}
+loadhw -hw C:/Github/Zybo_mipi/Zybo-Z7-20-pcam-5c-2019.1/vitis/Pcam5C-2019/export/Pcam5C-2019/hw/system_wrapper.xsa -mem-ranges [list {0x40000000 0xbfffffff}]
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*"}
+source C:/Github/Zybo_mipi/Zybo-Z7-20-pcam-5c-2019.1/vitis/Pcam5C-app/_ide/psinit/ps7_init.tcl
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "*A9*#0"}
+dow C:/Github/Zybo_mipi/Zybo-Z7-20-pcam-5c-2019.1/vitis/Pcam5C-app/Debug/Pcam5C-app.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+19:30:14 INFO  : Memory regions updated for context APU
+19:30:14 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+19:30:14 INFO  : 'con' command is executed.
+19:30:14 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*A9*#0"}
+con
+----------------End of Script----------------
+
+19:30:14 INFO  : Launch script is exported to file 'C:\Github\Zybo_mipi\Zybo-Z7-20-pcam-5c-2019.1\vitis\.sdk\launch_scripts\single_application_debug\systemdebugger_pcam5c-app_system_standalone.tcl'
+19:34:02 INFO  : Checking for BSP changes to sync application flags for project 'Pcam5C-app'...
+19:34:06 INFO  : Disconnected from the channel tcfchan#10.
+19:34:07 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+19:34:07 INFO  : Jtag cable 'Digilent Zybo Z7 210351A6C9E3A' is selected.
+19:34:07 INFO  : 'jtag frequency' command is executed.
+19:34:07 INFO  : Context for 'APU' is selected.
+19:34:07 INFO  : System reset is completed.
+19:34:10 INFO  : 'after 3000' command is executed.
+19:34:10 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351A6C9E3A" && level==0} -index 1' command is executed.
+19:34:13 INFO  : FPGA configured successfully with bitstream "C:/Github/Zybo_mipi/Zybo-Z7-20-pcam-5c-2019.1/vitis/Pcam5C-app/_ide/bitstream/system_wrapper.bit"
+19:34:13 INFO  : Context for 'APU' is selected.
+19:34:16 INFO  : Hardware design information is loaded from 'C:/Github/Zybo_mipi/Zybo-Z7-20-pcam-5c-2019.1/vitis/Pcam5C-2019/export/Pcam5C-2019/hw/system_wrapper.xsa'.
+19:34:16 INFO  : 'configparams force-mem-access 1' command is executed.
+19:34:16 INFO  : Context for 'APU' is selected.
+19:34:16 INFO  : Sourcing of 'C:/Github/Zybo_mipi/Zybo-Z7-20-pcam-5c-2019.1/vitis/Pcam5C-app/_ide/psinit/ps7_init.tcl' is done.
+19:34:16 INFO  : 'ps7_init' command is executed.
+19:34:16 INFO  : 'ps7_post_config' command is executed.
+19:34:16 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+19:34:18 INFO  : The application 'C:/Github/Zybo_mipi/Zybo-Z7-20-pcam-5c-2019.1/vitis/Pcam5C-app/Debug/Pcam5C-app.elf' is downloaded to processor 'ps7_cortexa9_0'.
+19:34:18 INFO  : 'configparams force-mem-access 0' command is executed.
+19:34:18 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~"APU*"}
+rst -system
+after 3000
+targets -set -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351A6C9E3A" && level==0} -index 1
+fpga -file C:/Github/Zybo_mipi/Zybo-Z7-20-pcam-5c-2019.1/vitis/Pcam5C-app/_ide/bitstream/system_wrapper.bit
+targets -set -nocase -filter {name =~"APU*"}
+loadhw -hw C:/Github/Zybo_mipi/Zybo-Z7-20-pcam-5c-2019.1/vitis/Pcam5C-2019/export/Pcam5C-2019/hw/system_wrapper.xsa -mem-ranges [list {0x40000000 0xbfffffff}]
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*"}
+source C:/Github/Zybo_mipi/Zybo-Z7-20-pcam-5c-2019.1/vitis/Pcam5C-app/_ide/psinit/ps7_init.tcl
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "*A9*#0"}
+dow C:/Github/Zybo_mipi/Zybo-Z7-20-pcam-5c-2019.1/vitis/Pcam5C-app/Debug/Pcam5C-app.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+19:34:18 INFO  : Memory regions updated for context APU
+19:34:18 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+19:34:18 INFO  : 'con' command is executed.
+19:34:18 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*A9*#0"}
+con
+----------------End of Script----------------
+
+19:34:18 INFO  : Launch script is exported to file 'C:\Github\Zybo_mipi\Zybo-Z7-20-pcam-5c-2019.1\vitis\.sdk\launch_scripts\single_application_debug\systemdebugger_pcam5c-app_system_standalone.tcl'
+19:34:49 INFO  : Checking for BSP changes to sync application flags for project 'Pcam5C-app'...
+19:34:56 INFO  : Disconnected from the channel tcfchan#12.
+19:34:56 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+19:34:57 INFO  : Jtag cable 'Digilent Zybo Z7 210351A6C9E3A' is selected.
+19:34:57 INFO  : 'jtag frequency' command is executed.
+19:34:57 INFO  : Context for 'APU' is selected.
+19:34:57 INFO  : System reset is completed.
+19:35:00 INFO  : 'after 3000' command is executed.
+19:35:00 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351A6C9E3A" && level==0} -index 1' command is executed.
+19:35:02 INFO  : FPGA configured successfully with bitstream "C:/Github/Zybo_mipi/Zybo-Z7-20-pcam-5c-2019.1/vitis/Pcam5C-app/_ide/bitstream/system_wrapper.bit"
+19:35:02 INFO  : Context for 'APU' is selected.
+19:35:05 INFO  : Hardware design information is loaded from 'C:/Github/Zybo_mipi/Zybo-Z7-20-pcam-5c-2019.1/vitis/Pcam5C-2019/export/Pcam5C-2019/hw/system_wrapper.xsa'.
+19:35:05 INFO  : 'configparams force-mem-access 1' command is executed.
+19:35:05 INFO  : Context for 'APU' is selected.
+19:35:05 INFO  : Sourcing of 'C:/Github/Zybo_mipi/Zybo-Z7-20-pcam-5c-2019.1/vitis/Pcam5C-app/_ide/psinit/ps7_init.tcl' is done.
+19:35:06 INFO  : 'ps7_init' command is executed.
+19:35:06 INFO  : 'ps7_post_config' command is executed.
+19:35:06 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+19:35:07 INFO  : The application 'C:/Github/Zybo_mipi/Zybo-Z7-20-pcam-5c-2019.1/vitis/Pcam5C-app/Debug/Pcam5C-app.elf' is downloaded to processor 'ps7_cortexa9_0'.
+19:35:07 INFO  : 'configparams force-mem-access 0' command is executed.
+19:35:07 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~"APU*"}
+rst -system
+after 3000
+targets -set -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351A6C9E3A" && level==0} -index 1
+fpga -file C:/Github/Zybo_mipi/Zybo-Z7-20-pcam-5c-2019.1/vitis/Pcam5C-app/_ide/bitstream/system_wrapper.bit
+targets -set -nocase -filter {name =~"APU*"}
+loadhw -hw C:/Github/Zybo_mipi/Zybo-Z7-20-pcam-5c-2019.1/vitis/Pcam5C-2019/export/Pcam5C-2019/hw/system_wrapper.xsa -mem-ranges [list {0x40000000 0xbfffffff}]
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*"}
+source C:/Github/Zybo_mipi/Zybo-Z7-20-pcam-5c-2019.1/vitis/Pcam5C-app/_ide/psinit/ps7_init.tcl
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "*A9*#0"}
+dow C:/Github/Zybo_mipi/Zybo-Z7-20-pcam-5c-2019.1/vitis/Pcam5C-app/Debug/Pcam5C-app.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+19:35:07 INFO  : Memory regions updated for context APU
+19:35:07 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+19:35:07 INFO  : 'con' command is executed.
+19:35:07 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*A9*#0"}
+con
+----------------End of Script----------------
+
+19:35:07 INFO  : Launch script is exported to file 'C:\Github\Zybo_mipi\Zybo-Z7-20-pcam-5c-2019.1\vitis\.sdk\launch_scripts\single_application_debug\systemdebugger_pcam5c-app_system_standalone.tcl'
+21:01:11 INFO  : Disconnected from the channel tcfchan#14.
+22:30:39 INFO  : Launching XSCT server: xsct.bat -n  -interactive C:\Github\Zybo_mipi\Zybo-Z7-20-pcam-5c-2019.1\vitis\temp_xsdb_launch_script.tcl
+22:30:41 INFO  : XSCT server has started successfully.
+22:30:41 INFO  : plnx-install-location is set to ''
+22:30:41 INFO  : Successfully done setting XSCT server connection channel  
+22:30:41 INFO  : Successfully done setting workspace for the tool. 
+22:30:42 INFO  : Registering command handlers for Vitis TCF services
+22:30:42 INFO  : Successfully done query RDI_DATADIR 
+23:44:56 INFO  : Launching XSCT server: xsct.bat -n  -interactive C:\Github\Zybo_mipi\Zybo-Z7-20-pcam-5c-2019.1\vitis\temp_xsdb_launch_script.tcl
+23:44:58 INFO  : XSCT server has started successfully.
+23:44:58 INFO  : plnx-install-location is set to ''
+23:44:58 INFO  : Successfully done setting XSCT server connection channel  
+23:44:58 INFO  : Successfully done setting workspace for the tool. 
+23:45:01 INFO  : Registering command handlers for Vitis TCF services
+23:45:01 INFO  : Successfully done query RDI_DATADIR 
+00:43:13 INFO  : Checking for BSP changes to sync application flags for project 'Pcam5C-app'...
+00:43:38 INFO  : Checking for BSP changes to sync application flags for project 'Pcam5C-app'...
+00:45:05 INFO  : Checking for BSP changes to sync application flags for project 'Pcam5C-app'...
+00:45:15 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+00:45:16 INFO  : Jtag cable 'Digilent Zybo Z7 210351A6C9E3A' is selected.
+00:45:16 INFO  : 'jtag frequency' command is executed.
+00:45:16 INFO  : Context for 'APU' is selected.
+00:45:16 INFO  : System reset is completed.
+00:45:19 INFO  : 'after 3000' command is executed.
+00:45:19 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351A6C9E3A" && level==0} -index 1' command is executed.
+00:45:21 INFO  : FPGA configured successfully with bitstream "C:/Github/Zybo_mipi/Zybo-Z7-20-pcam-5c-2019.1/vitis/Pcam5C-app/_ide/bitstream/system_wrapper.bit"
+00:45:21 INFO  : Context for 'APU' is selected.
+00:45:21 INFO  : Hardware design information is loaded from 'C:/Github/Zybo_mipi/Zybo-Z7-20-pcam-5c-2019.1/vitis/Pcam5C-2019/export/Pcam5C-2019/hw/system_wrapper.xsa'.
+00:45:21 INFO  : 'configparams force-mem-access 1' command is executed.
+00:45:21 INFO  : Context for 'APU' is selected.
+00:45:21 INFO  : Sourcing of 'C:/Github/Zybo_mipi/Zybo-Z7-20-pcam-5c-2019.1/vitis/Pcam5C-app/_ide/psinit/ps7_init.tcl' is done.
+00:45:22 INFO  : 'ps7_init' command is executed.
+00:45:22 INFO  : 'ps7_post_config' command is executed.
+00:45:22 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+00:45:23 INFO  : The application 'C:/Github/Zybo_mipi/Zybo-Z7-20-pcam-5c-2019.1/vitis/Pcam5C-app/Debug/Pcam5C-app.elf' is downloaded to processor 'ps7_cortexa9_0'.
+00:45:23 INFO  : 'configparams force-mem-access 0' command is executed.
+00:45:23 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~"APU*"}
+rst -system
+after 3000
+targets -set -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351A6C9E3A" && level==0} -index 1
+fpga -file C:/Github/Zybo_mipi/Zybo-Z7-20-pcam-5c-2019.1/vitis/Pcam5C-app/_ide/bitstream/system_wrapper.bit
+targets -set -nocase -filter {name =~"APU*"}
+loadhw -hw C:/Github/Zybo_mipi/Zybo-Z7-20-pcam-5c-2019.1/vitis/Pcam5C-2019/export/Pcam5C-2019/hw/system_wrapper.xsa -mem-ranges [list {0x40000000 0xbfffffff}]
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*"}
+source C:/Github/Zybo_mipi/Zybo-Z7-20-pcam-5c-2019.1/vitis/Pcam5C-app/_ide/psinit/ps7_init.tcl
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "*A9*#0"}
+dow C:/Github/Zybo_mipi/Zybo-Z7-20-pcam-5c-2019.1/vitis/Pcam5C-app/Debug/Pcam5C-app.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+00:45:23 INFO  : Memory regions updated for context APU
+00:45:23 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+00:45:23 INFO  : 'con' command is executed.
+00:45:23 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*A9*#0"}
+con
+----------------End of Script----------------
+
+00:45:23 INFO  : Launch script is exported to file 'C:\Github\Zybo_mipi\Zybo-Z7-20-pcam-5c-2019.1\vitis\.sdk\launch_scripts\single_application_debug\systemdebugger_pcam5c-app_system_standalone.tcl'
+00:45:42 INFO  : Checking for BSP changes to sync application flags for project 'Pcam5C-app'...
+00:45:47 INFO  : Disconnected from the channel tcfchan#4.
+00:45:47 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+00:45:48 INFO  : Jtag cable 'Digilent Zybo Z7 210351A6C9E3A' is selected.
+00:45:48 INFO  : 'jtag frequency' command is executed.
+00:45:48 INFO  : Context for 'APU' is selected.
+00:45:48 INFO  : System reset is completed.
+00:45:51 INFO  : 'after 3000' command is executed.
+00:45:51 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351A6C9E3A" && level==0} -index 1' command is executed.
+00:45:53 INFO  : FPGA configured successfully with bitstream "C:/Github/Zybo_mipi/Zybo-Z7-20-pcam-5c-2019.1/vitis/Pcam5C-app/_ide/bitstream/system_wrapper.bit"
+00:45:53 INFO  : Context for 'APU' is selected.
+00:45:53 INFO  : Hardware design information is loaded from 'C:/Github/Zybo_mipi/Zybo-Z7-20-pcam-5c-2019.1/vitis/Pcam5C-2019/export/Pcam5C-2019/hw/system_wrapper.xsa'.
+00:45:53 INFO  : 'configparams force-mem-access 1' command is executed.
+00:45:53 INFO  : Context for 'APU' is selected.
+00:45:53 INFO  : Sourcing of 'C:/Github/Zybo_mipi/Zybo-Z7-20-pcam-5c-2019.1/vitis/Pcam5C-app/_ide/psinit/ps7_init.tcl' is done.
+00:45:54 INFO  : 'ps7_init' command is executed.
+00:45:54 INFO  : 'ps7_post_config' command is executed.
+00:45:54 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+00:45:55 INFO  : The application 'C:/Github/Zybo_mipi/Zybo-Z7-20-pcam-5c-2019.1/vitis/Pcam5C-app/Debug/Pcam5C-app.elf' is downloaded to processor 'ps7_cortexa9_0'.
+00:45:55 INFO  : 'configparams force-mem-access 0' command is executed.
+00:45:55 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~"APU*"}
+rst -system
+after 3000
+targets -set -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351A6C9E3A" && level==0} -index 1
+fpga -file C:/Github/Zybo_mipi/Zybo-Z7-20-pcam-5c-2019.1/vitis/Pcam5C-app/_ide/bitstream/system_wrapper.bit
+targets -set -nocase -filter {name =~"APU*"}
+loadhw -hw C:/Github/Zybo_mipi/Zybo-Z7-20-pcam-5c-2019.1/vitis/Pcam5C-2019/export/Pcam5C-2019/hw/system_wrapper.xsa -mem-ranges [list {0x40000000 0xbfffffff}]
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*"}
+source C:/Github/Zybo_mipi/Zybo-Z7-20-pcam-5c-2019.1/vitis/Pcam5C-app/_ide/psinit/ps7_init.tcl
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "*A9*#0"}
+dow C:/Github/Zybo_mipi/Zybo-Z7-20-pcam-5c-2019.1/vitis/Pcam5C-app/Debug/Pcam5C-app.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+00:45:55 INFO  : Memory regions updated for context APU
+00:45:55 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+00:45:55 INFO  : 'con' command is executed.
+00:45:55 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*A9*#0"}
+con
+----------------End of Script----------------
+
+00:45:55 INFO  : Launch script is exported to file 'C:\Github\Zybo_mipi\Zybo-Z7-20-pcam-5c-2019.1\vitis\.sdk\launch_scripts\single_application_debug\systemdebugger_pcam5c-app_system_standalone.tcl'
+00:52:22 INFO  : Checking for BSP changes to sync application flags for project 'Pcam5C-app'...
+00:52:29 INFO  : Disconnected from the channel tcfchan#6.
+00:52:29 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+00:52:29 INFO  : Jtag cable 'Digilent Zybo Z7 210351A6C9E3A' is selected.
+00:52:29 INFO  : 'jtag frequency' command is executed.
+00:52:29 INFO  : Context for 'APU' is selected.
+00:52:29 INFO  : System reset is completed.
+00:52:32 INFO  : 'after 3000' command is executed.
+00:52:32 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351A6C9E3A" && level==0} -index 1' command is executed.
+00:52:35 INFO  : FPGA configured successfully with bitstream "C:/Github/Zybo_mipi/Zybo-Z7-20-pcam-5c-2019.1/vitis/Pcam5C-app/_ide/bitstream/system_wrapper.bit"
+00:52:35 INFO  : Context for 'APU' is selected.
+00:52:35 INFO  : Hardware design information is loaded from 'C:/Github/Zybo_mipi/Zybo-Z7-20-pcam-5c-2019.1/vitis/Pcam5C-2019/export/Pcam5C-2019/hw/system_wrapper.xsa'.
+00:52:35 INFO  : 'configparams force-mem-access 1' command is executed.
+00:52:35 INFO  : Context for 'APU' is selected.
+00:52:35 INFO  : Sourcing of 'C:/Github/Zybo_mipi/Zybo-Z7-20-pcam-5c-2019.1/vitis/Pcam5C-app/_ide/psinit/ps7_init.tcl' is done.
+00:52:35 INFO  : 'ps7_init' command is executed.
+00:52:35 INFO  : 'ps7_post_config' command is executed.
+00:52:35 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+00:52:37 INFO  : The application 'C:/Github/Zybo_mipi/Zybo-Z7-20-pcam-5c-2019.1/vitis/Pcam5C-app/Debug/Pcam5C-app.elf' is downloaded to processor 'ps7_cortexa9_0'.
+00:52:37 INFO  : 'configparams force-mem-access 0' command is executed.
+00:52:37 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~"APU*"}
+rst -system
+after 3000
+targets -set -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351A6C9E3A" && level==0} -index 1
+fpga -file C:/Github/Zybo_mipi/Zybo-Z7-20-pcam-5c-2019.1/vitis/Pcam5C-app/_ide/bitstream/system_wrapper.bit
+targets -set -nocase -filter {name =~"APU*"}
+loadhw -hw C:/Github/Zybo_mipi/Zybo-Z7-20-pcam-5c-2019.1/vitis/Pcam5C-2019/export/Pcam5C-2019/hw/system_wrapper.xsa -mem-ranges [list {0x40000000 0xbfffffff}]
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*"}
+source C:/Github/Zybo_mipi/Zybo-Z7-20-pcam-5c-2019.1/vitis/Pcam5C-app/_ide/psinit/ps7_init.tcl
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "*A9*#0"}
+dow C:/Github/Zybo_mipi/Zybo-Z7-20-pcam-5c-2019.1/vitis/Pcam5C-app/Debug/Pcam5C-app.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+00:52:37 INFO  : Memory regions updated for context APU
+00:52:37 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+00:52:37 INFO  : 'con' command is executed.
+00:52:37 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*A9*#0"}
+con
+----------------End of Script----------------
+
+00:52:37 INFO  : Launch script is exported to file 'C:\Github\Zybo_mipi\Zybo-Z7-20-pcam-5c-2019.1\vitis\.sdk\launch_scripts\single_application_debug\systemdebugger_pcam5c-app_system_standalone.tcl'
+00:52:49 INFO  : Checking for BSP changes to sync application flags for project 'Pcam5C-app'...
+00:52:55 INFO  : Disconnected from the channel tcfchan#8.
+00:52:55 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+00:52:56 INFO  : Jtag cable 'Digilent Zybo Z7 210351A6C9E3A' is selected.
+00:52:56 INFO  : 'jtag frequency' command is executed.
+00:52:56 INFO  : Context for 'APU' is selected.
+00:52:56 INFO  : System reset is completed.
+00:52:59 INFO  : 'after 3000' command is executed.
+00:52:59 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351A6C9E3A" && level==0} -index 1' command is executed.
+00:53:01 INFO  : FPGA configured successfully with bitstream "C:/Github/Zybo_mipi/Zybo-Z7-20-pcam-5c-2019.1/vitis/Pcam5C-app/_ide/bitstream/system_wrapper.bit"
+00:53:01 INFO  : Context for 'APU' is selected.
+00:53:01 INFO  : Hardware design information is loaded from 'C:/Github/Zybo_mipi/Zybo-Z7-20-pcam-5c-2019.1/vitis/Pcam5C-2019/export/Pcam5C-2019/hw/system_wrapper.xsa'.
+00:53:01 INFO  : 'configparams force-mem-access 1' command is executed.
+00:53:01 INFO  : Context for 'APU' is selected.
+00:53:01 INFO  : Sourcing of 'C:/Github/Zybo_mipi/Zybo-Z7-20-pcam-5c-2019.1/vitis/Pcam5C-app/_ide/psinit/ps7_init.tcl' is done.
+00:53:02 INFO  : 'ps7_init' command is executed.
+00:53:02 INFO  : 'ps7_post_config' command is executed.
+00:53:02 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+00:53:03 INFO  : The application 'C:/Github/Zybo_mipi/Zybo-Z7-20-pcam-5c-2019.1/vitis/Pcam5C-app/Debug/Pcam5C-app.elf' is downloaded to processor 'ps7_cortexa9_0'.
+00:53:03 INFO  : 'configparams force-mem-access 0' command is executed.
+00:53:03 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~"APU*"}
+rst -system
+after 3000
+targets -set -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351A6C9E3A" && level==0} -index 1
+fpga -file C:/Github/Zybo_mipi/Zybo-Z7-20-pcam-5c-2019.1/vitis/Pcam5C-app/_ide/bitstream/system_wrapper.bit
+targets -set -nocase -filter {name =~"APU*"}
+loadhw -hw C:/Github/Zybo_mipi/Zybo-Z7-20-pcam-5c-2019.1/vitis/Pcam5C-2019/export/Pcam5C-2019/hw/system_wrapper.xsa -mem-ranges [list {0x40000000 0xbfffffff}]
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*"}
+source C:/Github/Zybo_mipi/Zybo-Z7-20-pcam-5c-2019.1/vitis/Pcam5C-app/_ide/psinit/ps7_init.tcl
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "*A9*#0"}
+dow C:/Github/Zybo_mipi/Zybo-Z7-20-pcam-5c-2019.1/vitis/Pcam5C-app/Debug/Pcam5C-app.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+00:53:03 INFO  : Memory regions updated for context APU
+00:53:03 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+00:53:03 INFO  : 'con' command is executed.
+00:53:03 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*A9*#0"}
+con
+----------------End of Script----------------
+
+00:53:03 INFO  : Launch script is exported to file 'C:\Github\Zybo_mipi\Zybo-Z7-20-pcam-5c-2019.1\vitis\.sdk\launch_scripts\single_application_debug\systemdebugger_pcam5c-app_system_standalone.tcl'
+00:58:15 INFO  : Checking for BSP changes to sync application flags for project 'Pcam5C-app'...
+00:58:20 INFO  : Disconnected from the channel tcfchan#10.
+00:58:22 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+00:58:23 INFO  : Jtag cable 'Digilent Zybo Z7 210351A6C9E3A' is selected.
+00:58:23 INFO  : 'jtag frequency' command is executed.
+00:58:23 INFO  : Context for 'APU' is selected.
+00:58:23 INFO  : System reset is completed.
+00:58:26 INFO  : 'after 3000' command is executed.
+00:58:26 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351A6C9E3A" && level==0} -index 1' command is executed.
+00:58:28 INFO  : FPGA configured successfully with bitstream "C:/Github/Zybo_mipi/Zybo-Z7-20-pcam-5c-2019.1/vitis/Pcam5C-app/_ide/bitstream/system_wrapper.bit"
+00:58:28 INFO  : Context for 'APU' is selected.
+00:58:28 INFO  : Hardware design information is loaded from 'C:/Github/Zybo_mipi/Zybo-Z7-20-pcam-5c-2019.1/vitis/Pcam5C-2019/export/Pcam5C-2019/hw/system_wrapper.xsa'.
+00:58:28 INFO  : 'configparams force-mem-access 1' command is executed.
+00:58:28 INFO  : Context for 'APU' is selected.
+00:58:28 INFO  : Sourcing of 'C:/Github/Zybo_mipi/Zybo-Z7-20-pcam-5c-2019.1/vitis/Pcam5C-app/_ide/psinit/ps7_init.tcl' is done.
+00:58:29 INFO  : 'ps7_init' command is executed.
+00:58:29 INFO  : 'ps7_post_config' command is executed.
+00:58:29 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+00:58:29 INFO  : Checking for BSP changes to sync application flags for project 'Pcam5C-app'...
+00:58:30 INFO  : The application 'C:/Github/Zybo_mipi/Zybo-Z7-20-pcam-5c-2019.1/vitis/Pcam5C-app/Debug/Pcam5C-app.elf' is downloaded to processor 'ps7_cortexa9_0'.
+00:58:30 INFO  : 'configparams force-mem-access 0' command is executed.
+00:58:30 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~"APU*"}
+rst -system
+after 3000
+targets -set -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351A6C9E3A" && level==0} -index 1
+fpga -file C:/Github/Zybo_mipi/Zybo-Z7-20-pcam-5c-2019.1/vitis/Pcam5C-app/_ide/bitstream/system_wrapper.bit
+targets -set -nocase -filter {name =~"APU*"}
+loadhw -hw C:/Github/Zybo_mipi/Zybo-Z7-20-pcam-5c-2019.1/vitis/Pcam5C-2019/export/Pcam5C-2019/hw/system_wrapper.xsa -mem-ranges [list {0x40000000 0xbfffffff}]
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*"}
+source C:/Github/Zybo_mipi/Zybo-Z7-20-pcam-5c-2019.1/vitis/Pcam5C-app/_ide/psinit/ps7_init.tcl
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "*A9*#0"}
+dow C:/Github/Zybo_mipi/Zybo-Z7-20-pcam-5c-2019.1/vitis/Pcam5C-app/Debug/Pcam5C-app.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+00:58:30 INFO  : Memory regions updated for context APU
+00:58:30 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+00:58:30 INFO  : 'con' command is executed.
+00:58:30 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*A9*#0"}
+con
+----------------End of Script----------------
+
+00:58:30 INFO  : Launch script is exported to file 'C:\Github\Zybo_mipi\Zybo-Z7-20-pcam-5c-2019.1\vitis\.sdk\launch_scripts\single_application_debug\systemdebugger_pcam5c-app_system_standalone.tcl'
+01:00:56 INFO  : Disconnected from the channel tcfchan#12.

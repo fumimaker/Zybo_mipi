@@ -4081,3 +4081,1229 @@ TRACE::2020-10-26.14:40:36::SCWMssOS::Checking the sw design at  C:/Github/Zybo_
 TRACE::2020-10-26.14:40:36::SCWMssOS::DEBUG:  swdes dump  C:/Github/Zybo_mipi/LWIP/vitis/design_1_wrapper/ps7_cortexa9_0/standalone_domain/bsp/system.mss|system||
 
 TRACE::2020-10-26.14:40:36::SCWMssOS::Sw design exists and opened at  C:/Github/Zybo_mipi/LWIP/vitis/design_1_wrapper/ps7_cortexa9_0/standalone_domain/bsp/system.mss
+TRACE::2020-10-29.15:24:51::SCWPlatform::Trying to open the hw design at C:/Github/Zybo_mipi/LWIP/vitis/design_1_wrapper/hw/design_1_wrapper.xsa
+TRACE::2020-10-29.15:24:51::SCWPlatform::DSA given C:/Github/Zybo_mipi/LWIP/vitis/design_1_wrapper/hw/design_1_wrapper.xsa
+TRACE::2020-10-29.15:24:51::SCWPlatform::DSA absoulate path C:/Github/Zybo_mipi/LWIP/vitis/design_1_wrapper/hw/design_1_wrapper.xsa
+TRACE::2020-10-29.15:24:53::SCWPlatform::DSA directory C:/Github/Zybo_mipi/LWIP/vitis/design_1_wrapper/hw
+TRACE::2020-10-29.15:24:53::SCWPlatform:: Platform Path C:/Github/Zybo_mipi/LWIP/vitis/design_1_wrapper/hw/design_1_wrapper.xsa
+TRACE::2020-10-29.15:24:53::SCWPlatform:: Unique name xilinx:zybo-z7-20::0.0
+TRACE::2020-10-29.15:24:53::SCWPlatform::Do not have an existing db opened. 
+TRACE::2020-10-29.15:24:55::SCWPlatform::Opened new HwDB with name design_1_wrapper
+TRACE::2020-10-29.15:24:55::SCWReader::Active system found as  design_1_wrapper
+TRACE::2020-10-29.15:24:55::SCWReader::Handling sysconfig design_1_wrapper
+TRACE::2020-10-29.15:24:55::SCWDomain::checking for install qemu data   : 
+TRACE::2020-10-29.15:24:55::SCWDomain:: Using the QEMU Data from install at  : C:/Xilinx/Vitis/2019.2/data/emulation/platforms/zynq/qemu/
+TRACE::2020-10-29.15:24:55::SCWDomain:: Using the QEMU args  from install at  : C:/Xilinx/Vitis/2019.2/data/emulation/platforms/zynq/qemu/qemu_args.txt
+TRACE::2020-10-29.15:24:55::SCWPlatform::Trying to open the hw design at C:/Github/Zybo_mipi/LWIP/vitis/design_1_wrapper/hw/design_1_wrapper.xsa
+TRACE::2020-10-29.15:24:55::SCWPlatform::DSA given C:/Github/Zybo_mipi/LWIP/vitis/design_1_wrapper/hw/design_1_wrapper.xsa
+TRACE::2020-10-29.15:24:55::SCWPlatform::DSA absoulate path C:/Github/Zybo_mipi/LWIP/vitis/design_1_wrapper/hw/design_1_wrapper.xsa
+TRACE::2020-10-29.15:24:55::SCWPlatform::DSA directory C:/Github/Zybo_mipi/LWIP/vitis/design_1_wrapper/hw
+TRACE::2020-10-29.15:24:55::SCWPlatform:: Platform Path C:/Github/Zybo_mipi/LWIP/vitis/design_1_wrapper/hw/design_1_wrapper.xsa
+TRACE::2020-10-29.15:24:55::SCWPlatform:: Unique name xilinx:zybo-z7-20::0.0
+TRACE::2020-10-29.15:24:55::SCWPlatform::Trying to set the existing hwdb with name design_1_wrapper
+TRACE::2020-10-29.15:24:55::SCWPlatform::Opened existing hwdb design_1_wrapper
+TRACE::2020-10-29.15:24:55::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2020-10-29.15:24:55::SCWPlatform::Trying to open the hw design at C:/Github/Zybo_mipi/LWIP/vitis/design_1_wrapper/hw/design_1_wrapper.xsa
+TRACE::2020-10-29.15:24:55::SCWPlatform::DSA given C:/Github/Zybo_mipi/LWIP/vitis/design_1_wrapper/hw/design_1_wrapper.xsa
+TRACE::2020-10-29.15:24:55::SCWPlatform::DSA absoulate path C:/Github/Zybo_mipi/LWIP/vitis/design_1_wrapper/hw/design_1_wrapper.xsa
+TRACE::2020-10-29.15:24:55::SCWPlatform::DSA directory C:/Github/Zybo_mipi/LWIP/vitis/design_1_wrapper/hw
+TRACE::2020-10-29.15:24:55::SCWPlatform:: Platform Path C:/Github/Zybo_mipi/LWIP/vitis/design_1_wrapper/hw/design_1_wrapper.xsa
+TRACE::2020-10-29.15:24:55::SCWPlatform:: Unique name xilinx:zybo-z7-20::0.0
+TRACE::2020-10-29.15:24:55::SCWPlatform::Trying to set the existing hwdb with name design_1_wrapper
+TRACE::2020-10-29.15:24:55::SCWPlatform::Opened existing hwdb design_1_wrapper
+TRACE::2020-10-29.15:24:55::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2020-10-29.15:24:55::SCWPlatform::Trying to open the hw design at C:/Github/Zybo_mipi/LWIP/vitis/design_1_wrapper/hw/design_1_wrapper.xsa
+TRACE::2020-10-29.15:24:55::SCWPlatform::DSA given C:/Github/Zybo_mipi/LWIP/vitis/design_1_wrapper/hw/design_1_wrapper.xsa
+TRACE::2020-10-29.15:24:55::SCWPlatform::DSA absoulate path C:/Github/Zybo_mipi/LWIP/vitis/design_1_wrapper/hw/design_1_wrapper.xsa
+TRACE::2020-10-29.15:24:55::SCWPlatform::DSA directory C:/Github/Zybo_mipi/LWIP/vitis/design_1_wrapper/hw
+TRACE::2020-10-29.15:24:55::SCWPlatform:: Platform Path C:/Github/Zybo_mipi/LWIP/vitis/design_1_wrapper/hw/design_1_wrapper.xsa
+TRACE::2020-10-29.15:24:55::SCWPlatform:: Unique name xilinx:zybo-z7-20::0.0
+TRACE::2020-10-29.15:24:55::SCWPlatform::Trying to set the existing hwdb with name design_1_wrapper
+TRACE::2020-10-29.15:24:55::SCWPlatform::Opened existing hwdb design_1_wrapper
+TRACE::2020-10-29.15:24:55::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2020-10-29.15:24:55::SCWMssOS::Checking the sw design at  C:/Github/Zybo_mipi/LWIP/vitis/design_1_wrapper/ps7_cortexa9_0/standalone_domain/bsp/system.mss
+TRACE::2020-10-29.15:24:55::SCWMssOS::DEBUG:  swdes dump  
+TRACE::2020-10-29.15:24:55::SCWMssOS::No sw design opened at  C:/Github/Zybo_mipi/LWIP/vitis/design_1_wrapper/ps7_cortexa9_0/standalone_domain/bsp/system.mss
+TRACE::2020-10-29.15:24:55::SCWMssOS::mss exists loading the mss file  C:/Github/Zybo_mipi/LWIP/vitis/design_1_wrapper/ps7_cortexa9_0/standalone_domain/bsp/system.mss
+TRACE::2020-10-29.15:24:55::SCWMssOS::Opened the sw design from mss  C:/Github/Zybo_mipi/LWIP/vitis/design_1_wrapper/ps7_cortexa9_0/standalone_domain/bsp/system.mss
+TRACE::2020-10-29.15:24:55::SCWMssOS::Adding the swdes entry C:/Github/Zybo_mipi/LWIP/vitis/design_1_wrapper/ps7_cortexa9_0/standalone_domain/bsp/system.mss with des name system
+TRACE::2020-10-29.15:24:55::SCWMssOS::updating the scw layer about changes
+TRACE::2020-10-29.15:24:55::SCWMssOS::Opened the sw design.  C:/Github/Zybo_mipi/LWIP/vitis/design_1_wrapper/ps7_cortexa9_0/standalone_domain/bsp/system.mss
+TRACE::2020-10-29.15:24:55::SCWPlatform::Trying to open the hw design at C:/Github/Zybo_mipi/LWIP/vitis/design_1_wrapper/hw/design_1_wrapper.xsa
+TRACE::2020-10-29.15:24:55::SCWPlatform::DSA given C:/Github/Zybo_mipi/LWIP/vitis/design_1_wrapper/hw/design_1_wrapper.xsa
+TRACE::2020-10-29.15:24:55::SCWPlatform::DSA absoulate path C:/Github/Zybo_mipi/LWIP/vitis/design_1_wrapper/hw/design_1_wrapper.xsa
+TRACE::2020-10-29.15:24:56::SCWPlatform::DSA directory C:/Github/Zybo_mipi/LWIP/vitis/design_1_wrapper/hw
+TRACE::2020-10-29.15:24:56::SCWPlatform:: Platform Path C:/Github/Zybo_mipi/LWIP/vitis/design_1_wrapper/hw/design_1_wrapper.xsa
+TRACE::2020-10-29.15:24:56::SCWPlatform:: Unique name xilinx:zybo-z7-20::0.0
+TRACE::2020-10-29.15:24:56::SCWPlatform::Trying to set the existing hwdb with name design_1_wrapper
+TRACE::2020-10-29.15:24:56::SCWPlatform::Opened existing hwdb design_1_wrapper
+TRACE::2020-10-29.15:24:56::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2020-10-29.15:24:56::SCWMssOS::Checking the sw design at  C:/Github/Zybo_mipi/LWIP/vitis/design_1_wrapper/ps7_cortexa9_0/standalone_domain/bsp/system.mss
+TRACE::2020-10-29.15:24:56::SCWMssOS::DEBUG:  swdes dump  C:/Github/Zybo_mipi/LWIP/vitis/design_1_wrapper/ps7_cortexa9_0/standalone_domain/bsp/system.mss|system||
+
+TRACE::2020-10-29.15:24:56::SCWMssOS::Sw design exists and opened at  C:/Github/Zybo_mipi/LWIP/vitis/design_1_wrapper/ps7_cortexa9_0/standalone_domain/bsp/system.mss
+TRACE::2020-10-29.15:24:56::SCWMssOS:: library already available in sw design:  lwip211:1.1
+TRACE::2020-10-29.15:24:56::SCWPlatform::Trying to open the hw design at C:/Github/Zybo_mipi/LWIP/vitis/design_1_wrapper/hw/design_1_wrapper.xsa
+TRACE::2020-10-29.15:24:56::SCWPlatform::DSA given C:/Github/Zybo_mipi/LWIP/vitis/design_1_wrapper/hw/design_1_wrapper.xsa
+TRACE::2020-10-29.15:24:56::SCWPlatform::DSA absoulate path C:/Github/Zybo_mipi/LWIP/vitis/design_1_wrapper/hw/design_1_wrapper.xsa
+TRACE::2020-10-29.15:24:56::SCWPlatform::DSA directory C:/Github/Zybo_mipi/LWIP/vitis/design_1_wrapper/hw
+TRACE::2020-10-29.15:24:56::SCWPlatform:: Platform Path C:/Github/Zybo_mipi/LWIP/vitis/design_1_wrapper/hw/design_1_wrapper.xsa
+TRACE::2020-10-29.15:24:56::SCWPlatform:: Unique name xilinx:zybo-z7-20::0.0
+TRACE::2020-10-29.15:24:56::SCWPlatform::Trying to set the existing hwdb with name design_1_wrapper
+TRACE::2020-10-29.15:24:56::SCWPlatform::Opened existing hwdb design_1_wrapper
+TRACE::2020-10-29.15:24:56::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2020-10-29.15:24:56::SCWMssOS::Checking the sw design at  C:/Github/Zybo_mipi/LWIP/vitis/design_1_wrapper/ps7_cortexa9_0/standalone_domain/bsp/system.mss
+TRACE::2020-10-29.15:24:56::SCWMssOS::DEBUG:  swdes dump  C:/Github/Zybo_mipi/LWIP/vitis/design_1_wrapper/ps7_cortexa9_0/standalone_domain/bsp/system.mss|system||
+
+TRACE::2020-10-29.15:24:56::SCWMssOS::Sw design exists and opened at  C:/Github/Zybo_mipi/LWIP/vitis/design_1_wrapper/ps7_cortexa9_0/standalone_domain/bsp/system.mss
+TRACE::2020-10-29.15:24:56::SCWPlatform::Trying to open the hw design at C:/Github/Zybo_mipi/LWIP/vitis/design_1_wrapper/hw/design_1_wrapper.xsa
+TRACE::2020-10-29.15:24:56::SCWPlatform::DSA given C:/Github/Zybo_mipi/LWIP/vitis/design_1_wrapper/hw/design_1_wrapper.xsa
+TRACE::2020-10-29.15:24:56::SCWPlatform::DSA absoulate path C:/Github/Zybo_mipi/LWIP/vitis/design_1_wrapper/hw/design_1_wrapper.xsa
+TRACE::2020-10-29.15:24:56::SCWPlatform::DSA directory C:/Github/Zybo_mipi/LWIP/vitis/design_1_wrapper/hw
+TRACE::2020-10-29.15:24:56::SCWPlatform:: Platform Path C:/Github/Zybo_mipi/LWIP/vitis/design_1_wrapper/hw/design_1_wrapper.xsa
+TRACE::2020-10-29.15:24:56::SCWPlatform:: Unique name xilinx:zybo-z7-20::0.0
+TRACE::2020-10-29.15:24:56::SCWPlatform::Trying to set the existing hwdb with name design_1_wrapper
+TRACE::2020-10-29.15:24:56::SCWPlatform::Opened existing hwdb design_1_wrapper
+TRACE::2020-10-29.15:24:56::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2020-10-29.15:24:56::SCWMssOS::Checking the sw design at  C:/Github/Zybo_mipi/LWIP/vitis/design_1_wrapper/ps7_cortexa9_0/standalone_domain/bsp/system.mss
+TRACE::2020-10-29.15:24:56::SCWMssOS::DEBUG:  swdes dump  C:/Github/Zybo_mipi/LWIP/vitis/design_1_wrapper/ps7_cortexa9_0/standalone_domain/bsp/system.mss|system||
+
+TRACE::2020-10-29.15:24:56::SCWMssOS::Sw design exists and opened at  C:/Github/Zybo_mipi/LWIP/vitis/design_1_wrapper/ps7_cortexa9_0/standalone_domain/bsp/system.mss
+TRACE::2020-10-29.15:24:56::SCWPlatform::Trying to open the hw design at C:/Github/Zybo_mipi/LWIP/vitis/design_1_wrapper/hw/design_1_wrapper.xsa
+TRACE::2020-10-29.15:24:56::SCWPlatform::DSA given C:/Github/Zybo_mipi/LWIP/vitis/design_1_wrapper/hw/design_1_wrapper.xsa
+TRACE::2020-10-29.15:24:56::SCWPlatform::DSA absoulate path C:/Github/Zybo_mipi/LWIP/vitis/design_1_wrapper/hw/design_1_wrapper.xsa
+TRACE::2020-10-29.15:24:56::SCWPlatform::DSA directory C:/Github/Zybo_mipi/LWIP/vitis/design_1_wrapper/hw
+TRACE::2020-10-29.15:24:56::SCWPlatform:: Platform Path C:/Github/Zybo_mipi/LWIP/vitis/design_1_wrapper/hw/design_1_wrapper.xsa
+TRACE::2020-10-29.15:24:56::SCWPlatform:: Unique name xilinx:zybo-z7-20::0.0
+TRACE::2020-10-29.15:24:56::SCWPlatform::Trying to set the existing hwdb with name design_1_wrapper
+TRACE::2020-10-29.15:24:56::SCWPlatform::Opened existing hwdb design_1_wrapper
+TRACE::2020-10-29.15:24:56::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2020-10-29.15:24:56::SCWMssOS::Checking the sw design at  C:/Github/Zybo_mipi/LWIP/vitis/design_1_wrapper/ps7_cortexa9_0/standalone_domain/bsp/system.mss
+TRACE::2020-10-29.15:24:56::SCWMssOS::DEBUG:  swdes dump  C:/Github/Zybo_mipi/LWIP/vitis/design_1_wrapper/ps7_cortexa9_0/standalone_domain/bsp/system.mss|system||
+
+TRACE::2020-10-29.15:24:56::SCWMssOS::Sw design exists and opened at  C:/Github/Zybo_mipi/LWIP/vitis/design_1_wrapper/ps7_cortexa9_0/standalone_domain/bsp/system.mss
+TRACE::2020-10-29.15:24:56::SCWPlatform::Trying to open the hw design at C:/Github/Zybo_mipi/LWIP/vitis/design_1_wrapper/hw/design_1_wrapper.xsa
+TRACE::2020-10-29.15:24:56::SCWPlatform::DSA given C:/Github/Zybo_mipi/LWIP/vitis/design_1_wrapper/hw/design_1_wrapper.xsa
+TRACE::2020-10-29.15:24:56::SCWPlatform::DSA absoulate path C:/Github/Zybo_mipi/LWIP/vitis/design_1_wrapper/hw/design_1_wrapper.xsa
+TRACE::2020-10-29.15:24:56::SCWPlatform::DSA directory C:/Github/Zybo_mipi/LWIP/vitis/design_1_wrapper/hw
+TRACE::2020-10-29.15:24:56::SCWPlatform:: Platform Path C:/Github/Zybo_mipi/LWIP/vitis/design_1_wrapper/hw/design_1_wrapper.xsa
+TRACE::2020-10-29.15:24:56::SCWPlatform:: Unique name xilinx:zybo-z7-20::0.0
+TRACE::2020-10-29.15:24:56::SCWPlatform::Trying to set the existing hwdb with name design_1_wrapper
+TRACE::2020-10-29.15:24:56::SCWPlatform::Opened existing hwdb design_1_wrapper
+TRACE::2020-10-29.15:24:56::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2020-10-29.15:24:56::SCWMssOS::Checking the sw design at  C:/Github/Zybo_mipi/LWIP/vitis/design_1_wrapper/ps7_cortexa9_0/standalone_domain/bsp/system.mss
+TRACE::2020-10-29.15:24:56::SCWMssOS::DEBUG:  swdes dump  C:/Github/Zybo_mipi/LWIP/vitis/design_1_wrapper/ps7_cortexa9_0/standalone_domain/bsp/system.mss|system||
+
+TRACE::2020-10-29.15:24:56::SCWMssOS::Sw design exists and opened at  C:/Github/Zybo_mipi/LWIP/vitis/design_1_wrapper/ps7_cortexa9_0/standalone_domain/bsp/system.mss
+TRACE::2020-10-29.15:24:56::SCWPlatform::Trying to open the hw design at C:/Github/Zybo_mipi/LWIP/vitis/design_1_wrapper/hw/design_1_wrapper.xsa
+TRACE::2020-10-29.15:24:56::SCWPlatform::DSA given C:/Github/Zybo_mipi/LWIP/vitis/design_1_wrapper/hw/design_1_wrapper.xsa
+TRACE::2020-10-29.15:24:56::SCWPlatform::DSA absoulate path C:/Github/Zybo_mipi/LWIP/vitis/design_1_wrapper/hw/design_1_wrapper.xsa
+TRACE::2020-10-29.15:24:56::SCWPlatform::DSA directory C:/Github/Zybo_mipi/LWIP/vitis/design_1_wrapper/hw
+TRACE::2020-10-29.15:24:56::SCWPlatform:: Platform Path C:/Github/Zybo_mipi/LWIP/vitis/design_1_wrapper/hw/design_1_wrapper.xsa
+TRACE::2020-10-29.15:24:56::SCWPlatform:: Unique name xilinx:zybo-z7-20::0.0
+TRACE::2020-10-29.15:24:56::SCWPlatform::Trying to set the existing hwdb with name design_1_wrapper
+TRACE::2020-10-29.15:24:56::SCWPlatform::Opened existing hwdb design_1_wrapper
+TRACE::2020-10-29.15:24:56::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2020-10-29.15:24:56::SCWMssOS::Checking the sw design at  C:/Github/Zybo_mipi/LWIP/vitis/design_1_wrapper/ps7_cortexa9_0/standalone_domain/bsp/system.mss
+TRACE::2020-10-29.15:24:56::SCWMssOS::DEBUG:  swdes dump  C:/Github/Zybo_mipi/LWIP/vitis/design_1_wrapper/ps7_cortexa9_0/standalone_domain/bsp/system.mss|system||
+
+TRACE::2020-10-29.15:24:56::SCWMssOS::Sw design exists and opened at  C:/Github/Zybo_mipi/LWIP/vitis/design_1_wrapper/ps7_cortexa9_0/standalone_domain/bsp/system.mss
+TRACE::2020-10-29.15:24:56::SCWPlatform::Trying to open the hw design at C:/Github/Zybo_mipi/LWIP/vitis/design_1_wrapper/hw/design_1_wrapper.xsa
+TRACE::2020-10-29.15:24:56::SCWPlatform::DSA given C:/Github/Zybo_mipi/LWIP/vitis/design_1_wrapper/hw/design_1_wrapper.xsa
+TRACE::2020-10-29.15:24:56::SCWPlatform::DSA absoulate path C:/Github/Zybo_mipi/LWIP/vitis/design_1_wrapper/hw/design_1_wrapper.xsa
+TRACE::2020-10-29.15:24:56::SCWPlatform::DSA directory C:/Github/Zybo_mipi/LWIP/vitis/design_1_wrapper/hw
+TRACE::2020-10-29.15:24:56::SCWPlatform:: Platform Path C:/Github/Zybo_mipi/LWIP/vitis/design_1_wrapper/hw/design_1_wrapper.xsa
+TRACE::2020-10-29.15:24:56::SCWPlatform:: Unique name xilinx:zybo-z7-20::0.0
+TRACE::2020-10-29.15:24:56::SCWPlatform::Trying to set the existing hwdb with name design_1_wrapper
+TRACE::2020-10-29.15:24:56::SCWPlatform::Opened existing hwdb design_1_wrapper
+TRACE::2020-10-29.15:24:56::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2020-10-29.15:24:56::SCWMssOS::Checking the sw design at  C:/Github/Zybo_mipi/LWIP/vitis/design_1_wrapper/ps7_cortexa9_0/standalone_domain/bsp/system.mss
+TRACE::2020-10-29.15:24:56::SCWMssOS::DEBUG:  swdes dump  C:/Github/Zybo_mipi/LWIP/vitis/design_1_wrapper/ps7_cortexa9_0/standalone_domain/bsp/system.mss|system||
+
+TRACE::2020-10-29.15:24:56::SCWMssOS::Sw design exists and opened at  C:/Github/Zybo_mipi/LWIP/vitis/design_1_wrapper/ps7_cortexa9_0/standalone_domain/bsp/system.mss
+TRACE::2020-10-29.15:24:56::SCWPlatform::Trying to open the hw design at C:/Github/Zybo_mipi/LWIP/vitis/design_1_wrapper/hw/design_1_wrapper.xsa
+TRACE::2020-10-29.15:24:56::SCWPlatform::DSA given C:/Github/Zybo_mipi/LWIP/vitis/design_1_wrapper/hw/design_1_wrapper.xsa
+TRACE::2020-10-29.15:24:56::SCWPlatform::DSA absoulate path C:/Github/Zybo_mipi/LWIP/vitis/design_1_wrapper/hw/design_1_wrapper.xsa
+TRACE::2020-10-29.15:24:56::SCWPlatform::DSA directory C:/Github/Zybo_mipi/LWIP/vitis/design_1_wrapper/hw
+TRACE::2020-10-29.15:24:56::SCWPlatform:: Platform Path C:/Github/Zybo_mipi/LWIP/vitis/design_1_wrapper/hw/design_1_wrapper.xsa
+TRACE::2020-10-29.15:24:56::SCWPlatform:: Unique name xilinx:zybo-z7-20::0.0
+TRACE::2020-10-29.15:24:56::SCWPlatform::Trying to set the existing hwdb with name design_1_wrapper
+TRACE::2020-10-29.15:24:56::SCWPlatform::Opened existing hwdb design_1_wrapper
+TRACE::2020-10-29.15:24:56::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2020-10-29.15:24:56::SCWMssOS::Checking the sw design at  C:/Github/Zybo_mipi/LWIP/vitis/design_1_wrapper/ps7_cortexa9_0/standalone_domain/bsp/system.mss
+TRACE::2020-10-29.15:24:56::SCWMssOS::DEBUG:  swdes dump  C:/Github/Zybo_mipi/LWIP/vitis/design_1_wrapper/ps7_cortexa9_0/standalone_domain/bsp/system.mss|system||
+
+TRACE::2020-10-29.15:24:56::SCWMssOS::Sw design exists and opened at  C:/Github/Zybo_mipi/LWIP/vitis/design_1_wrapper/ps7_cortexa9_0/standalone_domain/bsp/system.mss
+TRACE::2020-10-29.15:24:56::SCWPlatform::Trying to open the hw design at C:/Github/Zybo_mipi/LWIP/vitis/design_1_wrapper/hw/design_1_wrapper.xsa
+TRACE::2020-10-29.15:24:56::SCWPlatform::DSA given C:/Github/Zybo_mipi/LWIP/vitis/design_1_wrapper/hw/design_1_wrapper.xsa
+TRACE::2020-10-29.15:24:56::SCWPlatform::DSA absoulate path C:/Github/Zybo_mipi/LWIP/vitis/design_1_wrapper/hw/design_1_wrapper.xsa
+TRACE::2020-10-29.15:24:56::SCWPlatform::DSA directory C:/Github/Zybo_mipi/LWIP/vitis/design_1_wrapper/hw
+TRACE::2020-10-29.15:24:56::SCWPlatform:: Platform Path C:/Github/Zybo_mipi/LWIP/vitis/design_1_wrapper/hw/design_1_wrapper.xsa
+TRACE::2020-10-29.15:24:56::SCWPlatform:: Unique name xilinx:zybo-z7-20::0.0
+TRACE::2020-10-29.15:24:56::SCWPlatform::Trying to set the existing hwdb with name design_1_wrapper
+TRACE::2020-10-29.15:24:56::SCWPlatform::Opened existing hwdb design_1_wrapper
+TRACE::2020-10-29.15:24:56::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2020-10-29.15:24:56::SCWMssOS::Checking the sw design at  C:/Github/Zybo_mipi/LWIP/vitis/design_1_wrapper/ps7_cortexa9_0/standalone_domain/bsp/system.mss
+TRACE::2020-10-29.15:24:56::SCWMssOS::DEBUG:  swdes dump  C:/Github/Zybo_mipi/LWIP/vitis/design_1_wrapper/ps7_cortexa9_0/standalone_domain/bsp/system.mss|system||
+
+TRACE::2020-10-29.15:24:56::SCWMssOS::Sw design exists and opened at  C:/Github/Zybo_mipi/LWIP/vitis/design_1_wrapper/ps7_cortexa9_0/standalone_domain/bsp/system.mss
+TRACE::2020-10-29.15:24:56::SCWPlatform::Trying to open the hw design at C:/Github/Zybo_mipi/LWIP/vitis/design_1_wrapper/hw/design_1_wrapper.xsa
+TRACE::2020-10-29.15:24:56::SCWPlatform::DSA given C:/Github/Zybo_mipi/LWIP/vitis/design_1_wrapper/hw/design_1_wrapper.xsa
+TRACE::2020-10-29.15:24:56::SCWPlatform::DSA absoulate path C:/Github/Zybo_mipi/LWIP/vitis/design_1_wrapper/hw/design_1_wrapper.xsa
+TRACE::2020-10-29.15:24:56::SCWPlatform::DSA directory C:/Github/Zybo_mipi/LWIP/vitis/design_1_wrapper/hw
+TRACE::2020-10-29.15:24:56::SCWPlatform:: Platform Path C:/Github/Zybo_mipi/LWIP/vitis/design_1_wrapper/hw/design_1_wrapper.xsa
+TRACE::2020-10-29.15:24:56::SCWPlatform:: Unique name xilinx:zybo-z7-20::0.0
+TRACE::2020-10-29.15:24:56::SCWPlatform::Trying to set the existing hwdb with name design_1_wrapper
+TRACE::2020-10-29.15:24:56::SCWPlatform::Opened existing hwdb design_1_wrapper
+TRACE::2020-10-29.15:24:56::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2020-10-29.15:24:56::SCWMssOS::Checking the sw design at  C:/Github/Zybo_mipi/LWIP/vitis/design_1_wrapper/ps7_cortexa9_0/standalone_domain/bsp/system.mss
+TRACE::2020-10-29.15:24:56::SCWMssOS::DEBUG:  swdes dump  C:/Github/Zybo_mipi/LWIP/vitis/design_1_wrapper/ps7_cortexa9_0/standalone_domain/bsp/system.mss|system||
+
+TRACE::2020-10-29.15:24:56::SCWMssOS::Sw design exists and opened at  C:/Github/Zybo_mipi/LWIP/vitis/design_1_wrapper/ps7_cortexa9_0/standalone_domain/bsp/system.mss
+TRACE::2020-10-29.15:24:56::SCWPlatform::Trying to open the hw design at C:/Github/Zybo_mipi/LWIP/vitis/design_1_wrapper/hw/design_1_wrapper.xsa
+TRACE::2020-10-29.15:24:56::SCWPlatform::DSA given C:/Github/Zybo_mipi/LWIP/vitis/design_1_wrapper/hw/design_1_wrapper.xsa
+TRACE::2020-10-29.15:24:56::SCWPlatform::DSA absoulate path C:/Github/Zybo_mipi/LWIP/vitis/design_1_wrapper/hw/design_1_wrapper.xsa
+TRACE::2020-10-29.15:24:56::SCWPlatform::DSA directory C:/Github/Zybo_mipi/LWIP/vitis/design_1_wrapper/hw
+TRACE::2020-10-29.15:24:56::SCWPlatform:: Platform Path C:/Github/Zybo_mipi/LWIP/vitis/design_1_wrapper/hw/design_1_wrapper.xsa
+TRACE::2020-10-29.15:24:56::SCWPlatform:: Unique name xilinx:zybo-z7-20::0.0
+TRACE::2020-10-29.15:24:56::SCWPlatform::Trying to set the existing hwdb with name design_1_wrapper
+TRACE::2020-10-29.15:24:56::SCWPlatform::Opened existing hwdb design_1_wrapper
+TRACE::2020-10-29.15:24:56::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2020-10-29.15:24:56::SCWMssOS::Checking the sw design at  C:/Github/Zybo_mipi/LWIP/vitis/design_1_wrapper/ps7_cortexa9_0/standalone_domain/bsp/system.mss
+TRACE::2020-10-29.15:24:56::SCWMssOS::DEBUG:  swdes dump  C:/Github/Zybo_mipi/LWIP/vitis/design_1_wrapper/ps7_cortexa9_0/standalone_domain/bsp/system.mss|system||
+
+TRACE::2020-10-29.15:24:56::SCWMssOS::Sw design exists and opened at  C:/Github/Zybo_mipi/LWIP/vitis/design_1_wrapper/ps7_cortexa9_0/standalone_domain/bsp/system.mss
+TRACE::2020-10-29.15:24:56::SCWPlatform::Trying to open the hw design at C:/Github/Zybo_mipi/LWIP/vitis/design_1_wrapper/hw/design_1_wrapper.xsa
+TRACE::2020-10-29.15:24:56::SCWPlatform::DSA given C:/Github/Zybo_mipi/LWIP/vitis/design_1_wrapper/hw/design_1_wrapper.xsa
+TRACE::2020-10-29.15:24:56::SCWPlatform::DSA absoulate path C:/Github/Zybo_mipi/LWIP/vitis/design_1_wrapper/hw/design_1_wrapper.xsa
+TRACE::2020-10-29.15:24:56::SCWPlatform::DSA directory C:/Github/Zybo_mipi/LWIP/vitis/design_1_wrapper/hw
+TRACE::2020-10-29.15:24:56::SCWPlatform:: Platform Path C:/Github/Zybo_mipi/LWIP/vitis/design_1_wrapper/hw/design_1_wrapper.xsa
+TRACE::2020-10-29.15:24:56::SCWPlatform:: Unique name xilinx:zybo-z7-20::0.0
+TRACE::2020-10-29.15:24:56::SCWPlatform::Trying to set the existing hwdb with name design_1_wrapper
+TRACE::2020-10-29.15:24:56::SCWPlatform::Opened existing hwdb design_1_wrapper
+TRACE::2020-10-29.15:24:56::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2020-10-29.15:24:56::SCWMssOS::Checking the sw design at  C:/Github/Zybo_mipi/LWIP/vitis/design_1_wrapper/ps7_cortexa9_0/standalone_domain/bsp/system.mss
+TRACE::2020-10-29.15:24:56::SCWMssOS::DEBUG:  swdes dump  C:/Github/Zybo_mipi/LWIP/vitis/design_1_wrapper/ps7_cortexa9_0/standalone_domain/bsp/system.mss|system||
+
+TRACE::2020-10-29.15:24:56::SCWMssOS::Sw design exists and opened at  C:/Github/Zybo_mipi/LWIP/vitis/design_1_wrapper/ps7_cortexa9_0/standalone_domain/bsp/system.mss
+TRACE::2020-10-29.15:24:56::SCWPlatform::Trying to open the hw design at C:/Github/Zybo_mipi/LWIP/vitis/design_1_wrapper/hw/design_1_wrapper.xsa
+TRACE::2020-10-29.15:24:56::SCWPlatform::DSA given C:/Github/Zybo_mipi/LWIP/vitis/design_1_wrapper/hw/design_1_wrapper.xsa
+TRACE::2020-10-29.15:24:56::SCWPlatform::DSA absoulate path C:/Github/Zybo_mipi/LWIP/vitis/design_1_wrapper/hw/design_1_wrapper.xsa
+TRACE::2020-10-29.15:24:56::SCWPlatform::DSA directory C:/Github/Zybo_mipi/LWIP/vitis/design_1_wrapper/hw
+TRACE::2020-10-29.15:24:56::SCWPlatform:: Platform Path C:/Github/Zybo_mipi/LWIP/vitis/design_1_wrapper/hw/design_1_wrapper.xsa
+TRACE::2020-10-29.15:24:56::SCWPlatform:: Unique name xilinx:zybo-z7-20::0.0
+TRACE::2020-10-29.15:24:56::SCWPlatform::Trying to set the existing hwdb with name design_1_wrapper
+TRACE::2020-10-29.15:24:56::SCWPlatform::Opened existing hwdb design_1_wrapper
+TRACE::2020-10-29.15:24:56::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2020-10-29.15:24:56::SCWMssOS::Checking the sw design at  C:/Github/Zybo_mipi/LWIP/vitis/design_1_wrapper/ps7_cortexa9_0/standalone_domain/bsp/system.mss
+TRACE::2020-10-29.15:24:56::SCWMssOS::DEBUG:  swdes dump  C:/Github/Zybo_mipi/LWIP/vitis/design_1_wrapper/ps7_cortexa9_0/standalone_domain/bsp/system.mss|system||
+
+TRACE::2020-10-29.15:24:56::SCWMssOS::Sw design exists and opened at  C:/Github/Zybo_mipi/LWIP/vitis/design_1_wrapper/ps7_cortexa9_0/standalone_domain/bsp/system.mss
+TRACE::2020-10-29.15:24:56::SCWReader::Adding prebuilt librarypaths as   
+TRACE::2020-10-29.15:24:56::SCWReader::Adding prebuilt incpaths  as   
+TRACE::2020-10-29.15:24:56::SCWPlatform::Trying to open the hw design at C:/Github/Zybo_mipi/LWIP/vitis/design_1_wrapper/hw/design_1_wrapper.xsa
+TRACE::2020-10-29.15:24:56::SCWPlatform::DSA given C:/Github/Zybo_mipi/LWIP/vitis/design_1_wrapper/hw/design_1_wrapper.xsa
+TRACE::2020-10-29.15:24:56::SCWPlatform::DSA absoulate path C:/Github/Zybo_mipi/LWIP/vitis/design_1_wrapper/hw/design_1_wrapper.xsa
+TRACE::2020-10-29.15:24:56::SCWPlatform::DSA directory C:/Github/Zybo_mipi/LWIP/vitis/design_1_wrapper/hw
+TRACE::2020-10-29.15:24:56::SCWPlatform:: Platform Path C:/Github/Zybo_mipi/LWIP/vitis/design_1_wrapper/hw/design_1_wrapper.xsa
+TRACE::2020-10-29.15:24:56::SCWPlatform:: Unique name xilinx:zybo-z7-20::0.0
+TRACE::2020-10-29.15:24:56::SCWPlatform::Trying to set the existing hwdb with name design_1_wrapper
+TRACE::2020-10-29.15:24:56::SCWPlatform::Opened existing hwdb design_1_wrapper
+TRACE::2020-10-29.15:24:56::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2020-10-29.15:24:56::SCWMssOS::Checking the sw design at  C:/Github/Zybo_mipi/LWIP/vitis/design_1_wrapper/ps7_cortexa9_0/standalone_domain/bsp/system.mss
+TRACE::2020-10-29.15:24:56::SCWMssOS::DEBUG:  swdes dump  C:/Github/Zybo_mipi/LWIP/vitis/design_1_wrapper/ps7_cortexa9_0/standalone_domain/bsp/system.mss|system||
+
+TRACE::2020-10-29.15:24:56::SCWMssOS::Sw design exists and opened at  C:/Github/Zybo_mipi/LWIP/vitis/design_1_wrapper/ps7_cortexa9_0/standalone_domain/bsp/system.mss
+TRACE::2020-10-29.15:24:56::SCWReader::No isolation master present  
+LOG::2020-10-29.15:24:56::SCWPlatform::Started generating the artifacts platform design_1_wrapper
+TRACE::2020-10-29.15:24:56::SCWPlatform::Sanity checking of platform is completed
+LOG::2020-10-29.15:24:56::SCWPlatform::Started generating the artifacts for system configuration design_1_wrapper
+LOG::2020-10-29.15:24:56::SCWSystem::Checking the domain standalone_domain
+LOG::2020-10-29.15:24:56::SCWSystem::Not a boot domain 
+LOG::2020-10-29.15:24:56::SCWSystem::Started Processing the domain standalone_domain
+TRACE::2020-10-29.15:24:56::SCWDomain::Generating domain artifcats
+TRACE::2020-10-29.15:24:56::SCWMssOS::Generating standalone artifcats
+TRACE::2020-10-29.15:24:56::SCWMssOS::Copying the qemu file from  C:/Xilinx/Vitis/2019.2/data/emulation/platforms/zynq/qemu/qemu_args.txt To C:/Github/Zybo_mipi/LWIP/vitis/design_1_wrapper/export/design_1_wrapper/sw/design_1_wrapper/qemu/
+TRACE::2020-10-29.15:24:56::SCWMssOS::Copying the qemu file from  C:/Xilinx/Vitis/2019.2/data/emulation/platforms/zynq/qemu/qemu_args.txt To C:/Github/Zybo_mipi/LWIP/vitis/design_1_wrapper/export/design_1_wrapper/sw/design_1_wrapper/standalone_domain/qemu/
+TRACE::2020-10-29.15:24:56::SCWMssOS:: Copying the user libraries. 
+TRACE::2020-10-29.15:24:56::SCWPlatform::Trying to open the hw design at C:/Github/Zybo_mipi/LWIP/vitis/design_1_wrapper/hw/design_1_wrapper.xsa
+TRACE::2020-10-29.15:24:56::SCWPlatform::DSA given C:/Github/Zybo_mipi/LWIP/vitis/design_1_wrapper/hw/design_1_wrapper.xsa
+TRACE::2020-10-29.15:24:56::SCWPlatform::DSA absoulate path C:/Github/Zybo_mipi/LWIP/vitis/design_1_wrapper/hw/design_1_wrapper.xsa
+TRACE::2020-10-29.15:24:56::SCWPlatform::DSA directory C:/Github/Zybo_mipi/LWIP/vitis/design_1_wrapper/hw
+TRACE::2020-10-29.15:24:56::SCWPlatform:: Platform Path C:/Github/Zybo_mipi/LWIP/vitis/design_1_wrapper/hw/design_1_wrapper.xsa
+TRACE::2020-10-29.15:24:56::SCWPlatform:: Unique name xilinx:zybo-z7-20::0.0
+TRACE::2020-10-29.15:24:56::SCWPlatform::Trying to set the existing hwdb with name design_1_wrapper
+TRACE::2020-10-29.15:24:56::SCWPlatform::Opened existing hwdb design_1_wrapper
+TRACE::2020-10-29.15:24:56::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2020-10-29.15:24:56::SCWMssOS::Checking the sw design at  C:/Github/Zybo_mipi/LWIP/vitis/design_1_wrapper/ps7_cortexa9_0/standalone_domain/bsp/system.mss
+TRACE::2020-10-29.15:24:56::SCWMssOS::DEBUG:  swdes dump  C:/Github/Zybo_mipi/LWIP/vitis/design_1_wrapper/ps7_cortexa9_0/standalone_domain/bsp/system.mss|system||
+
+TRACE::2020-10-29.15:24:56::SCWMssOS::Sw design exists and opened at  C:/Github/Zybo_mipi/LWIP/vitis/design_1_wrapper/ps7_cortexa9_0/standalone_domain/bsp/system.mss
+TRACE::2020-10-29.15:24:56::SCWMssOS::Completed writing the mss file at C:/Github/Zybo_mipi/LWIP/vitis/design_1_wrapper/ps7_cortexa9_0/standalone_domain/bsp
+TRACE::2020-10-29.15:24:56::SCWMssOS::Mss edits present, copying mssfile into export location C:/Github/Zybo_mipi/LWIP/vitis/design_1_wrapper/ps7_cortexa9_0/standalone_domain/bsp/system.mss
+TRACE::2020-10-29.15:24:56::SCWMssOS::bsp generated is upto date with the mss file. Skipping bsp generation.
+TRACE::2020-10-29.15:24:56::SCWMssOS::BSP is already built. skipping the bsp build ... 
+TRACE::2020-10-29.15:24:56::SCWDomain::Building the domain as part of full build :  standalone_domain
+TRACE::2020-10-29.15:24:56::SCWMssOS::doing bsp build ... 
+TRACE::2020-10-29.15:24:56::SCWMssOS::System Command Ran  C: & cd  C:/Github/Zybo_mipi/LWIP/vitis/design_1_wrapper/ps7_cortexa9_0/standalone_domain/bsp & make 
+TRACE::2020-10-29.15:24:56::SCWMssOS::"Running Make include in ps7_cortexa9_0/libsrc/coresightps_dcc_v1_6/src"
+
+TRACE::2020-10-29.15:24:56::SCWMssOS::make -C ps7_cortexa9_0/libsrc/coresightps_dcc_v1_6/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ASSEMBLER=arm-none
+TRACE::2020-10-29.15:24:56::SCWMssOS::-eabi-as" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=h
+TRACE::2020-10-29.15:24:56::SCWMssOS::ard -nostartfiles -g -Wall -Wextra"
+
+TRACE::2020-10-29.15:24:56::SCWMssOS::"Running Make include in ps7_cortexa9_0/libsrc/cpu_cortexa9_v2_8/src"
+
+TRACE::2020-10-29.15:24:56::SCWMssOS::make -C ps7_cortexa9_0/libsrc/cpu_cortexa9_v2_8/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ASSEMBLER=arm-none-ea
+TRACE::2020-10-29.15:24:56::SCWMssOS::bi-as" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard
+TRACE::2020-10-29.15:24:56::SCWMssOS:: -nostartfiles -g -Wall -Wextra"
+
+TRACE::2020-10-29.15:24:56::SCWMssOS::"Running Make include in ps7_cortexa9_0/libsrc/ddrps_v1_0/src"
+
+TRACE::2020-10-29.15:24:56::SCWMssOS::make -C ps7_cortexa9_0/libsrc/ddrps_v1_0/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ASSEMBLER=arm-none-eabi-as" 
+TRACE::2020-10-29.15:24:56::SCWMssOS::"ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nosta
+TRACE::2020-10-29.15:24:56::SCWMssOS::rtfiles -g -Wall -Wextra"
+
+TRACE::2020-10-29.15:24:56::SCWMssOS::"Running Make include in ps7_cortexa9_0/libsrc/devcfg_v3_5/src"
+
+TRACE::2020-10-29.15:24:56::SCWMssOS::make -C ps7_cortexa9_0/libsrc/devcfg_v3_5/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ASSEMBLER=arm-none-eabi-as"
+TRACE::2020-10-29.15:24:56::SCWMssOS:: "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nost
+TRACE::2020-10-29.15:24:56::SCWMssOS::artfiles -g -Wall -Wextra"
+
+TRACE::2020-10-29.15:24:57::SCWMssOS::"Running Make include in ps7_cortexa9_0/libsrc/dmaps_v2_5/src"
+
+TRACE::2020-10-29.15:24:57::SCWMssOS::make -C ps7_cortexa9_0/libsrc/dmaps_v2_5/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ASSEMBLER=arm-none-eabi-as" 
+TRACE::2020-10-29.15:24:57::SCWMssOS::"ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nosta
+TRACE::2020-10-29.15:24:57::SCWMssOS::rtfiles -g -Wall -Wextra"
+
+TRACE::2020-10-29.15:24:57::SCWMssOS::"Running Make include in ps7_cortexa9_0/libsrc/emacps_v3_10/src"
+
+TRACE::2020-10-29.15:24:57::SCWMssOS::make -C ps7_cortexa9_0/libsrc/emacps_v3_10/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ASSEMBLER=arm-none-eabi-as
+TRACE::2020-10-29.15:24:57::SCWMssOS::" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nos
+TRACE::2020-10-29.15:24:57::SCWMssOS::tartfiles -g -Wall -Wextra"
+
+TRACE::2020-10-29.15:24:57::SCWMssOS::"Running Make include in ps7_cortexa9_0/libsrc/gpiops_v3_6/src"
+
+TRACE::2020-10-29.15:24:57::SCWMssOS::make -C ps7_cortexa9_0/libsrc/gpiops_v3_6/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ASSEMBLER=arm-none-eabi-as"
+TRACE::2020-10-29.15:24:57::SCWMssOS:: "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nost
+TRACE::2020-10-29.15:24:57::SCWMssOS::artfiles -g -Wall -Wextra"
+
+TRACE::2020-10-29.15:24:57::SCWMssOS::"Running Make include in ps7_cortexa9_0/libsrc/lwip211_v1_1/src"
+
+TRACE::2020-10-29.15:24:57::SCWMssOS::make -C ps7_cortexa9_0/libsrc/lwip211_v1_1/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ASSEMBLER=arm-none-eabi-as
+TRACE::2020-10-29.15:24:57::SCWMssOS::" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nos
+TRACE::2020-10-29.15:24:57::SCWMssOS::tartfiles -g -Wall -Wextra"
+
+TRACE::2020-10-29.15:24:58::SCWMssOS::"Running Make include in ps7_cortexa9_0/libsrc/qspips_v3_6/src"
+
+TRACE::2020-10-29.15:24:58::SCWMssOS::make -C ps7_cortexa9_0/libsrc/qspips_v3_6/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ASSEMBLER=arm-none-eabi-as"
+TRACE::2020-10-29.15:24:58::SCWMssOS:: "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nost
+TRACE::2020-10-29.15:24:58::SCWMssOS::artfiles -g -Wall -Wextra"
+
+TRACE::2020-10-29.15:24:58::SCWMssOS::"Running Make include in ps7_cortexa9_0/libsrc/scugic_v4_1/src"
+
+TRACE::2020-10-29.15:24:58::SCWMssOS::make -C ps7_cortexa9_0/libsrc/scugic_v4_1/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ASSEMBLER=arm-none-eabi-as"
+TRACE::2020-10-29.15:24:58::SCWMssOS:: "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nost
+TRACE::2020-10-29.15:24:58::SCWMssOS::artfiles -g -Wall -Wextra"
+
+TRACE::2020-10-29.15:24:58::SCWMssOS::"Running Make include in ps7_cortexa9_0/libsrc/scutimer_v2_1/src"
+
+TRACE::2020-10-29.15:24:58::SCWMssOS::make -C ps7_cortexa9_0/libsrc/scutimer_v2_1/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ASSEMBLER=arm-none-eabi-a
+TRACE::2020-10-29.15:24:58::SCWMssOS::s" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -no
+TRACE::2020-10-29.15:24:58::SCWMssOS::startfiles -g -Wall -Wextra"
+
+TRACE::2020-10-29.15:24:59::SCWMssOS::"Running Make include in ps7_cortexa9_0/libsrc/scuwdt_v2_1/src"
+
+TRACE::2020-10-29.15:24:59::SCWMssOS::make -C ps7_cortexa9_0/libsrc/scuwdt_v2_1/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ASSEMBLER=arm-none-eabi-as"
+TRACE::2020-10-29.15:24:59::SCWMssOS:: "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nost
+TRACE::2020-10-29.15:24:59::SCWMssOS::artfiles -g -Wall -Wextra"
+
+TRACE::2020-10-29.15:24:59::SCWMssOS::"Running Make include in ps7_cortexa9_0/libsrc/sdps_v3_8/src"
+
+TRACE::2020-10-29.15:24:59::SCWMssOS::make -C ps7_cortexa9_0/libsrc/sdps_v3_8/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ASSEMBLER=arm-none-eabi-as" "
+TRACE::2020-10-29.15:24:59::SCWMssOS::ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostar
+TRACE::2020-10-29.15:24:59::SCWMssOS::tfiles -g -Wall -Wextra"
+
+TRACE::2020-10-29.15:24:59::SCWMssOS::"Running Make include in ps7_cortexa9_0/libsrc/standalone_v7_1/src"
+
+TRACE::2020-10-29.15:24:59::SCWMssOS::make -C ps7_cortexa9_0/libsrc/standalone_v7_1/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ASSEMBLER=arm-none-eabi
+TRACE::2020-10-29.15:24:59::SCWMssOS::-as" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -
+TRACE::2020-10-29.15:24:59::SCWMssOS::nostartfiles -g -Wall -Wextra"
+
+TRACE::2020-10-29.15:24:59::SCWMssOS::"Running Make include in ps7_cortexa9_0/libsrc/uartps_v3_8/src"
+
+TRACE::2020-10-29.15:24:59::SCWMssOS::make -C ps7_cortexa9_0/libsrc/uartps_v3_8/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ASSEMBLER=arm-none-eabi-as"
+TRACE::2020-10-29.15:24:59::SCWMssOS:: "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nost
+TRACE::2020-10-29.15:24:59::SCWMssOS::artfiles -g -Wall -Wextra"
+
+TRACE::2020-10-29.15:24:59::SCWMssOS::"Running Make include in ps7_cortexa9_0/libsrc/usbps_v2_4/src"
+
+TRACE::2020-10-29.15:24:59::SCWMssOS::make -C ps7_cortexa9_0/libsrc/usbps_v2_4/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ASSEMBLER=arm-none-eabi-as" 
+TRACE::2020-10-29.15:24:59::SCWMssOS::"ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nosta
+TRACE::2020-10-29.15:24:59::SCWMssOS::rtfiles -g -Wall -Wextra"
+
+TRACE::2020-10-29.15:24:59::SCWMssOS::"Running Make include in ps7_cortexa9_0/libsrc/xadcps_v2_3/src"
+
+TRACE::2020-10-29.15:24:59::SCWMssOS::make -C ps7_cortexa9_0/libsrc/xadcps_v2_3/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ASSEMBLER=arm-none-eabi-as"
+TRACE::2020-10-29.15:24:59::SCWMssOS:: "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nost
+TRACE::2020-10-29.15:24:59::SCWMssOS::artfiles -g -Wall -Wextra"
+
+TRACE::2020-10-29.15:24:59::SCWMssOS::"Running Make libs in ps7_cortexa9_0/libsrc/coresightps_dcc_v1_6/src"
+
+TRACE::2020-10-29.15:24:59::SCWMssOS::make -C ps7_cortexa9_0/libsrc/coresightps_dcc_v1_6/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ASSEMBLER=arm-none-ea
+TRACE::2020-10-29.15:24:59::SCWMssOS::bi-as" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard
+TRACE::2020-10-29.15:24:59::SCWMssOS:: -nostartfiles -g -Wall -Wextra"
+
+TRACE::2020-10-29.15:24:59::SCWMssOS::"Compiling coresightps_dcc"
+
+TRACE::2020-10-29.15:25:00::SCWMssOS::"Running Make libs in ps7_cortexa9_0/libsrc/cpu_cortexa9_v2_8/src"
+
+TRACE::2020-10-29.15:25:00::SCWMssOS::make -C ps7_cortexa9_0/libsrc/cpu_cortexa9_v2_8/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ASSEMBLER=arm-none-eabi-
+TRACE::2020-10-29.15:25:00::SCWMssOS::as" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -n
+TRACE::2020-10-29.15:25:00::SCWMssOS::ostartfiles -g -Wall -Wextra"
+
+TRACE::2020-10-29.15:25:00::SCWMssOS::"Compiling cpu_cortexa9"
+
+TRACE::2020-10-29.15:25:00::SCWMssOS::"Running Make libs in ps7_cortexa9_0/libsrc/ddrps_v1_0/src"
+
+TRACE::2020-10-29.15:25:00::SCWMssOS::make -C ps7_cortexa9_0/libsrc/ddrps_v1_0/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ASSEMBLER=arm-none-eabi-as" "AR
+TRACE::2020-10-29.15:25:00::SCWMssOS::CHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartf
+TRACE::2020-10-29.15:25:00::SCWMssOS::iles -g -Wall -Wextra"
+
+TRACE::2020-10-29.15:25:00::SCWMssOS::"Compiling ddrps"
+
+TRACE::2020-10-29.15:25:00::SCWMssOS::"Running Make libs in ps7_cortexa9_0/libsrc/devcfg_v3_5/src"
+
+TRACE::2020-10-29.15:25:00::SCWMssOS::make -C ps7_cortexa9_0/libsrc/devcfg_v3_5/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ASSEMBLER=arm-none-eabi-as" "A
+TRACE::2020-10-29.15:25:00::SCWMssOS::RCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostart
+TRACE::2020-10-29.15:25:00::SCWMssOS::files -g -Wall -Wextra"
+
+TRACE::2020-10-29.15:25:00::SCWMssOS::"Compiling devcfg"
+
+TRACE::2020-10-29.15:25:01::SCWMssOS::"Running Make libs in ps7_cortexa9_0/libsrc/dmaps_v2_5/src"
+
+TRACE::2020-10-29.15:25:01::SCWMssOS::make -C ps7_cortexa9_0/libsrc/dmaps_v2_5/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ASSEMBLER=arm-none-eabi-as" "AR
+TRACE::2020-10-29.15:25:01::SCWMssOS::CHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartf
+TRACE::2020-10-29.15:25:01::SCWMssOS::iles -g -Wall -Wextra"
+
+TRACE::2020-10-29.15:25:01::SCWMssOS::"Compiling dmaps"
+
+TRACE::2020-10-29.15:25:02::SCWMssOS::"Running Make libs in ps7_cortexa9_0/libsrc/emacps_v3_10/src"
+
+TRACE::2020-10-29.15:25:02::SCWMssOS::make -C ps7_cortexa9_0/libsrc/emacps_v3_10/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ASSEMBLER=arm-none-eabi-as" "
+TRACE::2020-10-29.15:25:02::SCWMssOS::ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostar
+TRACE::2020-10-29.15:25:02::SCWMssOS::tfiles -g -Wall -Wextra"
+
+TRACE::2020-10-29.15:25:02::SCWMssOS::"Compiling emacps"
+
+TRACE::2020-10-29.15:25:03::SCWMssOS::"Running Make libs in ps7_cortexa9_0/libsrc/gpiops_v3_6/src"
+
+TRACE::2020-10-29.15:25:03::SCWMssOS::make -C ps7_cortexa9_0/libsrc/gpiops_v3_6/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ASSEMBLER=arm-none-eabi-as" "A
+TRACE::2020-10-29.15:25:03::SCWMssOS::RCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostart
+TRACE::2020-10-29.15:25:03::SCWMssOS::files -g -Wall -Wextra"
+
+TRACE::2020-10-29.15:25:03::SCWMssOS::"Compiling gpiops"
+
+TRACE::2020-10-29.15:25:05::SCWMssOS::"Running Make libs in ps7_cortexa9_0/libsrc/lwip211_v1_1/src"
+
+TRACE::2020-10-29.15:25:05::SCWMssOS::make -C ps7_cortexa9_0/libsrc/lwip211_v1_1/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ASSEMBLER=arm-none-eabi-as" "
+TRACE::2020-10-29.15:25:05::SCWMssOS::ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostar
+TRACE::2020-10-29.15:25:05::SCWMssOS::tfiles -g -Wall -Wextra"
+
+TRACE::2020-10-29.15:25:05::SCWMssOS::"Compiling lwip src and adapter files"
+
+TRACE::2020-10-29.15:25:05::SCWMssOS::"Running Make libs in ps7_cortexa9_0/libsrc/qspips_v3_6/src"
+
+TRACE::2020-10-29.15:25:05::SCWMssOS::make -C ps7_cortexa9_0/libsrc/qspips_v3_6/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ASSEMBLER=arm-none-eabi-as" "A
+TRACE::2020-10-29.15:25:05::SCWMssOS::RCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostart
+TRACE::2020-10-29.15:25:05::SCWMssOS::files -g -Wall -Wextra"
+
+TRACE::2020-10-29.15:25:05::SCWMssOS::"Compiling qspips"
+
+TRACE::2020-10-29.15:25:06::SCWMssOS::"Running Make libs in ps7_cortexa9_0/libsrc/scugic_v4_1/src"
+
+TRACE::2020-10-29.15:25:06::SCWMssOS::make -C ps7_cortexa9_0/libsrc/scugic_v4_1/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ASSEMBLER=arm-none-eabi-as" "A
+TRACE::2020-10-29.15:25:06::SCWMssOS::RCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostart
+TRACE::2020-10-29.15:25:06::SCWMssOS::files -g -Wall -Wextra"
+
+TRACE::2020-10-29.15:25:06::SCWMssOS::"Compiling scugic"
+
+TRACE::2020-10-29.15:25:07::SCWMssOS::"Running Make libs in ps7_cortexa9_0/libsrc/scutimer_v2_1/src"
+
+TRACE::2020-10-29.15:25:07::SCWMssOS::make -C ps7_cortexa9_0/libsrc/scutimer_v2_1/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ASSEMBLER=arm-none-eabi-as" 
+TRACE::2020-10-29.15:25:07::SCWMssOS::"ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nosta
+TRACE::2020-10-29.15:25:07::SCWMssOS::rtfiles -g -Wall -Wextra"
+
+TRACE::2020-10-29.15:25:07::SCWMssOS::"Compiling scutimer"
+
+TRACE::2020-10-29.15:25:08::SCWMssOS::"Running Make libs in ps7_cortexa9_0/libsrc/scuwdt_v2_1/src"
+
+TRACE::2020-10-29.15:25:08::SCWMssOS::make -C ps7_cortexa9_0/libsrc/scuwdt_v2_1/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ASSEMBLER=arm-none-eabi-as" "A
+TRACE::2020-10-29.15:25:08::SCWMssOS::RCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostart
+TRACE::2020-10-29.15:25:08::SCWMssOS::files -g -Wall -Wextra"
+
+TRACE::2020-10-29.15:25:08::SCWMssOS::"Compiling scuwdt"
+
+TRACE::2020-10-29.15:25:09::SCWMssOS::"Running Make libs in ps7_cortexa9_0/libsrc/sdps_v3_8/src"
+
+TRACE::2020-10-29.15:25:09::SCWMssOS::make -C ps7_cortexa9_0/libsrc/sdps_v3_8/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ASSEMBLER=arm-none-eabi-as" "ARC
+TRACE::2020-10-29.15:25:09::SCWMssOS::HIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfi
+TRACE::2020-10-29.15:25:09::SCWMssOS::les -g -Wall -Wextra"
+
+TRACE::2020-10-29.15:25:09::SCWMssOS::"Compiling sdps"
+
+TRACE::2020-10-29.15:25:10::SCWMssOS::"Running Make libs in ps7_cortexa9_0/libsrc/standalone_v7_1/src"
+
+TRACE::2020-10-29.15:25:10::SCWMssOS::make -C ps7_cortexa9_0/libsrc/standalone_v7_1/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ASSEMBLER=arm-none-eabi-as
+TRACE::2020-10-29.15:25:10::SCWMssOS::" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nos
+TRACE::2020-10-29.15:25:10::SCWMssOS::tartfiles -g -Wall -Wextra"
+
+TRACE::2020-10-29.15:25:10::SCWMssOS::"Compiling standalone"
+
+TRACE::2020-10-29.15:25:15::SCWMssOS::"Running Make libs in ps7_cortexa9_0/libsrc/uartps_v3_8/src"
+
+TRACE::2020-10-29.15:25:15::SCWMssOS::make -C ps7_cortexa9_0/libsrc/uartps_v3_8/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ASSEMBLER=arm-none-eabi-as" "A
+TRACE::2020-10-29.15:25:15::SCWMssOS::RCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostart
+TRACE::2020-10-29.15:25:15::SCWMssOS::files -g -Wall -Wextra"
+
+TRACE::2020-10-29.15:25:15::SCWMssOS::"Compiling uartps"
+
+TRACE::2020-10-29.15:25:16::SCWMssOS::"Running Make libs in ps7_cortexa9_0/libsrc/usbps_v2_4/src"
+
+TRACE::2020-10-29.15:25:16::SCWMssOS::make -C ps7_cortexa9_0/libsrc/usbps_v2_4/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ASSEMBLER=arm-none-eabi-as" "AR
+TRACE::2020-10-29.15:25:16::SCWMssOS::CHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartf
+TRACE::2020-10-29.15:25:16::SCWMssOS::iles -g -Wall -Wextra"
+
+TRACE::2020-10-29.15:25:16::SCWMssOS::"Compiling usbps"
+
+TRACE::2020-10-29.15:25:17::SCWMssOS::"Running Make libs in ps7_cortexa9_0/libsrc/xadcps_v2_3/src"
+
+TRACE::2020-10-29.15:25:17::SCWMssOS::make -C ps7_cortexa9_0/libsrc/xadcps_v2_3/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ASSEMBLER=arm-none-eabi-as" "A
+TRACE::2020-10-29.15:25:17::SCWMssOS::RCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostart
+TRACE::2020-10-29.15:25:17::SCWMssOS::files -g -Wall -Wextra"
+
+TRACE::2020-10-29.15:25:17::SCWMssOS::"Compiling xadcps"
+
+TRACE::2020-10-29.15:25:18::SCWMssOS::'Finished building libraries'
+
+TRACE::2020-10-29.15:25:19::SCWMssOS::Copying to export directory.
+TRACE::2020-10-29.15:25:19::SCWMssOS:: Checking if to create the Supporting Applications
+TRACE::2020-10-29.15:25:19::SCWMssOS:: No Linux domain exists, trying to generate FSBL 
+TRACE::2020-10-29.15:25:19::SCWMssOS:: Completed Standalone Artifacts creation 
+LOG::2020-10-29.15:25:19::SCWSystem::Completed Processing the domain standalone_domain
+LOG::2020-10-29.15:25:19::SCWSystem::Completed Processing the sysconfig design_1_wrapper
+LOG::2020-10-29.15:25:19::SCWPlatform::Completed generating the artifacts for system configuration design_1_wrapper
+TRACE::2020-10-29.15:25:19::SCWPlatform::Started preparing the platform 
+TRACE::2020-10-29.15:25:19::SCWSystem::Writing the bif file for system config design_1_wrapper
+TRACE::2020-10-29.15:25:19::SCWSystem::dir created 
+TRACE::2020-10-29.15:25:19::SCWSystem::Writing the bif 
+TRACE::2020-10-29.15:25:19::SCWPlatform::Started writing the spfm file 
+TRACE::2020-10-29.15:25:19::SCWPlatform::Started writing the xpfm file 
+TRACE::2020-10-29.15:25:19::SCWPlatform::Completed generating the platform
+TRACE::2020-10-29.15:25:19::SCWPlatform::Trying to open the hw design at C:/Github/Zybo_mipi/LWIP/vitis/design_1_wrapper/hw/design_1_wrapper.xsa
+TRACE::2020-10-29.15:25:19::SCWPlatform::DSA given C:/Github/Zybo_mipi/LWIP/vitis/design_1_wrapper/hw/design_1_wrapper.xsa
+TRACE::2020-10-29.15:25:19::SCWPlatform::DSA absoulate path C:/Github/Zybo_mipi/LWIP/vitis/design_1_wrapper/hw/design_1_wrapper.xsa
+TRACE::2020-10-29.15:25:19::SCWPlatform::DSA directory C:/Github/Zybo_mipi/LWIP/vitis/design_1_wrapper/hw
+TRACE::2020-10-29.15:25:19::SCWPlatform:: Platform Path C:/Github/Zybo_mipi/LWIP/vitis/design_1_wrapper/hw/design_1_wrapper.xsa
+TRACE::2020-10-29.15:25:19::SCWPlatform:: Unique name xilinx:zybo-z7-20::0.0
+TRACE::2020-10-29.15:25:19::SCWPlatform::Trying to set the existing hwdb with name design_1_wrapper
+TRACE::2020-10-29.15:25:19::SCWPlatform::Opened existing hwdb design_1_wrapper
+TRACE::2020-10-29.15:25:19::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2020-10-29.15:25:19::SCWMssOS::Checking the sw design at  C:/Github/Zybo_mipi/LWIP/vitis/design_1_wrapper/ps7_cortexa9_0/standalone_domain/bsp/system.mss
+TRACE::2020-10-29.15:25:19::SCWMssOS::DEBUG:  swdes dump  C:/Github/Zybo_mipi/LWIP/vitis/design_1_wrapper/ps7_cortexa9_0/standalone_domain/bsp/system.mss|system||
+
+TRACE::2020-10-29.15:25:19::SCWMssOS::Sw design exists and opened at  C:/Github/Zybo_mipi/LWIP/vitis/design_1_wrapper/ps7_cortexa9_0/standalone_domain/bsp/system.mss
+TRACE::2020-10-29.15:25:19::SCWWriter::formatted JSON is {
+	"platformName":	"design_1_wrapper",
+	"sprVersion":	"2.0",
+	"mode":	"gui",
+	"dsaType":	"Fixed",
+	"platformDesc":	"design_1_wrapper",
+	"platHandOff":	"C:/Github/Zybo_mipi/LWIP/design_1_wrapper.xsa",
+	"platIntHandOff":	"<platformDir>/hw/design_1_wrapper.xsa",
+	"deviceType":	"zynq",
+	"platIsPrebuiltAutogen":	"false",
+	"platIsNoBootBsp":	"true",
+	"hasFsblMakeHasChanges":	"false",
+	"hasPmufwMakeHasChanges":	"false",
+	"platPreBuiltFlag":	false,
+	"platformSamplesDir":	"",
+	"platActiveSys":	"design_1_wrapper",
+	"systems":	[{
+			"systemName":	"design_1_wrapper",
+			"systemDesc":	"design_1_wrapper",
+			"sysIsBootAutoGen":	"true",
+			"systemDispName":	"design_1_wrapper",
+			"sysActiveDom":	"standalone_domain",
+			"sysDefaultDom":	"standalone_domain",
+			"domains":	[{
+					"domainName":	"standalone_domain",
+					"domainDispName":	"standalone on ps7_cortexa9_0",
+					"domainDesc":	"standalone_domain",
+					"processors":	"ps7_cortexa9_0",
+					"os":	"standalone",
+					"sdxOs":	"standalone",
+					"qemuArgs":	"C:/Xilinx/Vitis/2019.2/data/emulation/platforms/zynq/qemu/qemu_args.txt",
+					"qemuData":	"C:/Xilinx/Vitis/2019.2/data/emulation/platforms/zynq/qemu/",
+					"debugEnable":	"False",
+					"domRuntimes":	["cpp"],
+					"swRepo":	"",
+					"mssOsVer":	"7.1",
+					"mssFile":	"",
+					"md5Digest":	"6fcc898f1122bf95878801eca139fab2",
+					"compatibleApp":	"",
+					"domType":	"mssDomain",
+					"arch":	"32-bit",
+					"appSettings":	{
+						"appCompilerFlags":	"",
+						"appLinkerFlags":	""
+					},
+					"addedLibs":	["lwip211:1.1"],
+					"libOptions":	{
+						"lwip211":	{
+							"dhcp_does_arp_check":	"true",
+							"lwip_dhcp":	"true",
+							"mem_size":	"524288",
+							"memp_n_pbuf":	"1024",
+							"n_tx_descriptors":	"512",
+							"pbuf_pool_size":	"16384",
+							"libOptionNames":	["dhcp_does_arp_check", "lwip_dhcp", "mem_size", "memp_n_pbuf", "n_tx_descriptors", "pbuf_pool_size"]
+						},
+						"libsContainingOptions":	["lwip211"]
+					},
+					"prebuiltLibs":	{
+						"prebuiltIncPath":	[],
+						"prebuiltLibPath":	[]
+					},
+					"isolation":	{
+					}
+				}]
+		}]
+}
+KEYINFO::2020-10-29.15:25:19::SCWPlatform::updated the xpfm file.
+TRACE::2020-10-29.15:25:19::SCWPlatform::Trying to open the hw design at C:/Github/Zybo_mipi/LWIP/vitis/design_1_wrapper/hw/design_1_wrapper.xsa
+TRACE::2020-10-29.15:25:19::SCWPlatform::DSA given C:/Github/Zybo_mipi/LWIP/vitis/design_1_wrapper/hw/design_1_wrapper.xsa
+TRACE::2020-10-29.15:25:19::SCWPlatform::DSA absoulate path C:/Github/Zybo_mipi/LWIP/vitis/design_1_wrapper/hw/design_1_wrapper.xsa
+TRACE::2020-10-29.15:25:19::SCWPlatform::DSA directory C:/Github/Zybo_mipi/LWIP/vitis/design_1_wrapper/hw
+TRACE::2020-10-29.15:25:19::SCWPlatform:: Platform Path C:/Github/Zybo_mipi/LWIP/vitis/design_1_wrapper/hw/design_1_wrapper.xsa
+TRACE::2020-10-29.15:25:19::SCWPlatform:: Unique name xilinx:zybo-z7-20::0.0
+TRACE::2020-10-29.15:25:19::SCWPlatform::Trying to set the existing hwdb with name design_1_wrapper
+TRACE::2020-10-29.15:25:19::SCWPlatform::Opened existing hwdb design_1_wrapper
+TRACE::2020-10-29.15:25:19::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2020-10-29.15:25:19::SCWMssOS::Checking the sw design at  C:/Github/Zybo_mipi/LWIP/vitis/design_1_wrapper/ps7_cortexa9_0/standalone_domain/bsp/system.mss
+TRACE::2020-10-29.15:25:19::SCWMssOS::DEBUG:  swdes dump  C:/Github/Zybo_mipi/LWIP/vitis/design_1_wrapper/ps7_cortexa9_0/standalone_domain/bsp/system.mss|system||
+
+TRACE::2020-10-29.15:25:19::SCWMssOS::Sw design exists and opened at  C:/Github/Zybo_mipi/LWIP/vitis/design_1_wrapper/ps7_cortexa9_0/standalone_domain/bsp/system.mss
+TRACE::2020-10-31.20:48:28::SCWPlatform::Trying to open the hw design at C:/Github/Zybo_mipi/LWIP/vitis/design_1_wrapper/hw/design_1_wrapper.xsa
+TRACE::2020-10-31.20:48:28::SCWPlatform::DSA given C:/Github/Zybo_mipi/LWIP/vitis/design_1_wrapper/hw/design_1_wrapper.xsa
+TRACE::2020-10-31.20:48:28::SCWPlatform::DSA absoulate path C:/Github/Zybo_mipi/LWIP/vitis/design_1_wrapper/hw/design_1_wrapper.xsa
+TRACE::2020-10-31.20:48:30::SCWPlatform::DSA directory C:/Github/Zybo_mipi/LWIP/vitis/design_1_wrapper/hw
+TRACE::2020-10-31.20:48:30::SCWPlatform:: Platform Path C:/Github/Zybo_mipi/LWIP/vitis/design_1_wrapper/hw/design_1_wrapper.xsa
+TRACE::2020-10-31.20:48:30::SCWPlatform:: Unique name xilinx:zybo-z7-20::0.0
+TRACE::2020-10-31.20:48:30::SCWPlatform::Do not have an existing db opened. 
+TRACE::2020-10-31.20:48:33::SCWPlatform::Opened new HwDB with name design_1_wrapper
+TRACE::2020-10-31.20:48:33::SCWReader::Active system found as  design_1_wrapper
+TRACE::2020-10-31.20:48:33::SCWReader::Handling sysconfig design_1_wrapper
+TRACE::2020-10-31.20:48:33::SCWDomain::checking for install qemu data   : 
+TRACE::2020-10-31.20:48:33::SCWDomain:: Using the QEMU Data from install at  : C:/Xilinx/Vitis/2019.2/data/emulation/platforms/zynq/qemu/
+TRACE::2020-10-31.20:48:33::SCWDomain:: Using the QEMU args  from install at  : C:/Xilinx/Vitis/2019.2/data/emulation/platforms/zynq/qemu/qemu_args.txt
+TRACE::2020-10-31.20:48:33::SCWPlatform::Trying to open the hw design at C:/Github/Zybo_mipi/LWIP/vitis/design_1_wrapper/hw/design_1_wrapper.xsa
+TRACE::2020-10-31.20:48:33::SCWPlatform::DSA given C:/Github/Zybo_mipi/LWIP/vitis/design_1_wrapper/hw/design_1_wrapper.xsa
+TRACE::2020-10-31.20:48:33::SCWPlatform::DSA absoulate path C:/Github/Zybo_mipi/LWIP/vitis/design_1_wrapper/hw/design_1_wrapper.xsa
+TRACE::2020-10-31.20:48:33::SCWPlatform::DSA directory C:/Github/Zybo_mipi/LWIP/vitis/design_1_wrapper/hw
+TRACE::2020-10-31.20:48:33::SCWPlatform:: Platform Path C:/Github/Zybo_mipi/LWIP/vitis/design_1_wrapper/hw/design_1_wrapper.xsa
+TRACE::2020-10-31.20:48:33::SCWPlatform:: Unique name xilinx:zybo-z7-20::0.0
+TRACE::2020-10-31.20:48:33::SCWPlatform::Trying to set the existing hwdb with name design_1_wrapper
+TRACE::2020-10-31.20:48:33::SCWPlatform::Opened existing hwdb design_1_wrapper
+TRACE::2020-10-31.20:48:33::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2020-10-31.20:48:33::SCWPlatform::Trying to open the hw design at C:/Github/Zybo_mipi/LWIP/vitis/design_1_wrapper/hw/design_1_wrapper.xsa
+TRACE::2020-10-31.20:48:33::SCWPlatform::DSA given C:/Github/Zybo_mipi/LWIP/vitis/design_1_wrapper/hw/design_1_wrapper.xsa
+TRACE::2020-10-31.20:48:33::SCWPlatform::DSA absoulate path C:/Github/Zybo_mipi/LWIP/vitis/design_1_wrapper/hw/design_1_wrapper.xsa
+TRACE::2020-10-31.20:48:33::SCWPlatform::DSA directory C:/Github/Zybo_mipi/LWIP/vitis/design_1_wrapper/hw
+TRACE::2020-10-31.20:48:33::SCWPlatform:: Platform Path C:/Github/Zybo_mipi/LWIP/vitis/design_1_wrapper/hw/design_1_wrapper.xsa
+TRACE::2020-10-31.20:48:33::SCWPlatform:: Unique name xilinx:zybo-z7-20::0.0
+TRACE::2020-10-31.20:48:33::SCWPlatform::Trying to set the existing hwdb with name design_1_wrapper
+TRACE::2020-10-31.20:48:33::SCWPlatform::Opened existing hwdb design_1_wrapper
+TRACE::2020-10-31.20:48:33::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2020-10-31.20:48:33::SCWPlatform::Trying to open the hw design at C:/Github/Zybo_mipi/LWIP/vitis/design_1_wrapper/hw/design_1_wrapper.xsa
+TRACE::2020-10-31.20:48:33::SCWPlatform::DSA given C:/Github/Zybo_mipi/LWIP/vitis/design_1_wrapper/hw/design_1_wrapper.xsa
+TRACE::2020-10-31.20:48:33::SCWPlatform::DSA absoulate path C:/Github/Zybo_mipi/LWIP/vitis/design_1_wrapper/hw/design_1_wrapper.xsa
+TRACE::2020-10-31.20:48:33::SCWPlatform::DSA directory C:/Github/Zybo_mipi/LWIP/vitis/design_1_wrapper/hw
+TRACE::2020-10-31.20:48:33::SCWPlatform:: Platform Path C:/Github/Zybo_mipi/LWIP/vitis/design_1_wrapper/hw/design_1_wrapper.xsa
+TRACE::2020-10-31.20:48:33::SCWPlatform:: Unique name xilinx:zybo-z7-20::0.0
+TRACE::2020-10-31.20:48:33::SCWPlatform::Trying to set the existing hwdb with name design_1_wrapper
+TRACE::2020-10-31.20:48:33::SCWPlatform::Opened existing hwdb design_1_wrapper
+TRACE::2020-10-31.20:48:33::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2020-10-31.20:48:33::SCWMssOS::Checking the sw design at  C:/Github/Zybo_mipi/LWIP/vitis/design_1_wrapper/ps7_cortexa9_0/standalone_domain/bsp/system.mss
+TRACE::2020-10-31.20:48:33::SCWMssOS::DEBUG:  swdes dump  
+TRACE::2020-10-31.20:48:33::SCWMssOS::No sw design opened at  C:/Github/Zybo_mipi/LWIP/vitis/design_1_wrapper/ps7_cortexa9_0/standalone_domain/bsp/system.mss
+TRACE::2020-10-31.20:48:33::SCWMssOS::mss exists loading the mss file  C:/Github/Zybo_mipi/LWIP/vitis/design_1_wrapper/ps7_cortexa9_0/standalone_domain/bsp/system.mss
+TRACE::2020-10-31.20:48:33::SCWMssOS::Opened the sw design from mss  C:/Github/Zybo_mipi/LWIP/vitis/design_1_wrapper/ps7_cortexa9_0/standalone_domain/bsp/system.mss
+TRACE::2020-10-31.20:48:33::SCWMssOS::Adding the swdes entry C:/Github/Zybo_mipi/LWIP/vitis/design_1_wrapper/ps7_cortexa9_0/standalone_domain/bsp/system.mss with des name system
+TRACE::2020-10-31.20:48:33::SCWMssOS::updating the scw layer about changes
+TRACE::2020-10-31.20:48:33::SCWMssOS::Opened the sw design.  C:/Github/Zybo_mipi/LWIP/vitis/design_1_wrapper/ps7_cortexa9_0/standalone_domain/bsp/system.mss
+TRACE::2020-10-31.20:48:33::SCWPlatform::Trying to open the hw design at C:/Github/Zybo_mipi/LWIP/vitis/design_1_wrapper/hw/design_1_wrapper.xsa
+TRACE::2020-10-31.20:48:33::SCWPlatform::DSA given C:/Github/Zybo_mipi/LWIP/vitis/design_1_wrapper/hw/design_1_wrapper.xsa
+TRACE::2020-10-31.20:48:33::SCWPlatform::DSA absoulate path C:/Github/Zybo_mipi/LWIP/vitis/design_1_wrapper/hw/design_1_wrapper.xsa
+TRACE::2020-10-31.20:48:33::SCWPlatform::DSA directory C:/Github/Zybo_mipi/LWIP/vitis/design_1_wrapper/hw
+TRACE::2020-10-31.20:48:33::SCWPlatform:: Platform Path C:/Github/Zybo_mipi/LWIP/vitis/design_1_wrapper/hw/design_1_wrapper.xsa
+TRACE::2020-10-31.20:48:33::SCWPlatform:: Unique name xilinx:zybo-z7-20::0.0
+TRACE::2020-10-31.20:48:33::SCWPlatform::Trying to set the existing hwdb with name design_1_wrapper
+TRACE::2020-10-31.20:48:33::SCWPlatform::Opened existing hwdb design_1_wrapper
+TRACE::2020-10-31.20:48:33::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2020-10-31.20:48:33::SCWMssOS::Checking the sw design at  C:/Github/Zybo_mipi/LWIP/vitis/design_1_wrapper/ps7_cortexa9_0/standalone_domain/bsp/system.mss
+TRACE::2020-10-31.20:48:33::SCWMssOS::DEBUG:  swdes dump  C:/Github/Zybo_mipi/LWIP/vitis/design_1_wrapper/ps7_cortexa9_0/standalone_domain/bsp/system.mss|system||
+
+TRACE::2020-10-31.20:48:33::SCWMssOS::Sw design exists and opened at  C:/Github/Zybo_mipi/LWIP/vitis/design_1_wrapper/ps7_cortexa9_0/standalone_domain/bsp/system.mss
+TRACE::2020-10-31.20:48:33::SCWMssOS:: library already available in sw design:  lwip211:1.1
+TRACE::2020-10-31.20:48:33::SCWPlatform::Trying to open the hw design at C:/Github/Zybo_mipi/LWIP/vitis/design_1_wrapper/hw/design_1_wrapper.xsa
+TRACE::2020-10-31.20:48:33::SCWPlatform::DSA given C:/Github/Zybo_mipi/LWIP/vitis/design_1_wrapper/hw/design_1_wrapper.xsa
+TRACE::2020-10-31.20:48:33::SCWPlatform::DSA absoulate path C:/Github/Zybo_mipi/LWIP/vitis/design_1_wrapper/hw/design_1_wrapper.xsa
+TRACE::2020-10-31.20:48:33::SCWPlatform::DSA directory C:/Github/Zybo_mipi/LWIP/vitis/design_1_wrapper/hw
+TRACE::2020-10-31.20:48:33::SCWPlatform:: Platform Path C:/Github/Zybo_mipi/LWIP/vitis/design_1_wrapper/hw/design_1_wrapper.xsa
+TRACE::2020-10-31.20:48:33::SCWPlatform:: Unique name xilinx:zybo-z7-20::0.0
+TRACE::2020-10-31.20:48:33::SCWPlatform::Trying to set the existing hwdb with name design_1_wrapper
+TRACE::2020-10-31.20:48:33::SCWPlatform::Opened existing hwdb design_1_wrapper
+TRACE::2020-10-31.20:48:33::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2020-10-31.20:48:33::SCWMssOS::Checking the sw design at  C:/Github/Zybo_mipi/LWIP/vitis/design_1_wrapper/ps7_cortexa9_0/standalone_domain/bsp/system.mss
+TRACE::2020-10-31.20:48:33::SCWMssOS::DEBUG:  swdes dump  C:/Github/Zybo_mipi/LWIP/vitis/design_1_wrapper/ps7_cortexa9_0/standalone_domain/bsp/system.mss|system||
+
+TRACE::2020-10-31.20:48:33::SCWMssOS::Sw design exists and opened at  C:/Github/Zybo_mipi/LWIP/vitis/design_1_wrapper/ps7_cortexa9_0/standalone_domain/bsp/system.mss
+TRACE::2020-10-31.20:48:33::SCWPlatform::Trying to open the hw design at C:/Github/Zybo_mipi/LWIP/vitis/design_1_wrapper/hw/design_1_wrapper.xsa
+TRACE::2020-10-31.20:48:33::SCWPlatform::DSA given C:/Github/Zybo_mipi/LWIP/vitis/design_1_wrapper/hw/design_1_wrapper.xsa
+TRACE::2020-10-31.20:48:33::SCWPlatform::DSA absoulate path C:/Github/Zybo_mipi/LWIP/vitis/design_1_wrapper/hw/design_1_wrapper.xsa
+TRACE::2020-10-31.20:48:33::SCWPlatform::DSA directory C:/Github/Zybo_mipi/LWIP/vitis/design_1_wrapper/hw
+TRACE::2020-10-31.20:48:33::SCWPlatform:: Platform Path C:/Github/Zybo_mipi/LWIP/vitis/design_1_wrapper/hw/design_1_wrapper.xsa
+TRACE::2020-10-31.20:48:33::SCWPlatform:: Unique name xilinx:zybo-z7-20::0.0
+TRACE::2020-10-31.20:48:33::SCWPlatform::Trying to set the existing hwdb with name design_1_wrapper
+TRACE::2020-10-31.20:48:33::SCWPlatform::Opened existing hwdb design_1_wrapper
+TRACE::2020-10-31.20:48:33::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2020-10-31.20:48:33::SCWMssOS::Checking the sw design at  C:/Github/Zybo_mipi/LWIP/vitis/design_1_wrapper/ps7_cortexa9_0/standalone_domain/bsp/system.mss
+TRACE::2020-10-31.20:48:33::SCWMssOS::DEBUG:  swdes dump  C:/Github/Zybo_mipi/LWIP/vitis/design_1_wrapper/ps7_cortexa9_0/standalone_domain/bsp/system.mss|system||
+
+TRACE::2020-10-31.20:48:33::SCWMssOS::Sw design exists and opened at  C:/Github/Zybo_mipi/LWIP/vitis/design_1_wrapper/ps7_cortexa9_0/standalone_domain/bsp/system.mss
+TRACE::2020-10-31.20:48:33::SCWPlatform::Trying to open the hw design at C:/Github/Zybo_mipi/LWIP/vitis/design_1_wrapper/hw/design_1_wrapper.xsa
+TRACE::2020-10-31.20:48:33::SCWPlatform::DSA given C:/Github/Zybo_mipi/LWIP/vitis/design_1_wrapper/hw/design_1_wrapper.xsa
+TRACE::2020-10-31.20:48:33::SCWPlatform::DSA absoulate path C:/Github/Zybo_mipi/LWIP/vitis/design_1_wrapper/hw/design_1_wrapper.xsa
+TRACE::2020-10-31.20:48:33::SCWPlatform::DSA directory C:/Github/Zybo_mipi/LWIP/vitis/design_1_wrapper/hw
+TRACE::2020-10-31.20:48:33::SCWPlatform:: Platform Path C:/Github/Zybo_mipi/LWIP/vitis/design_1_wrapper/hw/design_1_wrapper.xsa
+TRACE::2020-10-31.20:48:33::SCWPlatform:: Unique name xilinx:zybo-z7-20::0.0
+TRACE::2020-10-31.20:48:33::SCWPlatform::Trying to set the existing hwdb with name design_1_wrapper
+TRACE::2020-10-31.20:48:33::SCWPlatform::Opened existing hwdb design_1_wrapper
+TRACE::2020-10-31.20:48:33::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2020-10-31.20:48:33::SCWMssOS::Checking the sw design at  C:/Github/Zybo_mipi/LWIP/vitis/design_1_wrapper/ps7_cortexa9_0/standalone_domain/bsp/system.mss
+TRACE::2020-10-31.20:48:33::SCWMssOS::DEBUG:  swdes dump  C:/Github/Zybo_mipi/LWIP/vitis/design_1_wrapper/ps7_cortexa9_0/standalone_domain/bsp/system.mss|system||
+
+TRACE::2020-10-31.20:48:33::SCWMssOS::Sw design exists and opened at  C:/Github/Zybo_mipi/LWIP/vitis/design_1_wrapper/ps7_cortexa9_0/standalone_domain/bsp/system.mss
+TRACE::2020-10-31.20:48:33::SCWPlatform::Trying to open the hw design at C:/Github/Zybo_mipi/LWIP/vitis/design_1_wrapper/hw/design_1_wrapper.xsa
+TRACE::2020-10-31.20:48:33::SCWPlatform::DSA given C:/Github/Zybo_mipi/LWIP/vitis/design_1_wrapper/hw/design_1_wrapper.xsa
+TRACE::2020-10-31.20:48:33::SCWPlatform::DSA absoulate path C:/Github/Zybo_mipi/LWIP/vitis/design_1_wrapper/hw/design_1_wrapper.xsa
+TRACE::2020-10-31.20:48:33::SCWPlatform::DSA directory C:/Github/Zybo_mipi/LWIP/vitis/design_1_wrapper/hw
+TRACE::2020-10-31.20:48:33::SCWPlatform:: Platform Path C:/Github/Zybo_mipi/LWIP/vitis/design_1_wrapper/hw/design_1_wrapper.xsa
+TRACE::2020-10-31.20:48:33::SCWPlatform:: Unique name xilinx:zybo-z7-20::0.0
+TRACE::2020-10-31.20:48:33::SCWPlatform::Trying to set the existing hwdb with name design_1_wrapper
+TRACE::2020-10-31.20:48:33::SCWPlatform::Opened existing hwdb design_1_wrapper
+TRACE::2020-10-31.20:48:33::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2020-10-31.20:48:33::SCWMssOS::Checking the sw design at  C:/Github/Zybo_mipi/LWIP/vitis/design_1_wrapper/ps7_cortexa9_0/standalone_domain/bsp/system.mss
+TRACE::2020-10-31.20:48:33::SCWMssOS::DEBUG:  swdes dump  C:/Github/Zybo_mipi/LWIP/vitis/design_1_wrapper/ps7_cortexa9_0/standalone_domain/bsp/system.mss|system||
+
+TRACE::2020-10-31.20:48:33::SCWMssOS::Sw design exists and opened at  C:/Github/Zybo_mipi/LWIP/vitis/design_1_wrapper/ps7_cortexa9_0/standalone_domain/bsp/system.mss
+TRACE::2020-10-31.20:48:33::SCWPlatform::Trying to open the hw design at C:/Github/Zybo_mipi/LWIP/vitis/design_1_wrapper/hw/design_1_wrapper.xsa
+TRACE::2020-10-31.20:48:33::SCWPlatform::DSA given C:/Github/Zybo_mipi/LWIP/vitis/design_1_wrapper/hw/design_1_wrapper.xsa
+TRACE::2020-10-31.20:48:33::SCWPlatform::DSA absoulate path C:/Github/Zybo_mipi/LWIP/vitis/design_1_wrapper/hw/design_1_wrapper.xsa
+TRACE::2020-10-31.20:48:33::SCWPlatform::DSA directory C:/Github/Zybo_mipi/LWIP/vitis/design_1_wrapper/hw
+TRACE::2020-10-31.20:48:33::SCWPlatform:: Platform Path C:/Github/Zybo_mipi/LWIP/vitis/design_1_wrapper/hw/design_1_wrapper.xsa
+TRACE::2020-10-31.20:48:33::SCWPlatform:: Unique name xilinx:zybo-z7-20::0.0
+TRACE::2020-10-31.20:48:33::SCWPlatform::Trying to set the existing hwdb with name design_1_wrapper
+TRACE::2020-10-31.20:48:33::SCWPlatform::Opened existing hwdb design_1_wrapper
+TRACE::2020-10-31.20:48:33::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2020-10-31.20:48:33::SCWMssOS::Checking the sw design at  C:/Github/Zybo_mipi/LWIP/vitis/design_1_wrapper/ps7_cortexa9_0/standalone_domain/bsp/system.mss
+TRACE::2020-10-31.20:48:33::SCWMssOS::DEBUG:  swdes dump  C:/Github/Zybo_mipi/LWIP/vitis/design_1_wrapper/ps7_cortexa9_0/standalone_domain/bsp/system.mss|system||
+
+TRACE::2020-10-31.20:48:33::SCWMssOS::Sw design exists and opened at  C:/Github/Zybo_mipi/LWIP/vitis/design_1_wrapper/ps7_cortexa9_0/standalone_domain/bsp/system.mss
+TRACE::2020-10-31.20:48:33::SCWPlatform::Trying to open the hw design at C:/Github/Zybo_mipi/LWIP/vitis/design_1_wrapper/hw/design_1_wrapper.xsa
+TRACE::2020-10-31.20:48:33::SCWPlatform::DSA given C:/Github/Zybo_mipi/LWIP/vitis/design_1_wrapper/hw/design_1_wrapper.xsa
+TRACE::2020-10-31.20:48:33::SCWPlatform::DSA absoulate path C:/Github/Zybo_mipi/LWIP/vitis/design_1_wrapper/hw/design_1_wrapper.xsa
+TRACE::2020-10-31.20:48:33::SCWPlatform::DSA directory C:/Github/Zybo_mipi/LWIP/vitis/design_1_wrapper/hw
+TRACE::2020-10-31.20:48:33::SCWPlatform:: Platform Path C:/Github/Zybo_mipi/LWIP/vitis/design_1_wrapper/hw/design_1_wrapper.xsa
+TRACE::2020-10-31.20:48:33::SCWPlatform:: Unique name xilinx:zybo-z7-20::0.0
+TRACE::2020-10-31.20:48:33::SCWPlatform::Trying to set the existing hwdb with name design_1_wrapper
+TRACE::2020-10-31.20:48:33::SCWPlatform::Opened existing hwdb design_1_wrapper
+TRACE::2020-10-31.20:48:33::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2020-10-31.20:48:33::SCWMssOS::Checking the sw design at  C:/Github/Zybo_mipi/LWIP/vitis/design_1_wrapper/ps7_cortexa9_0/standalone_domain/bsp/system.mss
+TRACE::2020-10-31.20:48:33::SCWMssOS::DEBUG:  swdes dump  C:/Github/Zybo_mipi/LWIP/vitis/design_1_wrapper/ps7_cortexa9_0/standalone_domain/bsp/system.mss|system||
+
+TRACE::2020-10-31.20:48:33::SCWMssOS::Sw design exists and opened at  C:/Github/Zybo_mipi/LWIP/vitis/design_1_wrapper/ps7_cortexa9_0/standalone_domain/bsp/system.mss
+TRACE::2020-10-31.20:48:33::SCWPlatform::Trying to open the hw design at C:/Github/Zybo_mipi/LWIP/vitis/design_1_wrapper/hw/design_1_wrapper.xsa
+TRACE::2020-10-31.20:48:33::SCWPlatform::DSA given C:/Github/Zybo_mipi/LWIP/vitis/design_1_wrapper/hw/design_1_wrapper.xsa
+TRACE::2020-10-31.20:48:33::SCWPlatform::DSA absoulate path C:/Github/Zybo_mipi/LWIP/vitis/design_1_wrapper/hw/design_1_wrapper.xsa
+TRACE::2020-10-31.20:48:33::SCWPlatform::DSA directory C:/Github/Zybo_mipi/LWIP/vitis/design_1_wrapper/hw
+TRACE::2020-10-31.20:48:33::SCWPlatform:: Platform Path C:/Github/Zybo_mipi/LWIP/vitis/design_1_wrapper/hw/design_1_wrapper.xsa
+TRACE::2020-10-31.20:48:33::SCWPlatform:: Unique name xilinx:zybo-z7-20::0.0
+TRACE::2020-10-31.20:48:33::SCWPlatform::Trying to set the existing hwdb with name design_1_wrapper
+TRACE::2020-10-31.20:48:33::SCWPlatform::Opened existing hwdb design_1_wrapper
+TRACE::2020-10-31.20:48:33::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2020-10-31.20:48:33::SCWMssOS::Checking the sw design at  C:/Github/Zybo_mipi/LWIP/vitis/design_1_wrapper/ps7_cortexa9_0/standalone_domain/bsp/system.mss
+TRACE::2020-10-31.20:48:33::SCWMssOS::DEBUG:  swdes dump  C:/Github/Zybo_mipi/LWIP/vitis/design_1_wrapper/ps7_cortexa9_0/standalone_domain/bsp/system.mss|system||
+
+TRACE::2020-10-31.20:48:33::SCWMssOS::Sw design exists and opened at  C:/Github/Zybo_mipi/LWIP/vitis/design_1_wrapper/ps7_cortexa9_0/standalone_domain/bsp/system.mss
+TRACE::2020-10-31.20:48:33::SCWPlatform::Trying to open the hw design at C:/Github/Zybo_mipi/LWIP/vitis/design_1_wrapper/hw/design_1_wrapper.xsa
+TRACE::2020-10-31.20:48:33::SCWPlatform::DSA given C:/Github/Zybo_mipi/LWIP/vitis/design_1_wrapper/hw/design_1_wrapper.xsa
+TRACE::2020-10-31.20:48:33::SCWPlatform::DSA absoulate path C:/Github/Zybo_mipi/LWIP/vitis/design_1_wrapper/hw/design_1_wrapper.xsa
+TRACE::2020-10-31.20:48:33::SCWPlatform::DSA directory C:/Github/Zybo_mipi/LWIP/vitis/design_1_wrapper/hw
+TRACE::2020-10-31.20:48:33::SCWPlatform:: Platform Path C:/Github/Zybo_mipi/LWIP/vitis/design_1_wrapper/hw/design_1_wrapper.xsa
+TRACE::2020-10-31.20:48:33::SCWPlatform:: Unique name xilinx:zybo-z7-20::0.0
+TRACE::2020-10-31.20:48:33::SCWPlatform::Trying to set the existing hwdb with name design_1_wrapper
+TRACE::2020-10-31.20:48:33::SCWPlatform::Opened existing hwdb design_1_wrapper
+TRACE::2020-10-31.20:48:33::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2020-10-31.20:48:33::SCWMssOS::Checking the sw design at  C:/Github/Zybo_mipi/LWIP/vitis/design_1_wrapper/ps7_cortexa9_0/standalone_domain/bsp/system.mss
+TRACE::2020-10-31.20:48:33::SCWMssOS::DEBUG:  swdes dump  C:/Github/Zybo_mipi/LWIP/vitis/design_1_wrapper/ps7_cortexa9_0/standalone_domain/bsp/system.mss|system||
+
+TRACE::2020-10-31.20:48:33::SCWMssOS::Sw design exists and opened at  C:/Github/Zybo_mipi/LWIP/vitis/design_1_wrapper/ps7_cortexa9_0/standalone_domain/bsp/system.mss
+TRACE::2020-10-31.20:48:33::SCWPlatform::Trying to open the hw design at C:/Github/Zybo_mipi/LWIP/vitis/design_1_wrapper/hw/design_1_wrapper.xsa
+TRACE::2020-10-31.20:48:33::SCWPlatform::DSA given C:/Github/Zybo_mipi/LWIP/vitis/design_1_wrapper/hw/design_1_wrapper.xsa
+TRACE::2020-10-31.20:48:33::SCWPlatform::DSA absoulate path C:/Github/Zybo_mipi/LWIP/vitis/design_1_wrapper/hw/design_1_wrapper.xsa
+TRACE::2020-10-31.20:48:33::SCWPlatform::DSA directory C:/Github/Zybo_mipi/LWIP/vitis/design_1_wrapper/hw
+TRACE::2020-10-31.20:48:33::SCWPlatform:: Platform Path C:/Github/Zybo_mipi/LWIP/vitis/design_1_wrapper/hw/design_1_wrapper.xsa
+TRACE::2020-10-31.20:48:33::SCWPlatform:: Unique name xilinx:zybo-z7-20::0.0
+TRACE::2020-10-31.20:48:33::SCWPlatform::Trying to set the existing hwdb with name design_1_wrapper
+TRACE::2020-10-31.20:48:33::SCWPlatform::Opened existing hwdb design_1_wrapper
+TRACE::2020-10-31.20:48:33::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2020-10-31.20:48:33::SCWMssOS::Checking the sw design at  C:/Github/Zybo_mipi/LWIP/vitis/design_1_wrapper/ps7_cortexa9_0/standalone_domain/bsp/system.mss
+TRACE::2020-10-31.20:48:33::SCWMssOS::DEBUG:  swdes dump  C:/Github/Zybo_mipi/LWIP/vitis/design_1_wrapper/ps7_cortexa9_0/standalone_domain/bsp/system.mss|system||
+
+TRACE::2020-10-31.20:48:33::SCWMssOS::Sw design exists and opened at  C:/Github/Zybo_mipi/LWIP/vitis/design_1_wrapper/ps7_cortexa9_0/standalone_domain/bsp/system.mss
+TRACE::2020-10-31.20:48:33::SCWPlatform::Trying to open the hw design at C:/Github/Zybo_mipi/LWIP/vitis/design_1_wrapper/hw/design_1_wrapper.xsa
+TRACE::2020-10-31.20:48:33::SCWPlatform::DSA given C:/Github/Zybo_mipi/LWIP/vitis/design_1_wrapper/hw/design_1_wrapper.xsa
+TRACE::2020-10-31.20:48:33::SCWPlatform::DSA absoulate path C:/Github/Zybo_mipi/LWIP/vitis/design_1_wrapper/hw/design_1_wrapper.xsa
+TRACE::2020-10-31.20:48:33::SCWPlatform::DSA directory C:/Github/Zybo_mipi/LWIP/vitis/design_1_wrapper/hw
+TRACE::2020-10-31.20:48:33::SCWPlatform:: Platform Path C:/Github/Zybo_mipi/LWIP/vitis/design_1_wrapper/hw/design_1_wrapper.xsa
+TRACE::2020-10-31.20:48:33::SCWPlatform:: Unique name xilinx:zybo-z7-20::0.0
+TRACE::2020-10-31.20:48:33::SCWPlatform::Trying to set the existing hwdb with name design_1_wrapper
+TRACE::2020-10-31.20:48:33::SCWPlatform::Opened existing hwdb design_1_wrapper
+TRACE::2020-10-31.20:48:33::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2020-10-31.20:48:33::SCWMssOS::Checking the sw design at  C:/Github/Zybo_mipi/LWIP/vitis/design_1_wrapper/ps7_cortexa9_0/standalone_domain/bsp/system.mss
+TRACE::2020-10-31.20:48:33::SCWMssOS::DEBUG:  swdes dump  C:/Github/Zybo_mipi/LWIP/vitis/design_1_wrapper/ps7_cortexa9_0/standalone_domain/bsp/system.mss|system||
+
+TRACE::2020-10-31.20:48:33::SCWMssOS::Sw design exists and opened at  C:/Github/Zybo_mipi/LWIP/vitis/design_1_wrapper/ps7_cortexa9_0/standalone_domain/bsp/system.mss
+TRACE::2020-10-31.20:48:33::SCWPlatform::Trying to open the hw design at C:/Github/Zybo_mipi/LWIP/vitis/design_1_wrapper/hw/design_1_wrapper.xsa
+TRACE::2020-10-31.20:48:33::SCWPlatform::DSA given C:/Github/Zybo_mipi/LWIP/vitis/design_1_wrapper/hw/design_1_wrapper.xsa
+TRACE::2020-10-31.20:48:33::SCWPlatform::DSA absoulate path C:/Github/Zybo_mipi/LWIP/vitis/design_1_wrapper/hw/design_1_wrapper.xsa
+TRACE::2020-10-31.20:48:33::SCWPlatform::DSA directory C:/Github/Zybo_mipi/LWIP/vitis/design_1_wrapper/hw
+TRACE::2020-10-31.20:48:33::SCWPlatform:: Platform Path C:/Github/Zybo_mipi/LWIP/vitis/design_1_wrapper/hw/design_1_wrapper.xsa
+TRACE::2020-10-31.20:48:33::SCWPlatform:: Unique name xilinx:zybo-z7-20::0.0
+TRACE::2020-10-31.20:48:33::SCWPlatform::Trying to set the existing hwdb with name design_1_wrapper
+TRACE::2020-10-31.20:48:33::SCWPlatform::Opened existing hwdb design_1_wrapper
+TRACE::2020-10-31.20:48:33::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2020-10-31.20:48:33::SCWMssOS::Checking the sw design at  C:/Github/Zybo_mipi/LWIP/vitis/design_1_wrapper/ps7_cortexa9_0/standalone_domain/bsp/system.mss
+TRACE::2020-10-31.20:48:33::SCWMssOS::DEBUG:  swdes dump  C:/Github/Zybo_mipi/LWIP/vitis/design_1_wrapper/ps7_cortexa9_0/standalone_domain/bsp/system.mss|system||
+
+TRACE::2020-10-31.20:48:33::SCWMssOS::Sw design exists and opened at  C:/Github/Zybo_mipi/LWIP/vitis/design_1_wrapper/ps7_cortexa9_0/standalone_domain/bsp/system.mss
+TRACE::2020-10-31.20:48:33::SCWPlatform::Trying to open the hw design at C:/Github/Zybo_mipi/LWIP/vitis/design_1_wrapper/hw/design_1_wrapper.xsa
+TRACE::2020-10-31.20:48:33::SCWPlatform::DSA given C:/Github/Zybo_mipi/LWIP/vitis/design_1_wrapper/hw/design_1_wrapper.xsa
+TRACE::2020-10-31.20:48:33::SCWPlatform::DSA absoulate path C:/Github/Zybo_mipi/LWIP/vitis/design_1_wrapper/hw/design_1_wrapper.xsa
+TRACE::2020-10-31.20:48:33::SCWPlatform::DSA directory C:/Github/Zybo_mipi/LWIP/vitis/design_1_wrapper/hw
+TRACE::2020-10-31.20:48:33::SCWPlatform:: Platform Path C:/Github/Zybo_mipi/LWIP/vitis/design_1_wrapper/hw/design_1_wrapper.xsa
+TRACE::2020-10-31.20:48:33::SCWPlatform:: Unique name xilinx:zybo-z7-20::0.0
+TRACE::2020-10-31.20:48:33::SCWPlatform::Trying to set the existing hwdb with name design_1_wrapper
+TRACE::2020-10-31.20:48:33::SCWPlatform::Opened existing hwdb design_1_wrapper
+TRACE::2020-10-31.20:48:34::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2020-10-31.20:48:34::SCWMssOS::Checking the sw design at  C:/Github/Zybo_mipi/LWIP/vitis/design_1_wrapper/ps7_cortexa9_0/standalone_domain/bsp/system.mss
+TRACE::2020-10-31.20:48:34::SCWMssOS::DEBUG:  swdes dump  C:/Github/Zybo_mipi/LWIP/vitis/design_1_wrapper/ps7_cortexa9_0/standalone_domain/bsp/system.mss|system||
+
+TRACE::2020-10-31.20:48:34::SCWMssOS::Sw design exists and opened at  C:/Github/Zybo_mipi/LWIP/vitis/design_1_wrapper/ps7_cortexa9_0/standalone_domain/bsp/system.mss
+TRACE::2020-10-31.20:48:34::SCWReader::Adding prebuilt librarypaths as   
+TRACE::2020-10-31.20:48:34::SCWReader::Adding prebuilt incpaths  as   
+TRACE::2020-10-31.20:48:34::SCWPlatform::Trying to open the hw design at C:/Github/Zybo_mipi/LWIP/vitis/design_1_wrapper/hw/design_1_wrapper.xsa
+TRACE::2020-10-31.20:48:34::SCWPlatform::DSA given C:/Github/Zybo_mipi/LWIP/vitis/design_1_wrapper/hw/design_1_wrapper.xsa
+TRACE::2020-10-31.20:48:34::SCWPlatform::DSA absoulate path C:/Github/Zybo_mipi/LWIP/vitis/design_1_wrapper/hw/design_1_wrapper.xsa
+TRACE::2020-10-31.20:48:34::SCWPlatform::DSA directory C:/Github/Zybo_mipi/LWIP/vitis/design_1_wrapper/hw
+TRACE::2020-10-31.20:48:34::SCWPlatform:: Platform Path C:/Github/Zybo_mipi/LWIP/vitis/design_1_wrapper/hw/design_1_wrapper.xsa
+TRACE::2020-10-31.20:48:34::SCWPlatform:: Unique name xilinx:zybo-z7-20::0.0
+TRACE::2020-10-31.20:48:34::SCWPlatform::Trying to set the existing hwdb with name design_1_wrapper
+TRACE::2020-10-31.20:48:34::SCWPlatform::Opened existing hwdb design_1_wrapper
+TRACE::2020-10-31.20:48:34::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2020-10-31.20:48:34::SCWMssOS::Checking the sw design at  C:/Github/Zybo_mipi/LWIP/vitis/design_1_wrapper/ps7_cortexa9_0/standalone_domain/bsp/system.mss
+TRACE::2020-10-31.20:48:34::SCWMssOS::DEBUG:  swdes dump  C:/Github/Zybo_mipi/LWIP/vitis/design_1_wrapper/ps7_cortexa9_0/standalone_domain/bsp/system.mss|system||
+
+TRACE::2020-10-31.20:48:34::SCWMssOS::Sw design exists and opened at  C:/Github/Zybo_mipi/LWIP/vitis/design_1_wrapper/ps7_cortexa9_0/standalone_domain/bsp/system.mss
+TRACE::2020-10-31.20:48:34::SCWReader::No isolation master present  
+LOG::2020-10-31.20:48:34::SCWPlatform::Started generating the artifacts platform design_1_wrapper
+TRACE::2020-10-31.20:48:34::SCWPlatform::Sanity checking of platform is completed
+LOG::2020-10-31.20:48:34::SCWPlatform::Started generating the artifacts for system configuration design_1_wrapper
+LOG::2020-10-31.20:48:34::SCWSystem::Checking the domain standalone_domain
+LOG::2020-10-31.20:48:34::SCWSystem::Not a boot domain 
+LOG::2020-10-31.20:48:34::SCWSystem::Started Processing the domain standalone_domain
+TRACE::2020-10-31.20:48:34::SCWDomain::Generating domain artifcats
+TRACE::2020-10-31.20:48:34::SCWMssOS::Generating standalone artifcats
+TRACE::2020-10-31.20:48:34::SCWMssOS::Copying the qemu file from  C:/Xilinx/Vitis/2019.2/data/emulation/platforms/zynq/qemu/qemu_args.txt To C:/Github/Zybo_mipi/LWIP/vitis/design_1_wrapper/export/design_1_wrapper/sw/design_1_wrapper/qemu/
+TRACE::2020-10-31.20:48:34::SCWMssOS::Copying the qemu file from  C:/Xilinx/Vitis/2019.2/data/emulation/platforms/zynq/qemu/qemu_args.txt To C:/Github/Zybo_mipi/LWIP/vitis/design_1_wrapper/export/design_1_wrapper/sw/design_1_wrapper/standalone_domain/qemu/
+TRACE::2020-10-31.20:48:34::SCWMssOS:: Copying the user libraries. 
+TRACE::2020-10-31.20:48:34::SCWPlatform::Trying to open the hw design at C:/Github/Zybo_mipi/LWIP/vitis/design_1_wrapper/hw/design_1_wrapper.xsa
+TRACE::2020-10-31.20:48:34::SCWPlatform::DSA given C:/Github/Zybo_mipi/LWIP/vitis/design_1_wrapper/hw/design_1_wrapper.xsa
+TRACE::2020-10-31.20:48:34::SCWPlatform::DSA absoulate path C:/Github/Zybo_mipi/LWIP/vitis/design_1_wrapper/hw/design_1_wrapper.xsa
+TRACE::2020-10-31.20:48:34::SCWPlatform::DSA directory C:/Github/Zybo_mipi/LWIP/vitis/design_1_wrapper/hw
+TRACE::2020-10-31.20:48:34::SCWPlatform:: Platform Path C:/Github/Zybo_mipi/LWIP/vitis/design_1_wrapper/hw/design_1_wrapper.xsa
+TRACE::2020-10-31.20:48:34::SCWPlatform:: Unique name xilinx:zybo-z7-20::0.0
+TRACE::2020-10-31.20:48:34::SCWPlatform::Trying to set the existing hwdb with name design_1_wrapper
+TRACE::2020-10-31.20:48:34::SCWPlatform::Opened existing hwdb design_1_wrapper
+TRACE::2020-10-31.20:48:34::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2020-10-31.20:48:34::SCWMssOS::Checking the sw design at  C:/Github/Zybo_mipi/LWIP/vitis/design_1_wrapper/ps7_cortexa9_0/standalone_domain/bsp/system.mss
+TRACE::2020-10-31.20:48:34::SCWMssOS::DEBUG:  swdes dump  C:/Github/Zybo_mipi/LWIP/vitis/design_1_wrapper/ps7_cortexa9_0/standalone_domain/bsp/system.mss|system||
+
+TRACE::2020-10-31.20:48:34::SCWMssOS::Sw design exists and opened at  C:/Github/Zybo_mipi/LWIP/vitis/design_1_wrapper/ps7_cortexa9_0/standalone_domain/bsp/system.mss
+TRACE::2020-10-31.20:48:34::SCWMssOS::Completed writing the mss file at C:/Github/Zybo_mipi/LWIP/vitis/design_1_wrapper/ps7_cortexa9_0/standalone_domain/bsp
+TRACE::2020-10-31.20:48:34::SCWMssOS::Mss edits present, copying mssfile into export location C:/Github/Zybo_mipi/LWIP/vitis/design_1_wrapper/ps7_cortexa9_0/standalone_domain/bsp/system.mss
+TRACE::2020-10-31.20:48:34::SCWMssOS::bsp generated is upto date with the mss file. Skipping bsp generation.
+TRACE::2020-10-31.20:48:34::SCWMssOS::BSP is already built. skipping the bsp build ... 
+TRACE::2020-10-31.20:48:34::SCWDomain::Building the domain :  standalone_domain
+TRACE::2020-10-31.20:48:34::SCWMssOS::doing bsp build ... 
+TRACE::2020-10-31.20:48:34::SCWMssOS::System Command Ran  C: & cd  C:/Github/Zybo_mipi/LWIP/vitis/design_1_wrapper/ps7_cortexa9_0/standalone_domain/bsp & make 
+TRACE::2020-10-31.20:48:34::SCWMssOS::"Running Make include in ps7_cortexa9_0/libsrc/coresightps_dcc_v1_6/src"
+
+TRACE::2020-10-31.20:48:34::SCWMssOS::make -C ps7_cortexa9_0/libsrc/coresightps_dcc_v1_6/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ASSEMBLER=arm-none
+TRACE::2020-10-31.20:48:34::SCWMssOS::-eabi-as" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=h
+TRACE::2020-10-31.20:48:34::SCWMssOS::ard -nostartfiles -g -Wall -Wextra"
+
+TRACE::2020-10-31.20:48:34::SCWMssOS::"Running Make include in ps7_cortexa9_0/libsrc/cpu_cortexa9_v2_8/src"
+
+TRACE::2020-10-31.20:48:34::SCWMssOS::make -C ps7_cortexa9_0/libsrc/cpu_cortexa9_v2_8/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ASSEMBLER=arm-none-ea
+TRACE::2020-10-31.20:48:34::SCWMssOS::bi-as" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard
+TRACE::2020-10-31.20:48:34::SCWMssOS:: -nostartfiles -g -Wall -Wextra"
+
+TRACE::2020-10-31.20:48:34::SCWMssOS::"Running Make include in ps7_cortexa9_0/libsrc/ddrps_v1_0/src"
+
+TRACE::2020-10-31.20:48:34::SCWMssOS::make -C ps7_cortexa9_0/libsrc/ddrps_v1_0/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ASSEMBLER=arm-none-eabi-as" 
+TRACE::2020-10-31.20:48:34::SCWMssOS::"ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nosta
+TRACE::2020-10-31.20:48:34::SCWMssOS::rtfiles -g -Wall -Wextra"
+
+TRACE::2020-10-31.20:48:34::SCWMssOS::"Running Make include in ps7_cortexa9_0/libsrc/devcfg_v3_5/src"
+
+TRACE::2020-10-31.20:48:34::SCWMssOS::make -C ps7_cortexa9_0/libsrc/devcfg_v3_5/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ASSEMBLER=arm-none-eabi-as"
+TRACE::2020-10-31.20:48:34::SCWMssOS:: "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nost
+TRACE::2020-10-31.20:48:34::SCWMssOS::artfiles -g -Wall -Wextra"
+
+TRACE::2020-10-31.20:48:34::SCWMssOS::"Running Make include in ps7_cortexa9_0/libsrc/dmaps_v2_5/src"
+
+TRACE::2020-10-31.20:48:34::SCWMssOS::make -C ps7_cortexa9_0/libsrc/dmaps_v2_5/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ASSEMBLER=arm-none-eabi-as" 
+TRACE::2020-10-31.20:48:34::SCWMssOS::"ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nosta
+TRACE::2020-10-31.20:48:34::SCWMssOS::rtfiles -g -Wall -Wextra"
+
+TRACE::2020-10-31.20:48:34::SCWMssOS::"Running Make include in ps7_cortexa9_0/libsrc/emacps_v3_10/src"
+
+TRACE::2020-10-31.20:48:34::SCWMssOS::make -C ps7_cortexa9_0/libsrc/emacps_v3_10/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ASSEMBLER=arm-none-eabi-as
+TRACE::2020-10-31.20:48:34::SCWMssOS::" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nos
+TRACE::2020-10-31.20:48:34::SCWMssOS::tartfiles -g -Wall -Wextra"
+
+TRACE::2020-10-31.20:48:34::SCWMssOS::"Running Make include in ps7_cortexa9_0/libsrc/gpiops_v3_6/src"
+
+TRACE::2020-10-31.20:48:34::SCWMssOS::make -C ps7_cortexa9_0/libsrc/gpiops_v3_6/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ASSEMBLER=arm-none-eabi-as"
+TRACE::2020-10-31.20:48:34::SCWMssOS:: "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nost
+TRACE::2020-10-31.20:48:34::SCWMssOS::artfiles -g -Wall -Wextra"
+
+TRACE::2020-10-31.20:48:34::SCWMssOS::"Running Make include in ps7_cortexa9_0/libsrc/lwip211_v1_1/src"
+
+TRACE::2020-10-31.20:48:34::SCWMssOS::make -C ps7_cortexa9_0/libsrc/lwip211_v1_1/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ASSEMBLER=arm-none-eabi-as
+TRACE::2020-10-31.20:48:34::SCWMssOS::" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nos
+TRACE::2020-10-31.20:48:34::SCWMssOS::tartfiles -g -Wall -Wextra"
+
+TRACE::2020-10-31.20:48:36::SCWMssOS::"Running Make include in ps7_cortexa9_0/libsrc/qspips_v3_6/src"
+
+TRACE::2020-10-31.20:48:36::SCWMssOS::make -C ps7_cortexa9_0/libsrc/qspips_v3_6/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ASSEMBLER=arm-none-eabi-as"
+TRACE::2020-10-31.20:48:36::SCWMssOS:: "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nost
+TRACE::2020-10-31.20:48:36::SCWMssOS::artfiles -g -Wall -Wextra"
+
+TRACE::2020-10-31.20:48:36::SCWMssOS::"Running Make include in ps7_cortexa9_0/libsrc/scugic_v4_1/src"
+
+TRACE::2020-10-31.20:48:36::SCWMssOS::make -C ps7_cortexa9_0/libsrc/scugic_v4_1/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ASSEMBLER=arm-none-eabi-as"
+TRACE::2020-10-31.20:48:36::SCWMssOS:: "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nost
+TRACE::2020-10-31.20:48:36::SCWMssOS::artfiles -g -Wall -Wextra"
+
+TRACE::2020-10-31.20:48:36::SCWMssOS::"Running Make include in ps7_cortexa9_0/libsrc/scutimer_v2_1/src"
+
+TRACE::2020-10-31.20:48:36::SCWMssOS::make -C ps7_cortexa9_0/libsrc/scutimer_v2_1/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ASSEMBLER=arm-none-eabi-a
+TRACE::2020-10-31.20:48:36::SCWMssOS::s" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -no
+TRACE::2020-10-31.20:48:36::SCWMssOS::startfiles -g -Wall -Wextra"
+
+TRACE::2020-10-31.20:48:36::SCWMssOS::"Running Make include in ps7_cortexa9_0/libsrc/scuwdt_v2_1/src"
+
+TRACE::2020-10-31.20:48:36::SCWMssOS::make -C ps7_cortexa9_0/libsrc/scuwdt_v2_1/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ASSEMBLER=arm-none-eabi-as"
+TRACE::2020-10-31.20:48:36::SCWMssOS:: "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nost
+TRACE::2020-10-31.20:48:36::SCWMssOS::artfiles -g -Wall -Wextra"
+
+TRACE::2020-10-31.20:48:36::SCWMssOS::"Running Make include in ps7_cortexa9_0/libsrc/sdps_v3_8/src"
+
+TRACE::2020-10-31.20:48:36::SCWMssOS::make -C ps7_cortexa9_0/libsrc/sdps_v3_8/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ASSEMBLER=arm-none-eabi-as" "
+TRACE::2020-10-31.20:48:36::SCWMssOS::ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostar
+TRACE::2020-10-31.20:48:36::SCWMssOS::tfiles -g -Wall -Wextra"
+
+TRACE::2020-10-31.20:48:36::SCWMssOS::"Running Make include in ps7_cortexa9_0/libsrc/standalone_v7_1/src"
+
+TRACE::2020-10-31.20:48:36::SCWMssOS::make -C ps7_cortexa9_0/libsrc/standalone_v7_1/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ASSEMBLER=arm-none-eabi
+TRACE::2020-10-31.20:48:36::SCWMssOS::-as" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -
+TRACE::2020-10-31.20:48:36::SCWMssOS::nostartfiles -g -Wall -Wextra"
+
+TRACE::2020-10-31.20:48:37::SCWMssOS::"Running Make include in ps7_cortexa9_0/libsrc/uartps_v3_8/src"
+
+TRACE::2020-10-31.20:48:37::SCWMssOS::make -C ps7_cortexa9_0/libsrc/uartps_v3_8/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ASSEMBLER=arm-none-eabi-as"
+TRACE::2020-10-31.20:48:37::SCWMssOS:: "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nost
+TRACE::2020-10-31.20:48:37::SCWMssOS::artfiles -g -Wall -Wextra"
+
+TRACE::2020-10-31.20:48:37::SCWMssOS::"Running Make include in ps7_cortexa9_0/libsrc/usbps_v2_4/src"
+
+TRACE::2020-10-31.20:48:37::SCWMssOS::make -C ps7_cortexa9_0/libsrc/usbps_v2_4/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ASSEMBLER=arm-none-eabi-as" 
+TRACE::2020-10-31.20:48:37::SCWMssOS::"ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nosta
+TRACE::2020-10-31.20:48:37::SCWMssOS::rtfiles -g -Wall -Wextra"
+
+TRACE::2020-10-31.20:48:37::SCWMssOS::"Running Make include in ps7_cortexa9_0/libsrc/xadcps_v2_3/src"
+
+TRACE::2020-10-31.20:48:37::SCWMssOS::make -C ps7_cortexa9_0/libsrc/xadcps_v2_3/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ASSEMBLER=arm-none-eabi-as"
+TRACE::2020-10-31.20:48:37::SCWMssOS:: "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nost
+TRACE::2020-10-31.20:48:37::SCWMssOS::artfiles -g -Wall -Wextra"
+
+TRACE::2020-10-31.20:48:37::SCWMssOS::"Running Make libs in ps7_cortexa9_0/libsrc/coresightps_dcc_v1_6/src"
+
+TRACE::2020-10-31.20:48:37::SCWMssOS::make -C ps7_cortexa9_0/libsrc/coresightps_dcc_v1_6/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ASSEMBLER=arm-none-ea
+TRACE::2020-10-31.20:48:37::SCWMssOS::bi-as" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard
+TRACE::2020-10-31.20:48:37::SCWMssOS:: -nostartfiles -g -Wall -Wextra"
+
+TRACE::2020-10-31.20:48:37::SCWMssOS::"Compiling coresightps_dcc"
+
+TRACE::2020-10-31.20:48:37::SCWMssOS::"Running Make libs in ps7_cortexa9_0/libsrc/cpu_cortexa9_v2_8/src"
+
+TRACE::2020-10-31.20:48:37::SCWMssOS::make -C ps7_cortexa9_0/libsrc/cpu_cortexa9_v2_8/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ASSEMBLER=arm-none-eabi-
+TRACE::2020-10-31.20:48:37::SCWMssOS::as" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -n
+TRACE::2020-10-31.20:48:37::SCWMssOS::ostartfiles -g -Wall -Wextra"
+
+TRACE::2020-10-31.20:48:37::SCWMssOS::"Compiling cpu_cortexa9"
+
+TRACE::2020-10-31.20:48:37::SCWMssOS::"Running Make libs in ps7_cortexa9_0/libsrc/ddrps_v1_0/src"
+
+TRACE::2020-10-31.20:48:37::SCWMssOS::make -C ps7_cortexa9_0/libsrc/ddrps_v1_0/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ASSEMBLER=arm-none-eabi-as" "AR
+TRACE::2020-10-31.20:48:37::SCWMssOS::CHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartf
+TRACE::2020-10-31.20:48:37::SCWMssOS::iles -g -Wall -Wextra"
+
+TRACE::2020-10-31.20:48:37::SCWMssOS::"Compiling ddrps"
+
+TRACE::2020-10-31.20:48:38::SCWMssOS::"Running Make libs in ps7_cortexa9_0/libsrc/devcfg_v3_5/src"
+
+TRACE::2020-10-31.20:48:38::SCWMssOS::make -C ps7_cortexa9_0/libsrc/devcfg_v3_5/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ASSEMBLER=arm-none-eabi-as" "A
+TRACE::2020-10-31.20:48:38::SCWMssOS::RCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostart
+TRACE::2020-10-31.20:48:38::SCWMssOS::files -g -Wall -Wextra"
+
+TRACE::2020-10-31.20:48:38::SCWMssOS::"Compiling devcfg"
+
+TRACE::2020-10-31.20:48:39::SCWMssOS::"Running Make libs in ps7_cortexa9_0/libsrc/dmaps_v2_5/src"
+
+TRACE::2020-10-31.20:48:39::SCWMssOS::make -C ps7_cortexa9_0/libsrc/dmaps_v2_5/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ASSEMBLER=arm-none-eabi-as" "AR
+TRACE::2020-10-31.20:48:39::SCWMssOS::CHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartf
+TRACE::2020-10-31.20:48:39::SCWMssOS::iles -g -Wall -Wextra"
+
+TRACE::2020-10-31.20:48:39::SCWMssOS::"Compiling dmaps"
+
+TRACE::2020-10-31.20:48:40::SCWMssOS::"Running Make libs in ps7_cortexa9_0/libsrc/emacps_v3_10/src"
+
+TRACE::2020-10-31.20:48:40::SCWMssOS::make -C ps7_cortexa9_0/libsrc/emacps_v3_10/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ASSEMBLER=arm-none-eabi-as" "
+TRACE::2020-10-31.20:48:40::SCWMssOS::ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostar
+TRACE::2020-10-31.20:48:40::SCWMssOS::tfiles -g -Wall -Wextra"
+
+TRACE::2020-10-31.20:48:40::SCWMssOS::"Compiling emacps"
+
+TRACE::2020-10-31.20:48:41::SCWMssOS::"Running Make libs in ps7_cortexa9_0/libsrc/gpiops_v3_6/src"
+
+TRACE::2020-10-31.20:48:41::SCWMssOS::make -C ps7_cortexa9_0/libsrc/gpiops_v3_6/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ASSEMBLER=arm-none-eabi-as" "A
+TRACE::2020-10-31.20:48:41::SCWMssOS::RCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostart
+TRACE::2020-10-31.20:48:41::SCWMssOS::files -g -Wall -Wextra"
+
+TRACE::2020-10-31.20:48:41::SCWMssOS::"Compiling gpiops"
+
+TRACE::2020-10-31.20:48:42::SCWMssOS::"Running Make libs in ps7_cortexa9_0/libsrc/lwip211_v1_1/src"
+
+TRACE::2020-10-31.20:48:42::SCWMssOS::make -C ps7_cortexa9_0/libsrc/lwip211_v1_1/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ASSEMBLER=arm-none-eabi-as" "
+TRACE::2020-10-31.20:48:42::SCWMssOS::ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostar
+TRACE::2020-10-31.20:48:42::SCWMssOS::tfiles -g -Wall -Wextra"
+
+TRACE::2020-10-31.20:48:42::SCWMssOS::"Compiling lwip src and adapter files"
+
+TRACE::2020-10-31.20:48:43::SCWMssOS::"Running Make libs in ps7_cortexa9_0/libsrc/qspips_v3_6/src"
+
+TRACE::2020-10-31.20:48:43::SCWMssOS::make -C ps7_cortexa9_0/libsrc/qspips_v3_6/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ASSEMBLER=arm-none-eabi-as" "A
+TRACE::2020-10-31.20:48:43::SCWMssOS::RCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostart
+TRACE::2020-10-31.20:48:43::SCWMssOS::files -g -Wall -Wextra"
+
+TRACE::2020-10-31.20:48:43::SCWMssOS::"Compiling qspips"
+
+TRACE::2020-10-31.20:48:44::SCWMssOS::"Running Make libs in ps7_cortexa9_0/libsrc/scugic_v4_1/src"
+
+TRACE::2020-10-31.20:48:44::SCWMssOS::make -C ps7_cortexa9_0/libsrc/scugic_v4_1/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ASSEMBLER=arm-none-eabi-as" "A
+TRACE::2020-10-31.20:48:44::SCWMssOS::RCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostart
+TRACE::2020-10-31.20:48:44::SCWMssOS::files -g -Wall -Wextra"
+
+TRACE::2020-10-31.20:48:44::SCWMssOS::"Compiling scugic"
+
+TRACE::2020-10-31.20:48:45::SCWMssOS::"Running Make libs in ps7_cortexa9_0/libsrc/scutimer_v2_1/src"
+
+TRACE::2020-10-31.20:48:45::SCWMssOS::make -C ps7_cortexa9_0/libsrc/scutimer_v2_1/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ASSEMBLER=arm-none-eabi-as" 
+TRACE::2020-10-31.20:48:45::SCWMssOS::"ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nosta
+TRACE::2020-10-31.20:48:45::SCWMssOS::rtfiles -g -Wall -Wextra"
+
+TRACE::2020-10-31.20:48:45::SCWMssOS::"Compiling scutimer"
+
+TRACE::2020-10-31.20:48:46::SCWMssOS::"Running Make libs in ps7_cortexa9_0/libsrc/scuwdt_v2_1/src"
+
+TRACE::2020-10-31.20:48:46::SCWMssOS::make -C ps7_cortexa9_0/libsrc/scuwdt_v2_1/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ASSEMBLER=arm-none-eabi-as" "A
+TRACE::2020-10-31.20:48:46::SCWMssOS::RCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostart
+TRACE::2020-10-31.20:48:46::SCWMssOS::files -g -Wall -Wextra"
+
+TRACE::2020-10-31.20:48:46::SCWMssOS::"Compiling scuwdt"
+
+TRACE::2020-10-31.20:48:46::SCWMssOS::"Running Make libs in ps7_cortexa9_0/libsrc/sdps_v3_8/src"
+
+TRACE::2020-10-31.20:48:46::SCWMssOS::make -C ps7_cortexa9_0/libsrc/sdps_v3_8/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ASSEMBLER=arm-none-eabi-as" "ARC
+TRACE::2020-10-31.20:48:46::SCWMssOS::HIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfi
+TRACE::2020-10-31.20:48:46::SCWMssOS::les -g -Wall -Wextra"
+
+TRACE::2020-10-31.20:48:46::SCWMssOS::"Compiling sdps"
+
+TRACE::2020-10-31.20:48:48::SCWMssOS::"Running Make libs in ps7_cortexa9_0/libsrc/standalone_v7_1/src"
+
+TRACE::2020-10-31.20:48:48::SCWMssOS::make -C ps7_cortexa9_0/libsrc/standalone_v7_1/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ASSEMBLER=arm-none-eabi-as
+TRACE::2020-10-31.20:48:48::SCWMssOS::" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nos
+TRACE::2020-10-31.20:48:48::SCWMssOS::tartfiles -g -Wall -Wextra"
+
+TRACE::2020-10-31.20:48:48::SCWMssOS::"Compiling standalone"
+
+TRACE::2020-10-31.20:48:53::SCWMssOS::"Running Make libs in ps7_cortexa9_0/libsrc/uartps_v3_8/src"
+
+TRACE::2020-10-31.20:48:53::SCWMssOS::make -C ps7_cortexa9_0/libsrc/uartps_v3_8/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ASSEMBLER=arm-none-eabi-as" "A
+TRACE::2020-10-31.20:48:53::SCWMssOS::RCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostart
+TRACE::2020-10-31.20:48:53::SCWMssOS::files -g -Wall -Wextra"
+
+TRACE::2020-10-31.20:48:53::SCWMssOS::"Compiling uartps"
+
+TRACE::2020-10-31.20:48:54::SCWMssOS::"Running Make libs in ps7_cortexa9_0/libsrc/usbps_v2_4/src"
+
+TRACE::2020-10-31.20:48:54::SCWMssOS::make -C ps7_cortexa9_0/libsrc/usbps_v2_4/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ASSEMBLER=arm-none-eabi-as" "AR
+TRACE::2020-10-31.20:48:54::SCWMssOS::CHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartf
+TRACE::2020-10-31.20:48:54::SCWMssOS::iles -g -Wall -Wextra"
+
+TRACE::2020-10-31.20:48:54::SCWMssOS::"Compiling usbps"
+
+TRACE::2020-10-31.20:48:55::SCWMssOS::"Running Make libs in ps7_cortexa9_0/libsrc/xadcps_v2_3/src"
+
+TRACE::2020-10-31.20:48:55::SCWMssOS::make -C ps7_cortexa9_0/libsrc/xadcps_v2_3/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ASSEMBLER=arm-none-eabi-as" "A
+TRACE::2020-10-31.20:48:55::SCWMssOS::RCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostart
+TRACE::2020-10-31.20:48:55::SCWMssOS::files -g -Wall -Wextra"
+
+TRACE::2020-10-31.20:48:55::SCWMssOS::"Compiling xadcps"
+
+TRACE::2020-10-31.20:48:56::SCWMssOS::'Finished building libraries'
+
+TRACE::2020-10-31.20:48:56::SCWMssOS::Copying to export directory.
+TRACE::2020-10-31.20:48:57::SCWMssOS:: Checking if to create the Supporting Applications
+TRACE::2020-10-31.20:48:57::SCWMssOS:: No Linux domain exists, trying to generate FSBL 
+TRACE::2020-10-31.20:48:57::SCWMssOS:: Completed Standalone Artifacts creation 
+LOG::2020-10-31.20:48:57::SCWSystem::Completed Processing the domain standalone_domain
+LOG::2020-10-31.20:48:57::SCWSystem::Completed Processing the sysconfig design_1_wrapper
+LOG::2020-10-31.20:48:57::SCWPlatform::Completed generating the artifacts for system configuration design_1_wrapper
+TRACE::2020-10-31.20:48:57::SCWPlatform::Started preparing the platform 
+TRACE::2020-10-31.20:48:57::SCWSystem::Writing the bif file for system config design_1_wrapper
+TRACE::2020-10-31.20:48:57::SCWSystem::dir created 
+TRACE::2020-10-31.20:48:57::SCWSystem::Writing the bif 
+TRACE::2020-10-31.20:48:57::SCWPlatform::Started writing the spfm file 
+TRACE::2020-10-31.20:48:57::SCWPlatform::Started writing the xpfm file 
+TRACE::2020-10-31.20:48:57::SCWPlatform::Completed generating the platform
+TRACE::2020-10-31.20:48:57::SCWPlatform::Trying to open the hw design at C:/Github/Zybo_mipi/LWIP/vitis/design_1_wrapper/hw/design_1_wrapper.xsa
+TRACE::2020-10-31.20:48:57::SCWPlatform::DSA given C:/Github/Zybo_mipi/LWIP/vitis/design_1_wrapper/hw/design_1_wrapper.xsa
+TRACE::2020-10-31.20:48:57::SCWPlatform::DSA absoulate path C:/Github/Zybo_mipi/LWIP/vitis/design_1_wrapper/hw/design_1_wrapper.xsa
+TRACE::2020-10-31.20:48:57::SCWPlatform::DSA directory C:/Github/Zybo_mipi/LWIP/vitis/design_1_wrapper/hw
+TRACE::2020-10-31.20:48:57::SCWPlatform:: Platform Path C:/Github/Zybo_mipi/LWIP/vitis/design_1_wrapper/hw/design_1_wrapper.xsa
+TRACE::2020-10-31.20:48:57::SCWPlatform:: Unique name xilinx:zybo-z7-20::0.0
+TRACE::2020-10-31.20:48:57::SCWPlatform::Trying to set the existing hwdb with name design_1_wrapper
+TRACE::2020-10-31.20:48:57::SCWPlatform::Opened existing hwdb design_1_wrapper
+TRACE::2020-10-31.20:48:57::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2020-10-31.20:48:57::SCWMssOS::Checking the sw design at  C:/Github/Zybo_mipi/LWIP/vitis/design_1_wrapper/ps7_cortexa9_0/standalone_domain/bsp/system.mss
+TRACE::2020-10-31.20:48:57::SCWMssOS::DEBUG:  swdes dump  C:/Github/Zybo_mipi/LWIP/vitis/design_1_wrapper/ps7_cortexa9_0/standalone_domain/bsp/system.mss|system||
+
+TRACE::2020-10-31.20:48:57::SCWMssOS::Sw design exists and opened at  C:/Github/Zybo_mipi/LWIP/vitis/design_1_wrapper/ps7_cortexa9_0/standalone_domain/bsp/system.mss
+TRACE::2020-10-31.20:48:57::SCWWriter::formatted JSON is {
+	"platformName":	"design_1_wrapper",
+	"sprVersion":	"2.0",
+	"mode":	"gui",
+	"dsaType":	"Fixed",
+	"platformDesc":	"design_1_wrapper",
+	"platHandOff":	"C:/Github/Zybo_mipi/LWIP/design_1_wrapper.xsa",
+	"platIntHandOff":	"<platformDir>/hw/design_1_wrapper.xsa",
+	"deviceType":	"zynq",
+	"platIsPrebuiltAutogen":	"false",
+	"platIsNoBootBsp":	"true",
+	"hasFsblMakeHasChanges":	"false",
+	"hasPmufwMakeHasChanges":	"false",
+	"platPreBuiltFlag":	false,
+	"platformSamplesDir":	"",
+	"platActiveSys":	"design_1_wrapper",
+	"systems":	[{
+			"systemName":	"design_1_wrapper",
+			"systemDesc":	"design_1_wrapper",
+			"sysIsBootAutoGen":	"true",
+			"systemDispName":	"design_1_wrapper",
+			"sysActiveDom":	"standalone_domain",
+			"sysDefaultDom":	"standalone_domain",
+			"domains":	[{
+					"domainName":	"standalone_domain",
+					"domainDispName":	"standalone on ps7_cortexa9_0",
+					"domainDesc":	"standalone_domain",
+					"processors":	"ps7_cortexa9_0",
+					"os":	"standalone",
+					"sdxOs":	"standalone",
+					"qemuArgs":	"C:/Xilinx/Vitis/2019.2/data/emulation/platforms/zynq/qemu/qemu_args.txt",
+					"qemuData":	"C:/Xilinx/Vitis/2019.2/data/emulation/platforms/zynq/qemu/",
+					"debugEnable":	"False",
+					"domRuntimes":	["cpp"],
+					"swRepo":	"",
+					"mssOsVer":	"7.1",
+					"mssFile":	"",
+					"md5Digest":	"6fcc898f1122bf95878801eca139fab2",
+					"compatibleApp":	"",
+					"domType":	"mssDomain",
+					"arch":	"32-bit",
+					"appSettings":	{
+						"appCompilerFlags":	"",
+						"appLinkerFlags":	""
+					},
+					"addedLibs":	["lwip211:1.1"],
+					"libOptions":	{
+						"lwip211":	{
+							"dhcp_does_arp_check":	"true",
+							"lwip_dhcp":	"true",
+							"mem_size":	"524288",
+							"memp_n_pbuf":	"1024",
+							"n_tx_descriptors":	"512",
+							"pbuf_pool_size":	"16384",
+							"libOptionNames":	["dhcp_does_arp_check", "lwip_dhcp", "mem_size", "memp_n_pbuf", "n_tx_descriptors", "pbuf_pool_size"]
+						},
+						"libsContainingOptions":	["lwip211"]
+					},
+					"prebuiltLibs":	{
+						"prebuiltIncPath":	[],
+						"prebuiltLibPath":	[]
+					},
+					"isolation":	{
+					}
+				}]
+		}]
+}
+KEYINFO::2020-10-31.20:48:57::SCWPlatform::updated the xpfm file.
+TRACE::2020-10-31.20:48:57::SCWPlatform::Trying to open the hw design at C:/Github/Zybo_mipi/LWIP/vitis/design_1_wrapper/hw/design_1_wrapper.xsa
+TRACE::2020-10-31.20:48:57::SCWPlatform::DSA given C:/Github/Zybo_mipi/LWIP/vitis/design_1_wrapper/hw/design_1_wrapper.xsa
+TRACE::2020-10-31.20:48:57::SCWPlatform::DSA absoulate path C:/Github/Zybo_mipi/LWIP/vitis/design_1_wrapper/hw/design_1_wrapper.xsa
+TRACE::2020-10-31.20:48:57::SCWPlatform::DSA directory C:/Github/Zybo_mipi/LWIP/vitis/design_1_wrapper/hw
+TRACE::2020-10-31.20:48:57::SCWPlatform:: Platform Path C:/Github/Zybo_mipi/LWIP/vitis/design_1_wrapper/hw/design_1_wrapper.xsa
+TRACE::2020-10-31.20:48:57::SCWPlatform:: Unique name xilinx:zybo-z7-20::0.0
+TRACE::2020-10-31.20:48:57::SCWPlatform::Trying to set the existing hwdb with name design_1_wrapper
+TRACE::2020-10-31.20:48:57::SCWPlatform::Opened existing hwdb design_1_wrapper
+TRACE::2020-10-31.20:48:57::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2020-10-31.20:48:57::SCWMssOS::Checking the sw design at  C:/Github/Zybo_mipi/LWIP/vitis/design_1_wrapper/ps7_cortexa9_0/standalone_domain/bsp/system.mss
+TRACE::2020-10-31.20:48:57::SCWMssOS::DEBUG:  swdes dump  C:/Github/Zybo_mipi/LWIP/vitis/design_1_wrapper/ps7_cortexa9_0/standalone_domain/bsp/system.mss|system||
+
+TRACE::2020-10-31.20:48:57::SCWMssOS::Sw design exists and opened at  C:/Github/Zybo_mipi/LWIP/vitis/design_1_wrapper/ps7_cortexa9_0/standalone_domain/bsp/system.mss

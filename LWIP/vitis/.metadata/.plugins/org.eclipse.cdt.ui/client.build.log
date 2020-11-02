@@ -1,4 +1,4 @@
-21:22:39 **** Incremental Build of configuration Debug for project client ****
+23:49:45 **** Incremental Build of configuration Debug for project client ****
 make all 
 make --no-print-directory pre-build
 a9-linaro-pre-build-step
@@ -7,6 +7,10 @@ make --no-print-directory main-build
 'Building file: ../src/udp_perf_client.c'
 'Invoking: ARM v7 gcc compiler'
 arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/udp_perf_client.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -IC:/Github/Zybo_mipi/LWIP/vitis/design_1_wrapper/export/design_1_wrapper/sw/design_1_wrapper/standalone_domain/bspinclude/include -MMD -MP -MF"src/udp_perf_client.d" -MT"src/udp_perf_client.o" -o "src/udp_perf_client.o" "../src/udp_perf_client.c"
+../src/udp_perf_client.c: In function 'udp_packet_send':
+../src/udp_perf_client.c:169:16: warning: initialization of 'int *' from incompatible pointer type 'char *' [-Wincompatible-pointer-types]
+    int *addr = frame_pointer+ptrCounter;
+                ^~~~~~~~~~~~~
 'Finished building: ../src/udp_perf_client.c'
 ' '
 'Building target: client.elf'
@@ -17,9 +21,9 @@ arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=non
 'Invoking: ARM v7 Print Size'
 arm-none-eabi-size client.elf  |tee "client.elf.size"
    text	   data	    bss	    dec	    hex	filename
- 139944	   3432	34724128	34867504	2140930	client.elf
+ 140032	   3432	34724128	34867592	2140988	client.elf
 'Finished building: client.elf.size'
 ' '
 
-21:22:40 Build Finished (took 972ms)
+23:49:46 Build Finished (took 975ms)
 

@@ -50,18 +50,16 @@
 #define SOFT_RST_MASK					(0x00000001)
 #define SLCR_LOCK_KEY_VALUE             0x767B
 #define SLCR_UNLOCK_KEY_VALUE           0xDF0D
-#define FPGA_RST_CTRL					s0x240
+#define FPGA_RST_CTRL					0x240
 
 
 
-//#include "xparameters.h"
 #include "xparameters_ps.h"	/* defines XPAR values */
-//#include "xil_cache.h"
+
 #include "xscugic.h"
-//#include "lwip/tcp.h"
 #include "lwip/tcp.h"
 #include "xil_printf.h"
-//#include "platform_config.h"
+
 #include "netif/xadapter.h"
 #ifdef PLATFORM_ZYNQ
 #include "xscutimer.h"
