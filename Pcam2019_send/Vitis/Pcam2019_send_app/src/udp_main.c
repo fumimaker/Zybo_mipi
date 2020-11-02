@@ -154,8 +154,6 @@ int udp_main(void)
 #endif
 	print_ip_settings(&(netif->ip_addr), &(netif->netmask), &(netif->gw));
 
-	//xil_printf("\r\n");
-
 	/* print app header */
 	print_app_header();
 
@@ -178,6 +176,4 @@ int udp_loop(void){
 	xemacif_input(netif);
 	transfer_data(); /* データを送信 */
 
-	/* never reached */
-	//cleanup_platform();
 }
