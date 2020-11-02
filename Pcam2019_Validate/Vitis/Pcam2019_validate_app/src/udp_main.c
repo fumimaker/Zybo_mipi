@@ -170,12 +170,10 @@ int udp_loop(void){
 	if (TcpFastTmrFlag) {
 		tcp_fasttmr();
 		TcpFastTmrFlag = 0;
-		xil_printf("tcp_fasttmr\r\n");
 	}
 	if (TcpSlowTmrFlag) {
 		tcp_slowtmr();
 		TcpSlowTmrFlag = 0;
-		xil_printf("tcp_slowtmr\r\n");
 	}
 	xemacif_input(netif);
 	transfer_data(); /* データを送信 */

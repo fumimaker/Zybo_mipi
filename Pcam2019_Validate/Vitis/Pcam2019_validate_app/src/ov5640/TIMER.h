@@ -14,6 +14,12 @@
 #include "TIMER_Client.h"
 #include "lwip/dhcp.h"
 
+#define INTC_DEVICE_ID		XPAR_SCUGIC_SINGLE_DEVICE_ID
+#define TIMER_DEVICE_ID		XPAR_SCUTIMER_DEVICE_ID
+#define INTC_BASE_ADDR		XPAR_SCUGIC_0_CPU_BASEADDR
+#define INTC_DIST_BASE_ADDR	XPAR_SCUGIC_0_DIST_BASEADDR
+#define TIMER_IRPT_INTR		XPAR_SCUTIMER_INTR
+
 #define STRINGIZE(x) STRINGIZE2(x)
 #define STRINGIZE2(x) #x
 #define LINE_STRING STRINGIZE(__LINE__)
@@ -105,10 +111,11 @@ public:
 		int TimerLoadValue = XPAR_CPU_CORTEXA9_0_CPU_CLK_FREQ_HZ / 8;
 		XScuTimer_LoadTimer(&drv_inst_, TimerLoadValue);
 
+
 		irpt_ctl_.registerHandler(irpt_id, (Xil_InterruptHandler)timer_callback, &drv_inst_);
 		irpt_ctl_.enableInterrupt(irpt_id);
 		irpt_ctl_.enableInterrupts();
-
+		XScuGic_EnableIntr(INTC_DIST_BASE_ADDR, TIMER_IRPT_INTR);
 		Xil_ExceptionEnableMask(XIL_EXCEPTION_IRQ);
 		XScuTimer_EnableInterrupt(&drv_inst_);
 		XScuTimer_Start(&drv_inst_);

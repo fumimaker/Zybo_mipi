@@ -89,22 +89,24 @@ int main()
 {
 	init_platform();
 
-	udp_main(); //init
-	xil_printf("LWIP init done.\r\n");
-
 	ScuGicInterruptController irpt_ctl(IRPT_CTL_DEVID);
+	xil_printf("Interrupt controller init done.\r\n");
 	PS_GPIO<ScuGicInterruptController> gpio_driver(GPIO_DEVID, irpt_ctl, GPIO_IRPT_ID);
+	xil_printf("GPIO init done.\r\n");
 	PS_IIC<ScuGicInterruptController> iic_driver(CAM_I2C_DEVID, irpt_ctl, CAM_I2C_IRPT_ID, 100000);
+	xil_printf("I2C init done.\r\n");
 	PS_TIMER<ScuGicInterruptController> ps_timer(TIMER_DEVICE_ID, irpt_ctl, TIMER_IRPT_INTR);
-
+	xil_printf("Timer for LWIP init done.\r\n");
 	OV5640 cam(iic_driver, gpio_driver);
+	xil_printf("OV5640 init done.\r\n");
 	AXI_VDMA<ScuGicInterruptController> vdma_driver(VDMA_DEVID, MEM_BASE_ADDR, irpt_ctl, VDMA_MM2S_IRPT_ID, VDMA_S2MM_IRPT_ID);
 	VideoOutput vid(XPAR_VTC_0_DEVICE_ID, XPAR_VIDEO_DYNCLK_DEVICE_ID);
-
+	xil_printf("VDMA init done.\r\n");
 	pipeline_mode_change(vdma_driver, cam, vid, Resolution::R1280_720_60_PP, OV5640_cfg::mode_t::MODE_720P_1280_720_60fps);
 	xil_printf("Video init done.\r\n");
 
 
+	udp_main(); //init
 
 	xil_printf("udp send start.\r\n");
 	while(1){

@@ -137,8 +137,6 @@ static void udp_packet_send(u8_t finished)
 			//4byte(int)開けて1436byteのデータをコピーする
 
 			frame_pointer = (char *)0xA000000; //FIX
-//			char *addr = frame_pointer+ptrCounter;
-//			u32 addrnum = *addr;
 			memcpy((int*)packet->payload+1, frame_pointer+ptrCounter, UDP_SEND_BUFSIZE-sizeof(int));
 		}
 
@@ -303,5 +301,4 @@ void start_application(void)
 void update_address(char *pointer){
 	// frame_pointerにコピペ
 	frame_pointer = pointer;
-	//xil_printf("update address 0x%x\r\n",frame_pointer);
 }

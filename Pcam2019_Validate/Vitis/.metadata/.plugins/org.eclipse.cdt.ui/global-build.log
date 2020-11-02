@@ -1,21 +1,11 @@
 Nothing to build in platform 'Pcam2019_Validate'
 
-19:08:27 **** Incremental Build of configuration Debug for project Pcam2019_validate_app ****
+19:42:40 **** Incremental Build of configuration Debug for project Pcam2019_validate_app ****
 make all 
 make --no-print-directory pre-build
 a9-linaro-pre-build-step
 ' '
 make --no-print-directory main-build
-'Building file: ../src/main.cc'
-'Invoking: ARM v7 g++ compiler'
-arm-none-eabi-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -IC:/Github/Zybo_mipi/Pcam2019_Validate/Vitis/Pcam2019_Validate/export/Pcam2019_Validate/sw/Pcam2019_Validate/standalone_domain/bspinclude/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.cc"
-In file included from ../src/ov5640/TIMER.h:10,
-                 from ../src/main.cc:8:
-C:/Github/Zybo_mipi/Pcam2019_Validate/Vitis/Pcam2019_Validate/export/Pcam2019_Validate/sw/Pcam2019_Validate/standalone_domain/bspinclude/include/xtime_l.h:85:70: note: #pragma message: For the sleep routines, Global timer is being used
- #pragma message ("For the sleep routines, Global timer is being used")
-                                                                      ^
-'Finished building: ../src/main.cc'
-' '
 'Building file: ../src/udp_main.c'
 'Invoking: ARM v7 g++ compiler'
 arm-none-eabi-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/udp_main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -IC:/Github/Zybo_mipi/Pcam2019_Validate/Vitis/Pcam2019_Validate/export/Pcam2019_Validate/sw/Pcam2019_Validate/standalone_domain/bspinclude/include -MMD -MP -MF"src/udp_main.d" -MT"src/udp_main.o" -o "src/udp_main.o" "../src/udp_main.c"
@@ -30,10 +20,34 @@ arm-none-eabi-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/udp_main.o" -mcpu=
   print_ip("Gateway :       ", gw);
                                  ^
 ../src/udp_main.c: In function 'int udp_loop()':
-../src/udp_main.c:185:1: warning: no return statement in function returning non-void [-Wreturn-type]
+../src/udp_main.c:183:1: warning: no return statement in function returning non-void [-Wreturn-type]
  }
  ^
 'Finished building: ../src/udp_main.c'
+' '
+'Building file: ../src/udp_perf_client.c'
+'Invoking: ARM v7 g++ compiler'
+arm-none-eabi-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/udp_perf_client.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -IC:/Github/Zybo_mipi/Pcam2019_Validate/Vitis/Pcam2019_Validate/export/Pcam2019_Validate/sw/Pcam2019_Validate/standalone_domain/bspinclude/include -MMD -MP -MF"src/udp_perf_client.d" -MT"src/udp_perf_client.o" -o "src/udp_perf_client.o" "../src/udp_perf_client.c"
+../src/udp_perf_client.c: In function 'void transfer_data()':
+../src/udp_perf_client.c:16:37: warning: '*' in boolean context, suggest '&&' instead [-Wint-in-bool-context]
+ #define END_TIME (UDP_TIME_INTERVAL * 1000)
+                  ~~~~~~~~~~~~~~~~~~~^~~~~~~
+../src/udp_perf_client.c:212:6: note: in expansion of macro 'END_TIME'
+  if (END_TIME || REPORT_INTERVAL_TIME) { //END_TIME
+      ^~~~~~~~
+../src/udp_perf_client.c:14:55: warning: '*' in boolean context, suggest '&&' instead [-Wint-in-bool-context]
+ #define REPORT_INTERVAL_TIME (INTERIM_REPORT_INTERVAL * 1000)
+                              ~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~
+../src/udp_perf_client.c:212:18: note: in expansion of macro 'REPORT_INTERVAL_TIME'
+  if (END_TIME || REPORT_INTERVAL_TIME) { //END_TIME
+                  ^~~~~~~~~~~~~~~~~~~~
+../src/udp_perf_client.c:14:55: warning: '*' in boolean context, suggest '&&' instead [-Wint-in-bool-context]
+ #define REPORT_INTERVAL_TIME (INTERIM_REPORT_INTERVAL * 1000)
+                              ~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~
+../src/udp_perf_client.c:214:7: note: in expansion of macro 'REPORT_INTERVAL_TIME'
+   if (REPORT_INTERVAL_TIME) {
+       ^~~~~~~~~~~~~~~~~~~~
+'Finished building: ../src/udp_perf_client.c'
 ' '
 'Building target: Pcam2019_validate_app.elf'
 'Invoking: ARM v7 g++ linker'
@@ -43,10 +57,10 @@ arm-none-eabi-g++ -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=non
 'Invoking: ARM v7 Print Size'
 arm-none-eabi-size Pcam2019_validate_app.elf  |tee "Pcam2019_validate_app.elf.size"
    text	   data	    bss	    dec	    hex	filename
- 707755	   3952	31512864	32224571	1ebb53b	Pcam2019_validate_app.elf
+ 707867	   3952	31512864	32224683	1ebb5ab	Pcam2019_validate_app.elf
 'Finished building: Pcam2019_validate_app.elf.size'
 ' '
-19:08:31 **** Incremental Build of configuration Debug for project Pcam2019_validate_app_system ****
+19:42:42 **** Incremental Build of configuration Debug for project Pcam2019_validate_app_system ****
 make all 
 Generating bif file for the system project
 generate_system_bif.bat 62210 C:/Github/Zybo_mipi/Pcam2019_Validate/Vitis/Pcam2019_Validate/export/Pcam2019_Validate/Pcam2019_Validate.xpfm standalone_domain C:/Github/Zybo_mipi/Pcam2019_Validate/Vitis/Pcam2019_validate_app_system/Debug/system.bif
