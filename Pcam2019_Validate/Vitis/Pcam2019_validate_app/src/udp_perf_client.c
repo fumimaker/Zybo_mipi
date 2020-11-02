@@ -15,6 +15,8 @@ u64 ptrCounter = 0;
 /* End time in ms */
 #define END_TIME (UDP_TIME_INTERVAL * 1000)
 
+#define DATA_SIZE UDP_SEND_BUFSIZE-sizeof(int)
+
 void print_app_header(void)
 {
 	xil_printf("UDP client connecting to %s on port %d\r\n",
@@ -136,15 +138,15 @@ static void udp_packet_send(u8_t finished)
 			// frame_pointer+ptrCounterの先頭からBUSIZE-int(1436)分payload+1にコピー
 			//4byte(int)開けて1436byteのデータをコピーする
 
-			frame_pointer = (char *)0xA000000; //FIX
-			memcpy((int*)packet->payload+1, frame_pointer+ptrCounter, UDP_SEND_BUFSIZE-sizeof(int));
+			//frame_pointer = (char *)0xA000000; //FIX
+			memcpy((int*)packet->payload+1, frame_pointer+ptrCounter, DATA_SIZE);
 		}
 
 		/* always increment the id */
 		payload = (int*) (packet->payload);
 
 		int id = ptrCounter/(UDP_SEND_BUFSIZE-sizeof(int)); // 1440-4を何回送ったかを計算
-		xil_printf("id: %d\n\r",id);
+		//xil_printf("id: %d\n\r",id);
 		if(id==135){
 			xil_printf("135 times\r\n");
 		}
@@ -227,8 +229,8 @@ void transfer_data(void)
 
 	// １回のサイズに満たない端数になったら端数とFINISH送って終了
 	// HDの場合は1436byte*1926(0-1925)回目で500byte余る計算になる。
-	if ( (SIZE_OF_FRAME - ptrCounter) < ( UDP_SEND_BUFSIZE - sizeof(int) ) ) {
-		xil_printf("remain packet %d byte\n\r", (SIZE_OF_FRAME - ptrCounter));
+	if ( (SIZE_OF_FRAME - ptrCounter) < ( DATA_SIZE ) ) {
+		xil_printf("remain packet %d byte\n\r", SIZE_OF_FRAME - ptrCounter);
 		udp_packet_send(FINISH);
 		u64_t diff_ms = now - client.start_time;
 		udp_conn_report(diff_ms, UDP_DONE_CLIENT);
