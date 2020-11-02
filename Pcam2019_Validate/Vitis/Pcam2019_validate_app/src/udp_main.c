@@ -107,8 +107,8 @@ int udp_main(void)
 #endif
 
 	//init_platform(); // これが中身だった
-	platform_setup_timer();
-	platform_setup_interrupts();
+	//platform_setup_timer();
+	//platform_setup_interrupts();
 
 	xil_printf("\r\n\r\n");
 	xil_printf("-----lwIP RAW Mode UDP Client Application-----\r\n");
@@ -125,7 +125,7 @@ int udp_main(void)
 	netif_set_default(netif);
 
 	/* now enable interrupts */
-	platform_enable_interrupts();
+	//platform_enable_interrupts();
 
 	/* specify that the network if is up */
 	netif_set_up(netif);
@@ -170,12 +170,10 @@ int udp_loop(void){
 	if (TcpFastTmrFlag) {
 		tcp_fasttmr();
 		TcpFastTmrFlag = 0;
-		xil_printf("tcp_fasttmr\r\n");
 	}
 	if (TcpSlowTmrFlag) {
 		tcp_slowtmr();
 		TcpSlowTmrFlag = 0;
-		xil_printf("tcp_slowtmr\r\n");
 	}
 	xemacif_input(netif);
 	transfer_data(); /* データを送信 */
