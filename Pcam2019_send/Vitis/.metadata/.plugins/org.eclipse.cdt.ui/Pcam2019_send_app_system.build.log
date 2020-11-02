@@ -1,4 +1,4 @@
-01:42:53 **** Incremental Build of configuration Debug for project Pcam2019_send_app_system ****
+02:07:03 **** Incremental Build of configuration Debug for project Pcam2019_send_app_system ****
 make all 
 Generating bif file for the system project
 generate_system_bif.bat 51199 C:/Github/Zybo_mipi/Pcam2019_send/Vitis/Pcam2019_send/export/Pcam2019_send/Pcam2019_send.xpfm standalone_domain C:/Github/Zybo_mipi/Pcam2019_send/Vitis/Pcam2019_send_app_system/Debug/system.bif
@@ -6,5 +6,5 @@ sdcard_gen --xpfm C:/Github/Zybo_mipi/Pcam2019_send/Vitis/Pcam2019_send/export/P
 creating BOOT.BIN using C:/Github/Zybo_mipi/Pcam2019_send/Vitis/Pcam2019_send_app/_ide/bitstream/system_wrapper.bit
 Running C:/Xilinx/Vitis/2019.2/bin/bootgen  -image C:/Github/Zybo_mipi/Pcam2019_send/Vitis/Pcam2019_send_app_system/Debug/sd_card_temp/boot.bif -w -o i BOOT.BIN
 
-01:42:58 Build Finished (took 5s.129ms)
+02:07:09 Build Finished (took 5s.205ms)
 

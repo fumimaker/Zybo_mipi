@@ -9,7 +9,7 @@ static struct perf_stats client;
 char *frame_pointer;
 u64 ptrCounter = 0;
 static volatile unsigned int finish_flg = 0; //not finished
-unsigned int frameCounter = 0;
+unsigned int frame_counter = 0;
 
 #define FINISH	1
 #define NOT_FINISH 0
@@ -95,8 +95,8 @@ static void udp_conn_report(u64_t diff, enum report_type report_type)
 	sprintf(time, "%4.1f-%4.1f sec",
 			(double)client.i_report.last_report_time,
 			(double)(client.i_report.last_report_time + duration));
-	xil_printf("[%3d] %s  %sBytes  %sbits/sec\n\r", client.client_id,
-			time, data, perf);
+	xil_printf("[%3d] %s  %sBytes  %sbits/sec %dfps\n\r", client.client_id,
+			time, data, perf, client.i_report.frame_per_sec);
 
 	if (report_type == INTER_REPORT)
 		client.i_report.last_report_time += duration;
@@ -121,6 +121,7 @@ static void reset_stats(void)
 	client.i_report.start_time = 0;
 	client.i_report.total_bytes = 0;
 	client.i_report.last_report_time = 0;
+	client.i_report.frame_per_sec = 0;
 
 }
 
@@ -150,6 +151,7 @@ static void udp_packet_send(u8_t finished)
 
 		int id = ptrCounter/(UDP_SEND_BUFSIZE-sizeof(int)); // 1440-4を何回送ったかを計算
 		//xil_printf("id: %d\n\r",id);
+		frame_counter++;
 
 		if (finished == FINISH){ //finishで入ってきたら各種終了状態にしておく
 			packet_id = -1;
@@ -186,6 +188,7 @@ static void udp_packet_send(u8_t finished)
 		if (finished == FINISH){ //終了、次のフレームのために初期化
 			packet_id = 0;
 			id = 0;
+			ptrCounter = 0;
 		}
 
 		pbuf_free(packet);
@@ -218,10 +221,13 @@ void transfer_data(void)
 		if (REPORT_INTERVAL_TIME) {
 			if (client.i_report.start_time) {
 				u64_t diff_ms = now - client.i_report.start_time;
+				client.i_report.frame_per_sec = frame_counter/DATA_SIZE;
 				if (diff_ms >= REPORT_INTERVAL_TIME) {
 					udp_conn_report(diff_ms, INTER_REPORT);
 					client.i_report.start_time = 0;
 					client.i_report.total_bytes = 0;
+					client.i_report.frame_per_sec = 0;
+					frame_counter = 0;
 				}
 			} else {
 				client.i_report.start_time = now;
@@ -233,6 +239,7 @@ void transfer_data(void)
 	// HDの場合は1436byte*1926(0-1925)回目で500byte余る計算になる。
 	if ( (SIZE_OF_FRAME - ptrCounter) < ( DATA_SIZE ) ) {
 		//xil_printf("remain packet %d byte\n\r", SIZE_OF_FRAME - ptrCounter);
+		finish_flg = FINISH;
 		udp_packet_send(FINISH);
 		//u64_t diff_ms = now - client.start_time;
 		//udp_conn_report(diff_ms, INTER_REPORT);

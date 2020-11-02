@@ -1,40 +1,11 @@
 Nothing to build in platform 'Pcam2019_send'
 
-01:42:49 **** Incremental Build of configuration Debug for project Pcam2019_send_app ****
+02:07:02 **** Incremental Build of configuration Debug for project Pcam2019_send_app ****
 make all 
 make --no-print-directory pre-build
 a9-linaro-pre-build-step
 ' '
 make --no-print-directory main-build
-'Building file: ../src/main.cc'
-'Invoking: ARM v7 g++ compiler'
-arm-none-eabi-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -IC:/Github/Zybo_mipi/Pcam2019_send/Vitis/Pcam2019_send/export/Pcam2019_send/sw/Pcam2019_send/standalone_domain/bspinclude/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.cc"
-In file included from ../src/ov5640/TIMER.h:10,
-                 from ../src/main.cc:8:
-C:/Github/Zybo_mipi/Pcam2019_send/Vitis/Pcam2019_send/export/Pcam2019_send/sw/Pcam2019_send/standalone_domain/bspinclude/include/xtime_l.h:85:70: note: #pragma message: For the sleep routines, Global timer is being used
- #pragma message ("For the sleep routines, Global timer is being used")
-                                                                      ^
-'Finished building: ../src/main.cc'
-' '
-'Building file: ../src/udp_main.c'
-'Invoking: ARM v7 g++ compiler'
-arm-none-eabi-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/udp_main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -IC:/Github/Zybo_mipi/Pcam2019_send/Vitis/Pcam2019_send/export/Pcam2019_send/sw/Pcam2019_send/standalone_domain/bspinclude/include -MMD -MP -MF"src/udp_main.d" -MT"src/udp_main.o" -o "src/udp_main.o" "../src/udp_main.c"
-../src/udp_main.c: In function 'void print_ip_settings(ip_addr_t*, ip_addr_t*, ip_addr_t*)':
-../src/udp_main.c:62:33: warning: ISO C++ forbids converting a string constant to 'char*' [-Wwrite-strings]
-  print_ip("Board IP:       ", ip);
-                                 ^
-../src/udp_main.c:63:35: warning: ISO C++ forbids converting a string constant to 'char*' [-Wwrite-strings]
-  print_ip("Netmask :       ", mask);
-                                   ^
-../src/udp_main.c:64:33: warning: ISO C++ forbids converting a string constant to 'char*' [-Wwrite-strings]
-  print_ip("Gateway :       ", gw);
-                                 ^
-../src/udp_main.c: In function 'int udp_loop()':
-../src/udp_main.c:179:1: warning: no return statement in function returning non-void [-Wreturn-type]
- }
- ^
-'Finished building: ../src/udp_main.c'
-' '
 'Building file: ../src/udp_perf_client.c'
 'Invoking: ARM v7 g++ compiler'
 arm-none-eabi-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/udp_perf_client.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -IC:/Github/Zybo_mipi/Pcam2019_send/Vitis/Pcam2019_send/export/Pcam2019_send/sw/Pcam2019_send/standalone_domain/bspinclude/include -MMD -MP -MF"src/udp_perf_client.d" -MT"src/udp_perf_client.o" -o "src/udp_perf_client.o" "../src/udp_perf_client.c"
@@ -42,19 +13,19 @@ arm-none-eabi-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/udp_perf_client.o"
 ../src/udp_perf_client.c:20:37: warning: '*' in boolean context, suggest '&&' instead [-Wint-in-bool-context]
  #define END_TIME (UDP_TIME_INTERVAL * 1000)
                   ~~~~~~~~~~~~~~~~~~~^~~~~~~
-../src/udp_perf_client.c:216:6: note: in expansion of macro 'END_TIME'
+../src/udp_perf_client.c:219:6: note: in expansion of macro 'END_TIME'
   if (END_TIME || REPORT_INTERVAL_TIME) { //END_TIME
       ^~~~~~~~
 ../src/udp_perf_client.c:18:55: warning: '*' in boolean context, suggest '&&' instead [-Wint-in-bool-context]
  #define REPORT_INTERVAL_TIME (INTERIM_REPORT_INTERVAL * 1000)
                               ~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~
-../src/udp_perf_client.c:216:18: note: in expansion of macro 'REPORT_INTERVAL_TIME'
+../src/udp_perf_client.c:219:18: note: in expansion of macro 'REPORT_INTERVAL_TIME'
   if (END_TIME || REPORT_INTERVAL_TIME) { //END_TIME
                   ^~~~~~~~~~~~~~~~~~~~
 ../src/udp_perf_client.c:18:55: warning: '*' in boolean context, suggest '&&' instead [-Wint-in-bool-context]
  #define REPORT_INTERVAL_TIME (INTERIM_REPORT_INTERVAL * 1000)
                               ~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~
-../src/udp_perf_client.c:218:7: note: in expansion of macro 'REPORT_INTERVAL_TIME'
+../src/udp_perf_client.c:221:7: note: in expansion of macro 'REPORT_INTERVAL_TIME'
    if (REPORT_INTERVAL_TIME) {
        ^~~~~~~~~~~~~~~~~~~~
 'Finished building: ../src/udp_perf_client.c'
@@ -67,10 +38,10 @@ arm-none-eabi-g++ -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=non
 'Invoking: ARM v7 Print Size'
 arm-none-eabi-size Pcam2019_send_app.elf  |tee "Pcam2019_send_app.elf.size"
    text	   data	    bss	    dec	    hex	filename
- 707603	   3952	31512864	32224419	1ebb4a3	Pcam2019_send_app.elf
+ 707739	   3952	31512864	32224555	1ebb52b	Pcam2019_send_app.elf
 'Finished building: Pcam2019_send_app.elf.size'
 ' '
-01:42:53 **** Incremental Build of configuration Debug for project Pcam2019_send_app_system ****
+02:07:03 **** Incremental Build of configuration Debug for project Pcam2019_send_app_system ****
 make all 
 Generating bif file for the system project
 generate_system_bif.bat 51199 C:/Github/Zybo_mipi/Pcam2019_send/Vitis/Pcam2019_send/export/Pcam2019_send/Pcam2019_send.xpfm standalone_domain C:/Github/Zybo_mipi/Pcam2019_send/Vitis/Pcam2019_send_app_system/Debug/system.bif

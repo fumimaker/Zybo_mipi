@@ -82,6 +82,7 @@ struct interim_report {
 	u64_t start_time;
 	u64_t last_report_time;
 	u32_t total_bytes;
+	u32_t frame_per_sec;
 };
 
 struct perf_stats {
@@ -90,6 +91,7 @@ struct perf_stats {
 	u64_t total_bytes;
 	u64_t cnt_datagrams;
 	u32_t packet_id;
+	u32_t frame_per_sec;
 	struct interim_report i_report;
 };
 
