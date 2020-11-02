@@ -1148,3 +1148,91 @@ Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.]. Thread: Worker-3: Launch
 
 !ENTRY com.xilinx.sdk.utils 1 0 2020-11-01 23:55:10.202
 !MESSAGE Executed Webtalk command
+!SESSION 2020-11-02 15:53:21.012 -----------------------------------------------
+eclipse.buildId=2019.2
+java.version=9.0.4
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=ja_JP
+Command-line arguments:  -os win32 -ws win32 -arch x86_64
+
+!ENTRY org.eclipse.emf.ecore 2 0 2020-11-02 15:53:39.460
+!MESSAGE Both 'com.autoesl.autopilot.ui.models' and 'com.autoesl.autopilot.ui.models' register a package for 'com.autoesl.autopilot.solution'
+
+!ENTRY org.eclipse.launchbar.core 2 0 2020-11-02 15:53:42.715
+!MESSAGE Enablement expression is missing for descriptor type org.eclipse.cdt.debug.core.coreBuildDescriptorType
+
+!ENTRY org.eclipse.launchbar.core 2 0 2020-11-02 15:53:42.725
+!MESSAGE Enablement expression is missing for config provider for org.eclipse.cdt.debug.core.coreBuildDescriptorType
+
+!ENTRY org.eclipse.launchbar.core 2 0 2020-11-02 15:53:42.725
+!MESSAGE Enablement expression is missing for config provider for org.eclipse.cdt.debug.core.coreBuildDescriptorType
+
+!ENTRY org.eclipse.ui 4 4 2020-11-02 15:53:47.051
+!MESSAGE Conflicting handlers for com.xilinx.sdx.system.core.importSourcesCommand: {com.xilinx.sdx.system.core.handler.ImportSourcesHandler} vs {com.xilinx.sdx.system.core.handler.ImportSourcesHandler}
+
+!ENTRY org.eclipse.ui 4 4 2020-11-02 15:53:47.059
+!MESSAGE Conflicting handlers for com.xilinx.sdx.system.core.importSourcesCommand: {com.xilinx.sdx.system.core.handler.ImportSourcesHandler} vs {com.xilinx.sdx.system.core.handler.ImportSourcesHandler}
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-11-02 15:53:48.822
+!MESSAGE XSCT Command: [plnx-install-path  ; ::scw::scw_mode gui], Thread: Thread-5
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-11-02 15:53:48.828
+!MESSAGE XSCT Command: [set sdk::sdk_chan tcfchan#0], Thread: Thread-12
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-11-02 15:53:48.845
+!MESSAGE XSCT command with result: [plnx-install-path  ; ::scw::scw_mode gui], Result: [null, ]. Thread: Thread-5
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-11-02 15:53:48.850
+!MESSAGE XSCT command with result: [set sdk::sdk_chan tcfchan#0], Result: [null, tcfchan#0]. Thread: Thread-12
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-11-02 15:53:48.855
+!MESSAGE XSCT Command: [setws C:/Github/Zybo_mipi/LWIP/vitis], Thread: Thread-12
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-11-02 15:53:48.862
+!MESSAGE XSCT command with result: [setws C:/Github/Zybo_mipi/LWIP/vitis], Result: [null, ]. Thread: Thread-12
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-11-02 15:53:49.669
+!MESSAGE XSCT Command: [enable_info_messages], Thread: Worker-3: Enabling info messages in xsct server
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-11-02 15:53:49.674
+!MESSAGE XSCT command with result: [enable_info_messages], Result: [null, ]. Thread: Worker-3: Enabling info messages in xsct server
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-11-02 15:53:50.511
+!MESSAGE XSCT Command: [::hsi::utils::init_repo], Thread: Worker-4: Initializing s/w repositories
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-11-02 15:53:50.794
+!MESSAGE XSCT command with result: [::hsi::utils::init_repo], Result: [null, ]. Thread: Worker-4: Initializing s/w repositories
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-11-02 15:53:50.799
+!MESSAGE XSCT Command: [set query_var1 $::env(RDI_DATADIR)], Thread: Worker-4: Initializing s/w repositories
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-11-02 15:53:50.806
+!MESSAGE XSCT command with result: [set query_var1 $::env(RDI_DATADIR)], Result: [null, C:/Xilinx/Vitis/2019.2/data]. Thread: Worker-4: Initializing s/w repositories
+
+!ENTRY org.eclipse.egit.ui 2 0 2020-11-02 15:53:50.981
+!MESSAGE Warning: The environment variable HOME is not set. The following directory will be used to store the Git
+user global configuration and to define the default location to store repositories: 'C:\Users\fpga'. If this is
+not correct please set the HOME environment variable and restart Eclipse. Otherwise Git for Windows and
+EGit might behave differently since they see different configuration options.
+This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.
+
+!ENTRY org.eclipse.cdt.ui 4 0 2020-11-02 15:54:02.440
+!MESSAGE Error in CDT UI during reconcile
+!STACK 1
+C Model Exception: C Model Status [Element udp_perf_client.c does not exist.]
+	at org.eclipse.cdt.internal.core.model.CElement.newNotPresentException(CElement.java:484)
+	at org.eclipse.cdt.internal.core.model.TranslationUnit.makeConsistent(TranslationUnit.java:580)
+	at org.eclipse.cdt.internal.core.model.ReconcileWorkingCopyOperation.executeOperation(ReconcileWorkingCopyOperation.java:62)
+	at org.eclipse.cdt.internal.core.model.CModelOperation.execute(CModelOperation.java:341)
+	at org.eclipse.cdt.internal.core.model.CModelOperation.run(CModelOperation.java:607)
+	at org.eclipse.cdt.internal.core.model.CModelOperation.runOperation(CModelOperation.java:635)
+	at org.eclipse.cdt.internal.core.model.WorkingCopy.reconcile(WorkingCopy.java:362)
+	at org.eclipse.cdt.internal.ui.text.CReconcilingStrategy.reconcile(CReconcilingStrategy.java:78)
+	at org.eclipse.cdt.internal.ui.text.CReconcilingStrategy.initialReconcile(CReconcilingStrategy.java:122)
+	at org.eclipse.cdt.internal.ui.text.CompositeReconcilingStrategy.initialReconcile(CompositeReconcilingStrategy.java:117)
+	at org.eclipse.cdt.internal.ui.text.CCompositeReconcilingStrategy.initialReconcile(CCompositeReconcilingStrategy.java:108)
+	at org.eclipse.jface.text.reconciler.MonoReconciler.initialProcess(MonoReconciler.java:95)
+	at org.eclipse.cdt.internal.ui.text.CReconciler.initialProcess(CReconciler.java:338)
+	at org.eclipse.jface.text.reconciler.AbstractReconciler$BackgroundThread.run(AbstractReconciler.java:174)
+!SUBENTRY 1 org.eclipse.cdt.core 4 969 2020-11-02 15:54:02.440
+!MESSAGE Element udp_perf_client.c does not exist.
