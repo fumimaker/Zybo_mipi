@@ -238,7 +238,7 @@ void transfer_data(void)
 		// HD‚Ìê‡‚Í1436byte*1926(0-1925)‰ñ–Ú‚Å500byte—]‚éŒvZ‚É‚È‚éB
 		if ( (SIZE_OF_FRAME - ptrCounter) < ( DATA_SIZE ) ) {
 			udp_packet_send(FINISH);
-			xil_printf("finished 0x%x\n\r", frame_pointer);
+			//xil_printf("finished 0x%x\n\r", frame_pointer);
 			sendFinished = true;
 			//u64_t diff_ms = now - client.start_time;
 			//udp_conn_report(diff_ms, INTER_REPORT);
@@ -251,7 +251,6 @@ void transfer_data(void)
 		ptrCounter += UDP_SEND_BUFSIZE-sizeof(int);//+=1436byte
 	}
 }
-\
 
 void start_application(void)
 {
