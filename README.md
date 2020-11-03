@@ -200,4 +200,13 @@ http://thuruthurutoru.hatenablog.com/entry/2015/11/01/125023
   - いや、でも最速でやったほうが良い気がする。同期的な問題は発生しそう。
   - 常に割り込みで書かれたアドレスを使う方式がよさそう。
 - `sendFinished`は
+  - `udp_packet_send(FINISH)`のしたでTrueにする。
+  - 割り込みでアドレスが更新されたタイミングで`sendFinished=false`にしたらよいか
+- `addressUpdate`は
+  - 割り込みのタイミングでTrueにする
+  - Sendの関数に入ったらFalseにする。
+    - つまり一度でもそのアドレスで送信を開始するとFalseになる。
 
+### 謎
+
+720pなのにも関わらず30fpsしか出てない....どうして....
