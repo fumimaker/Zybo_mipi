@@ -12989,3 +12989,55 @@ Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.]. Thread: Worker-14: Launc
 
 !ENTRY com.xilinx.sdk.utils 0 0 2020-11-04 00:13:39.379
 !MESSAGE XSCT command with result: [disconnect tcfchan#3], Result: [null, ]. Thread: Thread-173
+!SESSION 2020-11-04 17:20:56.515 -----------------------------------------------
+eclipse.buildId=2019.2
+java.version=9.0.4
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=ja_JP
+Command-line arguments:  -os win32 -ws win32 -arch x86_64
+
+!ENTRY org.eclipse.emf.ecore 2 0 2020-11-04 17:21:14.567
+!MESSAGE Both 'com.autoesl.autopilot.ui.models' and 'com.autoesl.autopilot.ui.models' register a package for 'com.autoesl.autopilot.solution'
+
+!ENTRY org.eclipse.ui 4 4 2020-11-04 17:21:23.432
+!MESSAGE Conflicting handlers for com.xilinx.sdx.system.core.importSourcesCommand: {com.xilinx.sdx.system.core.handler.ImportSourcesHandler} vs {com.xilinx.sdx.system.core.handler.ImportSourcesHandler}
+
+!ENTRY org.eclipse.ui 4 4 2020-11-04 17:21:23.439
+!MESSAGE Conflicting handlers for com.xilinx.sdx.system.core.importSourcesCommand: {com.xilinx.sdx.system.core.handler.ImportSourcesHandler} vs {com.xilinx.sdx.system.core.handler.ImportSourcesHandler}
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-11-04 17:21:26.300
+!MESSAGE XSCT Command: [plnx-install-path  ; ::scw::scw_mode gui], Thread: Thread-5
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-11-04 17:21:26.305
+!MESSAGE XSCT Command: [set sdk::sdk_chan tcfchan#0], Thread: Thread-15
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-11-04 17:21:26.315
+!MESSAGE XSCT command with result: [plnx-install-path  ; ::scw::scw_mode gui], Result: [null, ]. Thread: Thread-5
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-11-04 17:21:26.320
+!MESSAGE XSCT command with result: [set sdk::sdk_chan tcfchan#0], Result: [null, tcfchan#0]. Thread: Thread-15
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-11-04 17:21:26.325
+!MESSAGE XSCT Command: [setws C:/Github/Zybo_mipi/Pcam2019_send/Vitis], Thread: Thread-15
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-11-04 17:21:26.335
+!MESSAGE XSCT command with result: [setws C:/Github/Zybo_mipi/Pcam2019_send/Vitis], Result: [null, ]. Thread: Thread-15
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-11-04 17:21:26.570
+!MESSAGE XSCT Command: [::hsi::utils::init_repo], Thread: Worker-2: Initializing s/w repositories
+
+!ENTRY org.eclipse.egit.ui 2 0 2020-11-04 17:21:27.554
+!MESSAGE Warning: The environment variable HOME is not set. The following directory will be used to store the Git
+user global configuration and to define the default location to store repositories: 'C:\Users\fpga'. If this is
+not correct please set the HOME environment variable and restart Eclipse. Otherwise Git for Windows and
+EGit might behave differently since they see different configuration options.
+This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-11-04 17:21:29.900
+!MESSAGE XSCT command with result: [::hsi::utils::init_repo], Result: [null, ]. Thread: Worker-2: Initializing s/w repositories
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-11-04 17:21:29.905
+!MESSAGE XSCT Command: [set query_var1 $::env(RDI_DATADIR)], Thread: Worker-2: Initializing s/w repositories
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-11-04 17:21:29.911
+!MESSAGE XSCT command with result: [set query_var1 $::env(RDI_DATADIR)], Result: [null, C:/Xilinx/Vitis/2019.2/data]. Thread: Worker-2: Initializing s/w repositories
