@@ -654,7 +654,7 @@ config_word_t const cfg_1080p_30fps_336M_1lane_mipi_[] =
 		{0x5001, 0x03},
 
 		//Todo fumi edit
-		//{0x503D, 0x80} //enable
+		{0x503D, 0x80} //enable
 
 	};
 	config_modes_t const modes[] =
