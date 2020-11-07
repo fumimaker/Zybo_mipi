@@ -1,9 +1,38 @@
-02:48:10 **** Incremental Build of configuration Debug for project Pcam2019_send_app ****
+03:16:57 **** Incremental Build of configuration Debug for project Pcam2019_send_app ****
 make all 
 make --no-print-directory pre-build
 a9-linaro-pre-build-step
 ' '
 make --no-print-directory main-build
+'Building file: ../src/main.cc'
+'Invoking: ARM v7 g++ compiler'
+arm-none-eabi-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -IC:/Github/Zybo_mipi/Pcam2019_send/Vitis/Pcam2019_send/export/Pcam2019_send/sw/Pcam2019_send/standalone_domain/bspinclude/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.cc"
+In file included from ../src/ov5640/TIMER.h:10,
+                 from ../src/main.cc:8:
+C:/Github/Zybo_mipi/Pcam2019_send/Vitis/Pcam2019_send/export/Pcam2019_send/sw/Pcam2019_send/standalone_domain/bspinclude/include/xtime_l.h:85:70: note: #pragma message: For the sleep routines, Global timer is being used
+ #pragma message ("For the sleep routines, Global timer is being used")
+                                                                      ^
+'Finished building: ../src/main.cc'
+' '
+'Building file: ../src/udp_main.c'
+'Invoking: ARM v7 g++ compiler'
+arm-none-eabi-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/udp_main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -IC:/Github/Zybo_mipi/Pcam2019_send/Vitis/Pcam2019_send/export/Pcam2019_send/sw/Pcam2019_send/standalone_domain/bspinclude/include -MMD -MP -MF"src/udp_main.d" -MT"src/udp_main.o" -o "src/udp_main.o" "../src/udp_main.c"
+../src/udp_main.c: In function 'void print_ip_settings(ip_addr_t*, ip_addr_t*, ip_addr_t*)':
+../src/udp_main.c:62:33: warning: ISO C++ forbids converting a string constant to 'char*' [-Wwrite-strings]
+  print_ip("Board IP:       ", ip);
+                                 ^
+../src/udp_main.c:63:35: warning: ISO C++ forbids converting a string constant to 'char*' [-Wwrite-strings]
+  print_ip("Netmask :       ", mask);
+                                   ^
+../src/udp_main.c:64:33: warning: ISO C++ forbids converting a string constant to 'char*' [-Wwrite-strings]
+  print_ip("Gateway :       ", gw);
+                                 ^
+../src/udp_main.c: In function 'int udp_loop()':
+../src/udp_main.c:179:1: warning: no return statement in function returning non-void [-Wreturn-type]
+ }
+ ^
+'Finished building: ../src/udp_main.c'
+' '
 'Building file: ../src/udp_perf_client.c'
 'Invoking: ARM v7 g++ compiler'
 arm-none-eabi-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/udp_perf_client.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -IC:/Github/Zybo_mipi/Pcam2019_send/Vitis/Pcam2019_send/export/Pcam2019_send/sw/Pcam2019_send/standalone_domain/bspinclude/include -MMD -MP -MF"src/udp_perf_client.d" -MT"src/udp_perf_client.o" -o "src/udp_perf_client.o" "../src/udp_perf_client.c"
@@ -40,5 +69,5 @@ arm-none-eabi-size Pcam2019_send_app.elf  |tee "Pcam2019_send_app.elf.size"
 'Finished building: Pcam2019_send_app.elf.size'
 ' '
 
-02:48:12 Build Finished (took 1s.332ms)
+03:17:00 Build Finished (took 2s.997ms)
 
