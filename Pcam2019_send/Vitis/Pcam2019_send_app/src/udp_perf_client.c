@@ -237,6 +237,7 @@ void transfer_data(void)
 		// １回のサイズに満たない端数になったら端数とFINISH送って終了
 		// HDの場合は1436byte*1926(0-1925)回目で500byte余る計算になる。
 		if ( (SIZE_OF_FRAME - ptrCounter) < ( DATA_SIZE ) ) {
+			//xil_printf("remain %d\n\r", SIZE_OF_FRAME - ptrCounter );
 			udp_packet_send(FINISH);
 			//xil_printf("finished 0x%x\n\r", frame_pointer);
 			sendFinished = true;
