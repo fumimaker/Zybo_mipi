@@ -163,7 +163,7 @@ static void udp_packet_send(u8_t finished)
 
 		/* always increment the id */
 		payload = (int*) (packet->payload);
-		//xil_printf("id: %d\n\r",id);
+		xil_printf("id: %d\n\r",id);
 
 		if (finished == FINISH){ //finish‚Å“ü‚Á‚Ä‚«‚½‚çŠeíI—¹ó‘Ô‚É‚µ‚Ä‚¨‚­
 			//packet_id = -1;
