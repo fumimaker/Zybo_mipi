@@ -12,6 +12,7 @@ unsigned int addressUpdate = false;
 unsigned int sendFinished = false;
 
 u32 frameCounter = 0;
+char *simpleColor = (char *)malloc(sizeof(char) * 1280*720*3);
 
 
 #define FINISH	1
@@ -147,19 +148,26 @@ static void udp_packet_send(u8_t finished)
 			xil_printf("error allocating pbuf to send\r\n");
 			return;
 		} else {
+			id = ptrCounter/(UDP_SEND_BUFSIZE-sizeof(int)); // 1440-4を何回送ったかを計算
 			// frame_pointer+ptrCounterの先頭からBUSIZE-int(1436)分payload+1にコピー
 			//4byte(int)開けて1436byteのデータをコピーする
-			memcpy((int*)packet->payload+1, frame_pointer+ptrCounter, DATA_SIZE);
+			if(finished==FINISH){
+				//xil_printf("id: %d\n\r",id);
+				//xil_printf("finish: %d\n\r",SIZE_OF_FRAME - (id)*(UDP_SEND_BUFSIZE-sizeof(int)));
+				memcpy((int*)packet->payload+1, frame_pointer+ptrCounter, SIZE_OF_FRAME-(id*(UDP_SEND_BUFSIZE-sizeof(int))));
+			}
+			else{
+				memcpy((int*)packet->payload+1, frame_pointer+ptrCounter, DATA_SIZE);
+			}
 		}
 
 		/* always increment the id */
 		payload = (int*) (packet->payload);
-		id = ptrCounter/(UDP_SEND_BUFSIZE-sizeof(int)); // 1440-4を何回送ったかを計算
-		//xil_printf("id: %d\n\r",id);
+		xil_printf("id: %d\n\r",id);
 
 		if (finished == FINISH){ //finishで入ってきたら各種終了状態にしておく
-			packet_id = -1;
-			id = -1;
+			//packet_id = -1;
+			//id = -1;
 		}
 		payload[0] = htonl(id); // 開けておいた4byteに番目を追加
 
@@ -284,6 +292,12 @@ void start_application(void)
 	/* Wait for successful connection */
 	usleep(10);
 	reset_stats();
+
+	xil_printf("\r\n\r\nstart\r\n\r\n");
+
+//	for(u64 i=0; i<1280*720*3; i++){
+//		*(simpleColor+i) = 0xFF;
+//	}
 
 	xil_printf("\r\n\r\nstart_application\r\n\r\n");
 }
