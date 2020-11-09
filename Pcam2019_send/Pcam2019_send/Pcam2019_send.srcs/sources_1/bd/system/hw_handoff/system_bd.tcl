@@ -241,6 +241,7 @@ proc create_root_design { parentCell } {
    CONFIG.c_m_axi_s2mm_data_width {64} \
    CONFIG.c_m_axis_mm2s_tdata_width {24} \
    CONFIG.c_mm2s_linebuffer_depth {1024} \
+   CONFIG.c_num_fstores {2} \
    CONFIG.c_s2mm_genlock_mode {2} \
    CONFIG.c_s2mm_linebuffer_depth {1024} \
  ] $axi_vdma_0

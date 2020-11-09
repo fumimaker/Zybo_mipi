@@ -24,7 +24,7 @@ else
 fi
 export LD_LIBRARY_PATH
 
-HD_PWD='C:/git/Zybo-Z7-20-pcam-5c-2019.1/Zybo-Z7-20-pcam-5c-2019.1/vivado_proj/Zybo-Z7-20-pcam-5c.runs/system_system_ila_0_2_synth_1'
+HD_PWD='C:/Github/Zybo_mipi/Pcam2019_send/Pcam2019_send/Pcam2019_send.runs/system_system_ila_0_2_synth_1'
 cd "$HD_PWD"
 
 HD_LOG=runme.log
