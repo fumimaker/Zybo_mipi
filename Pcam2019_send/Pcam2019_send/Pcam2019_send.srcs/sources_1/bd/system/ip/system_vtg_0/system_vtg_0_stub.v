@@ -1,10 +1,10 @@
 // Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
 // --------------------------------------------------------------------------------
 // Tool Version: Vivado v.2019.2 (win64) Build 2708876 Wed Nov  6 21:40:23 MST 2019
-// Date        : Sat Sep 12 18:11:04 2020
-// Host        : FUMIMAKER6BEE running 64-bit major release  (build 9200)
-// Command     : write_verilog -force -mode synth_stub -rename_top system_vtg_0 -prefix
-//               system_vtg_0_ system_vtg_0_stub.v
+// Date        : Tue Nov 10 15:05:27 2020
+// Host        : DESKTOP-5VC2SBS running 64-bit major release  (build 9200)
+// Command     : write_verilog -force -mode synth_stub
+//               C:/Github/Zybo_mipi/Pcam2019_send/Pcam2019_send/Pcam2019_send.srcs/sources_1/bd/system/ip/system_vtg_0/system_vtg_0_stub.v
 // Design      : system_vtg_0
 // Purpose     : Stub declaration of top-level module interface
 // Device      : xc7z020clg400-1

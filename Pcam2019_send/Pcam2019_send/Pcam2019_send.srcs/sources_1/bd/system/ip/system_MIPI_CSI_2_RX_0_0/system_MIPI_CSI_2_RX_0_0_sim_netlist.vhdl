@@ -1,10 +1,10 @@
 -- Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
 -- --------------------------------------------------------------------------------
 -- Tool Version: Vivado v.2019.2 (win64) Build 2708876 Wed Nov  6 21:40:23 MST 2019
--- Date        : Sat Sep 12 18:09:47 2020
--- Host        : FUMIMAKER6BEE running 64-bit major release  (build 9200)
--- Command     : write_vhdl -force -mode funcsim -rename_top system_MIPI_CSI_2_RX_0_0 -prefix
---               system_MIPI_CSI_2_RX_0_0_ system_MIPI_CSI_2_RX_0_0_sim_netlist.vhdl
+-- Date        : Tue Nov 10 15:04:59 2020
+-- Host        : DESKTOP-5VC2SBS running 64-bit major release  (build 9200)
+-- Command     : write_vhdl -force -mode funcsim
+--               C:/Github/Zybo_mipi/Pcam2019_send/Pcam2019_send/Pcam2019_send.srcs/sources_1/bd/system/ip/system_MIPI_CSI_2_RX_0_0/system_MIPI_CSI_2_RX_0_0_sim_netlist.vhdl
 -- Design      : system_MIPI_CSI_2_RX_0_0
 -- Purpose     : This VHDL netlist is a functional simulation representation of the design and should not be modified or
 --               synthesized. This netlist cannot be used for SDF annotated simulation.
@@ -62,6 +62,8 @@ entity system_MIPI_CSI_2_RX_0_0_ECC is
     \mWordCount_reg[3]_2\ : in STD_LOGIC;
     D : in STD_LOGIC_VECTOR ( 29 downto 0 )
   );
+  attribute ORIG_REF_NAME : string;
+  attribute ORIG_REF_NAME of system_MIPI_CSI_2_RX_0_0_ECC : entity is "ECC";
 end system_MIPI_CSI_2_RX_0_0_ECC;
 
 architecture STRUCTURE of system_MIPI_CSI_2_RX_0_0_ECC is
@@ -1861,6 +1863,8 @@ entity system_MIPI_CSI_2_RX_0_0_MIPI_CSI_2_RX_S_AXI_LITE is
     s_axi_lite_wdata : in STD_LOGIC_VECTOR ( 31 downto 0 );
     s_axi_lite_wstrb : in STD_LOGIC_VECTOR ( 3 downto 0 )
   );
+  attribute ORIG_REF_NAME : string;
+  attribute ORIG_REF_NAME of system_MIPI_CSI_2_RX_0_0_MIPI_CSI_2_RX_S_AXI_LITE : entity is "MIPI_CSI_2_RX_S_AXI_LITE";
 end system_MIPI_CSI_2_RX_0_0_MIPI_CSI_2_RX_S_AXI_LITE;
 
 architecture STRUCTURE of system_MIPI_CSI_2_RX_0_0_MIPI_CSI_2_RX_S_AXI_LITE is
@@ -3072,6 +3076,8 @@ entity system_MIPI_CSI_2_RX_0_0_SimpleFIFO is
     rbMAxisTvalidInt_reg_2 : in STD_LOGIC;
     iDataIn : in STD_LOGIC_VECTOR ( 10 downto 0 )
   );
+  attribute ORIG_REF_NAME : string;
+  attribute ORIG_REF_NAME of system_MIPI_CSI_2_RX_0_0_SimpleFIFO : entity is "SimpleFIFO";
 end system_MIPI_CSI_2_RX_0_0_SimpleFIFO;
 
 architecture STRUCTURE of system_MIPI_CSI_2_RX_0_0_SimpleFIFO is
@@ -4190,6 +4196,8 @@ entity system_MIPI_CSI_2_RX_0_0_SyncAsync is
     rbRst : in STD_LOGIC;
     D : in STD_LOGIC_VECTOR ( 0 to 0 )
   );
+  attribute ORIG_REF_NAME : string;
+  attribute ORIG_REF_NAME of system_MIPI_CSI_2_RX_0_0_SyncAsync : entity is "SyncAsync";
 end system_MIPI_CSI_2_RX_0_0_SyncAsync;
 
 architecture STRUCTURE of system_MIPI_CSI_2_RX_0_0_SyncAsync is
@@ -4732,6 +4740,8 @@ entity system_MIPI_CSI_2_RX_0_0_xpm_cdc_async_rst is
   attribute INIT_SYNC_FF of system_MIPI_CSI_2_RX_0_0_xpm_cdc_async_rst : entity is 0;
   attribute INV_DEF_VAL : string;
   attribute INV_DEF_VAL of system_MIPI_CSI_2_RX_0_0_xpm_cdc_async_rst : entity is "1'b1";
+  attribute ORIG_REF_NAME : string;
+  attribute ORIG_REF_NAME of system_MIPI_CSI_2_RX_0_0_xpm_cdc_async_rst : entity is "xpm_cdc_async_rst";
   attribute RST_ACTIVE_HIGH : integer;
   attribute RST_ACTIVE_HIGH of system_MIPI_CSI_2_RX_0_0_xpm_cdc_async_rst : entity is 1;
   attribute VERSION : integer;
@@ -4867,6 +4877,8 @@ entity system_MIPI_CSI_2_RX_0_0_xpm_cdc_gray is
   attribute DEST_SYNC_FF of system_MIPI_CSI_2_RX_0_0_xpm_cdc_gray : entity is 2;
   attribute INIT_SYNC_FF : integer;
   attribute INIT_SYNC_FF of system_MIPI_CSI_2_RX_0_0_xpm_cdc_gray : entity is 0;
+  attribute ORIG_REF_NAME : string;
+  attribute ORIG_REF_NAME of system_MIPI_CSI_2_RX_0_0_xpm_cdc_gray : entity is "xpm_cdc_gray";
   attribute REG_OUTPUT : integer;
   attribute REG_OUTPUT of system_MIPI_CSI_2_RX_0_0_xpm_cdc_gray : entity is 1;
   attribute SIM_ASSERT_CHK : integer;
@@ -5513,6 +5525,8 @@ entity system_MIPI_CSI_2_RX_0_0_xpm_cdc_single is
   attribute DEST_SYNC_FF of system_MIPI_CSI_2_RX_0_0_xpm_cdc_single : entity is 4;
   attribute INIT_SYNC_FF : integer;
   attribute INIT_SYNC_FF of system_MIPI_CSI_2_RX_0_0_xpm_cdc_single : entity is 0;
+  attribute ORIG_REF_NAME : string;
+  attribute ORIG_REF_NAME of system_MIPI_CSI_2_RX_0_0_xpm_cdc_single : entity is "xpm_cdc_single";
   attribute SIM_ASSERT_CHK : integer;
   attribute SIM_ASSERT_CHK of system_MIPI_CSI_2_RX_0_0_xpm_cdc_single : entity is 0;
   attribute SRC_INPUT_REG : integer;
@@ -5684,6 +5698,8 @@ entity system_MIPI_CSI_2_RX_0_0_xpm_cdc_sync_rst is
   attribute INIT of system_MIPI_CSI_2_RX_0_0_xpm_cdc_sync_rst : entity is "0";
   attribute INIT_SYNC_FF : integer;
   attribute INIT_SYNC_FF of system_MIPI_CSI_2_RX_0_0_xpm_cdc_sync_rst : entity is 1;
+  attribute ORIG_REF_NAME : string;
+  attribute ORIG_REF_NAME of system_MIPI_CSI_2_RX_0_0_xpm_cdc_sync_rst : entity is "xpm_cdc_sync_rst";
   attribute SIM_ASSERT_CHK : integer;
   attribute SIM_ASSERT_CHK of system_MIPI_CSI_2_RX_0_0_xpm_cdc_sync_rst : entity is 0;
   attribute VERSION : integer;
@@ -5779,6 +5795,8 @@ entity system_MIPI_CSI_2_RX_0_0_xpm_counter_updn is
     \count_value_i_reg[0]_1\ : in STD_LOGIC_VECTOR ( 0 to 0 );
     wr_clk : in STD_LOGIC
   );
+  attribute ORIG_REF_NAME : string;
+  attribute ORIG_REF_NAME of system_MIPI_CSI_2_RX_0_0_xpm_counter_updn : entity is "xpm_counter_updn";
 end system_MIPI_CSI_2_RX_0_0_xpm_counter_updn;
 
 architecture STRUCTURE of system_MIPI_CSI_2_RX_0_0_xpm_counter_updn is
@@ -7366,6 +7384,8 @@ entity system_MIPI_CSI_2_RX_0_0_xpm_fifo_reg_bit is
     \count_value_i_reg[3]_0\ : in STD_LOGIC_VECTOR ( 0 to 0 );
     \count_value_i_reg[3]_1\ : in STD_LOGIC_VECTOR ( 0 to 0 )
   );
+  attribute ORIG_REF_NAME : string;
+  attribute ORIG_REF_NAME of system_MIPI_CSI_2_RX_0_0_xpm_fifo_reg_bit : entity is "xpm_fifo_reg_bit";
 end system_MIPI_CSI_2_RX_0_0_xpm_fifo_reg_bit;
 
 architecture STRUCTURE of system_MIPI_CSI_2_RX_0_0_xpm_fifo_reg_bit is
@@ -7434,6 +7454,8 @@ entity system_MIPI_CSI_2_RX_0_0_xpm_fifo_rst is
     \grdc.rd_data_count_i_reg[0]\ : in STD_LOGIC_VECTOR ( 1 downto 0 );
     wr_clk : in STD_LOGIC
   );
+  attribute ORIG_REF_NAME : string;
+  attribute ORIG_REF_NAME of system_MIPI_CSI_2_RX_0_0_xpm_fifo_rst : entity is "xpm_fifo_rst";
 end system_MIPI_CSI_2_RX_0_0_xpm_fifo_rst;
 
 architecture STRUCTURE of system_MIPI_CSI_2_RX_0_0_xpm_fifo_rst is
@@ -7596,6 +7618,8 @@ entity system_MIPI_CSI_2_RX_0_0_xpm_memory_base is
   attribute MESSAGE_CONTROL of system_MIPI_CSI_2_RX_0_0_xpm_memory_base : entity is 0;
   attribute NUM_CHAR_LOC : integer;
   attribute NUM_CHAR_LOC of system_MIPI_CSI_2_RX_0_0_xpm_memory_base : entity is 0;
+  attribute ORIG_REF_NAME : string;
+  attribute ORIG_REF_NAME of system_MIPI_CSI_2_RX_0_0_xpm_memory_base : entity is "xpm_memory_base";
   attribute P_ECC_MODE : string;
   attribute P_ECC_MODE of system_MIPI_CSI_2_RX_0_0_xpm_memory_base : entity is "no_ecc";
   attribute P_ENABLE_BYTE_WRITE_A : integer;
@@ -8458,6 +8482,8 @@ entity system_MIPI_CSI_2_RX_0_0_fifo_generator_v13_2_5_dmem is
     \gpr1.dout_i_reg[0]_0\ : in STD_LOGIC_VECTOR ( 0 to 0 );
     m_aclk : in STD_LOGIC
   );
+  attribute ORIG_REF_NAME : string;
+  attribute ORIG_REF_NAME of system_MIPI_CSI_2_RX_0_0_fifo_generator_v13_2_5_dmem : entity is "fifo_generator_v13_2_5_dmem";
 end system_MIPI_CSI_2_RX_0_0_fifo_generator_v13_2_5_dmem;
 
 architecture STRUCTURE of system_MIPI_CSI_2_RX_0_0_fifo_generator_v13_2_5_dmem is
@@ -9080,6 +9106,8 @@ entity system_MIPI_CSI_2_RX_0_0_fifo_generator_v13_2_5_rd_bin_cntr is
     m_aclk : in STD_LOGIC;
     \gc0.count_d1_reg[4]_1\ : in STD_LOGIC
   );
+  attribute ORIG_REF_NAME : string;
+  attribute ORIG_REF_NAME of system_MIPI_CSI_2_RX_0_0_fifo_generator_v13_2_5_rd_bin_cntr : entity is "fifo_generator_v13_2_5_rd_bin_cntr";
 end system_MIPI_CSI_2_RX_0_0_fifo_generator_v13_2_5_rd_bin_cntr;
 
 architecture STRUCTURE of system_MIPI_CSI_2_RX_0_0_fifo_generator_v13_2_5_rd_bin_cntr is
@@ -9283,6 +9311,8 @@ entity system_MIPI_CSI_2_RX_0_0_fifo_generator_v13_2_5_rd_fwft is
     WR_PNTR_RD : in STD_LOGIC_VECTOR ( 0 to 0 );
     Q : in STD_LOGIC_VECTOR ( 0 to 0 )
   );
+  attribute ORIG_REF_NAME : string;
+  attribute ORIG_REF_NAME of system_MIPI_CSI_2_RX_0_0_fifo_generator_v13_2_5_rd_fwft : entity is "fifo_generator_v13_2_5_rd_fwft";
 end system_MIPI_CSI_2_RX_0_0_fifo_generator_v13_2_5_rd_fwft;
 
 architecture STRUCTURE of system_MIPI_CSI_2_RX_0_0_fifo_generator_v13_2_5_rd_fwft is
@@ -9530,6 +9560,8 @@ entity system_MIPI_CSI_2_RX_0_0_fifo_generator_v13_2_5_rd_status_flags_as is
     m_aclk : in STD_LOGIC;
     ram_empty_i_reg_0 : in STD_LOGIC
   );
+  attribute ORIG_REF_NAME : string;
+  attribute ORIG_REF_NAME of system_MIPI_CSI_2_RX_0_0_fifo_generator_v13_2_5_rd_status_flags_as : entity is "fifo_generator_v13_2_5_rd_status_flags_as";
 end system_MIPI_CSI_2_RX_0_0_fifo_generator_v13_2_5_rd_status_flags_as;
 
 architecture STRUCTURE of system_MIPI_CSI_2_RX_0_0_fifo_generator_v13_2_5_rd_status_flags_as is
@@ -9589,6 +9621,8 @@ entity system_MIPI_CSI_2_RX_0_0_fifo_generator_v13_2_5_wr_bin_cntr is
     s_aclk : in STD_LOGIC;
     AR : in STD_LOGIC_VECTOR ( 0 to 0 )
   );
+  attribute ORIG_REF_NAME : string;
+  attribute ORIG_REF_NAME of system_MIPI_CSI_2_RX_0_0_fifo_generator_v13_2_5_wr_bin_cntr : entity is "fifo_generator_v13_2_5_wr_bin_cntr";
 end system_MIPI_CSI_2_RX_0_0_fifo_generator_v13_2_5_wr_bin_cntr;
 
 architecture STRUCTURE of system_MIPI_CSI_2_RX_0_0_fifo_generator_v13_2_5_wr_bin_cntr is
@@ -9875,6 +9909,8 @@ entity system_MIPI_CSI_2_RX_0_0_fifo_generator_v13_2_5_wr_status_flags_as is
     \out\ : in STD_LOGIC;
     s_axis_tvalid : in STD_LOGIC
   );
+  attribute ORIG_REF_NAME : string;
+  attribute ORIG_REF_NAME of system_MIPI_CSI_2_RX_0_0_fifo_generator_v13_2_5_wr_status_flags_as : entity is "fifo_generator_v13_2_5_wr_status_flags_as";
 end system_MIPI_CSI_2_RX_0_0_fifo_generator_v13_2_5_wr_status_flags_as;
 
 architecture STRUCTURE of system_MIPI_CSI_2_RX_0_0_fifo_generator_v13_2_5_wr_status_flags_as is
@@ -9950,6 +9986,8 @@ entity system_MIPI_CSI_2_RX_0_0_LM is
     iDataIn : in STD_LOGIC_VECTOR ( 10 downto 0 );
     I62 : in STD_LOGIC_VECTOR ( 10 downto 0 )
   );
+  attribute ORIG_REF_NAME : string;
+  attribute ORIG_REF_NAME of system_MIPI_CSI_2_RX_0_0_LM : entity is "LM";
 end system_MIPI_CSI_2_RX_0_0_LM;
 
 architecture STRUCTURE of system_MIPI_CSI_2_RX_0_0_LM is
@@ -10835,6 +10873,8 @@ entity system_MIPI_CSI_2_RX_0_0_ResetBridge is
     RxByteClkHS : in STD_LOGIC;
     \oSyncStages_reg[0]\ : in STD_LOGIC
   );
+  attribute ORIG_REF_NAME : string;
+  attribute ORIG_REF_NAME of system_MIPI_CSI_2_RX_0_0_ResetBridge : entity is "ResetBridge";
 end system_MIPI_CSI_2_RX_0_0_ResetBridge;
 
 architecture STRUCTURE of system_MIPI_CSI_2_RX_0_0_ResetBridge is
@@ -11052,6 +11092,8 @@ entity system_MIPI_CSI_2_RX_0_0_xpm_fifo_base is
   attribute FULL_RESET_VALUE of system_MIPI_CSI_2_RX_0_0_xpm_fifo_base : entity is 1;
   attribute FULL_RST_VAL : string;
   attribute FULL_RST_VAL of system_MIPI_CSI_2_RX_0_0_xpm_fifo_base : entity is "1'b1";
+  attribute ORIG_REF_NAME : string;
+  attribute ORIG_REF_NAME of system_MIPI_CSI_2_RX_0_0_xpm_fifo_base : entity is "xpm_fifo_base";
   attribute PE_THRESH_ADJ : integer;
   attribute PE_THRESH_ADJ of system_MIPI_CSI_2_RX_0_0_xpm_fifo_base : entity is 3;
   attribute PE_THRESH_MAX : integer;
@@ -11901,6 +11943,8 @@ entity system_MIPI_CSI_2_RX_0_0_fifo_generator_v13_2_5_clk_x_pntrs is
     \src_gray_ff_reg[4]_0\ : in STD_LOGIC_VECTOR ( 4 downto 0 );
     m_aclk : in STD_LOGIC
   );
+  attribute ORIG_REF_NAME : string;
+  attribute ORIG_REF_NAME of system_MIPI_CSI_2_RX_0_0_fifo_generator_v13_2_5_clk_x_pntrs : entity is "fifo_generator_v13_2_5_clk_x_pntrs";
 end system_MIPI_CSI_2_RX_0_0_fifo_generator_v13_2_5_clk_x_pntrs;
 
 architecture STRUCTURE of system_MIPI_CSI_2_RX_0_0_fifo_generator_v13_2_5_clk_x_pntrs is
@@ -12032,6 +12076,8 @@ entity system_MIPI_CSI_2_RX_0_0_fifo_generator_v13_2_5_memory is
     \gpr1.dout_i_reg[1]_1\ : in STD_LOGIC_VECTOR ( 4 downto 0 );
     \gpr1.dout_i_reg[0]\ : in STD_LOGIC_VECTOR ( 0 to 0 )
   );
+  attribute ORIG_REF_NAME : string;
+  attribute ORIG_REF_NAME of system_MIPI_CSI_2_RX_0_0_fifo_generator_v13_2_5_memory : entity is "fifo_generator_v13_2_5_memory";
 end system_MIPI_CSI_2_RX_0_0_fifo_generator_v13_2_5_memory;
 
 architecture STRUCTURE of system_MIPI_CSI_2_RX_0_0_fifo_generator_v13_2_5_memory is
@@ -12547,6 +12593,8 @@ entity system_MIPI_CSI_2_RX_0_0_fifo_generator_v13_2_5_rd_logic is
     m_axis_tready : in STD_LOGIC;
     WR_PNTR_RD : in STD_LOGIC_VECTOR ( 1 downto 0 )
   );
+  attribute ORIG_REF_NAME : string;
+  attribute ORIG_REF_NAME of system_MIPI_CSI_2_RX_0_0_fifo_generator_v13_2_5_rd_logic : entity is "fifo_generator_v13_2_5_rd_logic";
 end system_MIPI_CSI_2_RX_0_0_fifo_generator_v13_2_5_rd_logic;
 
 architecture STRUCTURE of system_MIPI_CSI_2_RX_0_0_fifo_generator_v13_2_5_rd_logic is
@@ -12602,6 +12650,8 @@ entity system_MIPI_CSI_2_RX_0_0_fifo_generator_v13_2_5_reset_blk_ramfifo is
     m_aclk : in STD_LOGIC;
     s_aresetn : in STD_LOGIC
   );
+  attribute ORIG_REF_NAME : string;
+  attribute ORIG_REF_NAME of system_MIPI_CSI_2_RX_0_0_fifo_generator_v13_2_5_reset_blk_ramfifo : entity is "fifo_generator_v13_2_5_reset_blk_ramfifo";
 end system_MIPI_CSI_2_RX_0_0_fifo_generator_v13_2_5_reset_blk_ramfifo;
 
 architecture STRUCTURE of system_MIPI_CSI_2_RX_0_0_fifo_generator_v13_2_5_reset_blk_ramfifo is
@@ -13043,6 +13093,8 @@ entity system_MIPI_CSI_2_RX_0_0_fifo_generator_v13_2_5_wr_logic is
     RD_PNTR_WR : in STD_LOGIC_VECTOR ( 2 downto 0 );
     AR : in STD_LOGIC_VECTOR ( 0 to 0 )
   );
+  attribute ORIG_REF_NAME : string;
+  attribute ORIG_REF_NAME of system_MIPI_CSI_2_RX_0_0_fifo_generator_v13_2_5_wr_logic : entity is "fifo_generator_v13_2_5_wr_logic";
 end system_MIPI_CSI_2_RX_0_0_fifo_generator_v13_2_5_wr_logic;
 
 architecture STRUCTURE of system_MIPI_CSI_2_RX_0_0_fifo_generator_v13_2_5_wr_logic is
@@ -13140,6 +13192,8 @@ entity system_MIPI_CSI_2_RX_0_0_xpm_fifo_axis is
   attribute FIFO_MEMORY_TYPE of system_MIPI_CSI_2_RX_0_0_xpm_fifo_axis : entity is "auto";
   attribute LOG_DEPTH_AXIS : integer;
   attribute LOG_DEPTH_AXIS of system_MIPI_CSI_2_RX_0_0_xpm_fifo_axis : entity is 11;
+  attribute ORIG_REF_NAME : string;
+  attribute ORIG_REF_NAME of system_MIPI_CSI_2_RX_0_0_xpm_fifo_axis : entity is "xpm_fifo_axis";
   attribute PACKET_FIFO : string;
   attribute PACKET_FIFO of system_MIPI_CSI_2_RX_0_0_xpm_fifo_axis : entity is "false";
   attribute PKT_SIZE_LT8 : string;
@@ -13439,6 +13493,8 @@ entity system_MIPI_CSI_2_RX_0_0_fifo_generator_v13_2_5_fifo_generator_ramfifo is
     m_axis_tready : in STD_LOGIC;
     s_aresetn : in STD_LOGIC
   );
+  attribute ORIG_REF_NAME : string;
+  attribute ORIG_REF_NAME of system_MIPI_CSI_2_RX_0_0_fifo_generator_v13_2_5_fifo_generator_ramfifo : entity is "fifo_generator_v13_2_5_fifo_generator_ramfifo";
 end system_MIPI_CSI_2_RX_0_0_fifo_generator_v13_2_5_fifo_generator_ramfifo;
 
 architecture STRUCTURE of system_MIPI_CSI_2_RX_0_0_fifo_generator_v13_2_5_fifo_generator_ramfifo is
@@ -13555,6 +13611,8 @@ entity system_MIPI_CSI_2_RX_0_0_axis_data_fifo_v2_0_2_top is
     s_axis_tuser : in STD_LOGIC_VECTOR ( 0 to 0 );
     m_axis_tready : in STD_LOGIC
   );
+  attribute ORIG_REF_NAME : string;
+  attribute ORIG_REF_NAME of system_MIPI_CSI_2_RX_0_0_axis_data_fifo_v2_0_2_top : entity is "axis_data_fifo_v2_0_2_top";
 end system_MIPI_CSI_2_RX_0_0_axis_data_fifo_v2_0_2_top;
 
 architecture STRUCTURE of system_MIPI_CSI_2_RX_0_0_axis_data_fifo_v2_0_2_top is
@@ -13701,6 +13759,8 @@ entity system_MIPI_CSI_2_RX_0_0_fifo_generator_v13_2_5_fifo_generator_top is
     m_axis_tready : in STD_LOGIC;
     s_aresetn : in STD_LOGIC
   );
+  attribute ORIG_REF_NAME : string;
+  attribute ORIG_REF_NAME of system_MIPI_CSI_2_RX_0_0_fifo_generator_v13_2_5_fifo_generator_top : entity is "fifo_generator_v13_2_5_fifo_generator_top";
 end system_MIPI_CSI_2_RX_0_0_fifo_generator_v13_2_5_fifo_generator_top;
 
 architecture STRUCTURE of system_MIPI_CSI_2_RX_0_0_fifo_generator_v13_2_5_fifo_generator_top is
@@ -13742,6 +13802,8 @@ entity system_MIPI_CSI_2_RX_0_0_line_buffer is
   );
   attribute CHECK_LICENSE_TYPE : string;
   attribute CHECK_LICENSE_TYPE of system_MIPI_CSI_2_RX_0_0_line_buffer : entity is "line_buffer,axis_data_fifo_v2_0_2_top,{}";
+  attribute ORIG_REF_NAME : string;
+  attribute ORIG_REF_NAME of system_MIPI_CSI_2_RX_0_0_line_buffer : entity is "line_buffer";
   attribute downgradeipidentifiedwarnings : string;
   attribute downgradeipidentifiedwarnings of system_MIPI_CSI_2_RX_0_0_line_buffer : entity is "yes";
   attribute x_core_info : string;
@@ -13852,6 +13914,8 @@ entity system_MIPI_CSI_2_RX_0_0_fifo_generator_v13_2_5_synth is
     m_axis_tready : in STD_LOGIC;
     s_aresetn : in STD_LOGIC
   );
+  attribute ORIG_REF_NAME : string;
+  attribute ORIG_REF_NAME of system_MIPI_CSI_2_RX_0_0_fifo_generator_v13_2_5_synth : entity is "fifo_generator_v13_2_5_synth";
 end system_MIPI_CSI_2_RX_0_0_fifo_generator_v13_2_5_synth;
 
 architecture STRUCTURE of system_MIPI_CSI_2_RX_0_0_fifo_generator_v13_2_5_synth is
@@ -14512,6 +14576,8 @@ entity system_MIPI_CSI_2_RX_0_0_fifo_generator_v13_2_5 is
   attribute C_WR_PNTR_WIDTH_WRCH of system_MIPI_CSI_2_RX_0_0_fifo_generator_v13_2_5 : entity is 4;
   attribute C_WR_RESPONSE_LATENCY : integer;
   attribute C_WR_RESPONSE_LATENCY of system_MIPI_CSI_2_RX_0_0_fifo_generator_v13_2_5 : entity is 1;
+  attribute ORIG_REF_NAME : string;
+  attribute ORIG_REF_NAME of system_MIPI_CSI_2_RX_0_0_fifo_generator_v13_2_5 : entity is "fifo_generator_v13_2_5";
 end system_MIPI_CSI_2_RX_0_0_fifo_generator_v13_2_5;
 
 architecture STRUCTURE of system_MIPI_CSI_2_RX_0_0_fifo_generator_v13_2_5 is
@@ -15083,6 +15149,8 @@ entity system_MIPI_CSI_2_RX_0_0_cdc_fifo is
   );
   attribute CHECK_LICENSE_TYPE : string;
   attribute CHECK_LICENSE_TYPE of system_MIPI_CSI_2_RX_0_0_cdc_fifo : entity is "cdc_fifo,fifo_generator_v13_2_5,{}";
+  attribute ORIG_REF_NAME : string;
+  attribute ORIG_REF_NAME of system_MIPI_CSI_2_RX_0_0_cdc_fifo : entity is "cdc_fifo";
   attribute downgradeipidentifiedwarnings : string;
   attribute downgradeipidentifiedwarnings of system_MIPI_CSI_2_RX_0_0_cdc_fifo : entity is "yes";
   attribute x_core_info : string;
@@ -15926,6 +15994,8 @@ entity system_MIPI_CSI_2_RX_0_0_LLP is
     mFmt_Tlast_reg_1 : in STD_LOGIC;
     AS : in STD_LOGIC_VECTOR ( 0 to 0 )
   );
+  attribute ORIG_REF_NAME : string;
+  attribute ORIG_REF_NAME of system_MIPI_CSI_2_RX_0_0_LLP : entity is "LLP";
 end system_MIPI_CSI_2_RX_0_0_LLP;
 
 architecture STRUCTURE of system_MIPI_CSI_2_RX_0_0_LLP is
@@ -18699,6 +18769,8 @@ entity system_MIPI_CSI_2_RX_0_0_MIPI_CSI2_Rx is
     I62 : in STD_LOGIC_VECTOR ( 10 downto 0 );
     m_axis_video_tready : in STD_LOGIC
   );
+  attribute ORIG_REF_NAME : string;
+  attribute ORIG_REF_NAME of system_MIPI_CSI_2_RX_0_0_MIPI_CSI2_Rx : entity is "MIPI_CSI2_Rx";
 end system_MIPI_CSI_2_RX_0_0_MIPI_CSI2_Rx;
 
 architecture STRUCTURE of system_MIPI_CSI_2_RX_0_0_MIPI_CSI2_Rx is
@@ -19026,6 +19098,8 @@ entity system_MIPI_CSI_2_RX_0_0_mipi_csi2_rx_top is
   attribute C_S_AXI_LITE_ADDR_WIDTH of system_MIPI_CSI_2_RX_0_0_mipi_csi2_rx_top : entity is 4;
   attribute C_S_AXI_LITE_DATA_WIDTH : integer;
   attribute C_S_AXI_LITE_DATA_WIDTH of system_MIPI_CSI_2_RX_0_0_mipi_csi2_rx_top : entity is 32;
+  attribute ORIG_REF_NAME : string;
+  attribute ORIG_REF_NAME of system_MIPI_CSI_2_RX_0_0_mipi_csi2_rx_top : entity is "mipi_csi2_rx_top";
   attribute kDebug : string;
   attribute kDebug of system_MIPI_CSI_2_RX_0_0_mipi_csi2_rx_top : entity is "FALSE";
   attribute kGenerateAXIL : string;

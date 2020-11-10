@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<GenRun Id="synth_1" LaunchPart="xc7z020clg400-1" LaunchTime="1604946810">
+<GenRun Id="synth_1" LaunchPart="xc7z020clg400-1" LaunchTime="1605007711">
   <File Type="PA-TCL" Name="system_wrapper.tcl"/>
   <File Type="RDS-PROPCONSTRS" Name="system_wrapper_drc_synth.rpt"/>
   <File Type="REPORTS-TCL" Name="system_wrapper_reports.tcl"/>
@@ -107,10 +107,19 @@
       <Option Id="FsmExtraction">0</Option>
     </Step>
   </Strategy>
-  <BlockFileSet Type="BlockSrcs" Name="system_auto_pc_1"/>
+  <BlockFileSet Type="BlockSrcs" Name="system_v_axi4s_vid_out_0_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="system_MIPI_D_PHY_RX_0_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="system_AXI_BayerToRGB_1_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="system_AXI_GammaCorrection_0_0"/>
   <BlockFileSet Type="BlockSrcs" Name="system_DVIClocking_0_0"/>
-  <BlockFileSet Type="BlockSrcs" Name="system_system_ila_0_2"/>
-  <BlockFileSet Type="BlockSrcs" Name="system_axi_vdma_0_0"/>
-  <BlockFileSet Type="BlockSrcs" Name="system_auto_pc_0"/>
-  <BlockFileSet Type="BlockSrcs" Name="system_auto_pc_2"/>
+  <BlockFileSet Type="BlockSrcs" Name="system_clk_wiz_0_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="system_MIPI_CSI_2_RX_0_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="system_processing_system7_0_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="system_rgb2dvi_0_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="system_rst_clk_wiz_0_50M_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="system_rst_vid_clk_dyn_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="system_video_dynclk_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="system_vtg_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="system_xbar_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="system_rst_system_150M_0"/>
 </GenRun>

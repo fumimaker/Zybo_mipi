@@ -1,10 +1,10 @@
 // Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
 // --------------------------------------------------------------------------------
 // Tool Version: Vivado v.2019.2 (win64) Build 2708876 Wed Nov  6 21:40:23 MST 2019
-// Date        : Sat Sep 12 18:09:47 2020
-// Host        : FUMIMAKER6BEE running 64-bit major release  (build 9200)
-// Command     : write_verilog -force -mode funcsim -rename_top system_MIPI_CSI_2_RX_0_0 -prefix
-//               system_MIPI_CSI_2_RX_0_0_ system_MIPI_CSI_2_RX_0_0_sim_netlist.v
+// Date        : Tue Nov 10 15:04:59 2020
+// Host        : DESKTOP-5VC2SBS running 64-bit major release  (build 9200)
+// Command     : write_verilog -force -mode funcsim
+//               C:/Github/Zybo_mipi/Pcam2019_send/Pcam2019_send/Pcam2019_send.srcs/sources_1/bd/system/ip/system_MIPI_CSI_2_RX_0_0/system_MIPI_CSI_2_RX_0_0_sim_netlist.v
 // Design      : system_MIPI_CSI_2_RX_0_0
 // Purpose     : This verilog netlist is a functional simulation representation of the design and should not be modified
 //               or synthesized. This netlist cannot be used for SDF annotated simulation.
@@ -12,6 +12,231 @@
 // --------------------------------------------------------------------------------
 `timescale 1 ps / 1 ps
 
+(* CHECK_LICENSE_TYPE = "system_MIPI_CSI_2_RX_0_0,mipi_csi2_rx_top,{}" *) (* downgradeipidentifiedwarnings = "yes" *) (* x_core_info = "mipi_csi2_rx_top,Vivado 2019.2" *) 
+(* NotValidForBitStream *)
+module system_MIPI_CSI_2_RX_0_0
+   (RxByteClkHS,
+    aClkStopstate,
+    aRxClkActiveHS,
+    RxDataHSD0,
+    RxSyncHSD0,
+    RxValidHSD0,
+    RxActiveHSD0,
+    aD0Enable,
+    RxDataHSD1,
+    RxSyncHSD1,
+    RxValidHSD1,
+    RxActiveHSD1,
+    aD1Enable,
+    RxDataHSD2,
+    RxSyncHSD2,
+    RxValidHSD2,
+    RxActiveHSD2,
+    aD2Enable,
+    RxDataHSD3,
+    RxSyncHSD3,
+    RxValidHSD3,
+    RxActiveHSD3,
+    aD3Enable,
+    aClkEnable,
+    m_axis_video_tdata,
+    m_axis_video_tvalid,
+    m_axis_video_tready,
+    m_axis_video_tlast,
+    m_axis_video_tuser,
+    video_aclk,
+    s_axi_lite_awaddr,
+    s_axi_lite_awprot,
+    s_axi_lite_awvalid,
+    s_axi_lite_awready,
+    s_axi_lite_wdata,
+    s_axi_lite_wstrb,
+    s_axi_lite_wvalid,
+    s_axi_lite_wready,
+    s_axi_lite_bresp,
+    s_axi_lite_bvalid,
+    s_axi_lite_bready,
+    s_axi_lite_araddr,
+    s_axi_lite_arprot,
+    s_axi_lite_arvalid,
+    s_axi_lite_arready,
+    s_axi_lite_rdata,
+    s_axi_lite_rresp,
+    s_axi_lite_rvalid,
+    s_axi_lite_rready,
+    s_axi_lite_aclk,
+    s_axi_lite_aresetn);
+  (* x_interface_info = "xilinx.com:signal:clock:1.0 RxByteClkHS CLK" *) (* x_interface_parameter = "XIL_INTERFACENAME RxByteClkHS, ASSOCIATED_BUSIF rx_mipi_ppi, FREQ_HZ 84000000, PHASE 0.000, CLK_DOMAIN system_MIPI_D_PHY_RX_0_0_RxByteClkHS, INSERT_VIP 0" *) input RxByteClkHS;
+  (* x_interface_info = "xilinx.com:interface:rx_mipi_ppi_if:1.0 rx_mipi_ppi CL_STOPSTATE" *) input aClkStopstate;
+  (* x_interface_info = "xilinx.com:interface:rx_mipi_ppi_if:1.0 rx_mipi_ppi CL_RXCLKACTIVEHS" *) input aRxClkActiveHS;
+  (* x_interface_info = "xilinx.com:interface:rx_mipi_ppi_if:1.0 rx_mipi_ppi DL0_RXDATAHS" *) input [7:0]RxDataHSD0;
+  (* x_interface_info = "xilinx.com:interface:rx_mipi_ppi_if:1.0 rx_mipi_ppi DL0_RXSYNCHS" *) input RxSyncHSD0;
+  (* x_interface_info = "xilinx.com:interface:rx_mipi_ppi_if:1.0 rx_mipi_ppi DL0_RXVALIDHS" *) input RxValidHSD0;
+  (* x_interface_info = "xilinx.com:interface:rx_mipi_ppi_if:1.0 rx_mipi_ppi DL0_RXACTIVEHS" *) input RxActiveHSD0;
+  (* x_interface_info = "xilinx.com:interface:rx_mipi_ppi_if:1.0 rx_mipi_ppi DL0_ENABLE" *) output aD0Enable;
+  (* x_interface_info = "xilinx.com:interface:rx_mipi_ppi_if:1.0 rx_mipi_ppi DL1_RXDATAHS" *) input [7:0]RxDataHSD1;
+  (* x_interface_info = "xilinx.com:interface:rx_mipi_ppi_if:1.0 rx_mipi_ppi DL1_RXSYNCHS" *) input RxSyncHSD1;
+  (* x_interface_info = "xilinx.com:interface:rx_mipi_ppi_if:1.0 rx_mipi_ppi DL1_RXVALIDHS" *) input RxValidHSD1;
+  (* x_interface_info = "xilinx.com:interface:rx_mipi_ppi_if:1.0 rx_mipi_ppi DL1_RXACTIVEHS" *) input RxActiveHSD1;
+  (* x_interface_info = "xilinx.com:interface:rx_mipi_ppi_if:1.0 rx_mipi_ppi DL1_ENABLE" *) output aD1Enable;
+  (* x_interface_info = "xilinx.com:interface:rx_mipi_ppi_if:1.0 rx_mipi_ppi DL2_RXDATAHS" *) input [7:0]RxDataHSD2;
+  (* x_interface_info = "xilinx.com:interface:rx_mipi_ppi_if:1.0 rx_mipi_ppi DL2_RXSYNCHS" *) input RxSyncHSD2;
+  (* x_interface_info = "xilinx.com:interface:rx_mipi_ppi_if:1.0 rx_mipi_ppi DL2_RXVALIDHS" *) input RxValidHSD2;
+  (* x_interface_info = "xilinx.com:interface:rx_mipi_ppi_if:1.0 rx_mipi_ppi DL2_RXACTIVEHS" *) input RxActiveHSD2;
+  (* x_interface_info = "xilinx.com:interface:rx_mipi_ppi_if:1.0 rx_mipi_ppi DL2_ENABLE" *) output aD2Enable;
+  (* x_interface_info = "xilinx.com:interface:rx_mipi_ppi_if:1.0 rx_mipi_ppi DL3_RXDATAHS" *) input [7:0]RxDataHSD3;
+  (* x_interface_info = "xilinx.com:interface:rx_mipi_ppi_if:1.0 rx_mipi_ppi DL3_RXSYNCHS" *) input RxSyncHSD3;
+  (* x_interface_info = "xilinx.com:interface:rx_mipi_ppi_if:1.0 rx_mipi_ppi DL3_RXVALIDHS" *) input RxValidHSD3;
+  (* x_interface_info = "xilinx.com:interface:rx_mipi_ppi_if:1.0 rx_mipi_ppi DL3_RXACTIVEHS" *) input RxActiveHSD3;
+  (* x_interface_info = "xilinx.com:interface:rx_mipi_ppi_if:1.0 rx_mipi_ppi DL3_ENABLE" *) output aD3Enable;
+  (* x_interface_info = "xilinx.com:interface:rx_mipi_ppi_if:1.0 rx_mipi_ppi CL_ENABLE" *) output aClkEnable;
+  (* x_interface_info = "xilinx.com:interface:axis:1.0 m_axis_video TDATA" *) (* x_interface_parameter = "XIL_INTERFACENAME m_axis_video, TDATA_NUM_BYTES 5, TDEST_WIDTH 0, TID_WIDTH 0, TUSER_WIDTH 1, HAS_TREADY 1, HAS_TSTRB 0, HAS_TKEEP 0, HAS_TLAST 1, FREQ_HZ 150000000, PHASE 0.0, CLK_DOMAIN system_clk_wiz_0_0_clk_out1, LAYERED_METADATA undef, INSERT_VIP 0" *) output [39:0]m_axis_video_tdata;
+  (* x_interface_info = "xilinx.com:interface:axis:1.0 m_axis_video TVALID" *) output m_axis_video_tvalid;
+  (* x_interface_info = "xilinx.com:interface:axis:1.0 m_axis_video TREADY" *) input m_axis_video_tready;
+  (* x_interface_info = "xilinx.com:interface:axis:1.0 m_axis_video TLAST" *) output m_axis_video_tlast;
+  (* x_interface_info = "xilinx.com:interface:axis:1.0 m_axis_video TUSER" *) output [0:0]m_axis_video_tuser;
+  (* x_interface_info = "xilinx.com:signal:clock:1.0 video_aclk CLK" *) (* x_interface_parameter = "XIL_INTERFACENAME video_aclk, ASSOCIATED_RESET video_aresetn, ASSOCIATED_BUSIF m_axis_video, FREQ_HZ 150000000, PHASE 0.0, CLK_DOMAIN system_clk_wiz_0_0_clk_out1, INSERT_VIP 0" *) input video_aclk;
+  (* x_interface_info = "xilinx.com:interface:aximm:1.0 S_AXI_LITE AWADDR" *) (* x_interface_parameter = "XIL_INTERFACENAME S_AXI_LITE, WIZ_DATA_WIDTH 32, WIZ_NUM_REG 4, SUPPORTS_NARROW_BURST 0, DATA_WIDTH 32, PROTOCOL AXI4LITE, FREQ_HZ 50000000, ID_WIDTH 0, ADDR_WIDTH 4, AWUSER_WIDTH 0, ARUSER_WIDTH 0, WUSER_WIDTH 0, RUSER_WIDTH 0, BUSER_WIDTH 0, READ_WRITE_MODE READ_WRITE, HAS_BURST 0, HAS_LOCK 0, HAS_PROT 1, HAS_CACHE 0, HAS_QOS 0, HAS_REGION 0, HAS_WSTRB 1, HAS_BRESP 1, HAS_RRESP 1, NUM_READ_OUTSTANDING 2, NUM_WRITE_OUTSTANDING 2, MAX_BURST_LENGTH 1, PHASE 0.0, CLK_DOMAIN system_clk_wiz_0_0_clk_out1, NUM_READ_THREADS 1, NUM_WRITE_THREADS 1, RUSER_BITS_PER_BYTE 0, WUSER_BITS_PER_BYTE 0, INSERT_VIP 0" *) input [3:0]s_axi_lite_awaddr;
+  (* x_interface_info = "xilinx.com:interface:aximm:1.0 S_AXI_LITE AWPROT" *) input [2:0]s_axi_lite_awprot;
+  (* x_interface_info = "xilinx.com:interface:aximm:1.0 S_AXI_LITE AWVALID" *) input s_axi_lite_awvalid;
+  (* x_interface_info = "xilinx.com:interface:aximm:1.0 S_AXI_LITE AWREADY" *) output s_axi_lite_awready;
+  (* x_interface_info = "xilinx.com:interface:aximm:1.0 S_AXI_LITE WDATA" *) input [31:0]s_axi_lite_wdata;
+  (* x_interface_info = "xilinx.com:interface:aximm:1.0 S_AXI_LITE WSTRB" *) input [3:0]s_axi_lite_wstrb;
+  (* x_interface_info = "xilinx.com:interface:aximm:1.0 S_AXI_LITE WVALID" *) input s_axi_lite_wvalid;
+  (* x_interface_info = "xilinx.com:interface:aximm:1.0 S_AXI_LITE WREADY" *) output s_axi_lite_wready;
+  (* x_interface_info = "xilinx.com:interface:aximm:1.0 S_AXI_LITE BRESP" *) output [1:0]s_axi_lite_bresp;
+  (* x_interface_info = "xilinx.com:interface:aximm:1.0 S_AXI_LITE BVALID" *) output s_axi_lite_bvalid;
+  (* x_interface_info = "xilinx.com:interface:aximm:1.0 S_AXI_LITE BREADY" *) input s_axi_lite_bready;
+  (* x_interface_info = "xilinx.com:interface:aximm:1.0 S_AXI_LITE ARADDR" *) input [3:0]s_axi_lite_araddr;
+  (* x_interface_info = "xilinx.com:interface:aximm:1.0 S_AXI_LITE ARPROT" *) input [2:0]s_axi_lite_arprot;
+  (* x_interface_info = "xilinx.com:interface:aximm:1.0 S_AXI_LITE ARVALID" *) input s_axi_lite_arvalid;
+  (* x_interface_info = "xilinx.com:interface:aximm:1.0 S_AXI_LITE ARREADY" *) output s_axi_lite_arready;
+  (* x_interface_info = "xilinx.com:interface:aximm:1.0 S_AXI_LITE RDATA" *) output [31:0]s_axi_lite_rdata;
+  (* x_interface_info = "xilinx.com:interface:aximm:1.0 S_AXI_LITE RRESP" *) output [1:0]s_axi_lite_rresp;
+  (* x_interface_info = "xilinx.com:interface:aximm:1.0 S_AXI_LITE RVALID" *) output s_axi_lite_rvalid;
+  (* x_interface_info = "xilinx.com:interface:aximm:1.0 S_AXI_LITE RREADY" *) input s_axi_lite_rready;
+  (* x_interface_info = "xilinx.com:signal:clock:1.0 s_axi_lite_aclk CLK" *) (* x_interface_parameter = "XIL_INTERFACENAME s_axi_lite_aclk, ASSOCIATED_BUSIF S_AXI_LITE, ASSOCIATED_RESET s_axi_lite_aresetn, FREQ_HZ 50000000, PHASE 0.0, CLK_DOMAIN system_clk_wiz_0_0_clk_out1, INSERT_VIP 0" *) input s_axi_lite_aclk;
+  (* x_interface_info = "xilinx.com:signal:reset:1.0 s_axi_lite_aresetn RST" *) (* x_interface_parameter = "XIL_INTERFACENAME s_axi_lite_aresetn, POLARITY ACTIVE_LOW, INSERT_VIP 0" *) input s_axi_lite_aresetn;
+
+  wire RxActiveHSD0;
+  wire RxActiveHSD1;
+  wire RxActiveHSD2;
+  wire RxActiveHSD3;
+  wire RxByteClkHS;
+  wire [7:0]RxDataHSD0;
+  wire [7:0]RxDataHSD1;
+  wire [7:0]RxDataHSD2;
+  wire [7:0]RxDataHSD3;
+  wire RxSyncHSD0;
+  wire RxSyncHSD1;
+  wire RxSyncHSD2;
+  wire RxSyncHSD3;
+  wire RxValidHSD0;
+  wire RxValidHSD1;
+  wire RxValidHSD2;
+  wire RxValidHSD3;
+  wire aClkEnable;
+  wire aClkStopstate;
+  wire aD0Enable;
+  wire aD1Enable;
+  wire aD2Enable;
+  wire aD3Enable;
+  wire aRxClkActiveHS;
+  wire [39:0]m_axis_video_tdata;
+  wire m_axis_video_tlast;
+  wire m_axis_video_tready;
+  wire [0:0]m_axis_video_tuser;
+  wire m_axis_video_tvalid;
+  wire s_axi_lite_aclk;
+  wire [3:0]s_axi_lite_araddr;
+  wire s_axi_lite_aresetn;
+  wire [2:0]s_axi_lite_arprot;
+  wire s_axi_lite_arready;
+  wire s_axi_lite_arvalid;
+  wire [3:0]s_axi_lite_awaddr;
+  wire [2:0]s_axi_lite_awprot;
+  wire s_axi_lite_awready;
+  wire s_axi_lite_awvalid;
+  wire s_axi_lite_bready;
+  wire [1:0]s_axi_lite_bresp;
+  wire s_axi_lite_bvalid;
+  wire [31:0]s_axi_lite_rdata;
+  wire s_axi_lite_rready;
+  wire [1:0]s_axi_lite_rresp;
+  wire s_axi_lite_rvalid;
+  wire [31:0]s_axi_lite_wdata;
+  wire s_axi_lite_wready;
+  wire [3:0]s_axi_lite_wstrb;
+  wire s_axi_lite_wvalid;
+  wire video_aclk;
+
+  (* C_M_AXIS_COMPONENT_WIDTH = "10" *) 
+  (* C_M_AXIS_TDATA_WIDTH = "40" *) 
+  (* C_M_MAX_SAMPLES_PER_CLOCK = "4" *) 
+  (* C_S_AXI_LITE_ADDR_WIDTH = "4" *) 
+  (* C_S_AXI_LITE_DATA_WIDTH = "32" *) 
+  (* kDebug = "FALSE" *) 
+  (* kGenerateAXIL = "TRUE" *) 
+  (* kLaneCount = "2" *) 
+  (* kTargetDT = "RAW10" *) 
+  (* kVersionMajor = "1" *) 
+  (* kVersionMinor = "2" *) 
+  system_MIPI_CSI_2_RX_0_0_mipi_csi2_rx_top U0
+       (.RxActiveHSD0(RxActiveHSD0),
+        .RxActiveHSD1(RxActiveHSD1),
+        .RxActiveHSD2(RxActiveHSD2),
+        .RxActiveHSD3(RxActiveHSD3),
+        .RxByteClkHS(RxByteClkHS),
+        .RxDataHSD0(RxDataHSD0),
+        .RxDataHSD1(RxDataHSD1),
+        .RxDataHSD2(RxDataHSD2),
+        .RxDataHSD3(RxDataHSD3),
+        .RxSyncHSD0(RxSyncHSD0),
+        .RxSyncHSD1(RxSyncHSD1),
+        .RxSyncHSD2(RxSyncHSD2),
+        .RxSyncHSD3(RxSyncHSD3),
+        .RxValidHSD0(RxValidHSD0),
+        .RxValidHSD1(RxValidHSD1),
+        .RxValidHSD2(RxValidHSD2),
+        .RxValidHSD3(RxValidHSD3),
+        .aClkEnable(aClkEnable),
+        .aClkStopstate(aClkStopstate),
+        .aD0Enable(aD0Enable),
+        .aD1Enable(aD1Enable),
+        .aD2Enable(aD2Enable),
+        .aD3Enable(aD3Enable),
+        .aRxClkActiveHS(aRxClkActiveHS),
+        .m_axis_video_tdata(m_axis_video_tdata),
+        .m_axis_video_tlast(m_axis_video_tlast),
+        .m_axis_video_tready(m_axis_video_tready),
+        .m_axis_video_tuser(m_axis_video_tuser),
+        .m_axis_video_tvalid(m_axis_video_tvalid),
+        .s_axi_lite_aclk(s_axi_lite_aclk),
+        .s_axi_lite_araddr(s_axi_lite_araddr),
+        .s_axi_lite_aresetn(s_axi_lite_aresetn),
+        .s_axi_lite_arprot(s_axi_lite_arprot),
+        .s_axi_lite_arready(s_axi_lite_arready),
+        .s_axi_lite_arvalid(s_axi_lite_arvalid),
+        .s_axi_lite_awaddr(s_axi_lite_awaddr),
+        .s_axi_lite_awprot(s_axi_lite_awprot),
+        .s_axi_lite_awready(s_axi_lite_awready),
+        .s_axi_lite_awvalid(s_axi_lite_awvalid),
+        .s_axi_lite_bready(s_axi_lite_bready),
+        .s_axi_lite_bresp(s_axi_lite_bresp),
+        .s_axi_lite_bvalid(s_axi_lite_bvalid),
+        .s_axi_lite_rdata(s_axi_lite_rdata),
+        .s_axi_lite_rready(s_axi_lite_rready),
+        .s_axi_lite_rresp(s_axi_lite_rresp),
+        .s_axi_lite_rvalid(s_axi_lite_rvalid),
+        .s_axi_lite_wdata(s_axi_lite_wdata),
+        .s_axi_lite_wready(s_axi_lite_wready),
+        .s_axi_lite_wstrb(s_axi_lite_wstrb),
+        .s_axi_lite_wvalid(s_axi_lite_wvalid),
+        .video_aclk(video_aclk),
+        .video_aresetn(1'b1));
+endmodule
+
+(* ORIG_REF_NAME = "ECC" *) 
 module system_MIPI_CSI_2_RX_0_0_ECC
    (sValid_reg_0,
     sError_reg_0,
@@ -1460,6 +1685,7 @@ module system_MIPI_CSI_2_RX_0_0_ECC
         .R(1'b0));
 endmodule
 
+(* ORIG_REF_NAME = "LLP" *) 
 module system_MIPI_CSI_2_RX_0_0_LLP
    (out,
     \oSyncStages_reg[1] ,
@@ -3616,6 +3842,7 @@ module system_MIPI_CSI_2_RX_0_0_LLP
         .R(1'b0));
 endmodule
 
+(* ORIG_REF_NAME = "LM" *) 
 module system_MIPI_CSI_2_RX_0_0_LM
    (s_axis_tvalid,
     s_axis_tlast,
@@ -4319,6 +4546,7 @@ module system_MIPI_CSI_2_RX_0_0_LM
         .R(rbRst));
 endmodule
 
+(* ORIG_REF_NAME = "MIPI_CSI2_Rx" *) 
 module system_MIPI_CSI_2_RX_0_0_MIPI_CSI2_Rx
    (aD1Enable,
     m_axis_video_tvalid,
@@ -4572,6 +4800,7 @@ module system_MIPI_CSI_2_RX_0_0_MIPI_CSI2_Rx
         .R(1'b0));
 endmodule
 
+(* ORIG_REF_NAME = "MIPI_CSI_2_RX_S_AXI_LITE" *) 
 module system_MIPI_CSI_2_RX_0_0_MIPI_CSI_2_RX_S_AXI_LITE
    (axi_awready_reg_0,
     axi_wready_reg_0,
@@ -5504,6 +5733,7 @@ module system_MIPI_CSI_2_RX_0_0_MIPI_CSI_2_RX_S_AXI_LITE
         .R(axi_awready_i_1_n_0));
 endmodule
 
+(* ORIG_REF_NAME = "ResetBridge" *) 
 module system_MIPI_CSI_2_RX_0_0_ResetBridge
    (out,
     rbRst,
@@ -5683,6 +5913,7 @@ module system_MIPI_CSI_2_RX_0_0_ResetBridge__parameterized0_4
         .\oSyncStages_reg[1]_0 (\oSyncStages_reg[1] ));
 endmodule
 
+(* ORIG_REF_NAME = "SimpleFIFO" *) 
 module system_MIPI_CSI_2_RX_0_0_SimpleFIFO
    (iEmptyInt_reg_0,
     iFullInt_reg_0,
@@ -6621,6 +6852,7 @@ module system_MIPI_CSI_2_RX_0_0_SimpleFIFO_2
         .O(\rbState_reg[0] ));
 endmodule
 
+(* ORIG_REF_NAME = "SyncAsync" *) 
 module system_MIPI_CSI_2_RX_0_0_SyncAsync
    (out,
     RxByteClkHS,
@@ -7081,6 +7313,7 @@ module system_MIPI_CSI_2_RX_0_0_SyncAsync__parameterized1
         .R(1'b0));
 endmodule
 
+(* ORIG_REF_NAME = "axis_data_fifo_v2_0_2_top" *) 
 module system_MIPI_CSI_2_RX_0_0_axis_data_fifo_v2_0_2_top
    (s_axis_tready,
     m_axis_tvalid,
@@ -7210,7 +7443,8 @@ module system_MIPI_CSI_2_RX_0_0_axis_data_fifo_v2_0_2_top
         .wr_data_count_axis(axis_wr_data_count));
 endmodule
 
-(* CHECK_LICENSE_TYPE = "cdc_fifo,fifo_generator_v13_2_5,{}" *) (* downgradeipidentifiedwarnings = "yes" *) (* x_core_info = "fifo_generator_v13_2_5,Vivado 2019.2" *) 
+(* CHECK_LICENSE_TYPE = "cdc_fifo,fifo_generator_v13_2_5,{}" *) (* ORIG_REF_NAME = "cdc_fifo" *) (* downgradeipidentifiedwarnings = "yes" *) 
+(* x_core_info = "fifo_generator_v13_2_5,Vivado 2019.2" *) 
 module system_MIPI_CSI_2_RX_0_0_cdc_fifo
    (m_aclk,
     s_aclk,
@@ -7810,7 +8044,8 @@ module system_MIPI_CSI_2_RX_0_0_cdc_fifo
         .wr_rst_busy(NLW_U0_wr_rst_busy_UNCONNECTED));
 endmodule
 
-(* CHECK_LICENSE_TYPE = "line_buffer,axis_data_fifo_v2_0_2_top,{}" *) (* downgradeipidentifiedwarnings = "yes" *) (* x_core_info = "axis_data_fifo_v2_0_2_top,Vivado 2019.2" *) 
+(* CHECK_LICENSE_TYPE = "line_buffer,axis_data_fifo_v2_0_2_top,{}" *) (* ORIG_REF_NAME = "line_buffer" *) (* downgradeipidentifiedwarnings = "yes" *) 
+(* x_core_info = "axis_data_fifo_v2_0_2_top,Vivado 2019.2" *) 
 module system_MIPI_CSI_2_RX_0_0_line_buffer
    (s_axis_aresetn,
     s_axis_aclk,
@@ -7919,9 +8154,9 @@ module system_MIPI_CSI_2_RX_0_0_line_buffer
 endmodule
 
 (* C_M_AXIS_COMPONENT_WIDTH = "10" *) (* C_M_AXIS_TDATA_WIDTH = "40" *) (* C_M_MAX_SAMPLES_PER_CLOCK = "4" *) 
-(* C_S_AXI_LITE_ADDR_WIDTH = "4" *) (* C_S_AXI_LITE_DATA_WIDTH = "32" *) (* kDebug = "FALSE" *) 
-(* kGenerateAXIL = "TRUE" *) (* kLaneCount = "2" *) (* kTargetDT = "RAW10" *) 
-(* kVersionMajor = "1" *) (* kVersionMinor = "2" *) 
+(* C_S_AXI_LITE_ADDR_WIDTH = "4" *) (* C_S_AXI_LITE_DATA_WIDTH = "32" *) (* ORIG_REF_NAME = "mipi_csi2_rx_top" *) 
+(* kDebug = "FALSE" *) (* kGenerateAXIL = "TRUE" *) (* kLaneCount = "2" *) 
+(* kTargetDT = "RAW10" *) (* kVersionMajor = "1" *) (* kVersionMinor = "2" *) 
 module system_MIPI_CSI_2_RX_0_0_mipi_csi2_rx_top
    (RxByteClkHS,
     aClkStopstate,
@@ -8132,233 +8367,9 @@ module system_MIPI_CSI_2_RX_0_0_mipi_csi2_rx_top
         .R(1'b0));
 endmodule
 
-(* CHECK_LICENSE_TYPE = "system_MIPI_CSI_2_RX_0_0,mipi_csi2_rx_top,{}" *) (* downgradeipidentifiedwarnings = "yes" *) (* x_core_info = "mipi_csi2_rx_top,Vivado 2019.2" *) 
-(* NotValidForBitStream *)
-module system_MIPI_CSI_2_RX_0_0
-   (RxByteClkHS,
-    aClkStopstate,
-    aRxClkActiveHS,
-    RxDataHSD0,
-    RxSyncHSD0,
-    RxValidHSD0,
-    RxActiveHSD0,
-    aD0Enable,
-    RxDataHSD1,
-    RxSyncHSD1,
-    RxValidHSD1,
-    RxActiveHSD1,
-    aD1Enable,
-    RxDataHSD2,
-    RxSyncHSD2,
-    RxValidHSD2,
-    RxActiveHSD2,
-    aD2Enable,
-    RxDataHSD3,
-    RxSyncHSD3,
-    RxValidHSD3,
-    RxActiveHSD3,
-    aD3Enable,
-    aClkEnable,
-    m_axis_video_tdata,
-    m_axis_video_tvalid,
-    m_axis_video_tready,
-    m_axis_video_tlast,
-    m_axis_video_tuser,
-    video_aclk,
-    s_axi_lite_awaddr,
-    s_axi_lite_awprot,
-    s_axi_lite_awvalid,
-    s_axi_lite_awready,
-    s_axi_lite_wdata,
-    s_axi_lite_wstrb,
-    s_axi_lite_wvalid,
-    s_axi_lite_wready,
-    s_axi_lite_bresp,
-    s_axi_lite_bvalid,
-    s_axi_lite_bready,
-    s_axi_lite_araddr,
-    s_axi_lite_arprot,
-    s_axi_lite_arvalid,
-    s_axi_lite_arready,
-    s_axi_lite_rdata,
-    s_axi_lite_rresp,
-    s_axi_lite_rvalid,
-    s_axi_lite_rready,
-    s_axi_lite_aclk,
-    s_axi_lite_aresetn);
-  (* x_interface_info = "xilinx.com:signal:clock:1.0 RxByteClkHS CLK" *) (* x_interface_parameter = "XIL_INTERFACENAME RxByteClkHS, ASSOCIATED_BUSIF rx_mipi_ppi, FREQ_HZ 84000000, PHASE 0.000, CLK_DOMAIN system_MIPI_D_PHY_RX_0_0_RxByteClkHS, INSERT_VIP 0" *) input RxByteClkHS;
-  (* x_interface_info = "xilinx.com:interface:rx_mipi_ppi_if:1.0 rx_mipi_ppi CL_STOPSTATE" *) input aClkStopstate;
-  (* x_interface_info = "xilinx.com:interface:rx_mipi_ppi_if:1.0 rx_mipi_ppi CL_RXCLKACTIVEHS" *) input aRxClkActiveHS;
-  (* x_interface_info = "xilinx.com:interface:rx_mipi_ppi_if:1.0 rx_mipi_ppi DL0_RXDATAHS" *) input [7:0]RxDataHSD0;
-  (* x_interface_info = "xilinx.com:interface:rx_mipi_ppi_if:1.0 rx_mipi_ppi DL0_RXSYNCHS" *) input RxSyncHSD0;
-  (* x_interface_info = "xilinx.com:interface:rx_mipi_ppi_if:1.0 rx_mipi_ppi DL0_RXVALIDHS" *) input RxValidHSD0;
-  (* x_interface_info = "xilinx.com:interface:rx_mipi_ppi_if:1.0 rx_mipi_ppi DL0_RXACTIVEHS" *) input RxActiveHSD0;
-  (* x_interface_info = "xilinx.com:interface:rx_mipi_ppi_if:1.0 rx_mipi_ppi DL0_ENABLE" *) output aD0Enable;
-  (* x_interface_info = "xilinx.com:interface:rx_mipi_ppi_if:1.0 rx_mipi_ppi DL1_RXDATAHS" *) input [7:0]RxDataHSD1;
-  (* x_interface_info = "xilinx.com:interface:rx_mipi_ppi_if:1.0 rx_mipi_ppi DL1_RXSYNCHS" *) input RxSyncHSD1;
-  (* x_interface_info = "xilinx.com:interface:rx_mipi_ppi_if:1.0 rx_mipi_ppi DL1_RXVALIDHS" *) input RxValidHSD1;
-  (* x_interface_info = "xilinx.com:interface:rx_mipi_ppi_if:1.0 rx_mipi_ppi DL1_RXACTIVEHS" *) input RxActiveHSD1;
-  (* x_interface_info = "xilinx.com:interface:rx_mipi_ppi_if:1.0 rx_mipi_ppi DL1_ENABLE" *) output aD1Enable;
-  (* x_interface_info = "xilinx.com:interface:rx_mipi_ppi_if:1.0 rx_mipi_ppi DL2_RXDATAHS" *) input [7:0]RxDataHSD2;
-  (* x_interface_info = "xilinx.com:interface:rx_mipi_ppi_if:1.0 rx_mipi_ppi DL2_RXSYNCHS" *) input RxSyncHSD2;
-  (* x_interface_info = "xilinx.com:interface:rx_mipi_ppi_if:1.0 rx_mipi_ppi DL2_RXVALIDHS" *) input RxValidHSD2;
-  (* x_interface_info = "xilinx.com:interface:rx_mipi_ppi_if:1.0 rx_mipi_ppi DL2_RXACTIVEHS" *) input RxActiveHSD2;
-  (* x_interface_info = "xilinx.com:interface:rx_mipi_ppi_if:1.0 rx_mipi_ppi DL2_ENABLE" *) output aD2Enable;
-  (* x_interface_info = "xilinx.com:interface:rx_mipi_ppi_if:1.0 rx_mipi_ppi DL3_RXDATAHS" *) input [7:0]RxDataHSD3;
-  (* x_interface_info = "xilinx.com:interface:rx_mipi_ppi_if:1.0 rx_mipi_ppi DL3_RXSYNCHS" *) input RxSyncHSD3;
-  (* x_interface_info = "xilinx.com:interface:rx_mipi_ppi_if:1.0 rx_mipi_ppi DL3_RXVALIDHS" *) input RxValidHSD3;
-  (* x_interface_info = "xilinx.com:interface:rx_mipi_ppi_if:1.0 rx_mipi_ppi DL3_RXACTIVEHS" *) input RxActiveHSD3;
-  (* x_interface_info = "xilinx.com:interface:rx_mipi_ppi_if:1.0 rx_mipi_ppi DL3_ENABLE" *) output aD3Enable;
-  (* x_interface_info = "xilinx.com:interface:rx_mipi_ppi_if:1.0 rx_mipi_ppi CL_ENABLE" *) output aClkEnable;
-  (* x_interface_info = "xilinx.com:interface:axis:1.0 m_axis_video TDATA" *) (* x_interface_parameter = "XIL_INTERFACENAME m_axis_video, TDATA_NUM_BYTES 5, TDEST_WIDTH 0, TID_WIDTH 0, TUSER_WIDTH 1, HAS_TREADY 1, HAS_TSTRB 0, HAS_TKEEP 0, HAS_TLAST 1, FREQ_HZ 150000000, PHASE 0.0, CLK_DOMAIN system_clk_wiz_0_0_clk_out1, LAYERED_METADATA undef, INSERT_VIP 0" *) output [39:0]m_axis_video_tdata;
-  (* x_interface_info = "xilinx.com:interface:axis:1.0 m_axis_video TVALID" *) output m_axis_video_tvalid;
-  (* x_interface_info = "xilinx.com:interface:axis:1.0 m_axis_video TREADY" *) input m_axis_video_tready;
-  (* x_interface_info = "xilinx.com:interface:axis:1.0 m_axis_video TLAST" *) output m_axis_video_tlast;
-  (* x_interface_info = "xilinx.com:interface:axis:1.0 m_axis_video TUSER" *) output [0:0]m_axis_video_tuser;
-  (* x_interface_info = "xilinx.com:signal:clock:1.0 video_aclk CLK" *) (* x_interface_parameter = "XIL_INTERFACENAME video_aclk, ASSOCIATED_RESET video_aresetn, ASSOCIATED_BUSIF m_axis_video, FREQ_HZ 150000000, PHASE 0.0, CLK_DOMAIN system_clk_wiz_0_0_clk_out1, INSERT_VIP 0" *) input video_aclk;
-  (* x_interface_info = "xilinx.com:interface:aximm:1.0 S_AXI_LITE AWADDR" *) (* x_interface_parameter = "XIL_INTERFACENAME S_AXI_LITE, WIZ_DATA_WIDTH 32, WIZ_NUM_REG 4, SUPPORTS_NARROW_BURST 0, DATA_WIDTH 32, PROTOCOL AXI4LITE, FREQ_HZ 50000000, ID_WIDTH 0, ADDR_WIDTH 4, AWUSER_WIDTH 0, ARUSER_WIDTH 0, WUSER_WIDTH 0, RUSER_WIDTH 0, BUSER_WIDTH 0, READ_WRITE_MODE READ_WRITE, HAS_BURST 0, HAS_LOCK 0, HAS_PROT 1, HAS_CACHE 0, HAS_QOS 0, HAS_REGION 0, HAS_WSTRB 1, HAS_BRESP 1, HAS_RRESP 1, NUM_READ_OUTSTANDING 2, NUM_WRITE_OUTSTANDING 2, MAX_BURST_LENGTH 1, PHASE 0.0, CLK_DOMAIN system_clk_wiz_0_0_clk_out1, NUM_READ_THREADS 1, NUM_WRITE_THREADS 1, RUSER_BITS_PER_BYTE 0, WUSER_BITS_PER_BYTE 0, INSERT_VIP 0" *) input [3:0]s_axi_lite_awaddr;
-  (* x_interface_info = "xilinx.com:interface:aximm:1.0 S_AXI_LITE AWPROT" *) input [2:0]s_axi_lite_awprot;
-  (* x_interface_info = "xilinx.com:interface:aximm:1.0 S_AXI_LITE AWVALID" *) input s_axi_lite_awvalid;
-  (* x_interface_info = "xilinx.com:interface:aximm:1.0 S_AXI_LITE AWREADY" *) output s_axi_lite_awready;
-  (* x_interface_info = "xilinx.com:interface:aximm:1.0 S_AXI_LITE WDATA" *) input [31:0]s_axi_lite_wdata;
-  (* x_interface_info = "xilinx.com:interface:aximm:1.0 S_AXI_LITE WSTRB" *) input [3:0]s_axi_lite_wstrb;
-  (* x_interface_info = "xilinx.com:interface:aximm:1.0 S_AXI_LITE WVALID" *) input s_axi_lite_wvalid;
-  (* x_interface_info = "xilinx.com:interface:aximm:1.0 S_AXI_LITE WREADY" *) output s_axi_lite_wready;
-  (* x_interface_info = "xilinx.com:interface:aximm:1.0 S_AXI_LITE BRESP" *) output [1:0]s_axi_lite_bresp;
-  (* x_interface_info = "xilinx.com:interface:aximm:1.0 S_AXI_LITE BVALID" *) output s_axi_lite_bvalid;
-  (* x_interface_info = "xilinx.com:interface:aximm:1.0 S_AXI_LITE BREADY" *) input s_axi_lite_bready;
-  (* x_interface_info = "xilinx.com:interface:aximm:1.0 S_AXI_LITE ARADDR" *) input [3:0]s_axi_lite_araddr;
-  (* x_interface_info = "xilinx.com:interface:aximm:1.0 S_AXI_LITE ARPROT" *) input [2:0]s_axi_lite_arprot;
-  (* x_interface_info = "xilinx.com:interface:aximm:1.0 S_AXI_LITE ARVALID" *) input s_axi_lite_arvalid;
-  (* x_interface_info = "xilinx.com:interface:aximm:1.0 S_AXI_LITE ARREADY" *) output s_axi_lite_arready;
-  (* x_interface_info = "xilinx.com:interface:aximm:1.0 S_AXI_LITE RDATA" *) output [31:0]s_axi_lite_rdata;
-  (* x_interface_info = "xilinx.com:interface:aximm:1.0 S_AXI_LITE RRESP" *) output [1:0]s_axi_lite_rresp;
-  (* x_interface_info = "xilinx.com:interface:aximm:1.0 S_AXI_LITE RVALID" *) output s_axi_lite_rvalid;
-  (* x_interface_info = "xilinx.com:interface:aximm:1.0 S_AXI_LITE RREADY" *) input s_axi_lite_rready;
-  (* x_interface_info = "xilinx.com:signal:clock:1.0 s_axi_lite_aclk CLK" *) (* x_interface_parameter = "XIL_INTERFACENAME s_axi_lite_aclk, ASSOCIATED_BUSIF S_AXI_LITE, ASSOCIATED_RESET s_axi_lite_aresetn, FREQ_HZ 50000000, PHASE 0.0, CLK_DOMAIN system_clk_wiz_0_0_clk_out1, INSERT_VIP 0" *) input s_axi_lite_aclk;
-  (* x_interface_info = "xilinx.com:signal:reset:1.0 s_axi_lite_aresetn RST" *) (* x_interface_parameter = "XIL_INTERFACENAME s_axi_lite_aresetn, POLARITY ACTIVE_LOW, INSERT_VIP 0" *) input s_axi_lite_aresetn;
-
-  wire RxActiveHSD0;
-  wire RxActiveHSD1;
-  wire RxActiveHSD2;
-  wire RxActiveHSD3;
-  wire RxByteClkHS;
-  wire [7:0]RxDataHSD0;
-  wire [7:0]RxDataHSD1;
-  wire [7:0]RxDataHSD2;
-  wire [7:0]RxDataHSD3;
-  wire RxSyncHSD0;
-  wire RxSyncHSD1;
-  wire RxSyncHSD2;
-  wire RxSyncHSD3;
-  wire RxValidHSD0;
-  wire RxValidHSD1;
-  wire RxValidHSD2;
-  wire RxValidHSD3;
-  wire aClkEnable;
-  wire aClkStopstate;
-  wire aD0Enable;
-  wire aD1Enable;
-  wire aD2Enable;
-  wire aD3Enable;
-  wire aRxClkActiveHS;
-  wire [39:0]m_axis_video_tdata;
-  wire m_axis_video_tlast;
-  wire m_axis_video_tready;
-  wire [0:0]m_axis_video_tuser;
-  wire m_axis_video_tvalid;
-  wire s_axi_lite_aclk;
-  wire [3:0]s_axi_lite_araddr;
-  wire s_axi_lite_aresetn;
-  wire [2:0]s_axi_lite_arprot;
-  wire s_axi_lite_arready;
-  wire s_axi_lite_arvalid;
-  wire [3:0]s_axi_lite_awaddr;
-  wire [2:0]s_axi_lite_awprot;
-  wire s_axi_lite_awready;
-  wire s_axi_lite_awvalid;
-  wire s_axi_lite_bready;
-  wire [1:0]s_axi_lite_bresp;
-  wire s_axi_lite_bvalid;
-  wire [31:0]s_axi_lite_rdata;
-  wire s_axi_lite_rready;
-  wire [1:0]s_axi_lite_rresp;
-  wire s_axi_lite_rvalid;
-  wire [31:0]s_axi_lite_wdata;
-  wire s_axi_lite_wready;
-  wire [3:0]s_axi_lite_wstrb;
-  wire s_axi_lite_wvalid;
-  wire video_aclk;
-
-  (* C_M_AXIS_COMPONENT_WIDTH = "10" *) 
-  (* C_M_AXIS_TDATA_WIDTH = "40" *) 
-  (* C_M_MAX_SAMPLES_PER_CLOCK = "4" *) 
-  (* C_S_AXI_LITE_ADDR_WIDTH = "4" *) 
-  (* C_S_AXI_LITE_DATA_WIDTH = "32" *) 
-  (* kDebug = "FALSE" *) 
-  (* kGenerateAXIL = "TRUE" *) 
-  (* kLaneCount = "2" *) 
-  (* kTargetDT = "RAW10" *) 
-  (* kVersionMajor = "1" *) 
-  (* kVersionMinor = "2" *) 
-  system_MIPI_CSI_2_RX_0_0_mipi_csi2_rx_top U0
-       (.RxActiveHSD0(RxActiveHSD0),
-        .RxActiveHSD1(RxActiveHSD1),
-        .RxActiveHSD2(RxActiveHSD2),
-        .RxActiveHSD3(RxActiveHSD3),
-        .RxByteClkHS(RxByteClkHS),
-        .RxDataHSD0(RxDataHSD0),
-        .RxDataHSD1(RxDataHSD1),
-        .RxDataHSD2(RxDataHSD2),
-        .RxDataHSD3(RxDataHSD3),
-        .RxSyncHSD0(RxSyncHSD0),
-        .RxSyncHSD1(RxSyncHSD1),
-        .RxSyncHSD2(RxSyncHSD2),
-        .RxSyncHSD3(RxSyncHSD3),
-        .RxValidHSD0(RxValidHSD0),
-        .RxValidHSD1(RxValidHSD1),
-        .RxValidHSD2(RxValidHSD2),
-        .RxValidHSD3(RxValidHSD3),
-        .aClkEnable(aClkEnable),
-        .aClkStopstate(aClkStopstate),
-        .aD0Enable(aD0Enable),
-        .aD1Enable(aD1Enable),
-        .aD2Enable(aD2Enable),
-        .aD3Enable(aD3Enable),
-        .aRxClkActiveHS(aRxClkActiveHS),
-        .m_axis_video_tdata(m_axis_video_tdata),
-        .m_axis_video_tlast(m_axis_video_tlast),
-        .m_axis_video_tready(m_axis_video_tready),
-        .m_axis_video_tuser(m_axis_video_tuser),
-        .m_axis_video_tvalid(m_axis_video_tvalid),
-        .s_axi_lite_aclk(s_axi_lite_aclk),
-        .s_axi_lite_araddr(s_axi_lite_araddr),
-        .s_axi_lite_aresetn(s_axi_lite_aresetn),
-        .s_axi_lite_arprot(s_axi_lite_arprot),
-        .s_axi_lite_arready(s_axi_lite_arready),
-        .s_axi_lite_arvalid(s_axi_lite_arvalid),
-        .s_axi_lite_awaddr(s_axi_lite_awaddr),
-        .s_axi_lite_awprot(s_axi_lite_awprot),
-        .s_axi_lite_awready(s_axi_lite_awready),
-        .s_axi_lite_awvalid(s_axi_lite_awvalid),
-        .s_axi_lite_bready(s_axi_lite_bready),
-        .s_axi_lite_bresp(s_axi_lite_bresp),
-        .s_axi_lite_bvalid(s_axi_lite_bvalid),
-        .s_axi_lite_rdata(s_axi_lite_rdata),
-        .s_axi_lite_rready(s_axi_lite_rready),
-        .s_axi_lite_rresp(s_axi_lite_rresp),
-        .s_axi_lite_rvalid(s_axi_lite_rvalid),
-        .s_axi_lite_wdata(s_axi_lite_wdata),
-        .s_axi_lite_wready(s_axi_lite_wready),
-        .s_axi_lite_wstrb(s_axi_lite_wstrb),
-        .s_axi_lite_wvalid(s_axi_lite_wvalid),
-        .video_aclk(video_aclk),
-        .video_aresetn(1'b1));
-endmodule
-
 (* DEF_VAL = "1'b0" *) (* DEST_SYNC_FF = "2" *) (* INIT_SYNC_FF = "0" *) 
-(* INV_DEF_VAL = "1'b1" *) (* RST_ACTIVE_HIGH = "1" *) (* VERSION = "0" *) 
-(* XPM_MODULE = "TRUE" *) (* xpm_cdc = "ASYNC_RST" *) 
+(* INV_DEF_VAL = "1'b1" *) (* ORIG_REF_NAME = "xpm_cdc_async_rst" *) (* RST_ACTIVE_HIGH = "1" *) 
+(* VERSION = "0" *) (* XPM_MODULE = "TRUE" *) (* xpm_cdc = "ASYNC_RST" *) 
 module system_MIPI_CSI_2_RX_0_0_xpm_cdc_async_rst
    (src_arst,
     dest_clk,
@@ -8436,9 +8447,10 @@ module system_MIPI_CSI_2_RX_0_0_xpm_cdc_async_rst__1
         .Q(arststages_ff[1]));
 endmodule
 
-(* DEST_SYNC_FF = "2" *) (* INIT_SYNC_FF = "0" *) (* REG_OUTPUT = "1" *) 
-(* SIM_ASSERT_CHK = "0" *) (* SIM_LOSSLESS_GRAY_CHK = "0" *) (* VERSION = "0" *) 
-(* WIDTH = "5" *) (* XPM_MODULE = "TRUE" *) (* xpm_cdc = "GRAY" *) 
+(* DEST_SYNC_FF = "2" *) (* INIT_SYNC_FF = "0" *) (* ORIG_REF_NAME = "xpm_cdc_gray" *) 
+(* REG_OUTPUT = "1" *) (* SIM_ASSERT_CHK = "0" *) (* SIM_LOSSLESS_GRAY_CHK = "0" *) 
+(* VERSION = "0" *) (* WIDTH = "5" *) (* XPM_MODULE = "TRUE" *) 
+(* xpm_cdc = "GRAY" *) 
 module system_MIPI_CSI_2_RX_0_0_xpm_cdc_gray
    (src_clk,
     src_in_bin,
@@ -8903,9 +8915,9 @@ module system_MIPI_CSI_2_RX_0_0_xpm_cdc_gray__2
         .R(1'b0));
 endmodule
 
-(* DEST_SYNC_FF = "4" *) (* INIT_SYNC_FF = "0" *) (* SIM_ASSERT_CHK = "0" *) 
-(* SRC_INPUT_REG = "0" *) (* VERSION = "0" *) (* XPM_MODULE = "TRUE" *) 
-(* xpm_cdc = "SINGLE" *) 
+(* DEST_SYNC_FF = "4" *) (* INIT_SYNC_FF = "0" *) (* ORIG_REF_NAME = "xpm_cdc_single" *) 
+(* SIM_ASSERT_CHK = "0" *) (* SRC_INPUT_REG = "0" *) (* VERSION = "0" *) 
+(* XPM_MODULE = "TRUE" *) (* xpm_cdc = "SINGLE" *) 
 module system_MIPI_CSI_2_RX_0_0_xpm_cdc_single
    (src_clk,
     src_in,
@@ -9016,8 +9028,8 @@ module system_MIPI_CSI_2_RX_0_0_xpm_cdc_single__2
 endmodule
 
 (* DEF_VAL = "1'b0" *) (* DEST_SYNC_FF = "4" *) (* INIT = "0" *) 
-(* INIT_SYNC_FF = "1" *) (* SIM_ASSERT_CHK = "0" *) (* VERSION = "0" *) 
-(* XPM_MODULE = "TRUE" *) (* xpm_cdc = "SYNC_RST" *) 
+(* INIT_SYNC_FF = "1" *) (* ORIG_REF_NAME = "xpm_cdc_sync_rst" *) (* SIM_ASSERT_CHK = "0" *) 
+(* VERSION = "0" *) (* XPM_MODULE = "TRUE" *) (* xpm_cdc = "SYNC_RST" *) 
 module system_MIPI_CSI_2_RX_0_0_xpm_cdc_sync_rst
    (src_rst,
     dest_clk,
@@ -9077,6 +9089,7 @@ module system_MIPI_CSI_2_RX_0_0_xpm_cdc_sync_rst
         .R(1'b0));
 endmodule
 
+(* ORIG_REF_NAME = "xpm_counter_updn" *) 
 module system_MIPI_CSI_2_RX_0_0_xpm_counter_updn
    (S,
     DI,
@@ -10302,16 +10315,16 @@ endmodule
 (* CDC_SYNC_STAGES = "3" *) (* CLOCKING_MODE = "common_clock" *) (* ECC_MODE = "no_ecc" *) 
 (* EN_ADV_FEATURE_AXIS = "16'b0001010000000100" *) (* EN_ADV_FEATURE_AXIS_INT = "16'b0001010000000100" *) (* EN_ALMOST_EMPTY_INT = "1'b0" *) 
 (* EN_ALMOST_FULL_INT = "1'b0" *) (* EN_DATA_VALID_INT = "1'b1" *) (* FIFO_DEPTH = "2048" *) 
-(* FIFO_MEMORY_TYPE = "auto" *) (* LOG_DEPTH_AXIS = "11" *) (* PACKET_FIFO = "false" *) 
-(* PKT_SIZE_LT8 = "1'b0" *) (* PROG_EMPTY_THRESH = "5" *) (* PROG_FULL_THRESH = "11" *) 
-(* P_COMMON_CLOCK = "1" *) (* P_ECC_MODE = "0" *) (* P_FIFO_MEMORY_TYPE = "0" *) 
-(* P_PKT_MODE = "0" *) (* RD_DATA_COUNT_WIDTH = "12" *) (* RELATED_CLOCKS = "0" *) 
-(* SIM_ASSERT_CHK = "0" *) (* TDATA_OFFSET = "40" *) (* TDATA_WIDTH = "40" *) 
-(* TDEST_OFFSET = "52" *) (* TDEST_WIDTH = "1" *) (* TID_OFFSET = "51" *) 
-(* TID_WIDTH = "1" *) (* TKEEP_OFFSET = "50" *) (* TSTRB_OFFSET = "45" *) 
-(* TUSER_MAX_WIDTH = "4043" *) (* TUSER_OFFSET = "53" *) (* TUSER_WIDTH = "1" *) 
-(* USE_ADV_FEATURES = "825503796" *) (* USE_ADV_FEATURES_INT = "825503796" *) (* WR_DATA_COUNT_WIDTH = "12" *) 
-(* XPM_MODULE = "TRUE" *) 
+(* FIFO_MEMORY_TYPE = "auto" *) (* LOG_DEPTH_AXIS = "11" *) (* ORIG_REF_NAME = "xpm_fifo_axis" *) 
+(* PACKET_FIFO = "false" *) (* PKT_SIZE_LT8 = "1'b0" *) (* PROG_EMPTY_THRESH = "5" *) 
+(* PROG_FULL_THRESH = "11" *) (* P_COMMON_CLOCK = "1" *) (* P_ECC_MODE = "0" *) 
+(* P_FIFO_MEMORY_TYPE = "0" *) (* P_PKT_MODE = "0" *) (* RD_DATA_COUNT_WIDTH = "12" *) 
+(* RELATED_CLOCKS = "0" *) (* SIM_ASSERT_CHK = "0" *) (* TDATA_OFFSET = "40" *) 
+(* TDATA_WIDTH = "40" *) (* TDEST_OFFSET = "52" *) (* TDEST_WIDTH = "1" *) 
+(* TID_OFFSET = "51" *) (* TID_WIDTH = "1" *) (* TKEEP_OFFSET = "50" *) 
+(* TSTRB_OFFSET = "45" *) (* TUSER_MAX_WIDTH = "4043" *) (* TUSER_OFFSET = "53" *) 
+(* TUSER_WIDTH = "1" *) (* USE_ADV_FEATURES = "825503796" *) (* USE_ADV_FEATURES_INT = "825503796" *) 
+(* WR_DATA_COUNT_WIDTH = "12" *) (* XPM_MODULE = "TRUE" *) 
 module system_MIPI_CSI_2_RX_0_0_xpm_fifo_axis
    (s_aresetn,
     s_aclk,
@@ -10550,18 +10563,19 @@ endmodule
 (* EN_WACK = "1'b0" *) (* EN_WDC = "1'b1" *) (* FG_EQ_ASYM_DOUT = "1'b0" *) 
 (* FIFO_MEMORY_TYPE = "0" *) (* FIFO_MEM_TYPE = "0" *) (* FIFO_READ_DEPTH = "2048" *) 
 (* FIFO_READ_LATENCY = "0" *) (* FIFO_SIZE = "110592" *) (* FIFO_WRITE_DEPTH = "2048" *) 
-(* FULL_RESET_VALUE = "1" *) (* FULL_RST_VAL = "1'b1" *) (* PE_THRESH_ADJ = "3" *) 
-(* PE_THRESH_MAX = "2043" *) (* PE_THRESH_MIN = "5" *) (* PF_THRESH_ADJ = "9" *) 
-(* PF_THRESH_MAX = "2043" *) (* PF_THRESH_MIN = "5" *) (* PROG_EMPTY_THRESH = "5" *) 
-(* PROG_FULL_THRESH = "11" *) (* RD_DATA_COUNT_WIDTH = "12" *) (* RD_DC_WIDTH_EXT = "12" *) 
-(* RD_LATENCY = "2" *) (* RD_MODE = "1" *) (* RD_PNTR_WIDTH = "11" *) 
-(* READ_DATA_WIDTH = "54" *) (* READ_MODE = "1" *) (* RELATED_CLOCKS = "0" *) 
-(* REMOVE_WR_RD_PROT_LOGIC = "0" *) (* SIM_ASSERT_CHK = "0" *) (* USE_ADV_FEATURES = "825503796" *) 
-(* VERSION = "0" *) (* WAKEUP_TIME = "0" *) (* WIDTH_RATIO = "1" *) 
-(* WRITE_DATA_WIDTH = "54" *) (* WR_DATA_COUNT_WIDTH = "12" *) (* WR_DC_WIDTH_EXT = "12" *) 
-(* WR_DEPTH_LOG = "11" *) (* WR_PNTR_WIDTH = "11" *) (* WR_RD_RATIO = "0" *) 
-(* WR_WIDTH_LOG = "6" *) (* XPM_MODULE = "TRUE" *) (* both_stages_valid = "3" *) 
-(* invalid = "0" *) (* stage1_valid = "2" *) (* stage2_valid = "1" *) 
+(* FULL_RESET_VALUE = "1" *) (* FULL_RST_VAL = "1'b1" *) (* ORIG_REF_NAME = "xpm_fifo_base" *) 
+(* PE_THRESH_ADJ = "3" *) (* PE_THRESH_MAX = "2043" *) (* PE_THRESH_MIN = "5" *) 
+(* PF_THRESH_ADJ = "9" *) (* PF_THRESH_MAX = "2043" *) (* PF_THRESH_MIN = "5" *) 
+(* PROG_EMPTY_THRESH = "5" *) (* PROG_FULL_THRESH = "11" *) (* RD_DATA_COUNT_WIDTH = "12" *) 
+(* RD_DC_WIDTH_EXT = "12" *) (* RD_LATENCY = "2" *) (* RD_MODE = "1" *) 
+(* RD_PNTR_WIDTH = "11" *) (* READ_DATA_WIDTH = "54" *) (* READ_MODE = "1" *) 
+(* RELATED_CLOCKS = "0" *) (* REMOVE_WR_RD_PROT_LOGIC = "0" *) (* SIM_ASSERT_CHK = "0" *) 
+(* USE_ADV_FEATURES = "825503796" *) (* VERSION = "0" *) (* WAKEUP_TIME = "0" *) 
+(* WIDTH_RATIO = "1" *) (* WRITE_DATA_WIDTH = "54" *) (* WR_DATA_COUNT_WIDTH = "12" *) 
+(* WR_DC_WIDTH_EXT = "12" *) (* WR_DEPTH_LOG = "11" *) (* WR_PNTR_WIDTH = "11" *) 
+(* WR_RD_RATIO = "0" *) (* WR_WIDTH_LOG = "6" *) (* XPM_MODULE = "TRUE" *) 
+(* both_stages_valid = "3" *) (* invalid = "0" *) (* stage1_valid = "2" *) 
+(* stage2_valid = "1" *) 
 module system_MIPI_CSI_2_RX_0_0_xpm_fifo_base
    (sleep,
     rst,
@@ -11154,6 +11168,7 @@ module system_MIPI_CSI_2_RX_0_0_xpm_fifo_base
         .wr_en(wr_en));
 endmodule
 
+(* ORIG_REF_NAME = "xpm_fifo_reg_bit" *) 
 module system_MIPI_CSI_2_RX_0_0_xpm_fifo_reg_bit
    (rst_d1,
     clr_full,
@@ -11225,6 +11240,7 @@ module system_MIPI_CSI_2_RX_0_0_xpm_fifo_reg_bit
         .O(clr_full));
 endmodule
 
+(* ORIG_REF_NAME = "xpm_fifo_rst" *) 
 module system_MIPI_CSI_2_RX_0_0_xpm_fifo_rst
    (E,
     Q,
@@ -11327,23 +11343,24 @@ endmodule
 (* CLOCKING_MODE = "0" *) (* ECC_MODE = "0" *) (* MAX_NUM_CHAR = "0" *) 
 (* MEMORY_INIT_FILE = "none" *) (* MEMORY_INIT_PARAM = "" *) (* MEMORY_OPTIMIZATION = "true" *) 
 (* MEMORY_PRIMITIVE = "0" *) (* MEMORY_SIZE = "110592" *) (* MEMORY_TYPE = "1" *) 
-(* MESSAGE_CONTROL = "0" *) (* NUM_CHAR_LOC = "0" *) (* P_ECC_MODE = "no_ecc" *) 
-(* P_ENABLE_BYTE_WRITE_A = "0" *) (* P_ENABLE_BYTE_WRITE_B = "0" *) (* P_MAX_DEPTH_DATA = "2048" *) 
-(* P_MEMORY_OPT = "yes" *) (* P_MEMORY_PRIMITIVE = "auto" *) (* P_MIN_WIDTH_DATA = "54" *) 
-(* P_MIN_WIDTH_DATA_A = "54" *) (* P_MIN_WIDTH_DATA_B = "54" *) (* P_MIN_WIDTH_DATA_ECC = "54" *) 
-(* P_MIN_WIDTH_DATA_LDW = "4" *) (* P_MIN_WIDTH_DATA_SHFT = "54" *) (* P_NUM_COLS_WRITE_A = "1" *) 
-(* P_NUM_COLS_WRITE_B = "1" *) (* P_NUM_ROWS_READ_A = "1" *) (* P_NUM_ROWS_READ_B = "1" *) 
-(* P_NUM_ROWS_WRITE_A = "1" *) (* P_NUM_ROWS_WRITE_B = "1" *) (* P_SDP_WRITE_MODE = "yes" *) 
-(* P_WIDTH_ADDR_LSB_READ_A = "0" *) (* P_WIDTH_ADDR_LSB_READ_B = "0" *) (* P_WIDTH_ADDR_LSB_WRITE_A = "0" *) 
-(* P_WIDTH_ADDR_LSB_WRITE_B = "0" *) (* P_WIDTH_ADDR_READ_A = "11" *) (* P_WIDTH_ADDR_READ_B = "11" *) 
-(* P_WIDTH_ADDR_WRITE_A = "11" *) (* P_WIDTH_ADDR_WRITE_B = "11" *) (* P_WIDTH_COL_WRITE_A = "54" *) 
-(* P_WIDTH_COL_WRITE_B = "54" *) (* READ_DATA_WIDTH_A = "54" *) (* READ_DATA_WIDTH_B = "54" *) 
-(* READ_LATENCY_A = "2" *) (* READ_LATENCY_B = "2" *) (* READ_RESET_VALUE_A = "0" *) 
-(* READ_RESET_VALUE_B = "" *) (* RST_MODE_A = "SYNC" *) (* RST_MODE_B = "SYNC" *) 
-(* SIM_ASSERT_CHK = "0" *) (* USE_EMBEDDED_CONSTRAINT = "0" *) (* USE_MEM_INIT = "0" *) 
-(* VERSION = "0" *) (* WAKEUP_TIME = "0" *) (* WRITE_DATA_WIDTH_A = "54" *) 
-(* WRITE_DATA_WIDTH_B = "54" *) (* WRITE_MODE_A = "2" *) (* WRITE_MODE_B = "2" *) 
-(* XPM_MODULE = "TRUE" *) (* rsta_loop_iter = "56" *) (* rstb_loop_iter = "56" *) 
+(* MESSAGE_CONTROL = "0" *) (* NUM_CHAR_LOC = "0" *) (* ORIG_REF_NAME = "xpm_memory_base" *) 
+(* P_ECC_MODE = "no_ecc" *) (* P_ENABLE_BYTE_WRITE_A = "0" *) (* P_ENABLE_BYTE_WRITE_B = "0" *) 
+(* P_MAX_DEPTH_DATA = "2048" *) (* P_MEMORY_OPT = "yes" *) (* P_MEMORY_PRIMITIVE = "auto" *) 
+(* P_MIN_WIDTH_DATA = "54" *) (* P_MIN_WIDTH_DATA_A = "54" *) (* P_MIN_WIDTH_DATA_B = "54" *) 
+(* P_MIN_WIDTH_DATA_ECC = "54" *) (* P_MIN_WIDTH_DATA_LDW = "4" *) (* P_MIN_WIDTH_DATA_SHFT = "54" *) 
+(* P_NUM_COLS_WRITE_A = "1" *) (* P_NUM_COLS_WRITE_B = "1" *) (* P_NUM_ROWS_READ_A = "1" *) 
+(* P_NUM_ROWS_READ_B = "1" *) (* P_NUM_ROWS_WRITE_A = "1" *) (* P_NUM_ROWS_WRITE_B = "1" *) 
+(* P_SDP_WRITE_MODE = "yes" *) (* P_WIDTH_ADDR_LSB_READ_A = "0" *) (* P_WIDTH_ADDR_LSB_READ_B = "0" *) 
+(* P_WIDTH_ADDR_LSB_WRITE_A = "0" *) (* P_WIDTH_ADDR_LSB_WRITE_B = "0" *) (* P_WIDTH_ADDR_READ_A = "11" *) 
+(* P_WIDTH_ADDR_READ_B = "11" *) (* P_WIDTH_ADDR_WRITE_A = "11" *) (* P_WIDTH_ADDR_WRITE_B = "11" *) 
+(* P_WIDTH_COL_WRITE_A = "54" *) (* P_WIDTH_COL_WRITE_B = "54" *) (* READ_DATA_WIDTH_A = "54" *) 
+(* READ_DATA_WIDTH_B = "54" *) (* READ_LATENCY_A = "2" *) (* READ_LATENCY_B = "2" *) 
+(* READ_RESET_VALUE_A = "0" *) (* READ_RESET_VALUE_B = "" *) (* RST_MODE_A = "SYNC" *) 
+(* RST_MODE_B = "SYNC" *) (* SIM_ASSERT_CHK = "0" *) (* USE_EMBEDDED_CONSTRAINT = "0" *) 
+(* USE_MEM_INIT = "0" *) (* VERSION = "0" *) (* WAKEUP_TIME = "0" *) 
+(* WRITE_DATA_WIDTH_A = "54" *) (* WRITE_DATA_WIDTH_B = "54" *) (* WRITE_MODE_A = "2" *) 
+(* WRITE_MODE_B = "2" *) (* XPM_MODULE = "TRUE" *) (* rsta_loop_iter = "56" *) 
+(* rstb_loop_iter = "56" *) 
 module system_MIPI_CSI_2_RX_0_0_xpm_memory_base
    (sleep,
     clka,
@@ -12159,7 +12176,7 @@ endmodule
 (* C_WR_DEPTH_WRCH = "16" *) (* C_WR_FREQ = "1" *) (* C_WR_PNTR_WIDTH = "10" *) 
 (* C_WR_PNTR_WIDTH_AXIS = "5" *) (* C_WR_PNTR_WIDTH_RACH = "4" *) (* C_WR_PNTR_WIDTH_RDCH = "10" *) 
 (* C_WR_PNTR_WIDTH_WACH = "4" *) (* C_WR_PNTR_WIDTH_WDCH = "10" *) (* C_WR_PNTR_WIDTH_WRCH = "4" *) 
-(* C_WR_RESPONSE_LATENCY = "1" *) 
+(* C_WR_RESPONSE_LATENCY = "1" *) (* ORIG_REF_NAME = "fifo_generator_v13_2_5" *) 
 module system_MIPI_CSI_2_RX_0_0_fifo_generator_v13_2_5
    (backup,
     backup_marker,
@@ -13175,6 +13192,7 @@ module system_MIPI_CSI_2_RX_0_0_fifo_generator_v13_2_5
         .wr_rst_busy(wr_rst_busy));
 endmodule
 
+(* ORIG_REF_NAME = "fifo_generator_v13_2_5_clk_x_pntrs" *) 
 module system_MIPI_CSI_2_RX_0_0_fifo_generator_v13_2_5_clk_x_pntrs
    (\dest_out_bin_ff_reg[0] ,
     RD_PNTR_WR,
@@ -13300,6 +13318,7 @@ module system_MIPI_CSI_2_RX_0_0_fifo_generator_v13_2_5_clk_x_pntrs
         .src_in_bin(\src_gray_ff_reg[4]_0 ));
 endmodule
 
+(* ORIG_REF_NAME = "fifo_generator_v13_2_5_dmem" *) 
 module system_MIPI_CSI_2_RX_0_0_fifo_generator_v13_2_5_dmem
    (dout_i,
     s_aclk,
@@ -13797,6 +13816,7 @@ module system_MIPI_CSI_2_RX_0_0_fifo_generator_v13_2_5_dmem
         .R(1'b0));
 endmodule
 
+(* ORIG_REF_NAME = "fifo_generator_v13_2_5_fifo_generator_ramfifo" *) 
 module system_MIPI_CSI_2_RX_0_0_fifo_generator_v13_2_5_fifo_generator_ramfifo
    (wr_rst_busy,
     Q,
@@ -13912,6 +13932,7 @@ module system_MIPI_CSI_2_RX_0_0_fifo_generator_v13_2_5_fifo_generator_ramfifo
         .wr_rst_busy(wr_rst_busy));
 endmodule
 
+(* ORIG_REF_NAME = "fifo_generator_v13_2_5_fifo_generator_top" *) 
 module system_MIPI_CSI_2_RX_0_0_fifo_generator_v13_2_5_fifo_generator_top
    (wr_rst_busy,
     Q,
@@ -13958,6 +13979,7 @@ module system_MIPI_CSI_2_RX_0_0_fifo_generator_v13_2_5_fifo_generator_top
         .wr_rst_busy(wr_rst_busy));
 endmodule
 
+(* ORIG_REF_NAME = "fifo_generator_v13_2_5_memory" *) 
 module system_MIPI_CSI_2_RX_0_0_fifo_generator_v13_2_5_memory
    (Q,
     E,
@@ -14332,6 +14354,7 @@ module system_MIPI_CSI_2_RX_0_0_fifo_generator_v13_2_5_memory
         .R(1'b0));
 endmodule
 
+(* ORIG_REF_NAME = "fifo_generator_v13_2_5_rd_bin_cntr" *) 
 module system_MIPI_CSI_2_RX_0_0_fifo_generator_v13_2_5_rd_bin_cntr
    (Q,
     \gc0.count_d1_reg[3]_0 ,
@@ -14486,6 +14509,7 @@ module system_MIPI_CSI_2_RX_0_0_fifo_generator_v13_2_5_rd_bin_cntr
         .O(\gc0.count_d1_reg[3]_0 ));
 endmodule
 
+(* ORIG_REF_NAME = "fifo_generator_v13_2_5_rd_fwft" *) 
 module system_MIPI_CSI_2_RX_0_0_fifo_generator_v13_2_5_rd_fwft
    (\gpregsm1.curr_fwft_state_reg[1]_0 ,
     E,
@@ -14691,6 +14715,7 @@ module system_MIPI_CSI_2_RX_0_0_fifo_generator_v13_2_5_rd_fwft
         .O(\gpregsm1.curr_fwft_state_reg[1]_0 ));
 endmodule
 
+(* ORIG_REF_NAME = "fifo_generator_v13_2_5_rd_logic" *) 
 module system_MIPI_CSI_2_RX_0_0_fifo_generator_v13_2_5_rd_logic
    (\gpregsm1.curr_fwft_state_reg[1] ,
     Q,
@@ -14758,6 +14783,7 @@ module system_MIPI_CSI_2_RX_0_0_fifo_generator_v13_2_5_rd_logic
         .m_aclk(m_aclk));
 endmodule
 
+(* ORIG_REF_NAME = "fifo_generator_v13_2_5_rd_status_flags_as" *) 
 module system_MIPI_CSI_2_RX_0_0_fifo_generator_v13_2_5_rd_status_flags_as
    (out,
     ram_empty_fb_i_reg_0,
@@ -14799,6 +14825,7 @@ module system_MIPI_CSI_2_RX_0_0_fifo_generator_v13_2_5_rd_status_flags_as
         .Q(ram_empty_i));
 endmodule
 
+(* ORIG_REF_NAME = "fifo_generator_v13_2_5_reset_blk_ramfifo" *) 
 module system_MIPI_CSI_2_RX_0_0_fifo_generator_v13_2_5_reset_blk_ramfifo
    (AR,
     \ngwrdrst.grst.g7serrst.gnsckt_wrst.gic_rst.sckt_rd_rst_ic_reg_0 ,
@@ -15102,6 +15129,7 @@ module system_MIPI_CSI_2_RX_0_0_fifo_generator_v13_2_5_reset_blk_ramfifo
         .O(inverted_reset));
 endmodule
 
+(* ORIG_REF_NAME = "fifo_generator_v13_2_5_synth" *) 
 module system_MIPI_CSI_2_RX_0_0_fifo_generator_v13_2_5_synth
    (wr_rst_busy,
     Q,
@@ -15148,6 +15176,7 @@ module system_MIPI_CSI_2_RX_0_0_fifo_generator_v13_2_5_synth
         .wr_rst_busy(wr_rst_busy));
 endmodule
 
+(* ORIG_REF_NAME = "fifo_generator_v13_2_5_wr_bin_cntr" *) 
 module system_MIPI_CSI_2_RX_0_0_fifo_generator_v13_2_5_wr_bin_cntr
    (\grstd1.grst_full.grst_f.rst_d3_reg ,
     Q,
@@ -15380,6 +15409,7 @@ module system_MIPI_CSI_2_RX_0_0_fifo_generator_v13_2_5_wr_bin_cntr
         .O(ram_full_i_i_5_n_0));
 endmodule
 
+(* ORIG_REF_NAME = "fifo_generator_v13_2_5_wr_logic" *) 
 module system_MIPI_CSI_2_RX_0_0_fifo_generator_v13_2_5_wr_logic
    (E,
     Q,
@@ -15444,6 +15474,7 @@ module system_MIPI_CSI_2_RX_0_0_fifo_generator_v13_2_5_wr_logic
         .s_aclk(s_aclk));
 endmodule
 
+(* ORIG_REF_NAME = "fifo_generator_v13_2_5_wr_status_flags_as" *) 
 module system_MIPI_CSI_2_RX_0_0_fifo_generator_v13_2_5_wr_status_flags_as
    (E,
     s_axis_tready,

@@ -8,7 +8,6 @@ static struct perf_stats client;
 char *frame_pointer;
 u32 ptrCounter = 0;
 
-unsigned int addressUpdate = false;
 unsigned int sendFinished = false;
 
 u32 frameCounter = 0;
@@ -140,7 +139,6 @@ static void udp_packet_send(u8_t finished)
 	struct pbuf *packet;
 	err_t err;
 	int id = 0;
-	addressUpdate = false;
 
 	for (i = 0; i < NUM_OF_PARALLEL_CLIENTS; i++) {
 		packet = pbuf_alloc(PBUF_TRANSPORT, UDP_SEND_BUFSIZE, PBUF_POOL);
@@ -154,6 +152,8 @@ static void udp_packet_send(u8_t finished)
 			if(finished==FINISH){
 				//xil_printf("id: %d\n\r",id);
 				//xil_printf("finish: %d\n\r",SIZE_OF_FRAME - (id)*(UDP_SEND_BUFSIZE-sizeof(int)));
+
+				//12Byteだけ送信
 				memcpy((int*)packet->payload+1, frame_pointer+ptrCounter, SIZE_OF_FRAME-(id*(UDP_SEND_BUFSIZE-sizeof(int))));
 			}
 			else{
@@ -219,7 +219,7 @@ static void udp_packet_send(u8_t finished)
 /** Transmit data on a udp session */
 void transfer_data(void)
 {
-	if(!addressUpdate && sendFinished){ // アドレスが更新されずに、送信が完了していたら何もせずに帰る。
+	if(sendFinished){ // 送信完了状態だったら帰る。割り込みが入ると未完了状態になる。
 		return;
 	}
 	else {
@@ -249,15 +249,17 @@ void transfer_data(void)
 			udp_packet_send(FINISH);
 			//xil_printf("finished 0x%x\n\r", frame_pointer);
 			sendFinished = true;
+			frameCounter++;
 			//u64_t diff_ms = now - client.start_time;
 			//udp_conn_report(diff_ms, INTER_REPORT);
 			ptrCounter = 0;
 			return;
 		}
-
-		//1~1925回(0~1924)
-		udp_packet_send(!FINISH);
-		ptrCounter += UDP_SEND_BUFSIZE-sizeof(int);//+=1436byte
+		else{
+			//1~1925回(0~1924)
+			udp_packet_send(!FINISH);
+			ptrCounter += UDP_SEND_BUFSIZE-sizeof(int);//+=1436byte
+		}
 	}
 }
 
@@ -308,9 +310,7 @@ void start_application(void)
 //前のフレームのポインターを渡してくるのでframe_pointerに入れる。
 void update_address(char *pointer){
 	// frame_pointerにコピペ
-	addressUpdate = true;
 	sendFinished = false;
 	frame_pointer = pointer;
-	frameCounter++;
 	//xil_printf("frame_pointer: 0x%x\n\r",frame_pointer);
 }

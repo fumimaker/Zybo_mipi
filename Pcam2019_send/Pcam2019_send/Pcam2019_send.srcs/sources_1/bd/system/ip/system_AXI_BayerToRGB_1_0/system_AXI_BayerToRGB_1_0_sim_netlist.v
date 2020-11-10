@@ -1,10 +1,10 @@
 // Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
 // --------------------------------------------------------------------------------
 // Tool Version: Vivado v.2019.2 (win64) Build 2708876 Wed Nov  6 21:40:23 MST 2019
-// Date        : Sat Sep 12 18:08:21 2020
-// Host        : FUMIMAKER6BEE running 64-bit major release  (build 9200)
-// Command     : write_verilog -force -mode funcsim -rename_top system_AXI_BayerToRGB_1_0 -prefix
-//               system_AXI_BayerToRGB_1_0_ system_AXI_BayerToRGB_1_0_sim_netlist.v
+// Date        : Tue Nov 10 15:04:01 2020
+// Host        : DESKTOP-5VC2SBS running 64-bit major release  (build 9200)
+// Command     : write_verilog -force -mode funcsim
+//               C:/Github/Zybo_mipi/Pcam2019_send/Pcam2019_send/Pcam2019_send.srcs/sources_1/bd/system/ip/system_AXI_BayerToRGB_1_0/system_AXI_BayerToRGB_1_0_sim_netlist.v
 // Design      : system_AXI_BayerToRGB_1_0
 // Purpose     : This verilog netlist is a functional simulation representation of the design and should not be modified
 //               or synthesized. This netlist cannot be used for SDF annotated simulation.
@@ -12,6 +12,70 @@
 // --------------------------------------------------------------------------------
 `timescale 1 ps / 1 ps
 
+(* CHECK_LICENSE_TYPE = "system_AXI_BayerToRGB_1_0,AXI_BayerToRGB,{}" *) (* downgradeipidentifiedwarnings = "yes" *) (* ip_definition_source = "package_project" *) 
+(* x_core_info = "AXI_BayerToRGB,Vivado 2019.2" *) 
+(* NotValidForBitStream *)
+module system_AXI_BayerToRGB_1_0
+   (StreamClk,
+    sStreamReset_n,
+    s_axis_video_tready,
+    s_axis_video_tdata,
+    s_axis_video_tvalid,
+    s_axis_video_tuser,
+    s_axis_video_tlast,
+    m_axis_video_tready,
+    m_axis_video_tdata,
+    m_axis_video_tvalid,
+    m_axis_video_tuser,
+    m_axis_video_tlast);
+  (* x_interface_info = "xilinx.com:signal:clock:1.0 AXI_Stream_Clk CLK" *) (* x_interface_parameter = "XIL_INTERFACENAME AXI_Stream_Clk, ASSOCIATED_BUSIF AXI_Stream_Master:AXI_Slave_Interface, FREQ_HZ 150000000, PHASE 0.0, CLK_DOMAIN system_clk_wiz_0_0_clk_out1, INSERT_VIP 0" *) input StreamClk;
+  (* x_interface_info = "xilinx.com:signal:reset:1.0 AXI_Stream_Reset_n RST" *) (* x_interface_parameter = "XIL_INTERFACENAME AXI_Stream_Reset_n, POLARITY ACTIVE_LOW, INSERT_VIP 0" *) input sStreamReset_n;
+  (* x_interface_info = "xilinx.com:interface:axis:1.0 AXI_Slave_Interface TREADY" *) (* x_interface_parameter = "XIL_INTERFACENAME AXI_Slave_Interface, TDATA_NUM_BYTES 5, TDEST_WIDTH 0, TID_WIDTH 0, TUSER_WIDTH 1, HAS_TREADY 1, HAS_TSTRB 0, HAS_TKEEP 0, HAS_TLAST 1, FREQ_HZ 150000000, PHASE 0.0, CLK_DOMAIN system_clk_wiz_0_0_clk_out1, LAYERED_METADATA undef, INSERT_VIP 0" *) output s_axis_video_tready;
+  (* x_interface_info = "xilinx.com:interface:axis:1.0 AXI_Slave_Interface TDATA" *) input [39:0]s_axis_video_tdata;
+  (* x_interface_info = "xilinx.com:interface:axis:1.0 AXI_Slave_Interface TVALID" *) input s_axis_video_tvalid;
+  (* x_interface_info = "xilinx.com:interface:axis:1.0 AXI_Slave_Interface TUSER" *) input s_axis_video_tuser;
+  (* x_interface_info = "xilinx.com:interface:axis:1.0 AXI_Slave_Interface TLAST" *) input s_axis_video_tlast;
+  (* x_interface_info = "xilinx.com:interface:axis:1.0 AXI_Stream_Master TREADY" *) (* x_interface_parameter = "XIL_INTERFACENAME AXI_Stream_Master, TDATA_NUM_BYTES 4, TDEST_WIDTH 0, TID_WIDTH 0, TUSER_WIDTH 1, HAS_TREADY 1, HAS_TSTRB 0, HAS_TKEEP 0, HAS_TLAST 1, FREQ_HZ 150000000, PHASE 0.0, CLK_DOMAIN system_clk_wiz_0_0_clk_out1, LAYERED_METADATA undef, INSERT_VIP 0" *) input m_axis_video_tready;
+  (* x_interface_info = "xilinx.com:interface:axis:1.0 AXI_Stream_Master TDATA" *) output [31:0]m_axis_video_tdata;
+  (* x_interface_info = "xilinx.com:interface:axis:1.0 AXI_Stream_Master TVALID" *) output m_axis_video_tvalid;
+  (* x_interface_info = "xilinx.com:interface:axis:1.0 AXI_Stream_Master TUSER" *) output m_axis_video_tuser;
+  (* x_interface_info = "xilinx.com:interface:axis:1.0 AXI_Stream_Master TLAST" *) output m_axis_video_tlast;
+
+  wire \<const0> ;
+  wire StreamClk;
+  wire [29:0]\^m_axis_video_tdata ;
+  wire m_axis_video_tlast;
+  wire m_axis_video_tready;
+  wire m_axis_video_tuser;
+  wire m_axis_video_tvalid;
+  wire sStreamReset_n;
+  wire [39:0]s_axis_video_tdata;
+  wire s_axis_video_tlast;
+  wire s_axis_video_tready;
+  wire s_axis_video_tuser;
+  wire s_axis_video_tvalid;
+
+  assign m_axis_video_tdata[31] = \<const0> ;
+  assign m_axis_video_tdata[30] = \<const0> ;
+  assign m_axis_video_tdata[29:0] = \^m_axis_video_tdata [29:0];
+  GND GND
+       (.G(\<const0> ));
+  system_AXI_BayerToRGB_1_0_AXI_BayerToRGB U0
+       (.StreamClk(StreamClk),
+        .m_axis_video_tdata(\^m_axis_video_tdata ),
+        .m_axis_video_tlast(m_axis_video_tlast),
+        .m_axis_video_tready(m_axis_video_tready),
+        .m_axis_video_tuser(m_axis_video_tuser),
+        .m_axis_video_tvalid(m_axis_video_tvalid),
+        .sStreamReset_n(sStreamReset_n),
+        .s_axis_video_tdata(s_axis_video_tdata),
+        .s_axis_video_tlast(s_axis_video_tlast),
+        .s_axis_video_tready(s_axis_video_tready),
+        .s_axis_video_tuser(s_axis_video_tuser),
+        .s_axis_video_tvalid(s_axis_video_tvalid));
+endmodule
+
+(* ORIG_REF_NAME = "AXI_BayerToRGB" *) 
 module system_AXI_BayerToRGB_1_0_AXI_BayerToRGB
    (m_axis_video_tdata,
     m_axis_video_tuser,
@@ -398,7 +462,7 @@ module system_AXI_BayerToRGB_1_0_AXI_BayerToRGB
         .I1(\sStrobesShiftReg_reg[2][FirstColumn]__0 ),
         .I2(\sStrobesShiftReg_reg[2][FirstLine]__0 ),
         .I3(sel),
-        .I4(m_axis_video_tdata[19]),
+        .I4(m_axis_video_tdata[9]),
         .O(\sAXIMasterBlue[9]_i_1_n_0 ));
   LUT6 #(
     .INIT(64'hFFF0CCAA00F0CCAA)) 
@@ -414,61 +478,61 @@ module system_AXI_BayerToRGB_1_0_AXI_BayerToRGB
        (.C(StreamClk),
         .CE(sel),
         .D(\sAXIMasterBlue[0]_i_1_n_0 ),
-        .Q(m_axis_video_tdata[10]),
+        .Q(m_axis_video_tdata[0]),
         .R(\sAXIMasterRed[8]_i_1_n_0 ));
   FDRE \sAXIMasterBlue_reg[1] 
        (.C(StreamClk),
         .CE(sel),
         .D(\sAXIMasterBlue[1]_i_1_n_0 ),
-        .Q(m_axis_video_tdata[11]),
+        .Q(m_axis_video_tdata[1]),
         .R(\sAXIMasterRed[8]_i_1_n_0 ));
   FDRE \sAXIMasterBlue_reg[2] 
        (.C(StreamClk),
         .CE(sel),
         .D(\sAXIMasterBlue[2]_i_1_n_0 ),
-        .Q(m_axis_video_tdata[12]),
+        .Q(m_axis_video_tdata[2]),
         .R(\sAXIMasterRed[8]_i_1_n_0 ));
   FDRE \sAXIMasterBlue_reg[3] 
        (.C(StreamClk),
         .CE(sel),
         .D(\sAXIMasterBlue[3]_i_1_n_0 ),
-        .Q(m_axis_video_tdata[13]),
+        .Q(m_axis_video_tdata[3]),
         .R(\sAXIMasterRed[8]_i_1_n_0 ));
   FDRE \sAXIMasterBlue_reg[4] 
        (.C(StreamClk),
         .CE(sel),
         .D(\sAXIMasterBlue[4]_i_1_n_0 ),
-        .Q(m_axis_video_tdata[14]),
+        .Q(m_axis_video_tdata[4]),
         .R(\sAXIMasterRed[8]_i_1_n_0 ));
   FDRE \sAXIMasterBlue_reg[5] 
        (.C(StreamClk),
         .CE(sel),
         .D(\sAXIMasterBlue[5]_i_1_n_0 ),
-        .Q(m_axis_video_tdata[15]),
+        .Q(m_axis_video_tdata[5]),
         .R(\sAXIMasterRed[8]_i_1_n_0 ));
   FDRE \sAXIMasterBlue_reg[6] 
        (.C(StreamClk),
         .CE(sel),
         .D(\sAXIMasterBlue[6]_i_1_n_0 ),
-        .Q(m_axis_video_tdata[16]),
+        .Q(m_axis_video_tdata[6]),
         .R(\sAXIMasterRed[8]_i_1_n_0 ));
   FDRE \sAXIMasterBlue_reg[7] 
        (.C(StreamClk),
         .CE(sel),
         .D(\sAXIMasterBlue[7]_i_1_n_0 ),
-        .Q(m_axis_video_tdata[17]),
+        .Q(m_axis_video_tdata[7]),
         .R(\sAXIMasterRed[8]_i_1_n_0 ));
   FDRE \sAXIMasterBlue_reg[8] 
        (.C(StreamClk),
         .CE(sel),
         .D(\sAXIMasterBlue[8]_i_1_n_0 ),
-        .Q(m_axis_video_tdata[18]),
+        .Q(m_axis_video_tdata[8]),
         .R(\sAXIMasterRed[8]_i_1_n_0 ));
   FDRE \sAXIMasterBlue_reg[9] 
        (.C(StreamClk),
         .CE(1'b1),
         .D(\sAXIMasterBlue[9]_i_1_n_0 ),
-        .Q(m_axis_video_tdata[19]),
+        .Q(m_axis_video_tdata[9]),
         .R(\sAXIMasterRed[9]_i_1_n_0 ));
   LUT5 #(
     .INIT(32'hFFFBCCC8)) 
@@ -477,7 +541,7 @@ module system_AXI_BayerToRGB_1_0_AXI_BayerToRGB
         .I1(sel),
         .I2(\sStrobesShiftReg_reg[2][FirstColumn]__0 ),
         .I3(\sStrobesShiftReg_reg[2][FirstLine]__0 ),
-        .I4(m_axis_video_tdata[9]),
+        .I4(m_axis_video_tdata[19]),
         .O(\sAXIMasterGreen[10]_i_1_n_0 ));
   LUT4 #(
     .INIT(16'hEB28)) 
@@ -663,25 +727,25 @@ module system_AXI_BayerToRGB_1_0_AXI_BayerToRGB
        (.C(StreamClk),
         .CE(1'b1),
         .D(\sAXIMasterGreen[10]_i_1_n_0 ),
-        .Q(m_axis_video_tdata[9]),
+        .Q(m_axis_video_tdata[19]),
         .R(\sAXIMasterRed[9]_i_1_n_0 ));
   FDRE \sAXIMasterGreen_reg[1] 
        (.C(StreamClk),
         .CE(sel),
         .D(sAXIMasterGreen1_in[1]),
-        .Q(m_axis_video_tdata[0]),
+        .Q(m_axis_video_tdata[10]),
         .R(\sAXIMasterRed[8]_i_1_n_0 ));
   FDRE \sAXIMasterGreen_reg[2] 
        (.C(StreamClk),
         .CE(sel),
         .D(sAXIMasterGreen1_in[2]),
-        .Q(m_axis_video_tdata[1]),
+        .Q(m_axis_video_tdata[11]),
         .R(\sAXIMasterRed[8]_i_1_n_0 ));
   FDRE \sAXIMasterGreen_reg[3] 
        (.C(StreamClk),
         .CE(sel),
         .D(sAXIMasterGreen1_in[3]),
-        .Q(m_axis_video_tdata[2]),
+        .Q(m_axis_video_tdata[12]),
         .R(\sAXIMasterRed[8]_i_1_n_0 ));
   (* METHODOLOGY_DRC_VIOS = "{SYNTH-8 {cell *THIS*}}" *) 
   CARRY4 \sAXIMasterGreen_reg[3]_i_1 
@@ -695,25 +759,25 @@ module system_AXI_BayerToRGB_1_0_AXI_BayerToRGB
        (.C(StreamClk),
         .CE(sel),
         .D(sAXIMasterGreen1_in[4]),
-        .Q(m_axis_video_tdata[3]),
+        .Q(m_axis_video_tdata[13]),
         .R(\sAXIMasterRed[8]_i_1_n_0 ));
   FDRE \sAXIMasterGreen_reg[5] 
        (.C(StreamClk),
         .CE(sel),
         .D(sAXIMasterGreen1_in[5]),
-        .Q(m_axis_video_tdata[4]),
+        .Q(m_axis_video_tdata[14]),
         .R(\sAXIMasterRed[8]_i_1_n_0 ));
   FDRE \sAXIMasterGreen_reg[6] 
        (.C(StreamClk),
         .CE(sel),
         .D(sAXIMasterGreen1_in[6]),
-        .Q(m_axis_video_tdata[5]),
+        .Q(m_axis_video_tdata[15]),
         .R(\sAXIMasterRed[8]_i_1_n_0 ));
   FDRE \sAXIMasterGreen_reg[7] 
        (.C(StreamClk),
         .CE(sel),
         .D(sAXIMasterGreen1_in[7]),
-        .Q(m_axis_video_tdata[6]),
+        .Q(m_axis_video_tdata[16]),
         .R(\sAXIMasterRed[8]_i_1_n_0 ));
   (* METHODOLOGY_DRC_VIOS = "{SYNTH-8 {cell *THIS*}}" *) 
   CARRY4 \sAXIMasterGreen_reg[7]_i_1 
@@ -727,13 +791,13 @@ module system_AXI_BayerToRGB_1_0_AXI_BayerToRGB
        (.C(StreamClk),
         .CE(sel),
         .D(sAXIMasterGreen1_in[8]),
-        .Q(m_axis_video_tdata[7]),
+        .Q(m_axis_video_tdata[17]),
         .R(\sAXIMasterRed[8]_i_1_n_0 ));
   FDRE \sAXIMasterGreen_reg[9] 
        (.C(StreamClk),
         .CE(sel),
         .D(sAXIMasterGreen1_in[9]),
-        .Q(m_axis_video_tdata[8]),
+        .Q(m_axis_video_tdata[18]),
         .R(\sAXIMasterRed[8]_i_1_n_0 ));
   (* METHODOLOGY_DRC_VIOS = "{SYNTH-8 {cell *THIS*}}" *) 
   CARRY4 \sAXIMasterGreen_reg[9]_i_1 
@@ -2453,6 +2517,7 @@ module system_AXI_BayerToRGB_1_0_AXI_BayerToRGB
         .O(s_axis_video_tready));
 endmodule
 
+(* ORIG_REF_NAME = "LineBuffer" *) 
 module system_AXI_BayerToRGB_1_0_LineBuffer
    (D,
     pLineBuffer_reg_0,
@@ -2642,69 +2707,6 @@ module system_AXI_BayerToRGB_1_0_LineBuffer
         .I1(pLineBuffer_reg_1),
         .I2(\sPixel_reg[2][9] [9]),
         .O(pLineBuffer_reg_0[9]));
-endmodule
-
-(* CHECK_LICENSE_TYPE = "system_AXI_BayerToRGB_1_0,AXI_BayerToRGB,{}" *) (* downgradeipidentifiedwarnings = "yes" *) (* ip_definition_source = "package_project" *) 
-(* x_core_info = "AXI_BayerToRGB,Vivado 2019.2" *) 
-(* NotValidForBitStream *)
-module system_AXI_BayerToRGB_1_0
-   (StreamClk,
-    sStreamReset_n,
-    s_axis_video_tready,
-    s_axis_video_tdata,
-    s_axis_video_tvalid,
-    s_axis_video_tuser,
-    s_axis_video_tlast,
-    m_axis_video_tready,
-    m_axis_video_tdata,
-    m_axis_video_tvalid,
-    m_axis_video_tuser,
-    m_axis_video_tlast);
-  (* x_interface_info = "xilinx.com:signal:clock:1.0 AXI_Stream_Clk CLK" *) (* x_interface_parameter = "XIL_INTERFACENAME AXI_Stream_Clk, ASSOCIATED_BUSIF AXI_Stream_Master:AXI_Slave_Interface, FREQ_HZ 150000000, PHASE 0.0, CLK_DOMAIN system_clk_wiz_0_0_clk_out1, INSERT_VIP 0" *) input StreamClk;
-  (* x_interface_info = "xilinx.com:signal:reset:1.0 AXI_Stream_Reset_n RST" *) (* x_interface_parameter = "XIL_INTERFACENAME AXI_Stream_Reset_n, POLARITY ACTIVE_LOW, INSERT_VIP 0" *) input sStreamReset_n;
-  (* x_interface_info = "xilinx.com:interface:axis:1.0 AXI_Slave_Interface TREADY" *) (* x_interface_parameter = "XIL_INTERFACENAME AXI_Slave_Interface, TDATA_NUM_BYTES 5, TDEST_WIDTH 0, TID_WIDTH 0, TUSER_WIDTH 1, HAS_TREADY 1, HAS_TSTRB 0, HAS_TKEEP 0, HAS_TLAST 1, FREQ_HZ 150000000, PHASE 0.0, CLK_DOMAIN system_clk_wiz_0_0_clk_out1, LAYERED_METADATA undef, INSERT_VIP 0" *) output s_axis_video_tready;
-  (* x_interface_info = "xilinx.com:interface:axis:1.0 AXI_Slave_Interface TDATA" *) input [39:0]s_axis_video_tdata;
-  (* x_interface_info = "xilinx.com:interface:axis:1.0 AXI_Slave_Interface TVALID" *) input s_axis_video_tvalid;
-  (* x_interface_info = "xilinx.com:interface:axis:1.0 AXI_Slave_Interface TUSER" *) input s_axis_video_tuser;
-  (* x_interface_info = "xilinx.com:interface:axis:1.0 AXI_Slave_Interface TLAST" *) input s_axis_video_tlast;
-  (* x_interface_info = "xilinx.com:interface:axis:1.0 AXI_Stream_Master TREADY" *) (* x_interface_parameter = "XIL_INTERFACENAME AXI_Stream_Master, TDATA_NUM_BYTES 4, TDEST_WIDTH 0, TID_WIDTH 0, TUSER_WIDTH 1, HAS_TREADY 1, HAS_TSTRB 0, HAS_TKEEP 0, HAS_TLAST 1, FREQ_HZ 150000000, PHASE 0.0, CLK_DOMAIN system_clk_wiz_0_0_clk_out1, LAYERED_METADATA undef, INSERT_VIP 0" *) input m_axis_video_tready;
-  (* x_interface_info = "xilinx.com:interface:axis:1.0 AXI_Stream_Master TDATA" *) output [31:0]m_axis_video_tdata;
-  (* x_interface_info = "xilinx.com:interface:axis:1.0 AXI_Stream_Master TVALID" *) output m_axis_video_tvalid;
-  (* x_interface_info = "xilinx.com:interface:axis:1.0 AXI_Stream_Master TUSER" *) output m_axis_video_tuser;
-  (* x_interface_info = "xilinx.com:interface:axis:1.0 AXI_Stream_Master TLAST" *) output m_axis_video_tlast;
-
-  wire \<const0> ;
-  wire StreamClk;
-  wire [29:0]\^m_axis_video_tdata ;
-  wire m_axis_video_tlast;
-  wire m_axis_video_tready;
-  wire m_axis_video_tuser;
-  wire m_axis_video_tvalid;
-  wire sStreamReset_n;
-  wire [39:0]s_axis_video_tdata;
-  wire s_axis_video_tlast;
-  wire s_axis_video_tready;
-  wire s_axis_video_tuser;
-  wire s_axis_video_tvalid;
-
-  assign m_axis_video_tdata[31] = \<const0> ;
-  assign m_axis_video_tdata[30] = \<const0> ;
-  assign m_axis_video_tdata[29:0] = \^m_axis_video_tdata [29:0];
-  GND GND
-       (.G(\<const0> ));
-  system_AXI_BayerToRGB_1_0_AXI_BayerToRGB U0
-       (.StreamClk(StreamClk),
-        .m_axis_video_tdata(\^m_axis_video_tdata ),
-        .m_axis_video_tlast(m_axis_video_tlast),
-        .m_axis_video_tready(m_axis_video_tready),
-        .m_axis_video_tuser(m_axis_video_tuser),
-        .m_axis_video_tvalid(m_axis_video_tvalid),
-        .sStreamReset_n(sStreamReset_n),
-        .s_axis_video_tdata(s_axis_video_tdata),
-        .s_axis_video_tlast(s_axis_video_tlast),
-        .s_axis_video_tready(s_axis_video_tready),
-        .s_axis_video_tuser(s_axis_video_tuser),
-        .s_axis_video_tvalid(s_axis_video_tvalid));
 endmodule
 `ifndef GLBL
 `define GLBL

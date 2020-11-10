@@ -154,7 +154,6 @@ public:
 		uint32_t addr = frame_buf_base_addr_;
 		for (int iFrm=0; iFrm<drv_inst_.MaxNumFrames; ++iFrm) {
 			context_.ReadCfg.FrameStoreStartAddr[iFrm] = addr;
-			xil_printf("VDMA Frame %d Addr: 0x%x\r\n", iFrm, addr);
 			//memset((void*)addr,0,context_.ReadCfg.HoriSizeInput * context_.ReadCfg.VertSizeInput);
 			addr += context_.ReadCfg.HoriSizeInput * context_.ReadCfg.VertSizeInput;
 		}
@@ -200,8 +199,12 @@ public:
 			throw std::runtime_error(__FILE__ ":" LINE_STRING);
 		}
 		uint32_t addr = frame_buf_base_addr_;
+
+		xil_printf("drv_inst_.MaxNumFrames: %d\n\r", drv_inst_.MaxNumFrames); //fumi edit
+
 		for (int iFrm=0; iFrm<drv_inst_.MaxNumFrames; ++iFrm) {
 			context_.WriteCfg.FrameStoreStartAddr[iFrm] = addr;
+			xil_printf("VDMA Frame %d Addr: 0x%x\r\n", iFrm, addr);
 			addr += context_.WriteCfg.HoriSizeInput * context_.WriteCfg.VertSizeInput;
 		}
 		status = XAxiVdma_DmaSetBufferAddr(&drv_inst_, XAXIVDMA_WRITE, context_.WriteCfg.FrameStoreStartAddr);
@@ -214,6 +217,7 @@ public:
 		//Unmask error interrupts
 		XAxiVdma_MaskS2MMErrIntr(&drv_inst_, ~XAXIVDMA_S2MM_IRQ_ERR_ALL_MASK, XAXIVDMA_WRITE);
 		//Enable write channel error and frame count interrupts
+
 		XAxiVdma_IntrEnable(&drv_inst_, XAXIVDMA_IXR_ERROR_MASK|XAXIVDMA_IXR_FRMCNT_MASK, XAXIVDMA_WRITE);//add |XAXIVDMA_IXR_FRMCNT_MASK
 	}
 	void enableWrite()
@@ -228,12 +232,25 @@ public:
 	}
 	void readHandler(uint32_t irq_types)
 	{
-		std::cout << "VDMA:read complete" << std::endl;
+		//std::cout << "VDMA:read complete" << std::endl;
+
+//		int currentFrame = XAxiVdma_CurrFrameStore(&drv_inst_, XAXIVDMA_READ);
+//		int prevFrame = 0;
+//		if(currentFrame==0){
+//			prevFrame = 2;
+//		}
+//		else{
+//			prevFrame = currentFrame - 1;
+//		}
+//		int address = context_.ReadCfg.FrameStoreStartAddr[currentFrame]; //アドレスをintで持ってる
+//		char *pointer = (char *)address;//データ用
+//		update_address(pointer);
 
 	}
 	void writeHandler(uint32_t irq_types)
 	{
 		//std::cout << "VDMA:write complete" << std::endl;
+
 		int currentFrame = XAxiVdma_CurrFrameStore(&drv_inst_, XAXIVDMA_WRITE);
 		int prevFrame = 0;
 		if(currentFrame==0){
@@ -243,10 +260,10 @@ public:
 			prevFrame = currentFrame - 1;
 		}
 
-		int address = context_.WriteCfg.FrameStoreStartAddr[prevFrame]; //アドレスをintで持ってる
+		int address = context_.WriteCfg.FrameStoreStartAddr[currentFrame]; //アドレスをintで持ってる
 		char *pointer = (char *)address;//データ用
-		//pointer+=1280*3;
 		update_address(pointer);
+
 		//xil_printf("interrupts:0x%x \r\n", pointer);
 //		for(int i=0; i<1280; i++){
 //			for(int j=0; j<1; j++){

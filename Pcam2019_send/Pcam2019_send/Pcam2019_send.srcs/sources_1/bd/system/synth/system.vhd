@@ -1,7 +1,7 @@
 --Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
 ----------------------------------------------------------------------------------
 --Tool Version: Vivado v.2019.2 (win64) Build 2708876 Wed Nov  6 21:40:23 MST 2019
---Date        : Tue Nov 10 03:33:19 2020
+--Date        : Tue Nov 10 20:28:17 2020
 --Host        : DESKTOP-5VC2SBS running 64-bit major release  (build 9200)
 --Command     : generate_target system.bd
 --Design      : system
@@ -2830,22 +2830,6 @@ entity system is
 end system;
 
 architecture STRUCTURE of system is
-  component system_AXI_BayerToRGB_1_0 is
-  port (
-    StreamClk : in STD_LOGIC;
-    sStreamReset_n : in STD_LOGIC;
-    s_axis_video_tready : out STD_LOGIC;
-    s_axis_video_tdata : in STD_LOGIC_VECTOR ( 39 downto 0 );
-    s_axis_video_tvalid : in STD_LOGIC;
-    s_axis_video_tuser : in STD_LOGIC;
-    s_axis_video_tlast : in STD_LOGIC;
-    m_axis_video_tready : in STD_LOGIC;
-    m_axis_video_tdata : out STD_LOGIC_VECTOR ( 31 downto 0 );
-    m_axis_video_tvalid : out STD_LOGIC;
-    m_axis_video_tuser : out STD_LOGIC;
-    m_axis_video_tlast : out STD_LOGIC
-  );
-  end component system_AXI_BayerToRGB_1_0;
   component system_AXI_GammaCorrection_0_0 is
   port (
     StreamClk : in STD_LOGIC;
@@ -3452,6 +3436,22 @@ architecture STRUCTURE of system is
     resetn : in STD_LOGIC
   );
   end component system_system_ila_0_2;
+  component system_AXI_BayerToRGB_1_0 is
+  port (
+    StreamClk : in STD_LOGIC;
+    sStreamReset_n : in STD_LOGIC;
+    s_axis_video_tready : out STD_LOGIC;
+    s_axis_video_tdata : in STD_LOGIC_VECTOR ( 39 downto 0 );
+    s_axis_video_tvalid : in STD_LOGIC;
+    s_axis_video_tuser : in STD_LOGIC;
+    s_axis_video_tlast : in STD_LOGIC;
+    m_axis_video_tready : in STD_LOGIC;
+    m_axis_video_tdata : out STD_LOGIC_VECTOR ( 31 downto 0 );
+    m_axis_video_tvalid : out STD_LOGIC;
+    m_axis_video_tuser : out STD_LOGIC;
+    m_axis_video_tlast : out STD_LOGIC
+  );
+  end component system_AXI_BayerToRGB_1_0;
   signal AXI_BayerToRGB_1_AXI_Stream_Master_TDATA : STD_LOGIC_VECTOR ( 31 downto 0 );
   signal AXI_BayerToRGB_1_AXI_Stream_Master_TLAST : STD_LOGIC;
   signal AXI_BayerToRGB_1_AXI_Stream_Master_TREADY : STD_LOGIC;

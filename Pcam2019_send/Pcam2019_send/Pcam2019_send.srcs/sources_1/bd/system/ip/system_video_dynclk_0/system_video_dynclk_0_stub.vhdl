@@ -1,10 +1,10 @@
 -- Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
 -- --------------------------------------------------------------------------------
 -- Tool Version: Vivado v.2019.2 (win64) Build 2708876 Wed Nov  6 21:40:23 MST 2019
--- Date        : Sat Sep 12 18:11:53 2020
--- Host        : FUMIMAKER6BEE running 64-bit major release  (build 9200)
--- Command     : write_vhdl -force -mode synth_stub -rename_top system_video_dynclk_0 -prefix
---               system_video_dynclk_0_ system_video_dynclk_0_stub.vhdl
+-- Date        : Tue Nov 10 15:05:23 2020
+-- Host        : DESKTOP-5VC2SBS running 64-bit major release  (build 9200)
+-- Command     : write_vhdl -force -mode synth_stub
+--               C:/Github/Zybo_mipi/Pcam2019_send/Pcam2019_send/Pcam2019_send.srcs/sources_1/bd/system/ip/system_video_dynclk_0/system_video_dynclk_0_stub.vhdl
 -- Design      : system_video_dynclk_0
 -- Purpose     : Stub declaration of top-level module interface
 -- Device      : xc7z020clg400-1
