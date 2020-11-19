@@ -1,0 +1,80 @@
+04:00:52 INFO  : Launching XSCT server: xsct.bat -n  -interactive C:\Github\Zybo_mipi\Pcam2019_sendExp\vitis\temp_xsdb_launch_script.tcl
+04:00:54 INFO  : XSCT server has started successfully.
+04:00:54 INFO  : Successfully done setting XSCT server connection channel  
+04:00:54 INFO  : plnx-install-location is set to ''
+04:00:54 INFO  : Successfully done setting workspace for the tool. 
+04:00:54 INFO  : Successfully done query RDI_DATADIR 
+04:00:55 INFO  : Registering command handlers for Vitis TCF services
+04:01:58 INFO  : Successfully done sdx_reload_mss "C:/Github/Zybo_mipi/Pcam2019_sendExp/vitis/pcam2019SendExp/zynq_fsbl/zynq_fsbl_bsp/system.mss"
+04:01:58 INFO  : Successfully done sdx_reload_mss "C:/Github/Zybo_mipi/Pcam2019_sendExp/vitis/pcam2019SendExp/ps7_cortexa9_0/standalone_domain/bsp/system.mss"
+04:02:33 INFO  : Successfully done sdx_reload_mss "C:/Github/Zybo_mipi/Pcam2019_sendExp/vitis/pcam2019SendExp/ps7_cortexa9_0/standalone_domain/bsp/system.mss"
+04:02:33 INFO  : No changes in MSS file content so sources will not be generated.
+04:03:57 INFO  : (SwPlatform)  Successfully done add_library 
+04:04:20 INFO  : Successfully done sdx_reload_mss "C:/Github/Zybo_mipi/Pcam2019_sendExp/vitis/pcam2019SendExp/ps7_cortexa9_0/standalone_domain/bsp/system.mss"
+04:04:20 INFO  : No changes in MSS file content so sources will not be generated.
+04:04:46 INFO  : (SwPlatform)  Successfully done add_library 
+04:04:46 INFO  : (SwPlatform) Successfully done removeLibrary 
+04:04:48 INFO  : (SwPlatform)  Successfully done add_library 
+04:04:50 INFO  : (SwPlatform) Successfully done update_mss 
+04:04:51 INFO  : Successfully done sdx_reload_mss "C:/Github/Zybo_mipi/Pcam2019_sendExp/vitis/pcam2019SendExp/ps7_cortexa9_0/standalone_domain/bsp/system.mss"
+04:10:29 INFO  : (SwPlaform) Successfully done setParamInSpec 
+04:10:47 INFO  : (SwPlaform) Successfully done setParamInSpec 
+04:11:08 INFO  : (SwPlaform) Successfully done setParamInSpec 
+04:11:11 INFO  : (SwPlaform) Successfully done setParamInSpec 
+04:11:37 INFO  : (SwPlaform) Successfully done setParamInSpec 
+04:11:41 INFO  : (SwPlaform) Successfully done setParamInSpec 
+04:11:55 INFO  : (SwPlaform) Successfully done setParamInSpec 
+04:11:55 INFO  : (SwPlatform) Successfully done update_mss 
+04:11:57 INFO  : Successfully done sdx_reload_mss "C:/Github/Zybo_mipi/Pcam2019_sendExp/vitis/pcam2019SendExp/ps7_cortexa9_0/standalone_domain/bsp/system.mss"
+04:14:44 INFO  : Hardware specification for platform project 'pcam2019SendExp' is updated.
+04:14:50 INFO  : Successfully done sdx_reload_mss "C:/Github/Zybo_mipi/Pcam2019_sendExp/vitis/pcam2019SendExp/zynq_fsbl/zynq_fsbl_bsp/system.mss"
+04:14:51 INFO  : Successfully done sdx_reload_mss "C:/Github/Zybo_mipi/Pcam2019_sendExp/vitis/pcam2019SendExp/ps7_cortexa9_0/standalone_domain/bsp/system.mss"
+04:15:00 INFO  : Checking for BSP changes to sync application flags for project 'pcam2019Exp'...
+04:15:00 INFO  : Updating application flags with new BSP settings...
+04:15:01 INFO  : Successfully updated application flags for project pcam2019Exp.
+04:15:17 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+04:15:18 INFO  : Jtag cable 'Digilent Zybo Z7 210351A6C9E3A' is selected.
+04:15:18 INFO  : 'jtag frequency' command is executed.
+04:15:19 INFO  : Context for 'APU' is selected.
+04:15:19 INFO  : System reset is completed.
+04:15:22 INFO  : 'after 3000' command is executed.
+04:15:22 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351A6C9E3A" && level==0} -index 1' command is executed.
+04:15:25 INFO  : FPGA configured successfully with bitstream "C:/Github/Zybo_mipi/Pcam2019_sendExp/vitis/pcam2019Exp/_ide/bitstream/system_wrapper.bit"
+04:15:25 INFO  : Context for 'APU' is selected.
+04:15:26 INFO  : Hardware design information is loaded from 'C:/Github/Zybo_mipi/Pcam2019_sendExp/vitis/pcam2019SendExp/export/pcam2019SendExp/hw/system_wrapper.xsa'.
+04:15:26 INFO  : 'configparams force-mem-access 1' command is executed.
+04:15:26 INFO  : Context for 'APU' is selected.
+04:15:26 INFO  : Sourcing of 'C:/Github/Zybo_mipi/Pcam2019_sendExp/vitis/pcam2019Exp/_ide/psinit/ps7_init.tcl' is done.
+04:15:27 INFO  : 'ps7_init' command is executed.
+04:15:27 INFO  : 'ps7_post_config' command is executed.
+04:15:27 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+04:15:29 INFO  : The application 'C:/Github/Zybo_mipi/Pcam2019_sendExp/vitis/pcam2019Exp/Debug/pcam2019Exp.elf' is downloaded to processor 'ps7_cortexa9_0'.
+04:15:29 INFO  : 'configparams force-mem-access 0' command is executed.
+04:15:29 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~"APU*"}
+rst -system
+after 3000
+targets -set -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351A6C9E3A" && level==0} -index 1
+fpga -file C:/Github/Zybo_mipi/Pcam2019_sendExp/vitis/pcam2019Exp/_ide/bitstream/system_wrapper.bit
+targets -set -nocase -filter {name =~"APU*"}
+loadhw -hw C:/Github/Zybo_mipi/Pcam2019_sendExp/vitis/pcam2019SendExp/export/pcam2019SendExp/hw/system_wrapper.xsa -mem-ranges [list {0x40000000 0xbfffffff}]
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*"}
+source C:/Github/Zybo_mipi/Pcam2019_sendExp/vitis/pcam2019Exp/_ide/psinit/ps7_init.tcl
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "*A9*#0"}
+dow C:/Github/Zybo_mipi/Pcam2019_sendExp/vitis/pcam2019Exp/Debug/pcam2019Exp.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+04:15:29 INFO  : Memory regions updated for context APU
+04:15:29 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+04:15:29 INFO  : 'con' command is executed.
+04:15:29 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*A9*#0"}
+con
+----------------End of Script----------------
+
+04:15:29 INFO  : Launch script is exported to file 'C:\Github\Zybo_mipi\Pcam2019_sendExp\vitis\.sdk\launch_scripts\single_application_debug\systemdebugger_pcam2019exp_system_standalone.tcl'

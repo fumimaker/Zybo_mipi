@@ -8302,3 +8302,14 @@ con
 
 02:32:41 INFO  : Launch script is exported to file 'C:\Github\Zybo_mipi\Pcam2019_send\Vitis\.sdk\launch_scripts\single_application_debug\systemdebugger_pcam2019_send_app_system_standalone.tcl'
 03:59:27 INFO  : Disconnected from the channel tcfchan#19.
+04:05:55 INFO  : Launching XSCT server: xsct.bat -n  -interactive C:\Github\Zybo_mipi\Pcam2019_send\Vitis\temp_xsdb_launch_script.tcl
+04:05:57 INFO  : XSCT server has started successfully.
+04:05:57 INFO  : Successfully done setting XSCT server connection channel  
+04:05:57 INFO  : plnx-install-location is set to ''
+04:05:57 INFO  : Successfully done setting workspace for the tool. 
+04:05:59 INFO  : Successfully done query RDI_DATADIR 
+04:06:00 INFO  : Registering command handlers for Vitis TCF services
+04:10:11 INFO  : Successfully done sdx_reload_mss "C:/Github/Zybo_mipi/Pcam2019_send/Vitis/Pcam2019_send/zynq_fsbl/zynq_fsbl_bsp/system.mss"
+04:10:12 INFO  : Successfully done sdx_reload_mss "C:/Github/Zybo_mipi/Pcam2019_send/Vitis/Pcam2019_send/ps7_cortexa9_0/standalone_domain/bsp/system.mss"
+04:16:47 INFO  : Successfully done sdx_reload_mss "C:/Github/Zybo_mipi/Pcam2019_send/Vitis/Pcam2019_send/ps7_cortexa9_0/standalone_domain/bsp/system.mss"
+04:16:47 INFO  : No changes in MSS file content so sources will not be generated.
