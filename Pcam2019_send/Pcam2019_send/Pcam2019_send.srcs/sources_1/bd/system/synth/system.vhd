@@ -1,7 +1,7 @@
 --Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
 ----------------------------------------------------------------------------------
 --Tool Version: Vivado v.2019.2 (win64) Build 2708876 Wed Nov  6 21:40:23 MST 2019
---Date        : Tue Nov 10 20:28:17 2020
+--Date        : Wed Nov 18 01:19:12 2020
 --Host        : DESKTOP-5VC2SBS running 64-bit major release  (build 9200)
 --Command     : generate_target system.bd
 --Design      : system
@@ -2824,7 +2824,7 @@ entity system is
     hdmi_tx_data_p : out STD_LOGIC_VECTOR ( 2 downto 0 )
   );
   attribute CORE_GENERATION_INFO : string;
-  attribute CORE_GENERATION_INFO of system : entity is "system,IP_Integrator,{x_ipVendor=xilinx.com,x_ipLibrary=BlockDiagram,x_ipName=system,x_ipVersion=1.00.a,x_ipLanguage=VHDL,numBlks=33,numReposBlks=21,numNonXlnxBlks=5,numHierBlks=12,maxHierDepth=0,numSysgenBlks=0,numHlsBlks=0,numHdlrefBlks=1,numPkgbdBlks=0,bdsource=USER,da_board_cnt=1,synth_mode=OOC_per_IP}";
+  attribute CORE_GENERATION_INFO of system : entity is "system,IP_Integrator,{x_ipVendor=xilinx.com,x_ipLibrary=BlockDiagram,x_ipName=system,x_ipVersion=1.00.a,x_ipLanguage=VHDL,numBlks=32,numReposBlks=20,numNonXlnxBlks=5,numHierBlks=12,maxHierDepth=0,numSysgenBlks=0,numHlsBlks=0,numHdlrefBlks=1,numPkgbdBlks=0,bdsource=USER,da_board_cnt=1,synth_mode=OOC_per_IP}";
   attribute HW_HANDOFF : string;
   attribute HW_HANDOFF of system : entity is "system.hwdef";
 end system;
@@ -3424,18 +3424,6 @@ architecture STRUCTURE of system is
     peripheral_aresetn : out STD_LOGIC_VECTOR ( 0 to 0 )
   );
   end component system_rst_system_150M_0;
-  component system_system_ila_0_2 is
-  port (
-    clk : in STD_LOGIC;
-    probe0 : in STD_LOGIC_VECTOR ( 2 downto 0 );
-    SLOT_0_AXIS_tdata : in STD_LOGIC_VECTOR ( 23 downto 0 );
-    SLOT_0_AXIS_tlast : in STD_LOGIC;
-    SLOT_0_AXIS_tuser : in STD_LOGIC_VECTOR ( 0 to 0 );
-    SLOT_0_AXIS_tvalid : in STD_LOGIC;
-    SLOT_0_AXIS_tready : in STD_LOGIC;
-    resetn : in STD_LOGIC
-  );
-  end component system_system_ila_0_2;
   component system_AXI_BayerToRGB_1_0 is
   port (
     StreamClk : in STD_LOGIC;
@@ -3458,28 +3446,10 @@ architecture STRUCTURE of system is
   signal AXI_BayerToRGB_1_AXI_Stream_Master_TUSER : STD_LOGIC;
   signal AXI_BayerToRGB_1_AXI_Stream_Master_TVALID : STD_LOGIC;
   signal AXI_GammaCorrection_0_m_axis_video_TDATA : STD_LOGIC_VECTOR ( 23 downto 0 );
-  attribute CONN_BUS_INFO : string;
-  attribute CONN_BUS_INFO of AXI_GammaCorrection_0_m_axis_video_TDATA : signal is "AXI_GammaCorrection_0_m_axis_video xilinx.com:interface:axis:1.0 None TDATA";
-  attribute DEBUG : string;
-  attribute DEBUG of AXI_GammaCorrection_0_m_axis_video_TDATA : signal is "true";
-  attribute MARK_DEBUG : boolean;
-  attribute MARK_DEBUG of AXI_GammaCorrection_0_m_axis_video_TDATA : signal is std.standard.true;
   signal AXI_GammaCorrection_0_m_axis_video_TLAST : STD_LOGIC;
-  attribute CONN_BUS_INFO of AXI_GammaCorrection_0_m_axis_video_TLAST : signal is "AXI_GammaCorrection_0_m_axis_video xilinx.com:interface:axis:1.0 None TLAST";
-  attribute DEBUG of AXI_GammaCorrection_0_m_axis_video_TLAST : signal is "true";
-  attribute MARK_DEBUG of AXI_GammaCorrection_0_m_axis_video_TLAST : signal is std.standard.true;
   signal AXI_GammaCorrection_0_m_axis_video_TREADY : STD_LOGIC;
-  attribute CONN_BUS_INFO of AXI_GammaCorrection_0_m_axis_video_TREADY : signal is "AXI_GammaCorrection_0_m_axis_video xilinx.com:interface:axis:1.0 None TREADY";
-  attribute DEBUG of AXI_GammaCorrection_0_m_axis_video_TREADY : signal is "true";
-  attribute MARK_DEBUG of AXI_GammaCorrection_0_m_axis_video_TREADY : signal is std.standard.true;
   signal AXI_GammaCorrection_0_m_axis_video_TUSER : STD_LOGIC;
-  attribute CONN_BUS_INFO of AXI_GammaCorrection_0_m_axis_video_TUSER : signal is "AXI_GammaCorrection_0_m_axis_video xilinx.com:interface:axis:1.0 None TUSER";
-  attribute DEBUG of AXI_GammaCorrection_0_m_axis_video_TUSER : signal is "true";
-  attribute MARK_DEBUG of AXI_GammaCorrection_0_m_axis_video_TUSER : signal is std.standard.true;
   signal AXI_GammaCorrection_0_m_axis_video_TVALID : STD_LOGIC;
-  attribute CONN_BUS_INFO of AXI_GammaCorrection_0_m_axis_video_TVALID : signal is "AXI_GammaCorrection_0_m_axis_video xilinx.com:interface:axis:1.0 None TVALID";
-  attribute DEBUG of AXI_GammaCorrection_0_m_axis_video_TVALID : signal is "true";
-  attribute MARK_DEBUG of AXI_GammaCorrection_0_m_axis_video_TVALID : signal is std.standard.true;
   signal DVIClocking_0_SerialClk : STD_LOGIC;
   signal DVIClocking_0_aLockedOut : STD_LOGIC;
   signal MIPI_CSI_2_RX_0_m_axis_video_TDATA : STD_LOGIC_VECTOR ( 39 downto 0 );
@@ -3785,8 +3755,6 @@ architecture STRUCTURE of system is
   signal v_tc_0_vtiming_out_VBLANK : STD_LOGIC;
   signal v_tc_0_vtiming_out_VSYNC : STD_LOGIC;
   signal xlconcat_0_dout : STD_LOGIC_VECTOR ( 2 downto 0 );
-  attribute DEBUG of xlconcat_0_dout : signal is "true";
-  attribute MARK_DEBUG of xlconcat_0_dout : signal is std.standard.true;
   signal NLW_MIPI_CSI_2_RX_0_aD2Enable_UNCONNECTED : STD_LOGIC;
   signal NLW_MIPI_CSI_2_RX_0_aD3Enable_UNCONNECTED : STD_LOGIC;
   signal NLW_MIPI_D_PHY_RX_0_D0RxClkEsc_UNCONNECTED : STD_LOGIC;
@@ -4660,17 +4628,6 @@ rst_vid_clk_dyn: component system_rst_vid_clk_dyn_0
       peripheral_aresetn(0) => rst_vid_clk_dyn_peripheral_aresetn(0),
       peripheral_reset(0) => rst_vid_clk_dyn_peripheral_reset(0),
       slowest_sync_clk => PixelClk_Generator_clk_out1
-    );
-system_ila_0: component system_system_ila_0_2
-     port map (
-      SLOT_0_AXIS_tdata(23 downto 0) => AXI_GammaCorrection_0_m_axis_video_TDATA(23 downto 0),
-      SLOT_0_AXIS_tlast => AXI_GammaCorrection_0_m_axis_video_TLAST,
-      SLOT_0_AXIS_tready => AXI_GammaCorrection_0_m_axis_video_TREADY,
-      SLOT_0_AXIS_tuser(0) => AXI_GammaCorrection_0_m_axis_video_TUSER,
-      SLOT_0_AXIS_tvalid => AXI_GammaCorrection_0_m_axis_video_TVALID,
-      clk => mm_clk_150,
-      probe0(2 downto 0) => xlconcat_0_dout(2 downto 0),
-      resetn => rst_system_150M_peripheral_aresetn(0)
     );
 v_axi4s_vid_out_0: component system_v_axi4s_vid_out_0_0
      port map (
