@@ -69,21 +69,21 @@ set rc [catch {
   create_project -in_memory -part xc7z020clg400-1
   set_property design_mode GateLvl [current_fileset]
   set_param project.singleFileAddWarning.threshold 0
-  set_property webtalk.parent_dir C:/Github/Zybo_mipi/Pcam2019_send/Pcam2019_send/Pcam2019_send.cache/wt [current_project]
-  set_property parent.project_path C:/Github/Zybo_mipi/Pcam2019_send/Pcam2019_send/Pcam2019_send.xpr [current_project]
+  set_property webtalk.parent_dir C:/Github/Zybo_mipi/Pcam2019_sendExp/Pcam2019_sendExp.cache/wt [current_project]
+  set_property parent.project_path C:/Github/Zybo_mipi/Pcam2019_sendExp/Pcam2019_sendExp.xpr [current_project]
   set_property ip_repo_paths C:/Github/Zybo_mipi/Pcam2019/Zybo-Z7-20-pcam-5c-2019.1/vivado_proj/Zybo-Z7-20-pcam-5c.ipdefs/repo_0 [current_project]
   update_ip_catalog
-  set_property ip_output_repo C:/Github/Zybo_mipi/Pcam2019_send/Pcam2019_send/Pcam2019_send.cache/ip [current_project]
+  set_property ip_output_repo C:/Github/Zybo_mipi/Pcam2019_sendExp/Pcam2019_sendExp.cache/ip [current_project]
   set_property ip_cache_permissions {read write} [current_project]
   set_property XPM_LIBRARIES {XPM_CDC XPM_FIFO XPM_MEMORY} [current_project]
-  add_files -quiet C:/Github/Zybo_mipi/Pcam2019_send/Pcam2019_send/Pcam2019_send.runs/synth_1/system_wrapper.dcp
+  add_files -quiet C:/Github/Zybo_mipi/Pcam2019_sendExp/Pcam2019_sendExp.runs/synth_1/system_wrapper.dcp
   set_msg_config -source 4 -id {BD 41-1661} -limit 0
   set_param project.isImplRun true
-  add_files C:/Github/Zybo_mipi/Pcam2019_send/Pcam2019_send/Pcam2019_send.srcs/sources_1/bd/system/system.bd
+  add_files C:/Github/Zybo_mipi/Pcam2019_sendExp/Pcam2019_sendExp.srcs/sources_1/bd/system/system.bd
   set_param project.isImplRun false
-  read_xdc C:/Github/Zybo_mipi/Pcam2019_send/Pcam2019_send/Pcam2019_send.srcs/constrs_1/imports/constraints/ZyboZ7_A.xdc
-  read_xdc C:/Github/Zybo_mipi/Pcam2019_send/Pcam2019_send/Pcam2019_send.srcs/constrs_1/imports/constraints/timing.xdc
-  read_xdc C:/Github/Zybo_mipi/Pcam2019_send/Pcam2019_send/Pcam2019_send.srcs/constrs_1/imports/constraints/auto.xdc
+  read_xdc C:/Github/Zybo_mipi/Pcam2019_sendExp/Pcam2019_sendExp.srcs/constrs_1/imports/constraints/ZyboZ7_A.xdc
+  read_xdc C:/Github/Zybo_mipi/Pcam2019_sendExp/Pcam2019_sendExp.srcs/constrs_1/imports/constraints/timing.xdc
+  read_xdc C:/Github/Zybo_mipi/Pcam2019_sendExp/Pcam2019_sendExp.srcs/constrs_1/imports/constraints/auto.xdc
   set_param project.isImplRun true
   link_design -top system_wrapper -part xc7z020clg400-1
   set_param project.isImplRun false

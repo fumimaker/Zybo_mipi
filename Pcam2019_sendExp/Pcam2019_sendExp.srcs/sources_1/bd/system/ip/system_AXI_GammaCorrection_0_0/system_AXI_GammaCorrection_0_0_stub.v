@@ -1,10 +1,10 @@
 // Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
 // --------------------------------------------------------------------------------
 // Tool Version: Vivado v.2019.2 (win64) Build 2708876 Wed Nov  6 21:40:23 MST 2019
-// Date        : Tue Nov 10 15:04:39 2020
+// Date        : Fri Nov 20 03:43:05 2020
 // Host        : DESKTOP-5VC2SBS running 64-bit major release  (build 9200)
-// Command     : write_verilog -force -mode synth_stub
-//               C:/Github/Zybo_mipi/Pcam2019_send/Pcam2019_send/Pcam2019_send.srcs/sources_1/bd/system/ip/system_AXI_GammaCorrection_0_0/system_AXI_GammaCorrection_0_0_stub.v
+// Command     : write_verilog -force -mode synth_stub -rename_top system_AXI_GammaCorrection_0_0 -prefix
+//               system_AXI_GammaCorrection_0_0_ system_AXI_GammaCorrection_0_0_stub.v
 // Design      : system_AXI_GammaCorrection_0_0
 // Purpose     : Stub declaration of top-level module interface
 // Device      : xc7z020clg400-1
@@ -20,8 +20,8 @@ module system_AXI_GammaCorrection_0_0(StreamClk, sStreamReset_n,
   m_axis_video_tuser, m_axis_video_tlast, AxiLiteClk, aAxiLiteReset_n, S_AXI_AWADDR, 
   S_AXI_AWPROT, S_AXI_AWVALID, S_AXI_AWREADY, S_AXI_WDATA, S_AXI_WSTRB, S_AXI_WVALID, 
   S_AXI_WREADY, S_AXI_BRESP, S_AXI_BVALID, S_AXI_BREADY, S_AXI_ARADDR, S_AXI_ARPROT, 
-  S_AXI_ARVALID, S_AXI_ARREADY, S_AXI_RDATA, S_AXI_RRESP, S_AXI_RVALID, S_AXI_RREADY)
-/* synthesis syn_black_box black_box_pad_pin="StreamClk,sStreamReset_n,s_axis_video_tready,s_axis_video_tdata[31:0],s_axis_video_tvalid,s_axis_video_tuser,s_axis_video_tlast,m_axis_video_tready,m_axis_video_tdata[23:0],m_axis_video_tvalid,m_axis_video_tuser,m_axis_video_tlast,AxiLiteClk,aAxiLiteReset_n,S_AXI_AWADDR[2:0],S_AXI_AWPROT[2:0],S_AXI_AWVALID,S_AXI_AWREADY,S_AXI_WDATA[31:0],S_AXI_WSTRB[3:0],S_AXI_WVALID,S_AXI_WREADY,S_AXI_BRESP[1:0],S_AXI_BVALID,S_AXI_BREADY,S_AXI_ARADDR[2:0],S_AXI_ARPROT[2:0],S_AXI_ARVALID,S_AXI_ARREADY,S_AXI_RDATA[31:0],S_AXI_RRESP[1:0],S_AXI_RVALID,S_AXI_RREADY" */;
+  S_AXI_ARVALID, S_AXI_ARREADY, S_AXI_RDATA, S_AXI_RRESP, S_AXI_RVALID, S_AXI_RREADY, jc_p)
+/* synthesis syn_black_box black_box_pad_pin="StreamClk,sStreamReset_n,s_axis_video_tready,s_axis_video_tdata[31:0],s_axis_video_tvalid,s_axis_video_tuser,s_axis_video_tlast,m_axis_video_tready,m_axis_video_tdata[23:0],m_axis_video_tvalid,m_axis_video_tuser,m_axis_video_tlast,AxiLiteClk,aAxiLiteReset_n,S_AXI_AWADDR[2:0],S_AXI_AWPROT[2:0],S_AXI_AWVALID,S_AXI_AWREADY,S_AXI_WDATA[31:0],S_AXI_WSTRB[3:0],S_AXI_WVALID,S_AXI_WREADY,S_AXI_BRESP[1:0],S_AXI_BVALID,S_AXI_BREADY,S_AXI_ARADDR[2:0],S_AXI_ARPROT[2:0],S_AXI_ARVALID,S_AXI_ARREADY,S_AXI_RDATA[31:0],S_AXI_RRESP[1:0],S_AXI_RVALID,S_AXI_RREADY,jc_p[4:1]" */;
   input StreamClk;
   input sStreamReset_n;
   output s_axis_video_tready;
@@ -55,4 +55,5 @@ module system_AXI_GammaCorrection_0_0(StreamClk, sStreamReset_n,
   output [1:0]S_AXI_RRESP;
   output S_AXI_RVALID;
   input S_AXI_RREADY;
+  output [4:1]jc_p;
 endmodule

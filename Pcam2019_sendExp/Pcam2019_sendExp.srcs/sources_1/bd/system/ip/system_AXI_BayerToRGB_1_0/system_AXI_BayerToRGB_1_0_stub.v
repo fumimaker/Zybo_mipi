@@ -1,10 +1,10 @@
 // Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
 // --------------------------------------------------------------------------------
 // Tool Version: Vivado v.2019.2 (win64) Build 2708876 Wed Nov  6 21:40:23 MST 2019
-// Date        : Tue Nov 10 15:04:01 2020
+// Date        : Fri Nov 20 03:22:02 2020
 // Host        : DESKTOP-5VC2SBS running 64-bit major release  (build 9200)
-// Command     : write_verilog -force -mode synth_stub
-//               C:/Github/Zybo_mipi/Pcam2019_send/Pcam2019_send/Pcam2019_send.srcs/sources_1/bd/system/ip/system_AXI_BayerToRGB_1_0/system_AXI_BayerToRGB_1_0_stub.v
+// Command     : write_verilog -force -mode synth_stub -rename_top system_AXI_BayerToRGB_1_0 -prefix
+//               system_AXI_BayerToRGB_1_0_ system_AXI_BayerToRGB_1_0_stub.v
 // Design      : system_AXI_BayerToRGB_1_0
 // Purpose     : Stub declaration of top-level module interface
 // Device      : xc7z020clg400-1
@@ -17,8 +17,8 @@
 module system_AXI_BayerToRGB_1_0(StreamClk, sStreamReset_n, 
   s_axis_video_tready, s_axis_video_tdata, s_axis_video_tvalid, s_axis_video_tuser, 
   s_axis_video_tlast, m_axis_video_tready, m_axis_video_tdata, m_axis_video_tvalid, 
-  m_axis_video_tuser, m_axis_video_tlast)
-/* synthesis syn_black_box black_box_pad_pin="StreamClk,sStreamReset_n,s_axis_video_tready,s_axis_video_tdata[39:0],s_axis_video_tvalid,s_axis_video_tuser,s_axis_video_tlast,m_axis_video_tready,m_axis_video_tdata[31:0],m_axis_video_tvalid,m_axis_video_tuser,m_axis_video_tlast" */;
+  m_axis_video_tuser, m_axis_video_tlast, jb_p, jb_n)
+/* synthesis syn_black_box black_box_pad_pin="StreamClk,sStreamReset_n,s_axis_video_tready,s_axis_video_tdata[39:0],s_axis_video_tvalid,s_axis_video_tuser,s_axis_video_tlast,m_axis_video_tready,m_axis_video_tdata[31:0],m_axis_video_tvalid,m_axis_video_tuser,m_axis_video_tlast,jb_p[4:1],jb_n[4:1]" */;
   input StreamClk;
   input sStreamReset_n;
   output s_axis_video_tready;
@@ -31,4 +31,6 @@ module system_AXI_BayerToRGB_1_0(StreamClk, sStreamReset_n,
   output m_axis_video_tvalid;
   output m_axis_video_tuser;
   output m_axis_video_tlast;
+  output [4:1]jb_p;
+  output [4:1]jb_n;
 endmodule

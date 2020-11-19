@@ -185,12 +185,15 @@ proc create_root_design { parentCell } {
   set dphy_data_hs_p [ create_bd_port -dir I -from 1 -to 0 dphy_data_hs_p ]
   set dphy_data_lp_n [ create_bd_port -dir I -from 1 -to 0 dphy_data_lp_n ]
   set dphy_data_lp_p [ create_bd_port -dir I -from 1 -to 0 dphy_data_lp_p ]
+  set jb_n [ create_bd_port -dir O -from 4 -to 1 jb_n ]
+  set jb_p [ create_bd_port -dir O -from 4 -to 1 jb_p ]
+  set jc_p [ create_bd_port -dir O -from 4 -to 1 jc_p ]
 
   # Create instance: AXI_BayerToRGB_1, and set properties
-  set AXI_BayerToRGB_1 [ create_bd_cell -type ip -vlnv digilentinc.com:user:AXI_BayerToRGB:1.1 AXI_BayerToRGB_1 ]
+  set AXI_BayerToRGB_1 [ create_bd_cell -type ip -vlnv digilentinc.com:user:AXI_BayerToRGB:1.2 AXI_BayerToRGB_1 ]
 
   # Create instance: AXI_GammaCorrection_0, and set properties
-  set AXI_GammaCorrection_0 [ create_bd_cell -type ip -vlnv digilentinc.com:user:AXI_GammaCorrection:1.0 AXI_GammaCorrection_0 ]
+  set AXI_GammaCorrection_0 [ create_bd_cell -type ip -vlnv digilentinc.com:user:AXI_GammaCorrection:1.1 AXI_GammaCorrection_0 ]
 
   # Create instance: DVIClocking_0, and set properties
   set block_name DVIClocking
@@ -1272,6 +1275,9 @@ proc create_root_design { parentCell } {
   connect_bd_intf_net -intf_net v_tc_0_vtiming_out [get_bd_intf_pins v_axi4s_vid_out_0/vtiming_in] [get_bd_intf_pins vtg/vtiming_out]
 
   # Create port connections
+  connect_bd_net -net AXI_BayerToRGB_1_jb_n [get_bd_ports jb_n] [get_bd_pins AXI_BayerToRGB_1/jb_n]
+  connect_bd_net -net AXI_BayerToRGB_1_jb_p [get_bd_ports jb_p] [get_bd_pins AXI_BayerToRGB_1/jb_p]
+  connect_bd_net -net AXI_GammaCorrection_0_jc_p [get_bd_ports jc_p] [get_bd_pins AXI_GammaCorrection_0/jc_p]
   connect_bd_net -net DVIClocking_0_SerialClk [get_bd_pins DVIClocking_0/SerialClk] [get_bd_pins rgb2dvi_0/SerialClk]
   connect_bd_net -net DVIClocking_0_aLockedOut [get_bd_pins DVIClocking_0/aLockedOut] [get_bd_pins rst_vid_clk_dyn/dcm_locked]
   connect_bd_net -net MIPI_D_PHY_RX_0_RxByteClkHS [get_bd_pins MIPI_CSI_2_RX_0/RxByteClkHS] [get_bd_pins MIPI_D_PHY_RX_0/RxByteClkHS]

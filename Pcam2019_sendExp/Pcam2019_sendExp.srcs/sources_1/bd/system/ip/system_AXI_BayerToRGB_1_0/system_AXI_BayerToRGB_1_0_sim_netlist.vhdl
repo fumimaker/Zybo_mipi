@@ -1,10 +1,10 @@
 -- Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
 -- --------------------------------------------------------------------------------
 -- Tool Version: Vivado v.2019.2 (win64) Build 2708876 Wed Nov  6 21:40:23 MST 2019
--- Date        : Tue Nov 10 15:04:01 2020
+-- Date        : Fri Nov 20 03:22:03 2020
 -- Host        : DESKTOP-5VC2SBS running 64-bit major release  (build 9200)
--- Command     : write_vhdl -force -mode funcsim
---               C:/Github/Zybo_mipi/Pcam2019_send/Pcam2019_send/Pcam2019_send.srcs/sources_1/bd/system/ip/system_AXI_BayerToRGB_1_0/system_AXI_BayerToRGB_1_0_sim_netlist.vhdl
+-- Command     : write_vhdl -force -mode funcsim -rename_top system_AXI_BayerToRGB_1_0 -prefix
+--               system_AXI_BayerToRGB_1_0_ system_AXI_BayerToRGB_1_0_sim_netlist.vhdl
 -- Design      : system_AXI_BayerToRGB_1_0
 -- Purpose     : This VHDL netlist is a functional simulation representation of the design and should not be modified or
 --               synthesized. This netlist cannot be used for SDF annotated simulation.
@@ -25,8 +25,6 @@ entity system_AXI_BayerToRGB_1_0_LineBuffer is
     Q : in STD_LOGIC_VECTOR ( 9 downto 0 );
     \sPixel_reg[2][9]\ : in STD_LOGIC_VECTOR ( 9 downto 0 )
   );
-  attribute ORIG_REF_NAME : string;
-  attribute ORIG_REF_NAME of system_AXI_BayerToRGB_1_0_LineBuffer : entity is "LineBuffer";
 end system_AXI_BayerToRGB_1_0_LineBuffer;
 
 architecture STRUCTURE of system_AXI_BayerToRGB_1_0_LineBuffer is
@@ -259,7 +257,7 @@ use UNISIM.VCOMPONENTS.ALL;
 entity system_AXI_BayerToRGB_1_0_AXI_BayerToRGB is
   port (
     m_axis_video_tdata : out STD_LOGIC_VECTOR ( 29 downto 0 );
-    m_axis_video_tuser : out STD_LOGIC;
+    jb_n : out STD_LOGIC_VECTOR ( 0 to 0 );
     m_axis_video_tlast : out STD_LOGIC;
     s_axis_video_tready : out STD_LOGIC;
     m_axis_video_tvalid : out STD_LOGIC;
@@ -271,8 +269,6 @@ entity system_AXI_BayerToRGB_1_0_AXI_BayerToRGB is
     s_axis_video_tuser : in STD_LOGIC;
     s_axis_video_tlast : in STD_LOGIC
   );
-  attribute ORIG_REF_NAME : string;
-  attribute ORIG_REF_NAME of system_AXI_BayerToRGB_1_0_AXI_BayerToRGB : entity is "AXI_BayerToRGB";
 end system_AXI_BayerToRGB_1_0_AXI_BayerToRGB;
 
 architecture STRUCTURE of system_AXI_BayerToRGB_1_0_AXI_BayerToRGB is
@@ -3439,7 +3435,7 @@ sLineBufferWrite_reg: unisim.vcomponents.FDRE
       C => StreamClk,
       CE => sel,
       D => \sStrobesShiftReg_reg[2][User]__0\,
-      Q => m_axis_video_tuser,
+      Q => jb_n(0),
       R => \sAXIMasterRed[9]_i_1_n_0\
     );
 s_axis_video_tready_INST_0: unisim.vcomponents.LUT3
@@ -3470,7 +3466,9 @@ entity system_AXI_BayerToRGB_1_0 is
     m_axis_video_tdata : out STD_LOGIC_VECTOR ( 31 downto 0 );
     m_axis_video_tvalid : out STD_LOGIC;
     m_axis_video_tuser : out STD_LOGIC;
-    m_axis_video_tlast : out STD_LOGIC
+    m_axis_video_tlast : out STD_LOGIC;
+    jb_p : out STD_LOGIC_VECTOR ( 4 downto 1 );
+    jb_n : out STD_LOGIC_VECTOR ( 4 downto 1 )
   );
   attribute NotValidForBitStream : boolean;
   attribute NotValidForBitStream of system_AXI_BayerToRGB_1_0 : entity is true;
@@ -3486,7 +3484,9 @@ end system_AXI_BayerToRGB_1_0;
 
 architecture STRUCTURE of system_AXI_BayerToRGB_1_0 is
   signal \<const0>\ : STD_LOGIC;
+  signal \^jb_n\ : STD_LOGIC_VECTOR ( 1 to 1 );
   signal \^m_axis_video_tdata\ : STD_LOGIC_VECTOR ( 29 downto 0 );
+  signal \^s_axis_video_tuser\ : STD_LOGIC;
   attribute x_interface_info : string;
   attribute x_interface_info of StreamClk : signal is "xilinx.com:signal:clock:1.0 AXI_Stream_Clk CLK";
   attribute x_interface_parameter : string;
@@ -3506,9 +3506,19 @@ architecture STRUCTURE of system_AXI_BayerToRGB_1_0 is
   attribute x_interface_info of m_axis_video_tdata : signal is "xilinx.com:interface:axis:1.0 AXI_Stream_Master TDATA";
   attribute x_interface_info of s_axis_video_tdata : signal is "xilinx.com:interface:axis:1.0 AXI_Slave_Interface TDATA";
 begin
+  \^s_axis_video_tuser\ <= s_axis_video_tuser;
+  jb_n(4) <= \^jb_n\(1);
+  jb_n(3) <= \^jb_n\(1);
+  jb_n(2) <= \^jb_n\(1);
+  jb_n(1) <= \^jb_n\(1);
+  jb_p(4) <= \^s_axis_video_tuser\;
+  jb_p(3) <= \^s_axis_video_tuser\;
+  jb_p(2) <= \^s_axis_video_tuser\;
+  jb_p(1) <= \^s_axis_video_tuser\;
   m_axis_video_tdata(31) <= \<const0>\;
   m_axis_video_tdata(30) <= \<const0>\;
   m_axis_video_tdata(29 downto 0) <= \^m_axis_video_tdata\(29 downto 0);
+  m_axis_video_tuser <= \^jb_n\(1);
 GND: unisim.vcomponents.GND
      port map (
       G => \<const0>\
@@ -3516,16 +3526,16 @@ GND: unisim.vcomponents.GND
 U0: entity work.system_AXI_BayerToRGB_1_0_AXI_BayerToRGB
      port map (
       StreamClk => StreamClk,
+      jb_n(0) => \^jb_n\(1),
       m_axis_video_tdata(29 downto 0) => \^m_axis_video_tdata\(29 downto 0),
       m_axis_video_tlast => m_axis_video_tlast,
       m_axis_video_tready => m_axis_video_tready,
-      m_axis_video_tuser => m_axis_video_tuser,
       m_axis_video_tvalid => m_axis_video_tvalid,
       sStreamReset_n => sStreamReset_n,
       s_axis_video_tdata(39 downto 0) => s_axis_video_tdata(39 downto 0),
       s_axis_video_tlast => s_axis_video_tlast,
       s_axis_video_tready => s_axis_video_tready,
-      s_axis_video_tuser => s_axis_video_tuser,
+      s_axis_video_tuser => \^s_axis_video_tuser\,
       s_axis_video_tvalid => s_axis_video_tvalid
     );
 end STRUCTURE;

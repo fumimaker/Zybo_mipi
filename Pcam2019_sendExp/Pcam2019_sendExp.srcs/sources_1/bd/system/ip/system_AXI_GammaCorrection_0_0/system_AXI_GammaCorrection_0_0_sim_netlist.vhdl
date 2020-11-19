@@ -1,10 +1,10 @@
 -- Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
 -- --------------------------------------------------------------------------------
 -- Tool Version: Vivado v.2019.2 (win64) Build 2708876 Wed Nov  6 21:40:23 MST 2019
--- Date        : Tue Nov 10 15:04:39 2020
+-- Date        : Fri Nov 20 03:43:05 2020
 -- Host        : DESKTOP-5VC2SBS running 64-bit major release  (build 9200)
--- Command     : write_vhdl -force -mode funcsim
---               C:/Github/Zybo_mipi/Pcam2019_send/Pcam2019_send/Pcam2019_send.srcs/sources_1/bd/system/ip/system_AXI_GammaCorrection_0_0/system_AXI_GammaCorrection_0_0_sim_netlist.vhdl
+-- Command     : write_vhdl -force -mode funcsim -rename_top system_AXI_GammaCorrection_0_0 -prefix
+--               system_AXI_GammaCorrection_0_0_ system_AXI_GammaCorrection_0_0_sim_netlist.vhdl
 -- Design      : system_AXI_GammaCorrection_0_0
 -- Purpose     : This VHDL netlist is a functional simulation representation of the design and should not be modified or
 --               synthesized. This netlist cannot be used for SDF annotated simulation.
@@ -24,8 +24,6 @@ entity system_AXI_GammaCorrection_0_0_StoredGammaCoefs is
     E : in STD_LOGIC_VECTOR ( 0 to 0 );
     StreamClk : in STD_LOGIC
   );
-  attribute ORIG_REF_NAME : string;
-  attribute ORIG_REF_NAME of system_AXI_GammaCorrection_0_0_StoredGammaCoefs : entity is "StoredGammaCoefs";
 end system_AXI_GammaCorrection_0_0_StoredGammaCoefs;
 
 architecture STRUCTURE of system_AXI_GammaCorrection_0_0_StoredGammaCoefs is
@@ -20978,14 +20976,13 @@ entity system_AXI_GammaCorrection_0_0_AXI_GammaCorrection is
     S_AXI_RDATA : out STD_LOGIC_VECTOR ( 31 downto 0 );
     S_AXI_RRESP : out STD_LOGIC_VECTOR ( 1 downto 0 );
     S_AXI_RVALID : out STD_LOGIC;
-    S_AXI_RREADY : in STD_LOGIC
+    S_AXI_RREADY : in STD_LOGIC;
+    jc_p : out STD_LOGIC_VECTOR ( 4 downto 1 )
   );
   attribute C_S_AXI_ADDR_WIDTH : integer;
   attribute C_S_AXI_ADDR_WIDTH of system_AXI_GammaCorrection_0_0_AXI_GammaCorrection : entity is 3;
   attribute C_S_AXI_DATA_WIDTH : integer;
   attribute C_S_AXI_DATA_WIDTH of system_AXI_GammaCorrection_0_0_AXI_GammaCorrection : entity is 32;
-  attribute ORIG_REF_NAME : string;
-  attribute ORIG_REF_NAME of system_AXI_GammaCorrection_0_0_AXI_GammaCorrection : entity is "AXI_GammaCorrection";
   attribute kAXI_InputDataWidth : integer;
   attribute kAXI_InputDataWidth of system_AXI_GammaCorrection_0_0_AXI_GammaCorrection : entity is 32;
   attribute kAXI_OutputDataWidth : integer;
@@ -21024,6 +21021,7 @@ architecture STRUCTURE of system_AXI_GammaCorrection_0_0_AXI_GammaCorrection is
   signal \sGammaReg[0]_i_1_n_0\ : STD_LOGIC;
   signal \sGammaReg[1]_i_1_n_0\ : STD_LOGIC;
   signal \sGammaReg[2]_i_1_n_0\ : STD_LOGIC;
+  signal \^s_axis_video_tuser\ : STD_LOGIC;
   attribute SOFT_HLUTNM : string;
   attribute SOFT_HLUTNM of axi_arready_i_1 : label is "soft_lutpair62";
   attribute SOFT_HLUTNM of \axi_awaddr[2]_i_1\ : label is "soft_lutpair61";
@@ -21074,6 +21072,11 @@ begin
   S_AXI_RVALID <= \^s_axi_rvalid\;
   S_AXI_WREADY <= \^s_axi_wready\;
   \^m_axis_video_tready\ <= m_axis_video_tready;
+  \^s_axis_video_tuser\ <= s_axis_video_tuser;
+  jc_p(4) <= \^s_axis_video_tuser\;
+  jc_p(3) <= \^s_axis_video_tuser\;
+  jc_p(2) <= \^s_axis_video_tuser\;
+  jc_p(1) <= \^s_axis_video_tuser\;
   m_axis_video_tlast <= \^m_axis_video_tlast\;
   m_axis_video_tuser <= \^m_axis_video_tuser\;
   m_axis_video_tvalid <= \^m_axis_video_tvalid\;
@@ -21263,7 +21266,7 @@ m_axis_video_tuser_i_1: unisim.vcomponents.LUT5
       I0 => \^m_axis_video_tuser\,
       I1 => \^m_axis_video_tready\,
       I2 => s_axis_video_tvalid,
-      I3 => s_axis_video_tuser,
+      I3 => \^s_axis_video_tuser\,
       I4 => sStreamReset_n,
       O => m_axis_video_tuser_i_1_n_0
     );
@@ -21400,7 +21403,8 @@ entity system_AXI_GammaCorrection_0_0 is
     S_AXI_RDATA : out STD_LOGIC_VECTOR ( 31 downto 0 );
     S_AXI_RRESP : out STD_LOGIC_VECTOR ( 1 downto 0 );
     S_AXI_RVALID : out STD_LOGIC;
-    S_AXI_RREADY : in STD_LOGIC
+    S_AXI_RREADY : in STD_LOGIC;
+    jc_p : out STD_LOGIC_VECTOR ( 4 downto 1 )
   );
   attribute NotValidForBitStream : boolean;
   attribute NotValidForBitStream of system_AXI_GammaCorrection_0_0 : entity is true;
@@ -21492,6 +21496,7 @@ U0: entity work.system_AXI_GammaCorrection_0_0_AXI_GammaCorrection
       S_AXI_WVALID => S_AXI_WVALID,
       StreamClk => StreamClk,
       aAxiLiteReset_n => aAxiLiteReset_n,
+      jc_p(4 downto 1) => jc_p(4 downto 1),
       m_axis_video_tdata(23 downto 0) => m_axis_video_tdata(23 downto 0),
       m_axis_video_tlast => m_axis_video_tlast,
       m_axis_video_tready => m_axis_video_tready,

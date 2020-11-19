@@ -46,8 +46,8 @@
 -- 
 -- DO NOT MODIFY THIS FILE.
 
--- IP VLNV: digilentinc.com:user:AXI_GammaCorrection:1.0
--- IP Revision: 31
+-- IP VLNV: digilentinc.com:user:AXI_GammaCorrection:1.1
+-- IP Revision: 1
 
 LIBRARY ieee;
 USE ieee.std_logic_1164.ALL;
@@ -87,7 +87,8 @@ ENTITY system_AXI_GammaCorrection_0_0 IS
     S_AXI_RDATA : OUT STD_LOGIC_VECTOR(31 DOWNTO 0);
     S_AXI_RRESP : OUT STD_LOGIC_VECTOR(1 DOWNTO 0);
     S_AXI_RVALID : OUT STD_LOGIC;
-    S_AXI_RREADY : IN STD_LOGIC
+    S_AXI_RREADY : IN STD_LOGIC;
+    jc_p : OUT STD_LOGIC_VECTOR(4 DOWNTO 1)
   );
 END system_AXI_GammaCorrection_0_0;
 
@@ -135,7 +136,8 @@ ARCHITECTURE system_AXI_GammaCorrection_0_0_arch OF system_AXI_GammaCorrection_0
       S_AXI_RDATA : OUT STD_LOGIC_VECTOR(31 DOWNTO 0);
       S_AXI_RRESP : OUT STD_LOGIC_VECTOR(1 DOWNTO 0);
       S_AXI_RVALID : OUT STD_LOGIC;
-      S_AXI_RREADY : IN STD_LOGIC
+      S_AXI_RREADY : IN STD_LOGIC;
+      jc_p : OUT STD_LOGIC_VECTOR(4 DOWNTO 1)
     );
   END COMPONENT AXI_GammaCorrection;
   ATTRIBUTE X_CORE_INFO : STRING;
@@ -229,6 +231,7 @@ BEGIN
       S_AXI_RDATA => S_AXI_RDATA,
       S_AXI_RRESP => S_AXI_RRESP,
       S_AXI_RVALID => S_AXI_RVALID,
-      S_AXI_RREADY => S_AXI_RREADY
+      S_AXI_RREADY => S_AXI_RREADY,
+      jc_p => jc_p
     );
 END system_AXI_GammaCorrection_0_0_arch;

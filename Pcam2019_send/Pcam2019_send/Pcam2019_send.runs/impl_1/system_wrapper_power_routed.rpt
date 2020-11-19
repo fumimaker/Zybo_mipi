@@ -1,7 +1,7 @@
 Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
 ----------------------------------------------------------------------------------------------------------------------------------------------------------------
 | Tool Version     : Vivado v.2019.2 (win64) Build 2708876 Wed Nov  6 21:40:23 MST 2019
-| Date             : Wed Nov 18 01:23:06 2020
+| Date             : Fri Nov 20 02:30:20 2020
 | Host             : DESKTOP-5VC2SBS running 64-bit major release  (build 9200)
 | Command          : report_power -file system_wrapper_power_routed.rpt -pb system_wrapper_power_summary_routed.pb -rpx system_wrapper_power_routed.rpx
 | Design           : system_wrapper
@@ -30,14 +30,14 @@ Table of Contents
 ----------
 
 +--------------------------+--------------+
-| Total On-Chip Power (W)  | 1.933        |
+| Total On-Chip Power (W)  | 1.962        |
 | Design Power Budget (W)  | Unspecified* |
 | Power Budget Margin (W)  | NA           |
-| Dynamic (W)              | 1.780        |
-| Device Static (W)        | 0.152        |
+| Dynamic (W)              | 1.807        |
+| Device Static (W)        | 0.156        |
 | Effective TJA (C/W)      | 11.5         |
-| Max Ambient (C)          | 62.7         |
-| Junction Temperature (C) | 47.3         |
+| Max Ambient (C)          | 62.4         |
+| Junction Temperature (C) | 47.6         |
 | Confidence Level         | Low          |
 | Setting File             | ---          |
 | Simulation Activity File | ---          |
@@ -52,22 +52,22 @@ Table of Contents
 +--------------------------+-----------+----------+-----------+-----------------+
 | On-Chip                  | Power (W) | Used     | Available | Utilization (%) |
 +--------------------------+-----------+----------+-----------+-----------------+
-| Clocks                   |     0.057 |       12 |       --- |             --- |
-| Slice Logic              |     0.014 |    21564 |       --- |             --- |
-|   LUT as Logic           |     0.012 |     7482 |     53200 |           14.06 |
-|   CARRY4                 |    <0.001 |      248 |     13300 |            1.86 |
-|   Register               |    <0.001 |    10706 |    106400 |           10.06 |
-|   F7/F8 Muxes            |    <0.001 |      787 |     53200 |            1.48 |
-|   LUT as Distributed RAM |    <0.001 |       62 |     17400 |            0.36 |
-|   LUT as Shift Register  |    <0.001 |      229 |     17400 |            1.32 |
-|   Others                 |     0.000 |      765 |       --- |             --- |
-| Signals                  |     0.017 |    15549 |       --- |             --- |
-| Block RAM                |     0.006 |     10.5 |       140 |            7.50 |
+| Clocks                   |     0.074 |       13 |       --- |             --- |
+| Slice Logic              |     0.012 |    27144 |       --- |             --- |
+|   LUT as Logic           |     0.010 |     9053 |     53200 |           17.02 |
+|   CARRY4                 |     0.001 |      322 |     13300 |            2.42 |
+|   Register               |    <0.001 |    13568 |    106400 |           12.75 |
+|   F7/F8 Muxes            |    <0.001 |      791 |     53200 |            1.49 |
+|   LUT as Shift Register  |    <0.001 |      455 |     17400 |            2.61 |
+|   LUT as Distributed RAM |    <0.001 |       86 |     17400 |            0.49 |
+|   Others                 |     0.000 |     1178 |       --- |             --- |
+| Signals                  |     0.016 |    19535 |       --- |             --- |
+| Block RAM                |     0.018 |       35 |       140 |           25.00 |
 | MMCM                     |     0.191 |        2 |         4 |           50.00 |
 | I/O                      |     0.084 |       23 |       125 |           18.40 |
 | PS7                      |     1.412 |        1 |       --- |             --- |
-| Static Power             |     0.152 |          |           |                 |
-| Total                    |     1.932 |          |           |                 |
+| Static Power             |     0.156 |          |           |                 |
+| Total                    |     1.962 |          |           |                 |
 +--------------------------+-----------+----------+-----------+-----------------+
 
 
@@ -77,7 +77,7 @@ Table of Contents
 +-----------+-------------+-----------+-------------+------------+
 | Source    | Voltage (V) | Total (A) | Dynamic (A) | Static (A) |
 +-----------+-------------+-----------+-------------+------------+
-| Vccint    |       1.000 |     0.119 |       0.102 |      0.017 |
+| Vccint    |       1.000 |     0.146 |       0.127 |      0.018 |
 | Vccaux    |       1.800 |     0.145 |       0.129 |      0.016 |
 | Vcco33    |       3.300 |     0.011 |       0.010 |      0.001 |
 | Vcco25    |       2.500 |     0.000 |       0.000 |      0.000 |
@@ -86,7 +86,7 @@ Table of Contents
 | Vcco135   |       1.350 |     0.000 |       0.000 |      0.000 |
 | Vcco12    |       1.200 |     0.000 |       0.000 |      0.000 |
 | Vccaux_io |       1.800 |     0.000 |       0.000 |      0.000 |
-| Vccbram   |       1.000 |     0.002 |       0.000 |      0.002 |
+| Vccbram   |       1.000 |     0.005 |       0.001 |      0.004 |
 | MGTAVcc   |       1.000 |     0.000 |       0.000 |      0.000 |
 | MGTAVtt   |       1.200 |     0.000 |       0.000 |      0.000 |
 | MGTVccaux |       1.800 |     0.000 |       0.000 |      0.000 |
@@ -137,20 +137,21 @@ Table of Contents
 2.2 Clock Constraints
 ---------------------
 
-+--------------------------------+-----------------------------------------------------------------------------------+-----------------+
-| Clock                          | Domain                                                                            | Constraint (ns) |
-+--------------------------------+-----------------------------------------------------------------------------------+-----------------+
-| MIPI_D_PHY_RX_0_RxByteClkHS    | system_i/MIPI_D_PHY_RX_0/U0/ClockLane/HSClockingX/CLK                             |            19.0 |
-| clk_fpga_0                     | system_i/processing_system7_0/inst/FCLK_CLK_unbuffered[0]                         |            10.0 |
-| clk_out1_system_clk_wiz_0_0    | system_i/clk_wiz_0/inst/clk_out1_system_clk_wiz_0_0                               |            20.0 |
-| clk_out2_system_clk_wiz_0_0    | system_i/clk_wiz_0/inst/clk_out2_system_clk_wiz_0_0                               |             6.7 |
-| clk_out3_system_clk_wiz_0_0    | system_i/clk_wiz_0/inst/clk_out3_system_clk_wiz_0_0                               |             5.0 |
-| clkfbout_system_clk_wiz_0_0    | system_i/clk_wiz_0/inst/clkfbout_system_clk_wiz_0_0                               |            10.0 |
-| clkfbout_system_video_dynclk_0 | system_i/video_dynclk/inst/CLK_CORE_DRP_I/clk_inst/clkfbout_system_video_dynclk_0 |            50.0 |
-| dphy_hs_clock_p                | dphy_hs_clock_clk_p                                                               |             4.8 |
-| pixel_dynclk                   | system_i/DVIClocking_0/U0/PixelClk                                                |             6.7 |
-| video_dynclk                   | system_i/video_dynclk/inst/CLK_CORE_DRP_I/clk_inst/pxl_clk_5x                     |             1.7 |
-+--------------------------------+-----------------------------------------------------------------------------------+-----------------+
++--------------------------------------------------------------------------------------------+-----------------------------------------------------------------------------------+-----------------+
+| Clock                                                                                      | Domain                                                                            | Constraint (ns) |
++--------------------------------------------------------------------------------------------+-----------------------------------------------------------------------------------+-----------------+
+| MIPI_D_PHY_RX_0_RxByteClkHS                                                                | system_i/MIPI_D_PHY_RX_0/U0/ClockLane/HSClockingX/CLK                             |            19.0 |
+| clk_fpga_0                                                                                 | system_i/processing_system7_0/inst/FCLK_CLK_unbuffered[0]                         |            10.0 |
+| clk_out1_system_clk_wiz_0_0                                                                | system_i/clk_wiz_0/inst/clk_out1_system_clk_wiz_0_0                               |            20.0 |
+| clk_out2_system_clk_wiz_0_0                                                                | system_i/clk_wiz_0/inst/clk_out2_system_clk_wiz_0_0                               |             6.7 |
+| clk_out3_system_clk_wiz_0_0                                                                | system_i/clk_wiz_0/inst/clk_out3_system_clk_wiz_0_0                               |             5.0 |
+| clkfbout_system_clk_wiz_0_0                                                                | system_i/clk_wiz_0/inst/clkfbout_system_clk_wiz_0_0                               |            10.0 |
+| clkfbout_system_video_dynclk_0                                                             | system_i/video_dynclk/inst/CLK_CORE_DRP_I/clk_inst/clkfbout_system_video_dynclk_0 |            50.0 |
+| dbg_hub/inst/BSCANID.u_xsdbm_id/SWITCH_N_EXT_BSCAN.bscan_inst/SERIES7_BSCAN.bscan_inst/TCK | dbg_hub/inst/BSCANID.u_xsdbm_id/SWITCH_N_EXT_BSCAN.bscan_inst/tck_bs              |            33.0 |
+| dphy_hs_clock_p                                                                            | dphy_hs_clock_clk_p                                                               |             4.8 |
+| pixel_dynclk                                                                               | system_i/DVIClocking_0/U0/PixelClk                                                |             6.7 |
+| video_dynclk                                                                               | system_i/video_dynclk/inst/CLK_CORE_DRP_I/clk_inst/pxl_clk_5x                     |             1.7 |
++--------------------------------------------------------------------------------------------+-----------------------------------------------------------------------------------+-----------------+
 
 
 3. Detailed Reports
@@ -162,23 +163,26 @@ Table of Contents
 +---------------------------+-----------+
 | Name                      | Power (W) |
 +---------------------------+-----------+
-| system_wrapper            |     1.780 |
+| system_wrapper            |     1.807 |
 |   cam_gpio_tri_iobuf_0    |     0.004 |
 |   cam_iic_scl_iobuf       |     0.004 |
 |   cam_iic_sda_iobuf       |     0.004 |
-|   system_i                |     1.767 |
-|     AXI_BayerToRGB_1      |     0.006 |
-|       U0                  |     0.006 |
-|     AXI_GammaCorrection_0 |     0.008 |
-|       U0                  |     0.008 |
+|   dbg_hub                 |     0.004 |
+|     inst                  |     0.004 |
+|       BSCANID.u_xsdbm_id  |     0.004 |
+|   system_i                |     1.790 |
+|     AXI_BayerToRGB_1      |     0.003 |
+|       U0                  |     0.003 |
+|     AXI_GammaCorrection_0 |     0.004 |
+|       U0                  |     0.004 |
 |     MIPI_CSI_2_RX_0       |     0.008 |
 |       U0                  |     0.008 |
-|     MIPI_D_PHY_RX_0       |     0.054 |
-|       U0                  |     0.054 |
+|     MIPI_D_PHY_RX_0       |     0.053 |
+|       U0                  |     0.053 |
 |     axi_mem_intercon_1    |     0.001 |
 |       s00_couplers        |     0.001 |
-|     axi_vdma_0            |     0.030 |
-|       U0                  |     0.030 |
+|     axi_vdma_0            |     0.031 |
+|       U0                  |     0.031 |
 |     clk_wiz_0             |     0.087 |
 |       inst                |     0.087 |
 |     processing_system7_0  |     1.413 |
@@ -187,6 +191,8 @@ Table of Contents
 |       s00_couplers        |     0.002 |
 |     rgb2dvi_0             |     0.026 |
 |       U0                  |     0.026 |
+|     system_ila_0          |     0.028 |
+|       U0                  |     0.028 |
 |     v_axi4s_vid_out_0     |     0.006 |
 |       inst                |     0.006 |
 |     video_dynclk          |     0.109 |

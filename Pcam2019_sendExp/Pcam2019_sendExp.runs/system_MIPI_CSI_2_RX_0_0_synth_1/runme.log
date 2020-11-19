@@ -9,7 +9,6 @@
     ** Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
 
 source system_MIPI_CSI_2_RX_0_0.tcl -notrace
-create_project: Time (s): cpu = 00:00:03 ; elapsed = 00:00:05 . Memory (MB): peak = 442.504 ; gain = 159.906
 INFO: [IP_Flow 19-234] Refreshing IP repositories
 INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Github/Zybo_mipi/Pcam2019/Zybo-Z7-20-pcam-5c-2019.1/vivado_proj/Zybo-Z7-20-pcam-5c.ipdefs/repo_0'.
 INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2019.2/data/ip'.
@@ -19,14 +18,14 @@ Attempting to get a license for feature 'Synthesis' and/or device 'xc7z020'
 INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7z020'
 INFO: [Device 21-403] Loading part xc7z020clg400-1
 INFO: Launching helper process for spawning children vivado processes
-INFO: Helper process launched with PID 3276 
+INFO: Helper process launched with PID 29892 
 ---------------------------------------------------------------------------------
-Starting RTL Elaboration : Time (s): cpu = 00:00:20 ; elapsed = 00:00:27 . Memory (MB): peak = 1062.000 ; gain = 249.945
+Starting RTL Elaboration : Time (s): cpu = 00:00:18 ; elapsed = 00:00:21 . Memory (MB): peak = 1061.801 ; gain = 249.738
 ---------------------------------------------------------------------------------
-WARNING: [Synth 8-1565] actual for formal port s_axis_aresetn is neither a static name nor a globally static expression [c:/Github/Zybo_mipi/Pcam2019_send/Pcam2019_send/Pcam2019_send.srcs/sources_1/bd/system/ipshared/7681/hdl/LLP.vhd:580]
-WARNING: [Synth 8-1565] actual for formal port idatain is neither a static name nor a globally static expression [c:/Github/Zybo_mipi/Pcam2019_send/Pcam2019_send/Pcam2019_send.srcs/sources_1/bd/system/ipshared/7681/hdl/LM.vhd:148]
-WARNING: [Synth 8-1565] actual for formal port rbrst is neither a static name nor a globally static expression [c:/Github/Zybo_mipi/Pcam2019_send/Pcam2019_send/Pcam2019_send.srcs/sources_1/bd/system/ipshared/7681/hdl/MIPI_CSI2_Rx.vhd:279]
-INFO: [Synth 8-638] synthesizing module 'system_MIPI_CSI_2_RX_0_0' [c:/Github/Zybo_mipi/Pcam2019_send/Pcam2019_send/Pcam2019_send.srcs/sources_1/bd/system/ip/system_MIPI_CSI_2_RX_0_0/synth/system_MIPI_CSI_2_RX_0_0.vhd:112]
+WARNING: [Synth 8-1565] actual for formal port s_axis_aresetn is neither a static name nor a globally static expression [c:/Github/Zybo_mipi/Pcam2019_sendExp/Pcam2019_sendExp.srcs/sources_1/bd/system/ipshared/7681/hdl/LLP.vhd:580]
+WARNING: [Synth 8-1565] actual for formal port idatain is neither a static name nor a globally static expression [c:/Github/Zybo_mipi/Pcam2019_sendExp/Pcam2019_sendExp.srcs/sources_1/bd/system/ipshared/7681/hdl/LM.vhd:148]
+WARNING: [Synth 8-1565] actual for formal port rbrst is neither a static name nor a globally static expression [c:/Github/Zybo_mipi/Pcam2019_sendExp/Pcam2019_sendExp.srcs/sources_1/bd/system/ipshared/7681/hdl/MIPI_CSI2_Rx.vhd:279]
+INFO: [Synth 8-638] synthesizing module 'system_MIPI_CSI_2_RX_0_0' [c:/Github/Zybo_mipi/Pcam2019_sendExp/Pcam2019_sendExp.srcs/sources_1/bd/system/ip/system_MIPI_CSI_2_RX_0_0/synth/system_MIPI_CSI_2_RX_0_0.vhd:112]
 	Parameter C_S_AXI_LITE_DATA_WIDTH bound to: 32 - type: integer 
 	Parameter C_S_AXI_LITE_ADDR_WIDTH bound to: 4 - type: integer 
 	Parameter kVersionMajor bound to: 1 - type: integer 
@@ -38,8 +37,8 @@ INFO: [Synth 8-638] synthesizing module 'system_MIPI_CSI_2_RX_0_0' [c:/Github/Zy
 	Parameter C_M_AXIS_COMPONENT_WIDTH bound to: 10 - type: integer 
 	Parameter C_M_AXIS_TDATA_WIDTH bound to: 40 - type: integer 
 	Parameter C_M_MAX_SAMPLES_PER_CLOCK bound to: 4 - type: integer 
-INFO: [Synth 8-3491] module 'mipi_csi2_rx_top' declared at 'c:/Github/Zybo_mipi/Pcam2019_send/Pcam2019_send/Pcam2019_send.srcs/sources_1/bd/system/ipshared/7681/hdl/MIPI_CSI2_RxTop.vhd:46' bound to instance 'U0' of component 'mipi_csi2_rx_top' [c:/Github/Zybo_mipi/Pcam2019_send/Pcam2019_send/Pcam2019_send.srcs/sources_1/bd/system/ip/system_MIPI_CSI_2_RX_0_0/synth/system_MIPI_CSI_2_RX_0_0.vhd:249]
-INFO: [Synth 8-638] synthesizing module 'mipi_csi2_rx_top' [c:/Github/Zybo_mipi/Pcam2019_send/Pcam2019_send/Pcam2019_send.srcs/sources_1/bd/system/ipshared/7681/hdl/MIPI_CSI2_RxTop.vhd:131]
+INFO: [Synth 8-3491] module 'mipi_csi2_rx_top' declared at 'c:/Github/Zybo_mipi/Pcam2019_sendExp/Pcam2019_sendExp.srcs/sources_1/bd/system/ipshared/7681/hdl/MIPI_CSI2_RxTop.vhd:46' bound to instance 'U0' of component 'mipi_csi2_rx_top' [c:/Github/Zybo_mipi/Pcam2019_sendExp/Pcam2019_sendExp.srcs/sources_1/bd/system/ip/system_MIPI_CSI_2_RX_0_0/synth/system_MIPI_CSI_2_RX_0_0.vhd:249]
+INFO: [Synth 8-638] synthesizing module 'mipi_csi2_rx_top' [c:/Github/Zybo_mipi/Pcam2019_sendExp/Pcam2019_sendExp.srcs/sources_1/bd/system/ipshared/7681/hdl/MIPI_CSI2_RxTop.vhd:131]
 	Parameter kVersionMajor bound to: 1 - type: integer 
 	Parameter kVersionMinor bound to: 2 - type: integer 
 	Parameter kTargetDT bound to: RAW10 - type: string 
@@ -51,64 +50,64 @@ INFO: [Synth 8-638] synthesizing module 'mipi_csi2_rx_top' [c:/Github/Zybo_mipi/
 	Parameter C_M_MAX_SAMPLES_PER_CLOCK bound to: 4 - type: integer 
 	Parameter C_S_AXI_LITE_DATA_WIDTH bound to: 32 - type: integer 
 	Parameter C_S_AXI_LITE_ADDR_WIDTH bound to: 4 - type: integer 
-INFO: [Synth 8-638] synthesizing module 'MIPI_CSI2_Rx' [c:/Github/Zybo_mipi/Pcam2019_send/Pcam2019_send/Pcam2019_send.srcs/sources_1/bd/system/ipshared/7681/hdl/MIPI_CSI2_Rx.vhd:77]
+INFO: [Synth 8-638] synthesizing module 'MIPI_CSI2_Rx' [c:/Github/Zybo_mipi/Pcam2019_sendExp/Pcam2019_sendExp.srcs/sources_1/bd/system/ipshared/7681/hdl/MIPI_CSI2_Rx.vhd:77]
 	Parameter kTargetDT bound to: RAW10 - type: string 
 	Parameter kDebug bound to: 0 - type: bool 
 	Parameter kLaneCount bound to: 2 - type: integer 
 	Parameter C_M_AXIS_COMPONENT_WIDTH bound to: 10 - type: integer 
 	Parameter C_M_AXIS_TDATA_WIDTH bound to: 40 - type: integer 
 	Parameter C_M_MAX_SAMPLES_PER_CLOCK bound to: 4 - type: integer 
-INFO: [Synth 8-638] synthesizing module 'ResetBridge' [c:/Github/Zybo_mipi/Pcam2019_send/Pcam2019_send/Pcam2019_send.srcs/sources_1/bd/system/ipshared/7681/hdl/SyncAsyncReset.vhd:65]
+INFO: [Synth 8-638] synthesizing module 'ResetBridge' [c:/Github/Zybo_mipi/Pcam2019_sendExp/Pcam2019_sendExp.srcs/sources_1/bd/system/ipshared/7681/hdl/SyncAsyncReset.vhd:65]
 	Parameter kPolarity bound to: 1'b0 
-INFO: [Synth 8-638] synthesizing module 'SyncAsync' [c:/Github/Zybo_mipi/Pcam2019_send/Pcam2019_send/Pcam2019_send.srcs/sources_1/bd/system/ipshared/7681/hdl/SyncAsync.vhd:66]
+INFO: [Synth 8-638] synthesizing module 'SyncAsync' [c:/Github/Zybo_mipi/Pcam2019_sendExp/Pcam2019_sendExp.srcs/sources_1/bd/system/ipshared/7681/hdl/SyncAsync.vhd:66]
 	Parameter kResetTo bound to: 1'b0 
 	Parameter kStages bound to: 2 - type: integer 
 	Parameter kResetPolarity bound to: 1'b0 
-INFO: [Synth 8-5534] Detected attribute (* async_reg = "TRUE" *) [c:/Github/Zybo_mipi/Pcam2019_send/Pcam2019_send/Pcam2019_send.srcs/sources_1/bd/system/ipshared/7681/hdl/SyncAsync.vhd:67]
-INFO: [Synth 8-256] done synthesizing module 'SyncAsync' (1#1) [c:/Github/Zybo_mipi/Pcam2019_send/Pcam2019_send/Pcam2019_send.srcs/sources_1/bd/system/ipshared/7681/hdl/SyncAsync.vhd:66]
-INFO: [Synth 8-256] done synthesizing module 'ResetBridge' (2#1) [c:/Github/Zybo_mipi/Pcam2019_send/Pcam2019_send/Pcam2019_send.srcs/sources_1/bd/system/ipshared/7681/hdl/SyncAsyncReset.vhd:65]
+INFO: [Synth 8-5534] Detected attribute (* async_reg = "TRUE" *) [c:/Github/Zybo_mipi/Pcam2019_sendExp/Pcam2019_sendExp.srcs/sources_1/bd/system/ipshared/7681/hdl/SyncAsync.vhd:67]
+INFO: [Synth 8-256] done synthesizing module 'SyncAsync' (1#1) [c:/Github/Zybo_mipi/Pcam2019_sendExp/Pcam2019_sendExp.srcs/sources_1/bd/system/ipshared/7681/hdl/SyncAsync.vhd:66]
+INFO: [Synth 8-256] done synthesizing module 'ResetBridge' (2#1) [c:/Github/Zybo_mipi/Pcam2019_sendExp/Pcam2019_sendExp.srcs/sources_1/bd/system/ipshared/7681/hdl/SyncAsyncReset.vhd:65]
 	Parameter kMaxLaneCount bound to: 4 - type: integer 
 	Parameter kLaneCount bound to: 2 - type: integer 
-INFO: [Synth 8-3491] module 'LM' declared at 'c:/Github/Zybo_mipi/Pcam2019_send/Pcam2019_send/Pcam2019_send.srcs/sources_1/bd/system/ipshared/7681/hdl/LM.vhd:48' bound to instance 'LM_inst' of component 'LM' [c:/Github/Zybo_mipi/Pcam2019_send/Pcam2019_send/Pcam2019_send.srcs/sources_1/bd/system/ipshared/7681/hdl/MIPI_CSI2_Rx.vhd:257]
-INFO: [Synth 8-638] synthesizing module 'LM' [c:/Github/Zybo_mipi/Pcam2019_send/Pcam2019_send/Pcam2019_send.srcs/sources_1/bd/system/ipshared/7681/hdl/LM.vhd:79]
+INFO: [Synth 8-3491] module 'LM' declared at 'c:/Github/Zybo_mipi/Pcam2019_sendExp/Pcam2019_sendExp.srcs/sources_1/bd/system/ipshared/7681/hdl/LM.vhd:48' bound to instance 'LM_inst' of component 'LM' [c:/Github/Zybo_mipi/Pcam2019_sendExp/Pcam2019_sendExp.srcs/sources_1/bd/system/ipshared/7681/hdl/MIPI_CSI2_Rx.vhd:257]
+INFO: [Synth 8-638] synthesizing module 'LM' [c:/Github/Zybo_mipi/Pcam2019_sendExp/Pcam2019_sendExp.srcs/sources_1/bd/system/ipshared/7681/hdl/LM.vhd:79]
 	Parameter kMaxLaneCount bound to: 4 - type: integer 
 	Parameter kLaneCount bound to: 2 - type: integer 
-INFO: [Synth 8-638] synthesizing module 'SimpleFIFO' [c:/Github/Zybo_mipi/Pcam2019_send/Pcam2019_send/Pcam2019_send.srcs/sources_1/bd/system/ipshared/7681/hdl/SimpleFIFO.vhd:62]
+INFO: [Synth 8-638] synthesizing module 'SimpleFIFO' [c:/Github/Zybo_mipi/Pcam2019_sendExp/Pcam2019_sendExp.srcs/sources_1/bd/system/ipshared/7681/hdl/SimpleFIFO.vhd:62]
 	Parameter kDataWidth bound to: 11 - type: integer 
-INFO: [Synth 8-256] done synthesizing module 'SimpleFIFO' (3#1) [c:/Github/Zybo_mipi/Pcam2019_send/Pcam2019_send/Pcam2019_send.srcs/sources_1/bd/system/ipshared/7681/hdl/SimpleFIFO.vhd:62]
-WARNING: [Synth 8-3848] Net dbgLMLane[2][rbSkwRdEn] in module/entity LM does not have driver. [c:/Github/Zybo_mipi/Pcam2019_send/Pcam2019_send/Pcam2019_send.srcs/sources_1/bd/system/ipshared/7681/hdl/LM.vhd:74]
-WARNING: [Synth 8-3848] Net dbgLMLane[2][rbSkwWrEn] in module/entity LM does not have driver. [c:/Github/Zybo_mipi/Pcam2019_send/Pcam2019_send/Pcam2019_send.srcs/sources_1/bd/system/ipshared/7681/hdl/LM.vhd:74]
-WARNING: [Synth 8-3848] Net dbgLMLane[2][rbSkwFull] in module/entity LM does not have driver. [c:/Github/Zybo_mipi/Pcam2019_send/Pcam2019_send/Pcam2019_send.srcs/sources_1/bd/system/ipshared/7681/hdl/LM.vhd:74]
-WARNING: [Synth 8-3848] Net dbgLMLane[2][rbActiveHS] in module/entity LM does not have driver. [c:/Github/Zybo_mipi/Pcam2019_send/Pcam2019_send/Pcam2019_send.srcs/sources_1/bd/system/ipshared/7681/hdl/LM.vhd:74]
-WARNING: [Synth 8-3848] Net dbgLMLane[2][rbSyncHS] in module/entity LM does not have driver. [c:/Github/Zybo_mipi/Pcam2019_send/Pcam2019_send/Pcam2019_send.srcs/sources_1/bd/system/ipshared/7681/hdl/LM.vhd:74]
-WARNING: [Synth 8-3848] Net dbgLMLane[2][rbValidHS] in module/entity LM does not have driver. [c:/Github/Zybo_mipi/Pcam2019_send/Pcam2019_send/Pcam2019_send.srcs/sources_1/bd/system/ipshared/7681/hdl/LM.vhd:74]
-WARNING: [Synth 8-3848] Net dbgLMLane[2][rbDataHS] in module/entity LM does not have driver. [c:/Github/Zybo_mipi/Pcam2019_send/Pcam2019_send/Pcam2019_send.srcs/sources_1/bd/system/ipshared/7681/hdl/LM.vhd:74]
-WARNING: [Synth 8-3848] Net dbgLMLane[3][rbSkwRdEn] in module/entity LM does not have driver. [c:/Github/Zybo_mipi/Pcam2019_send/Pcam2019_send/Pcam2019_send.srcs/sources_1/bd/system/ipshared/7681/hdl/LM.vhd:74]
-WARNING: [Synth 8-3848] Net dbgLMLane[3][rbSkwWrEn] in module/entity LM does not have driver. [c:/Github/Zybo_mipi/Pcam2019_send/Pcam2019_send/Pcam2019_send.srcs/sources_1/bd/system/ipshared/7681/hdl/LM.vhd:74]
-WARNING: [Synth 8-3848] Net dbgLMLane[3][rbSkwFull] in module/entity LM does not have driver. [c:/Github/Zybo_mipi/Pcam2019_send/Pcam2019_send/Pcam2019_send.srcs/sources_1/bd/system/ipshared/7681/hdl/LM.vhd:74]
-WARNING: [Synth 8-3848] Net dbgLMLane[3][rbActiveHS] in module/entity LM does not have driver. [c:/Github/Zybo_mipi/Pcam2019_send/Pcam2019_send/Pcam2019_send.srcs/sources_1/bd/system/ipshared/7681/hdl/LM.vhd:74]
-WARNING: [Synth 8-3848] Net dbgLMLane[3][rbSyncHS] in module/entity LM does not have driver. [c:/Github/Zybo_mipi/Pcam2019_send/Pcam2019_send/Pcam2019_send.srcs/sources_1/bd/system/ipshared/7681/hdl/LM.vhd:74]
-WARNING: [Synth 8-3848] Net dbgLMLane[3][rbValidHS] in module/entity LM does not have driver. [c:/Github/Zybo_mipi/Pcam2019_send/Pcam2019_send/Pcam2019_send.srcs/sources_1/bd/system/ipshared/7681/hdl/LM.vhd:74]
-WARNING: [Synth 8-3848] Net dbgLMLane[3][rbDataHS] in module/entity LM does not have driver. [c:/Github/Zybo_mipi/Pcam2019_send/Pcam2019_send/Pcam2019_send.srcs/sources_1/bd/system/ipshared/7681/hdl/LM.vhd:74]
-INFO: [Synth 8-256] done synthesizing module 'LM' (4#1) [c:/Github/Zybo_mipi/Pcam2019_send/Pcam2019_send/Pcam2019_send.srcs/sources_1/bd/system/ipshared/7681/hdl/LM.vhd:79]
+INFO: [Synth 8-256] done synthesizing module 'SimpleFIFO' (3#1) [c:/Github/Zybo_mipi/Pcam2019_sendExp/Pcam2019_sendExp.srcs/sources_1/bd/system/ipshared/7681/hdl/SimpleFIFO.vhd:62]
+WARNING: [Synth 8-3848] Net dbgLMLane[2][rbSkwRdEn] in module/entity LM does not have driver. [c:/Github/Zybo_mipi/Pcam2019_sendExp/Pcam2019_sendExp.srcs/sources_1/bd/system/ipshared/7681/hdl/LM.vhd:74]
+WARNING: [Synth 8-3848] Net dbgLMLane[2][rbSkwWrEn] in module/entity LM does not have driver. [c:/Github/Zybo_mipi/Pcam2019_sendExp/Pcam2019_sendExp.srcs/sources_1/bd/system/ipshared/7681/hdl/LM.vhd:74]
+WARNING: [Synth 8-3848] Net dbgLMLane[2][rbSkwFull] in module/entity LM does not have driver. [c:/Github/Zybo_mipi/Pcam2019_sendExp/Pcam2019_sendExp.srcs/sources_1/bd/system/ipshared/7681/hdl/LM.vhd:74]
+WARNING: [Synth 8-3848] Net dbgLMLane[2][rbActiveHS] in module/entity LM does not have driver. [c:/Github/Zybo_mipi/Pcam2019_sendExp/Pcam2019_sendExp.srcs/sources_1/bd/system/ipshared/7681/hdl/LM.vhd:74]
+WARNING: [Synth 8-3848] Net dbgLMLane[2][rbSyncHS] in module/entity LM does not have driver. [c:/Github/Zybo_mipi/Pcam2019_sendExp/Pcam2019_sendExp.srcs/sources_1/bd/system/ipshared/7681/hdl/LM.vhd:74]
+WARNING: [Synth 8-3848] Net dbgLMLane[2][rbValidHS] in module/entity LM does not have driver. [c:/Github/Zybo_mipi/Pcam2019_sendExp/Pcam2019_sendExp.srcs/sources_1/bd/system/ipshared/7681/hdl/LM.vhd:74]
+WARNING: [Synth 8-3848] Net dbgLMLane[2][rbDataHS] in module/entity LM does not have driver. [c:/Github/Zybo_mipi/Pcam2019_sendExp/Pcam2019_sendExp.srcs/sources_1/bd/system/ipshared/7681/hdl/LM.vhd:74]
+WARNING: [Synth 8-3848] Net dbgLMLane[3][rbSkwRdEn] in module/entity LM does not have driver. [c:/Github/Zybo_mipi/Pcam2019_sendExp/Pcam2019_sendExp.srcs/sources_1/bd/system/ipshared/7681/hdl/LM.vhd:74]
+WARNING: [Synth 8-3848] Net dbgLMLane[3][rbSkwWrEn] in module/entity LM does not have driver. [c:/Github/Zybo_mipi/Pcam2019_sendExp/Pcam2019_sendExp.srcs/sources_1/bd/system/ipshared/7681/hdl/LM.vhd:74]
+WARNING: [Synth 8-3848] Net dbgLMLane[3][rbSkwFull] in module/entity LM does not have driver. [c:/Github/Zybo_mipi/Pcam2019_sendExp/Pcam2019_sendExp.srcs/sources_1/bd/system/ipshared/7681/hdl/LM.vhd:74]
+WARNING: [Synth 8-3848] Net dbgLMLane[3][rbActiveHS] in module/entity LM does not have driver. [c:/Github/Zybo_mipi/Pcam2019_sendExp/Pcam2019_sendExp.srcs/sources_1/bd/system/ipshared/7681/hdl/LM.vhd:74]
+WARNING: [Synth 8-3848] Net dbgLMLane[3][rbSyncHS] in module/entity LM does not have driver. [c:/Github/Zybo_mipi/Pcam2019_sendExp/Pcam2019_sendExp.srcs/sources_1/bd/system/ipshared/7681/hdl/LM.vhd:74]
+WARNING: [Synth 8-3848] Net dbgLMLane[3][rbValidHS] in module/entity LM does not have driver. [c:/Github/Zybo_mipi/Pcam2019_sendExp/Pcam2019_sendExp.srcs/sources_1/bd/system/ipshared/7681/hdl/LM.vhd:74]
+WARNING: [Synth 8-3848] Net dbgLMLane[3][rbDataHS] in module/entity LM does not have driver. [c:/Github/Zybo_mipi/Pcam2019_sendExp/Pcam2019_sendExp.srcs/sources_1/bd/system/ipshared/7681/hdl/LM.vhd:74]
+INFO: [Synth 8-256] done synthesizing module 'LM' (4#1) [c:/Github/Zybo_mipi/Pcam2019_sendExp/Pcam2019_sendExp.srcs/sources_1/bd/system/ipshared/7681/hdl/LM.vhd:79]
 	Parameter kMaxLaneCount bound to: 4 - type: integer 
 	Parameter kLaneCount bound to: 2 - type: integer 
 	Parameter kTargetDT bound to: RAW10 - type: string 
-INFO: [Synth 8-3491] module 'LLP' declared at 'c:/Github/Zybo_mipi/Pcam2019_send/Pcam2019_send/Pcam2019_send.srcs/sources_1/bd/system/ipshared/7681/hdl/LLP.vhd:48' bound to instance 'LLP_inst' of component 'LLP' [c:/Github/Zybo_mipi/Pcam2019_send/Pcam2019_send/Pcam2019_send.srcs/sources_1/bd/system/ipshared/7681/hdl/MIPI_CSI2_Rx.vhd:291]
-INFO: [Synth 8-638] synthesizing module 'LLP' [c:/Github/Zybo_mipi/Pcam2019_send/Pcam2019_send/Pcam2019_send.srcs/sources_1/bd/system/ipshared/7681/hdl/LLP.vhd:79]
+INFO: [Synth 8-3491] module 'LLP' declared at 'c:/Github/Zybo_mipi/Pcam2019_sendExp/Pcam2019_sendExp.srcs/sources_1/bd/system/ipshared/7681/hdl/LLP.vhd:48' bound to instance 'LLP_inst' of component 'LLP' [c:/Github/Zybo_mipi/Pcam2019_sendExp/Pcam2019_sendExp.srcs/sources_1/bd/system/ipshared/7681/hdl/MIPI_CSI2_Rx.vhd:291]
+INFO: [Synth 8-638] synthesizing module 'LLP' [c:/Github/Zybo_mipi/Pcam2019_sendExp/Pcam2019_sendExp.srcs/sources_1/bd/system/ipshared/7681/hdl/LLP.vhd:79]
 	Parameter kMaxLaneCount bound to: 4 - type: integer 
 	Parameter kLaneCount bound to: 2 - type: integer 
 	Parameter kTargetDT bound to: RAW10 - type: string 
-INFO: [Synth 8-638] synthesizing module 'ResetBridge__parameterized0' [c:/Github/Zybo_mipi/Pcam2019_send/Pcam2019_send/Pcam2019_send.srcs/sources_1/bd/system/ipshared/7681/hdl/SyncAsyncReset.vhd:65]
+INFO: [Synth 8-638] synthesizing module 'ResetBridge__parameterized0' [c:/Github/Zybo_mipi/Pcam2019_sendExp/Pcam2019_sendExp.srcs/sources_1/bd/system/ipshared/7681/hdl/SyncAsyncReset.vhd:65]
 	Parameter kPolarity bound to: 1'b1 
-INFO: [Synth 8-638] synthesizing module 'SyncAsync__parameterized0' [c:/Github/Zybo_mipi/Pcam2019_send/Pcam2019_send/Pcam2019_send.srcs/sources_1/bd/system/ipshared/7681/hdl/SyncAsync.vhd:66]
+INFO: [Synth 8-638] synthesizing module 'SyncAsync__parameterized0' [c:/Github/Zybo_mipi/Pcam2019_sendExp/Pcam2019_sendExp.srcs/sources_1/bd/system/ipshared/7681/hdl/SyncAsync.vhd:66]
 	Parameter kResetTo bound to: 1'b1 
 	Parameter kStages bound to: 2 - type: integer 
 	Parameter kResetPolarity bound to: 1'b1 
-INFO: [Synth 8-256] done synthesizing module 'SyncAsync__parameterized0' (4#1) [c:/Github/Zybo_mipi/Pcam2019_send/Pcam2019_send/Pcam2019_send.srcs/sources_1/bd/system/ipshared/7681/hdl/SyncAsync.vhd:66]
-INFO: [Synth 8-256] done synthesizing module 'ResetBridge__parameterized0' (4#1) [c:/Github/Zybo_mipi/Pcam2019_send/Pcam2019_send/Pcam2019_send.srcs/sources_1/bd/system/ipshared/7681/hdl/SyncAsyncReset.vhd:65]
-INFO: [Synth 8-3491] module 'cdc_fifo' declared at 'c:/Github/Zybo_mipi/Pcam2019_send/Pcam2019_send/Pcam2019_send.srcs/sources_1/bd/system/ip/system_MIPI_CSI_2_RX_0_0/hdl/cdc_fifo/synth/cdc_fifo.vhd:59' bound to instance 'DataFIFO' of component 'cdc_fifo' [c:/Github/Zybo_mipi/Pcam2019_send/Pcam2019_send/Pcam2019_send.srcs/sources_1/bd/system/ipshared/7681/hdl/LLP.vhd:220]
-INFO: [Synth 8-638] synthesizing module 'cdc_fifo' [c:/Github/Zybo_mipi/Pcam2019_send/Pcam2019_send/Pcam2019_send.srcs/sources_1/bd/system/ip/system_MIPI_CSI_2_RX_0_0/hdl/cdc_fifo/synth/cdc_fifo.vhd:77]
+INFO: [Synth 8-256] done synthesizing module 'SyncAsync__parameterized0' (4#1) [c:/Github/Zybo_mipi/Pcam2019_sendExp/Pcam2019_sendExp.srcs/sources_1/bd/system/ipshared/7681/hdl/SyncAsync.vhd:66]
+INFO: [Synth 8-256] done synthesizing module 'ResetBridge__parameterized0' (4#1) [c:/Github/Zybo_mipi/Pcam2019_sendExp/Pcam2019_sendExp.srcs/sources_1/bd/system/ipshared/7681/hdl/SyncAsyncReset.vhd:65]
+INFO: [Synth 8-3491] module 'cdc_fifo' declared at 'c:/Github/Zybo_mipi/Pcam2019_sendExp/Pcam2019_sendExp.srcs/sources_1/bd/system/ip/system_MIPI_CSI_2_RX_0_0/hdl/cdc_fifo/synth/cdc_fifo.vhd:59' bound to instance 'DataFIFO' of component 'cdc_fifo' [c:/Github/Zybo_mipi/Pcam2019_sendExp/Pcam2019_sendExp.srcs/sources_1/bd/system/ipshared/7681/hdl/LLP.vhd:220]
+INFO: [Synth 8-638] synthesizing module 'cdc_fifo' [c:/Github/Zybo_mipi/Pcam2019_sendExp/Pcam2019_sendExp.srcs/sources_1/bd/system/ip/system_MIPI_CSI_2_RX_0_0/hdl/cdc_fifo/synth/cdc_fifo.vhd:77]
 	Parameter C_COMMON_CLOCK bound to: 0 - type: integer 
 	Parameter C_SELECT_XPM bound to: 0 - type: integer 
 	Parameter C_COUNT_TYPE bound to: 0 - type: integer 
@@ -311,7 +310,7 @@ INFO: [Synth 8-638] synthesizing module 'cdc_fifo' [c:/Github/Zybo_mipi/Pcam2019
 	Parameter C_REG_SLICE_MODE_RACH bound to: 0 - type: integer 
 	Parameter C_REG_SLICE_MODE_RDCH bound to: 0 - type: integer 
 	Parameter C_REG_SLICE_MODE_AXIS bound to: 0 - type: integer 
-INFO: [Synth 8-3491] module 'fifo_generator_v13_2_5' declared at 'c:/Github/Zybo_mipi/Pcam2019_send/Pcam2019_send/Pcam2019_send.srcs/sources_1/bd/system/ip/system_MIPI_CSI_2_RX_0_0/hdl/cdc_fifo/hdl/fifo_generator_v13_2_vhsyn_rfs.vhd:38604' bound to instance 'U0' of component 'fifo_generator_v13_2_5' [c:/Github/Zybo_mipi/Pcam2019_send/Pcam2019_send/Pcam2019_send.srcs/sources_1/bd/system/ip/system_MIPI_CSI_2_RX_0_0/hdl/cdc_fifo/synth/cdc_fifo.vhd:555]
+INFO: [Synth 8-3491] module 'fifo_generator_v13_2_5' declared at 'c:/Github/Zybo_mipi/Pcam2019_sendExp/Pcam2019_sendExp.srcs/sources_1/bd/system/ip/system_MIPI_CSI_2_RX_0_0/hdl/cdc_fifo/hdl/fifo_generator_v13_2_vhsyn_rfs.vhd:38604' bound to instance 'U0' of component 'fifo_generator_v13_2_5' [c:/Github/Zybo_mipi/Pcam2019_sendExp/Pcam2019_sendExp.srcs/sources_1/bd/system/ip/system_MIPI_CSI_2_RX_0_0/hdl/cdc_fifo/synth/cdc_fifo.vhd:555]
 INFO: [Synth 8-6157] synthesizing module 'xpm_cdc_async_rst' [C:/Xilinx/Vivado/2019.2/data/ip/xpm/xpm_cdc/hdl/xpm_cdc.sv:1175]
 INFO: [Synth 8-5534] Detected attribute (* ASYNC_REG = "TRUE" *) [C:/Xilinx/Vivado/2019.2/data/ip/xpm/xpm_cdc/hdl/xpm_cdc.sv:1226]
 INFO: [Synth 8-6155] done synthesizing module 'xpm_cdc_async_rst' (5#1) [C:/Xilinx/Vivado/2019.2/data/ip/xpm/xpm_cdc/hdl/xpm_cdc.sv:1175]
@@ -321,19 +320,19 @@ INFO: [Synth 8-6155] done synthesizing module 'xpm_cdc_single' (6#1) [C:/Xilinx/
 INFO: [Synth 8-6157] synthesizing module 'xpm_cdc_gray' [C:/Xilinx/Vivado/2019.2/data/ip/xpm/xpm_cdc/hdl/xpm_cdc.sv:284]
 INFO: [Synth 8-5534] Detected attribute (* ASYNC_REG = "TRUE" *) [C:/Xilinx/Vivado/2019.2/data/ip/xpm/xpm_cdc/hdl/xpm_cdc.sv:358]
 INFO: [Synth 8-6155] done synthesizing module 'xpm_cdc_gray' (11#1) [C:/Xilinx/Vivado/2019.2/data/ip/xpm/xpm_cdc/hdl/xpm_cdc.sv:284]
-INFO: [Synth 8-256] done synthesizing module 'cdc_fifo' (26#1) [c:/Github/Zybo_mipi/Pcam2019_send/Pcam2019_send/Pcam2019_send.srcs/sources_1/bd/system/ip/system_MIPI_CSI_2_RX_0_0/hdl/cdc_fifo/synth/cdc_fifo.vhd:77]
-INFO: [Synth 8-638] synthesizing module 'ECC' [c:/Github/Zybo_mipi/Pcam2019_send/Pcam2019_send/Pcam2019_send.srcs/sources_1/bd/system/ipshared/7681/hdl/ECC.vhd:63]
-INFO: [Synth 8-226] default block is never used [c:/Github/Zybo_mipi/Pcam2019_send/Pcam2019_send/Pcam2019_send.srcs/sources_1/bd/system/ipshared/7681/hdl/ECC.vhd:160]
-WARNING: [Synth 8-6014] Unused sequential element parity_reg was removed.  [c:/Github/Zybo_mipi/Pcam2019_send/Pcam2019_send/Pcam2019_send.srcs/sources_1/bd/system/ipshared/7681/hdl/ECC.vhd:99]
-WARNING: [Synth 8-6014] Unused sequential element sParity_reg was removed.  [c:/Github/Zybo_mipi/Pcam2019_send/Pcam2019_send/Pcam2019_send.srcs/sources_1/bd/system/ipshared/7681/hdl/ECC.vhd:107]
-INFO: [Synth 8-256] done synthesizing module 'ECC' (27#1) [c:/Github/Zybo_mipi/Pcam2019_send/Pcam2019_send/Pcam2019_send.srcs/sources_1/bd/system/ipshared/7681/hdl/ECC.vhd:63]
-INFO: [Synth 8-638] synthesizing module 'CRC16' [c:/Github/Zybo_mipi/Pcam2019_send/Pcam2019_send/Pcam2019_send.srcs/sources_1/bd/system/ipshared/7681/hdl/CRC16_behavioral.vhd:63]
+INFO: [Synth 8-256] done synthesizing module 'cdc_fifo' (26#1) [c:/Github/Zybo_mipi/Pcam2019_sendExp/Pcam2019_sendExp.srcs/sources_1/bd/system/ip/system_MIPI_CSI_2_RX_0_0/hdl/cdc_fifo/synth/cdc_fifo.vhd:77]
+INFO: [Synth 8-638] synthesizing module 'ECC' [c:/Github/Zybo_mipi/Pcam2019_sendExp/Pcam2019_sendExp.srcs/sources_1/bd/system/ipshared/7681/hdl/ECC.vhd:63]
+INFO: [Synth 8-226] default block is never used [c:/Github/Zybo_mipi/Pcam2019_sendExp/Pcam2019_sendExp.srcs/sources_1/bd/system/ipshared/7681/hdl/ECC.vhd:160]
+WARNING: [Synth 8-6014] Unused sequential element parity_reg was removed.  [c:/Github/Zybo_mipi/Pcam2019_sendExp/Pcam2019_sendExp.srcs/sources_1/bd/system/ipshared/7681/hdl/ECC.vhd:99]
+WARNING: [Synth 8-6014] Unused sequential element sParity_reg was removed.  [c:/Github/Zybo_mipi/Pcam2019_sendExp/Pcam2019_sendExp.srcs/sources_1/bd/system/ipshared/7681/hdl/ECC.vhd:107]
+INFO: [Synth 8-256] done synthesizing module 'ECC' (27#1) [c:/Github/Zybo_mipi/Pcam2019_sendExp/Pcam2019_sendExp.srcs/sources_1/bd/system/ipshared/7681/hdl/ECC.vhd:63]
+INFO: [Synth 8-638] synthesizing module 'CRC16' [c:/Github/Zybo_mipi/Pcam2019_sendExp/Pcam2019_sendExp.srcs/sources_1/bd/system/ipshared/7681/hdl/CRC16_behavioral.vhd:63]
 	Parameter kLaneCount bound to: 4 - type: integer 
-WARNING: [Synth 8-6014] Unused sequential element crc_temp_reg was removed.  [c:/Github/Zybo_mipi/Pcam2019_send/Pcam2019_send/Pcam2019_send.srcs/sources_1/bd/system/ipshared/7681/hdl/CRC16_behavioral.vhd:86]
-INFO: [Synth 8-256] done synthesizing module 'CRC16' (28#1) [c:/Github/Zybo_mipi/Pcam2019_send/Pcam2019_send/Pcam2019_send.srcs/sources_1/bd/system/ipshared/7681/hdl/CRC16_behavioral.vhd:63]
-INFO: [Synth 8-3491] module 'line_buffer' declared at 'c:/Github/Zybo_mipi/Pcam2019_send/Pcam2019_send/Pcam2019_send.srcs/sources_1/bd/system/ip/system_MIPI_CSI_2_RX_0_0/hdl/line_buffer/synth/line_buffer.v:58' bound to instance 'LineBufferFIFO' of component 'line_buffer' [c:/Github/Zybo_mipi/Pcam2019_send/Pcam2019_send/Pcam2019_send.srcs/sources_1/bd/system/ipshared/7681/hdl/LLP.vhd:577]
-INFO: [Synth 8-6157] synthesizing module 'line_buffer' [c:/Github/Zybo_mipi/Pcam2019_send/Pcam2019_send/Pcam2019_send.srcs/sources_1/bd/system/ip/system_MIPI_CSI_2_RX_0_0/hdl/line_buffer/synth/line_buffer.v:58]
-INFO: [Synth 8-6157] synthesizing module 'axis_data_fifo_v2_0_2_top' [c:/Github/Zybo_mipi/Pcam2019_send/Pcam2019_send/Pcam2019_send.srcs/sources_1/bd/system/ip/system_MIPI_CSI_2_RX_0_0/hdl/line_buffer/hdl/axis_data_fifo_v2_0_vl_rfs.v:54]
+WARNING: [Synth 8-6014] Unused sequential element crc_temp_reg was removed.  [c:/Github/Zybo_mipi/Pcam2019_sendExp/Pcam2019_sendExp.srcs/sources_1/bd/system/ipshared/7681/hdl/CRC16_behavioral.vhd:86]
+INFO: [Synth 8-256] done synthesizing module 'CRC16' (28#1) [c:/Github/Zybo_mipi/Pcam2019_sendExp/Pcam2019_sendExp.srcs/sources_1/bd/system/ipshared/7681/hdl/CRC16_behavioral.vhd:63]
+INFO: [Synth 8-3491] module 'line_buffer' declared at 'c:/Github/Zybo_mipi/Pcam2019_sendExp/Pcam2019_sendExp.srcs/sources_1/bd/system/ip/system_MIPI_CSI_2_RX_0_0/hdl/line_buffer/synth/line_buffer.v:58' bound to instance 'LineBufferFIFO' of component 'line_buffer' [c:/Github/Zybo_mipi/Pcam2019_sendExp/Pcam2019_sendExp.srcs/sources_1/bd/system/ipshared/7681/hdl/LLP.vhd:577]
+INFO: [Synth 8-6157] synthesizing module 'line_buffer' [c:/Github/Zybo_mipi/Pcam2019_sendExp/Pcam2019_sendExp.srcs/sources_1/bd/system/ip/system_MIPI_CSI_2_RX_0_0/hdl/line_buffer/synth/line_buffer.v:58]
+INFO: [Synth 8-6157] synthesizing module 'axis_data_fifo_v2_0_2_top' [c:/Github/Zybo_mipi/Pcam2019_sendExp/Pcam2019_sendExp.srcs/sources_1/bd/system/ip/system_MIPI_CSI_2_RX_0_0/hdl/line_buffer/hdl/axis_data_fifo_v2_0_vl_rfs.v:54]
 	Parameter C_FAMILY bound to: zynq - type: string 
 	Parameter C_AXIS_TDATA_WIDTH bound to: 40 - type: integer 
 	Parameter C_AXIS_TID_WIDTH bound to: 1 - type: integer 
@@ -387,7 +386,7 @@ INFO: [Synth 8-6157] synthesizing module 'axis_data_fifo_v2_0_2_top' [c:/Github/
 	Parameter LP_WR_DATA_COUNT_WIDTH bound to: 12 - type: integer 
 	Parameter LP_S_ACLKEN_CAN_TOGGLE bound to: 0 - type: integer 
 	Parameter LP_M_ACLKEN_CAN_TOGGLE bound to: 0 - type: integer 
-INFO: [Synth 8-6157] synthesizing module 'axis_infrastructure_v1_1_0_util_aclken_converter_wrapper' [c:/Github/Zybo_mipi/Pcam2019_send/Pcam2019_send/Pcam2019_send.srcs/sources_1/bd/system/ip/system_MIPI_CSI_2_RX_0_0/hdl/line_buffer/hdl/axis_infrastructure_v1_1_vl_rfs.v:600]
+INFO: [Synth 8-6157] synthesizing module 'axis_infrastructure_v1_1_0_util_aclken_converter_wrapper' [c:/Github/Zybo_mipi/Pcam2019_sendExp/Pcam2019_sendExp.srcs/sources_1/bd/system/ip/system_MIPI_CSI_2_RX_0_0/hdl/line_buffer/hdl/axis_infrastructure_v1_1_vl_rfs.v:600]
 	Parameter C_TDATA_WIDTH bound to: 40 - type: integer 
 	Parameter C_TID_WIDTH bound to: 1 - type: integer 
 	Parameter C_TDEST_WIDTH bound to: 1 - type: integer 
@@ -415,7 +414,7 @@ INFO: [Synth 8-6157] synthesizing module 'axis_infrastructure_v1_1_0_util_aclken
 	Parameter G_TASK_SEVERITY_WARNING bound to: 1 - type: integer 
 	Parameter G_TASK_SEVERITY_INFO bound to: 0 - type: integer 
 	Parameter P_TPAYLOAD_WIDTH bound to: 54 - type: integer 
-INFO: [Synth 8-6157] synthesizing module 'axis_infrastructure_v1_1_0_util_axis2vector' [c:/Github/Zybo_mipi/Pcam2019_send/Pcam2019_send/Pcam2019_send.srcs/sources_1/bd/system/ip/system_MIPI_CSI_2_RX_0_0/hdl/line_buffer/hdl/axis_infrastructure_v1_1_vl_rfs.v:810]
+INFO: [Synth 8-6157] synthesizing module 'axis_infrastructure_v1_1_0_util_axis2vector' [c:/Github/Zybo_mipi/Pcam2019_sendExp/Pcam2019_sendExp.srcs/sources_1/bd/system/ip/system_MIPI_CSI_2_RX_0_0/hdl/line_buffer/hdl/axis_infrastructure_v1_1_vl_rfs.v:810]
 	Parameter C_TDATA_WIDTH bound to: 40 - type: integer 
 	Parameter C_TID_WIDTH bound to: 1 - type: integer 
 	Parameter C_TDEST_WIDTH bound to: 1 - type: integer 
@@ -448,8 +447,8 @@ INFO: [Synth 8-6157] synthesizing module 'axis_infrastructure_v1_1_0_util_axis2v
 	Parameter P_TID_INDX bound to: 51 - type: integer 
 	Parameter P_TDEST_INDX bound to: 52 - type: integer 
 	Parameter P_TUSER_INDX bound to: 53 - type: integer 
-INFO: [Synth 8-6155] done synthesizing module 'axis_infrastructure_v1_1_0_util_axis2vector' (29#1) [c:/Github/Zybo_mipi/Pcam2019_send/Pcam2019_send/Pcam2019_send.srcs/sources_1/bd/system/ip/system_MIPI_CSI_2_RX_0_0/hdl/line_buffer/hdl/axis_infrastructure_v1_1_vl_rfs.v:810]
-INFO: [Synth 8-6157] synthesizing module 'axis_infrastructure_v1_1_0_util_vector2axis' [c:/Github/Zybo_mipi/Pcam2019_send/Pcam2019_send/Pcam2019_send.srcs/sources_1/bd/system/ip/system_MIPI_CSI_2_RX_0_0/hdl/line_buffer/hdl/axis_infrastructure_v1_1_vl_rfs.v:992]
+INFO: [Synth 8-6155] done synthesizing module 'axis_infrastructure_v1_1_0_util_axis2vector' (29#1) [c:/Github/Zybo_mipi/Pcam2019_sendExp/Pcam2019_sendExp.srcs/sources_1/bd/system/ip/system_MIPI_CSI_2_RX_0_0/hdl/line_buffer/hdl/axis_infrastructure_v1_1_vl_rfs.v:810]
+INFO: [Synth 8-6157] synthesizing module 'axis_infrastructure_v1_1_0_util_vector2axis' [c:/Github/Zybo_mipi/Pcam2019_sendExp/Pcam2019_sendExp.srcs/sources_1/bd/system/ip/system_MIPI_CSI_2_RX_0_0/hdl/line_buffer/hdl/axis_infrastructure_v1_1_vl_rfs.v:992]
 	Parameter C_TDATA_WIDTH bound to: 40 - type: integer 
 	Parameter C_TID_WIDTH bound to: 1 - type: integer 
 	Parameter C_TDEST_WIDTH bound to: 1 - type: integer 
@@ -482,8 +481,8 @@ INFO: [Synth 8-6157] synthesizing module 'axis_infrastructure_v1_1_0_util_vector
 	Parameter P_TID_INDX bound to: 51 - type: integer 
 	Parameter P_TDEST_INDX bound to: 52 - type: integer 
 	Parameter P_TUSER_INDX bound to: 53 - type: integer 
-INFO: [Synth 8-6155] done synthesizing module 'axis_infrastructure_v1_1_0_util_vector2axis' (30#1) [c:/Github/Zybo_mipi/Pcam2019_send/Pcam2019_send/Pcam2019_send.srcs/sources_1/bd/system/ip/system_MIPI_CSI_2_RX_0_0/hdl/line_buffer/hdl/axis_infrastructure_v1_1_vl_rfs.v:992]
-INFO: [Synth 8-6155] done synthesizing module 'axis_infrastructure_v1_1_0_util_aclken_converter_wrapper' (31#1) [c:/Github/Zybo_mipi/Pcam2019_send/Pcam2019_send/Pcam2019_send.srcs/sources_1/bd/system/ip/system_MIPI_CSI_2_RX_0_0/hdl/line_buffer/hdl/axis_infrastructure_v1_1_vl_rfs.v:600]
+INFO: [Synth 8-6155] done synthesizing module 'axis_infrastructure_v1_1_0_util_vector2axis' (30#1) [c:/Github/Zybo_mipi/Pcam2019_sendExp/Pcam2019_sendExp.srcs/sources_1/bd/system/ip/system_MIPI_CSI_2_RX_0_0/hdl/line_buffer/hdl/axis_infrastructure_v1_1_vl_rfs.v:992]
+INFO: [Synth 8-6155] done synthesizing module 'axis_infrastructure_v1_1_0_util_aclken_converter_wrapper' (31#1) [c:/Github/Zybo_mipi/Pcam2019_sendExp/Pcam2019_sendExp.srcs/sources_1/bd/system/ip/system_MIPI_CSI_2_RX_0_0/hdl/line_buffer/hdl/axis_infrastructure_v1_1_vl_rfs.v:600]
 INFO: [Synth 8-6157] synthesizing module 'xpm_fifo_axis' [C:/Xilinx/Vivado/2019.2/data/ip/xpm/xpm_fifo/hdl/xpm_fifo.sv:2225]
 	Parameter CLOCKING_MODE bound to: common_clock - type: string 
 	Parameter FIFO_MEMORY_TYPE bound to: auto - type: string 
@@ -702,39 +701,39 @@ INFO: [Synth 8-5772] Detected attribute (* ram_optimization = "yes" *) on RAM ge
 INFO: [Synth 8-6155] done synthesizing module 'xpm_fifo_axis' (38#1) [C:/Xilinx/Vivado/2019.2/data/ip/xpm/xpm_fifo/hdl/xpm_fifo.sv:2225]
 INFO: [Synth 8-5772] Detected attribute (* rw_addr_collision = "yes" *) on RAM gen_wr_a.gen_word_narrow.mem_reg 
 INFO: [Synth 8-5772] Detected attribute (* ram_optimization = "yes" *) on RAM gen_wr_a.gen_word_narrow.mem_reg 
-INFO: [Synth 8-6155] done synthesizing module 'axis_data_fifo_v2_0_2_top' (39#1) [c:/Github/Zybo_mipi/Pcam2019_send/Pcam2019_send/Pcam2019_send.srcs/sources_1/bd/system/ip/system_MIPI_CSI_2_RX_0_0/hdl/line_buffer/hdl/axis_data_fifo_v2_0_vl_rfs.v:54]
+INFO: [Synth 8-6155] done synthesizing module 'axis_data_fifo_v2_0_2_top' (39#1) [c:/Github/Zybo_mipi/Pcam2019_sendExp/Pcam2019_sendExp.srcs/sources_1/bd/system/ip/system_MIPI_CSI_2_RX_0_0/hdl/line_buffer/hdl/axis_data_fifo_v2_0_vl_rfs.v:54]
 INFO: [Synth 8-5772] Detected attribute (* rw_addr_collision = "yes" *) on RAM gen_wr_a.gen_word_narrow.mem_reg 
 INFO: [Synth 8-5772] Detected attribute (* ram_optimization = "yes" *) on RAM gen_wr_a.gen_word_narrow.mem_reg 
-INFO: [Synth 8-6155] done synthesizing module 'line_buffer' (40#1) [c:/Github/Zybo_mipi/Pcam2019_send/Pcam2019_send/Pcam2019_send.srcs/sources_1/bd/system/ip/system_MIPI_CSI_2_RX_0_0/hdl/line_buffer/synth/line_buffer.v:58]
-WARNING: [Synth 8-6014] Unused sequential element mDataType_reg was removed.  [c:/Github/Zybo_mipi/Pcam2019_send/Pcam2019_send/Pcam2019_send.srcs/sources_1/bd/system/ipshared/7681/hdl/LLP.vhd:323]
+INFO: [Synth 8-6155] done synthesizing module 'line_buffer' (40#1) [c:/Github/Zybo_mipi/Pcam2019_sendExp/Pcam2019_sendExp.srcs/sources_1/bd/system/ip/system_MIPI_CSI_2_RX_0_0/hdl/line_buffer/synth/line_buffer.v:58]
+WARNING: [Synth 8-6014] Unused sequential element mDataType_reg was removed.  [c:/Github/Zybo_mipi/Pcam2019_sendExp/Pcam2019_sendExp.srcs/sources_1/bd/system/ipshared/7681/hdl/LLP.vhd:323]
 INFO: [Synth 8-5772] Detected attribute (* rw_addr_collision = "yes" *) on RAM gen_wr_a.gen_word_narrow.mem_reg 
 INFO: [Synth 8-5772] Detected attribute (* ram_optimization = "yes" *) on RAM gen_wr_a.gen_word_narrow.mem_reg 
-WARNING: [Synth 8-3848] Net dbgLLP[rbOvf] in module/entity LLP does not have driver. [c:/Github/Zybo_mipi/Pcam2019_send/Pcam2019_send/Pcam2019_send.srcs/sources_1/bd/system/ipshared/7681/hdl/LLP.vhd:75]
-INFO: [Synth 8-256] done synthesizing module 'LLP' (41#1) [c:/Github/Zybo_mipi/Pcam2019_send/Pcam2019_send/Pcam2019_send.srcs/sources_1/bd/system/ipshared/7681/hdl/LLP.vhd:79]
+WARNING: [Synth 8-3848] Net dbgLLP[rbOvf] in module/entity LLP does not have driver. [c:/Github/Zybo_mipi/Pcam2019_sendExp/Pcam2019_sendExp.srcs/sources_1/bd/system/ipshared/7681/hdl/LLP.vhd:75]
+INFO: [Synth 8-256] done synthesizing module 'LLP' (41#1) [c:/Github/Zybo_mipi/Pcam2019_sendExp/Pcam2019_sendExp.srcs/sources_1/bd/system/ipshared/7681/hdl/LLP.vhd:79]
 INFO: [Synth 8-5772] Detected attribute (* rw_addr_collision = "yes" *) on RAM gen_wr_a.gen_word_narrow.mem_reg 
 INFO: [Synth 8-5772] Detected attribute (* ram_optimization = "yes" *) on RAM gen_wr_a.gen_word_narrow.mem_reg 
-WARNING: [Synth 8-3936] Found unconnected internal register 'aDEnableInt_reg' and it is trimmed from '4' to '2' bits. [c:/Github/Zybo_mipi/Pcam2019_send/Pcam2019_send/Pcam2019_send.srcs/sources_1/bd/system/ipshared/7681/hdl/MIPI_CSI2_Rx.vhd:209]
-INFO: [Synth 8-256] done synthesizing module 'MIPI_CSI2_Rx' (42#1) [c:/Github/Zybo_mipi/Pcam2019_send/Pcam2019_send/Pcam2019_send.srcs/sources_1/bd/system/ipshared/7681/hdl/MIPI_CSI2_Rx.vhd:77]
-INFO: [Synth 8-638] synthesizing module 'MIPI_CSI_2_RX_S_AXI_LITE' [c:/Github/Zybo_mipi/Pcam2019_send/Pcam2019_send/Pcam2019_send.srcs/sources_1/bd/system/ipshared/7681/hdl/MIPI_CSI_2_RX_v1_0_S_AXI_LITE.vhd:119]
+WARNING: [Synth 8-3936] Found unconnected internal register 'aDEnableInt_reg' and it is trimmed from '4' to '2' bits. [c:/Github/Zybo_mipi/Pcam2019_sendExp/Pcam2019_sendExp.srcs/sources_1/bd/system/ipshared/7681/hdl/MIPI_CSI2_Rx.vhd:209]
+INFO: [Synth 8-256] done synthesizing module 'MIPI_CSI2_Rx' (42#1) [c:/Github/Zybo_mipi/Pcam2019_sendExp/Pcam2019_sendExp.srcs/sources_1/bd/system/ipshared/7681/hdl/MIPI_CSI2_Rx.vhd:77]
+INFO: [Synth 8-638] synthesizing module 'MIPI_CSI_2_RX_S_AXI_LITE' [c:/Github/Zybo_mipi/Pcam2019_sendExp/Pcam2019_sendExp.srcs/sources_1/bd/system/ipshared/7681/hdl/MIPI_CSI_2_RX_v1_0_S_AXI_LITE.vhd:119]
 	Parameter kVersionMajor bound to: 1 - type: integer 
 	Parameter kVersionMinor bound to: 2 - type: integer 
 	Parameter C_S_AXI_DATA_WIDTH bound to: 32 - type: integer 
 	Parameter C_S_AXI_ADDR_WIDTH bound to: 4 - type: integer 
-WARNING: [Synth 8-6014] Unused sequential element loc_addr_reg was removed.  [c:/Github/Zybo_mipi/Pcam2019_send/Pcam2019_send/Pcam2019_send.srcs/sources_1/bd/system/ipshared/7681/hdl/MIPI_CSI_2_RX_v1_0_S_AXI_LITE.vhd:245]
-INFO: [Synth 8-256] done synthesizing module 'MIPI_CSI_2_RX_S_AXI_LITE' (43#1) [c:/Github/Zybo_mipi/Pcam2019_send/Pcam2019_send/Pcam2019_send.srcs/sources_1/bd/system/ipshared/7681/hdl/MIPI_CSI_2_RX_v1_0_S_AXI_LITE.vhd:119]
-INFO: [Synth 8-638] synthesizing module 'SyncAsync__parameterized1' [c:/Github/Zybo_mipi/Pcam2019_send/Pcam2019_send/Pcam2019_send.srcs/sources_1/bd/system/ipshared/7681/hdl/SyncAsync.vhd:66]
+WARNING: [Synth 8-6014] Unused sequential element loc_addr_reg was removed.  [c:/Github/Zybo_mipi/Pcam2019_sendExp/Pcam2019_sendExp.srcs/sources_1/bd/system/ipshared/7681/hdl/MIPI_CSI_2_RX_v1_0_S_AXI_LITE.vhd:245]
+INFO: [Synth 8-256] done synthesizing module 'MIPI_CSI_2_RX_S_AXI_LITE' (43#1) [c:/Github/Zybo_mipi/Pcam2019_sendExp/Pcam2019_sendExp.srcs/sources_1/bd/system/ipshared/7681/hdl/MIPI_CSI_2_RX_v1_0_S_AXI_LITE.vhd:119]
+INFO: [Synth 8-638] synthesizing module 'SyncAsync__parameterized1' [c:/Github/Zybo_mipi/Pcam2019_sendExp/Pcam2019_sendExp.srcs/sources_1/bd/system/ipshared/7681/hdl/SyncAsync.vhd:66]
 	Parameter kResetTo bound to: 1'b0 
 	Parameter kStages bound to: 2 - type: integer 
 	Parameter kResetPolarity bound to: 1'b1 
-INFO: [Synth 8-256] done synthesizing module 'SyncAsync__parameterized1' (43#1) [c:/Github/Zybo_mipi/Pcam2019_send/Pcam2019_send/Pcam2019_send.srcs/sources_1/bd/system/ipshared/7681/hdl/SyncAsync.vhd:66]
+INFO: [Synth 8-256] done synthesizing module 'SyncAsync__parameterized1' (43#1) [c:/Github/Zybo_mipi/Pcam2019_sendExp/Pcam2019_sendExp.srcs/sources_1/bd/system/ipshared/7681/hdl/SyncAsync.vhd:66]
 INFO: [Synth 8-5772] Detected attribute (* rw_addr_collision = "yes" *) on RAM gen_wr_a.gen_word_narrow.mem_reg 
 INFO: [Synth 8-5772] Detected attribute (* ram_optimization = "yes" *) on RAM gen_wr_a.gen_word_narrow.mem_reg 
-WARNING: [Synth 8-3848] Net aD2Enable in module/entity mipi_csi2_rx_top does not have driver. [c:/Github/Zybo_mipi/Pcam2019_send/Pcam2019_send/Pcam2019_send.srcs/sources_1/bd/system/ipshared/7681/hdl/MIPI_CSI2_RxTop.vhd:86]
-WARNING: [Synth 8-3848] Net aD3Enable in module/entity mipi_csi2_rx_top does not have driver. [c:/Github/Zybo_mipi/Pcam2019_send/Pcam2019_send/Pcam2019_send.srcs/sources_1/bd/system/ipshared/7681/hdl/MIPI_CSI2_RxTop.vhd:92]
-INFO: [Synth 8-256] done synthesizing module 'mipi_csi2_rx_top' (44#1) [c:/Github/Zybo_mipi/Pcam2019_send/Pcam2019_send/Pcam2019_send.srcs/sources_1/bd/system/ipshared/7681/hdl/MIPI_CSI2_RxTop.vhd:131]
+WARNING: [Synth 8-3848] Net aD2Enable in module/entity mipi_csi2_rx_top does not have driver. [c:/Github/Zybo_mipi/Pcam2019_sendExp/Pcam2019_sendExp.srcs/sources_1/bd/system/ipshared/7681/hdl/MIPI_CSI2_RxTop.vhd:86]
+WARNING: [Synth 8-3848] Net aD3Enable in module/entity mipi_csi2_rx_top does not have driver. [c:/Github/Zybo_mipi/Pcam2019_sendExp/Pcam2019_sendExp.srcs/sources_1/bd/system/ipshared/7681/hdl/MIPI_CSI2_RxTop.vhd:92]
+INFO: [Synth 8-256] done synthesizing module 'mipi_csi2_rx_top' (44#1) [c:/Github/Zybo_mipi/Pcam2019_sendExp/Pcam2019_sendExp.srcs/sources_1/bd/system/ipshared/7681/hdl/MIPI_CSI2_RxTop.vhd:131]
 INFO: [Synth 8-5772] Detected attribute (* rw_addr_collision = "yes" *) on RAM gen_wr_a.gen_word_narrow.mem_reg 
 INFO: [Synth 8-5772] Detected attribute (* ram_optimization = "yes" *) on RAM gen_wr_a.gen_word_narrow.mem_reg 
-INFO: [Synth 8-256] done synthesizing module 'system_MIPI_CSI_2_RX_0_0' (45#1) [c:/Github/Zybo_mipi/Pcam2019_send/Pcam2019_send/Pcam2019_send.srcs/sources_1/bd/system/ip/system_MIPI_CSI_2_RX_0_0/synth/system_MIPI_CSI_2_RX_0_0.vhd:112]
+INFO: [Synth 8-256] done synthesizing module 'system_MIPI_CSI_2_RX_0_0' (45#1) [c:/Github/Zybo_mipi/Pcam2019_sendExp/Pcam2019_sendExp.srcs/sources_1/bd/system/ip/system_MIPI_CSI_2_RX_0_0/synth/system_MIPI_CSI_2_RX_0_0.vhd:112]
 WARNING: [Synth 8-3331] design MIPI_CSI_2_RX_S_AXI_LITE has unconnected port S_AXI_AWPROT[2]
 WARNING: [Synth 8-3331] design MIPI_CSI_2_RX_S_AXI_LITE has unconnected port S_AXI_AWPROT[1]
 WARNING: [Synth 8-3331] design MIPI_CSI_2_RX_S_AXI_LITE has unconnected port S_AXI_AWPROT[0]
@@ -837,7 +836,7 @@ WARNING: [Synth 8-3331] design fifo_generator_v13_2_5_output_blk has unconnected
 WARNING: [Synth 8-3331] design fifo_generator_v13_2_5_output_blk has unconnected port RD_DATA_COUNT_I[3]
 INFO: [Common 17-14] Message 'Synth 8-3331' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
 ---------------------------------------------------------------------------------
-Finished RTL Elaboration : Time (s): cpu = 00:00:41 ; elapsed = 00:00:54 . Memory (MB): peak = 1367.359 ; gain = 555.305
+Finished RTL Elaboration : Time (s): cpu = 00:00:35 ; elapsed = 00:00:40 . Memory (MB): peak = 1368.078 ; gain = 556.016
 ---------------------------------------------------------------------------------
 
 Report Check Netlist: 
@@ -850,51 +849,51 @@ Report Check Netlist:
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:00:42 ; elapsed = 00:00:55 . Memory (MB): peak = 1367.359 ; gain = 555.305
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:36 ; elapsed = 00:00:41 . Memory (MB): peak = 1368.078 ; gain = 556.016
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:42 ; elapsed = 00:00:55 . Memory (MB): peak = 1367.359 ; gain = 555.305
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:36 ; elapsed = 00:00:41 . Memory (MB): peak = 1368.078 ; gain = 556.016
 ---------------------------------------------------------------------------------
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.176 . Memory (MB): peak = 1367.359 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.136 . Memory (MB): peak = 1368.078 ; gain = 0.000
 INFO: [Project 1-570] Preparing netlist for logic optimization
 
 Processing XDC Constraints
 Initializing timing engine
-Parsing XDC File [c:/Github/Zybo_mipi/Pcam2019_send/Pcam2019_send/Pcam2019_send.srcs/sources_1/bd/system/ip/system_MIPI_CSI_2_RX_0_0/hdl/mipi_csi2_rx_ooc.xdc] for cell 'U0'
-Finished Parsing XDC File [c:/Github/Zybo_mipi/Pcam2019_send/Pcam2019_send/Pcam2019_send.srcs/sources_1/bd/system/ip/system_MIPI_CSI_2_RX_0_0/hdl/mipi_csi2_rx_ooc.xdc] for cell 'U0'
-CRITICAL WARNING: [Designutils 20-1280] Could not find module 'ila_vidclk'. The XDC file c:/Github/Zybo_mipi/Pcam2019_send/Pcam2019_send/Pcam2019_send.srcs/sources_1/bd/system/ip/system_MIPI_CSI_2_RX_0_0/hdl/ila_vidclk/ila_v6_2/constraints/ila.xdc will not be read for any cell of this module.
-CRITICAL WARNING: [Designutils 20-1280] Could not find module 'ila_rxclk_lane'. The XDC file c:/Github/Zybo_mipi/Pcam2019_send/Pcam2019_send/Pcam2019_send.srcs/sources_1/bd/system/ip/system_MIPI_CSI_2_RX_0_0/hdl/ila_rxclk_lane/ila_v6_2/constraints/ila.xdc will not be read for any cell of this module.
-CRITICAL WARNING: [Designutils 20-1280] Could not find module 'ila_rxclk'. The XDC file c:/Github/Zybo_mipi/Pcam2019_send/Pcam2019_send/Pcam2019_send.srcs/sources_1/bd/system/ip/system_MIPI_CSI_2_RX_0_0/hdl/ila_rxclk/ila_v6_2/constraints/ila.xdc will not be read for any cell of this module.
-Parsing XDC File [c:/Github/Zybo_mipi/Pcam2019_send/Pcam2019_send/Pcam2019_send.srcs/sources_1/bd/system/ip/system_MIPI_CSI_2_RX_0_0/hdl/cdc_fifo/cdc_fifo.xdc] for cell 'U0/MIPI_CSI2_Rx_inst/LLP_inst/DataFIFO/U0'
-Finished Parsing XDC File [c:/Github/Zybo_mipi/Pcam2019_send/Pcam2019_send/Pcam2019_send.srcs/sources_1/bd/system/ip/system_MIPI_CSI_2_RX_0_0/hdl/cdc_fifo/cdc_fifo.xdc] for cell 'U0/MIPI_CSI2_Rx_inst/LLP_inst/DataFIFO/U0'
-Parsing XDC File [c:/Github/Zybo_mipi/Pcam2019_send/Pcam2019_send/Pcam2019_send.srcs/sources_1/bd/system/ip/system_MIPI_CSI_2_RX_0_0/hdl/mipi_csi2_rx.xdc] for cell 'U0'
-WARNING: [Vivado 12-508] No pins matched 'get_pins -hierarchical -filter {NAME =~ *allx_typeA_match_detection.ltlib_v1_0_0_allx_typeA_inst/DUT/I_WHOLE_SLICE.G_SLICE_IDX[*].U_ALL_SRL_SLICE/u_srl*/S*/CLK}'. [c:/Github/Zybo_mipi/Pcam2019_send/Pcam2019_send/Pcam2019_send.srcs/sources_1/bd/system/ip/system_MIPI_CSI_2_RX_0_0/hdl/mipi_csi2_rx.xdc:45]
-WARNING: [Vivado 12-508] No pins matched 'get_pins -hierarchical -filter {NAME =~ *allx_typeA_match_detection.ltlib_v1_0_0_allx_typeA_inst/DUT/I_WHOLE_SLICE.G_SLICE_IDX[*].U_ALL_SRL_SLICE/I_IS_TERMINATION_SLICE_W_OUTPUT_REG.DOUT_O_reg/D}'. [c:/Github/Zybo_mipi/Pcam2019_send/Pcam2019_send/Pcam2019_send.srcs/sources_1/bd/system/ip/system_MIPI_CSI_2_RX_0_0/hdl/mipi_csi2_rx.xdc:45]
-CRITICAL WARNING: [Vivado 12-4739] set_false_path:No valid object(s) found for '-from [get_pins -hierarchical -filter {NAME =~ *allx_typeA_match_detection.ltlib_v1_0_0_allx_typeA_inst/DUT/I_WHOLE_SLICE.G_SLICE_IDX[*].U_ALL_SRL_SLICE/u_srl*/S*/CLK}]'. [c:/Github/Zybo_mipi/Pcam2019_send/Pcam2019_send/Pcam2019_send.srcs/sources_1/bd/system/ip/system_MIPI_CSI_2_RX_0_0/hdl/mipi_csi2_rx.xdc:45]
+Parsing XDC File [c:/Github/Zybo_mipi/Pcam2019_sendExp/Pcam2019_sendExp.srcs/sources_1/bd/system/ip/system_MIPI_CSI_2_RX_0_0/hdl/mipi_csi2_rx_ooc.xdc] for cell 'U0'
+Finished Parsing XDC File [c:/Github/Zybo_mipi/Pcam2019_sendExp/Pcam2019_sendExp.srcs/sources_1/bd/system/ip/system_MIPI_CSI_2_RX_0_0/hdl/mipi_csi2_rx_ooc.xdc] for cell 'U0'
+CRITICAL WARNING: [Designutils 20-1280] Could not find module 'ila_vidclk'. The XDC file c:/Github/Zybo_mipi/Pcam2019_sendExp/Pcam2019_sendExp.srcs/sources_1/bd/system/ip/system_MIPI_CSI_2_RX_0_0/hdl/ila_vidclk/ila_v6_2/constraints/ila.xdc will not be read for any cell of this module.
+CRITICAL WARNING: [Designutils 20-1280] Could not find module 'ila_rxclk_lane'. The XDC file c:/Github/Zybo_mipi/Pcam2019_sendExp/Pcam2019_sendExp.srcs/sources_1/bd/system/ip/system_MIPI_CSI_2_RX_0_0/hdl/ila_rxclk_lane/ila_v6_2/constraints/ila.xdc will not be read for any cell of this module.
+CRITICAL WARNING: [Designutils 20-1280] Could not find module 'ila_rxclk'. The XDC file c:/Github/Zybo_mipi/Pcam2019_sendExp/Pcam2019_sendExp.srcs/sources_1/bd/system/ip/system_MIPI_CSI_2_RX_0_0/hdl/ila_rxclk/ila_v6_2/constraints/ila.xdc will not be read for any cell of this module.
+Parsing XDC File [c:/Github/Zybo_mipi/Pcam2019_sendExp/Pcam2019_sendExp.srcs/sources_1/bd/system/ip/system_MIPI_CSI_2_RX_0_0/hdl/cdc_fifo/cdc_fifo.xdc] for cell 'U0/MIPI_CSI2_Rx_inst/LLP_inst/DataFIFO/U0'
+Finished Parsing XDC File [c:/Github/Zybo_mipi/Pcam2019_sendExp/Pcam2019_sendExp.srcs/sources_1/bd/system/ip/system_MIPI_CSI_2_RX_0_0/hdl/cdc_fifo/cdc_fifo.xdc] for cell 'U0/MIPI_CSI2_Rx_inst/LLP_inst/DataFIFO/U0'
+Parsing XDC File [c:/Github/Zybo_mipi/Pcam2019_sendExp/Pcam2019_sendExp.srcs/sources_1/bd/system/ip/system_MIPI_CSI_2_RX_0_0/hdl/mipi_csi2_rx.xdc] for cell 'U0'
+WARNING: [Vivado 12-508] No pins matched 'get_pins -hierarchical -filter {NAME =~ *allx_typeA_match_detection.ltlib_v1_0_0_allx_typeA_inst/DUT/I_WHOLE_SLICE.G_SLICE_IDX[*].U_ALL_SRL_SLICE/u_srl*/S*/CLK}'. [c:/Github/Zybo_mipi/Pcam2019_sendExp/Pcam2019_sendExp.srcs/sources_1/bd/system/ip/system_MIPI_CSI_2_RX_0_0/hdl/mipi_csi2_rx.xdc:45]
+WARNING: [Vivado 12-508] No pins matched 'get_pins -hierarchical -filter {NAME =~ *allx_typeA_match_detection.ltlib_v1_0_0_allx_typeA_inst/DUT/I_WHOLE_SLICE.G_SLICE_IDX[*].U_ALL_SRL_SLICE/I_IS_TERMINATION_SLICE_W_OUTPUT_REG.DOUT_O_reg/D}'. [c:/Github/Zybo_mipi/Pcam2019_sendExp/Pcam2019_sendExp.srcs/sources_1/bd/system/ip/system_MIPI_CSI_2_RX_0_0/hdl/mipi_csi2_rx.xdc:45]
+CRITICAL WARNING: [Vivado 12-4739] set_false_path:No valid object(s) found for '-from [get_pins -hierarchical -filter {NAME =~ *allx_typeA_match_detection.ltlib_v1_0_0_allx_typeA_inst/DUT/I_WHOLE_SLICE.G_SLICE_IDX[*].U_ALL_SRL_SLICE/u_srl*/S*/CLK}]'. [c:/Github/Zybo_mipi/Pcam2019_sendExp/Pcam2019_sendExp.srcs/sources_1/bd/system/ip/system_MIPI_CSI_2_RX_0_0/hdl/mipi_csi2_rx.xdc:45]
 Resolution: Check if the specified object(s) exists in the current design. If it does, ensure that the correct design hierarchy was specified for the object. If you are working with clocks, make sure create_clock was used to create the clock object before it is referenced.
-WARNING: [Vivado 12-508] No pins matched 'get_pins -hierarchical -filter { NAME =~  "*ila_core_inst/u_ila_cap_ctrl/u_cap_addrgen/u_cap_sample_counter/u_scnt_cmp/allx_typeA_match_detection.ltlib_v1_0_0_allx_typeA_inst/DUT/I_WHOLE_SLICE.G_SLICE_IDX[*].U_ALL_SRL_SLICE/u_srl*/S*/CLK*"}'. [c:/Github/Zybo_mipi/Pcam2019_send/Pcam2019_send/Pcam2019_send.srcs/sources_1/bd/system/ip/system_MIPI_CSI_2_RX_0_0/hdl/mipi_csi2_rx.xdc:50]
-WARNING: [Vivado 12-180] No cells matched 'get_cells -hierarchical -filter { NAME =~  "*ila_core_inst/u_ila_cap_ctrl/u_cap_addrgen/u_cap_sample_counter/u_scnt_cmp_q*" && IS_SEQUENTIAL }'. [c:/Github/Zybo_mipi/Pcam2019_send/Pcam2019_send/Pcam2019_send.srcs/sources_1/bd/system/ip/system_MIPI_CSI_2_RX_0_0/hdl/mipi_csi2_rx.xdc:50]
-CRITICAL WARNING: [Vivado 12-4739] set_false_path:No valid object(s) found for '-from [get_pins -hierarchical -filter { NAME =~  "*ila_core_inst/u_ila_cap_ctrl/u_cap_addrgen/u_cap_sample_counter/u_scnt_cmp/allx_typeA_match_detection.ltlib_v1_0_0_allx_typeA_inst/DUT/I_WHOLE_SLICE.G_SLICE_IDX[*].U_ALL_SRL_SLICE/u_srl*/S*/CLK*"}]'. [c:/Github/Zybo_mipi/Pcam2019_send/Pcam2019_send/Pcam2019_send.srcs/sources_1/bd/system/ip/system_MIPI_CSI_2_RX_0_0/hdl/mipi_csi2_rx.xdc:50]
+WARNING: [Vivado 12-508] No pins matched 'get_pins -hierarchical -filter { NAME =~  "*ila_core_inst/u_ila_cap_ctrl/u_cap_addrgen/u_cap_sample_counter/u_scnt_cmp/allx_typeA_match_detection.ltlib_v1_0_0_allx_typeA_inst/DUT/I_WHOLE_SLICE.G_SLICE_IDX[*].U_ALL_SRL_SLICE/u_srl*/S*/CLK*"}'. [c:/Github/Zybo_mipi/Pcam2019_sendExp/Pcam2019_sendExp.srcs/sources_1/bd/system/ip/system_MIPI_CSI_2_RX_0_0/hdl/mipi_csi2_rx.xdc:50]
+WARNING: [Vivado 12-180] No cells matched 'get_cells -hierarchical -filter { NAME =~  "*ila_core_inst/u_ila_cap_ctrl/u_cap_addrgen/u_cap_sample_counter/u_scnt_cmp_q*" && IS_SEQUENTIAL }'. [c:/Github/Zybo_mipi/Pcam2019_sendExp/Pcam2019_sendExp.srcs/sources_1/bd/system/ip/system_MIPI_CSI_2_RX_0_0/hdl/mipi_csi2_rx.xdc:50]
+CRITICAL WARNING: [Vivado 12-4739] set_false_path:No valid object(s) found for '-from [get_pins -hierarchical -filter { NAME =~  "*ila_core_inst/u_ila_cap_ctrl/u_cap_addrgen/u_cap_sample_counter/u_scnt_cmp/allx_typeA_match_detection.ltlib_v1_0_0_allx_typeA_inst/DUT/I_WHOLE_SLICE.G_SLICE_IDX[*].U_ALL_SRL_SLICE/u_srl*/S*/CLK*"}]'. [c:/Github/Zybo_mipi/Pcam2019_sendExp/Pcam2019_sendExp.srcs/sources_1/bd/system/ip/system_MIPI_CSI_2_RX_0_0/hdl/mipi_csi2_rx.xdc:50]
 Resolution: Check if the specified object(s) exists in the current design. If it does, ensure that the correct design hierarchy was specified for the object. If you are working with clocks, make sure create_clock was used to create the clock object before it is referenced.
-WARNING: [Vivado 12-508] No pins matched 'get_pins -hierarchical -filter { NAME =~  "*ila_core_inst/u_ila_cap_ctrl/u_cap_addrgen/u_cap_window_counter/u_wcnt_lcmp/allx_typeA_match_detection.ltlib_v1_0_0_allx_typeA_inst/DUT/I_WHOLE_SLICE.G_SLICE_IDX[*].U_ALL_SRL_SLICE/u_srl*/S*/CLK*"}'. [c:/Github/Zybo_mipi/Pcam2019_send/Pcam2019_send/Pcam2019_send.srcs/sources_1/bd/system/ip/system_MIPI_CSI_2_RX_0_0/hdl/mipi_csi2_rx.xdc:55]
-WARNING: [Vivado 12-180] No cells matched 'get_cells -hierarchical -filter { NAME =~  "*ila_core_inst/u_ila_cap_ctrl/u_cap_addrgen/u_cap_window_counter/u_wcnt_lcmp_q*" && IS_SEQUENTIAL }'. [c:/Github/Zybo_mipi/Pcam2019_send/Pcam2019_send/Pcam2019_send.srcs/sources_1/bd/system/ip/system_MIPI_CSI_2_RX_0_0/hdl/mipi_csi2_rx.xdc:55]
-CRITICAL WARNING: [Vivado 12-4739] set_false_path:No valid object(s) found for '-from [get_pins -hierarchical -filter { NAME =~  "*ila_core_inst/u_ila_cap_ctrl/u_cap_addrgen/u_cap_window_counter/u_wcnt_lcmp/allx_typeA_match_detection.ltlib_v1_0_0_allx_typeA_inst/DUT/I_WHOLE_SLICE.G_SLICE_IDX[*].U_ALL_SRL_SLICE/u_srl*/S*/CLK*"}]'. [c:/Github/Zybo_mipi/Pcam2019_send/Pcam2019_send/Pcam2019_send.srcs/sources_1/bd/system/ip/system_MIPI_CSI_2_RX_0_0/hdl/mipi_csi2_rx.xdc:55]
+WARNING: [Vivado 12-508] No pins matched 'get_pins -hierarchical -filter { NAME =~  "*ila_core_inst/u_ila_cap_ctrl/u_cap_addrgen/u_cap_window_counter/u_wcnt_lcmp/allx_typeA_match_detection.ltlib_v1_0_0_allx_typeA_inst/DUT/I_WHOLE_SLICE.G_SLICE_IDX[*].U_ALL_SRL_SLICE/u_srl*/S*/CLK*"}'. [c:/Github/Zybo_mipi/Pcam2019_sendExp/Pcam2019_sendExp.srcs/sources_1/bd/system/ip/system_MIPI_CSI_2_RX_0_0/hdl/mipi_csi2_rx.xdc:55]
+WARNING: [Vivado 12-180] No cells matched 'get_cells -hierarchical -filter { NAME =~  "*ila_core_inst/u_ila_cap_ctrl/u_cap_addrgen/u_cap_window_counter/u_wcnt_lcmp_q*" && IS_SEQUENTIAL }'. [c:/Github/Zybo_mipi/Pcam2019_sendExp/Pcam2019_sendExp.srcs/sources_1/bd/system/ip/system_MIPI_CSI_2_RX_0_0/hdl/mipi_csi2_rx.xdc:55]
+CRITICAL WARNING: [Vivado 12-4739] set_false_path:No valid object(s) found for '-from [get_pins -hierarchical -filter { NAME =~  "*ila_core_inst/u_ila_cap_ctrl/u_cap_addrgen/u_cap_window_counter/u_wcnt_lcmp/allx_typeA_match_detection.ltlib_v1_0_0_allx_typeA_inst/DUT/I_WHOLE_SLICE.G_SLICE_IDX[*].U_ALL_SRL_SLICE/u_srl*/S*/CLK*"}]'. [c:/Github/Zybo_mipi/Pcam2019_sendExp/Pcam2019_sendExp.srcs/sources_1/bd/system/ip/system_MIPI_CSI_2_RX_0_0/hdl/mipi_csi2_rx.xdc:55]
 Resolution: Check if the specified object(s) exists in the current design. If it does, ensure that the correct design hierarchy was specified for the object. If you are working with clocks, make sure create_clock was used to create the clock object before it is referenced.
-WARNING: [Vivado 12-508] No pins matched 'get_pins -hierarchical -filter { NAME =~  "*ila_core_inst/u_ila_cap_ctrl/u_cap_addrgen/u_cap_window_counter/u_wcnt_hcmp/allx_typeA_match_detection.ltlib_v1_0_0_allx_typeA_inst/DUT/I_WHOLE_SLICE.G_SLICE_IDX[*].U_ALL_SRL_SLICE/u_srl*/S*/CLK*"}'. [c:/Github/Zybo_mipi/Pcam2019_send/Pcam2019_send/Pcam2019_send.srcs/sources_1/bd/system/ip/system_MIPI_CSI_2_RX_0_0/hdl/mipi_csi2_rx.xdc:56]
-WARNING: [Vivado 12-180] No cells matched 'get_cells -hierarchical -filter { NAME =~  "*ila_core_inst/u_ila_cap_ctrl/u_cap_addrgen/u_cap_window_counter/u_wcnt_hcmp_q*" && IS_SEQUENTIAL }'. [c:/Github/Zybo_mipi/Pcam2019_send/Pcam2019_send/Pcam2019_send.srcs/sources_1/bd/system/ip/system_MIPI_CSI_2_RX_0_0/hdl/mipi_csi2_rx.xdc:56]
-CRITICAL WARNING: [Vivado 12-4739] set_false_path:No valid object(s) found for '-from [get_pins -hierarchical -filter { NAME =~  "*ila_core_inst/u_ila_cap_ctrl/u_cap_addrgen/u_cap_window_counter/u_wcnt_hcmp/allx_typeA_match_detection.ltlib_v1_0_0_allx_typeA_inst/DUT/I_WHOLE_SLICE.G_SLICE_IDX[*].U_ALL_SRL_SLICE/u_srl*/S*/CLK*"}]'. [c:/Github/Zybo_mipi/Pcam2019_send/Pcam2019_send/Pcam2019_send.srcs/sources_1/bd/system/ip/system_MIPI_CSI_2_RX_0_0/hdl/mipi_csi2_rx.xdc:56]
+WARNING: [Vivado 12-508] No pins matched 'get_pins -hierarchical -filter { NAME =~  "*ila_core_inst/u_ila_cap_ctrl/u_cap_addrgen/u_cap_window_counter/u_wcnt_hcmp/allx_typeA_match_detection.ltlib_v1_0_0_allx_typeA_inst/DUT/I_WHOLE_SLICE.G_SLICE_IDX[*].U_ALL_SRL_SLICE/u_srl*/S*/CLK*"}'. [c:/Github/Zybo_mipi/Pcam2019_sendExp/Pcam2019_sendExp.srcs/sources_1/bd/system/ip/system_MIPI_CSI_2_RX_0_0/hdl/mipi_csi2_rx.xdc:56]
+WARNING: [Vivado 12-180] No cells matched 'get_cells -hierarchical -filter { NAME =~  "*ila_core_inst/u_ila_cap_ctrl/u_cap_addrgen/u_cap_window_counter/u_wcnt_hcmp_q*" && IS_SEQUENTIAL }'. [c:/Github/Zybo_mipi/Pcam2019_sendExp/Pcam2019_sendExp.srcs/sources_1/bd/system/ip/system_MIPI_CSI_2_RX_0_0/hdl/mipi_csi2_rx.xdc:56]
+CRITICAL WARNING: [Vivado 12-4739] set_false_path:No valid object(s) found for '-from [get_pins -hierarchical -filter { NAME =~  "*ila_core_inst/u_ila_cap_ctrl/u_cap_addrgen/u_cap_window_counter/u_wcnt_hcmp/allx_typeA_match_detection.ltlib_v1_0_0_allx_typeA_inst/DUT/I_WHOLE_SLICE.G_SLICE_IDX[*].U_ALL_SRL_SLICE/u_srl*/S*/CLK*"}]'. [c:/Github/Zybo_mipi/Pcam2019_sendExp/Pcam2019_sendExp.srcs/sources_1/bd/system/ip/system_MIPI_CSI_2_RX_0_0/hdl/mipi_csi2_rx.xdc:56]
 Resolution: Check if the specified object(s) exists in the current design. If it does, ensure that the correct design hierarchy was specified for the object. If you are working with clocks, make sure create_clock was used to create the clock object before it is referenced.
-Finished Parsing XDC File [c:/Github/Zybo_mipi/Pcam2019_send/Pcam2019_send/Pcam2019_send.srcs/sources_1/bd/system/ip/system_MIPI_CSI_2_RX_0_0/hdl/mipi_csi2_rx.xdc] for cell 'U0'
-Parsing XDC File [C:/Github/Zybo_mipi/Pcam2019_send/Pcam2019_send/Pcam2019_send.runs/system_MIPI_CSI_2_RX_0_0_synth_1/dont_touch.xdc]
-Finished Parsing XDC File [C:/Github/Zybo_mipi/Pcam2019_send/Pcam2019_send/Pcam2019_send.runs/system_MIPI_CSI_2_RX_0_0_synth_1/dont_touch.xdc]
-INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [C:/Github/Zybo_mipi/Pcam2019_send/Pcam2019_send/Pcam2019_send.runs/system_MIPI_CSI_2_RX_0_0_synth_1/dont_touch.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/system_MIPI_CSI_2_RX_0_0_propImpl.xdc].
+Finished Parsing XDC File [c:/Github/Zybo_mipi/Pcam2019_sendExp/Pcam2019_sendExp.srcs/sources_1/bd/system/ip/system_MIPI_CSI_2_RX_0_0/hdl/mipi_csi2_rx.xdc] for cell 'U0'
+Parsing XDC File [C:/Github/Zybo_mipi/Pcam2019_sendExp/Pcam2019_sendExp.runs/system_MIPI_CSI_2_RX_0_0_synth_1/dont_touch.xdc]
+Finished Parsing XDC File [C:/Github/Zybo_mipi/Pcam2019_sendExp/Pcam2019_sendExp.runs/system_MIPI_CSI_2_RX_0_0_synth_1/dont_touch.xdc]
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [C:/Github/Zybo_mipi/Pcam2019_sendExp/Pcam2019_sendExp.runs/system_MIPI_CSI_2_RX_0_0_synth_1/dont_touch.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/system_MIPI_CSI_2_RX_0_0_propImpl.xdc].
 Resolution: To avoid this warning, move constraints listed in [.Xil/system_MIPI_CSI_2_RX_0_0_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
-Parsing XDC File [c:/Github/Zybo_mipi/Pcam2019_send/Pcam2019_send/Pcam2019_send.srcs/sources_1/bd/system/ip/system_MIPI_CSI_2_RX_0_0/hdl/cdc_fifo/cdc_fifo_clocks.xdc] for cell 'U0/MIPI_CSI2_Rx_inst/LLP_inst/DataFIFO/U0'
-Finished Parsing XDC File [c:/Github/Zybo_mipi/Pcam2019_send/Pcam2019_send/Pcam2019_send.srcs/sources_1/bd/system/ip/system_MIPI_CSI_2_RX_0_0/hdl/cdc_fifo/cdc_fifo_clocks.xdc] for cell 'U0/MIPI_CSI2_Rx_inst/LLP_inst/DataFIFO/U0'
-INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [c:/Github/Zybo_mipi/Pcam2019_send/Pcam2019_send/Pcam2019_send.srcs/sources_1/bd/system/ip/system_MIPI_CSI_2_RX_0_0/hdl/cdc_fifo/cdc_fifo_clocks.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/system_MIPI_CSI_2_RX_0_0_propImpl.xdc].
+Parsing XDC File [c:/Github/Zybo_mipi/Pcam2019_sendExp/Pcam2019_sendExp.srcs/sources_1/bd/system/ip/system_MIPI_CSI_2_RX_0_0/hdl/cdc_fifo/cdc_fifo_clocks.xdc] for cell 'U0/MIPI_CSI2_Rx_inst/LLP_inst/DataFIFO/U0'
+Finished Parsing XDC File [c:/Github/Zybo_mipi/Pcam2019_sendExp/Pcam2019_sendExp.srcs/sources_1/bd/system/ip/system_MIPI_CSI_2_RX_0_0/hdl/cdc_fifo/cdc_fifo_clocks.xdc] for cell 'U0/MIPI_CSI2_Rx_inst/LLP_inst/DataFIFO/U0'
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [c:/Github/Zybo_mipi/Pcam2019_sendExp/Pcam2019_sendExp.srcs/sources_1/bd/system/ip/system_MIPI_CSI_2_RX_0_0/hdl/cdc_fifo/cdc_fifo_clocks.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/system_MIPI_CSI_2_RX_0_0_propImpl.xdc].
 Resolution: To avoid this warning, move constraints listed in [.Xil/system_MIPI_CSI_2_RX_0_0_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
-Parsing XDC File [c:/Github/Zybo_mipi/Pcam2019_send/Pcam2019_send/Pcam2019_send.srcs/sources_1/bd/system/ip/system_MIPI_CSI_2_RX_0_0/hdl/mipi_csi2_rx_clocks.xdc] for cell 'U0'
-Finished Parsing XDC File [c:/Github/Zybo_mipi/Pcam2019_send/Pcam2019_send/Pcam2019_send.srcs/sources_1/bd/system/ip/system_MIPI_CSI_2_RX_0_0/hdl/mipi_csi2_rx_clocks.xdc] for cell 'U0'
+Parsing XDC File [c:/Github/Zybo_mipi/Pcam2019_sendExp/Pcam2019_sendExp.srcs/sources_1/bd/system/ip/system_MIPI_CSI_2_RX_0_0/hdl/mipi_csi2_rx_clocks.xdc] for cell 'U0'
+Finished Parsing XDC File [c:/Github/Zybo_mipi/Pcam2019_sendExp/Pcam2019_sendExp.srcs/sources_1/bd/system/ip/system_MIPI_CSI_2_RX_0_0/hdl/mipi_csi2_rx_clocks.xdc] for cell 'U0'
 Sourcing Tcl File [C:/Xilinx/Vivado/2019.2/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_async_rst.tcl] for cell 'U0/MIPI_CSI2_Rx_inst/LLP_inst/DataFIFO/U0/inst_fifo_gen/gaxis_fifo.gaxisf.axisf/grf.rf/rstblk/ngwrdrst.grst.g7serrst.gnsckt_wrst.gic_rst.rst_rd_reg2_inst'
 Finished Sourcing Tcl File [C:/Xilinx/Vivado/2019.2/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_async_rst.tcl] for cell 'U0/MIPI_CSI2_Rx_inst/LLP_inst/DataFIFO/U0/inst_fifo_gen/gaxis_fifo.gaxisf.axisf/grf.rf/rstblk/ngwrdrst.grst.g7serrst.gnsckt_wrst.gic_rst.rst_rd_reg2_inst'
 Sourcing Tcl File [C:/Xilinx/Vivado/2019.2/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_async_rst.tcl] for cell 'U0/MIPI_CSI2_Rx_inst/LLP_inst/DataFIFO/U0/inst_fifo_gen/gaxis_fifo.gaxisf.axisf/grf.rf/rstblk/ngwrdrst.grst.g7serrst.gnsckt_wrst.rst_wr_reg2_inst'
@@ -919,26 +918,26 @@ INFO: [Project 1-236] Implementation specific constraints were found while readi
 Resolution: To avoid this warning, move constraints listed in [.Xil/system_MIPI_CSI_2_RX_0_0_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
 Completed Processing XDC Constraints
 
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1367.359 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1368.078 ; gain = 0.000
 INFO: [Project 1-111] Unisim Transformation Summary:
 No Unisim elements were transformed.
 
-Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.074 . Memory (MB): peak = 1367.359 ; gain = 0.000
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.069 . Memory (MB): peak = 1368.078 ; gain = 0.000
 ---------------------------------------------------------------------------------
-Finished Constraint Validation : Time (s): cpu = 00:00:56 ; elapsed = 00:01:11 . Memory (MB): peak = 1367.359 ; gain = 555.305
+Finished Constraint Validation : Time (s): cpu = 00:00:45 ; elapsed = 00:00:51 . Memory (MB): peak = 1368.078 ; gain = 556.016
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Loading Part and Timing Information
 ---------------------------------------------------------------------------------
 Loading part: xc7z020clg400-1
 ---------------------------------------------------------------------------------
-Finished Loading Part and Timing Information : Time (s): cpu = 00:00:56 ; elapsed = 00:01:11 . Memory (MB): peak = 1367.359 ; gain = 555.305
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:45 ; elapsed = 00:00:51 . Memory (MB): peak = 1368.078 ; gain = 556.016
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Applying 'set_property' XDC Constraints
 ---------------------------------------------------------------------------------
-Applied set_property DONT_TOUCH = true for U0/MIPI_CSI2_Rx_inst/LLP_inst/DataFIFO/U0. (constraint file  C:/Github/Zybo_mipi/Pcam2019_send/Pcam2019_send/Pcam2019_send.runs/system_MIPI_CSI_2_RX_0_0_synth_1/dont_touch.xdc, line 23).
-Applied set_property DONT_TOUCH = true for U0. (constraint file  C:/Github/Zybo_mipi/Pcam2019_send/Pcam2019_send/Pcam2019_send.runs/system_MIPI_CSI_2_RX_0_0_synth_1/dont_touch.xdc, line 30).
+Applied set_property DONT_TOUCH = true for U0/MIPI_CSI2_Rx_inst/LLP_inst/DataFIFO/U0. (constraint file  C:/Github/Zybo_mipi/Pcam2019_sendExp/Pcam2019_sendExp.runs/system_MIPI_CSI_2_RX_0_0_synth_1/dont_touch.xdc, line 23).
+Applied set_property DONT_TOUCH = true for U0. (constraint file  C:/Github/Zybo_mipi/Pcam2019_sendExp/Pcam2019_sendExp.runs/system_MIPI_CSI_2_RX_0_0_synth_1/dont_touch.xdc, line 30).
 Applied set_property DONT_TOUCH = true for U0/MIPI_CSI2_Rx_inst/LLP_inst/LineBufferFIFO. (constraint file  auto generated constraint, line ).
 Applied set_property DONT_TOUCH = true for U0/MIPI_CSI2_Rx_inst/LLP_inst/DataFIFO. (constraint file  auto generated constraint, line ).
 Applied set_property DONT_TOUCH = true for U0/MIPI_CSI2_Rx_inst/LLP_inst/DataFIFO/U0/inst_fifo_gen/\gaxis_fifo.gaxisf.axisf /\grf.rf /rstblk/\ngwrdrst.grst.g7serrst.gnsckt_wrst.gic_rst.rst_rd_reg2_inst . (constraint file  auto generated constraint, line ).
@@ -950,7 +949,7 @@ Applied set_property DONT_TOUCH = true for U0/MIPI_CSI2_Rx_inst/LLP_inst/DataFIF
 Applied set_property DONT_TOUCH = true for U0/MIPI_CSI2_Rx_inst/LLP_inst/LineBufferFIFO/inst/\gen_fifo.xpm_fifo_axis_inst /\gaxis_rst_sync.xpm_cdc_sync_rst_inst . (constraint file  auto generated constraint, line ).
 Applied set_property DONT_TOUCH = true for U0/MIPI_CSI2_Rx_inst/LLP_inst/LineBufferFIFO/inst/\gen_fifo.xpm_fifo_axis_inst . (constraint file  auto generated constraint, line ).
 ---------------------------------------------------------------------------------
-Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:57 ; elapsed = 00:01:11 . Memory (MB): peak = 1367.359 ; gain = 555.305
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:45 ; elapsed = 00:00:51 . Memory (MB): peak = 1368.078 ; gain = 556.016
 ---------------------------------------------------------------------------------
 INFO: [Synth 8-802] inferred FSM for state register 'sState_reg' in module 'ECC'
 INFO: [Synth 8-802] inferred FSM for state register 'gen_fwft.curr_fwft_state_reg' in module 'xpm_fifo_base'
@@ -973,7 +972,7 @@ INFO: [Synth 8-3354] encoded FSM with state register 'sState_reg' using encoding
 ---------------------------------------------------------------------------------------------------
 INFO: [Synth 8-3354] encoded FSM with state register 'gen_fwft.curr_fwft_state_reg' using encoding 'sequential' in module 'xpm_fifo_base'
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:59 ; elapsed = 00:01:13 . Memory (MB): peak = 1367.359 ; gain = 555.305
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:46 ; elapsed = 00:00:52 . Memory (MB): peak = 1368.078 ; gain = 556.016
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -1347,7 +1346,7 @@ INFO: [Synth 8-3886] merging instance 'U0/MIPI_CSI2_Rx_inst/LM_inst/rbByteCnt_re
 INFO: [Synth 8-3886] merging instance 'U0/MIPI_CSI2_Rx_inst/LM_inst/rbByteCnt_reg[0]' (FDRE) to 'U0/MIPI_CSI2_Rx_inst/LM_inst/rbByteCnt_reg[0]__0'
 INFO: [Synth 8-3333] propagating constant 0 across sequential element (U0/\MIPI_CSI2_Rx_inst/LM_inst/rbByteCnt_reg[0]__0 )
 ---------------------------------------------------------------------------------
-Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:01:06 ; elapsed = 00:01:21 . Memory (MB): peak = 1367.359 ; gain = 555.305
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:51 ; elapsed = 00:00:57 . Memory (MB): peak = 1368.078 ; gain = 556.016
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start ROM, RAM, DSP and Shift Register Reporting
@@ -1385,13 +1384,13 @@ Report RTL Partitions:
 Start Applying XDC Timing Constraints
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Applying XDC Timing Constraints : Time (s): cpu = 00:01:17 ; elapsed = 00:01:33 . Memory (MB): peak = 1367.359 ; gain = 555.305
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:58 ; elapsed = 00:01:04 . Memory (MB): peak = 1368.078 ; gain = 556.016
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Timing Optimization
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Timing Optimization : Time (s): cpu = 00:01:19 ; elapsed = 00:01:34 . Memory (MB): peak = 1367.359 ; gain = 555.305
+Finished Timing Optimization : Time (s): cpu = 00:00:59 ; elapsed = 00:01:05 . Memory (MB): peak = 1368.078 ; gain = 556.016
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start ROM, RAM, DSP and Shift Register Reporting
@@ -1427,7 +1426,7 @@ Report RTL Partitions:
 Start Technology Mapping
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Technology Mapping : Time (s): cpu = 00:01:20 ; elapsed = 00:01:35 . Memory (MB): peak = 1367.359 ; gain = 555.305
+Finished Technology Mapping : Time (s): cpu = 00:00:59 ; elapsed = 00:01:06 . Memory (MB): peak = 1368.078 ; gain = 556.016
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -1451,13 +1450,13 @@ Start Final Netlist Cleanup
 Finished Final Netlist Cleanup
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished IO Insertion : Time (s): cpu = 00:01:25 ; elapsed = 00:01:40 . Memory (MB): peak = 1367.359 ; gain = 555.305
+Finished IO Insertion : Time (s): cpu = 00:01:03 ; elapsed = 00:01:09 . Memory (MB): peak = 1368.078 ; gain = 556.016
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Instances
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Instances : Time (s): cpu = 00:01:25 ; elapsed = 00:01:40 . Memory (MB): peak = 1367.359 ; gain = 555.305
+Finished Renaming Generated Instances : Time (s): cpu = 00:01:03 ; elapsed = 00:01:09 . Memory (MB): peak = 1368.078 ; gain = 556.016
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -1476,25 +1475,25 @@ Report Check Netlist:
 Start Rebuilding User Hierarchy
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Rebuilding User Hierarchy : Time (s): cpu = 00:01:25 ; elapsed = 00:01:41 . Memory (MB): peak = 1367.359 ; gain = 555.305
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:01:03 ; elapsed = 00:01:10 . Memory (MB): peak = 1368.078 ; gain = 556.016
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Ports
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Ports : Time (s): cpu = 00:01:25 ; elapsed = 00:01:41 . Memory (MB): peak = 1367.359 ; gain = 555.305
+Finished Renaming Generated Ports : Time (s): cpu = 00:01:03 ; elapsed = 00:01:10 . Memory (MB): peak = 1368.078 ; gain = 556.016
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:01:25 ; elapsed = 00:01:41 . Memory (MB): peak = 1367.359 ; gain = 555.305
+Finished Handling Custom Attributes : Time (s): cpu = 00:01:03 ; elapsed = 00:01:10 . Memory (MB): peak = 1368.078 ; gain = 556.016
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Nets
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Nets : Time (s): cpu = 00:01:25 ; elapsed = 00:01:41 . Memory (MB): peak = 1367.359 ; gain = 555.305
+Finished Renaming Generated Nets : Time (s): cpu = 00:01:03 ; elapsed = 00:01:10 . Memory (MB): peak = 1368.078 ; gain = 556.016
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Writing Synthesis Report
@@ -1587,18 +1586,18 @@ Report Instance Areas:
 |55    |    \YesAXILITE.SyncAsyncClkEnable                                                           |SyncAsync__parameterized1                     |     3|
 +------+---------------------------------------------------------------------------------------------+----------------------------------------------+------+
 ---------------------------------------------------------------------------------
-Finished Writing Synthesis Report : Time (s): cpu = 00:01:25 ; elapsed = 00:01:41 . Memory (MB): peak = 1367.359 ; gain = 555.305
+Finished Writing Synthesis Report : Time (s): cpu = 00:01:03 ; elapsed = 00:01:10 . Memory (MB): peak = 1368.078 ; gain = 556.016
 ---------------------------------------------------------------------------------
 Synthesis finished with 0 errors, 0 critical warnings and 570 warnings.
-Synthesis Optimization Runtime : Time (s): cpu = 00:00:35 ; elapsed = 00:01:33 . Memory (MB): peak = 1367.359 ; gain = 555.305
-Synthesis Optimization Complete : Time (s): cpu = 00:01:25 ; elapsed = 00:01:41 . Memory (MB): peak = 1367.359 ; gain = 555.305
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:22 ; elapsed = 00:01:04 . Memory (MB): peak = 1368.078 ; gain = 556.016
+Synthesis Optimization Complete : Time (s): cpu = 00:01:03 ; elapsed = 00:01:10 . Memory (MB): peak = 1368.078 ; gain = 556.016
 INFO: [Project 1-571] Translating synthesized netlist
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.065 . Memory (MB): peak = 1367.359 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.033 . Memory (MB): peak = 1368.078 ; gain = 0.000
 INFO: [Netlist 29-17] Analyzing 36 Unisim elements for replacement
 INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
 INFO: [Project 1-570] Preparing netlist for logic optimization
 INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1367.359 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1368.078 ; gain = 0.000
 INFO: [Project 1-111] Unisim Transformation Summary:
   A total of 11 instances were transformed.
   RAM32M => RAM32M (RAMD32(x6), RAMS32(x2)): 11 instances
@@ -1606,17 +1605,17 @@ INFO: [Project 1-111] Unisim Transformation Summary:
 INFO: [Common 17-83] Releasing license: Synthesis
 158 Infos, 137 Warnings, 7 Critical Warnings and 0 Errors encountered.
 synth_design completed successfully
-synth_design: Time (s): cpu = 00:01:37 ; elapsed = 00:01:59 . Memory (MB): peak = 1367.359 ; gain = 856.703
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1367.359 ; gain = 0.000
+synth_design: Time (s): cpu = 00:01:16 ; elapsed = 00:01:24 . Memory (MB): peak = 1368.078 ; gain = 858.703
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1368.078 ; gain = 0.000
 WARNING: [Constraints 18-5210] No constraints selected for write.
 Resolution: This message can indicate that there are no constraints for the design, or it can indicate that the used_in flags are set such that the constraints are ignored. This later case is used when running synth_design to not write synthesis constraints to the resulting checkpoint. Instead, project constraints are read when the synthesized design is opened.
-INFO: [Common 17-1381] The checkpoint 'C:/Github/Zybo_mipi/Pcam2019_send/Pcam2019_send/Pcam2019_send.runs/system_MIPI_CSI_2_RX_0_0_synth_1/system_MIPI_CSI_2_RX_0_0.dcp' has been generated.
+INFO: [Common 17-1381] The checkpoint 'C:/Github/Zybo_mipi/Pcam2019_sendExp/Pcam2019_sendExp.runs/system_MIPI_CSI_2_RX_0_0_synth_1/system_MIPI_CSI_2_RX_0_0.dcp' has been generated.
 WARNING: [Common 17-576] 'use_project_ipc' is deprecated. This option is deprecated and no longer used.
 INFO: [Coretcl 2-1648] Added synthesis output to IP cache for IP system_MIPI_CSI_2_RX_0_0, cache-ID = 10abc4f5f68ad4c2
 INFO: [Coretcl 2-1174] Renamed 54 cell refs.
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1367.359 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1368.078 ; gain = 0.000
 WARNING: [Constraints 18-5210] No constraints selected for write.
 Resolution: This message can indicate that there are no constraints for the design, or it can indicate that the used_in flags are set such that the constraints are ignored. This later case is used when running synth_design to not write synthesis constraints to the resulting checkpoint. Instead, project constraints are read when the synthesized design is opened.
-INFO: [Common 17-1381] The checkpoint 'C:/Github/Zybo_mipi/Pcam2019_send/Pcam2019_send/Pcam2019_send.runs/system_MIPI_CSI_2_RX_0_0_synth_1/system_MIPI_CSI_2_RX_0_0.dcp' has been generated.
+INFO: [Common 17-1381] The checkpoint 'C:/Github/Zybo_mipi/Pcam2019_sendExp/Pcam2019_sendExp.runs/system_MIPI_CSI_2_RX_0_0_synth_1/system_MIPI_CSI_2_RX_0_0.dcp' has been generated.
 INFO: [runtcl-4] Executing : report_utilization -file system_MIPI_CSI_2_RX_0_0_utilization_synth.rpt -pb system_MIPI_CSI_2_RX_0_0_utilization_synth.pb
-INFO: [Common 17-206] Exiting Vivado at Tue Nov 10 15:04:59 2020...
+INFO: [Common 17-206] Exiting Vivado at Fri Nov 20 03:51:50 2020...
