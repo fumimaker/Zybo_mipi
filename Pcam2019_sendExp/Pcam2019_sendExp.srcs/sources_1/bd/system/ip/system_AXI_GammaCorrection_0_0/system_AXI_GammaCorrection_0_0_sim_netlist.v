@@ -1,10 +1,10 @@
 // Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
 // --------------------------------------------------------------------------------
 // Tool Version: Vivado v.2019.2 (win64) Build 2708876 Wed Nov  6 21:40:23 MST 2019
-// Date        : Fri Nov 20 03:43:05 2020
+// Date        : Fri Nov 20 20:40:05 2020
 // Host        : DESKTOP-5VC2SBS running 64-bit major release  (build 9200)
-// Command     : write_verilog -force -mode funcsim -rename_top system_AXI_GammaCorrection_0_0 -prefix
-//               system_AXI_GammaCorrection_0_0_ system_AXI_GammaCorrection_0_0_sim_netlist.v
+// Command     : write_verilog -force -mode funcsim
+//               C:/Github/Zybo_mipi/Pcam2019_sendExp/Pcam2019_sendExp.srcs/sources_1/bd/system/ip/system_AXI_GammaCorrection_0_0/system_AXI_GammaCorrection_0_0_sim_netlist.v
 // Design      : system_AXI_GammaCorrection_0_0
 // Purpose     : This verilog netlist is a functional simulation representation of the design and should not be modified
 //               or synthesized. This netlist cannot be used for SDF annotated simulation.
@@ -12,8 +12,158 @@
 // --------------------------------------------------------------------------------
 `timescale 1 ps / 1 ps
 
-(* C_S_AXI_ADDR_WIDTH = "3" *) (* C_S_AXI_DATA_WIDTH = "32" *) (* kAXI_InputDataWidth = "32" *) 
-(* kAXI_OutputDataWidth = "24" *) (* kInputColorWidth = "10" *) 
+(* CHECK_LICENSE_TYPE = "system_AXI_GammaCorrection_0_0,AXI_GammaCorrection,{}" *) (* downgradeipidentifiedwarnings = "yes" *) (* ip_definition_source = "package_project" *) 
+(* x_core_info = "AXI_GammaCorrection,Vivado 2019.2" *) 
+(* NotValidForBitStream *)
+module system_AXI_GammaCorrection_0_0
+   (StreamClk,
+    sStreamReset_n,
+    s_axis_video_tready,
+    s_axis_video_tdata,
+    s_axis_video_tvalid,
+    s_axis_video_tuser,
+    s_axis_video_tlast,
+    m_axis_video_tready,
+    m_axis_video_tdata,
+    m_axis_video_tvalid,
+    m_axis_video_tuser,
+    m_axis_video_tlast,
+    AxiLiteClk,
+    aAxiLiteReset_n,
+    S_AXI_AWADDR,
+    S_AXI_AWPROT,
+    S_AXI_AWVALID,
+    S_AXI_AWREADY,
+    S_AXI_WDATA,
+    S_AXI_WSTRB,
+    S_AXI_WVALID,
+    S_AXI_WREADY,
+    S_AXI_BRESP,
+    S_AXI_BVALID,
+    S_AXI_BREADY,
+    S_AXI_ARADDR,
+    S_AXI_ARPROT,
+    S_AXI_ARVALID,
+    S_AXI_ARREADY,
+    S_AXI_RDATA,
+    S_AXI_RRESP,
+    S_AXI_RVALID,
+    S_AXI_RREADY,
+    jc_p);
+  (* x_interface_info = "xilinx.com:signal:clock:1.0 AXI_Stream_Clk CLK" *) (* x_interface_parameter = "XIL_INTERFACENAME AXI_Stream_Clk, ASSOCIATED_BUSIF s_axis_video:m_axis_video, ASSOCIATED_RESET sStreamReset_n, FREQ_HZ 150000000, PHASE 0.0, CLK_DOMAIN system_clk_wiz_0_0_clk_out1, INSERT_VIP 0" *) input StreamClk;
+  (* x_interface_info = "xilinx.com:signal:reset:1.0 AXI_Stream_Reset_n RST" *) (* x_interface_parameter = "XIL_INTERFACENAME AXI_Stream_Reset_n, POLARITY ACTIVE_LOW, INSERT_VIP 0" *) input sStreamReset_n;
+  (* x_interface_info = "xilinx.com:interface:axis:1.0 s_axis_video TREADY" *) (* x_interface_parameter = "XIL_INTERFACENAME s_axis_video, TDATA_NUM_BYTES 4, TDEST_WIDTH 0, TID_WIDTH 0, TUSER_WIDTH 1, HAS_TREADY 1, HAS_TSTRB 0, HAS_TKEEP 0, HAS_TLAST 1, FREQ_HZ 150000000, PHASE 0.0, CLK_DOMAIN system_clk_wiz_0_0_clk_out1, LAYERED_METADATA undef, INSERT_VIP 0" *) output s_axis_video_tready;
+  (* x_interface_info = "xilinx.com:interface:axis:1.0 s_axis_video TDATA" *) input [31:0]s_axis_video_tdata;
+  (* x_interface_info = "xilinx.com:interface:axis:1.0 s_axis_video TVALID" *) input s_axis_video_tvalid;
+  (* x_interface_info = "xilinx.com:interface:axis:1.0 s_axis_video TUSER" *) input s_axis_video_tuser;
+  (* x_interface_info = "xilinx.com:interface:axis:1.0 s_axis_video TLAST" *) input s_axis_video_tlast;
+  (* x_interface_info = "xilinx.com:interface:axis:1.0 m_axis_video TREADY" *) (* x_interface_parameter = "XIL_INTERFACENAME m_axis_video, TDATA_NUM_BYTES 3, TDEST_WIDTH 0, TID_WIDTH 0, TUSER_WIDTH 1, HAS_TREADY 1, HAS_TSTRB 0, HAS_TKEEP 0, HAS_TLAST 1, FREQ_HZ 150000000, PHASE 0.0, CLK_DOMAIN system_clk_wiz_0_0_clk_out1, LAYERED_METADATA undef, INSERT_VIP 0" *) input m_axis_video_tready;
+  (* x_interface_info = "xilinx.com:interface:axis:1.0 m_axis_video TDATA" *) output [23:0]m_axis_video_tdata;
+  (* x_interface_info = "xilinx.com:interface:axis:1.0 m_axis_video TVALID" *) output m_axis_video_tvalid;
+  (* x_interface_info = "xilinx.com:interface:axis:1.0 m_axis_video TUSER" *) output m_axis_video_tuser;
+  (* x_interface_info = "xilinx.com:interface:axis:1.0 m_axis_video TLAST" *) output m_axis_video_tlast;
+  (* x_interface_info = "xilinx.com:signal:clock:1.0 AxiLiteClk CLK" *) (* x_interface_parameter = "XIL_INTERFACENAME AxiLiteClk, ASSOCIATED_BUSIF s_axil, ASSOCIATED_RESET aAxiLiteReset_n, FREQ_HZ 50000000, PHASE 0.0, CLK_DOMAIN system_clk_wiz_0_0_clk_out1, INSERT_VIP 0" *) input AxiLiteClk;
+  (* x_interface_info = "xilinx.com:signal:reset:1.0 AxiLiteReset_n RST" *) (* x_interface_parameter = "XIL_INTERFACENAME AxiLiteReset_n, POLARITY ACTIVE_LOW, INSERT_VIP 0" *) input aAxiLiteReset_n;
+  (* x_interface_info = "xilinx.com:interface:aximm:1.0 s_axil AWADDR" *) (* x_interface_parameter = "XIL_INTERFACENAME s_axil, DATA_WIDTH 32, PROTOCOL AXI4LITE, FREQ_HZ 50000000, ID_WIDTH 0, ADDR_WIDTH 3, AWUSER_WIDTH 0, ARUSER_WIDTH 0, WUSER_WIDTH 0, RUSER_WIDTH 0, BUSER_WIDTH 0, READ_WRITE_MODE READ_WRITE, HAS_BURST 0, HAS_LOCK 0, HAS_PROT 1, HAS_CACHE 0, HAS_QOS 0, HAS_REGION 0, HAS_WSTRB 1, HAS_BRESP 1, HAS_RRESP 1, SUPPORTS_NARROW_BURST 0, NUM_READ_OUTSTANDING 1, NUM_WRITE_OUTSTANDING 1, MAX_BURST_LENGTH 1, PHASE 0.0, CLK_DOMAIN system_clk_wiz_0_0_clk_out1, NUM_READ_THREADS 1, NUM_WRITE_THREADS 1, RUSER_BITS_PER_BYTE 0, WUSER_BITS_PER_BYTE 0, INSERT_VIP 0" *) input [2:0]S_AXI_AWADDR;
+  (* x_interface_info = "xilinx.com:interface:aximm:1.0 s_axil AWPROT" *) input [2:0]S_AXI_AWPROT;
+  (* x_interface_info = "xilinx.com:interface:aximm:1.0 s_axil AWVALID" *) input S_AXI_AWVALID;
+  (* x_interface_info = "xilinx.com:interface:aximm:1.0 s_axil AWREADY" *) output S_AXI_AWREADY;
+  (* x_interface_info = "xilinx.com:interface:aximm:1.0 s_axil WDATA" *) input [31:0]S_AXI_WDATA;
+  (* x_interface_info = "xilinx.com:interface:aximm:1.0 s_axil WSTRB" *) input [3:0]S_AXI_WSTRB;
+  (* x_interface_info = "xilinx.com:interface:aximm:1.0 s_axil WVALID" *) input S_AXI_WVALID;
+  (* x_interface_info = "xilinx.com:interface:aximm:1.0 s_axil WREADY" *) output S_AXI_WREADY;
+  (* x_interface_info = "xilinx.com:interface:aximm:1.0 s_axil BRESP" *) output [1:0]S_AXI_BRESP;
+  (* x_interface_info = "xilinx.com:interface:aximm:1.0 s_axil BVALID" *) output S_AXI_BVALID;
+  (* x_interface_info = "xilinx.com:interface:aximm:1.0 s_axil BREADY" *) input S_AXI_BREADY;
+  (* x_interface_info = "xilinx.com:interface:aximm:1.0 s_axil ARADDR" *) input [2:0]S_AXI_ARADDR;
+  (* x_interface_info = "xilinx.com:interface:aximm:1.0 s_axil ARPROT" *) input [2:0]S_AXI_ARPROT;
+  (* x_interface_info = "xilinx.com:interface:aximm:1.0 s_axil ARVALID" *) input S_AXI_ARVALID;
+  (* x_interface_info = "xilinx.com:interface:aximm:1.0 s_axil ARREADY" *) output S_AXI_ARREADY;
+  (* x_interface_info = "xilinx.com:interface:aximm:1.0 s_axil RDATA" *) output [31:0]S_AXI_RDATA;
+  (* x_interface_info = "xilinx.com:interface:aximm:1.0 s_axil RRESP" *) output [1:0]S_AXI_RRESP;
+  (* x_interface_info = "xilinx.com:interface:aximm:1.0 s_axil RVALID" *) output S_AXI_RVALID;
+  (* x_interface_info = "xilinx.com:interface:aximm:1.0 s_axil RREADY" *) input S_AXI_RREADY;
+  output [4:1]jc_p;
+
+  wire AxiLiteClk;
+  wire [2:0]S_AXI_ARADDR;
+  wire [2:0]S_AXI_ARPROT;
+  wire S_AXI_ARREADY;
+  wire S_AXI_ARVALID;
+  wire [2:0]S_AXI_AWADDR;
+  wire [2:0]S_AXI_AWPROT;
+  wire S_AXI_AWREADY;
+  wire S_AXI_AWVALID;
+  wire S_AXI_BREADY;
+  wire [1:0]S_AXI_BRESP;
+  wire S_AXI_BVALID;
+  wire [31:0]S_AXI_RDATA;
+  wire S_AXI_RREADY;
+  wire [1:0]S_AXI_RRESP;
+  wire S_AXI_RVALID;
+  wire [31:0]S_AXI_WDATA;
+  wire S_AXI_WREADY;
+  wire [3:0]S_AXI_WSTRB;
+  wire S_AXI_WVALID;
+  wire StreamClk;
+  wire aAxiLiteReset_n;
+  wire [4:1]jc_p;
+  wire [23:0]m_axis_video_tdata;
+  wire m_axis_video_tlast;
+  wire m_axis_video_tready;
+  wire m_axis_video_tuser;
+  wire m_axis_video_tvalid;
+  wire sStreamReset_n;
+  wire [31:0]s_axis_video_tdata;
+  wire s_axis_video_tlast;
+  wire s_axis_video_tready;
+  wire s_axis_video_tuser;
+  wire s_axis_video_tvalid;
+
+  (* C_S_AXI_ADDR_WIDTH = "3" *) 
+  (* C_S_AXI_DATA_WIDTH = "32" *) 
+  (* kAXI_InputDataWidth = "32" *) 
+  (* kAXI_OutputDataWidth = "24" *) 
+  (* kInputColorWidth = "10" *) 
+  system_AXI_GammaCorrection_0_0_AXI_GammaCorrection U0
+       (.AxiLiteClk(AxiLiteClk),
+        .S_AXI_ARADDR(S_AXI_ARADDR),
+        .S_AXI_ARPROT(S_AXI_ARPROT),
+        .S_AXI_ARREADY(S_AXI_ARREADY),
+        .S_AXI_ARVALID(S_AXI_ARVALID),
+        .S_AXI_AWADDR(S_AXI_AWADDR),
+        .S_AXI_AWPROT(S_AXI_AWPROT),
+        .S_AXI_AWREADY(S_AXI_AWREADY),
+        .S_AXI_AWVALID(S_AXI_AWVALID),
+        .S_AXI_BREADY(S_AXI_BREADY),
+        .S_AXI_BRESP(S_AXI_BRESP),
+        .S_AXI_BVALID(S_AXI_BVALID),
+        .S_AXI_RDATA(S_AXI_RDATA),
+        .S_AXI_RREADY(S_AXI_RREADY),
+        .S_AXI_RRESP(S_AXI_RRESP),
+        .S_AXI_RVALID(S_AXI_RVALID),
+        .S_AXI_WDATA(S_AXI_WDATA),
+        .S_AXI_WREADY(S_AXI_WREADY),
+        .S_AXI_WSTRB(S_AXI_WSTRB),
+        .S_AXI_WVALID(S_AXI_WVALID),
+        .StreamClk(StreamClk),
+        .aAxiLiteReset_n(aAxiLiteReset_n),
+        .jc_p(jc_p),
+        .m_axis_video_tdata(m_axis_video_tdata),
+        .m_axis_video_tlast(m_axis_video_tlast),
+        .m_axis_video_tready(m_axis_video_tready),
+        .m_axis_video_tuser(m_axis_video_tuser),
+        .m_axis_video_tvalid(m_axis_video_tvalid),
+        .sStreamReset_n(sStreamReset_n),
+        .s_axis_video_tdata(s_axis_video_tdata),
+        .s_axis_video_tlast(s_axis_video_tlast),
+        .s_axis_video_tready(s_axis_video_tready),
+        .s_axis_video_tuser(s_axis_video_tuser),
+        .s_axis_video_tvalid(s_axis_video_tvalid));
+endmodule
+
+(* C_S_AXI_ADDR_WIDTH = "3" *) (* C_S_AXI_DATA_WIDTH = "32" *) (* ORIG_REF_NAME = "AXI_GammaCorrection" *) 
+(* kAXI_InputDataWidth = "32" *) (* kAXI_OutputDataWidth = "24" *) (* kInputColorWidth = "10" *) 
 module system_AXI_GammaCorrection_0_0_AXI_GammaCorrection
    (StreamClk,
     sStreamReset_n,
@@ -112,6 +262,8 @@ module system_AXI_GammaCorrection_0_0_AXI_GammaCorrection
   wire axi_bvalid_i_1_n_0;
   wire axi_rvalid_i_1_n_0;
   wire axi_wready0;
+  wire [3:3]\^jc_p ;
+  wire \jc_p[4]_i_1_n_0 ;
   wire [23:0]m_axis_video_tdata;
   wire m_axis_video_tlast;
   wire m_axis_video_tlast_i_1_n_0;
@@ -167,10 +319,10 @@ module system_AXI_GammaCorrection_0_0_AXI_GammaCorrection
   assign S_AXI_RDATA[0] = \<const0> ;
   assign S_AXI_RRESP[1] = \<const0> ;
   assign S_AXI_RRESP[0] = \<const0> ;
-  assign jc_p[4] = s_axis_video_tuser;
-  assign jc_p[3] = s_axis_video_tuser;
-  assign jc_p[2] = s_axis_video_tuser;
-  assign jc_p[1] = s_axis_video_tuser;
+  assign jc_p[4] = \^jc_p [3];
+  assign jc_p[3] = \^jc_p [3];
+  assign jc_p[2] = \^jc_p [3];
+  assign jc_p[1] = \^jc_p [3];
   assign s_axis_video_tready = m_axis_video_tready;
   GND GND
        (.G(\<const0> ));
@@ -294,6 +446,21 @@ module system_AXI_GammaCorrection_0_0_AXI_GammaCorrection
         .R(axi_awready_i_1_n_0));
   LUT5 #(
     .INIT(32'hEA2A0000)) 
+    \jc_p[4]_i_1 
+       (.I0(\^jc_p ),
+        .I1(s_axis_video_tvalid),
+        .I2(m_axis_video_tready),
+        .I3(s_axis_video_tuser),
+        .I4(sStreamReset_n),
+        .O(\jc_p[4]_i_1_n_0 ));
+  FDRE \jc_p_reg[4] 
+       (.C(StreamClk),
+        .CE(1'b1),
+        .D(\jc_p[4]_i_1_n_0 ),
+        .Q(\^jc_p ),
+        .R(1'b0));
+  LUT5 #(
+    .INIT(32'hEA2A0000)) 
     m_axis_video_tlast_i_1
        (.I0(m_axis_video_tlast),
         .I1(m_axis_video_tready),
@@ -389,6 +556,7 @@ module system_AXI_GammaCorrection_0_0_AXI_GammaCorrection
         .R(axi_awready_i_1_n_0));
 endmodule
 
+(* ORIG_REF_NAME = "StoredGammaCoefs" *) 
 module system_AXI_GammaCorrection_0_0_StoredGammaCoefs
    (m_axis_video_tdata,
     sGammaReg,
@@ -16662,156 +16830,6 @@ module system_AXI_GammaCorrection_0_0_StoredGammaCoefs_1
         .I1(\rStoredData[7]_i_4__1_n_0 ),
         .O(\rStoredData_reg[7]_i_2_n_0 ),
         .S(sGammaReg[2]));
-endmodule
-
-(* CHECK_LICENSE_TYPE = "system_AXI_GammaCorrection_0_0,AXI_GammaCorrection,{}" *) (* downgradeipidentifiedwarnings = "yes" *) (* ip_definition_source = "package_project" *) 
-(* x_core_info = "AXI_GammaCorrection,Vivado 2019.2" *) 
-(* NotValidForBitStream *)
-module system_AXI_GammaCorrection_0_0
-   (StreamClk,
-    sStreamReset_n,
-    s_axis_video_tready,
-    s_axis_video_tdata,
-    s_axis_video_tvalid,
-    s_axis_video_tuser,
-    s_axis_video_tlast,
-    m_axis_video_tready,
-    m_axis_video_tdata,
-    m_axis_video_tvalid,
-    m_axis_video_tuser,
-    m_axis_video_tlast,
-    AxiLiteClk,
-    aAxiLiteReset_n,
-    S_AXI_AWADDR,
-    S_AXI_AWPROT,
-    S_AXI_AWVALID,
-    S_AXI_AWREADY,
-    S_AXI_WDATA,
-    S_AXI_WSTRB,
-    S_AXI_WVALID,
-    S_AXI_WREADY,
-    S_AXI_BRESP,
-    S_AXI_BVALID,
-    S_AXI_BREADY,
-    S_AXI_ARADDR,
-    S_AXI_ARPROT,
-    S_AXI_ARVALID,
-    S_AXI_ARREADY,
-    S_AXI_RDATA,
-    S_AXI_RRESP,
-    S_AXI_RVALID,
-    S_AXI_RREADY,
-    jc_p);
-  (* x_interface_info = "xilinx.com:signal:clock:1.0 AXI_Stream_Clk CLK" *) (* x_interface_parameter = "XIL_INTERFACENAME AXI_Stream_Clk, ASSOCIATED_BUSIF s_axis_video:m_axis_video, ASSOCIATED_RESET sStreamReset_n, FREQ_HZ 150000000, PHASE 0.0, CLK_DOMAIN system_clk_wiz_0_0_clk_out1, INSERT_VIP 0" *) input StreamClk;
-  (* x_interface_info = "xilinx.com:signal:reset:1.0 AXI_Stream_Reset_n RST" *) (* x_interface_parameter = "XIL_INTERFACENAME AXI_Stream_Reset_n, POLARITY ACTIVE_LOW, INSERT_VIP 0" *) input sStreamReset_n;
-  (* x_interface_info = "xilinx.com:interface:axis:1.0 s_axis_video TREADY" *) (* x_interface_parameter = "XIL_INTERFACENAME s_axis_video, TDATA_NUM_BYTES 4, TDEST_WIDTH 0, TID_WIDTH 0, TUSER_WIDTH 1, HAS_TREADY 1, HAS_TSTRB 0, HAS_TKEEP 0, HAS_TLAST 1, FREQ_HZ 150000000, PHASE 0.0, CLK_DOMAIN system_clk_wiz_0_0_clk_out1, LAYERED_METADATA undef, INSERT_VIP 0" *) output s_axis_video_tready;
-  (* x_interface_info = "xilinx.com:interface:axis:1.0 s_axis_video TDATA" *) input [31:0]s_axis_video_tdata;
-  (* x_interface_info = "xilinx.com:interface:axis:1.0 s_axis_video TVALID" *) input s_axis_video_tvalid;
-  (* x_interface_info = "xilinx.com:interface:axis:1.0 s_axis_video TUSER" *) input s_axis_video_tuser;
-  (* x_interface_info = "xilinx.com:interface:axis:1.0 s_axis_video TLAST" *) input s_axis_video_tlast;
-  (* x_interface_info = "xilinx.com:interface:axis:1.0 m_axis_video TREADY" *) (* x_interface_parameter = "XIL_INTERFACENAME m_axis_video, TDATA_NUM_BYTES 3, TDEST_WIDTH 0, TID_WIDTH 0, TUSER_WIDTH 1, HAS_TREADY 1, HAS_TSTRB 0, HAS_TKEEP 0, HAS_TLAST 1, FREQ_HZ 150000000, PHASE 0.0, CLK_DOMAIN system_clk_wiz_0_0_clk_out1, LAYERED_METADATA undef, INSERT_VIP 0" *) input m_axis_video_tready;
-  (* x_interface_info = "xilinx.com:interface:axis:1.0 m_axis_video TDATA" *) output [23:0]m_axis_video_tdata;
-  (* x_interface_info = "xilinx.com:interface:axis:1.0 m_axis_video TVALID" *) output m_axis_video_tvalid;
-  (* x_interface_info = "xilinx.com:interface:axis:1.0 m_axis_video TUSER" *) output m_axis_video_tuser;
-  (* x_interface_info = "xilinx.com:interface:axis:1.0 m_axis_video TLAST" *) output m_axis_video_tlast;
-  (* x_interface_info = "xilinx.com:signal:clock:1.0 AxiLiteClk CLK" *) (* x_interface_parameter = "XIL_INTERFACENAME AxiLiteClk, ASSOCIATED_BUSIF s_axil, ASSOCIATED_RESET aAxiLiteReset_n, FREQ_HZ 50000000, PHASE 0.0, CLK_DOMAIN system_clk_wiz_0_0_clk_out1, INSERT_VIP 0" *) input AxiLiteClk;
-  (* x_interface_info = "xilinx.com:signal:reset:1.0 AxiLiteReset_n RST" *) (* x_interface_parameter = "XIL_INTERFACENAME AxiLiteReset_n, POLARITY ACTIVE_LOW, INSERT_VIP 0" *) input aAxiLiteReset_n;
-  (* x_interface_info = "xilinx.com:interface:aximm:1.0 s_axil AWADDR" *) (* x_interface_parameter = "XIL_INTERFACENAME s_axil, DATA_WIDTH 32, PROTOCOL AXI4LITE, FREQ_HZ 50000000, ID_WIDTH 0, ADDR_WIDTH 3, AWUSER_WIDTH 0, ARUSER_WIDTH 0, WUSER_WIDTH 0, RUSER_WIDTH 0, BUSER_WIDTH 0, READ_WRITE_MODE READ_WRITE, HAS_BURST 0, HAS_LOCK 0, HAS_PROT 1, HAS_CACHE 0, HAS_QOS 0, HAS_REGION 0, HAS_WSTRB 1, HAS_BRESP 1, HAS_RRESP 1, SUPPORTS_NARROW_BURST 0, NUM_READ_OUTSTANDING 1, NUM_WRITE_OUTSTANDING 1, MAX_BURST_LENGTH 1, PHASE 0.0, CLK_DOMAIN system_clk_wiz_0_0_clk_out1, NUM_READ_THREADS 1, NUM_WRITE_THREADS 1, RUSER_BITS_PER_BYTE 0, WUSER_BITS_PER_BYTE 0, INSERT_VIP 0" *) input [2:0]S_AXI_AWADDR;
-  (* x_interface_info = "xilinx.com:interface:aximm:1.0 s_axil AWPROT" *) input [2:0]S_AXI_AWPROT;
-  (* x_interface_info = "xilinx.com:interface:aximm:1.0 s_axil AWVALID" *) input S_AXI_AWVALID;
-  (* x_interface_info = "xilinx.com:interface:aximm:1.0 s_axil AWREADY" *) output S_AXI_AWREADY;
-  (* x_interface_info = "xilinx.com:interface:aximm:1.0 s_axil WDATA" *) input [31:0]S_AXI_WDATA;
-  (* x_interface_info = "xilinx.com:interface:aximm:1.0 s_axil WSTRB" *) input [3:0]S_AXI_WSTRB;
-  (* x_interface_info = "xilinx.com:interface:aximm:1.0 s_axil WVALID" *) input S_AXI_WVALID;
-  (* x_interface_info = "xilinx.com:interface:aximm:1.0 s_axil WREADY" *) output S_AXI_WREADY;
-  (* x_interface_info = "xilinx.com:interface:aximm:1.0 s_axil BRESP" *) output [1:0]S_AXI_BRESP;
-  (* x_interface_info = "xilinx.com:interface:aximm:1.0 s_axil BVALID" *) output S_AXI_BVALID;
-  (* x_interface_info = "xilinx.com:interface:aximm:1.0 s_axil BREADY" *) input S_AXI_BREADY;
-  (* x_interface_info = "xilinx.com:interface:aximm:1.0 s_axil ARADDR" *) input [2:0]S_AXI_ARADDR;
-  (* x_interface_info = "xilinx.com:interface:aximm:1.0 s_axil ARPROT" *) input [2:0]S_AXI_ARPROT;
-  (* x_interface_info = "xilinx.com:interface:aximm:1.0 s_axil ARVALID" *) input S_AXI_ARVALID;
-  (* x_interface_info = "xilinx.com:interface:aximm:1.0 s_axil ARREADY" *) output S_AXI_ARREADY;
-  (* x_interface_info = "xilinx.com:interface:aximm:1.0 s_axil RDATA" *) output [31:0]S_AXI_RDATA;
-  (* x_interface_info = "xilinx.com:interface:aximm:1.0 s_axil RRESP" *) output [1:0]S_AXI_RRESP;
-  (* x_interface_info = "xilinx.com:interface:aximm:1.0 s_axil RVALID" *) output S_AXI_RVALID;
-  (* x_interface_info = "xilinx.com:interface:aximm:1.0 s_axil RREADY" *) input S_AXI_RREADY;
-  output [4:1]jc_p;
-
-  wire AxiLiteClk;
-  wire [2:0]S_AXI_ARADDR;
-  wire [2:0]S_AXI_ARPROT;
-  wire S_AXI_ARREADY;
-  wire S_AXI_ARVALID;
-  wire [2:0]S_AXI_AWADDR;
-  wire [2:0]S_AXI_AWPROT;
-  wire S_AXI_AWREADY;
-  wire S_AXI_AWVALID;
-  wire S_AXI_BREADY;
-  wire [1:0]S_AXI_BRESP;
-  wire S_AXI_BVALID;
-  wire [31:0]S_AXI_RDATA;
-  wire S_AXI_RREADY;
-  wire [1:0]S_AXI_RRESP;
-  wire S_AXI_RVALID;
-  wire [31:0]S_AXI_WDATA;
-  wire S_AXI_WREADY;
-  wire [3:0]S_AXI_WSTRB;
-  wire S_AXI_WVALID;
-  wire StreamClk;
-  wire aAxiLiteReset_n;
-  wire [4:1]jc_p;
-  wire [23:0]m_axis_video_tdata;
-  wire m_axis_video_tlast;
-  wire m_axis_video_tready;
-  wire m_axis_video_tuser;
-  wire m_axis_video_tvalid;
-  wire sStreamReset_n;
-  wire [31:0]s_axis_video_tdata;
-  wire s_axis_video_tlast;
-  wire s_axis_video_tready;
-  wire s_axis_video_tuser;
-  wire s_axis_video_tvalid;
-
-  (* C_S_AXI_ADDR_WIDTH = "3" *) 
-  (* C_S_AXI_DATA_WIDTH = "32" *) 
-  (* kAXI_InputDataWidth = "32" *) 
-  (* kAXI_OutputDataWidth = "24" *) 
-  (* kInputColorWidth = "10" *) 
-  system_AXI_GammaCorrection_0_0_AXI_GammaCorrection U0
-       (.AxiLiteClk(AxiLiteClk),
-        .S_AXI_ARADDR(S_AXI_ARADDR),
-        .S_AXI_ARPROT(S_AXI_ARPROT),
-        .S_AXI_ARREADY(S_AXI_ARREADY),
-        .S_AXI_ARVALID(S_AXI_ARVALID),
-        .S_AXI_AWADDR(S_AXI_AWADDR),
-        .S_AXI_AWPROT(S_AXI_AWPROT),
-        .S_AXI_AWREADY(S_AXI_AWREADY),
-        .S_AXI_AWVALID(S_AXI_AWVALID),
-        .S_AXI_BREADY(S_AXI_BREADY),
-        .S_AXI_BRESP(S_AXI_BRESP),
-        .S_AXI_BVALID(S_AXI_BVALID),
-        .S_AXI_RDATA(S_AXI_RDATA),
-        .S_AXI_RREADY(S_AXI_RREADY),
-        .S_AXI_RRESP(S_AXI_RRESP),
-        .S_AXI_RVALID(S_AXI_RVALID),
-        .S_AXI_WDATA(S_AXI_WDATA),
-        .S_AXI_WREADY(S_AXI_WREADY),
-        .S_AXI_WSTRB(S_AXI_WSTRB),
-        .S_AXI_WVALID(S_AXI_WVALID),
-        .StreamClk(StreamClk),
-        .aAxiLiteReset_n(aAxiLiteReset_n),
-        .jc_p(jc_p),
-        .m_axis_video_tdata(m_axis_video_tdata),
-        .m_axis_video_tlast(m_axis_video_tlast),
-        .m_axis_video_tready(m_axis_video_tready),
-        .m_axis_video_tuser(m_axis_video_tuser),
-        .m_axis_video_tvalid(m_axis_video_tvalid),
-        .sStreamReset_n(sStreamReset_n),
-        .s_axis_video_tdata(s_axis_video_tdata),
-        .s_axis_video_tlast(s_axis_video_tlast),
-        .s_axis_video_tready(s_axis_video_tready),
-        .s_axis_video_tuser(s_axis_video_tuser),
-        .s_axis_video_tvalid(s_axis_video_tvalid));
 endmodule
 `ifndef GLBL
 `define GLBL

@@ -1,7 +1,7 @@
 --Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
 ----------------------------------------------------------------------------------
 --Tool Version: Vivado v.2019.2 (win64) Build 2708876 Wed Nov  6 21:40:23 MST 2019
---Date        : Fri Nov 20 18:41:40 2020
+--Date        : Fri Nov 20 20:37:50 2020
 --Host        : DESKTOP-5VC2SBS running 64-bit major release  (build 9200)
 --Command     : generate_target system_wrapper.bd
 --Design      : system_wrapper
@@ -67,6 +67,23 @@ architecture STRUCTURE of system_wrapper is
     jb_p : out STD_LOGIC_VECTOR ( 4 downto 1 );
     jb_n : out STD_LOGIC_VECTOR ( 4 downto 1 );
     jc_p : out STD_LOGIC_VECTOR ( 4 downto 1 );
+    FIXED_IO_mio : inout STD_LOGIC_VECTOR ( 53 downto 0 );
+    FIXED_IO_ddr_vrn : inout STD_LOGIC;
+    FIXED_IO_ddr_vrp : inout STD_LOGIC;
+    FIXED_IO_ps_srstb : inout STD_LOGIC;
+    FIXED_IO_ps_clk : inout STD_LOGIC;
+    FIXED_IO_ps_porb : inout STD_LOGIC;
+    cam_iic_sda_i : in STD_LOGIC;
+    cam_iic_sda_o : out STD_LOGIC;
+    cam_iic_sda_t : out STD_LOGIC;
+    cam_iic_scl_i : in STD_LOGIC;
+    cam_iic_scl_o : out STD_LOGIC;
+    cam_iic_scl_t : out STD_LOGIC;
+    dphy_hs_clock_clk_p : in STD_LOGIC;
+    dphy_hs_clock_clk_n : in STD_LOGIC;
+    cam_gpio_tri_i : in STD_LOGIC_VECTOR ( 0 to 0 );
+    cam_gpio_tri_o : out STD_LOGIC_VECTOR ( 0 to 0 );
+    cam_gpio_tri_t : out STD_LOGIC_VECTOR ( 0 to 0 );
     DDR_cas_n : inout STD_LOGIC;
     DDR_cke : inout STD_LOGIC;
     DDR_ck_n : inout STD_LOGIC;
@@ -82,27 +99,10 @@ architecture STRUCTURE of system_wrapper is
     DDR_dq : inout STD_LOGIC_VECTOR ( 31 downto 0 );
     DDR_dqs_n : inout STD_LOGIC_VECTOR ( 3 downto 0 );
     DDR_dqs_p : inout STD_LOGIC_VECTOR ( 3 downto 0 );
-    cam_iic_sda_i : in STD_LOGIC;
-    cam_iic_sda_o : out STD_LOGIC;
-    cam_iic_sda_t : out STD_LOGIC;
-    cam_iic_scl_i : in STD_LOGIC;
-    cam_iic_scl_o : out STD_LOGIC;
-    cam_iic_scl_t : out STD_LOGIC;
     hdmi_tx_clk_p : out STD_LOGIC;
     hdmi_tx_clk_n : out STD_LOGIC;
     hdmi_tx_data_p : out STD_LOGIC_VECTOR ( 2 downto 0 );
-    hdmi_tx_data_n : out STD_LOGIC_VECTOR ( 2 downto 0 );
-    dphy_hs_clock_clk_p : in STD_LOGIC;
-    dphy_hs_clock_clk_n : in STD_LOGIC;
-    FIXED_IO_mio : inout STD_LOGIC_VECTOR ( 53 downto 0 );
-    FIXED_IO_ddr_vrn : inout STD_LOGIC;
-    FIXED_IO_ddr_vrp : inout STD_LOGIC;
-    FIXED_IO_ps_srstb : inout STD_LOGIC;
-    FIXED_IO_ps_clk : inout STD_LOGIC;
-    FIXED_IO_ps_porb : inout STD_LOGIC;
-    cam_gpio_tri_i : in STD_LOGIC_VECTOR ( 0 to 0 );
-    cam_gpio_tri_o : out STD_LOGIC_VECTOR ( 0 to 0 );
-    cam_gpio_tri_t : out STD_LOGIC_VECTOR ( 0 to 0 )
+    hdmi_tx_data_n : out STD_LOGIC_VECTOR ( 2 downto 0 )
   );
   end component system;
   component IOBUF is

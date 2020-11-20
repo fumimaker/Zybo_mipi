@@ -46,7 +46,7 @@
 -- 
 -- DO NOT MODIFY THIS FILE.
 
--- IP VLNV: digilentinc.com:user:AXI_GammaCorrection:1.1
+-- IP VLNV: digilentinc.com:user:AXI_GammaCorrection:1.2
 -- IP Revision: 1
 
 LIBRARY ieee;
