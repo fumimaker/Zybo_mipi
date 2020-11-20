@@ -17,6 +17,11 @@ char *simpleColor = (char *)malloc(sizeof(char) * 1280*720*3);
 #define FINISH	1
 #define NOT_FINISH 0
 
+#define JF1	13
+#define JF2	10
+#define JF3 11
+#define JF4	12
+
 //#define true 1
 //#define false 0
 
@@ -27,6 +32,11 @@ char *simpleColor = (char *)malloc(sizeof(char) * 1280*720*3);
 
 #define DATA_SIZE UDP_SEND_BUFSIZE-sizeof(int)
 
+XGpioPs instXGpioPs;
+XGpioPs_Config *configXGpioPs;
+
+int initflg = false;
+int sof = false;
 void print_app_header(void)
 {
 	xil_printf("UDP client connecting to %s on port %d\r\n",
@@ -253,10 +263,18 @@ void transfer_data(void)
 			//u64_t diff_ms = now - client.start_time;
 			//udp_conn_report(diff_ms, INTER_REPORT);
 			ptrCounter = 0;
+			sof = true;
+			XGpioPs_WritePin(&instXGpioPs, JF2, 0);
 			return;
 		}
 		else{
 			//1~1925回(0~1924)
+
+			if(sof){
+				XGpioPs_WritePin(&instXGpioPs, JF1, 0);
+				XGpioPs_WritePin(&instXGpioPs, JF2, 1);
+				sof = false;
+			}
 			udp_packet_send(!FINISH);
 			ptrCounter += UDP_SEND_BUFSIZE-sizeof(int);//+=1436byte
 		}
@@ -295,8 +313,18 @@ void start_application(void)
 	usleep(10);
 	reset_stats();
 
-	xil_printf("\r\n\r\nstart\r\n\r\n");
+	configXGpioPs = XGpioPs_LookupConfig(XPAR_PS7_GPIO_0_DEVICE_ID);
+	XGpioPs_CfgInitialize(&instXGpioPs, configXGpioPs, configXGpioPs->BaseAddr);
+	/* Set MIO7 as output */
+	XGpioPs_SetDirectionPin(&instXGpioPs, JF1, 1);
+	XGpioPs_SetOutputEnablePin(&instXGpioPs, JF1, 1);
+	XGpioPs_SetDirectionPin(&instXGpioPs, JF2, 1);
+	XGpioPs_SetOutputEnablePin(&instXGpioPs, JF2, 1);
+	XGpioPs_WritePin(&instXGpioPs, JF1, 0);
+	XGpioPs_WritePin(&instXGpioPs, JF2, 0);
 
+	xil_printf("\r\n\r\nstart\r\n\r\n");
+	initflg = true;
 //	for(u64 i=0; i<1280*720*3; i++){
 //		*(simpleColor+i) = 0xFF;
 //	}
@@ -310,6 +338,10 @@ void start_application(void)
 //前のフレームのポインターを渡してくるのでframe_pointerに入れる。
 void update_address(char *pointer){
 	// frame_pointerにコピペ
+	if(initflg) {
+		XGpioPs_WritePin(&instXGpioPs, JF1, 1);
+	}
+
 	sendFinished = false;
 	frame_pointer = pointer;
 	//xil_printf("frame_pointer: 0x%x\n\r",frame_pointer);

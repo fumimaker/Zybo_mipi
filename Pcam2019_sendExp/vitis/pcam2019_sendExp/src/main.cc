@@ -14,6 +14,7 @@
 #include "udp_perf_client.h"
 #include "udp_main.h"
 
+
 #define IRPT_CTL_DEVID 		XPAR_PS7_SCUGIC_0_DEVICE_ID
 #define GPIO_DEVID			XPAR_PS7_GPIO_0_DEVICE_ID
 #define GPIO_IRPT_ID		XPAR_PS7_GPIO_0_INTR
@@ -106,6 +107,8 @@ int main()
 	pipeline_mode_change(vdma_driver, cam, vid, Resolution::R1280_720_60_PP, OV5640_cfg::mode_t::MODE_720P_1280_720_60fps);
 	//pipeline_mode_change(vdma_driver, cam, vid, Resolution::R1920_1080_60_PP, OV5640_cfg::mode_t::MODE_1080P_1920_1080_30fps);
 	xil_printf("Video init done.\r\n");
+
+
 
 
 	udp_main(); //init

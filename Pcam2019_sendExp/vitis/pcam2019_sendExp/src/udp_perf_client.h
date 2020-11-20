@@ -39,11 +39,15 @@
 #include "platform.h"
 #include <sleep.h>
 
+#include "xgpiops.h"
+
 void platform_enable_interrupts(void);
 void start_application(void);
 void transfer_data(void);
 void print_app_header(void);
 void update_address(char *pointer);
+
+
 
 /* used as indices into kLabel[] */
 enum {
