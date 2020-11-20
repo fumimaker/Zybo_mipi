@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="ASCII"?>
+<sdkproject:SdkProject xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:sdkproject="http://www.xilinx.com/sdkproject" name="pcam2019Exp" location="C:/Github/Zybo_mipi/Pcam2019_sendExp/vitis/pcam2019Exp" platform="C:/Github/Zybo_mipi/Pcam2019_sendExp/vitis/pcam2019SendExp/export/pcam2019SendExp/pcam2019SendExp.xpfm" platformUID="xilinx:::0.0(custom)" systemProject="pcam2019Exp_system" sysConfig="pcam2019SendExp" runtime="C/C++" cpu="standalone_domain" cpuInstance="ps7_cortexa9_0" os="standalone" language="CPP" mssSignature="8c8db7aadfeb1dd14c0f037ff8769ab8">
+  <configuration name="Debug" id="xilinx.gnu.armv7.exe.debug.1784363148">
+    <configBuildOptions xsi:type="sdkproject:SdkOptions"/>
+    <lastBuildOptions xsi:type="sdkproject:SdkOptions"/>
+  </configuration>
+  <configuration name="Release" id="xilinx.gnu.armv7.exe.release.1085950946" dirty="true">
+    <configBuildOptions xsi:type="sdkproject:SdkOptions"/>
+  </configuration>
+  <template appTemplateName="empty_application"/>
+</sdkproject:SdkProject>

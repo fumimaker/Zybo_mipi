@@ -17,7 +17,10 @@ proc create_report { reportName command } {
     send_msg_id runtcl-5 warning "$msg"
   }
 }
+set_param general.maxThreads 8
 set_param chipscope.maxJobs 3
+set_msg_config -id {Synth 8-256} -limit 10000
+set_msg_config -id {Synth 8-638} -limit 10000
 create_project -in_memory -part xc7z020clg400-1
 
 set_param project.singleFileAddWarning.threshold 0
@@ -33,7 +36,7 @@ set_property ip_repo_paths c:/Github/Zybo_mipi/Pcam2019/Zybo-Z7-20-pcam-5c-2019.
 update_ip_catalog
 set_property ip_output_repo c:/Github/Zybo_mipi/Pcam2019_sendExp/Pcam2019_sendExp.cache/ip [current_project]
 set_property ip_cache_permissions {read write} [current_project]
-read_vhdl -library xil_defaultlib C:/Github/Zybo_mipi/Pcam2019_sendExp/Pcam2019_sendExp.srcs/sources_1/imports/hdl/system_wrapper.vhd
+read_vhdl -library xil_defaultlib C:/Github/Zybo_mipi/Pcam2019_sendExp/Pcam2019_sendExp.srcs/sources_1/bd/system/hdl/system_wrapper.vhd
 add_files C:/Github/Zybo_mipi/Pcam2019_sendExp/Pcam2019_sendExp.srcs/sources_1/bd/system/system.bd
 set_property used_in_implementation false [get_files -all c:/Github/Zybo_mipi/Pcam2019_sendExp/Pcam2019_sendExp.srcs/sources_1/bd/system/ip/system_AXI_GammaCorrection_0_0/xdc/AXI_GammaCorrection.xdc]
 set_property used_in_implementation false [get_files -all c:/Github/Zybo_mipi/Pcam2019_sendExp/Pcam2019_sendExp.srcs/sources_1/bd/system/ip/system_MIPI_CSI_2_RX_0_0/hdl/cdc_fifo/cdc_fifo.xdc]

@@ -79,3 +79,128 @@ con
 
 04:15:29 INFO  : Launch script is exported to file 'C:\Github\Zybo_mipi\Pcam2019_sendExp\vitis\.sdk\launch_scripts\single_application_debug\systemdebugger_pcam2019exp_system_standalone.tcl'
 04:19:20 INFO  : Disconnected from the channel tcfchan#5.
+18:01:13 INFO  : Launching XSCT server: xsct.bat -n  -interactive C:\Github\Zybo_mipi\Pcam2019_sendExp\vitis\temp_xsdb_launch_script.tcl
+18:01:15 INFO  : XSCT server has started successfully.
+18:01:17 INFO  : Registering command handlers for Vitis TCF services
+18:01:28 INFO  : Successfully done setting XSCT server connection channel  
+18:01:29 INFO  : plnx-install-location is set to ''
+18:01:29 INFO  : Successfully done setting workspace for the tool. 
+18:01:29 INFO  : Successfully done query RDI_DATADIR 
+18:01:32 INFO  : Successfully done sdx_reload_mss "C:/Github/Zybo_mipi/Pcam2019_sendExp/vitis/pcam2019SendExp/zynq_fsbl/zynq_fsbl_bsp/system.mss"
+18:01:34 INFO  : Successfully done sdx_reload_mss "C:/Github/Zybo_mipi/Pcam2019_sendExp/vitis/pcam2019SendExp/ps7_cortexa9_0/standalone_domain/bsp/system.mss"
+18:23:45 INFO  : Hardware specification for platform project 'pcam2019SendExp' is updated.
+18:23:53 INFO  : Successfully done sdx_reload_mss "C:/Github/Zybo_mipi/Pcam2019_sendExp/vitis/pcam2019SendExp/zynq_fsbl/zynq_fsbl_bsp/system.mss"
+18:23:54 INFO  : Successfully done sdx_reload_mss "C:/Github/Zybo_mipi/Pcam2019_sendExp/vitis/pcam2019SendExp/ps7_cortexa9_0/standalone_domain/bsp/system.mss"
+18:27:31 INFO  : Checking for BSP changes to sync application flags for project 'pcam2019Exp'...
+18:27:31 ERROR : Failed to get platform details for the project 'pcam2019Exp'. Cannot sync application flags.
+18:27:35 ERROR : Failed to compute checksum of hardware specification file used by project 'pcam2019Exp'
+18:27:38 ERROR : Hardware specification file is not configured properly in the launch configuration 'SystemDebugger_pcam2019Exp_system_Standalone'. 
+Make sure that the application 'pcam2019Exp' is built properly for configuration 'Debug' before launching.
+18:29:50 INFO  : Launching XSCT server: xsct.bat -n  -interactive C:\Github\Zybo_mipi\Pcam2019_sendExp\vitis\temp_xsdb_launch_script.tcl
+18:29:52 INFO  : XSCT server has started successfully.
+18:29:54 INFO  : Registering command handlers for Vitis TCF services
+18:29:59 INFO  : Successfully done setting XSCT server connection channel  
+18:30:00 INFO  : plnx-install-location is set to ''
+18:30:00 INFO  : Successfully done setting workspace for the tool. 
+18:30:00 INFO  : Successfully done query RDI_DATADIR 
+18:30:01 INFO  : Successfully done sdx_reload_mss "C:/Github/Zybo_mipi/Pcam2019_sendExp/vitis/pcam2019SendExp/zynq_fsbl/zynq_fsbl_bsp/system.mss"
+18:30:03 INFO  : Successfully done sdx_reload_mss "C:/Github/Zybo_mipi/Pcam2019_sendExp/vitis/pcam2019SendExp/ps7_cortexa9_0/standalone_domain/bsp/system.mss"
+18:30:50 INFO  : (SwPlatform) Successfully done update_mss 
+18:30:50 INFO  : No changes in MSS file content so sources will not be generated.
+18:30:55 INFO  : Checking for BSP changes to sync application flags for project 'pcam2019Exp'...
+18:30:58 INFO  : The hardware specfication used by project 'pcam2019Exp' is out of sync with the platform. Resource files extracted from the hardware specfiication will be updated.
+18:30:58 INFO  : The file 'C:\Github\Zybo_mipi\Pcam2019_sendExp\vitis\pcam2019Exp\_ide\bitstream\system_wrapper.bit' stored in project is removed.
+18:30:59 INFO  : The updated bitstream files are copied from platform to folder 'C:\Github\Zybo_mipi\Pcam2019_sendExp\vitis\pcam2019Exp\_ide\bitstream' in project 'pcam2019Exp'.
+18:30:59 INFO  : The file 'C:\Github\Zybo_mipi\Pcam2019_sendExp\vitis\pcam2019Exp\_ide\psinit\ps7_init.tcl' stored in project is removed.
+18:31:05 INFO  : The updated ps init files are copied from platform to folder 'C:\Github\Zybo_mipi\Pcam2019_sendExp\vitis\pcam2019Exp\_ide\psinit' in project 'pcam2019Exp'.
+18:31:29 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+18:31:30 INFO  : Jtag cable 'Digilent Zybo Z7 210351A6C9E3A' is selected.
+18:31:30 INFO  : 'jtag frequency' command is executed.
+18:31:31 INFO  : Context for 'APU' is selected.
+18:31:31 INFO  : System reset is completed.
+18:31:34 INFO  : 'after 3000' command is executed.
+18:31:35 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351A6C9E3A" && level==0} -index 1' command is executed.
+18:31:38 INFO  : FPGA configured successfully with bitstream "C:/Github/Zybo_mipi/Pcam2019_sendExp/vitis/pcam2019Exp/_ide/bitstream/system_wrapper.bit"
+18:31:39 INFO  : Context for 'APU' is selected.
+18:31:39 INFO  : Hardware design information is loaded from 'C:/Github/Zybo_mipi/Pcam2019_sendExp/vitis/pcam2019SendExp/export/pcam2019SendExp/hw/system_wrapper.xsa'.
+18:31:39 INFO  : 'configparams force-mem-access 1' command is executed.
+18:31:39 INFO  : Context for 'APU' is selected.
+18:31:39 INFO  : Sourcing of 'C:/Github/Zybo_mipi/Pcam2019_sendExp/vitis/pcam2019Exp/_ide/psinit/ps7_init.tcl' is done.
+18:31:40 INFO  : 'ps7_init' command is executed.
+18:31:40 INFO  : 'ps7_post_config' command is executed.
+18:31:40 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+18:31:41 INFO  : The application 'C:/Github/Zybo_mipi/Pcam2019_sendExp/vitis/pcam2019Exp/Debug/pcam2019Exp.elf' is downloaded to processor 'ps7_cortexa9_0'.
+18:31:41 INFO  : 'configparams force-mem-access 0' command is executed.
+18:31:41 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~"APU*"}
+rst -system
+after 3000
+targets -set -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351A6C9E3A" && level==0} -index 1
+fpga -file C:/Github/Zybo_mipi/Pcam2019_sendExp/vitis/pcam2019Exp/_ide/bitstream/system_wrapper.bit
+targets -set -nocase -filter {name =~"APU*"}
+loadhw -hw C:/Github/Zybo_mipi/Pcam2019_sendExp/vitis/pcam2019SendExp/export/pcam2019SendExp/hw/system_wrapper.xsa -mem-ranges [list {0x40000000 0xbfffffff}]
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*"}
+source C:/Github/Zybo_mipi/Pcam2019_sendExp/vitis/pcam2019Exp/_ide/psinit/ps7_init.tcl
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "*A9*#0"}
+dow C:/Github/Zybo_mipi/Pcam2019_sendExp/vitis/pcam2019Exp/Debug/pcam2019Exp.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+18:31:42 INFO  : Memory regions updated for context APU
+18:31:42 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+18:31:42 INFO  : 'con' command is executed.
+18:31:42 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*A9*#0"}
+con
+----------------End of Script----------------
+
+18:31:42 INFO  : Launch script is exported to file 'C:\Github\Zybo_mipi\Pcam2019_sendExp\vitis\.sdk\launch_scripts\single_application_debug\systemdebugger_pcam2019exp_system_standalone.tcl'
+19:25:06 INFO  : Hardware specification for platform project 'pcam2019SendExp' is updated.
+19:25:16 INFO  : Successfully done sdx_reload_mss "C:/Github/Zybo_mipi/Pcam2019_sendExp/vitis/pcam2019SendExp/zynq_fsbl/zynq_fsbl_bsp/system.mss"
+19:25:17 INFO  : Checking for BSP changes to sync application flags for project 'pcam2019Exp'...
+19:25:17 ERROR : Failed to get platform details for the project 'pcam2019Exp'. Cannot sync application flags.
+19:25:18 INFO  : Successfully done sdx_reload_mss "C:/Github/Zybo_mipi/Pcam2019_sendExp/vitis/pcam2019SendExp/ps7_cortexa9_0/standalone_domain/bsp/system.mss"
+19:25:29 ERROR : Hardware specification file is not configured properly in the launch configuration 'SystemDebugger_pcam2019Exp_system_Standalone'. 
+Make sure that the application 'pcam2019Exp' is built properly for configuration 'Debug' before launching.
+19:25:29 INFO  : Disconnected from the channel tcfchan#3.
+19:25:37 WARN  : Failed to closehw "C:/Github/Zybo_mipi/Pcam2019_sendExp/vitis/pcam2019SendExp/export/pcam2019SendExp/hw/system_wrapper.xsa"
+Reason: Cannot close hw design 'C:/Github/Zybo_mipi/Pcam2019_sendExp/vitis/pcam2019SendExp/export/pcam2019SendExp/hw/system_wrapper.xsa'.
+Design is not opened in the current session.
+
+19:25:37 ERROR : Failed to openhw "C:/Github/Zybo_mipi/Pcam2019_sendExp/vitis/pcam2019SendExp/export/pcam2019SendExp/hw/system_wrapper.xsa"
+Reason: ERROR: [Common 17-39] 'hsi::open_hw_design' failed due to earlier errors.
+
+19:25:40 ERROR : Hardware specification file is not configured properly in the launch configuration 'SystemDebugger_pcam2019Exp_system_Standalone'. 
+Make sure that the application 'pcam2019Exp' is built properly for configuration 'Debug' before launching.
+19:27:29 ERROR : Failed to openhw "C:/Github/Zybo_mipi/Pcam2019_sendExp/vitis/pcam2019SendExp/export/pcam2019SendExp/hw/system_wrapper.xsa"
+Reason: ERROR: [Common 17-39] 'hsi::open_hw_design' failed due to earlier errors.
+
+19:27:29 ERROR : Failed to openhw "C:/Github/Zybo_mipi/Pcam2019_sendExp/vitis/pcam2019SendExp/export/pcam2019SendExp/hw/system_wrapper.xsa"
+Reason: ERROR: [Common 17-39] 'hsi::open_hw_design' failed due to earlier errors.
+
+19:27:32 ERROR : Hardware specification file is not configured properly in the launch configuration 'Debugger_pcam2019Exp-Default'. 
+Make sure that the application 'pcam2019Exp' is built properly for configuration 'Debug' before launching.
+19:27:36 ERROR : Failed to openhw "C:/Github/Zybo_mipi/Pcam2019_sendExp/vitis/pcam2019SendExp/export/pcam2019SendExp/hw/system_wrapper.xsa"
+Reason: ERROR: [Common 17-39] 'hsi::open_hw_design' failed due to earlier errors.
+
+19:27:36 ERROR : Failed to openhw "C:/Github/Zybo_mipi/Pcam2019_sendExp/vitis/pcam2019SendExp/export/pcam2019SendExp/hw/system_wrapper.xsa"
+Reason: ERROR: [Common 17-39] 'hsi::open_hw_design' failed due to earlier errors.
+
+19:28:59 ERROR : Hardware specification file is not configured properly in the launch configuration 'Debugger_pcam2019Exp-Default'. 
+Make sure that the application 'pcam2019Exp' is built properly for configuration 'Debug' before launching.
+19:30:32 INFO  : Checking for BSP changes to sync application flags for project 'pcam2019Exp'...
+19:30:32 ERROR : Failed to get platform details for the project 'pcam2019Exp'. Cannot sync application flags.
+19:31:42 INFO  : Checking for BSP changes to sync application flags for project 'pcam2019Exp'...
+19:31:42 ERROR : Failed to get platform details for the project 'pcam2019Exp'. Cannot sync application flags.
+19:31:50 ERROR : Failed to compute checksum of hardware specification file used by project 'pcam2019Exp'
+19:33:13 INFO  : Checking for BSP changes to sync application flags for project 'pcam2019Exp'...
+19:33:13 ERROR : Failed to get platform details for the project 'pcam2019Exp'. Cannot sync application flags.
+19:33:20 ERROR : Failed to compute checksum of hardware specification file used by project 'pcam2019Exp'
+19:34:02 INFO  : Checking for BSP changes to sync application flags for project 'pcam2019Exp'...
+19:34:02 ERROR : Failed to get platform details for the project 'pcam2019Exp'. Cannot sync application flags.
+19:37:22 ERROR : Hardware specification file is not configured properly in the launch configuration 'Debugger_pcam2019Exp-Default'. 
+Make sure that the application 'pcam2019Exp' is built properly for configuration 'Debug' before launching.
