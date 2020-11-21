@@ -1,7 +1,7 @@
 // Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
 // --------------------------------------------------------------------------------
 // Tool Version: Vivado v.2019.2 (win64) Build 2708876 Wed Nov  6 21:40:23 MST 2019
-// Date        : Sat Nov 21 23:40:41 2020
+// Date        : Sun Nov 22 02:34:11 2020
 // Host        : DESKTOP-5VC2SBS running 64-bit major release  (build 9200)
 // Command     : write_verilog -force -mode synth_stub
 //               C:/Github/Zybo_mipi/Pcam2019_sendExp/Pcam2019_sendExp.srcs/sources_1/bd/system/ip/system_AXI_BayerToRGB_1_0/system_AXI_BayerToRGB_1_0_stub.v
@@ -17,8 +17,8 @@
 module system_AXI_BayerToRGB_1_0(StreamClk, sStreamReset_n, 
   s_axis_video_tready, s_axis_video_tdata, s_axis_video_tvalid, s_axis_video_tuser, 
   s_axis_video_tlast, m_axis_video_tready, m_axis_video_tdata, m_axis_video_tvalid, 
-  m_axis_video_tuser, m_axis_video_tlast, jb_p, jb_n)
-/* synthesis syn_black_box black_box_pad_pin="StreamClk,sStreamReset_n,s_axis_video_tready,s_axis_video_tdata[39:0],s_axis_video_tvalid,s_axis_video_tuser,s_axis_video_tlast,m_axis_video_tready,m_axis_video_tdata[31:0],m_axis_video_tvalid,m_axis_video_tuser,m_axis_video_tlast,jb_p[4:1],jb_n[4:1]" */;
+  m_axis_video_tuser, m_axis_video_tlast, jb_p, jb_n, RSTBTN, RSTLED)
+/* synthesis syn_black_box black_box_pad_pin="StreamClk,sStreamReset_n,s_axis_video_tready,s_axis_video_tdata[39:0],s_axis_video_tvalid,s_axis_video_tuser,s_axis_video_tlast,m_axis_video_tready,m_axis_video_tdata[31:0],m_axis_video_tvalid,m_axis_video_tuser,m_axis_video_tlast,jb_p[4:1],jb_n[4:1],RSTBTN,RSTLED" */;
   input StreamClk;
   input sStreamReset_n;
   output s_axis_video_tready;
@@ -33,4 +33,6 @@ module system_AXI_BayerToRGB_1_0(StreamClk, sStreamReset_n,
   output m_axis_video_tlast;
   output [4:1]jb_p;
   output [4:1]jb_n;
+  input RSTBTN;
+  output RSTLED;
 endmodule

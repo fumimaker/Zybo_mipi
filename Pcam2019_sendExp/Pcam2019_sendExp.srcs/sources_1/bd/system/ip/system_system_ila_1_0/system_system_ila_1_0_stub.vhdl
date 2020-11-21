@@ -1,10 +1,10 @@
 -- Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
 -- --------------------------------------------------------------------------------
 -- Tool Version: Vivado v.2019.2 (win64) Build 2708876 Wed Nov  6 21:40:23 MST 2019
--- Date        : Sun Nov 22 00:25:19 2020
+-- Date        : Sun Nov 22 00:25:17 2020
 -- Host        : DESKTOP-5VC2SBS running 64-bit major release  (build 9200)
--- Command     : write_vhdl -force -mode synth_stub
---               c:/Github/Zybo_mipi/Pcam2019_sendExp/Pcam2019_sendExp.srcs/sources_1/bd/system/ip/system_system_ila_1_0/system_system_ila_1_0_stub.vhdl
+-- Command     : write_vhdl -force -mode synth_stub -rename_top system_system_ila_1_0 -prefix
+--               system_system_ila_1_0_ system_system_ila_1_0_stub.vhdl
 -- Design      : system_system_ila_1_0
 -- Purpose     : Stub declaration of top-level module interface
 -- Device      : xc7z020clg400-1

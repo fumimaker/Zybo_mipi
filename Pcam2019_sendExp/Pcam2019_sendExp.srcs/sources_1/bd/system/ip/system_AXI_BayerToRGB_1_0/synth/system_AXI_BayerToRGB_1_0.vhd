@@ -46,7 +46,7 @@
 -- 
 -- DO NOT MODIFY THIS FILE.
 
--- IP VLNV: digilentinc.com:user:AXI_BayerToRGB:1.4
+-- IP VLNV: digilentinc.com:user:AXI_BayerToRGB:1.6
 -- IP Revision: 1
 
 LIBRARY ieee;
@@ -68,7 +68,9 @@ ENTITY system_AXI_BayerToRGB_1_0 IS
     m_axis_video_tuser : OUT STD_LOGIC;
     m_axis_video_tlast : OUT STD_LOGIC;
     jb_p : OUT STD_LOGIC_VECTOR(4 DOWNTO 1);
-    jb_n : OUT STD_LOGIC_VECTOR(4 DOWNTO 1)
+    jb_n : OUT STD_LOGIC_VECTOR(4 DOWNTO 1);
+    RSTBTN : IN STD_LOGIC;
+    RSTLED : OUT STD_LOGIC
   );
 END system_AXI_BayerToRGB_1_0;
 
@@ -96,7 +98,9 @@ ARCHITECTURE system_AXI_BayerToRGB_1_0_arch OF system_AXI_BayerToRGB_1_0 IS
       m_axis_video_tuser : OUT STD_LOGIC;
       m_axis_video_tlast : OUT STD_LOGIC;
       jb_p : OUT STD_LOGIC_VECTOR(4 DOWNTO 1);
-      jb_n : OUT STD_LOGIC_VECTOR(4 DOWNTO 1)
+      jb_n : OUT STD_LOGIC_VECTOR(4 DOWNTO 1);
+      RSTBTN : IN STD_LOGIC;
+      RSTLED : OUT STD_LOGIC
     );
   END COMPONENT AXI_BayerToRGB;
   ATTRIBUTE X_CORE_INFO : STRING;
@@ -145,6 +149,8 @@ BEGIN
       m_axis_video_tuser => m_axis_video_tuser,
       m_axis_video_tlast => m_axis_video_tlast,
       jb_p => jb_p,
-      jb_n => jb_n
+      jb_n => jb_n,
+      RSTBTN => RSTBTN,
+      RSTLED => RSTLED
     );
 END system_AXI_BayerToRGB_1_0_arch;

@@ -1,7 +1,7 @@
 --Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
 ----------------------------------------------------------------------------------
 --Tool Version: Vivado v.2019.2 (win64) Build 2708876 Wed Nov  6 21:40:23 MST 2019
---Date        : Sun Nov 22 00:23:05 2020
+--Date        : Sun Nov 22 02:35:32 2020
 --Host        : DESKTOP-5VC2SBS running 64-bit major release  (build 9200)
 --Command     : generate_target system.bd
 --Design      : system
@@ -3091,6 +3091,8 @@ entity system is
     FIXED_IO_ps_clk : inout STD_LOGIC;
     FIXED_IO_ps_porb : inout STD_LOGIC;
     FIXED_IO_ps_srstb : inout STD_LOGIC;
+    RSTBTN : in STD_LOGIC;
+    RSTLED : out STD_LOGIC;
     cam_gpio_tri_i : in STD_LOGIC_VECTOR ( 0 to 0 );
     cam_gpio_tri_o : out STD_LOGIC_VECTOR ( 0 to 0 );
     cam_gpio_tri_t : out STD_LOGIC_VECTOR ( 0 to 0 );
@@ -3683,6 +3685,8 @@ architecture STRUCTURE of system is
   component system_system_ila_0_0 is
   port (
     clk : in STD_LOGIC;
+    probe0 : in STD_LOGIC_VECTOR ( 4 downto 1 );
+    probe1 : in STD_LOGIC_VECTOR ( 4 downto 1 );
     SLOT_0_AXIS_tdata : in STD_LOGIC_VECTOR ( 31 downto 0 );
     SLOT_0_AXIS_tlast : in STD_LOGIC;
     SLOT_0_AXIS_tuser : in STD_LOGIC_VECTOR ( 0 to 0 );
@@ -3693,9 +3697,7 @@ architecture STRUCTURE of system is
     SLOT_1_AXIS_tuser : in STD_LOGIC_VECTOR ( 0 to 0 );
     SLOT_1_AXIS_tvalid : in STD_LOGIC;
     SLOT_1_AXIS_tready : in STD_LOGIC;
-    resetn : in STD_LOGIC;
-    probe0 : in STD_LOGIC_VECTOR ( 4 downto 1 );
-    probe1 : in STD_LOGIC_VECTOR ( 4 downto 1 )
+    resetn : in STD_LOGIC
   );
   end component system_system_ila_0_0;
   component system_AXI_GammaCorrection_0_0 is
@@ -3736,6 +3738,12 @@ architecture STRUCTURE of system is
     jc_p : out STD_LOGIC_VECTOR ( 4 downto 1 )
   );
   end component system_AXI_GammaCorrection_0_0;
+  component system_system_ila_1_0 is
+  port (
+    clk : in STD_LOGIC;
+    probe0 : in STD_LOGIC_VECTOR ( 0 to 0 )
+  );
+  end component system_system_ila_1_0;
   component system_AXI_BayerToRGB_1_0 is
   port (
     StreamClk : in STD_LOGIC;
@@ -3751,15 +3759,11 @@ architecture STRUCTURE of system is
     m_axis_video_tuser : out STD_LOGIC;
     m_axis_video_tlast : out STD_LOGIC;
     jb_p : out STD_LOGIC_VECTOR ( 4 downto 1 );
-    jb_n : out STD_LOGIC_VECTOR ( 4 downto 1 )
+    jb_n : out STD_LOGIC_VECTOR ( 4 downto 1 );
+    RSTBTN : in STD_LOGIC;
+    RSTLED : out STD_LOGIC
   );
   end component system_AXI_BayerToRGB_1_0;
-  component system_system_ila_1_0 is
-  port (
-    clk : in STD_LOGIC;
-    probe0 : in STD_LOGIC_VECTOR ( 0 to 0 )
-  );
-  end component system_system_ila_1_0;
   signal AXI_BayerToRGB_1_AXI_Stream_Master_TDATA : STD_LOGIC_VECTOR ( 31 downto 0 );
   attribute CONN_BUS_INFO : string;
   attribute CONN_BUS_INFO of AXI_BayerToRGB_1_AXI_Stream_Master_TDATA : signal is "AXI_BayerToRGB_1_AXI_Stream_Master xilinx.com:interface:axis:1.0 None TDATA";
@@ -3783,6 +3787,7 @@ architecture STRUCTURE of system is
   attribute CONN_BUS_INFO of AXI_BayerToRGB_1_AXI_Stream_Master_TVALID : signal is "AXI_BayerToRGB_1_AXI_Stream_Master xilinx.com:interface:axis:1.0 None TVALID";
   attribute DEBUG of AXI_BayerToRGB_1_AXI_Stream_Master_TVALID : signal is "true";
   attribute MARK_DEBUG of AXI_BayerToRGB_1_AXI_Stream_Master_TVALID : signal is std.standard.true;
+  signal AXI_BayerToRGB_1_RSTLED : STD_LOGIC;
   signal AXI_BayerToRGB_1_jb_n : STD_LOGIC_VECTOR ( 4 downto 1 );
   attribute DEBUG of AXI_BayerToRGB_1_jb_n : signal is "true";
   attribute MARK_DEBUG of AXI_BayerToRGB_1_jb_n : signal is std.standard.true;
@@ -3832,6 +3837,7 @@ architecture STRUCTURE of system is
   signal MIPI_D_PHY_RX_0_D_PHY_PPI_DL1_RXVALIDHS : STD_LOGIC;
   signal MIPI_D_PHY_RX_0_RxByteClkHS : STD_LOGIC;
   signal PixelClk_Generator_clk_out1 : STD_LOGIC;
+  signal RSTBTN_1 : STD_LOGIC;
   signal axi_mem_intercon_1_M00_AXI_AWADDR : STD_LOGIC_VECTOR ( 31 downto 0 );
   signal axi_mem_intercon_1_M00_AXI_AWBURST : STD_LOGIC_VECTOR ( 1 downto 0 );
   signal axi_mem_intercon_1_M00_AXI_AWCACHE : STD_LOGIC_VECTOR ( 3 downto 0 );
@@ -4244,6 +4250,8 @@ architecture STRUCTURE of system is
   attribute X_INTERFACE_INFO of hdmi_tx_data_n : signal is "digilentinc.com:interface:tmds:1.0 hdmi_tx DATA_N";
   attribute X_INTERFACE_INFO of hdmi_tx_data_p : signal is "digilentinc.com:interface:tmds:1.0 hdmi_tx DATA_P";
 begin
+  RSTBTN_1 <= RSTBTN;
+  RSTLED <= AXI_BayerToRGB_1_RSTLED;
   cam_gpio_tri_o(0) <= processing_system7_0_GPIO_0_TRI_O(0);
   cam_gpio_tri_t(0) <= processing_system7_0_GPIO_0_TRI_T(0);
   cam_iic_scl_o <= processing_system7_0_IIC_0_SCL_O;
@@ -4270,6 +4278,8 @@ begin
   processing_system7_0_IIC_0_SDA_I <= cam_iic_sda_i;
 AXI_BayerToRGB_1: component system_AXI_BayerToRGB_1_0
      port map (
+      RSTBTN => RSTBTN_1,
+      RSTLED => AXI_BayerToRGB_1_RSTLED,
       StreamClk => mm_clk_150,
       jb_n(4 downto 1) => AXI_BayerToRGB_1_jb_n(4 downto 1),
       jb_p(4 downto 1) => AXI_BayerToRGB_1_jb_p(4 downto 1),

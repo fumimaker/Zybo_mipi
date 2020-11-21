@@ -1,7 +1,7 @@
 --Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
 ----------------------------------------------------------------------------------
 --Tool Version: Vivado v.2019.2 (win64) Build 2708876 Wed Nov  6 21:40:23 MST 2019
---Date        : Sun Nov 22 00:23:05 2020
+--Date        : Sun Nov 22 02:35:32 2020
 --Host        : DESKTOP-5VC2SBS running 64-bit major release  (build 9200)
 --Command     : generate_target system_wrapper.bd
 --Design      : system_wrapper
@@ -34,6 +34,8 @@ entity system_wrapper is
     FIXED_IO_ps_clk : inout STD_LOGIC;
     FIXED_IO_ps_porb : inout STD_LOGIC;
     FIXED_IO_ps_srstb : inout STD_LOGIC;
+    RSTBTN : in STD_LOGIC;
+    RSTLED : out STD_LOGIC;
     cam_gpio_tri_io : inout STD_LOGIC_VECTOR ( 0 to 0 );
     cam_iic_scl_io : inout STD_LOGIC;
     cam_iic_sda_io : inout STD_LOGIC;
@@ -67,6 +69,7 @@ architecture STRUCTURE of system_wrapper is
     jb_p : out STD_LOGIC_VECTOR ( 4 downto 1 );
     jb_n : out STD_LOGIC_VECTOR ( 4 downto 1 );
     jc_p : out STD_LOGIC_VECTOR ( 4 downto 1 );
+    RSTBTN : in STD_LOGIC;
     cam_iic_sda_i : in STD_LOGIC;
     cam_iic_sda_o : out STD_LOGIC;
     cam_iic_sda_t : out STD_LOGIC;
@@ -102,7 +105,8 @@ architecture STRUCTURE of system_wrapper is
     hdmi_tx_clk_p : out STD_LOGIC;
     hdmi_tx_clk_n : out STD_LOGIC;
     hdmi_tx_data_p : out STD_LOGIC_VECTOR ( 2 downto 0 );
-    hdmi_tx_data_n : out STD_LOGIC_VECTOR ( 2 downto 0 )
+    hdmi_tx_data_n : out STD_LOGIC_VECTOR ( 2 downto 0 );
+    RSTLED : out STD_LOGIC
   );
   end component system;
   component IOBUF is
@@ -168,6 +172,8 @@ system_i: component system
       FIXED_IO_ps_clk => FIXED_IO_ps_clk,
       FIXED_IO_ps_porb => FIXED_IO_ps_porb,
       FIXED_IO_ps_srstb => FIXED_IO_ps_srstb,
+      RSTBTN => RSTBTN,
+      RSTLED => RSTLED,
       cam_gpio_tri_i(0) => cam_gpio_tri_i_0(0),
       cam_gpio_tri_o(0) => cam_gpio_tri_o_0(0),
       cam_gpio_tri_t(0) => cam_gpio_tri_t_0(0),

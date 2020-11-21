@@ -456,11 +456,11 @@
         <spirit:parameters>
           <spirit:parameter>
             <spirit:name>GENtimestamp</spirit:name>
-            <spirit:value>Sat Nov 21 14:39:49 UTC 2020</spirit:value>
+            <spirit:value>Sat Nov 21 17:33:13 UTC 2020</spirit:value>
           </spirit:parameter>
           <spirit:parameter>
             <spirit:name>outputProductCRC</spirit:name>
-            <spirit:value>9:6287aa76</spirit:value>
+            <spirit:value>9:2be76917</spirit:value>
           </spirit:parameter>
         </spirit:parameters>
       </spirit:view>
@@ -471,7 +471,7 @@
         <spirit:parameters>
           <spirit:parameter>
             <spirit:name>outputProductCRC</spirit:name>
-            <spirit:value>9:6287aa76</spirit:value>
+            <spirit:value>9:2be76917</spirit:value>
           </spirit:parameter>
         </spirit:parameters>
       </spirit:view>
@@ -487,11 +487,11 @@
         <spirit:parameters>
           <spirit:parameter>
             <spirit:name>GENtimestamp</spirit:name>
-            <spirit:value>Sat Nov 21 14:39:49 UTC 2020</spirit:value>
+            <spirit:value>Sat Nov 21 17:33:13 UTC 2020</spirit:value>
           </spirit:parameter>
           <spirit:parameter>
             <spirit:name>outputProductCRC</spirit:name>
-            <spirit:value>9:6287aa76</spirit:value>
+            <spirit:value>9:2be76917</spirit:value>
           </spirit:parameter>
         </spirit:parameters>
       </spirit:view>
@@ -506,11 +506,11 @@
         <spirit:parameters>
           <spirit:parameter>
             <spirit:name>GENtimestamp</spirit:name>
-            <spirit:value>Sat Nov 21 14:39:49 UTC 2020</spirit:value>
+            <spirit:value>Sat Nov 21 17:33:13 UTC 2020</spirit:value>
           </spirit:parameter>
           <spirit:parameter>
             <spirit:name>outputProductCRC</spirit:name>
-            <spirit:value>9:aa6fecbe</spirit:value>
+            <spirit:value>9:25c70082</spirit:value>
           </spirit:parameter>
         </spirit:parameters>
       </spirit:view>
@@ -526,11 +526,11 @@
         <spirit:parameters>
           <spirit:parameter>
             <spirit:name>GENtimestamp</spirit:name>
-            <spirit:value>Sat Nov 21 14:39:49 UTC 2020</spirit:value>
+            <spirit:value>Sat Nov 21 17:33:13 UTC 2020</spirit:value>
           </spirit:parameter>
           <spirit:parameter>
             <spirit:name>outputProductCRC</spirit:name>
-            <spirit:value>9:aa6fecbe</spirit:value>
+            <spirit:value>9:25c70082</spirit:value>
           </spirit:parameter>
         </spirit:parameters>
       </spirit:view>
@@ -544,11 +544,11 @@
         <spirit:parameters>
           <spirit:parameter>
             <spirit:name>GENtimestamp</spirit:name>
-            <spirit:value>Sat Nov 21 14:40:41 UTC 2020</spirit:value>
+            <spirit:value>Sat Nov 21 17:34:11 UTC 2020</spirit:value>
           </spirit:parameter>
           <spirit:parameter>
             <spirit:name>outputProductCRC</spirit:name>
-            <spirit:value>9:6287aa76</spirit:value>
+            <spirit:value>9:2be76917</spirit:value>
           </spirit:parameter>
         </spirit:parameters>
       </spirit:view>
@@ -752,6 +752,32 @@
           </spirit:wireTypeDefs>
         </spirit:wire>
       </spirit:port>
+      <spirit:port>
+        <spirit:name>RSTBTN</spirit:name>
+        <spirit:wire>
+          <spirit:direction>in</spirit:direction>
+          <spirit:wireTypeDefs>
+            <spirit:wireTypeDef>
+              <spirit:typeName>STD_LOGIC</spirit:typeName>
+              <spirit:viewNameRef>xilinx_anylanguagesynthesis</spirit:viewNameRef>
+              <spirit:viewNameRef>xilinx_anylanguagebehavioralsimulation</spirit:viewNameRef>
+            </spirit:wireTypeDef>
+          </spirit:wireTypeDefs>
+        </spirit:wire>
+      </spirit:port>
+      <spirit:port>
+        <spirit:name>RSTLED</spirit:name>
+        <spirit:wire>
+          <spirit:direction>out</spirit:direction>
+          <spirit:wireTypeDefs>
+            <spirit:wireTypeDef>
+              <spirit:typeName>STD_LOGIC</spirit:typeName>
+              <spirit:viewNameRef>xilinx_anylanguagesynthesis</spirit:viewNameRef>
+              <spirit:viewNameRef>xilinx_anylanguagebehavioralsimulation</spirit:viewNameRef>
+            </spirit:wireTypeDef>
+          </spirit:wireTypeDefs>
+        </spirit:wire>
+      </spirit:port>
     </spirit:ports>
     <spirit:modelParameters>
       <spirit:modelParameter xsi:type="spirit:nameValueTypeType" spirit:dataType="integer">
@@ -797,11 +823,15 @@
     <spirit:fileSet>
       <spirit:name>xilinx_anylanguagesynthesis_view_fileset</spirit:name>
       <spirit:file>
-        <spirit:name>../../ipshared/8882/hdl/LineBuffer.vhd</spirit:name>
+        <spirit:name>../../ipshared/39ee/hdl/LineBuffer.vhd</spirit:name>
         <spirit:fileType>vhdlSource</spirit:fileType>
       </spirit:file>
       <spirit:file>
-        <spirit:name>../../ipshared/8882/hdl/AXI_BayerToRGB.vhd</spirit:name>
+        <spirit:name>../../../../../../../../Pcam2019_sendExp/Pcam2019_sendExp.tmp/backup.txt</spirit:name>
+        <spirit:userFileType>mem</spirit:userFileType>
+      </spirit:file>
+      <spirit:file>
+        <spirit:name>../../ipshared/39ee/hdl/AXI_BayerToRGB.vhd</spirit:name>
         <spirit:fileType>vhdlSource</spirit:fileType>
       </spirit:file>
     </spirit:fileSet>
@@ -816,11 +846,15 @@
     <spirit:fileSet>
       <spirit:name>xilinx_anylanguagebehavioralsimulation_view_fileset</spirit:name>
       <spirit:file>
-        <spirit:name>../../ipshared/8882/hdl/LineBuffer.vhd</spirit:name>
+        <spirit:name>../../ipshared/39ee/hdl/LineBuffer.vhd</spirit:name>
         <spirit:fileType>vhdlSource</spirit:fileType>
       </spirit:file>
       <spirit:file>
-        <spirit:name>../../ipshared/8882/hdl/AXI_BayerToRGB.vhd</spirit:name>
+        <spirit:name>../../../../../../../../Pcam2019_sendExp/Pcam2019_sendExp.tmp/backup.txt</spirit:name>
+        <spirit:userFileType>mem</spirit:userFileType>
+      </spirit:file>
+      <spirit:file>
+        <spirit:name>../../ipshared/39ee/hdl/AXI_BayerToRGB.vhd</spirit:name>
         <spirit:fileType>vhdlSource</spirit:fileType>
       </spirit:file>
     </spirit:fileSet>
@@ -954,6 +988,37 @@
         <xilinx:tag xilinx:name="ui.data.coregen.dd@403e6c67_ARCHIVE_LOCATION">c:/Github/Zybo_mipi/Pcam2019/Zybo-Z7-20-pcam-5c-2019.1/vivado_proj/Zybo-Z7-20-pcam-5c.ipdefs/repo_0/local/ip/AXI_BayerToRGB</xilinx:tag>
         <xilinx:tag xilinx:name="ui.data.coregen.dd@5619f42c_ARCHIVE_LOCATION">c:/Github/Zybo_mipi/Pcam2019/Zybo-Z7-20-pcam-5c-2019.1/vivado_proj/Zybo-Z7-20-pcam-5c.ipdefs/repo_0/local/ip/AXI_BayerToRGB</xilinx:tag>
         <xilinx:tag xilinx:name="ui.data.coregen.dd@2a66621e_ARCHIVE_LOCATION">c:/Github/Zybo_mipi/Pcam2019/Zybo-Z7-20-pcam-5c-2019.1/vivado_proj/Zybo-Z7-20-pcam-5c.ipdefs/repo_0/local/ip/AXI_BayerToRGB</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@42713ed5_ARCHIVE_LOCATION">c:/Github/Zybo_mipi/Pcam2019/Zybo-Z7-20-pcam-5c-2019.1/vivado_proj/Zybo-Z7-20-pcam-5c.ipdefs/repo_0/local/ip/AXI_BayerToRGB</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@39371db9_ARCHIVE_LOCATION">c:/Github/Zybo_mipi/Pcam2019/Zybo-Z7-20-pcam-5c-2019.1/vivado_proj/Zybo-Z7-20-pcam-5c.ipdefs/repo_0/local/ip/AXI_BayerToRGB</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@49799f21_ARCHIVE_LOCATION">c:/Github/Zybo_mipi/Pcam2019/Zybo-Z7-20-pcam-5c-2019.1/vivado_proj/Zybo-Z7-20-pcam-5c.ipdefs/repo_0/local/ip/AXI_BayerToRGB</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@3fcecbcb_ARCHIVE_LOCATION">c:/Github/Zybo_mipi/Pcam2019/Zybo-Z7-20-pcam-5c-2019.1/vivado_proj/Zybo-Z7-20-pcam-5c.ipdefs/repo_0/local/ip/AXI_BayerToRGB</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@1a0c746_ARCHIVE_LOCATION">c:/Github/Zybo_mipi/Pcam2019/Zybo-Z7-20-pcam-5c-2019.1/vivado_proj/Zybo-Z7-20-pcam-5c.ipdefs/repo_0/local/ip/AXI_BayerToRGB</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@23d4aeab_ARCHIVE_LOCATION">c:/Github/Zybo_mipi/Pcam2019/Zybo-Z7-20-pcam-5c-2019.1/vivado_proj/Zybo-Z7-20-pcam-5c.ipdefs/repo_0/local/ip/AXI_BayerToRGB</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@70b77d33_ARCHIVE_LOCATION">c:/Github/Zybo_mipi/Pcam2019/Zybo-Z7-20-pcam-5c-2019.1/vivado_proj/Zybo-Z7-20-pcam-5c.ipdefs/repo_0/local/ip/AXI_BayerToRGB</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@67e6d3da_ARCHIVE_LOCATION">c:/Github/Zybo_mipi/Pcam2019/Zybo-Z7-20-pcam-5c-2019.1/vivado_proj/Zybo-Z7-20-pcam-5c.ipdefs/repo_0/local/ip/AXI_BayerToRGB</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@7ed5b50c_ARCHIVE_LOCATION">c:/Github/Zybo_mipi/Pcam2019/Zybo-Z7-20-pcam-5c-2019.1/vivado_proj/Zybo-Z7-20-pcam-5c.ipdefs/repo_0/local/ip/AXI_BayerToRGB</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@c1245b5_ARCHIVE_LOCATION">c:/Github/Zybo_mipi/Pcam2019/Zybo-Z7-20-pcam-5c-2019.1/vivado_proj/Zybo-Z7-20-pcam-5c.ipdefs/repo_0/local/ip/AXI_BayerToRGB</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@47390a78_ARCHIVE_LOCATION">c:/Github/Zybo_mipi/Pcam2019/Zybo-Z7-20-pcam-5c-2019.1/vivado_proj/Zybo-Z7-20-pcam-5c.ipdefs/repo_0/local/ip/AXI_BayerToRGB</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@6d09cb99_ARCHIVE_LOCATION">c:/Github/Zybo_mipi/Pcam2019/Zybo-Z7-20-pcam-5c-2019.1/vivado_proj/Zybo-Z7-20-pcam-5c.ipdefs/repo_0/local/ip/AXI_BayerToRGB</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@6366c99f_ARCHIVE_LOCATION">c:/Github/Zybo_mipi/Pcam2019/Zybo-Z7-20-pcam-5c-2019.1/vivado_proj/Zybo-Z7-20-pcam-5c.ipdefs/repo_0/local/ip/AXI_BayerToRGB</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@276a41a1_ARCHIVE_LOCATION">c:/Github/Zybo_mipi/Pcam2019/Zybo-Z7-20-pcam-5c-2019.1/vivado_proj/Zybo-Z7-20-pcam-5c.ipdefs/repo_0/local/ip/AXI_BayerToRGB</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@4fb01096_ARCHIVE_LOCATION">c:/Github/Zybo_mipi/Pcam2019/Zybo-Z7-20-pcam-5c-2019.1/vivado_proj/Zybo-Z7-20-pcam-5c.ipdefs/repo_0/local/ip/AXI_BayerToRGB</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@7100bf61_ARCHIVE_LOCATION">c:/Github/Zybo_mipi/Pcam2019/Zybo-Z7-20-pcam-5c-2019.1/vivado_proj/Zybo-Z7-20-pcam-5c.ipdefs/repo_0/local/ip/AXI_BayerToRGB</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@2fe69836_ARCHIVE_LOCATION">c:/Github/Zybo_mipi/Pcam2019/Zybo-Z7-20-pcam-5c-2019.1/vivado_proj/Zybo-Z7-20-pcam-5c.ipdefs/repo_0/local/ip/AXI_BayerToRGB</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@7bf1049a_ARCHIVE_LOCATION">c:/Github/Zybo_mipi/Pcam2019/Zybo-Z7-20-pcam-5c-2019.1/vivado_proj/Zybo-Z7-20-pcam-5c.ipdefs/repo_0/local/ip/AXI_BayerToRGB</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@10103c0f_ARCHIVE_LOCATION">c:/Github/Zybo_mipi/Pcam2019/Zybo-Z7-20-pcam-5c-2019.1/vivado_proj/Zybo-Z7-20-pcam-5c.ipdefs/repo_0/local/ip/AXI_BayerToRGB</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@24948e32_ARCHIVE_LOCATION">c:/Github/Zybo_mipi/Pcam2019/Zybo-Z7-20-pcam-5c-2019.1/vivado_proj/Zybo-Z7-20-pcam-5c.ipdefs/repo_0/local/ip/AXI_BayerToRGB</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@17bba11b_ARCHIVE_LOCATION">c:/Github/Zybo_mipi/Pcam2019/Zybo-Z7-20-pcam-5c-2019.1/vivado_proj/Zybo-Z7-20-pcam-5c.ipdefs/repo_0/local/ip/AXI_BayerToRGB</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@2247ed1b_ARCHIVE_LOCATION">c:/Github/Zybo_mipi/Pcam2019/Zybo-Z7-20-pcam-5c-2019.1/vivado_proj/Zybo-Z7-20-pcam-5c.ipdefs/repo_0/local/ip/AXI_BayerToRGB</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@18d6ebf6_ARCHIVE_LOCATION">c:/Github/Zybo_mipi/Pcam2019/Zybo-Z7-20-pcam-5c-2019.1/vivado_proj/Zybo-Z7-20-pcam-5c.ipdefs/repo_0/local/ip/AXI_BayerToRGB</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@18b2aeaa_ARCHIVE_LOCATION">c:/Github/Zybo_mipi/Pcam2019/Zybo-Z7-20-pcam-5c-2019.1/vivado_proj/Zybo-Z7-20-pcam-5c.ipdefs/repo_0/local/ip/AXI_BayerToRGB</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@369d0bd1_ARCHIVE_LOCATION">c:/Github/Zybo_mipi/Pcam2019/Zybo-Z7-20-pcam-5c-2019.1/vivado_proj/Zybo-Z7-20-pcam-5c.ipdefs/repo_0/local/ip/AXI_BayerToRGB</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@7c75410b_ARCHIVE_LOCATION">c:/Github/Zybo_mipi/Pcam2019/Zybo-Z7-20-pcam-5c-2019.1/vivado_proj/Zybo-Z7-20-pcam-5c.ipdefs/repo_0/local/ip/AXI_BayerToRGB</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@1d805672_ARCHIVE_LOCATION">c:/Github/Zybo_mipi/Pcam2019/Zybo-Z7-20-pcam-5c-2019.1/vivado_proj/Zybo-Z7-20-pcam-5c.ipdefs/repo_0/local/ip/AXI_BayerToRGB</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@39568282_ARCHIVE_LOCATION">c:/Github/Zybo_mipi/Pcam2019/Zybo-Z7-20-pcam-5c-2019.1/vivado_proj/Zybo-Z7-20-pcam-5c.ipdefs/repo_0/local/ip/AXI_BayerToRGB</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@1e3b09df_ARCHIVE_LOCATION">c:/Github/Zybo_mipi/Pcam2019/Zybo-Z7-20-pcam-5c-2019.1/vivado_proj/Zybo-Z7-20-pcam-5c.ipdefs/repo_0/local/ip/AXI_BayerToRGB</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@18868e58_ARCHIVE_LOCATION">c:/Github/Zybo_mipi/Pcam2019/Zybo-Z7-20-pcam-5c-2019.1/vivado_proj/Zybo-Z7-20-pcam-5c.ipdefs/repo_0/local/ip/AXI_BayerToRGB</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@124f729c_ARCHIVE_LOCATION">c:/Github/Zybo_mipi/Pcam2019/Zybo-Z7-20-pcam-5c-2019.1/vivado_proj/Zybo-Z7-20-pcam-5c.ipdefs/repo_0/local/ip/AXI_BayerToRGB</xilinx:tag>
       </xilinx:tags>
       <xilinx:configElementInfos>
         <xilinx:configElementInfo xilinx:referenceId="BUSIFPARAM_VALUE.AXI_SLAVE_INTERFACE.CLK_DOMAIN" xilinx:valueSource="ip_propagated" xilinx:valuePermission="bd_and_user"/>
@@ -991,8 +1056,8 @@
     <xilinx:packagingInfo>
       <xilinx:xilinxVersion>2019.2</xilinx:xilinxVersion>
       <xilinx:checksum xilinx:scope="busInterfaces" xilinx:value="209dbc26"/>
-      <xilinx:checksum xilinx:scope="fileGroups" xilinx:value="82ab8c51"/>
-      <xilinx:checksum xilinx:scope="ports" xilinx:value="0d654ad7"/>
+      <xilinx:checksum xilinx:scope="fileGroups" xilinx:value="7e268dcb"/>
+      <xilinx:checksum xilinx:scope="ports" xilinx:value="f1ff715f"/>
       <xilinx:checksum xilinx:scope="hdlParameters" xilinx:value="6980d0c4"/>
       <xilinx:checksum xilinx:scope="parameters" xilinx:value="8a0c55a8"/>
     </xilinx:packagingInfo>

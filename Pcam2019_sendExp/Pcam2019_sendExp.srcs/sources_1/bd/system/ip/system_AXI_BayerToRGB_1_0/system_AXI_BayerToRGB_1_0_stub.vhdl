@@ -1,7 +1,7 @@
 -- Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
 -- --------------------------------------------------------------------------------
 -- Tool Version: Vivado v.2019.2 (win64) Build 2708876 Wed Nov  6 21:40:23 MST 2019
--- Date        : Sat Nov 21 23:40:41 2020
+-- Date        : Sun Nov 22 02:34:11 2020
 -- Host        : DESKTOP-5VC2SBS running 64-bit major release  (build 9200)
 -- Command     : write_vhdl -force -mode synth_stub
 --               C:/Github/Zybo_mipi/Pcam2019_sendExp/Pcam2019_sendExp.srcs/sources_1/bd/system/ip/system_AXI_BayerToRGB_1_0/system_AXI_BayerToRGB_1_0_stub.vhdl
@@ -27,7 +27,9 @@ entity system_AXI_BayerToRGB_1_0 is
     m_axis_video_tuser : out STD_LOGIC;
     m_axis_video_tlast : out STD_LOGIC;
     jb_p : out STD_LOGIC_VECTOR ( 4 downto 1 );
-    jb_n : out STD_LOGIC_VECTOR ( 4 downto 1 )
+    jb_n : out STD_LOGIC_VECTOR ( 4 downto 1 );
+    RSTBTN : in STD_LOGIC;
+    RSTLED : out STD_LOGIC
   );
 
 end system_AXI_BayerToRGB_1_0;
@@ -36,7 +38,7 @@ architecture stub of system_AXI_BayerToRGB_1_0 is
 attribute syn_black_box : boolean;
 attribute black_box_pad_pin : string;
 attribute syn_black_box of stub : architecture is true;
-attribute black_box_pad_pin of stub : architecture is "StreamClk,sStreamReset_n,s_axis_video_tready,s_axis_video_tdata[39:0],s_axis_video_tvalid,s_axis_video_tuser,s_axis_video_tlast,m_axis_video_tready,m_axis_video_tdata[31:0],m_axis_video_tvalid,m_axis_video_tuser,m_axis_video_tlast,jb_p[4:1],jb_n[4:1]";
+attribute black_box_pad_pin of stub : architecture is "StreamClk,sStreamReset_n,s_axis_video_tready,s_axis_video_tdata[39:0],s_axis_video_tvalid,s_axis_video_tuser,s_axis_video_tlast,m_axis_video_tready,m_axis_video_tdata[31:0],m_axis_video_tvalid,m_axis_video_tuser,m_axis_video_tlast,jb_p[4:1],jb_n[4:1],RSTBTN,RSTLED";
 attribute x_core_info : string;
 attribute x_core_info of stub : architecture is "AXI_BayerToRGB,Vivado 2019.2";
 begin

@@ -1,7 +1,7 @@
 Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
 -------------------------------------------------------------------------------------------------
 | Tool Version              : Vivado v.2019.2 (win64) Build 2708876 Wed Nov  6 21:40:23 MST 2019
-| Date                      : Sun Nov 22 00:30:31 2020
+| Date                      : Sun Nov 22 02:39:07 2020
 | Host                      : DESKTOP-5VC2SBS running 64-bit major release  (build 9200)
 | Command                   : report_io -file system_wrapper_io_placed.rpt
 | Design                    : system_wrapper
@@ -25,7 +25,7 @@ Table of Contents
 +---------------+
 | Total User IO |
 +---------------+
-|           165 |
+|           167 |
 +---------------+
 
 
@@ -268,7 +268,7 @@ Table of Contents
 | M11        |                     |            | GND                     | GND         |                    |         |            |      |                     |                      |     0.0 |            |           |          |          |                  |              |                   |              |
 | M12        |                     |            | VCCINT                  | VCCINT      |                    |         |            |      |                     |                      |         |            |           |          |          |                  |              |                   |              |
 | M13        |                     |            | GND                     | GND         |                    |         |            |      |                     |                      |     0.0 |            |           |          |          |                  |              |                   |              |
-| M14        |                     | High Range | IO_L23P_T3_35           | User IO     |                    |      35 |            |      |                     |                      |         |            |           |          |          |                  |              |                   |              |
+| M14        | RSTLED              | High Range | IO_L23P_T3_35           | OUTPUT      | LVCMOS33           |      35 |         12 | SLOW |                     |            FP_VTT_50 |         | FIXED      |           |          |          | NONE             |              |                   |              |
 | M15        |                     | High Range | IO_L23N_T3_35           | User IO     |                    |      35 |            |      |                     |                      |         |            |           |          |          |                  |              |                   |              |
 | M16        |                     | High Range | VCCO_35                 | VCCO        |                    |      35 |            |      |                     |                      |    3.30 |            |           |          |          |                  |              |                   |              |
 | M17        |                     | High Range | IO_L8P_T1_AD10P_35      | User IO     |                    |      35 |            |      |                     |                      |         |            |           |          |          |                  |              |                   |              |
@@ -430,7 +430,7 @@ Table of Contents
 | Y13        |                     | High Range | IO_L20N_T3_13           | User IO     |                    |      13 |            |      |                     |                      |         |            |           |          |          |                  |              |                   |              |
 | Y14        |                     | High Range | IO_L8N_T1_34            | User IO     |                    |      34 |            |      |                     |                      |         |            |           |          |          |                  |              |                   |              |
 | Y15        |                     |            | GND                     | GND         |                    |         |            |      |                     |                      |     0.0 |            |           |          |          |                  |              |                   |              |
-| Y16        |                     | High Range | IO_L7P_T1_34            | User IO     |                    |      34 |            |      |                     |                      |         |            |           |          |          |                  |              |                   |              |
+| Y16        | RSTBTN              | High Range | IO_L7P_T1_34            | INPUT       | LVCMOS33           |      34 |            |      |                     |                 NONE |         | FIXED      |           |          |          | NONE             |              |                   |              |
 | Y17        |                     | High Range | IO_L7N_T1_34            | User IO     |                    |      34 |            |      |                     |                      |         |            |           |          |          |                  |              |                   |              |
 | Y18        |                     | High Range | IO_L17P_T2_34           | User IO     |                    |      34 |            |      |                     |                      |         |            |           |          |          |                  |              |                   |              |
 | Y19        |                     | High Range | IO_L17N_T2_34           | User IO     |                    |      34 |            |      |                     |                      |         |            |           |          |          |                  |              |                   |              |

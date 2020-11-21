@@ -179,6 +179,8 @@ proc create_root_design { parentCell } {
 
 
   # Create ports
+  set RSTBTN [ create_bd_port -dir I RSTBTN ]
+  set RSTLED [ create_bd_port -dir O RSTLED ]
   set dphy_clk_lp_n [ create_bd_port -dir I dphy_clk_lp_n ]
   set dphy_clk_lp_p [ create_bd_port -dir I dphy_clk_lp_p ]
   set dphy_data_hs_n [ create_bd_port -dir I -from 1 -to 0 dphy_data_hs_n ]
@@ -190,7 +192,7 @@ proc create_root_design { parentCell } {
   set jc_p [ create_bd_port -dir O -from 4 -to 1 jc_p ]
 
   # Create instance: AXI_BayerToRGB_1, and set properties
-  set AXI_BayerToRGB_1 [ create_bd_cell -type ip -vlnv digilentinc.com:user:AXI_BayerToRGB:1.4 AXI_BayerToRGB_1 ]
+  set AXI_BayerToRGB_1 [ create_bd_cell -type ip -vlnv digilentinc.com:user:AXI_BayerToRGB:1.6 AXI_BayerToRGB_1 ]
 
   # Create instance: AXI_GammaCorrection_0, and set properties
   set AXI_GammaCorrection_0 [ create_bd_cell -type ip -vlnv digilentinc.com:user:AXI_GammaCorrection:1.2 AXI_GammaCorrection_0 ]
@@ -1312,6 +1314,7 @@ connect_bd_intf_net -intf_net [get_bd_intf_nets MIPI_CSI_2_RX_0_m_axis_video] [g
   connect_bd_intf_net -intf_net v_tc_0_vtiming_out [get_bd_intf_pins v_axi4s_vid_out_0/vtiming_in] [get_bd_intf_pins vtg/vtiming_out]
 
   # Create port connections
+  connect_bd_net -net AXI_BayerToRGB_1_RSTLED [get_bd_ports RSTLED] [get_bd_pins AXI_BayerToRGB_1/RSTLED]
   connect_bd_net -net AXI_BayerToRGB_1_jb_n [get_bd_ports jb_n] [get_bd_pins AXI_BayerToRGB_1/jb_n] [get_bd_pins system_ila_0/probe0]
   set_property HDL_ATTRIBUTE.DEBUG {true} [get_bd_nets AXI_BayerToRGB_1_jb_n]
   connect_bd_net -net AXI_BayerToRGB_1_jb_p [get_bd_ports jb_p] [get_bd_pins AXI_BayerToRGB_1/jb_p] [get_bd_pins system_ila_0/probe1]
@@ -1321,6 +1324,7 @@ connect_bd_intf_net -intf_net [get_bd_intf_nets MIPI_CSI_2_RX_0_m_axis_video] [g
   connect_bd_net -net DVIClocking_0_aLockedOut [get_bd_pins DVIClocking_0/aLockedOut] [get_bd_pins rst_vid_clk_dyn/dcm_locked]
   connect_bd_net -net MIPI_D_PHY_RX_0_RxByteClkHS [get_bd_pins MIPI_CSI_2_RX_0/RxByteClkHS] [get_bd_pins MIPI_D_PHY_RX_0/RxByteClkHS]
   connect_bd_net -net PixelClk_Generator_clk_out1 [get_bd_pins DVIClocking_0/PixelClk] [get_bd_pins rgb2dvi_0/PixelClk] [get_bd_pins rst_vid_clk_dyn/slowest_sync_clk] [get_bd_pins v_axi4s_vid_out_0/vid_io_out_clk] [get_bd_pins vtg/clk]
+  connect_bd_net -net RSTBTN_1 [get_bd_ports RSTBTN] [get_bd_pins AXI_BayerToRGB_1/RSTBTN]
   connect_bd_net -net axi_vdma_0_mm2s_introut [get_bd_pins axi_vdma_0/mm2s_introut] [get_bd_pins xlconcat_0/In1]
   connect_bd_net -net axi_vdma_0_s2mm_introut [get_bd_pins axi_vdma_0/s2mm_introut] [get_bd_pins xlconcat_0/In2]
   connect_bd_net -net clk_wiz_0_locked [get_bd_pins clk_wiz_0/locked] [get_bd_pins rst_clk_wiz_0_50M/dcm_locked]
