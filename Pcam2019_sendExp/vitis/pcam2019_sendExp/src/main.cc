@@ -100,6 +100,7 @@ int main()
 	xil_printf("Timer for LWIP init done.\r\n");
 	OV5640 cam(iic_driver, gpio_driver);
 	xil_printf("OV5640 init done.\r\n");
+
 	AXI_VDMA<ScuGicInterruptController> vdma_driver(VDMA_DEVID, MEM_BASE_ADDR, irpt_ctl, VDMA_MM2S_IRPT_ID, VDMA_S2MM_IRPT_ID);
 	VideoOutput vid(XPAR_VTC_0_DEVICE_ID, XPAR_VIDEO_DYNCLK_DEVICE_ID);
 	xil_printf("VDMA init done.\r\n");

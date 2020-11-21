@@ -1,32 +1,25 @@
-01:42:45 **** Incremental Build of configuration Debug for project pcam2019_sendExp ****
+01:29:55 **** Incremental Build of configuration Debug for project pcam2019_sendExp ****
 make all 
 make --no-print-directory pre-build
 a9-linaro-pre-build-step
 ' '
 make --no-print-directory main-build
-'Building file: ../src/udp_perf_client.c'
+'Building file: ../src/main.cc'
 'Invoking: ARM v7 g++ compiler'
-arm-none-eabi-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/udp_perf_client.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -IC:/Github/Zybo_mipi/Pcam2019_sendExp/vitis/system_wrapper/export/system_wrapper/sw/system_wrapper/standalone_domain/bspinclude/include -MMD -MP -MF"src/udp_perf_client.d" -MT"src/udp_perf_client.o" -o "src/udp_perf_client.o" "../src/udp_perf_client.c"
-../src/udp_perf_client.c: In function 'void transfer_data()':
-../src/udp_perf_client.c:31:42: warning: '*' in boolean context, suggest '&&' instead [-Wint-in-bool-context]
- #define END_TIME ((u32)UDP_TIME_INTERVAL * (u32)1000)
-                  ~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~
-../src/udp_perf_client.c:237:7: note: in expansion of macro 'END_TIME'
-   if (END_TIME || REPORT_INTERVAL_TIME) { //END_TIME
-       ^~~~~~~~
-../src/udp_perf_client.c:29:60: warning: '*' in boolean context, suggest '&&' instead [-Wint-in-bool-context]
- #define REPORT_INTERVAL_TIME ((u32)INTERIM_REPORT_INTERVAL * (u32)1000)
-                              ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~
-../src/udp_perf_client.c:237:19: note: in expansion of macro 'REPORT_INTERVAL_TIME'
-   if (END_TIME || REPORT_INTERVAL_TIME) { //END_TIME
-                   ^~~~~~~~~~~~~~~~~~~~
-../src/udp_perf_client.c:29:60: warning: '*' in boolean context, suggest '&&' instead [-Wint-in-bool-context]
- #define REPORT_INTERVAL_TIME ((u32)INTERIM_REPORT_INTERVAL * (u32)1000)
-                              ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~
-../src/udp_perf_client.c:239:8: note: in expansion of macro 'REPORT_INTERVAL_TIME'
-    if (REPORT_INTERVAL_TIME) {
-        ^~~~~~~~~~~~~~~~~~~~
-'Finished building: ../src/udp_perf_client.c'
+arm-none-eabi-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -IC:/Github/Zybo_mipi/Pcam2019_sendExp/vitis/system_wrapper/export/system_wrapper/sw/system_wrapper/standalone_domain/bspinclude/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.cc"
+In file included from ../src/ov5640/TIMER.h:10,
+                 from ../src/main.cc:8:
+C:/Github/Zybo_mipi/Pcam2019_sendExp/vitis/system_wrapper/export/system_wrapper/sw/system_wrapper/standalone_domain/bspinclude/include/xtime_l.h:85:70: note: #pragma message: For the sleep routines, Global timer is being used
+ #pragma message ("For the sleep routines, Global timer is being used")
+                                                                      ^
+In file included from ../src/main.cc:6:
+../src/ov5640/AXI_VDMA.h: In instantiation of 'void digilent::AXI_VDMA<IrptCtl>::writeHandler(uint32_t) [with IrptCtl = digilent::ScuGicInterruptController; uint32_t = long unsigned int]':
+../src/ov5640/AXI_VDMA.h:62:25:   required from 'digilent::AXI_VDMA<IrptCtl>::AXI_VDMA(uint16_t, uint32_t, IrptCtl&, uint16_t, uint16_t) [with IrptCtl = digilent::ScuGicInterruptController; uint16_t = short unsigned int; uint32_t = long unsigned int]'
+../src/main.cc:104:123:   required from here
+../src/ov5640/AXI_VDMA.h:255:7: warning: variable 'prevFrame' set but not used [-Wunused-but-set-variable]
+   int prevFrame = 0;
+       ^~~~~~~~~
+'Finished building: ../src/main.cc'
 ' '
 'Building target: pcam2019_sendExp.elf'
 'Invoking: ARM v7 g++ linker'
@@ -40,5 +33,5 @@ arm-none-eabi-size pcam2019_sendExp.elf  |tee "pcam2019_sendExp.elf.size"
 'Finished building: pcam2019_sendExp.elf.size'
 ' '
 
-01:42:47 Build Finished (took 1s.391ms)
+01:29:57 Build Finished (took 2s.394ms)
 

@@ -1,7 +1,7 @@
 --Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
 ----------------------------------------------------------------------------------
 --Tool Version: Vivado v.2019.2 (win64) Build 2708876 Wed Nov  6 21:40:23 MST 2019
---Date        : Fri Nov 20 23:39:22 2020
+--Date        : Sun Nov 22 00:23:05 2020
 --Host        : DESKTOP-5VC2SBS running 64-bit major release  (build 9200)
 --Command     : generate_target system_wrapper.bd
 --Design      : system_wrapper
@@ -67,8 +67,6 @@ architecture STRUCTURE of system_wrapper is
     jb_p : out STD_LOGIC_VECTOR ( 4 downto 1 );
     jb_n : out STD_LOGIC_VECTOR ( 4 downto 1 );
     jc_p : out STD_LOGIC_VECTOR ( 4 downto 1 );
-    dphy_hs_clock_clk_p : in STD_LOGIC;
-    dphy_hs_clock_clk_n : in STD_LOGIC;
     cam_iic_sda_i : in STD_LOGIC;
     cam_iic_sda_o : out STD_LOGIC;
     cam_iic_sda_t : out STD_LOGIC;
@@ -81,6 +79,8 @@ architecture STRUCTURE of system_wrapper is
     FIXED_IO_ps_srstb : inout STD_LOGIC;
     FIXED_IO_ps_clk : inout STD_LOGIC;
     FIXED_IO_ps_porb : inout STD_LOGIC;
+    dphy_hs_clock_clk_p : in STD_LOGIC;
+    dphy_hs_clock_clk_n : in STD_LOGIC;
     cam_gpio_tri_i : in STD_LOGIC_VECTOR ( 0 to 0 );
     cam_gpio_tri_o : out STD_LOGIC_VECTOR ( 0 to 0 );
     cam_gpio_tri_t : out STD_LOGIC_VECTOR ( 0 to 0 );
