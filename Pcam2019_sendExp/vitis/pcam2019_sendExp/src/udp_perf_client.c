@@ -271,8 +271,8 @@ void transfer_data(void)
 			//1~1925‰ñ(0~1924)
 
 			if(sof){
-				XGpioPs_WritePin(&instXGpioPs, JF1, 0);
-				XGpioPs_WritePin(&instXGpioPs, JF2, 1);
+
+				XGpioPs_WritePin(&instXGpioPs, JF2, 0);
 				sof = false;
 			}
 			udp_packet_send(!FINISH);
@@ -339,6 +339,7 @@ void start_application(void)
 void update_address(char *pointer){
 	// frame_pointer‚ÉƒRƒsƒy
 	if(initflg) {
+		XGpioPs_WritePin(&instXGpioPs, JF2, 1);
 		XGpioPs_WritePin(&instXGpioPs, JF1, 1);
 	}
 

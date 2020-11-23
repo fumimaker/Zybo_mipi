@@ -83,8 +83,8 @@ vcom -work xpm -93 \
 "C:/Xilinx/Vivado/2019.2/data/ip/xpm/xpm_VCOMP.vhd" \
 
 vcom -work xil_defaultlib -93 \
-"../../../bd/system/ipshared/39ee/hdl/LineBuffer.vhd" \
-"../../../bd/system/ipshared/39ee/hdl/AXI_BayerToRGB.vhd" \
+"../../../bd/system/ipshared/3406/hdl/LineBuffer.vhd" \
+"../../../bd/system/ipshared/3406/hdl/AXI_BayerToRGB.vhd" \
 "../../../bd/system/ip/system_AXI_BayerToRGB_1_0/sim/system_AXI_BayerToRGB_1_0.vhd" \
 "../../../bd/system/ipshared/2055/hdl/StoredGammaCoefs.vhd" \
 "../../../bd/system/ipshared/2055/hdl/AXI_GammaCorrection.vhd" \
@@ -283,9 +283,6 @@ vlog -work xil_defaultlib  -v2k5 "+incdir+../../../../Pcam2019_sendExp.srcs/sour
 
 vcom -work xil_defaultlib -93 \
 "../../../bd/system/ip/system_system_ila_0_0/sim/system_system_ila_0_0.vhd" \
-"../../../bd/system/ip/system_system_ila_1_0/bd_0/sim/bd_15e9.vhd" \
-"../../../bd/system/ip/system_system_ila_1_0/bd_0/ip/ip_0/sim/bd_15e9_ila_lib_0.vhd" \
-"../../../bd/system/ip/system_system_ila_1_0/sim/system_system_ila_1_0.vhd" \
 
 vlog -work axi_protocol_converter_v2_1_20  -v2k5 "+incdir+../../../../Pcam2019_sendExp.srcs/sources_1/bd/system/ip/system_MIPI_CSI_2_RX_0_0/hdl/line_buffer/hdl" "+incdir+../../../../Pcam2019_sendExp.srcs/sources_1/bd/system/ipshared/798b/hdl" "+incdir+../../../../Pcam2019_sendExp.srcs/sources_1/bd/system/ipshared/4fba" "+incdir+../../../../Pcam2019_sendExp.srcs/sources_1/bd/system/ipshared/ec67/hdl" "+incdir+../../../../Pcam2019_sendExp.srcs/sources_1/bd/system/ipshared/2d50/hdl" "+incdir+../../../../Pcam2019_sendExp.srcs/sources_1/bd/system/ip/system_MIPI_CSI_2_RX_0_0/hdl/ila_rxclk/hdl/verilog" "+incdir+../../../../Pcam2019_sendExp.srcs/sources_1/bd/system/ip/system_MIPI_CSI_2_RX_0_0/hdl/ila_rxclk_lane/hdl/verilog" "+incdir+../../../../Pcam2019_sendExp.srcs/sources_1/bd/system/ip/system_MIPI_CSI_2_RX_0_0/hdl/ila_vidclk/hdl/verilog" "+incdir+../../../../Pcam2019_sendExp.srcs/sources_1/bd/system/ip/system_MIPI_D_PHY_RX_0_0/hdl/ila_sfen_rxclk/hdl/verilog" "+incdir+../../../../Pcam2019_sendExp.srcs/sources_1/bd/system/ip/system_MIPI_D_PHY_RX_0_0/hdl/ila_sfen_refclk/hdl/verilog" "+incdir+../../../../Pcam2019_sendExp.srcs/sources_1/bd/system/ip/system_MIPI_D_PHY_RX_0_0/hdl/ila_scnn_refclk/hdl/verilog" "+incdir+../../../../Pcam2019_sendExp.srcs/sources_1/bd/system/ip/system_processing_system7_0_0" "+incdir+../../../../Pcam2019_sendExp.srcs/sources_1/bd/system/ipshared/1b7e/hdl/verilog" "+incdir+../../../../Pcam2019_sendExp.srcs/sources_1/bd/system/ipshared/122e/hdl/verilog" "+incdir+../../../../Pcam2019_sendExp.srcs/sources_1/bd/system/ipshared/b205/hdl/verilog" "+incdir+../../../../Pcam2019_sendExp.srcs/sources_1/bd/system/ipshared/8f82/hdl/verilog" "+incdir+C:/Xilinx/Vivado/2019.2/data/xilinx_vip/include" \
 "../../../../Pcam2019_sendExp.srcs/sources_1/bd/system/ipshared/c4a6/hdl/axi_protocol_converter_v2_1_vl_rfs.v" \

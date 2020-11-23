@@ -158,7 +158,7 @@ int udp_main(void)
 	print_app_header();
 
 	/* start the application*/
-	start_application();
+	//start_application();
 	xil_printf("\r\n");
 	return 0;
 }

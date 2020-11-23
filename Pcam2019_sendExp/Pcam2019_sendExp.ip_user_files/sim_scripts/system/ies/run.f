@@ -18,8 +18,8 @@
   "C:/Xilinx/Vivado/2019.2/data/ip/xpm/xpm_VCOMP.vhd" \
 -endlib
 -makelib ies_lib/xil_defaultlib \
-  "../../../bd/system/ipshared/39ee/hdl/LineBuffer.vhd" \
-  "../../../bd/system/ipshared/39ee/hdl/AXI_BayerToRGB.vhd" \
+  "../../../bd/system/ipshared/3406/hdl/LineBuffer.vhd" \
+  "../../../bd/system/ipshared/3406/hdl/AXI_BayerToRGB.vhd" \
   "../../../bd/system/ip/system_AXI_BayerToRGB_1_0/sim/system_AXI_BayerToRGB_1_0.vhd" \
   "../../../bd/system/ipshared/2055/hdl/StoredGammaCoefs.vhd" \
   "../../../bd/system/ipshared/2055/hdl/AXI_GammaCorrection.vhd" \
@@ -218,9 +218,6 @@
 -endlib
 -makelib ies_lib/xil_defaultlib \
   "../../../bd/system/ip/system_system_ila_0_0/sim/system_system_ila_0_0.vhd" \
-  "../../../bd/system/ip/system_system_ila_1_0/bd_0/sim/bd_15e9.vhd" \
-  "../../../bd/system/ip/system_system_ila_1_0/bd_0/ip/ip_0/sim/bd_15e9_ila_lib_0.vhd" \
-  "../../../bd/system/ip/system_system_ila_1_0/sim/system_system_ila_1_0.vhd" \
 -endlib
 -makelib ies_lib/axi_protocol_converter_v2_1_20 \
   "../../../../Pcam2019_sendExp.srcs/sources_1/bd/system/ipshared/c4a6/hdl/axi_protocol_converter_v2_1_vl_rfs.v" \

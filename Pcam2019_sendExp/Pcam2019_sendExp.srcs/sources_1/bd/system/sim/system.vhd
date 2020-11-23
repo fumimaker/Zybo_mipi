@@ -1,7 +1,7 @@
 --Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
 ----------------------------------------------------------------------------------
 --Tool Version: Vivado v.2019.2 (win64) Build 2708876 Wed Nov  6 21:40:23 MST 2019
---Date        : Sun Nov 22 02:35:32 2020
+--Date        : Mon Nov 23 23:18:38 2020
 --Host        : DESKTOP-5VC2SBS running 64-bit major release  (build 9200)
 --Command     : generate_target system.bd
 --Design      : system
@@ -3119,7 +3119,7 @@ entity system is
     jc_p : out STD_LOGIC_VECTOR ( 4 downto 1 )
   );
   attribute CORE_GENERATION_INFO : string;
-  attribute CORE_GENERATION_INFO of system : entity is "system,IP_Integrator,{x_ipVendor=xilinx.com,x_ipLibrary=BlockDiagram,x_ipName=system,x_ipVersion=1.00.a,x_ipLanguage=VHDL,numBlks=35,numReposBlks=22,numNonXlnxBlks=5,numHierBlks=13,maxHierDepth=0,numSysgenBlks=0,numHlsBlks=0,numHdlrefBlks=1,numPkgbdBlks=0,bdsource=USER,da_axi4_cnt=1,da_board_cnt=2,da_clkrst_cnt=1,synth_mode=OOC_per_IP}";
+  attribute CORE_GENERATION_INFO of system : entity is "system,IP_Integrator,{x_ipVendor=xilinx.com,x_ipLibrary=BlockDiagram,x_ipName=system,x_ipVersion=1.00.a,x_ipLanguage=VHDL,numBlks=34,numReposBlks=21,numNonXlnxBlks=5,numHierBlks=13,maxHierDepth=0,numSysgenBlks=0,numHlsBlks=0,numHdlrefBlks=1,numPkgbdBlks=0,bdsource=USER,da_axi4_cnt=1,da_board_cnt=2,da_clkrst_cnt=1,synth_mode=OOC_per_IP}";
   attribute HW_HANDOFF : string;
   attribute HW_HANDOFF of system : entity is "system.hwdef";
 end system;
@@ -3738,12 +3738,6 @@ architecture STRUCTURE of system is
     jc_p : out STD_LOGIC_VECTOR ( 4 downto 1 )
   );
   end component system_AXI_GammaCorrection_0_0;
-  component system_system_ila_1_0 is
-  port (
-    clk : in STD_LOGIC;
-    probe0 : in STD_LOGIC_VECTOR ( 0 to 0 )
-  );
-  end component system_system_ila_1_0;
   component system_AXI_BayerToRGB_1_0 is
   port (
     StreamClk : in STD_LOGIC;
@@ -4108,8 +4102,6 @@ architecture STRUCTURE of system is
   signal rst_vid_clk_dyn_peripheral_aresetn : STD_LOGIC_VECTOR ( 0 to 0 );
   signal rst_vid_clk_dyn_peripheral_reset : STD_LOGIC_VECTOR ( 0 to 0 );
   signal s_axil_clk_50 : STD_LOGIC;
-  attribute DEBUG of s_axil_clk_50 : signal is "true";
-  attribute MARK_DEBUG of s_axil_clk_50 : signal is std.standard.true;
   signal v_axi4s_vid_out_0_locked : STD_LOGIC;
   signal v_axi4s_vid_out_0_vid_io_out_ACTIVE_VIDEO : STD_LOGIC;
   signal v_axi4s_vid_out_0_vid_io_out_DATA : STD_LOGIC_VECTOR ( 23 downto 0 );
@@ -5055,11 +5047,6 @@ system_ila_0: component system_system_ila_0_0
       probe0(4 downto 1) => AXI_BayerToRGB_1_jb_n(4 downto 1),
       probe1(4 downto 1) => AXI_BayerToRGB_1_jb_p(4 downto 1),
       resetn => rst_system_150M_peripheral_aresetn(0)
-    );
-system_ila_1: component system_system_ila_1_0
-     port map (
-      clk => processing_system7_0_FCLK_CLK0,
-      probe0(0) => s_axil_clk_50
     );
 v_axi4s_vid_out_0: component system_v_axi4s_vid_out_0_0
      port map (

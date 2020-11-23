@@ -232,7 +232,7 @@ public:
 	}
 	void readHandler(uint32_t irq_types)
 	{
-		//std::cout << "VDMA:read complete" << std::endl;
+		std::cout << "VDMA:read complete" << std::endl;
 
 //		int currentFrame = XAxiVdma_CurrFrameStore(&drv_inst_, XAXIVDMA_READ);
 //		int prevFrame = 0;
@@ -281,6 +281,7 @@ public:
 	{
 		std::cout << "VDMA:write error" << std::endl;
 	}
+
 	~AXI_VDMA() = default;
 private:
 	XAxiVdma drv_inst_;

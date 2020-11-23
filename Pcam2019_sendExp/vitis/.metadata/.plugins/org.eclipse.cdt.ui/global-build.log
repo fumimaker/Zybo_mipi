@@ -1,3 +1,9 @@
-02:42:09 **** Incremental Build of project system_wrapper ****
-buildplatform.bat 53437 system_wrapper no_domain_build 
-XSDB Server Channel: tcfchan#3
+Nothing to build in platform 'system_wrapper'
+
+00:13:12 **** Incremental Build of configuration Debug for project pcam2019_sendExp ****
+make all 
+make --no-print-directory pre-build
+a9-linaro-pre-build-step
+' '
+make --no-print-directory main-build
+make[1]: Nothing to be done for 'main-build'.
