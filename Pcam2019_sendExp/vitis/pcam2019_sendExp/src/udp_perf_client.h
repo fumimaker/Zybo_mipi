@@ -110,8 +110,8 @@ struct perf_stats {
 
 /* Server to connect with */
 //#define UDP_SERVER_IP_ADDRESS "192.168.11.28" //raspi3
-#define UDP_SERVER_IP_ADDRESS "192.168.11.28" //raspi3
-
+//#define UDP_SERVER_IP_ADDRESS "192.168.11.28" //raspi3
+#define UDP_SERVER_IP_ADDRESS "192.168.11.217" //pc
 /* UDP buffer length in bytes */
 #define UDP_SEND_BUFSIZE 1441
 
