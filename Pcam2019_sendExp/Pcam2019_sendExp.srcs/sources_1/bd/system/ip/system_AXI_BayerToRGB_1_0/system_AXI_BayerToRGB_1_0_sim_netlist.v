@@ -1,7 +1,7 @@
 // Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
 // --------------------------------------------------------------------------------
 // Tool Version: Vivado v.2019.2 (win64) Build 2708876 Wed Nov  6 21:40:23 MST 2019
-// Date        : Mon Nov 23 23:19:34 2020
+// Date        : Mon Dec 21 22:23:14 2020
 // Host        : DESKTOP-5VC2SBS running 64-bit major release  (build 9200)
 // Command     : write_verilog -force -mode funcsim
 //               C:/Github/Zybo_mipi/Pcam2019_sendExp/Pcam2019_sendExp.srcs/sources_1/bd/system/ip/system_AXI_BayerToRGB_1_0/system_AXI_BayerToRGB_1_0_sim_netlist.v
@@ -52,12 +52,10 @@ module system_AXI_BayerToRGB_1_0
   wire \<const0> ;
   wire RSTBTN;
   wire StreamClk;
-  wire [4:4]\^jb_n ;
-  wire [4:4]\^jb_p ;
+  wire [1:1]\^jb_n ;
   wire [29:0]\^m_axis_video_tdata ;
   wire m_axis_video_tlast;
   wire m_axis_video_tready;
-  wire m_axis_video_tuser;
   wire m_axis_video_tvalid;
   wire sStreamReset_n;
   wire [39:0]s_axis_video_tdata;
@@ -67,27 +65,26 @@ module system_AXI_BayerToRGB_1_0
   wire s_axis_video_tvalid;
 
   assign RSTLED = RSTBTN;
-  assign jb_n[4] = \^jb_n [4];
-  assign jb_n[3] = \^jb_n [4];
-  assign jb_n[2] = \^jb_n [4];
-  assign jb_n[1] = \^jb_n [4];
-  assign jb_p[4] = \^jb_p [4];
-  assign jb_p[3] = \^jb_p [4];
-  assign jb_p[2] = \^jb_p [4];
-  assign jb_p[1] = \^jb_p [4];
+  assign jb_n[4] = \^jb_n [1];
+  assign jb_n[3] = \^jb_n [1];
+  assign jb_n[2] = \^jb_n [1];
+  assign jb_n[1] = \^jb_n [1];
+  assign jb_p[4] = s_axis_video_tuser;
+  assign jb_p[3] = s_axis_video_tuser;
+  assign jb_p[2] = s_axis_video_tuser;
+  assign jb_p[1] = s_axis_video_tuser;
   assign m_axis_video_tdata[31] = \<const0> ;
   assign m_axis_video_tdata[30] = \<const0> ;
   assign m_axis_video_tdata[29:0] = \^m_axis_video_tdata [29:0];
+  assign m_axis_video_tuser = \^jb_n [1];
   GND GND
        (.G(\<const0> ));
   system_AXI_BayerToRGB_1_0_AXI_BayerToRGB U0
-       (.RSTBTN(RSTBTN),
-        .StreamClk(StreamClk),
+       (.StreamClk(StreamClk),
         .jb_n(\^jb_n ),
         .m_axis_video_tdata(\^m_axis_video_tdata ),
         .m_axis_video_tlast(m_axis_video_tlast),
         .m_axis_video_tready(m_axis_video_tready),
-        .m_axis_video_tuser(m_axis_video_tuser),
         .m_axis_video_tvalid(m_axis_video_tvalid),
         .sStreamReset_n(sStreamReset_n),
         .s_axis_video_tdata(s_axis_video_tdata),
@@ -95,43 +92,33 @@ module system_AXI_BayerToRGB_1_0
         .s_axis_video_tready(s_axis_video_tready),
         .s_axis_video_tuser(s_axis_video_tuser),
         .s_axis_video_tvalid(s_axis_video_tvalid));
-  LUT2 #(
-    .INIT(4'h8)) 
-    \jb_p[1]_INST_0 
-       (.I0(RSTBTN),
-        .I1(s_axis_video_tuser),
-        .O(\^jb_p ));
 endmodule
 
 (* ORIG_REF_NAME = "AXI_BayerToRGB" *) 
 module system_AXI_BayerToRGB_1_0_AXI_BayerToRGB
-   (m_axis_video_tuser,
-    m_axis_video_tlast,
-    m_axis_video_tvalid,
-    s_axis_video_tready,
+   (m_axis_video_tdata,
     jb_n,
-    m_axis_video_tdata,
+    m_axis_video_tlast,
+    s_axis_video_tready,
+    m_axis_video_tvalid,
     StreamClk,
     s_axis_video_tvalid,
     m_axis_video_tready,
     sStreamReset_n,
     s_axis_video_tdata,
     s_axis_video_tuser,
-    RSTBTN,
     s_axis_video_tlast);
-  output m_axis_video_tuser;
-  output m_axis_video_tlast;
-  output m_axis_video_tvalid;
-  output s_axis_video_tready;
-  output [0:0]jb_n;
   output [29:0]m_axis_video_tdata;
+  output [0:0]jb_n;
+  output m_axis_video_tlast;
+  output s_axis_video_tready;
+  output m_axis_video_tvalid;
   input StreamClk;
   input s_axis_video_tvalid;
   input m_axis_video_tready;
   input sStreamReset_n;
   input [39:0]s_axis_video_tdata;
   input s_axis_video_tuser;
-  input RSTBTN;
   input s_axis_video_tlast;
 
   wire LineBufferInst_n_10;
@@ -144,14 +131,12 @@ module system_AXI_BayerToRGB_1_0_AXI_BayerToRGB
   wire LineBufferInst_n_17;
   wire LineBufferInst_n_18;
   wire LineBufferInst_n_19;
-  wire RSTBTN;
   wire StreamClk;
   wire clear;
   wire [0:0]jb_n;
   wire [29:0]m_axis_video_tdata;
   wire m_axis_video_tlast;
   wire m_axis_video_tready;
-  wire m_axis_video_tuser;
   wire m_axis_video_tvalid;
   wire m_axis_video_tvalid_i_1_n_0;
   wire [1:0]p_1_in;
@@ -384,13 +369,7 @@ module system_AXI_BayerToRGB_1_0_AXI_BayerToRGB
         .pLineBuffer_reg_1(sLineBufferWrite_reg_n_0),
         .sLineBufferRead(sLineBufferRead),
         .\sPixel_reg[2][9] (sLineBufferReadDataBuf));
-  LUT2 #(
-    .INIT(4'h8)) 
-    \jb_n[1]_INST_0 
-       (.I0(RSTBTN),
-        .I1(m_axis_video_tuser),
-        .O(jb_n));
-  (* SOFT_HLUTNM = "soft_lutpair22" *) 
+  (* SOFT_HLUTNM = "soft_lutpair14" *) 
   LUT4 #(
     .INIT(16'h8F88)) 
     m_axis_video_tvalid_i_1
@@ -1309,7 +1288,7 @@ module system_AXI_BayerToRGB_1_0_AXI_BayerToRGB
         .D(p_1_in[1]),
         .Q(sCntRemPixels[1]),
         .R(\sAXIMasterRed[9]_i_1_n_0 ));
-  (* SOFT_HLUTNM = "soft_lutpair22" *) 
+  (* SOFT_HLUTNM = "soft_lutpair14" *) 
   LUT2 #(
     .INIT(4'hE)) 
     sCoverInitialLatency_i_1
@@ -1622,7 +1601,7 @@ module system_AXI_BayerToRGB_1_0_AXI_BayerToRGB
         .I2(sCntRemPixels[0]),
         .I3(\sOtherPixelsData_reg_n_0_[8] ),
         .O(\sLineBufferWriteData[8]_i_1_n_0 ));
-  (* SOFT_HLUTNM = "soft_lutpair16" *) 
+  (* SOFT_HLUTNM = "soft_lutpair17" *) 
   LUT4 #(
     .INIT(16'hFE02)) 
     \sLineBufferWriteData[9]_i_1 
@@ -1691,6 +1670,7 @@ module system_AXI_BayerToRGB_1_0_AXI_BayerToRGB
         .D(\sLineBufferWriteData[9]_i_1_n_0 ),
         .Q(sLineBufferWriteData[9]),
         .R(\sAXIMasterRed[9]_i_1_n_0 ));
+  (* SOFT_HLUTNM = "soft_lutpair12" *) 
   LUT4 #(
     .INIT(16'hFE00)) 
     sLineBufferWrite_i_1
@@ -1713,7 +1693,6 @@ module system_AXI_BayerToRGB_1_0_AXI_BayerToRGB
         .I2(sCntRemPixels[0]),
         .I3(\sOtherPixelsData_reg_n_0_[10] ),
         .O(\sOtherPixelsData[0]_i_1_n_0 ));
-  (* SOFT_HLUTNM = "soft_lutpair18" *) 
   LUT4 #(
     .INIT(16'hFE02)) 
     \sOtherPixelsData[10]_i_1 
@@ -1722,7 +1701,6 @@ module system_AXI_BayerToRGB_1_0_AXI_BayerToRGB
         .I2(sCntRemPixels[0]),
         .I3(\sOtherPixelsData_reg_n_0_[20] ),
         .O(\sOtherPixelsData[10]_i_1_n_0 ));
-  (* SOFT_HLUTNM = "soft_lutpair11" *) 
   LUT4 #(
     .INIT(16'hFE02)) 
     \sOtherPixelsData[11]_i_1 
@@ -1731,7 +1709,7 @@ module system_AXI_BayerToRGB_1_0_AXI_BayerToRGB
         .I2(sCntRemPixels[0]),
         .I3(\sOtherPixelsData_reg_n_0_[21] ),
         .O(\sOtherPixelsData[11]_i_1_n_0 ));
-  (* SOFT_HLUTNM = "soft_lutpair13" *) 
+  (* SOFT_HLUTNM = "soft_lutpair21" *) 
   LUT4 #(
     .INIT(16'hFE02)) 
     \sOtherPixelsData[12]_i_1 
@@ -1740,7 +1718,7 @@ module system_AXI_BayerToRGB_1_0_AXI_BayerToRGB
         .I2(sCntRemPixels[0]),
         .I3(\sOtherPixelsData_reg_n_0_[22] ),
         .O(\sOtherPixelsData[12]_i_1_n_0 ));
-  (* SOFT_HLUTNM = "soft_lutpair8" *) 
+  (* SOFT_HLUTNM = "soft_lutpair20" *) 
   LUT4 #(
     .INIT(16'hFE02)) 
     \sOtherPixelsData[13]_i_1 
@@ -1749,7 +1727,7 @@ module system_AXI_BayerToRGB_1_0_AXI_BayerToRGB
         .I2(sCntRemPixels[0]),
         .I3(\sOtherPixelsData_reg_n_0_[23] ),
         .O(\sOtherPixelsData[13]_i_1_n_0 ));
-  (* SOFT_HLUTNM = "soft_lutpair10" *) 
+  (* SOFT_HLUTNM = "soft_lutpair18" *) 
   LUT4 #(
     .INIT(16'hFE02)) 
     \sOtherPixelsData[14]_i_1 
@@ -1758,7 +1736,7 @@ module system_AXI_BayerToRGB_1_0_AXI_BayerToRGB
         .I2(sCntRemPixels[0]),
         .I3(\sOtherPixelsData_reg_n_0_[24] ),
         .O(\sOtherPixelsData[14]_i_1_n_0 ));
-  (* SOFT_HLUTNM = "soft_lutpair9" *) 
+  (* SOFT_HLUTNM = "soft_lutpair16" *) 
   LUT4 #(
     .INIT(16'hFE02)) 
     \sOtherPixelsData[15]_i_1 
@@ -1767,7 +1745,7 @@ module system_AXI_BayerToRGB_1_0_AXI_BayerToRGB
         .I2(sCntRemPixels[0]),
         .I3(\sOtherPixelsData_reg_n_0_[25] ),
         .O(\sOtherPixelsData[15]_i_1_n_0 ));
-  (* SOFT_HLUTNM = "soft_lutpair7" *) 
+  (* SOFT_HLUTNM = "soft_lutpair15" *) 
   LUT4 #(
     .INIT(16'hFE02)) 
     \sOtherPixelsData[16]_i_1 
@@ -1776,7 +1754,7 @@ module system_AXI_BayerToRGB_1_0_AXI_BayerToRGB
         .I2(sCntRemPixels[0]),
         .I3(\sOtherPixelsData_reg_n_0_[26] ),
         .O(\sOtherPixelsData[16]_i_1_n_0 ));
-  (* SOFT_HLUTNM = "soft_lutpair12" *) 
+  (* SOFT_HLUTNM = "soft_lutpair11" *) 
   LUT4 #(
     .INIT(16'hFE02)) 
     \sOtherPixelsData[17]_i_1 
@@ -1785,6 +1763,7 @@ module system_AXI_BayerToRGB_1_0_AXI_BayerToRGB
         .I2(sCntRemPixels[0]),
         .I3(\sOtherPixelsData_reg_n_0_[27] ),
         .O(\sOtherPixelsData[17]_i_1_n_0 ));
+  (* SOFT_HLUTNM = "soft_lutpair7" *) 
   LUT4 #(
     .INIT(16'hFE02)) 
     \sOtherPixelsData[18]_i_1 
@@ -1793,6 +1772,7 @@ module system_AXI_BayerToRGB_1_0_AXI_BayerToRGB
         .I2(sCntRemPixels[0]),
         .I3(\sOtherPixelsData_reg_n_0_[28] ),
         .O(\sOtherPixelsData[18]_i_1_n_0 ));
+  (* SOFT_HLUTNM = "soft_lutpair8" *) 
   LUT4 #(
     .INIT(16'hFE02)) 
     \sOtherPixelsData[19]_i_1 
@@ -1833,7 +1813,7 @@ module system_AXI_BayerToRGB_1_0_AXI_BayerToRGB
         .I1(sCntRemPixels[0]),
         .I2(sCntRemPixels[1]),
         .O(\sOtherPixelsData[22]_i_1_n_0 ));
-  (* SOFT_HLUTNM = "soft_lutpair12" *) 
+  (* SOFT_HLUTNM = "soft_lutpair13" *) 
   LUT3 #(
     .INIT(8'h02)) 
     \sOtherPixelsData[23]_i_1 
@@ -1841,7 +1821,7 @@ module system_AXI_BayerToRGB_1_0_AXI_BayerToRGB
         .I1(sCntRemPixels[0]),
         .I2(sCntRemPixels[1]),
         .O(\sOtherPixelsData[23]_i_1_n_0 ));
-  (* SOFT_HLUTNM = "soft_lutpair13" *) 
+  (* SOFT_HLUTNM = "soft_lutpair15" *) 
   LUT3 #(
     .INIT(8'h02)) 
     \sOtherPixelsData[24]_i_1 
@@ -1849,7 +1829,7 @@ module system_AXI_BayerToRGB_1_0_AXI_BayerToRGB
         .I1(sCntRemPixels[0]),
         .I2(sCntRemPixels[1]),
         .O(\sOtherPixelsData[24]_i_1_n_0 ));
-  (* SOFT_HLUTNM = "soft_lutpair14" *) 
+  (* SOFT_HLUTNM = "soft_lutpair16" *) 
   LUT3 #(
     .INIT(8'h02)) 
     \sOtherPixelsData[25]_i_1 
@@ -1857,7 +1837,7 @@ module system_AXI_BayerToRGB_1_0_AXI_BayerToRGB
         .I1(sCntRemPixels[0]),
         .I2(sCntRemPixels[1]),
         .O(\sOtherPixelsData[25]_i_1_n_0 ));
-  (* SOFT_HLUTNM = "soft_lutpair15" *) 
+  (* SOFT_HLUTNM = "soft_lutpair17" *) 
   LUT3 #(
     .INIT(8'h02)) 
     \sOtherPixelsData[26]_i_1 
@@ -1865,7 +1845,7 @@ module system_AXI_BayerToRGB_1_0_AXI_BayerToRGB
         .I1(sCntRemPixels[0]),
         .I2(sCntRemPixels[1]),
         .O(\sOtherPixelsData[26]_i_1_n_0 ));
-  (* SOFT_HLUTNM = "soft_lutpair16" *) 
+  (* SOFT_HLUTNM = "soft_lutpair18" *) 
   LUT3 #(
     .INIT(8'h02)) 
     \sOtherPixelsData[27]_i_1 
@@ -1873,7 +1853,7 @@ module system_AXI_BayerToRGB_1_0_AXI_BayerToRGB
         .I1(sCntRemPixels[0]),
         .I2(sCntRemPixels[1]),
         .O(\sOtherPixelsData[27]_i_1_n_0 ));
-  (* SOFT_HLUTNM = "soft_lutpair17" *) 
+  (* SOFT_HLUTNM = "soft_lutpair19" *) 
   LUT3 #(
     .INIT(8'h02)) 
     \sOtherPixelsData[28]_i_1 
@@ -1881,7 +1861,7 @@ module system_AXI_BayerToRGB_1_0_AXI_BayerToRGB
         .I1(sCntRemPixels[0]),
         .I2(sCntRemPixels[1]),
         .O(\sOtherPixelsData[28]_i_1_n_0 ));
-  (* SOFT_HLUTNM = "soft_lutpair18" *) 
+  (* SOFT_HLUTNM = "soft_lutpair20" *) 
   LUT3 #(
     .INIT(8'h02)) 
     \sOtherPixelsData[29]_i_1 
@@ -1897,7 +1877,6 @@ module system_AXI_BayerToRGB_1_0_AXI_BayerToRGB
         .I2(sCntRemPixels[0]),
         .I3(\sOtherPixelsData_reg_n_0_[12] ),
         .O(\sOtherPixelsData[2]_i_1_n_0 ));
-  (* SOFT_HLUTNM = "soft_lutpair20" *) 
   LUT4 #(
     .INIT(16'hFE02)) 
     \sOtherPixelsData[3]_i_1 
@@ -1906,7 +1885,6 @@ module system_AXI_BayerToRGB_1_0_AXI_BayerToRGB
         .I2(sCntRemPixels[0]),
         .I3(\sOtherPixelsData_reg_n_0_[13] ),
         .O(\sOtherPixelsData[3]_i_1_n_0 ));
-  (* SOFT_HLUTNM = "soft_lutpair19" *) 
   LUT4 #(
     .INIT(16'hFE02)) 
     \sOtherPixelsData[4]_i_1 
@@ -1915,7 +1893,7 @@ module system_AXI_BayerToRGB_1_0_AXI_BayerToRGB
         .I2(sCntRemPixels[0]),
         .I3(\sOtherPixelsData_reg_n_0_[14] ),
         .O(\sOtherPixelsData[4]_i_1_n_0 ));
-  (* SOFT_HLUTNM = "soft_lutpair17" *) 
+  (* SOFT_HLUTNM = "soft_lutpair22" *) 
   LUT4 #(
     .INIT(16'hFE02)) 
     \sOtherPixelsData[5]_i_1 
@@ -1924,6 +1902,7 @@ module system_AXI_BayerToRGB_1_0_AXI_BayerToRGB
         .I2(sCntRemPixels[0]),
         .I3(\sOtherPixelsData_reg_n_0_[15] ),
         .O(\sOtherPixelsData[5]_i_1_n_0 ));
+  (* SOFT_HLUTNM = "soft_lutpair19" *) 
   LUT4 #(
     .INIT(16'hFE02)) 
     \sOtherPixelsData[6]_i_1 
@@ -1932,7 +1911,7 @@ module system_AXI_BayerToRGB_1_0_AXI_BayerToRGB
         .I2(sCntRemPixels[0]),
         .I3(\sOtherPixelsData_reg_n_0_[16] ),
         .O(\sOtherPixelsData[6]_i_1_n_0 ));
-  (* SOFT_HLUTNM = "soft_lutpair15" *) 
+  (* SOFT_HLUTNM = "soft_lutpair13" *) 
   LUT4 #(
     .INIT(16'hFE02)) 
     \sOtherPixelsData[7]_i_1 
@@ -1941,7 +1920,7 @@ module system_AXI_BayerToRGB_1_0_AXI_BayerToRGB
         .I2(sCntRemPixels[0]),
         .I3(\sOtherPixelsData_reg_n_0_[17] ),
         .O(\sOtherPixelsData[7]_i_1_n_0 ));
-  (* SOFT_HLUTNM = "soft_lutpair14" *) 
+  (* SOFT_HLUTNM = "soft_lutpair9" *) 
   LUT4 #(
     .INIT(16'hFE02)) 
     \sOtherPixelsData[8]_i_1 
@@ -1950,7 +1929,7 @@ module system_AXI_BayerToRGB_1_0_AXI_BayerToRGB
         .I2(sCntRemPixels[0]),
         .I3(\sOtherPixelsData_reg_n_0_[18] ),
         .O(\sOtherPixelsData[8]_i_1_n_0 ));
-  (* SOFT_HLUTNM = "soft_lutpair21" *) 
+  (* SOFT_HLUTNM = "soft_lutpair10" *) 
   LUT4 #(
     .INIT(16'hFE02)) 
     \sOtherPixelsData[9]_i_1 
@@ -2438,7 +2417,7 @@ module system_AXI_BayerToRGB_1_0_AXI_BayerToRGB
         .I4(s_axis_video_tvalid),
         .I5(sCntLines2__0),
         .O(\sStrobesShiftReg[0][Last]_i_1_n_0 ));
-  (* SOFT_HLUTNM = "soft_lutpair21" *) 
+  (* SOFT_HLUTNM = "soft_lutpair22" *) 
   LUT3 #(
     .INIT(8'h40)) 
     \sStrobesShiftReg[0][Last]_i_2 
@@ -2446,7 +2425,7 @@ module system_AXI_BayerToRGB_1_0_AXI_BayerToRGB
         .I1(sCntRemPixels[0]),
         .I2(sAXI_SlaveLastAsserted_reg_n_0),
         .O(\sStrobesShiftReg[0][Last]0__1 ));
-  (* SOFT_HLUTNM = "soft_lutpair20" *) 
+  (* SOFT_HLUTNM = "soft_lutpair21" *) 
   LUT2 #(
     .INIT(4'h1)) 
     \sStrobesShiftReg[0][Last]_i_3 
@@ -2545,9 +2524,9 @@ module system_AXI_BayerToRGB_1_0_AXI_BayerToRGB
        (.C(StreamClk),
         .CE(sel),
         .D(\sStrobesShiftReg_reg[2][User]__0 ),
-        .Q(m_axis_video_tuser),
+        .Q(jb_n),
         .R(\sAXIMasterRed[9]_i_1_n_0 ));
-  (* SOFT_HLUTNM = "soft_lutpair19" *) 
+  (* SOFT_HLUTNM = "soft_lutpair12" *) 
   LUT3 #(
     .INIT(8'h02)) 
     s_axis_video_tready_INST_0

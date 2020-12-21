@@ -7,7 +7,7 @@
   <spirit:componentInstances>
     <spirit:componentInstance>
       <spirit:instanceName>system_AXI_BayerToRGB_1_0</spirit:instanceName>
-      <spirit:componentRef spirit:vendor="digilentinc.com" spirit:library="user" spirit:name="AXI_BayerToRGB" spirit:version="1.9"/>
+      <spirit:componentRef spirit:vendor="digilentinc.com" spirit:library="user" spirit:name="AXI_BayerToRGB" spirit:version="2.0"/>
       <spirit:configurableElementValues>
         <spirit:configurableElementValue spirit:referenceId="BUSIFPARAM_VALUE.AXI_SLAVE_INTERFACE.CLK_DOMAIN">system_clk_wiz_0_0_clk_out1</spirit:configurableElementValue>
         <spirit:configurableElementValue spirit:referenceId="BUSIFPARAM_VALUE.AXI_SLAVE_INTERFACE.FREQ_HZ">150000000</spirit:configurableElementValue>

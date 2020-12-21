@@ -18,11 +18,11 @@
   "C:/Xilinx/Vivado/2019.2/data/ip/xpm/xpm_VCOMP.vhd" \
 -endlib
 -makelib xcelium_lib/xil_defaultlib \
-  "../../../bd/system/ipshared/3406/hdl/LineBuffer.vhd" \
-  "../../../bd/system/ipshared/3406/hdl/AXI_BayerToRGB.vhd" \
+  "../../../bd/system/ipshared/339b/hdl/LineBuffer.vhd" \
+  "../../../bd/system/ipshared/339b/hdl/AXI_BayerToRGB.vhd" \
   "../../../bd/system/ip/system_AXI_BayerToRGB_1_0/sim/system_AXI_BayerToRGB_1_0.vhd" \
-  "../../../bd/system/ipshared/2055/hdl/StoredGammaCoefs.vhd" \
-  "../../../bd/system/ipshared/2055/hdl/AXI_GammaCorrection.vhd" \
+  "../../../bd/system/ipshared/2115/hdl/StoredGammaCoefs.vhd" \
+  "../../../bd/system/ipshared/2115/hdl/AXI_GammaCorrection.vhd" \
   "../../../bd/system/ip/system_AXI_GammaCorrection_0_0/sim/system_AXI_GammaCorrection_0_0.vhd" \
   "../../../bd/system/ip/system_DVIClocking_0_0/sim/system_DVIClocking_0_0.vhd" \
 -endlib
@@ -206,18 +206,6 @@
 -endlib
 -makelib xcelium_lib/xil_defaultlib \
   "../../../bd/system/ip/system_rst_system_150M_0/sim/system_rst_system_150M_0.vhd" \
-  "../../../bd/system/ip/system_system_ila_0_0/bd_0/sim/bd_d5b8.vhd" \
-  "../../../bd/system/ip/system_system_ila_0_0/bd_0/ip/ip_0/sim/bd_d5b8_ila_lib_0.vhd" \
--endlib
--makelib xcelium_lib/gigantic_mux \
-  "../../../../Pcam2019_sendExp.srcs/sources_1/bd/system/ipshared/d322/hdl/gigantic_mux_v1_0_cntr.v" \
--endlib
--makelib xcelium_lib/xil_defaultlib \
-  "../../../bd/system/ip/system_system_ila_0_0/bd_0/ip/ip_1/bd_d5b8_g_inst_0_gigantic_mux.v" \
-  "../../../bd/system/ip/system_system_ila_0_0/bd_0/ip/ip_1/sim/bd_d5b8_g_inst_0.v" \
--endlib
--makelib xcelium_lib/xil_defaultlib \
-  "../../../bd/system/ip/system_system_ila_0_0/sim/system_system_ila_0_0.vhd" \
 -endlib
 -makelib xcelium_lib/axi_protocol_converter_v2_1_20 \
   "../../../../Pcam2019_sendExp.srcs/sources_1/bd/system/ipshared/c4a6/hdl/axi_protocol_converter_v2_1_vl_rfs.v" \

@@ -47,7 +47,7 @@
 -- DO NOT MODIFY THIS FILE.
 
 -- IP VLNV: digilentinc.com:user:AXI_GammaCorrection:1.2
--- IP Revision: 1
+-- IP Revision: 2
 
 LIBRARY ieee;
 USE ieee.std_logic_1164.ALL;

@@ -3,7 +3,7 @@
   <spirit:vendor>digilentinc.com</spirit:vendor>
   <spirit:library>user</spirit:library>
   <spirit:name>AXI_BayerToRGB</spirit:name>
-  <spirit:version>1.9</spirit:version>
+  <spirit:version>2.0</spirit:version>
   <spirit:busInterfaces>
     <spirit:busInterface>
       <spirit:name>AXI_Stream_Clk</spirit:name>
@@ -154,7 +154,7 @@
         <spirit:parameters>
           <spirit:parameter>
             <spirit:name>viewChecksum</spirit:name>
-            <spirit:value>44890599</spirit:value>
+            <spirit:value>d3b377f0</spirit:value>
           </spirit:parameter>
         </spirit:parameters>
       </spirit:view>
@@ -170,7 +170,7 @@
         <spirit:parameters>
           <spirit:parameter>
             <spirit:name>viewChecksum</spirit:name>
-            <spirit:value>44890599</spirit:value>
+            <spirit:value>d3b377f0</spirit:value>
           </spirit:parameter>
         </spirit:parameters>
       </spirit:view>
@@ -469,7 +469,7 @@
       <spirit:file>
         <spirit:name>hdl/AXI_BayerToRGB.vhd</spirit:name>
         <spirit:fileType>vhdlSource</spirit:fileType>
-        <spirit:userFileType>CHECKSUM_8b6b6d4e</spirit:userFileType>
+        <spirit:userFileType>CHECKSUM_f677f5e6</spirit:userFileType>
       </spirit:file>
     </spirit:fileSet>
     <spirit:fileSet>
@@ -490,7 +490,7 @@
     <spirit:fileSet>
       <spirit:name>xilinx_xpgui_view_fileset</spirit:name>
       <spirit:file>
-        <spirit:name>xgui/AXI_BayerToRGB_v1_9.tcl</spirit:name>
+        <spirit:name>xgui/AXI_BayerToRGB_v2_0.tcl</spirit:name>
         <spirit:fileType>tclSource</spirit:fileType>
         <spirit:userFileType>CHECKSUM_2b3275b7</spirit:userFileType>
         <spirit:userFileType>XGUI_VERSION_2</spirit:userFileType>
@@ -553,8 +553,9 @@
         <xilinx:canUpgradeFrom>digilentinc.com:user:AXI_BayerToRGB:1.6</xilinx:canUpgradeFrom>
         <xilinx:canUpgradeFrom>digilentinc.com:user:AXI_BayerToRGB:1.7</xilinx:canUpgradeFrom>
         <xilinx:canUpgradeFrom>digilentinc.com:user:AXI_BayerToRGB:1.8</xilinx:canUpgradeFrom>
+        <xilinx:canUpgradeFrom>digilentinc.com:user:AXI_BayerToRGB:1.9</xilinx:canUpgradeFrom>
       </xilinx:upgrades>
-      <xilinx:coreCreationDateTime>2020-11-23T14:18:15Z</xilinx:coreCreationDateTime>
+      <xilinx:coreCreationDateTime>2020-12-21T13:22:07Z</xilinx:coreCreationDateTime>
       <xilinx:tags>
         <xilinx:tag xilinx:name="digilentinc.com:user:AXI_BayerToRGB:1.0_ARCHIVE_LOCATION">d:/Ionut/Camy/Pcam_Vivado_Project/display_zyboz7/repo/local/ip/AXI_BayerToRGB</xilinx:tag>
         <xilinx:tag xilinx:name="ui.data.coregen.dd@7411d89b_ARCHIVE_LOCATION">c:/Github/Zybo_mipi/Pcam2019/Zybo-Z7-20-pcam-5c-2019.1/vivado_proj/Zybo-Z7-20-pcam-5c.ipdefs/repo_0/local/ip/AXI_BayerToRGB</xilinx:tag>
@@ -681,12 +682,25 @@
         <xilinx:tag xilinx:name="ui.data.coregen.dd@3082781c_ARCHIVE_LOCATION">c:/Github/Zybo_mipi/Pcam2019/Zybo-Z7-20-pcam-5c-2019.1/vivado_proj/Zybo-Z7-20-pcam-5c.ipdefs/repo_0/local/ip/AXI_BayerToRGB</xilinx:tag>
         <xilinx:tag xilinx:name="ui.data.coregen.dd@6a7ea05f_ARCHIVE_LOCATION">c:/Github/Zybo_mipi/Pcam2019/Zybo-Z7-20-pcam-5c-2019.1/vivado_proj/Zybo-Z7-20-pcam-5c.ipdefs/repo_0/local/ip/AXI_BayerToRGB</xilinx:tag>
         <xilinx:tag xilinx:name="ui.data.coregen.dd@3429494d_ARCHIVE_LOCATION">c:/Github/Zybo_mipi/Pcam2019/Zybo-Z7-20-pcam-5c-2019.1/vivado_proj/Zybo-Z7-20-pcam-5c.ipdefs/repo_0/local/ip/AXI_BayerToRGB</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@4f00a5b_ARCHIVE_LOCATION">c:/Github/Zybo_mipi/Pcam2019/Zybo-Z7-20-pcam-5c-2019.1/vivado_proj/Zybo-Z7-20-pcam-5c.ipdefs/repo_0/local/ip/AXI_BayerToRGB</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@5313a074_ARCHIVE_LOCATION">c:/Github/Zybo_mipi/Pcam2019/Zybo-Z7-20-pcam-5c-2019.1/vivado_proj/Zybo-Z7-20-pcam-5c.ipdefs/repo_0/local/ip/AXI_BayerToRGB</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@468e90c4_ARCHIVE_LOCATION">c:/Github/Zybo_mipi/Pcam2019/Zybo-Z7-20-pcam-5c-2019.1/vivado_proj/Zybo-Z7-20-pcam-5c.ipdefs/repo_0/local/ip/AXI_BayerToRGB</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@ea2a206_ARCHIVE_LOCATION">c:/Github/Zybo_mipi/Pcam2019/Zybo-Z7-20-pcam-5c-2019.1/vivado_proj/Zybo-Z7-20-pcam-5c.ipdefs/repo_0/local/ip/AXI_BayerToRGB</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@6822c1bd_ARCHIVE_LOCATION">c:/Github/Zybo_mipi/Pcam2019/Zybo-Z7-20-pcam-5c-2019.1/vivado_proj/Zybo-Z7-20-pcam-5c.ipdefs/repo_0/local/ip/AXI_BayerToRGB</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@1ad1a331_ARCHIVE_LOCATION">c:/Github/Zybo_mipi/Pcam2019/Zybo-Z7-20-pcam-5c-2019.1/vivado_proj/Zybo-Z7-20-pcam-5c.ipdefs/repo_0/local/ip/AXI_BayerToRGB</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@53e59950_ARCHIVE_LOCATION">c:/Github/Zybo_mipi/Pcam2019/Zybo-Z7-20-pcam-5c-2019.1/vivado_proj/Zybo-Z7-20-pcam-5c.ipdefs/repo_0/local/ip/AXI_BayerToRGB</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@336666db_ARCHIVE_LOCATION">c:/Github/Zybo_mipi/Pcam2019/Zybo-Z7-20-pcam-5c-2019.1/vivado_proj/Zybo-Z7-20-pcam-5c.ipdefs/repo_0/local/ip/AXI_BayerToRGB</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@30338de_ARCHIVE_LOCATION">c:/Github/Zybo_mipi/Pcam2019/Zybo-Z7-20-pcam-5c-2019.1/vivado_proj/Zybo-Z7-20-pcam-5c.ipdefs/repo_0/local/ip/AXI_BayerToRGB</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@5d01d710_ARCHIVE_LOCATION">c:/Github/Zybo_mipi/Pcam2019/Zybo-Z7-20-pcam-5c-2019.1/vivado_proj/Zybo-Z7-20-pcam-5c.ipdefs/repo_0/local/ip/AXI_BayerToRGB</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@6887b882_ARCHIVE_LOCATION">c:/Github/Zybo_mipi/Pcam2019/Zybo-Z7-20-pcam-5c-2019.1/vivado_proj/Zybo-Z7-20-pcam-5c.ipdefs/repo_0/local/ip/AXI_BayerToRGB</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@820722a_ARCHIVE_LOCATION">c:/Github/Zybo_mipi/Pcam2019/Zybo-Z7-20-pcam-5c-2019.1/vivado_proj/Zybo-Z7-20-pcam-5c.ipdefs/repo_0/local/ip/AXI_BayerToRGB</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@710b9a7_ARCHIVE_LOCATION">c:/Github/Zybo_mipi/Pcam2019/Zybo-Z7-20-pcam-5c-2019.1/vivado_proj/Zybo-Z7-20-pcam-5c.ipdefs/repo_0/local/ip/AXI_BayerToRGB</xilinx:tag>
       </xilinx:tags>
     </xilinx:coreExtensions>
     <xilinx:packagingInfo>
       <xilinx:xilinxVersion>2019.2</xilinx:xilinxVersion>
       <xilinx:checksum xilinx:scope="busInterfaces" xilinx:value="209dbc26"/>
-      <xilinx:checksum xilinx:scope="fileGroups" xilinx:value="be393576"/>
+      <xilinx:checksum xilinx:scope="fileGroups" xilinx:value="fe5f8499"/>
       <xilinx:checksum xilinx:scope="ports" xilinx:value="abedbe3c"/>
       <xilinx:checksum xilinx:scope="hdlParameters" xilinx:value="6980d0c4"/>
       <xilinx:checksum xilinx:scope="parameters" xilinx:value="8a0c55a8"/>

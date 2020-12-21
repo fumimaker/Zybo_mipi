@@ -1,7 +1,7 @@
 -- Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
 -- --------------------------------------------------------------------------------
 -- Tool Version: Vivado v.2019.2 (win64) Build 2708876 Wed Nov  6 21:40:23 MST 2019
--- Date        : Mon Nov 23 23:19:34 2020
+-- Date        : Mon Dec 21 22:23:14 2020
 -- Host        : DESKTOP-5VC2SBS running 64-bit major release  (build 9200)
 -- Command     : write_vhdl -force -mode funcsim
 --               C:/Github/Zybo_mipi/Pcam2019_sendExp/Pcam2019_sendExp.srcs/sources_1/bd/system/ip/system_AXI_BayerToRGB_1_0/system_AXI_BayerToRGB_1_0_sim_netlist.vhdl
@@ -258,19 +258,17 @@ library UNISIM;
 use UNISIM.VCOMPONENTS.ALL;
 entity system_AXI_BayerToRGB_1_0_AXI_BayerToRGB is
   port (
-    m_axis_video_tuser : out STD_LOGIC;
-    m_axis_video_tlast : out STD_LOGIC;
-    m_axis_video_tvalid : out STD_LOGIC;
-    s_axis_video_tready : out STD_LOGIC;
-    jb_n : out STD_LOGIC_VECTOR ( 0 to 0 );
     m_axis_video_tdata : out STD_LOGIC_VECTOR ( 29 downto 0 );
+    jb_n : out STD_LOGIC_VECTOR ( 0 to 0 );
+    m_axis_video_tlast : out STD_LOGIC;
+    s_axis_video_tready : out STD_LOGIC;
+    m_axis_video_tvalid : out STD_LOGIC;
     StreamClk : in STD_LOGIC;
     s_axis_video_tvalid : in STD_LOGIC;
     m_axis_video_tready : in STD_LOGIC;
     sStreamReset_n : in STD_LOGIC;
     s_axis_video_tdata : in STD_LOGIC_VECTOR ( 39 downto 0 );
     s_axis_video_tuser : in STD_LOGIC;
-    RSTBTN : in STD_LOGIC;
     s_axis_video_tlast : in STD_LOGIC
   );
   attribute ORIG_REF_NAME : string;
@@ -290,7 +288,6 @@ architecture STRUCTURE of system_AXI_BayerToRGB_1_0_AXI_BayerToRGB is
   signal LineBufferInst_n_19 : STD_LOGIC;
   signal clear : STD_LOGIC;
   signal \^m_axis_video_tdata\ : STD_LOGIC_VECTOR ( 29 downto 0 );
-  signal \^m_axis_video_tuser\ : STD_LOGIC;
   signal \^m_axis_video_tvalid\ : STD_LOGIC;
   signal m_axis_video_tvalid_i_1_n_0 : STD_LOGIC;
   signal p_1_in : STD_LOGIC_VECTOR ( 1 downto 0 );
@@ -508,7 +505,7 @@ architecture STRUCTURE of system_AXI_BayerToRGB_1_0_AXI_BayerToRGB is
   signal \NLW_sAXIMasterGreen_reg[9]_i_1_CO_UNCONNECTED\ : STD_LOGIC_VECTOR ( 3 downto 1 );
   signal \NLW_sAXIMasterGreen_reg[9]_i_1_O_UNCONNECTED\ : STD_LOGIC_VECTOR ( 3 downto 2 );
   attribute SOFT_HLUTNM : string;
-  attribute SOFT_HLUTNM of m_axis_video_tvalid_i_1 : label is "soft_lutpair22";
+  attribute SOFT_HLUTNM of m_axis_video_tvalid_i_1 : label is "soft_lutpair14";
   attribute METHODOLOGY_DRC_VIOS : string;
   attribute METHODOLOGY_DRC_VIOS of \sAXIMasterGreen_reg[3]_i_1\ : label is "{SYNTH-8 {cell *THIS*}}";
   attribute METHODOLOGY_DRC_VIOS of \sAXIMasterGreen_reg[7]_i_1\ : label is "{SYNTH-8 {cell *THIS*}}";
@@ -523,38 +520,37 @@ architecture STRUCTURE of system_AXI_BayerToRGB_1_0_AXI_BayerToRGB is
   attribute SOFT_HLUTNM of \sCntColumns[9]_i_1\ : label is "soft_lutpair5";
   attribute SOFT_HLUTNM of \sCntRemPixels[0]_i_1\ : label is "soft_lutpair8";
   attribute SOFT_HLUTNM of \sCntRemPixels[1]_i_1\ : label is "soft_lutpair7";
-  attribute SOFT_HLUTNM of sCoverInitialLatency_i_1 : label is "soft_lutpair22";
-  attribute SOFT_HLUTNM of \sLineBufferWriteData[9]_i_1\ : label is "soft_lutpair16";
-  attribute SOFT_HLUTNM of \sOtherPixelsData[10]_i_1\ : label is "soft_lutpair18";
-  attribute SOFT_HLUTNM of \sOtherPixelsData[11]_i_1\ : label is "soft_lutpair11";
-  attribute SOFT_HLUTNM of \sOtherPixelsData[12]_i_1\ : label is "soft_lutpair13";
-  attribute SOFT_HLUTNM of \sOtherPixelsData[13]_i_1\ : label is "soft_lutpair8";
-  attribute SOFT_HLUTNM of \sOtherPixelsData[14]_i_1\ : label is "soft_lutpair10";
-  attribute SOFT_HLUTNM of \sOtherPixelsData[15]_i_1\ : label is "soft_lutpair9";
-  attribute SOFT_HLUTNM of \sOtherPixelsData[16]_i_1\ : label is "soft_lutpair7";
-  attribute SOFT_HLUTNM of \sOtherPixelsData[17]_i_1\ : label is "soft_lutpair12";
+  attribute SOFT_HLUTNM of sCoverInitialLatency_i_1 : label is "soft_lutpair14";
+  attribute SOFT_HLUTNM of \sLineBufferWriteData[9]_i_1\ : label is "soft_lutpair17";
+  attribute SOFT_HLUTNM of sLineBufferWrite_i_1 : label is "soft_lutpair12";
+  attribute SOFT_HLUTNM of \sOtherPixelsData[12]_i_1\ : label is "soft_lutpair21";
+  attribute SOFT_HLUTNM of \sOtherPixelsData[13]_i_1\ : label is "soft_lutpair20";
+  attribute SOFT_HLUTNM of \sOtherPixelsData[14]_i_1\ : label is "soft_lutpair18";
+  attribute SOFT_HLUTNM of \sOtherPixelsData[15]_i_1\ : label is "soft_lutpair16";
+  attribute SOFT_HLUTNM of \sOtherPixelsData[16]_i_1\ : label is "soft_lutpair15";
+  attribute SOFT_HLUTNM of \sOtherPixelsData[17]_i_1\ : label is "soft_lutpair11";
+  attribute SOFT_HLUTNM of \sOtherPixelsData[18]_i_1\ : label is "soft_lutpair7";
+  attribute SOFT_HLUTNM of \sOtherPixelsData[19]_i_1\ : label is "soft_lutpair8";
   attribute SOFT_HLUTNM of \sOtherPixelsData[20]_i_1\ : label is "soft_lutpair9";
   attribute SOFT_HLUTNM of \sOtherPixelsData[21]_i_1\ : label is "soft_lutpair10";
   attribute SOFT_HLUTNM of \sOtherPixelsData[22]_i_1\ : label is "soft_lutpair11";
-  attribute SOFT_HLUTNM of \sOtherPixelsData[23]_i_1\ : label is "soft_lutpair12";
-  attribute SOFT_HLUTNM of \sOtherPixelsData[24]_i_1\ : label is "soft_lutpair13";
-  attribute SOFT_HLUTNM of \sOtherPixelsData[25]_i_1\ : label is "soft_lutpair14";
-  attribute SOFT_HLUTNM of \sOtherPixelsData[26]_i_1\ : label is "soft_lutpair15";
-  attribute SOFT_HLUTNM of \sOtherPixelsData[27]_i_1\ : label is "soft_lutpair16";
-  attribute SOFT_HLUTNM of \sOtherPixelsData[28]_i_1\ : label is "soft_lutpair17";
-  attribute SOFT_HLUTNM of \sOtherPixelsData[29]_i_1\ : label is "soft_lutpair18";
-  attribute SOFT_HLUTNM of \sOtherPixelsData[3]_i_1\ : label is "soft_lutpair20";
-  attribute SOFT_HLUTNM of \sOtherPixelsData[4]_i_1\ : label is "soft_lutpair19";
-  attribute SOFT_HLUTNM of \sOtherPixelsData[5]_i_1\ : label is "soft_lutpair17";
-  attribute SOFT_HLUTNM of \sOtherPixelsData[7]_i_1\ : label is "soft_lutpair15";
-  attribute SOFT_HLUTNM of \sOtherPixelsData[8]_i_1\ : label is "soft_lutpair14";
-  attribute SOFT_HLUTNM of \sOtherPixelsData[9]_i_1\ : label is "soft_lutpair21";
-  attribute SOFT_HLUTNM of \sStrobesShiftReg[0][Last]_i_2\ : label is "soft_lutpair21";
-  attribute SOFT_HLUTNM of \sStrobesShiftReg[0][Last]_i_3\ : label is "soft_lutpair20";
-  attribute SOFT_HLUTNM of s_axis_video_tready_INST_0 : label is "soft_lutpair19";
+  attribute SOFT_HLUTNM of \sOtherPixelsData[23]_i_1\ : label is "soft_lutpair13";
+  attribute SOFT_HLUTNM of \sOtherPixelsData[24]_i_1\ : label is "soft_lutpair15";
+  attribute SOFT_HLUTNM of \sOtherPixelsData[25]_i_1\ : label is "soft_lutpair16";
+  attribute SOFT_HLUTNM of \sOtherPixelsData[26]_i_1\ : label is "soft_lutpair17";
+  attribute SOFT_HLUTNM of \sOtherPixelsData[27]_i_1\ : label is "soft_lutpair18";
+  attribute SOFT_HLUTNM of \sOtherPixelsData[28]_i_1\ : label is "soft_lutpair19";
+  attribute SOFT_HLUTNM of \sOtherPixelsData[29]_i_1\ : label is "soft_lutpair20";
+  attribute SOFT_HLUTNM of \sOtherPixelsData[5]_i_1\ : label is "soft_lutpair22";
+  attribute SOFT_HLUTNM of \sOtherPixelsData[6]_i_1\ : label is "soft_lutpair19";
+  attribute SOFT_HLUTNM of \sOtherPixelsData[7]_i_1\ : label is "soft_lutpair13";
+  attribute SOFT_HLUTNM of \sOtherPixelsData[8]_i_1\ : label is "soft_lutpair9";
+  attribute SOFT_HLUTNM of \sOtherPixelsData[9]_i_1\ : label is "soft_lutpair10";
+  attribute SOFT_HLUTNM of \sStrobesShiftReg[0][Last]_i_2\ : label is "soft_lutpair22";
+  attribute SOFT_HLUTNM of \sStrobesShiftReg[0][Last]_i_3\ : label is "soft_lutpair21";
+  attribute SOFT_HLUTNM of s_axis_video_tready_INST_0 : label is "soft_lutpair12";
 begin
   m_axis_video_tdata(29 downto 0) <= \^m_axis_video_tdata\(29 downto 0);
-  m_axis_video_tuser <= \^m_axis_video_tuser\;
   m_axis_video_tvalid <= \^m_axis_video_tvalid\;
 LineBufferInst: entity work.system_AXI_BayerToRGB_1_0_LineBuffer
      port map (
@@ -576,15 +572,6 @@ LineBufferInst: entity work.system_AXI_BayerToRGB_1_0_LineBuffer
       pLineBuffer_reg_1 => sLineBufferWrite_reg_n_0,
       sLineBufferRead => sLineBufferRead,
       \sPixel_reg[2][9]\(9 downto 0) => sLineBufferReadDataBuf(9 downto 0)
-    );
-\jb_n[1]_INST_0\: unisim.vcomponents.LUT2
-    generic map(
-      INIT => X"8"
-    )
-        port map (
-      I0 => RSTBTN,
-      I1 => \^m_axis_video_tuser\,
-      O => jb_n(0)
     );
 m_axis_video_tvalid_i_1: unisim.vcomponents.LUT4
     generic map(
@@ -3452,7 +3439,7 @@ sLineBufferWrite_reg: unisim.vcomponents.FDRE
       C => StreamClk,
       CE => sel,
       D => \sStrobesShiftReg_reg[2][User]__0\,
-      Q => \^m_axis_video_tuser\,
+      Q => jb_n(0),
       R => \sAXIMasterRed[9]_i_1_n_0\
     );
 s_axis_video_tready_INST_0: unisim.vcomponents.LUT3
@@ -3504,9 +3491,9 @@ end system_AXI_BayerToRGB_1_0;
 architecture STRUCTURE of system_AXI_BayerToRGB_1_0 is
   signal \<const0>\ : STD_LOGIC;
   signal \^rstbtn\ : STD_LOGIC;
-  signal \^jb_n\ : STD_LOGIC_VECTOR ( 4 to 4 );
-  signal \^jb_p\ : STD_LOGIC_VECTOR ( 4 to 4 );
+  signal \^jb_n\ : STD_LOGIC_VECTOR ( 1 to 1 );
   signal \^m_axis_video_tdata\ : STD_LOGIC_VECTOR ( 29 downto 0 );
+  signal \^s_axis_video_tuser\ : STD_LOGIC;
   attribute x_interface_info : string;
   attribute x_interface_info of StreamClk : signal is "xilinx.com:signal:clock:1.0 AXI_Stream_Clk CLK";
   attribute x_interface_parameter : string;
@@ -3528,45 +3515,36 @@ architecture STRUCTURE of system_AXI_BayerToRGB_1_0 is
 begin
   RSTLED <= \^rstbtn\;
   \^rstbtn\ <= RSTBTN;
-  jb_n(4) <= \^jb_n\(4);
-  jb_n(3) <= \^jb_n\(4);
-  jb_n(2) <= \^jb_n\(4);
-  jb_n(1) <= \^jb_n\(4);
-  jb_p(4) <= \^jb_p\(4);
-  jb_p(3) <= \^jb_p\(4);
-  jb_p(2) <= \^jb_p\(4);
-  jb_p(1) <= \^jb_p\(4);
+  \^s_axis_video_tuser\ <= s_axis_video_tuser;
+  jb_n(4) <= \^jb_n\(1);
+  jb_n(3) <= \^jb_n\(1);
+  jb_n(2) <= \^jb_n\(1);
+  jb_n(1) <= \^jb_n\(1);
+  jb_p(4) <= \^s_axis_video_tuser\;
+  jb_p(3) <= \^s_axis_video_tuser\;
+  jb_p(2) <= \^s_axis_video_tuser\;
+  jb_p(1) <= \^s_axis_video_tuser\;
   m_axis_video_tdata(31) <= \<const0>\;
   m_axis_video_tdata(30) <= \<const0>\;
   m_axis_video_tdata(29 downto 0) <= \^m_axis_video_tdata\(29 downto 0);
+  m_axis_video_tuser <= \^jb_n\(1);
 GND: unisim.vcomponents.GND
      port map (
       G => \<const0>\
     );
 U0: entity work.system_AXI_BayerToRGB_1_0_AXI_BayerToRGB
      port map (
-      RSTBTN => \^rstbtn\,
       StreamClk => StreamClk,
-      jb_n(0) => \^jb_n\(4),
+      jb_n(0) => \^jb_n\(1),
       m_axis_video_tdata(29 downto 0) => \^m_axis_video_tdata\(29 downto 0),
       m_axis_video_tlast => m_axis_video_tlast,
       m_axis_video_tready => m_axis_video_tready,
-      m_axis_video_tuser => m_axis_video_tuser,
       m_axis_video_tvalid => m_axis_video_tvalid,
       sStreamReset_n => sStreamReset_n,
       s_axis_video_tdata(39 downto 0) => s_axis_video_tdata(39 downto 0),
       s_axis_video_tlast => s_axis_video_tlast,
       s_axis_video_tready => s_axis_video_tready,
-      s_axis_video_tuser => s_axis_video_tuser,
+      s_axis_video_tuser => \^s_axis_video_tuser\,
       s_axis_video_tvalid => s_axis_video_tvalid
-    );
-\jb_p[1]_INST_0\: unisim.vcomponents.LUT2
-    generic map(
-      INIT => X"8"
-    )
-        port map (
-      I0 => \^rstbtn\,
-      I1 => s_axis_video_tuser,
-      O => \^jb_p\(4)
     );
 end STRUCTURE;

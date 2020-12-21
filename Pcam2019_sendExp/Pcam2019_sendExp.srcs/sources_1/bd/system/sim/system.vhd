@@ -1,7 +1,7 @@
 --Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
 ----------------------------------------------------------------------------------
 --Tool Version: Vivado v.2019.2 (win64) Build 2708876 Wed Nov  6 21:40:23 MST 2019
---Date        : Tue Dec 15 16:25:59 2020
+--Date        : Mon Dec 21 23:14:55 2020
 --Host        : DESKTOP-5VC2SBS running 64-bit major release  (build 9200)
 --Command     : generate_target system.bd
 --Design      : system
@@ -3119,7 +3119,7 @@ entity system is
     jc_p : out STD_LOGIC_VECTOR ( 4 downto 1 )
   );
   attribute CORE_GENERATION_INFO : string;
-  attribute CORE_GENERATION_INFO of system : entity is "system,IP_Integrator,{x_ipVendor=xilinx.com,x_ipLibrary=BlockDiagram,x_ipName=system,x_ipVersion=1.00.a,x_ipLanguage=VHDL,numBlks=33,numReposBlks=20,numNonXlnxBlks=5,numHierBlks=13,maxHierDepth=0,numSysgenBlks=0,numHlsBlks=0,numHdlrefBlks=1,numPkgbdBlks=0,bdsource=USER,da_axi4_cnt=1,da_board_cnt=2,da_clkrst_cnt=1,synth_mode=OOC_per_IP}";
+  attribute CORE_GENERATION_INFO of system : entity is "system,IP_Integrator,{x_ipVendor=xilinx.com,x_ipLibrary=BlockDiagram,x_ipName=system,x_ipVersion=1.00.a,x_ipLanguage=VHDL,numBlks=34,numReposBlks=21,numNonXlnxBlks=5,numHierBlks=13,maxHierDepth=0,numSysgenBlks=0,numHlsBlks=0,numHdlrefBlks=1,numPkgbdBlks=0,bdsource=USER,da_axi4_cnt=1,da_board_cnt=2,da_clkrst_cnt=1,synth_mode=OOC_per_IP}";
   attribute HW_HANDOFF : string;
   attribute HW_HANDOFF of system : entity is "system.hwdef";
 end system;
@@ -3740,6 +3740,14 @@ architecture STRUCTURE of system is
     RSTLED : out STD_LOGIC
   );
   end component system_AXI_BayerToRGB_1_0;
+  component system_system_ila_0_0 is
+  port (
+    clk : in STD_LOGIC;
+    probe0 : in STD_LOGIC_VECTOR ( 4 downto 1 );
+    probe1 : in STD_LOGIC_VECTOR ( 4 downto 1 );
+    probe2 : in STD_LOGIC_VECTOR ( 4 downto 1 )
+  );
+  end component system_system_ila_0_0;
   signal AXI_BayerToRGB_1_AXI_Stream_Master_TDATA : STD_LOGIC_VECTOR ( 31 downto 0 );
   signal AXI_BayerToRGB_1_AXI_Stream_Master_TLAST : STD_LOGIC;
   signal AXI_BayerToRGB_1_AXI_Stream_Master_TREADY : STD_LOGIC;
@@ -3747,8 +3755,16 @@ architecture STRUCTURE of system is
   signal AXI_BayerToRGB_1_AXI_Stream_Master_TVALID : STD_LOGIC;
   signal AXI_BayerToRGB_1_RSTLED : STD_LOGIC;
   signal AXI_BayerToRGB_1_jb_n : STD_LOGIC_VECTOR ( 4 downto 1 );
+  attribute DEBUG : string;
+  attribute DEBUG of AXI_BayerToRGB_1_jb_n : signal is "true";
+  attribute MARK_DEBUG : boolean;
+  attribute MARK_DEBUG of AXI_BayerToRGB_1_jb_n : signal is std.standard.true;
   signal AXI_BayerToRGB_1_jb_p : STD_LOGIC_VECTOR ( 4 downto 1 );
+  attribute DEBUG of AXI_BayerToRGB_1_jb_p : signal is "true";
+  attribute MARK_DEBUG of AXI_BayerToRGB_1_jb_p : signal is std.standard.true;
   signal AXI_GammaCorrection_0_jc_p : STD_LOGIC_VECTOR ( 4 downto 1 );
+  attribute DEBUG of AXI_GammaCorrection_0_jc_p : signal is "true";
+  attribute MARK_DEBUG of AXI_GammaCorrection_0_jc_p : signal is std.standard.true;
   signal AXI_GammaCorrection_0_m_axis_video_TDATA : STD_LOGIC_VECTOR ( 23 downto 0 );
   signal AXI_GammaCorrection_0_m_axis_video_TLAST : STD_LOGIC;
   signal AXI_GammaCorrection_0_m_axis_video_TREADY : STD_LOGIC;
@@ -4975,6 +4991,13 @@ rst_vid_clk_dyn: component system_rst_vid_clk_dyn_0
       peripheral_aresetn(0) => rst_vid_clk_dyn_peripheral_aresetn(0),
       peripheral_reset(0) => rst_vid_clk_dyn_peripheral_reset(0),
       slowest_sync_clk => PixelClk_Generator_clk_out1
+    );
+system_ila_0: component system_system_ila_0_0
+     port map (
+      clk => mm_clk_150,
+      probe0(4 downto 1) => AXI_BayerToRGB_1_jb_n(4 downto 1),
+      probe1(4 downto 1) => AXI_BayerToRGB_1_jb_p(4 downto 1),
+      probe2(4 downto 1) => AXI_GammaCorrection_0_jc_p(4 downto 1)
     );
 v_axi4s_vid_out_0: component system_v_axi4s_vid_out_0_0
      port map (
