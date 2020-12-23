@@ -1,10 +1,10 @@
 -- Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
 -- --------------------------------------------------------------------------------
 -- Tool Version: Vivado v.2019.2 (win64) Build 2708876 Wed Nov  6 21:40:23 MST 2019
--- Date        : Mon Dec 21 22:23:14 2020
+-- Date        : Mon Dec 21 22:23:13 2020
 -- Host        : DESKTOP-5VC2SBS running 64-bit major release  (build 9200)
--- Command     : write_vhdl -force -mode funcsim
---               C:/Github/Zybo_mipi/Pcam2019_sendExp/Pcam2019_sendExp.srcs/sources_1/bd/system/ip/system_AXI_BayerToRGB_1_0/system_AXI_BayerToRGB_1_0_sim_netlist.vhdl
+-- Command     : write_vhdl -force -mode funcsim -rename_top system_AXI_BayerToRGB_1_0 -prefix
+--               system_AXI_BayerToRGB_1_0_ system_AXI_BayerToRGB_1_0_sim_netlist.vhdl
 -- Design      : system_AXI_BayerToRGB_1_0
 -- Purpose     : This VHDL netlist is a functional simulation representation of the design and should not be modified or
 --               synthesized. This netlist cannot be used for SDF annotated simulation.
@@ -25,8 +25,6 @@ entity system_AXI_BayerToRGB_1_0_LineBuffer is
     Q : in STD_LOGIC_VECTOR ( 9 downto 0 );
     \sPixel_reg[2][9]\ : in STD_LOGIC_VECTOR ( 9 downto 0 )
   );
-  attribute ORIG_REF_NAME : string;
-  attribute ORIG_REF_NAME of system_AXI_BayerToRGB_1_0_LineBuffer : entity is "LineBuffer";
 end system_AXI_BayerToRGB_1_0_LineBuffer;
 
 architecture STRUCTURE of system_AXI_BayerToRGB_1_0_LineBuffer is
@@ -271,8 +269,6 @@ entity system_AXI_BayerToRGB_1_0_AXI_BayerToRGB is
     s_axis_video_tuser : in STD_LOGIC;
     s_axis_video_tlast : in STD_LOGIC
   );
-  attribute ORIG_REF_NAME : string;
-  attribute ORIG_REF_NAME of system_AXI_BayerToRGB_1_0_AXI_BayerToRGB : entity is "AXI_BayerToRGB";
 end system_AXI_BayerToRGB_1_0_AXI_BayerToRGB;
 
 architecture STRUCTURE of system_AXI_BayerToRGB_1_0_AXI_BayerToRGB is

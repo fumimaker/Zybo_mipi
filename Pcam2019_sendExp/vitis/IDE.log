@@ -4776,3 +4776,273 @@ con
 
 23:29:38 INFO  : Launch script is exported to file 'C:\Github\Zybo_mipi\Pcam2019_sendExp\vitis\.sdk\launch_scripts\single_application_debug\systemdebugger_pcam2019_sendexp_system_standalone.tcl'
 00:24:13 INFO  : Disconnected from the channel tcfchan#14.
+16:25:16 INFO  : Launching XSCT server: xsct.bat -n  -interactive C:\Github\Zybo_mipi\Pcam2019_sendExp\vitis\temp_xsdb_launch_script.tcl
+16:25:19 INFO  : XSCT server has started successfully.
+16:25:19 INFO  : plnx-install-location is set to ''
+16:25:19 INFO  : Successfully done setting XSCT server connection channel  
+16:25:19 INFO  : Successfully done setting workspace for the tool. 
+16:25:20 INFO  : Registering command handlers for Vitis TCF services
+16:25:24 INFO  : Successfully done query RDI_DATADIR 
+16:26:59 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+16:27:00 INFO  : Jtag cable 'Digilent Zybo Z7 210351A6C9E3A' is selected.
+16:27:00 INFO  : 'jtag frequency' command is executed.
+16:27:00 INFO  : Context for 'APU' is selected.
+16:27:00 INFO  : System reset is completed.
+16:27:03 INFO  : 'after 3000' command is executed.
+16:27:03 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351A6C9E3A" && level==0} -index 1' command is executed.
+16:27:06 INFO  : FPGA configured successfully with bitstream "C:/Github/Zybo_mipi/Pcam2019_sendExp/vitis/pcam2019_sendExp/_ide/bitstream/system_wrapper.bit"
+16:27:06 INFO  : Context for 'APU' is selected.
+16:27:06 INFO  : Hardware design information is loaded from 'C:/Github/Zybo_mipi/Pcam2019_sendExp/vitis/system_wrapper/export/system_wrapper/hw/system_wrapper.xsa'.
+16:27:06 INFO  : 'configparams force-mem-access 1' command is executed.
+16:27:06 INFO  : Context for 'APU' is selected.
+16:27:06 INFO  : Sourcing of 'C:/Github/Zybo_mipi/Pcam2019_sendExp/vitis/pcam2019_sendExp/_ide/psinit/ps7_init.tcl' is done.
+16:27:06 INFO  : 'ps7_init' command is executed.
+16:27:06 INFO  : 'ps7_post_config' command is executed.
+16:27:06 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+16:27:08 INFO  : The application 'C:/Github/Zybo_mipi/Pcam2019_sendExp/vitis/pcam2019_sendExp/Debug/pcam2019_sendExp.elf' is downloaded to processor 'ps7_cortexa9_0'.
+16:27:08 INFO  : 'configparams force-mem-access 0' command is executed.
+16:27:08 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~"APU*"}
+rst -system
+after 3000
+targets -set -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351A6C9E3A" && level==0} -index 1
+fpga -file C:/Github/Zybo_mipi/Pcam2019_sendExp/vitis/pcam2019_sendExp/_ide/bitstream/system_wrapper.bit
+targets -set -nocase -filter {name =~"APU*"}
+loadhw -hw C:/Github/Zybo_mipi/Pcam2019_sendExp/vitis/system_wrapper/export/system_wrapper/hw/system_wrapper.xsa -mem-ranges [list {0x40000000 0xbfffffff}]
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*"}
+source C:/Github/Zybo_mipi/Pcam2019_sendExp/vitis/pcam2019_sendExp/_ide/psinit/ps7_init.tcl
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "*A9*#0"}
+dow C:/Github/Zybo_mipi/Pcam2019_sendExp/vitis/pcam2019_sendExp/Debug/pcam2019_sendExp.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+16:27:08 INFO  : Memory regions updated for context APU
+16:27:08 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+16:27:08 INFO  : 'con' command is executed.
+16:27:08 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*A9*#0"}
+con
+----------------End of Script----------------
+
+16:27:08 INFO  : Launch script is exported to file 'C:\Github\Zybo_mipi\Pcam2019_sendExp\vitis\.sdk\launch_scripts\single_application_debug\systemdebugger_pcam2019_sendexp_system_standalone.tcl'
+17:46:22 INFO  : Disconnected from the channel tcfchan#1.
+21:08:53 INFO  : Launching XSCT server: xsct.bat -n  -interactive C:\Github\Zybo_mipi\Pcam2019_sendExp\vitis\temp_xsdb_launch_script.tcl
+21:08:57 INFO  : XSCT server has started successfully.
+21:08:57 INFO  : Successfully done setting XSCT server connection channel  
+21:08:57 INFO  : plnx-install-location is set to ''
+21:08:57 INFO  : Successfully done setting workspace for the tool. 
+21:09:01 INFO  : Registering command handlers for Vitis TCF services
+21:09:05 INFO  : Successfully done query RDI_DATADIR 
+22:14:14 INFO  : Hardware specification for platform project 'system_wrapper' is updated.
+22:14:54 INFO  : Checking for BSP changes to sync application flags for project 'pcam2019_sendExp'...
+22:15:05 INFO  : The hardware specfication used by project 'pcam2019_sendExp' is out of sync with the platform. Resource files extracted from the hardware specfiication will be updated.
+22:15:05 INFO  : The file 'C:\Github\Zybo_mipi\Pcam2019_sendExp\vitis\pcam2019_sendExp\_ide\bitstream\system_wrapper.bit' stored in project is removed.
+22:15:05 INFO  : The updated bitstream files are copied from platform to folder 'C:\Github\Zybo_mipi\Pcam2019_sendExp\vitis\pcam2019_sendExp\_ide\bitstream' in project 'pcam2019_sendExp'.
+22:15:05 INFO  : The file 'C:\Github\Zybo_mipi\Pcam2019_sendExp\vitis\pcam2019_sendExp\_ide\psinit\ps7_init.tcl' stored in project is removed.
+22:15:12 INFO  : The updated ps init files are copied from platform to folder 'C:\Github\Zybo_mipi\Pcam2019_sendExp\vitis\pcam2019_sendExp\_ide\psinit' in project 'pcam2019_sendExp'.
+22:15:20 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+22:15:36 INFO  : Jtag cable 'Digilent Zybo Z7 210351A6C9E3A' is selected.
+22:15:36 INFO  : 'jtag frequency' command is executed.
+22:15:36 INFO  : Context for 'APU' is selected.
+22:15:36 INFO  : System reset is completed.
+22:15:39 INFO  : 'after 3000' command is executed.
+22:15:39 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351A6C9E3A" && level==0} -index 1' command is executed.
+22:15:42 INFO  : FPGA configured successfully with bitstream "C:/Github/Zybo_mipi/Pcam2019_sendExp/vitis/pcam2019_sendExp/_ide/bitstream/system_wrapper.bit"
+22:15:43 INFO  : Context for 'APU' is selected.
+22:15:43 INFO  : Hardware design information is loaded from 'C:/Github/Zybo_mipi/Pcam2019_sendExp/vitis/system_wrapper/export/system_wrapper/hw/system_wrapper.xsa'.
+22:15:43 INFO  : 'configparams force-mem-access 1' command is executed.
+22:15:43 INFO  : Context for 'APU' is selected.
+22:15:43 INFO  : Sourcing of 'C:/Github/Zybo_mipi/Pcam2019_sendExp/vitis/pcam2019_sendExp/_ide/psinit/ps7_init.tcl' is done.
+22:15:44 INFO  : 'ps7_init' command is executed.
+22:15:44 INFO  : 'ps7_post_config' command is executed.
+22:15:44 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+22:15:45 INFO  : The application 'C:/Github/Zybo_mipi/Pcam2019_sendExp/vitis/pcam2019_sendExp/Debug/pcam2019_sendExp.elf' is downloaded to processor 'ps7_cortexa9_0'.
+22:15:45 INFO  : 'configparams force-mem-access 0' command is executed.
+22:15:45 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~"APU*"}
+rst -system
+after 3000
+targets -set -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351A6C9E3A" && level==0} -index 1
+fpga -file C:/Github/Zybo_mipi/Pcam2019_sendExp/vitis/pcam2019_sendExp/_ide/bitstream/system_wrapper.bit
+targets -set -nocase -filter {name =~"APU*"}
+loadhw -hw C:/Github/Zybo_mipi/Pcam2019_sendExp/vitis/system_wrapper/export/system_wrapper/hw/system_wrapper.xsa -mem-ranges [list {0x40000000 0xbfffffff}]
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*"}
+source C:/Github/Zybo_mipi/Pcam2019_sendExp/vitis/pcam2019_sendExp/_ide/psinit/ps7_init.tcl
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "*A9*#0"}
+dow C:/Github/Zybo_mipi/Pcam2019_sendExp/vitis/pcam2019_sendExp/Debug/pcam2019_sendExp.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+22:15:45 INFO  : Memory regions updated for context APU
+22:15:46 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+22:15:46 INFO  : 'con' command is executed.
+22:15:46 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*A9*#0"}
+con
+----------------End of Script----------------
+
+22:15:46 INFO  : Launch script is exported to file 'C:\Github\Zybo_mipi\Pcam2019_sendExp\vitis\.sdk\launch_scripts\single_application_debug\systemdebugger_pcam2019_sendexp_system_standalone.tcl'
+22:19:40 INFO  : Disconnected from the channel tcfchan#3.
+22:19:40 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+22:19:40 INFO  : Jtag cable 'Digilent Zybo Z7 210351A6C9E3A' is selected.
+22:19:40 INFO  : 'jtag frequency' command is executed.
+22:19:41 INFO  : Context for 'APU' is selected.
+22:19:41 INFO  : System reset is completed.
+22:19:44 INFO  : 'after 3000' command is executed.
+22:19:44 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351A6C9E3A" && level==0} -index 1' command is executed.
+22:19:46 INFO  : FPGA configured successfully with bitstream "C:/Github/Zybo_mipi/Pcam2019_sendExp/vitis/pcam2019_sendExp/_ide/bitstream/system_wrapper.bit"
+22:19:46 INFO  : Context for 'APU' is selected.
+22:19:46 INFO  : Hardware design information is loaded from 'C:/Github/Zybo_mipi/Pcam2019_sendExp/vitis/system_wrapper/export/system_wrapper/hw/system_wrapper.xsa'.
+22:19:46 INFO  : 'configparams force-mem-access 1' command is executed.
+22:19:46 INFO  : Context for 'APU' is selected.
+22:19:46 INFO  : Sourcing of 'C:/Github/Zybo_mipi/Pcam2019_sendExp/vitis/pcam2019_sendExp/_ide/psinit/ps7_init.tcl' is done.
+22:19:46 INFO  : 'ps7_init' command is executed.
+22:19:46 INFO  : 'ps7_post_config' command is executed.
+22:19:47 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+22:19:48 INFO  : The application 'C:/Github/Zybo_mipi/Pcam2019_sendExp/vitis/pcam2019_sendExp/Debug/pcam2019_sendExp.elf' is downloaded to processor 'ps7_cortexa9_0'.
+22:19:48 INFO  : 'configparams force-mem-access 0' command is executed.
+22:19:48 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~"APU*"}
+rst -system
+after 3000
+targets -set -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351A6C9E3A" && level==0} -index 1
+fpga -file C:/Github/Zybo_mipi/Pcam2019_sendExp/vitis/pcam2019_sendExp/_ide/bitstream/system_wrapper.bit
+targets -set -nocase -filter {name =~"APU*"}
+loadhw -hw C:/Github/Zybo_mipi/Pcam2019_sendExp/vitis/system_wrapper/export/system_wrapper/hw/system_wrapper.xsa -mem-ranges [list {0x40000000 0xbfffffff}]
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*"}
+source C:/Github/Zybo_mipi/Pcam2019_sendExp/vitis/pcam2019_sendExp/_ide/psinit/ps7_init.tcl
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "*A9*#0"}
+dow C:/Github/Zybo_mipi/Pcam2019_sendExp/vitis/pcam2019_sendExp/Debug/pcam2019_sendExp.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+22:19:48 INFO  : Memory regions updated for context APU
+22:19:48 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+22:19:48 INFO  : 'con' command is executed.
+22:19:48 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*A9*#0"}
+con
+----------------End of Script----------------
+
+22:19:48 INFO  : Launch script is exported to file 'C:\Github\Zybo_mipi\Pcam2019_sendExp\vitis\.sdk\launch_scripts\single_application_debug\systemdebugger_pcam2019_sendexp_system_standalone.tcl'
+23:16:56 INFO  : Hardware specification for platform project 'system_wrapper' is updated.
+23:17:03 INFO  : Checking for BSP changes to sync application flags for project 'pcam2019_sendExp'...
+23:17:08 INFO  : The hardware specfication used by project 'pcam2019_sendExp' is out of sync with the platform. Resource files extracted from the hardware specfiication will be updated.
+23:17:08 INFO  : The file 'C:\Github\Zybo_mipi\Pcam2019_sendExp\vitis\pcam2019_sendExp\_ide\bitstream\system_wrapper.bit' stored in project is removed.
+23:17:08 INFO  : The updated bitstream files are copied from platform to folder 'C:\Github\Zybo_mipi\Pcam2019_sendExp\vitis\pcam2019_sendExp\_ide\bitstream' in project 'pcam2019_sendExp'.
+23:17:08 INFO  : The file 'C:\Github\Zybo_mipi\Pcam2019_sendExp\vitis\pcam2019_sendExp\_ide\psinit\ps7_init.tcl' stored in project is removed.
+23:17:14 INFO  : The updated ps init files are copied from platform to folder 'C:\Github\Zybo_mipi\Pcam2019_sendExp\vitis\pcam2019_sendExp\_ide\psinit' in project 'pcam2019_sendExp'.
+23:17:20 INFO  : Disconnected from the channel tcfchan#4.
+23:17:20 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+23:17:20 INFO  : Jtag cable 'Digilent Zybo Z7 210351A6C9E3A' is selected.
+23:17:20 INFO  : 'jtag frequency' command is executed.
+23:17:20 INFO  : Context for 'APU' is selected.
+23:17:20 INFO  : System reset is completed.
+23:17:23 INFO  : 'after 3000' command is executed.
+23:17:24 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351A6C9E3A" && level==0} -index 1' command is executed.
+23:17:26 INFO  : FPGA configured successfully with bitstream "C:/Github/Zybo_mipi/Pcam2019_sendExp/vitis/pcam2019_sendExp/_ide/bitstream/system_wrapper.bit"
+23:17:26 INFO  : Context for 'APU' is selected.
+23:17:26 INFO  : Hardware design information is loaded from 'C:/Github/Zybo_mipi/Pcam2019_sendExp/vitis/system_wrapper/export/system_wrapper/hw/system_wrapper.xsa'.
+23:17:26 INFO  : 'configparams force-mem-access 1' command is executed.
+23:17:26 INFO  : Context for 'APU' is selected.
+23:17:26 INFO  : Sourcing of 'C:/Github/Zybo_mipi/Pcam2019_sendExp/vitis/pcam2019_sendExp/_ide/psinit/ps7_init.tcl' is done.
+23:17:26 INFO  : 'ps7_init' command is executed.
+23:17:26 INFO  : 'ps7_post_config' command is executed.
+23:17:26 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+23:17:28 INFO  : The application 'C:/Github/Zybo_mipi/Pcam2019_sendExp/vitis/pcam2019_sendExp/Debug/pcam2019_sendExp.elf' is downloaded to processor 'ps7_cortexa9_0'.
+23:17:28 INFO  : 'configparams force-mem-access 0' command is executed.
+23:17:28 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~"APU*"}
+rst -system
+after 3000
+targets -set -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351A6C9E3A" && level==0} -index 1
+fpga -file C:/Github/Zybo_mipi/Pcam2019_sendExp/vitis/pcam2019_sendExp/_ide/bitstream/system_wrapper.bit
+targets -set -nocase -filter {name =~"APU*"}
+loadhw -hw C:/Github/Zybo_mipi/Pcam2019_sendExp/vitis/system_wrapper/export/system_wrapper/hw/system_wrapper.xsa -mem-ranges [list {0x40000000 0xbfffffff}]
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*"}
+source C:/Github/Zybo_mipi/Pcam2019_sendExp/vitis/pcam2019_sendExp/_ide/psinit/ps7_init.tcl
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "*A9*#0"}
+dow C:/Github/Zybo_mipi/Pcam2019_sendExp/vitis/pcam2019_sendExp/Debug/pcam2019_sendExp.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+23:17:28 INFO  : Memory regions updated for context APU
+23:17:28 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+23:17:28 INFO  : 'con' command is executed.
+23:17:28 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*A9*#0"}
+con
+----------------End of Script----------------
+
+23:17:28 INFO  : Launch script is exported to file 'C:\Github\Zybo_mipi\Pcam2019_sendExp\vitis\.sdk\launch_scripts\single_application_debug\systemdebugger_pcam2019_sendexp_system_standalone.tcl'
+23:36:10 INFO  : Hardware specification for platform project 'system_wrapper' is updated.
+23:36:52 INFO  : Checking for BSP changes to sync application flags for project 'pcam2019_sendExp'...
+23:36:57 INFO  : The hardware specfication used by project 'pcam2019_sendExp' is out of sync with the platform. Resource files extracted from the hardware specfiication will be updated.
+23:36:57 INFO  : The file 'C:\Github\Zybo_mipi\Pcam2019_sendExp\vitis\pcam2019_sendExp\_ide\bitstream\system_wrapper.bit' stored in project is removed.
+23:36:57 INFO  : The updated bitstream files are copied from platform to folder 'C:\Github\Zybo_mipi\Pcam2019_sendExp\vitis\pcam2019_sendExp\_ide\bitstream' in project 'pcam2019_sendExp'.
+23:36:57 INFO  : The file 'C:\Github\Zybo_mipi\Pcam2019_sendExp\vitis\pcam2019_sendExp\_ide\psinit\ps7_init.tcl' stored in project is removed.
+23:37:04 INFO  : The updated ps init files are copied from platform to folder 'C:\Github\Zybo_mipi\Pcam2019_sendExp\vitis\pcam2019_sendExp\_ide\psinit' in project 'pcam2019_sendExp'.
+23:37:09 INFO  : Disconnected from the channel tcfchan#7.
+23:37:10 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+23:37:10 INFO  : Jtag cable 'Digilent Zybo Z7 210351A6C9E3A' is selected.
+23:37:10 INFO  : 'jtag frequency' command is executed.
+23:37:10 INFO  : Context for 'APU' is selected.
+23:37:10 INFO  : System reset is completed.
+23:37:13 INFO  : 'after 3000' command is executed.
+23:37:13 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351A6C9E3A" && level==0} -index 1' command is executed.
+23:37:16 INFO  : FPGA configured successfully with bitstream "C:/Github/Zybo_mipi/Pcam2019_sendExp/vitis/pcam2019_sendExp/_ide/bitstream/system_wrapper.bit"
+23:37:16 INFO  : Context for 'APU' is selected.
+23:37:16 INFO  : Hardware design information is loaded from 'C:/Github/Zybo_mipi/Pcam2019_sendExp/vitis/system_wrapper/export/system_wrapper/hw/system_wrapper.xsa'.
+23:37:16 INFO  : 'configparams force-mem-access 1' command is executed.
+23:37:16 INFO  : Context for 'APU' is selected.
+23:37:16 INFO  : Sourcing of 'C:/Github/Zybo_mipi/Pcam2019_sendExp/vitis/pcam2019_sendExp/_ide/psinit/ps7_init.tcl' is done.
+23:37:16 INFO  : 'ps7_init' command is executed.
+23:37:16 INFO  : 'ps7_post_config' command is executed.
+23:37:16 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+23:37:18 INFO  : The application 'C:/Github/Zybo_mipi/Pcam2019_sendExp/vitis/pcam2019_sendExp/Debug/pcam2019_sendExp.elf' is downloaded to processor 'ps7_cortexa9_0'.
+23:37:18 INFO  : 'configparams force-mem-access 0' command is executed.
+23:37:18 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~"APU*"}
+rst -system
+after 3000
+targets -set -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351A6C9E3A" && level==0} -index 1
+fpga -file C:/Github/Zybo_mipi/Pcam2019_sendExp/vitis/pcam2019_sendExp/_ide/bitstream/system_wrapper.bit
+targets -set -nocase -filter {name =~"APU*"}
+loadhw -hw C:/Github/Zybo_mipi/Pcam2019_sendExp/vitis/system_wrapper/export/system_wrapper/hw/system_wrapper.xsa -mem-ranges [list {0x40000000 0xbfffffff}]
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*"}
+source C:/Github/Zybo_mipi/Pcam2019_sendExp/vitis/pcam2019_sendExp/_ide/psinit/ps7_init.tcl
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "*A9*#0"}
+dow C:/Github/Zybo_mipi/Pcam2019_sendExp/vitis/pcam2019_sendExp/Debug/pcam2019_sendExp.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+23:37:18 INFO  : Memory regions updated for context APU
+23:37:18 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+23:37:18 INFO  : 'con' command is executed.
+23:37:18 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*A9*#0"}
+con
+----------------End of Script----------------
+
+23:37:18 INFO  : Launch script is exported to file 'C:\Github\Zybo_mipi\Pcam2019_sendExp\vitis\.sdk\launch_scripts\single_application_debug\systemdebugger_pcam2019_sendexp_system_standalone.tcl'
+23:45:42 INFO  : Disconnected from the channel tcfchan#10.
