@@ -35,6 +35,11 @@ char *simpleColor = (char *)malloc(sizeof(char) * 1280*720*3);
 XGpioPs instXGpioPs;
 XGpioPs_Config *configXGpioPs;
 
+#define REG(address) *(volatile unsigned int*)(address)
+#define GPIO_BASE  XPAR_AXI_GPIO_0_BASEADDR //(0x41200000)
+#define GPIO_DATA (GPIO_BASE + 0x0000)
+#define GPIO_TRI  (GPIO_BASE + 0x0004)
+
 int initflg = false;
 int sof = false;
 void print_app_header(void)
@@ -322,6 +327,10 @@ void start_application(void)
 	XGpioPs_SetOutputEnablePin(&instXGpioPs, JF2, 1);
 	XGpioPs_WritePin(&instXGpioPs, JF1, 0);
 	XGpioPs_WritePin(&instXGpioPs, JF2, 0);
+
+	REG(GPIO_TRI) = 0x00; //output
+	REG(GPIO_DATA) = 0x00; //off
+	REG(GPIO_DATA) = 0x0F; //on
 
 	xil_printf("\r\n\r\nstart\r\n\r\n");
 	initflg = true;

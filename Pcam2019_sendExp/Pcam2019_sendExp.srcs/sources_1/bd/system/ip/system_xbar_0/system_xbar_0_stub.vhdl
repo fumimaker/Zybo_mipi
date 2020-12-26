@@ -1,7 +1,7 @@
 -- Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
 -- --------------------------------------------------------------------------------
 -- Tool Version: Vivado v.2019.2 (win64) Build 2708876 Wed Nov  6 21:40:23 MST 2019
--- Date        : Fri Nov 20 23:40:27 2020
+-- Date        : Fri Nov 20 23:32:35 2020
 -- Host        : DESKTOP-5VC2SBS running 64-bit major release  (build 9200)
 -- Command     : write_vhdl -force -mode synth_stub -rename_top system_xbar_0 -prefix
 --               system_xbar_0_ system_xbar_0_stub.vhdl
