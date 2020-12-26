@@ -36,6 +36,7 @@ XGpioPs instXGpioPs;
 XGpioPs_Config *configXGpioPs;
 
 #define REG(address) *(volatile unsigned int*)(address)
+
 #define GPIO_BASE  XPAR_AXI_GPIO_0_BASEADDR //(0x41200000)
 #define GPIO_DATA (GPIO_BASE + 0x0000)
 #define GPIO_TRI  (GPIO_BASE + 0x0004)
@@ -270,18 +271,19 @@ void transfer_data(void)
 			ptrCounter = 0;
 			sof = true;
 			XGpioPs_WritePin(&instXGpioPs, JF2, 0);
+			REG(GPIO_DATA) = 0b0; //off
 			return;
 		}
 		else{
 			//1~1925‰ñ(0~1924)
-
 			if(sof){
-
 				XGpioPs_WritePin(&instXGpioPs, JF2, 0);
+				REG(GPIO_DATA) = 0b1; //on
 				sof = false;
 			}
 			udp_packet_send(!FINISH);
 			ptrCounter += UDP_SEND_BUFSIZE-sizeof(int);//+=1436byte
+			REG(GPIO_DATA) = 0b0; //off
 		}
 	}
 }
@@ -330,7 +332,6 @@ void start_application(void)
 
 	REG(GPIO_TRI) = 0x00; //output
 	REG(GPIO_DATA) = 0x00; //off
-	REG(GPIO_DATA) = 0x0F; //on
 
 	xil_printf("\r\n\r\nstart\r\n\r\n");
 	initflg = true;
@@ -350,6 +351,7 @@ void update_address(char *pointer){
 	if(initflg) {
 		XGpioPs_WritePin(&instXGpioPs, JF2, 1);
 		XGpioPs_WritePin(&instXGpioPs, JF1, 1);
+		//REG(GPIO_DATA) = 0b01; //on
 	}
 
 	sendFinished = false;

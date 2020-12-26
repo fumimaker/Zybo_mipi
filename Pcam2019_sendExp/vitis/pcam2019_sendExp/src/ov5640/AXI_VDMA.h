@@ -18,6 +18,11 @@
 #define STRINGIZE2(x) #x
 #define LINE_STRING STRINGIZE(__LINE__)
 
+#define REG(address) *(volatile unsigned int*)(address)
+#define GPIO1_BASE  XPAR_AXI_GPIO_1_BASEADDR //(0x41210000)
+#define GPIO1_DATA (GPIO1_BASE + 0x0000)
+#define GPIO1_TRI  (GPIO1_BASE + 0x0004)
+
 namespace digilent {
 
 /*!
@@ -122,6 +127,8 @@ public:
 //		while (XAxiVdma_ChannelIsRunning(&drv_inst_.WriteChannel)) ;
 
 		XAxiVdma_ChannelReset(&drv_inst_.WriteChannel);
+		REG(GPIO1_TRI) = 0x00; //output
+		REG(GPIO1_DATA) = 0x00; //off
 
 		int Polls = RESET_POLL;
 
@@ -252,6 +259,7 @@ public:
 		//std::cout << "VDMA:write complete" << std::endl;
 
 		int currentFrame = XAxiVdma_CurrFrameStore(&drv_inst_, XAXIVDMA_WRITE);
+
 		int prevFrame = 0;
 		if(currentFrame==0){
 			prevFrame = 2;
@@ -259,7 +267,7 @@ public:
 		else{
 			prevFrame = currentFrame - 1;
 		}
-
+		REG(GPIO1_DATA) = currentFrame;
 		int address = context_.WriteCfg.FrameStoreStartAddr[currentFrame]; //アドレスをintで持ってる
 		char *pointer = (char *)address;//データ用
 		update_address(pointer);

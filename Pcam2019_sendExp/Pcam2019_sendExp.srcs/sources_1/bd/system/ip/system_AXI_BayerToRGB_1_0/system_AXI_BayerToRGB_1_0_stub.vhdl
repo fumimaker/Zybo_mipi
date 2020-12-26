@@ -1,10 +1,10 @@
 -- Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
 -- --------------------------------------------------------------------------------
 -- Tool Version: Vivado v.2019.2 (win64) Build 2708876 Wed Nov  6 21:40:23 MST 2019
--- Date        : Mon Dec 21 22:23:13 2020
+-- Date        : Sun Dec 27 02:25:52 2020
 -- Host        : DESKTOP-5VC2SBS running 64-bit major release  (build 9200)
--- Command     : write_vhdl -force -mode synth_stub -rename_top system_AXI_BayerToRGB_1_0 -prefix
---               system_AXI_BayerToRGB_1_0_ system_AXI_BayerToRGB_1_0_stub.vhdl
+-- Command     : write_vhdl -force -mode synth_stub
+--               C:/Github/Zybo_mipi/Pcam2019_sendExp/Pcam2019_sendExp.srcs/sources_1/bd/system/ip/system_AXI_BayerToRGB_1_0/system_AXI_BayerToRGB_1_0_stub.vhdl
 -- Design      : system_AXI_BayerToRGB_1_0
 -- Purpose     : Stub declaration of top-level module interface
 -- Device      : xc7z020clg400-1

@@ -73,8 +73,17 @@ set_property DONT_TOUCH TRUE [get_cells -hier -filter {REF_NAME==system_rst_syst
 # IP: bd/system/ip/system_system_ila_0_1/system_system_ila_0_1.xci
 set_property DONT_TOUCH TRUE [get_cells -hier -filter {REF_NAME==system_system_ila_0_1 || ORIG_REF_NAME==system_system_ila_0_1} -quiet] -quiet
 
-# IP: bd/system/ip/system_axi_gpio_0_1/system_axi_gpio_0_1.xci
-set_property DONT_TOUCH TRUE [get_cells -hier -filter {REF_NAME==system_axi_gpio_0_1 || ORIG_REF_NAME==system_axi_gpio_0_1} -quiet] -quiet
+# IP: bd/system/ip/system_ps7_0_axi_periph_1_0/system_ps7_0_axi_periph_1_0.xci
+set_property DONT_TOUCH TRUE [get_cells -hier -filter {REF_NAME==system_ps7_0_axi_periph_1_0 || ORIG_REF_NAME==system_ps7_0_axi_periph_1_0} -quiet] -quiet
+
+# IP: bd/system/ip/system_xbar_1_1/system_xbar_1.xci
+set_property DONT_TOUCH TRUE [get_cells -hier -filter {REF_NAME==system_xbar_1 || ORIG_REF_NAME==system_xbar_1} -quiet] -quiet
+
+# IP: bd/system/ip/system_axi_gpio_0_3/system_axi_gpio_0_3.xci
+set_property DONT_TOUCH TRUE [get_cells -hier -filter {REF_NAME==system_axi_gpio_0_3 || ORIG_REF_NAME==system_axi_gpio_0_3} -quiet] -quiet
+
+# IP: bd/system/ip/system_axi_gpio_1_0/system_axi_gpio_1_0.xci
+set_property DONT_TOUCH TRUE [get_cells -hier -filter {REF_NAME==system_axi_gpio_1_0 || ORIG_REF_NAME==system_axi_gpio_1_0} -quiet] -quiet
 
 # IP: bd/system/ip/system_auto_pc_0/system_auto_pc_0.xci
 set_property DONT_TOUCH TRUE [get_cells -hier -filter {REF_NAME==system_auto_pc_0 || ORIG_REF_NAME==system_auto_pc_0} -quiet] -quiet
@@ -84,5 +93,8 @@ set_property DONT_TOUCH TRUE [get_cells -hier -filter {REF_NAME==system_auto_pc_
 
 # IP: bd/system/ip/system_auto_pc_2/system_auto_pc_2.xci
 set_property DONT_TOUCH TRUE [get_cells -hier -filter {REF_NAME==system_auto_pc_2 || ORIG_REF_NAME==system_auto_pc_2} -quiet] -quiet
+
+# IP: bd/system/ip/system_auto_pc_3_1/system_auto_pc_3.xci
+set_property DONT_TOUCH TRUE [get_cells -hier -filter {REF_NAME==system_auto_pc_3 || ORIG_REF_NAME==system_auto_pc_3} -quiet] -quiet
 
 # XDC: bd/system/system_ooc.xdc

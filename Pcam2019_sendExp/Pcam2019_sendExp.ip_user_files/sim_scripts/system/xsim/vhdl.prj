@@ -1,9 +1,9 @@
 vhdl xil_defaultlib  \
-"../../../bd/system/ipshared/339b/hdl/LineBuffer.vhd" \
-"../../../bd/system/ipshared/339b/hdl/AXI_BayerToRGB.vhd" \
+"../../../bd/system/ipshared/f93a/hdl/LineBuffer.vhd" \
+"../../../bd/system/ipshared/f93a/hdl/AXI_BayerToRGB.vhd" \
 "../../../bd/system/ip/system_AXI_BayerToRGB_1_0/sim/system_AXI_BayerToRGB_1_0.vhd" \
-"../../../bd/system/ipshared/2115/hdl/StoredGammaCoefs.vhd" \
-"../../../bd/system/ipshared/2115/hdl/AXI_GammaCorrection.vhd" \
+"../../../bd/system/ipshared/2eae/hdl/StoredGammaCoefs.vhd" \
+"../../../bd/system/ipshared/2eae/hdl/AXI_GammaCorrection.vhd" \
 "../../../bd/system/ip/system_AXI_GammaCorrection_0_0/sim/system_AXI_GammaCorrection_0_0.vhd" \
 "../../../bd/system/ip/system_DVIClocking_0_0/sim/system_DVIClocking_0_0.vhd" \
 "../../../bd/system/ip/system_MIPI_CSI_2_RX_0_0/hdl/ila_rxclk/sim/ila_rxclk.vhd" \
@@ -60,6 +60,11 @@ vhdl xil_defaultlib  \
 "../../../bd/system/ip/system_video_dynclk_0/system_video_dynclk_0_axi_clk_config.vhd" \
 "../../../bd/system/ip/system_vtg_0/sim/system_vtg_0.vhd" \
 "../../../bd/system/ip/system_rst_system_150M_0/sim/system_rst_system_150M_0.vhd" \
+"../../../bd/system/ip/system_system_ila_0_1/bd_0/sim/bd_1579.vhd" \
+"../../../bd/system/ip/system_system_ila_0_1/bd_0/ip/ip_0/sim/bd_1579_ila_lib_0.vhd" \
+"../../../bd/system/ip/system_system_ila_0_1/sim/system_system_ila_0_1.vhd" \
+"../../../bd/system/ip/system_axi_gpio_0_3/sim/system_axi_gpio_0_3.vhd" \
+"../../../bd/system/ip/system_axi_gpio_1_0/sim/system_axi_gpio_1_0.vhd" \
 "../../../bd/system/sim/system.vhd" \
 
 nosort
