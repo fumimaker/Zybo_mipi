@@ -18,7 +18,6 @@ proc create_report { reportName command } {
   }
 }
 set_param tcl.collectionResultDisplayLimit 0
-set_param chipscope.maxJobs 3
 set_param xicom.use_bs_reader 1
 set_param project.vivado.isBlockSynthRun true
 set_msg_config -msgmgr_mode ooc_run
@@ -37,7 +36,7 @@ set_property ip_repo_paths c:/Github/Zybo_mipi/Pcam2019/Zybo-Z7-20-pcam-5c-2019.
 update_ip_catalog
 set_property ip_output_repo c:/Github/Zybo_mipi/Pcam2019_sendExp/Pcam2019_sendExp.cache/ip [current_project]
 set_property ip_cache_permissions {read write} [current_project]
-read_ip -quiet c:/Github/Zybo_mipi/Pcam2019_sendExp/Pcam2019_sendExp.srcs/sources_1/bd/system/ip/system_xbar_1_1/system_xbar_1.xci
+read_ip -quiet C:/Github/Zybo_mipi/Pcam2019_sendExp/Pcam2019_sendExp.srcs/sources_1/bd/system/ip/system_xbar_1_1/system_xbar_1.xci
 set_property used_in_implementation false [get_files -all c:/Github/Zybo_mipi/Pcam2019_sendExp/Pcam2019_sendExp.srcs/sources_1/bd/system/ip/system_xbar_1_1/system_xbar_1_ooc.xdc]
 
 # Mark all dcp files as not used in implementation to prevent them from being
@@ -93,32 +92,32 @@ write_checkpoint -force -noxdef system_xbar_1.dcp
 create_report "system_xbar_1_synth_1_synth_report_utilization_0" "report_utilization -file system_xbar_1_utilization_synth.rpt -pb system_xbar_1_utilization_synth.pb"
 
 if { [catch {
-  file copy -force C:/Github/Zybo_mipi/Pcam2019_sendExp/Pcam2019_sendExp.runs/system_xbar_1_synth_1/system_xbar_1.dcp c:/Github/Zybo_mipi/Pcam2019_sendExp/Pcam2019_sendExp.srcs/sources_1/bd/system/ip/system_xbar_1_1/system_xbar_1.dcp
+  file copy -force C:/Github/Zybo_mipi/Pcam2019_sendExp/Pcam2019_sendExp.runs/system_xbar_1_synth_1/system_xbar_1.dcp C:/Github/Zybo_mipi/Pcam2019_sendExp/Pcam2019_sendExp.srcs/sources_1/bd/system/ip/system_xbar_1_1/system_xbar_1.dcp
 } _RESULT ] } { 
   send_msg_id runtcl-3 error "ERROR: Unable to successfully create or copy the sub-design checkpoint file."
   error "ERROR: Unable to successfully create or copy the sub-design checkpoint file."
 }
 
 if { [catch {
-  write_verilog -force -mode synth_stub c:/Github/Zybo_mipi/Pcam2019_sendExp/Pcam2019_sendExp.srcs/sources_1/bd/system/ip/system_xbar_1_1/system_xbar_1_stub.v
+  write_verilog -force -mode synth_stub C:/Github/Zybo_mipi/Pcam2019_sendExp/Pcam2019_sendExp.srcs/sources_1/bd/system/ip/system_xbar_1_1/system_xbar_1_stub.v
 } _RESULT ] } { 
   puts "CRITICAL WARNING: Unable to successfully create a Verilog synthesis stub for the sub-design. This may lead to errors in top level synthesis of the design. Error reported: $_RESULT"
 }
 
 if { [catch {
-  write_vhdl -force -mode synth_stub c:/Github/Zybo_mipi/Pcam2019_sendExp/Pcam2019_sendExp.srcs/sources_1/bd/system/ip/system_xbar_1_1/system_xbar_1_stub.vhdl
+  write_vhdl -force -mode synth_stub C:/Github/Zybo_mipi/Pcam2019_sendExp/Pcam2019_sendExp.srcs/sources_1/bd/system/ip/system_xbar_1_1/system_xbar_1_stub.vhdl
 } _RESULT ] } { 
   puts "CRITICAL WARNING: Unable to successfully create a VHDL synthesis stub for the sub-design. This may lead to errors in top level synthesis of the design. Error reported: $_RESULT"
 }
 
 if { [catch {
-  write_verilog -force -mode funcsim c:/Github/Zybo_mipi/Pcam2019_sendExp/Pcam2019_sendExp.srcs/sources_1/bd/system/ip/system_xbar_1_1/system_xbar_1_sim_netlist.v
+  write_verilog -force -mode funcsim C:/Github/Zybo_mipi/Pcam2019_sendExp/Pcam2019_sendExp.srcs/sources_1/bd/system/ip/system_xbar_1_1/system_xbar_1_sim_netlist.v
 } _RESULT ] } { 
   puts "CRITICAL WARNING: Unable to successfully create the Verilog functional simulation sub-design file. Post-Synthesis Functional Simulation with this file may not be possible or may give incorrect results. Error reported: $_RESULT"
 }
 
 if { [catch {
-  write_vhdl -force -mode funcsim c:/Github/Zybo_mipi/Pcam2019_sendExp/Pcam2019_sendExp.srcs/sources_1/bd/system/ip/system_xbar_1_1/system_xbar_1_sim_netlist.vhdl
+  write_vhdl -force -mode funcsim C:/Github/Zybo_mipi/Pcam2019_sendExp/Pcam2019_sendExp.srcs/sources_1/bd/system/ip/system_xbar_1_1/system_xbar_1_sim_netlist.vhdl
 } _RESULT ] } { 
   puts "CRITICAL WARNING: Unable to successfully create the VHDL functional simulation sub-design file. Post-Synthesis Functional Simulation with this file may not be possible or may give incorrect results. Error reported: $_RESULT"
 }
@@ -128,32 +127,32 @@ if { [catch {
 
 
 if { [catch {
-  file copy -force C:/Github/Zybo_mipi/Pcam2019_sendExp/Pcam2019_sendExp.runs/system_xbar_1_synth_1/system_xbar_1.dcp c:/Github/Zybo_mipi/Pcam2019_sendExp/Pcam2019_sendExp.srcs/sources_1/bd/system/ip/system_xbar_1_1/system_xbar_1.dcp
+  file copy -force C:/Github/Zybo_mipi/Pcam2019_sendExp/Pcam2019_sendExp.runs/system_xbar_1_synth_1/system_xbar_1.dcp C:/Github/Zybo_mipi/Pcam2019_sendExp/Pcam2019_sendExp.srcs/sources_1/bd/system/ip/system_xbar_1_1/system_xbar_1.dcp
 } _RESULT ] } { 
   send_msg_id runtcl-3 error "ERROR: Unable to successfully create or copy the sub-design checkpoint file."
   error "ERROR: Unable to successfully create or copy the sub-design checkpoint file."
 }
 
 if { [catch {
-  file rename -force C:/Github/Zybo_mipi/Pcam2019_sendExp/Pcam2019_sendExp.runs/system_xbar_1_synth_1/system_xbar_1_stub.v c:/Github/Zybo_mipi/Pcam2019_sendExp/Pcam2019_sendExp.srcs/sources_1/bd/system/ip/system_xbar_1_1/system_xbar_1_stub.v
+  file rename -force C:/Github/Zybo_mipi/Pcam2019_sendExp/Pcam2019_sendExp.runs/system_xbar_1_synth_1/system_xbar_1_stub.v C:/Github/Zybo_mipi/Pcam2019_sendExp/Pcam2019_sendExp.srcs/sources_1/bd/system/ip/system_xbar_1_1/system_xbar_1_stub.v
 } _RESULT ] } { 
   puts "CRITICAL WARNING: Unable to successfully create a Verilog synthesis stub for the sub-design. This may lead to errors in top level synthesis of the design. Error reported: $_RESULT"
 }
 
 if { [catch {
-  file rename -force C:/Github/Zybo_mipi/Pcam2019_sendExp/Pcam2019_sendExp.runs/system_xbar_1_synth_1/system_xbar_1_stub.vhdl c:/Github/Zybo_mipi/Pcam2019_sendExp/Pcam2019_sendExp.srcs/sources_1/bd/system/ip/system_xbar_1_1/system_xbar_1_stub.vhdl
+  file rename -force C:/Github/Zybo_mipi/Pcam2019_sendExp/Pcam2019_sendExp.runs/system_xbar_1_synth_1/system_xbar_1_stub.vhdl C:/Github/Zybo_mipi/Pcam2019_sendExp/Pcam2019_sendExp.srcs/sources_1/bd/system/ip/system_xbar_1_1/system_xbar_1_stub.vhdl
 } _RESULT ] } { 
   puts "CRITICAL WARNING: Unable to successfully create a VHDL synthesis stub for the sub-design. This may lead to errors in top level synthesis of the design. Error reported: $_RESULT"
 }
 
 if { [catch {
-  file rename -force C:/Github/Zybo_mipi/Pcam2019_sendExp/Pcam2019_sendExp.runs/system_xbar_1_synth_1/system_xbar_1_sim_netlist.v c:/Github/Zybo_mipi/Pcam2019_sendExp/Pcam2019_sendExp.srcs/sources_1/bd/system/ip/system_xbar_1_1/system_xbar_1_sim_netlist.v
+  file rename -force C:/Github/Zybo_mipi/Pcam2019_sendExp/Pcam2019_sendExp.runs/system_xbar_1_synth_1/system_xbar_1_sim_netlist.v C:/Github/Zybo_mipi/Pcam2019_sendExp/Pcam2019_sendExp.srcs/sources_1/bd/system/ip/system_xbar_1_1/system_xbar_1_sim_netlist.v
 } _RESULT ] } { 
   puts "CRITICAL WARNING: Unable to successfully create the Verilog functional simulation sub-design file. Post-Synthesis Functional Simulation with this file may not be possible or may give incorrect results. Error reported: $_RESULT"
 }
 
 if { [catch {
-  file rename -force C:/Github/Zybo_mipi/Pcam2019_sendExp/Pcam2019_sendExp.runs/system_xbar_1_synth_1/system_xbar_1_sim_netlist.vhdl c:/Github/Zybo_mipi/Pcam2019_sendExp/Pcam2019_sendExp.srcs/sources_1/bd/system/ip/system_xbar_1_1/system_xbar_1_sim_netlist.vhdl
+  file rename -force C:/Github/Zybo_mipi/Pcam2019_sendExp/Pcam2019_sendExp.runs/system_xbar_1_synth_1/system_xbar_1_sim_netlist.vhdl C:/Github/Zybo_mipi/Pcam2019_sendExp/Pcam2019_sendExp.srcs/sources_1/bd/system/ip/system_xbar_1_1/system_xbar_1_sim_netlist.vhdl
 } _RESULT ] } { 
   puts "CRITICAL WARNING: Unable to successfully create the VHDL functional simulation sub-design file. Post-Synthesis Functional Simulation with this file may not be possible or may give incorrect results. Error reported: $_RESULT"
 }
@@ -162,13 +161,13 @@ if { [catch {
 
 if {[file isdir C:/Github/Zybo_mipi/Pcam2019_sendExp/Pcam2019_sendExp.ip_user_files/ip/system_xbar_1]} {
   catch { 
-    file copy -force c:/Github/Zybo_mipi/Pcam2019_sendExp/Pcam2019_sendExp.srcs/sources_1/bd/system/ip/system_xbar_1_1/system_xbar_1_stub.v C:/Github/Zybo_mipi/Pcam2019_sendExp/Pcam2019_sendExp.ip_user_files/ip/system_xbar_1
+    file copy -force C:/Github/Zybo_mipi/Pcam2019_sendExp/Pcam2019_sendExp.srcs/sources_1/bd/system/ip/system_xbar_1_1/system_xbar_1_stub.v C:/Github/Zybo_mipi/Pcam2019_sendExp/Pcam2019_sendExp.ip_user_files/ip/system_xbar_1
   }
 }
 
 if {[file isdir C:/Github/Zybo_mipi/Pcam2019_sendExp/Pcam2019_sendExp.ip_user_files/ip/system_xbar_1]} {
   catch { 
-    file copy -force c:/Github/Zybo_mipi/Pcam2019_sendExp/Pcam2019_sendExp.srcs/sources_1/bd/system/ip/system_xbar_1_1/system_xbar_1_stub.vhdl C:/Github/Zybo_mipi/Pcam2019_sendExp/Pcam2019_sendExp.ip_user_files/ip/system_xbar_1
+    file copy -force C:/Github/Zybo_mipi/Pcam2019_sendExp/Pcam2019_sendExp.srcs/sources_1/bd/system/ip/system_xbar_1_1/system_xbar_1_stub.vhdl C:/Github/Zybo_mipi/Pcam2019_sendExp/Pcam2019_sendExp.ip_user_files/ip/system_xbar_1
   }
 }
 file delete __synthesis_is_running__

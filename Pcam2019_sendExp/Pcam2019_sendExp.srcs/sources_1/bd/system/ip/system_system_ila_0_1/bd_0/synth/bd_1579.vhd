@@ -43,6 +43,8 @@ entity bd_1579 is
     probe3 : in STD_LOGIC_VECTOR ( 4 downto 1 );
     probe4 : in STD_LOGIC_VECTOR ( 4 downto 1 );
     probe5 : in STD_LOGIC_VECTOR ( 4 downto 1 );
+    probe6 : in STD_LOGIC_VECTOR ( 0 to 0 );
+    probe7 : in STD_LOGIC_VECTOR ( 0 to 0 );
     resetn : in STD_LOGIC
   );
   attribute CORE_GENERATION_INFO : string;
@@ -61,29 +63,31 @@ architecture STRUCTURE of bd_1579 is
     probe3 : in STD_LOGIC_VECTOR ( 3 downto 0 );
     probe4 : in STD_LOGIC_VECTOR ( 3 downto 0 );
     probe5 : in STD_LOGIC_VECTOR ( 3 downto 0 );
-    probe6 : in STD_LOGIC_VECTOR ( 1 downto 0 );
-    probe7 : in STD_LOGIC_VECTOR ( 31 downto 0 );
-    probe8 : in STD_LOGIC_VECTOR ( 3 downto 0 );
-    probe9 : in STD_LOGIC_VECTOR ( 3 downto 0 );
-    probe10 : in STD_LOGIC_VECTOR ( 2 downto 0 );
-    probe11 : in STD_LOGIC_VECTOR ( 2 downto 0 );
-    probe12 : in STD_LOGIC_VECTOR ( 1 downto 0 );
-    probe13 : in STD_LOGIC_VECTOR ( 31 downto 0 );
-    probe14 : in STD_LOGIC_VECTOR ( 3 downto 0 );
-    probe15 : in STD_LOGIC_VECTOR ( 3 downto 0 );
-    probe16 : in STD_LOGIC_VECTOR ( 2 downto 0 );
-    probe17 : in STD_LOGIC_VECTOR ( 2 downto 0 );
-    probe18 : in STD_LOGIC_VECTOR ( 1 downto 0 );
-    probe19 : in STD_LOGIC_VECTOR ( 1 downto 0 );
+    probe6 : in STD_LOGIC_VECTOR ( 0 to 0 );
+    probe7 : in STD_LOGIC_VECTOR ( 0 to 0 );
+    probe8 : in STD_LOGIC_VECTOR ( 1 downto 0 );
+    probe9 : in STD_LOGIC_VECTOR ( 31 downto 0 );
+    probe10 : in STD_LOGIC_VECTOR ( 3 downto 0 );
+    probe11 : in STD_LOGIC_VECTOR ( 3 downto 0 );
+    probe12 : in STD_LOGIC_VECTOR ( 2 downto 0 );
+    probe13 : in STD_LOGIC_VECTOR ( 2 downto 0 );
+    probe14 : in STD_LOGIC_VECTOR ( 1 downto 0 );
+    probe15 : in STD_LOGIC_VECTOR ( 31 downto 0 );
+    probe16 : in STD_LOGIC_VECTOR ( 3 downto 0 );
+    probe17 : in STD_LOGIC_VECTOR ( 3 downto 0 );
+    probe18 : in STD_LOGIC_VECTOR ( 2 downto 0 );
+    probe19 : in STD_LOGIC_VECTOR ( 2 downto 0 );
     probe20 : in STD_LOGIC_VECTOR ( 1 downto 0 );
-    probe21 : in STD_LOGIC_VECTOR ( 63 downto 0 );
-    probe22 : in STD_LOGIC_VECTOR ( 63 downto 0 );
-    probe23 : in STD_LOGIC_VECTOR ( 7 downto 0 );
-    probe24 : in STD_LOGIC_VECTOR ( 1 downto 0 );
-    probe25 : in STD_LOGIC_VECTOR ( 2 downto 0 );
+    probe21 : in STD_LOGIC_VECTOR ( 1 downto 0 );
+    probe22 : in STD_LOGIC_VECTOR ( 1 downto 0 );
+    probe23 : in STD_LOGIC_VECTOR ( 63 downto 0 );
+    probe24 : in STD_LOGIC_VECTOR ( 63 downto 0 );
+    probe25 : in STD_LOGIC_VECTOR ( 7 downto 0 );
     probe26 : in STD_LOGIC_VECTOR ( 1 downto 0 );
-    probe27 : in STD_LOGIC_VECTOR ( 1 downto 0 );
-    probe28 : in STD_LOGIC_VECTOR ( 2 downto 0 )
+    probe27 : in STD_LOGIC_VECTOR ( 2 downto 0 );
+    probe28 : in STD_LOGIC_VECTOR ( 1 downto 0 );
+    probe29 : in STD_LOGIC_VECTOR ( 1 downto 0 );
+    probe30 : in STD_LOGIC_VECTOR ( 2 downto 0 )
   );
   end component bd_1579_ila_lib_0;
   component bd_1579_g_inst_0 is
@@ -253,6 +257,8 @@ architecture STRUCTURE of bd_1579 is
   signal probe3_1 : STD_LOGIC_VECTOR ( 4 downto 1 );
   signal probe4_1 : STD_LOGIC_VECTOR ( 4 downto 1 );
   signal probe5_1 : STD_LOGIC_VECTOR ( 4 downto 1 );
+  signal probe6_1 : STD_LOGIC_VECTOR ( 0 to 0 );
+  signal probe7_1 : STD_LOGIC_VECTOR ( 0 to 0 );
   signal resetn_1 : STD_LOGIC;
   attribute X_INTERFACE_INFO : string;
   attribute X_INTERFACE_INFO of SLOT_0_AXI_arready : signal is "xilinx.com:interface:aximm:1.0 SLOT_0_AXI ARREADY";
@@ -321,6 +327,8 @@ begin
   probe3_1(4 downto 1) <= probe3(4 downto 1);
   probe4_1(4 downto 1) <= probe4(4 downto 1);
   probe5_1(4 downto 1) <= probe5(4 downto 1);
+  probe6_1(0) <= probe6(0);
+  probe7_1(0) <= probe7(0);
   resetn_1 <= resetn;
 g_inst: component bd_1579_g_inst_0
      port map (
@@ -388,33 +396,35 @@ ila_lib: component bd_1579_ila_lib_0
       clk => clk_1,
       probe0(0) => probe0_1(0),
       probe1(0) => probe1_1(0),
-      probe10(2 downto 0) => net_slot_0_axi_arprot(2 downto 0),
-      probe11(2 downto 0) => net_slot_0_axi_arsize(2 downto 0),
-      probe12(1 downto 0) => net_slot_0_axi_aw_cnt(1 downto 0),
-      probe13(31 downto 0) => net_slot_0_axi_awaddr(31 downto 0),
-      probe14(3 downto 0) => net_slot_0_axi_awcache(3 downto 0),
-      probe15(3 downto 0) => net_slot_0_axi_awlen(3 downto 0),
-      probe16(2 downto 0) => net_slot_0_axi_awprot(2 downto 0),
-      probe17(2 downto 0) => net_slot_0_axi_awsize(2 downto 0),
-      probe18(1 downto 0) => net_slot_0_axi_b_cnt(1 downto 0),
-      probe19(1 downto 0) => net_slot_0_axi_bresp(1 downto 0),
+      probe10(3 downto 0) => net_slot_0_axi_arcache(3 downto 0),
+      probe11(3 downto 0) => net_slot_0_axi_arlen(3 downto 0),
+      probe12(2 downto 0) => net_slot_0_axi_arprot(2 downto 0),
+      probe13(2 downto 0) => net_slot_0_axi_arsize(2 downto 0),
+      probe14(1 downto 0) => net_slot_0_axi_aw_cnt(1 downto 0),
+      probe15(31 downto 0) => net_slot_0_axi_awaddr(31 downto 0),
+      probe16(3 downto 0) => net_slot_0_axi_awcache(3 downto 0),
+      probe17(3 downto 0) => net_slot_0_axi_awlen(3 downto 0),
+      probe18(2 downto 0) => net_slot_0_axi_awprot(2 downto 0),
+      probe19(2 downto 0) => net_slot_0_axi_awsize(2 downto 0),
       probe2(1 downto 0) => probe2_1(1 downto 0),
-      probe20(1 downto 0) => net_slot_0_axi_r_cnt(1 downto 0),
-      probe21(63 downto 0) => net_slot_0_axi_rdata(63 downto 0),
-      probe22(63 downto 0) => net_slot_0_axi_wdata(63 downto 0),
-      probe23(7 downto 0) => net_slot_0_axi_wstrb(7 downto 0),
-      probe24(1 downto 0) => net_slot_0_axi_aw_ctrl(1 downto 0),
-      probe25(2 downto 0) => net_slot_0_axi_w_ctrl(2 downto 0),
-      probe26(1 downto 0) => net_slot_0_axi_b_ctrl(1 downto 0),
-      probe27(1 downto 0) => net_slot_0_axi_ar_ctrl(1 downto 0),
-      probe28(2 downto 0) => net_slot_0_axi_r_ctrl(2 downto 0),
+      probe20(1 downto 0) => net_slot_0_axi_b_cnt(1 downto 0),
+      probe21(1 downto 0) => net_slot_0_axi_bresp(1 downto 0),
+      probe22(1 downto 0) => net_slot_0_axi_r_cnt(1 downto 0),
+      probe23(63 downto 0) => net_slot_0_axi_rdata(63 downto 0),
+      probe24(63 downto 0) => net_slot_0_axi_wdata(63 downto 0),
+      probe25(7 downto 0) => net_slot_0_axi_wstrb(7 downto 0),
+      probe26(1 downto 0) => net_slot_0_axi_aw_ctrl(1 downto 0),
+      probe27(2 downto 0) => net_slot_0_axi_w_ctrl(2 downto 0),
+      probe28(1 downto 0) => net_slot_0_axi_b_ctrl(1 downto 0),
+      probe29(1 downto 0) => net_slot_0_axi_ar_ctrl(1 downto 0),
       probe3(3 downto 0) => probe3_1(4 downto 1),
+      probe30(2 downto 0) => net_slot_0_axi_r_ctrl(2 downto 0),
       probe4(3 downto 0) => probe4_1(4 downto 1),
       probe5(3 downto 0) => probe5_1(4 downto 1),
-      probe6(1 downto 0) => net_slot_0_axi_ar_cnt(1 downto 0),
-      probe7(31 downto 0) => net_slot_0_axi_araddr(31 downto 0),
-      probe8(3 downto 0) => net_slot_0_axi_arcache(3 downto 0),
-      probe9(3 downto 0) => net_slot_0_axi_arlen(3 downto 0)
+      probe6(0) => probe6_1(0),
+      probe7(0) => probe7_1(0),
+      probe8(1 downto 0) => net_slot_0_axi_ar_cnt(1 downto 0),
+      probe9(31 downto 0) => net_slot_0_axi_araddr(31 downto 0)
     );
 slot_0_ar: component bd_1579_slot_0_ar_0
      port map (

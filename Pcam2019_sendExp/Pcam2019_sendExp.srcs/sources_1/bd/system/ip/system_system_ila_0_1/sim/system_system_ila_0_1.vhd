@@ -62,6 +62,8 @@ ENTITY system_system_ila_0_1 IS
     probe3 : IN STD_LOGIC_VECTOR(4 DOWNTO 1);
     probe4 : IN STD_LOGIC_VECTOR(4 DOWNTO 1);
     probe5 : IN STD_LOGIC_VECTOR(4 DOWNTO 1);
+    probe6 : IN STD_LOGIC_VECTOR(0 DOWNTO 0);
+    probe7 : IN STD_LOGIC_VECTOR(0 DOWNTO 0);
     SLOT_0_AXI_awaddr : IN STD_LOGIC_VECTOR(31 DOWNTO 0);
     SLOT_0_AXI_awlen : IN STD_LOGIC_VECTOR(3 DOWNTO 0);
     SLOT_0_AXI_awsize : IN STD_LOGIC_VECTOR(2 DOWNTO 0);
@@ -104,6 +106,8 @@ ARCHITECTURE system_system_ila_0_1_arch OF system_system_ila_0_1 IS
       probe3 : IN STD_LOGIC_VECTOR(4 DOWNTO 1);
       probe4 : IN STD_LOGIC_VECTOR(4 DOWNTO 1);
       probe5 : IN STD_LOGIC_VECTOR(4 DOWNTO 1);
+      probe6 : IN STD_LOGIC_VECTOR(0 DOWNTO 0);
+      probe7 : IN STD_LOGIC_VECTOR(0 DOWNTO 0);
       SLOT_0_AXI_awaddr : IN STD_LOGIC_VECTOR(31 DOWNTO 0);
       SLOT_0_AXI_awlen : IN STD_LOGIC_VECTOR(3 DOWNTO 0);
       SLOT_0_AXI_awsize : IN STD_LOGIC_VECTOR(2 DOWNTO 0);
@@ -177,6 +181,8 @@ BEGIN
       probe3 => probe3,
       probe4 => probe4,
       probe5 => probe5,
+      probe6 => probe6,
+      probe7 => probe7,
       SLOT_0_AXI_awaddr => SLOT_0_AXI_awaddr,
       SLOT_0_AXI_awlen => SLOT_0_AXI_awlen,
       SLOT_0_AXI_awsize => SLOT_0_AXI_awsize,
