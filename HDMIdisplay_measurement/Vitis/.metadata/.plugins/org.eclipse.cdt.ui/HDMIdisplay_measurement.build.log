@@ -1,0 +1,25 @@
+02:52:47 **** Incremental Build of configuration Debug for project HDMIdisplay_measurement ****
+make all 
+make --no-print-directory pre-build
+a9-linaro-pre-build-step
+' '
+make --no-print-directory main-build
+'Building file: ../src/helloworld.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -IC:/Github/Zybo_mipi/HDMIdisplay_measurement/Vitis/design_1_wrapper/export/design_1_wrapper/sw/design_1_wrapper/standalone_domain/bspinclude/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+'Finished building: ../src/helloworld.c'
+' '
+'Building target: HDMIdisplay_measurement.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -LC:/Github/Zybo_mipi/HDMIdisplay_measurement/Vitis/design_1_wrapper/export/design_1_wrapper/sw/design_1_wrapper/standalone_domain/bsplib/lib -o "HDMIdisplay_measurement.elf"  ./src/helloworld.o ./src/platform.o ./src/videoOut.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: HDMIdisplay_measurement.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size HDMIdisplay_measurement.elf  |tee "HDMIdisplay_measurement.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  58044	   2720	  25824	  86588	  1523c	HDMIdisplay_measurement.elf
+'Finished building: HDMIdisplay_measurement.elf.size'
+' '
+
+02:52:48 Build Finished (took 898ms)
+
