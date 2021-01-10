@@ -1,0 +1,278 @@
+{
+  "design": {
+    "design_info": {
+      "boundary_crc": "0xDA62C9ED725248CD",
+      "device": "xc7z020clg400-1",
+      "name": "design_1",
+      "synth_flow_mode": "Hierarchical",
+      "tool_version": "2019.2",
+      "validated": "true"
+    },
+    "design_tree": {
+      "rgb2dvi_0": "",
+      "clk_wiz_0": "",
+      "xlconstant_0": "",
+      "VideoGen_0": ""
+    },
+    "ports": {
+      "hdmi_tx_p": {
+        "direction": "O",
+        "left": "2",
+        "right": "0"
+      },
+      "hdmi_tx_n": {
+        "direction": "O",
+        "left": "2",
+        "right": "0"
+      },
+      "hdmi_tx_clk_n": {
+        "direction": "O",
+        "parameters": {
+          "FREQ_HZ": {
+            "value": "100000000",
+            "value_src": "default_prop"
+          },
+          "PHASE": {
+            "value": "0.000",
+            "value_src": "default_prop"
+          }
+        }
+      },
+      "hdmi_tx_clk_p": {
+        "direction": "O",
+        "parameters": {
+          "FREQ_HZ": {
+            "value": "100000000",
+            "value_src": "default_prop"
+          },
+          "PHASE": {
+            "value": "0.000",
+            "value_src": "default_prop"
+          }
+        }
+      },
+      "sysclock": {
+        "direction": "I"
+      },
+      "sw": {
+        "direction": "I"
+      },
+      "led": {
+        "direction": "O"
+      },
+      "sensor_in": {
+        "direction": "I"
+      },
+      "sensor_led": {
+        "direction": "O"
+      }
+    },
+    "components": {
+      "rgb2dvi_0": {
+        "vlnv": "digilentinc.com:ip:rgb2dvi:1.4",
+        "xci_name": "design_1_rgb2dvi_0_0",
+        "parameters": {
+          "kClkRange": {
+            "value": "3"
+          },
+          "kRstActiveHigh": {
+            "value": "true"
+          }
+        }
+      },
+      "clk_wiz_0": {
+        "vlnv": "xilinx.com:ip:clk_wiz:6.0",
+        "xci_name": "design_1_clk_wiz_0_0",
+        "parameters": {
+          "CLKOUT1_JITTER": {
+            "value": "244.188"
+          },
+          "CLKOUT1_PHASE_ERROR": {
+            "value": "245.344"
+          },
+          "CLKOUT1_REQUESTED_OUT_FREQ": {
+            "value": "74.25"
+          },
+          "CLK_IN1_BOARD_INTERFACE": {
+            "value": "sys_clock"
+          },
+          "MMCM_CLKFBOUT_MULT_F": {
+            "value": "37.125"
+          },
+          "MMCM_CLKOUT0_DIVIDE_F": {
+            "value": "12.500"
+          },
+          "MMCM_DIVCLK_DIVIDE": {
+            "value": "5"
+          },
+          "USE_BOARD_FLOW": {
+            "value": "true"
+          },
+          "USE_LOCKED": {
+            "value": "false"
+          },
+          "USE_RESET": {
+            "value": "false"
+          }
+        }
+      },
+      "xlconstant_0": {
+        "vlnv": "xilinx.com:ip:xlconstant:1.1",
+        "xci_name": "design_1_xlconstant_0_0",
+        "parameters": {
+          "CONST_VAL": {
+            "value": "0"
+          }
+        }
+      },
+      "VideoGen_0": {
+        "vlnv": "xilinx.com:module_ref:VideoGen:1.0",
+        "xci_name": "design_1_VideoGen_0_0",
+        "reference_info": {
+          "ref_type": "hdl",
+          "ref_name": "VideoGen",
+          "boundary_crc": "0x0"
+        },
+        "ports": {
+          "CLK": {
+            "type": "clk",
+            "direction": "I",
+            "parameters": {
+              "CLK_DOMAIN": {
+                "value": "/clk_wiz_0_clk_out1",
+                "value_src": "ip_prop"
+              },
+              "FREQ_HZ": {
+                "value": "74250000",
+                "value_src": "ip_prop"
+              },
+              "PHASE": {
+                "value": "0.0",
+                "value_src": "ip_prop"
+              }
+            }
+          },
+          "data_out": {
+            "direction": "O",
+            "left": "23",
+            "right": "0"
+          },
+          "hsync_out": {
+            "direction": "O"
+          },
+          "vsync_out": {
+            "direction": "O"
+          },
+          "de_out": {
+            "direction": "O"
+          },
+          "sw": {
+            "direction": "I"
+          },
+          "led": {
+            "direction": "O"
+          },
+          "sensor_in": {
+            "direction": "I"
+          },
+          "sensor_led": {
+            "direction": "O"
+          }
+        }
+      }
+    },
+    "nets": {
+      "rgb2dvi_0_TMDS_Data_p": {
+        "ports": [
+          "rgb2dvi_0/TMDS_Data_p",
+          "hdmi_tx_p"
+        ]
+      },
+      "rgb2dvi_0_TMDS_Data_n": {
+        "ports": [
+          "rgb2dvi_0/TMDS_Data_n",
+          "hdmi_tx_n"
+        ]
+      },
+      "rgb2dvi_0_TMDS_Clk_p": {
+        "ports": [
+          "rgb2dvi_0/TMDS_Clk_p",
+          "hdmi_tx_clk_p"
+        ]
+      },
+      "rgb2dvi_0_TMDS_Clk_n": {
+        "ports": [
+          "rgb2dvi_0/TMDS_Clk_n",
+          "hdmi_tx_clk_n"
+        ]
+      },
+      "VideoGen_0_data_out": {
+        "ports": [
+          "VideoGen_0/data_out",
+          "rgb2dvi_0/vid_pData"
+        ]
+      },
+      "VideoGen_0_hsync_out": {
+        "ports": [
+          "VideoGen_0/hsync_out",
+          "rgb2dvi_0/vid_pHSync"
+        ]
+      },
+      "VideoGen_0_vsync_out": {
+        "ports": [
+          "VideoGen_0/vsync_out",
+          "rgb2dvi_0/vid_pVSync"
+        ]
+      },
+      "VideoGen_0_de_out": {
+        "ports": [
+          "VideoGen_0/de_out",
+          "rgb2dvi_0/vid_pVDE"
+        ]
+      },
+      "xlconstant_0_dout": {
+        "ports": [
+          "xlconstant_0/dout",
+          "rgb2dvi_0/aRst"
+        ]
+      },
+      "sysclock_1": {
+        "ports": [
+          "sysclock",
+          "clk_wiz_0/clk_in1"
+        ]
+      },
+      "clk_wiz_0_clk_out1": {
+        "ports": [
+          "clk_wiz_0/clk_out1",
+          "rgb2dvi_0/PixelClk",
+          "VideoGen_0/CLK"
+        ]
+      },
+      "sw_1": {
+        "ports": [
+          "sw",
+          "VideoGen_0/sw"
+        ]
+      },
+      "VideoGen_0_led": {
+        "ports": [
+          "VideoGen_0/led",
+          "led"
+        ]
+      },
+      "sensor_in_1": {
+        "ports": [
+          "sensor_in",
+          "VideoGen_0/sensor_in"
+        ]
+      },
+      "VideoGen_0_sensor_led": {
+        "ports": [
+          "VideoGen_0/sensor_led",
+          "sensor_led"
+        ]
+      }
+    }
+  }
+}
