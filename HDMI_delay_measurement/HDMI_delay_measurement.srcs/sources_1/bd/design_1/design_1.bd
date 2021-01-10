@@ -1,12 +1,11 @@
 {
   "design": {
     "design_info": {
-      "boundary_crc": "0xDA62C9ED725248CD",
+      "boundary_crc": "0xC349F51C26CC2A60",
       "device": "xc7z020clg400-1",
       "name": "design_1",
       "synth_flow_mode": "Hierarchical",
-      "tool_version": "2019.2",
-      "validated": "true"
+      "tool_version": "2019.2"
     },
     "design_tree": {
       "rgb2dvi_0": "",
@@ -26,45 +25,52 @@
         "right": "0"
       },
       "hdmi_tx_clk_n": {
-        "direction": "O",
-        "parameters": {
-          "FREQ_HZ": {
-            "value": "100000000",
-            "value_src": "default_prop"
-          },
-          "PHASE": {
-            "value": "0.000",
-            "value_src": "default_prop"
-          }
-        }
+        "direction": "O"
       },
       "hdmi_tx_clk_p": {
-        "direction": "O",
-        "parameters": {
-          "FREQ_HZ": {
-            "value": "100000000",
-            "value_src": "default_prop"
-          },
-          "PHASE": {
-            "value": "0.000",
-            "value_src": "default_prop"
-          }
-        }
+        "direction": "O"
       },
       "sysclock": {
         "direction": "I"
       },
-      "sw": {
-        "direction": "I"
-      },
       "led": {
-        "direction": "O"
+        "direction": "O",
+        "left": "3",
+        "right": "0"
       },
       "sensor_in": {
         "direction": "I"
       },
-      "sensor_led": {
-        "direction": "O"
+      "btn": {
+        "direction": "I"
+      },
+      "jb": {
+        "direction": "O",
+        "left": "7",
+        "right": "0"
+      },
+      "jc": {
+        "direction": "O",
+        "left": "7",
+        "right": "0"
+      },
+      "jd": {
+        "direction": "O",
+        "left": "7",
+        "right": "0"
+      },
+      "je": {
+        "direction": "O",
+        "left": "6",
+        "right": "0"
+      },
+      "resetbtn": {
+        "direction": "I"
+      },
+      "sw": {
+        "direction": "I",
+        "left": "3",
+        "right": "0"
       }
     },
     "components": {
@@ -136,21 +142,7 @@
         "ports": {
           "CLK": {
             "type": "clk",
-            "direction": "I",
-            "parameters": {
-              "CLK_DOMAIN": {
-                "value": "/clk_wiz_0_clk_out1",
-                "value_src": "ip_prop"
-              },
-              "FREQ_HZ": {
-                "value": "74250000",
-                "value_src": "ip_prop"
-              },
-              "PHASE": {
-                "value": "0.0",
-                "value_src": "ip_prop"
-              }
-            }
+            "direction": "I"
           },
           "data_out": {
             "direction": "O",
@@ -167,16 +159,43 @@
             "direction": "O"
           },
           "sw": {
+            "direction": "I",
+            "left": "3",
+            "right": "0"
+          },
+          "button": {
             "direction": "I"
           },
           "led": {
-            "direction": "O"
+            "direction": "O",
+            "left": "3",
+            "right": "0"
+          },
+          "jb": {
+            "direction": "O",
+            "left": "7",
+            "right": "0"
+          },
+          "jc": {
+            "direction": "O",
+            "left": "7",
+            "right": "0"
+          },
+          "jd": {
+            "direction": "O",
+            "left": "7",
+            "right": "0"
+          },
+          "je": {
+            "direction": "O",
+            "left": "6",
+            "right": "0"
           },
           "sensor_in": {
             "direction": "I"
           },
-          "sensor_led": {
-            "direction": "O"
+          "resetbtn": {
+            "direction": "I"
           }
         }
       }
@@ -249,12 +268,6 @@
           "VideoGen_0/CLK"
         ]
       },
-      "sw_1": {
-        "ports": [
-          "sw",
-          "VideoGen_0/sw"
-        ]
-      },
       "VideoGen_0_led": {
         "ports": [
           "VideoGen_0/led",
@@ -267,10 +280,46 @@
           "VideoGen_0/sensor_in"
         ]
       },
-      "VideoGen_0_sensor_led": {
+      "btn_1": {
         "ports": [
-          "VideoGen_0/sensor_led",
-          "sensor_led"
+          "btn",
+          "VideoGen_0/button"
+        ]
+      },
+      "VideoGen_0_jb": {
+        "ports": [
+          "VideoGen_0/jb",
+          "jb"
+        ]
+      },
+      "VideoGen_0_jc": {
+        "ports": [
+          "VideoGen_0/jc",
+          "jc"
+        ]
+      },
+      "VideoGen_0_jd": {
+        "ports": [
+          "VideoGen_0/jd",
+          "jd"
+        ]
+      },
+      "VideoGen_0_je": {
+        "ports": [
+          "VideoGen_0/je",
+          "je"
+        ]
+      },
+      "resetbtn_1": {
+        "ports": [
+          "resetbtn",
+          "VideoGen_0/resetbtn"
+        ]
+      },
+      "sw_1": {
+        "ports": [
+          "sw",
+          "VideoGen_0/sw"
         ]
       }
     }

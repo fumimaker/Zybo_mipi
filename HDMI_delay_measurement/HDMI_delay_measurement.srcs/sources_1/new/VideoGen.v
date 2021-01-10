@@ -26,31 +26,49 @@ module VideoGen(
     output reg hsync_out,
     output reg vsync_out,
     output reg de_out,
-    input  sw,
-    output led,
-    input sensor_in,
-    output sensor_led
+    input  [3:0]sw,
+    input  button,
+    output reg[3:0] led,
+    output reg[7:0] jb,
+    output reg[7:0] jc,
+    output reg[7:0] jd,
+    output reg[6:0] je,
+    input  sensor_in,
+    //input ja, //must pullup(ja[0])
+    input resetbtn
     );
 
-assign led = sw;
-assign sensor_led = sensor_in;
+
+wire reset_measure = resetbtn;
 
 /*Timing*/
 reg [10:0] CounterX;  // counts from 0 to 1650
-always @(posedge CLK) CounterX <= (CounterX==1650) ? 0 : CounterX+1;
+always @(posedge CLK)begin
+    CounterX <= (CounterX==1650) ? 0 : CounterX+1;
+end
  
 reg [9:0] CounterY;  // counts from 0 to 750
-always @(posedge CLK) if(CounterX==1650) CounterY <= (CounterY==750) ? 0 : CounterY+1;
+always @(posedge CLK)begin
+    if(CounterX==1650) CounterY <= (CounterY==750) ? 0 : CounterY+1;
+end
 
 
 reg flg;
+reg [23:0]delayCounter; //24bit counter
 always @(posedge CLK) begin
-    if(sw==1 && CounterX==0 && CounterY==0)begin
-        flg <= 1;
+    if(sensor_in==1)begin //sensor detected
+        flg <= 0; //count stop
+        jb <= delayCounter[7:0];//output num
+        jc <= delayCounter[15:8];
+        jd <= delayCounter[23:16];
+        led <= delayCounter[3:0];
     end
-    
-    if(sw==0)begin
-        flg<=0;
+    if(button==1 && CounterX==0 && CounterY==0)begin //measure start
+        flg <= 1; //count start
+    end
+    if(reset_measure==1)begin //reset state
+        flg <= 0;
+        delayCounter <= 0;
     end
 end
 
@@ -59,10 +77,10 @@ end
 always @(posedge CLK)begin
     if(flg==1) begin
         data_out <= 24'hffffff;
+        delayCounter <= delayCounter+1;
     end else begin
         data_out <= 24'h000000;
     end
-    
 //    if((CounterX>=0) && (CounterX<320))
 //        data_out <= 24'hffffff;
 //    else if ((CounterX>=320) && (CounterX<640))
@@ -72,6 +90,7 @@ always @(posedge CLK)begin
 //    else if ((CounterX>=960) && (CounterX<1280))
 //        data_out <= 24'hffff00;        
 end
+
  
 /*hsync = (CounterX>=1390) && (CounterX<1430)*/
 always @(posedge CLK)begin
