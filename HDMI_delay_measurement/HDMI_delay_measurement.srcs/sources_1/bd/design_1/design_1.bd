@@ -1,11 +1,12 @@
 {
   "design": {
     "design_info": {
-      "boundary_crc": "0xC349F51C26CC2A60",
+      "boundary_crc": "0x4C3997425AECBD74",
       "device": "xc7z020clg400-1",
       "name": "design_1",
       "synth_flow_mode": "Hierarchical",
-      "tool_version": "2019.2"
+      "tool_version": "2019.2",
+      "validated": "true"
     },
     "design_tree": {
       "rgb2dvi_0": "",
@@ -25,10 +26,30 @@
         "right": "0"
       },
       "hdmi_tx_clk_n": {
-        "direction": "O"
+        "direction": "O",
+        "parameters": {
+          "FREQ_HZ": {
+            "value": "100000000",
+            "value_src": "default_prop"
+          },
+          "PHASE": {
+            "value": "0.000",
+            "value_src": "default_prop"
+          }
+        }
       },
       "hdmi_tx_clk_p": {
-        "direction": "O"
+        "direction": "O",
+        "parameters": {
+          "FREQ_HZ": {
+            "value": "100000000",
+            "value_src": "default_prop"
+          },
+          "PHASE": {
+            "value": "0.000",
+            "value_src": "default_prop"
+          }
+        }
       },
       "sysclock": {
         "direction": "I"
@@ -64,13 +85,13 @@
         "left": "6",
         "right": "0"
       },
-      "resetbtn": {
-        "direction": "I"
-      },
       "sw": {
         "direction": "I",
         "left": "3",
         "right": "0"
+      },
+      "clearbtn": {
+        "direction": "I"
       }
     },
     "components": {
@@ -111,6 +132,12 @@
           "MMCM_DIVCLK_DIVIDE": {
             "value": "5"
           },
+          "RESET_PORT": {
+            "value": "reset"
+          },
+          "RESET_TYPE": {
+            "value": "ACTIVE_HIGH"
+          },
           "USE_BOARD_FLOW": {
             "value": "true"
           },
@@ -142,6 +169,28 @@
         "ports": {
           "CLK": {
             "type": "clk",
+            "direction": "I",
+            "parameters": {
+              "ASSOCIATED_RESET": {
+                "value": "RST",
+                "value_src": "constant"
+              },
+              "CLK_DOMAIN": {
+                "value": "/clk_wiz_0_clk_out1",
+                "value_src": "ip_prop"
+              },
+              "FREQ_HZ": {
+                "value": "74250000",
+                "value_src": "ip_prop"
+              },
+              "PHASE": {
+                "value": "0.0",
+                "value_src": "ip_prop"
+              }
+            }
+          },
+          "RST": {
+            "type": "rst",
             "direction": "I"
           },
           "data_out": {
@@ -194,8 +243,29 @@
           "sensor_in": {
             "direction": "I"
           },
-          "resetbtn": {
+          "cleardata": {
             "direction": "I"
+          },
+          "delayCounter": {
+            "direction": "O",
+            "left": "23",
+            "right": "0"
+          },
+          "CounterX": {
+            "direction": "O",
+            "left": "10",
+            "right": "0"
+          },
+          "CounterY": {
+            "direction": "O",
+            "left": "9",
+            "right": "0"
+          },
+          "flg": {
+            "direction": "O"
+          },
+          "count_en": {
+            "direction": "O"
           }
         }
       }
@@ -247,12 +317,6 @@
         "ports": [
           "VideoGen_0/de_out",
           "rgb2dvi_0/vid_pVDE"
-        ]
-      },
-      "xlconstant_0_dout": {
-        "ports": [
-          "xlconstant_0/dout",
-          "rgb2dvi_0/aRst"
         ]
       },
       "sysclock_1": {
@@ -310,16 +374,23 @@
           "je"
         ]
       },
-      "resetbtn_1": {
-        "ports": [
-          "resetbtn",
-          "VideoGen_0/resetbtn"
-        ]
-      },
       "sw_1": {
         "ports": [
           "sw",
           "VideoGen_0/sw"
+        ]
+      },
+      "clearbtn_1": {
+        "ports": [
+          "clearbtn",
+          "VideoGen_0/cleardata"
+        ]
+      },
+      "xlconstant_0_dout": {
+        "ports": [
+          "xlconstant_0/dout",
+          "rgb2dvi_0/aRst",
+          "VideoGen_0/RST"
         ]
       }
     }

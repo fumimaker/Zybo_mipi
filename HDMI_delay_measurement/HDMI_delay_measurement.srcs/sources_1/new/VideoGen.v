@@ -22,6 +22,7 @@
 
 module VideoGen(
     input CLK,
+    input RST,
     output reg[23:0] data_out,
     output reg hsync_out,
     output reg vsync_out,
@@ -34,61 +35,100 @@ module VideoGen(
     output reg[7:0] jd,
     output reg[6:0] je,
     input  sensor_in,
-    //input ja, //must pullup(ja[0])
-    input resetbtn
+    input cleardata,
+    output reg[23:0] delayCounter,
+    output reg[10:0] CounterX,
+    output reg[9:0] CounterY,
+    output reg flg,
+    output reg count_en
     );
 
-
-wire reset_measure = resetbtn;
+//reg[23:0] delayCounter;
+//reg[10:0] CounterX;
+//reg[9:0] CounterY;
+//reg flg;
+//reg count_en;
 
 /*Timing*/
-reg [10:0] CounterX;  // counts from 0 to 1650
+//reg [10:0] CounterX;  // counts from 0 to 1650
 always @(posedge CLK)begin
-    CounterX <= (CounterX==1650) ? 0 : CounterX+1;
+    if(RST)begin
+        CounterX <= 11'h0;
+    end
+    if(!RST)begin
+        CounterX <= (CounterX==1650) ? 0 : CounterX+1;
+    end
 end
  
-reg [9:0] CounterY;  // counts from 0 to 750
+//reg [9:0] CounterY;  // counts from 0 to 750
 always @(posedge CLK)begin
-    if(CounterX==1650) CounterY <= (CounterY==750) ? 0 : CounterY+1;
+    if(RST)begin
+        CounterY <= 10'h0;
+    end
+    if(!RST)begin
+        if(CounterX==1650) CounterY <= (CounterY==750) ? 0 : CounterY+1;
+    end
 end
 
 
-reg flg;
-reg [23:0]delayCounter; //24bit counter
+//reg flg;
+//reg [23:0]delayCounter; //24bit counter
+//reg count_en;
 always @(posedge CLK) begin
+    if(RST)begin
+        flg <= 0;
+        delayCounter <= 0;
+        data_out <= 0;
+        jb <= 8'h0;
+        jc <= 8'h0;
+        jd <= 8'h0;
+        je <= 7'h0;
+        led <= 4'h0;
+        count_en <= 0;
+    end
+    
     if(sensor_in==1)begin //sensor detected
-        flg <= 0; //count stop
+        //delayCounter = delayCounter + 2;
+        flg <= 0; //display stop & count stop
+        count_en <= 0;
         jb <= delayCounter[7:0];//output num
         jc <= delayCounter[15:8];
         jd <= delayCounter[23:16];
-        led <= delayCounter[3:0];
+        //led <= delayCounter[3:0];
+        led <= led | 4'b0100;
     end
-    if(button==1 && CounterX==0 && CounterY==0)begin //measure start
-        flg <= 1; //count start
+    
+    if(button==1)begin //measure start
+        //count_en <= 1;
+        flg <= 1;
+        led <= led | 4'b0001;
     end
-    if(reset_measure==1)begin //reset state
+    
+    if(cleardata==1)begin //reset state
         flg <= 0;
         delayCounter <= 0;
+        count_en <= 0;
+        jb <= 8'h0;
+        jc <= 8'h0;
+        jd <= 8'h0;
+        je <= 7'h0;
+        led <= 0;
     end
 end
 
 
 /*Color*/
-always @(posedge CLK)begin
+always @(posedge CLK)begin// && CounterX<=3 && CounterY==0
+    if(count_en==1)begin
+        flg <= 1;
+        led <= led | 4'b0010;
+    end
     if(flg==1) begin
         data_out <= 24'hffffff;
         delayCounter <= delayCounter+1;
     end else begin
         data_out <= 24'h000000;
-    end
-//    if((CounterX>=0) && (CounterX<320))
-//        data_out <= 24'hffffff;
-//    else if ((CounterX>=320) && (CounterX<640))
-//        data_out <= 24'h00ffff;
-//    else if ((CounterX>=640) && (CounterX<960))
-//        data_out <= 24'hff00ff;
-//    else if ((CounterX>=960) && (CounterX<1280))
-//        data_out <= 24'hffff00;        
+    end  
 end
 
  
