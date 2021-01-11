@@ -1,7 +1,7 @@
 //Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
 //--------------------------------------------------------------------------------
 //Tool Version: Vivado v.2019.2 (win64) Build 2708876 Wed Nov  6 21:40:23 MST 2019
-//Date        : Tue Jan 12 01:33:48 2021
+//Date        : Tue Jan 12 03:06:47 2021
 //Host        : DESKTOP-5VC2SBS running 64-bit major release  (build 9200)
 //Command     : generate_target design_1_wrapper.bd
 //Design      : design_1_wrapper
@@ -10,7 +10,8 @@
 `timescale 1 ps / 1 ps
 
 module design_1_wrapper
-   (btn,
+   (RST,
+    btn,
     clearbtn,
     hdmi_tx_clk_n,
     hdmi_tx_clk_p,
@@ -24,6 +25,7 @@ module design_1_wrapper
     sensor_in,
     sw,
     sysclock);
+  input RST;
   input btn;
   input clearbtn;
   output hdmi_tx_clk_n;
@@ -39,6 +41,7 @@ module design_1_wrapper
   input [3:0]sw;
   input sysclock;
 
+  wire RST;
   wire btn;
   wire clearbtn;
   wire hdmi_tx_clk_n;
@@ -55,7 +58,8 @@ module design_1_wrapper
   wire sysclock;
 
   design_1 design_1_i
-       (.btn(btn),
+       (.RST(RST),
+        .btn(btn),
         .clearbtn(clearbtn),
         .hdmi_tx_clk_n(hdmi_tx_clk_n),
         .hdmi_tx_clk_p(hdmi_tx_clk_p),

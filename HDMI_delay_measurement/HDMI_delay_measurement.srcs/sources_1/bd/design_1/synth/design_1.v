@@ -1,7 +1,7 @@
 //Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
 //--------------------------------------------------------------------------------
 //Tool Version: Vivado v.2019.2 (win64) Build 2708876 Wed Nov  6 21:40:23 MST 2019
-//Date        : Tue Jan 12 01:33:48 2021
+//Date        : Tue Jan 12 03:06:47 2021
 //Host        : DESKTOP-5VC2SBS running 64-bit major release  (build 9200)
 //Command     : generate_target design_1.bd
 //Design      : design_1
@@ -9,9 +9,10 @@
 //--------------------------------------------------------------------------------
 `timescale 1 ps / 1 ps
 
-(* CORE_GENERATION_INFO = "design_1,IP_Integrator,{x_ipVendor=xilinx.com,x_ipLibrary=BlockDiagram,x_ipName=design_1,x_ipVersion=1.00.a,x_ipLanguage=VERILOG,numBlks=4,numReposBlks=4,numNonXlnxBlks=1,numHierBlks=0,maxHierDepth=0,numSysgenBlks=0,numHlsBlks=0,numHdlrefBlks=1,numPkgbdBlks=0,bdsource=USER,da_board_cnt=1,synth_mode=OOC_per_IP}" *) (* HW_HANDOFF = "design_1.hwdef" *) 
+(* CORE_GENERATION_INFO = "design_1,IP_Integrator,{x_ipVendor=xilinx.com,x_ipLibrary=BlockDiagram,x_ipName=design_1,x_ipVersion=1.00.a,x_ipLanguage=VERILOG,numBlks=3,numReposBlks=3,numNonXlnxBlks=1,numHierBlks=0,maxHierDepth=0,numSysgenBlks=0,numHlsBlks=0,numHdlrefBlks=1,numPkgbdBlks=0,bdsource=USER,da_board_cnt=1,synth_mode=OOC_per_IP}" *) (* HW_HANDOFF = "design_1.hwdef" *) 
 module design_1
-   (btn,
+   (RST,
+    btn,
     clearbtn,
     hdmi_tx_clk_n,
     hdmi_tx_clk_p,
@@ -25,6 +26,7 @@ module design_1
     sensor_in,
     sw,
     sysclock);
+  input RST;
   input btn;
   input clearbtn;
   output hdmi_tx_clk_n;
@@ -59,7 +61,7 @@ module design_1
   wire sensor_in_1;
   wire [3:0]sw_1;
   wire sysclock_1;
-  wire [0:0]xlconstant_0_dout;
+  wire xlconstant_0_dout;
 
   assign btn_1 = btn;
   assign clearbtn_1 = clearbtn;
@@ -75,6 +77,7 @@ module design_1
   assign sensor_in_1 = sensor_in;
   assign sw_1 = sw[3:0];
   assign sysclock_1 = sysclock;
+  assign xlconstant_0_dout = RST;
   design_1_VideoGen_0_0 VideoGen_0
        (.CLK(clk_wiz_0_clk_out1),
         .RST(xlconstant_0_dout),
@@ -105,6 +108,4 @@ module design_1
         .vid_pHSync(VideoGen_0_hsync_out),
         .vid_pVDE(VideoGen_0_de_out),
         .vid_pVSync(VideoGen_0_vsync_out));
-  design_1_xlconstant_0_0 xlconstant_0
-       (.dout(xlconstant_0_dout));
 endmodule

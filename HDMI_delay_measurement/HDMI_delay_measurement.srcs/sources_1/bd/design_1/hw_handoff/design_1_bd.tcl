@@ -165,6 +165,7 @@ proc create_root_design { parentCell } {
   # Create interface ports
 
   # Create ports
+  set RST [ create_bd_port -dir I RST ]
   set btn [ create_bd_port -dir I btn ]
   set clearbtn [ create_bd_port -dir I clearbtn ]
   set hdmi_tx_clk_n [ create_bd_port -dir O hdmi_tx_clk_n ]
@@ -215,12 +216,6 @@ proc create_root_design { parentCell } {
    CONFIG.kRstActiveHigh {true} \
  ] $rgb2dvi_0
 
-  # Create instance: xlconstant_0, and set properties
-  set xlconstant_0 [ create_bd_cell -type ip -vlnv xilinx.com:ip:xlconstant:1.1 xlconstant_0 ]
-  set_property -dict [ list \
-   CONFIG.CONST_VAL {0} \
- ] $xlconstant_0
-
   # Create port connections
   connect_bd_net -net VideoGen_0_data_out [get_bd_pins VideoGen_0/data_out] [get_bd_pins rgb2dvi_0/vid_pData]
   connect_bd_net -net VideoGen_0_de_out [get_bd_pins VideoGen_0/de_out] [get_bd_pins rgb2dvi_0/vid_pVDE]
@@ -241,7 +236,7 @@ proc create_root_design { parentCell } {
   connect_bd_net -net sensor_in_1 [get_bd_ports sensor_in] [get_bd_pins VideoGen_0/sensor_in]
   connect_bd_net -net sw_1 [get_bd_ports sw] [get_bd_pins VideoGen_0/sw]
   connect_bd_net -net sysclock_1 [get_bd_ports sysclock] [get_bd_pins clk_wiz_0/clk_in1]
-  connect_bd_net -net xlconstant_0_dout [get_bd_pins VideoGen_0/RST] [get_bd_pins rgb2dvi_0/aRst] [get_bd_pins xlconstant_0/dout]
+  connect_bd_net -net xlconstant_0_dout [get_bd_ports RST] [get_bd_pins VideoGen_0/RST] [get_bd_pins rgb2dvi_0/aRst]
 
   # Create address segments
 

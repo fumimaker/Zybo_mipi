@@ -66,9 +66,9 @@ VideoGen VideoGen_i(
 initial begin
     CLK <= 0;
     cleardata <=0;
-    RST <= 1; #80;
-    RST <= 0; #80;
-    wait(CounterX==0 && CounterY==0);
+//    RST <= 1; #80;
+//    RST <= 0; #80;
+    wait(CounterX<=3 && CounterY==0);
     button <= 1; #80;
     button <= 0; #80;
     sensor_in <= 1; #80;

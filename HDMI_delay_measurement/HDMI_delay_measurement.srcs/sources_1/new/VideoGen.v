@@ -43,6 +43,15 @@ module VideoGen(
     output reg count_en
     );
 
+initial begin
+    //flg <= 0;
+    led <= 0;
+    delayCounter <= 0;
+    CounterX <= 0;
+    CounterY <= 0;
+    count_en <= 0;
+end
+
 //reg[23:0] delayCounter;
 //reg[10:0] CounterX;
 //reg[9:0] CounterY;
@@ -87,6 +96,23 @@ always @(posedge CLK) begin
         count_en <= 0;
     end
     
+    if(button==1)begin //measure start button
+        count_en <= 1;
+        led <= led | 4'b0001;
+    end
+    
+    if(count_en==1 && CounterX<=3 && CounterY==0)begin
+        flg <= 1;
+    end
+    
+    if(flg==1) begin
+        data_out <= 24'hffffff;
+        delayCounter <= delayCounter+1;
+        led <= led | 4'b0010;
+    end else begin
+        data_out <= 24'h000000;
+    end
+    
     if(sensor_in==1)begin //sensor detected
         //delayCounter = delayCounter + 2;
         flg <= 0; //display stop & count stop
@@ -96,12 +122,6 @@ always @(posedge CLK) begin
         jd <= delayCounter[23:16];
         //led <= delayCounter[3:0];
         led <= led | 4'b0100;
-    end
-    
-    if(button==1)begin //measure start
-        //count_en <= 1;
-        flg <= 1;
-        led <= led | 4'b0001;
     end
     
     if(cleardata==1)begin //reset state
@@ -117,21 +137,7 @@ always @(posedge CLK) begin
 end
 
 
-/*Color*/
-always @(posedge CLK)begin// && CounterX<=3 && CounterY==0
-    if(count_en==1)begin
-        flg <= 1;
-        led <= led | 4'b0010;
-    end
-    if(flg==1) begin
-        data_out <= 24'hffffff;
-        delayCounter <= delayCounter+1;
-    end else begin
-        data_out <= 24'h000000;
-    end  
-end
 
- 
 /*hsync = (CounterX>=1390) && (CounterX<1430)*/
 always @(posedge CLK)begin
     if((CounterX>=1390) && (CounterX<1430))
