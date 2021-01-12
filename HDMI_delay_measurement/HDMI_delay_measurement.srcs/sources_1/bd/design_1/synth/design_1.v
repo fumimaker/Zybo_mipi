@@ -1,7 +1,7 @@
 //Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
 //--------------------------------------------------------------------------------
 //Tool Version: Vivado v.2019.2 (win64) Build 2708876 Wed Nov  6 21:40:23 MST 2019
-//Date        : Tue Jan 12 03:06:47 2021
+//Date        : Tue Jan 12 23:40:26 2021
 //Host        : DESKTOP-5VC2SBS running 64-bit major release  (build 9200)
 //Command     : generate_target design_1.bd
 //Design      : design_1
@@ -21,7 +21,6 @@ module design_1
     jb,
     jc,
     jd,
-    je,
     led,
     sensor_in,
     sw,
@@ -36,7 +35,6 @@ module design_1
   output [7:0]jb;
   output [7:0]jc;
   output [7:0]jd;
-  output [6:0]je;
   output [3:0]led;
   input sensor_in;
   input [3:0]sw;
@@ -48,7 +46,6 @@ module design_1
   wire [7:0]VideoGen_0_jb;
   wire [7:0]VideoGen_0_jc;
   wire [7:0]VideoGen_0_jd;
-  wire [6:0]VideoGen_0_je;
   wire [3:0]VideoGen_0_led;
   wire VideoGen_0_vsync_out;
   wire btn_1;
@@ -72,7 +69,6 @@ module design_1
   assign jb[7:0] = VideoGen_0_jb;
   assign jc[7:0] = VideoGen_0_jc;
   assign jd[7:0] = VideoGen_0_jd;
-  assign je[6:0] = VideoGen_0_je;
   assign led[3:0] = VideoGen_0_led;
   assign sensor_in_1 = sensor_in;
   assign sw_1 = sw[3:0];
@@ -89,14 +85,14 @@ module design_1
         .jb(VideoGen_0_jb),
         .jc(VideoGen_0_jc),
         .jd(VideoGen_0_jd),
-        .je(VideoGen_0_je),
         .led(VideoGen_0_led),
         .sensor_in(sensor_in_1),
         .sw(sw_1),
         .vsync_out(VideoGen_0_vsync_out));
   design_1_clk_wiz_0_0 clk_wiz_0
        (.clk_in1(sysclock_1),
-        .clk_out1(clk_wiz_0_clk_out1));
+        .clk_out1(clk_wiz_0_clk_out1),
+        .reset(xlconstant_0_dout));
   design_1_rgb2dvi_0_0 rgb2dvi_0
        (.PixelClk(clk_wiz_0_clk_out1),
         .TMDS_Clk_n(rgb2dvi_0_TMDS_Clk_n),

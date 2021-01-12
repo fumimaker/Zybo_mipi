@@ -1,0 +1,50 @@
+{
+   "ActiveEmotionalView":"Default View",
+   "Default View_ScaleFactor":"1.5",
+   "Default View_TopLeft":"-355,-146",
+   "ExpandedHierarchyInLayout":"",
+   "guistr":"# # String gsaved with Nlview 7.0.21  2019-05-29 bk=1.5064 VDI=41 GEI=36 GUI=JA:9.0 non-TLS
+#  -string -flagsOSRD
+preplace port hdmi_tx_clk_n -pg 1 -lvl 5 -x 1170 -y 120 -defaultsOSRD
+preplace port hdmi_tx_clk_p -pg 1 -lvl 5 -x 1170 -y 100 -defaultsOSRD
+preplace port sysclock -pg 1 -lvl 0 -x -40 -y 190 -defaultsOSRD
+preplace port sensor_in -pg 1 -lvl 0 -x -40 -y 400 -defaultsOSRD
+preplace port btn -pg 1 -lvl 0 -x -40 -y 380 -defaultsOSRD
+preplace port clearbtn -pg 1 -lvl 0 -x -40 -y 420 -defaultsOSRD
+preplace port RST -pg 1 -lvl 0 -x -40 -y 170 -defaultsOSRD
+preplace portBus hdmi_tx_p -pg 1 -lvl 5 -x 1170 -y 140 -defaultsOSRD
+preplace portBus hdmi_tx_n -pg 1 -lvl 5 -x 1170 -y 160 -defaultsOSRD
+preplace portBus led -pg 1 -lvl 5 -x 1170 -y 320 -defaultsOSRD
+preplace portBus jb -pg 1 -lvl 5 -x 1170 -y 340 -defaultsOSRD
+preplace portBus jc -pg 1 -lvl 5 -x 1170 -y 360 -defaultsOSRD
+preplace portBus jd -pg 1 -lvl 5 -x 1170 -y 380 -defaultsOSRD
+preplace portBus sw -pg 1 -lvl 0 -x -40 -y 360 -defaultsOSRD
+preplace inst rgb2dvi_0 -pg 1 -lvl 4 -x 990 -y 120 -defaultsOSRD
+preplace inst clk_wiz_0 -pg 1 -lvl 2 -x 390 -y 180 -defaultsOSRD
+preplace inst VideoGen_0 -pg 1 -lvl 3 -x 650 -y 370 -defaultsOSRD
+preplace netloc rgb2dvi_0_TMDS_Data_p 1 4 1 NJ 140
+preplace netloc rgb2dvi_0_TMDS_Data_n 1 4 1 NJ 160
+preplace netloc rgb2dvi_0_TMDS_Clk_p 1 4 1 NJ 100
+preplace netloc rgb2dvi_0_TMDS_Clk_n 1 4 1 NJ 120
+preplace netloc VideoGen_0_data_out 1 3 1 790 80n
+preplace netloc VideoGen_0_hsync_out 1 3 1 800 100n
+preplace netloc VideoGen_0_vsync_out 1 3 1 810 120n
+preplace netloc VideoGen_0_de_out 1 3 1 820 140n
+preplace netloc sysclock_1 1 0 2 NJ 190 N
+preplace netloc clk_wiz_0_clk_out1 1 2 2 490 180 NJ
+preplace netloc VideoGen_0_led 1 3 2 NJ 330 1150J
+preplace netloc sensor_in_1 1 0 3 NJ 400 N 400 NJ
+preplace netloc btn_1 1 0 3 NJ 380 N 380 NJ
+preplace netloc VideoGen_0_jb 1 3 2 800J 340 NJ
+preplace netloc VideoGen_0_jc 1 3 2 810J 360 NJ
+preplace netloc VideoGen_0_jd 1 3 2 800J 380 NJ
+preplace netloc sw_1 1 0 3 NJ 360 N 360 NJ
+preplace netloc clearbtn_1 1 0 3 NJ 420 N 420 NJ
+preplace netloc xlconstant_0_dout 1 0 4 N 170 160 110 480 160 NJ
+levelinfo -pg 1 -40 140 390 650 990 1170
+pagesize -pg 1 -db -bbox -sgen -160 -190 1320 630
+"
+}
+{
+   "da_board_cnt":"1"
+}

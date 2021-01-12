@@ -1,7 +1,7 @@
 // Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
 // --------------------------------------------------------------------------------
 // Tool Version: Vivado v.2019.2 (win64) Build 2708876 Wed Nov  6 21:40:23 MST 2019
-// Date        : Tue Jan 12 03:07:29 2021
+// Date        : Tue Jan 12 18:26:15 2021
 // Host        : DESKTOP-5VC2SBS running 64-bit major release  (build 9200)
 // Command     : write_verilog -force -mode funcsim
 //               C:/Github/Zybo_mipi/HDMI_delay_measurement/HDMI_delay_measurement.srcs/sources_1/bd/design_1/ip/design_1_VideoGen_0_0/design_1_VideoGen_0_0_sim_netlist.v
@@ -28,7 +28,6 @@ module design_1_VideoGen_0_0
     jb,
     jc,
     jd,
-    je,
     sensor_in,
     cleardata,
     delayCounter,
@@ -48,7 +47,6 @@ module design_1_VideoGen_0_0
   output [7:0]jb;
   output [7:0]jc;
   output [7:0]jd;
-  output [6:0]je;
   input sensor_in;
   input cleardata;
   output [23:0]delayCounter;
@@ -101,13 +99,6 @@ module design_1_VideoGen_0_0
   assign data_out[2] = \^data_out [0];
   assign data_out[1] = \^data_out [0];
   assign data_out[0] = \^data_out [0];
-  assign je[6] = \<const0> ;
-  assign je[5] = \<const0> ;
-  assign je[4] = \<const0> ;
-  assign je[3] = \<const0> ;
-  assign je[2] = \<const0> ;
-  assign je[1] = \<const0> ;
-  assign je[0] = \<const0> ;
   assign led[3] = \<const0> ;
   assign led[2:0] = \^led [2:0];
   GND GND

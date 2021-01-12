@@ -1,7 +1,7 @@
 Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
 ----------------------------------------------------------------------------------------------------------------------------------------------------------------------
 | Tool Version     : Vivado v.2019.2 (win64) Build 2708876 Wed Nov  6 21:40:23 MST 2019
-| Date             : Tue Jan 12 03:09:17 2021
+| Date             : Tue Jan 12 23:42:28 2021
 | Host             : DESKTOP-5VC2SBS running 64-bit major release  (build 9200)
 | Command          : report_power -file design_1_wrapper_power_routed.rpt -pb design_1_wrapper_power_summary_routed.pb -rpx design_1_wrapper_power_routed.rpx
 | Design           : design_1_wrapper
@@ -58,10 +58,10 @@ Table of Contents
 |   Register     |    <0.001 |      211 |    106400 |            0.20 |
 |   CARRY4       |    <0.001 |        6 |     13300 |            0.05 |
 |   Others       |     0.000 |       35 |       --- |             --- |
-| Signals        |     0.002 |      361 |       --- |             --- |
+| Signals        |     0.002 |      363 |       --- |             --- |
 | MMCM           |     0.116 |        1 |         4 |           25.00 |
 | PLL            |     0.135 |        1 |         4 |           25.00 |
-| I/O            |     0.159 |       48 |       125 |           38.40 |
+| I/O            |     0.159 |       41 |       125 |           32.80 |
 | Static Power   |     0.112 |          |           |                 |
 | Total          |     0.531 |          |           |                 |
 +----------------+-----------+----------+-----------+-----------------+

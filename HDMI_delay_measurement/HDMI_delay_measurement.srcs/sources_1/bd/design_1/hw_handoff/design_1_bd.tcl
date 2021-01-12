@@ -175,7 +175,6 @@ proc create_root_design { parentCell } {
   set jb [ create_bd_port -dir O -from 7 -to 0 jb ]
   set jc [ create_bd_port -dir O -from 7 -to 0 jc ]
   set jd [ create_bd_port -dir O -from 7 -to 0 jd ]
-  set je [ create_bd_port -dir O -from 6 -to 0 je ]
   set led [ create_bd_port -dir O -from 3 -to 0 led ]
   set sensor_in [ create_bd_port -dir I sensor_in ]
   set sw [ create_bd_port -dir I -from 3 -to 0 sw ]
@@ -206,7 +205,7 @@ proc create_root_design { parentCell } {
    CONFIG.RESET_TYPE {ACTIVE_HIGH} \
    CONFIG.USE_BOARD_FLOW {true} \
    CONFIG.USE_LOCKED {false} \
-   CONFIG.USE_RESET {false} \
+   CONFIG.USE_RESET {true} \
  ] $clk_wiz_0
 
   # Create instance: rgb2dvi_0, and set properties
@@ -223,7 +222,6 @@ proc create_root_design { parentCell } {
   connect_bd_net -net VideoGen_0_jb [get_bd_ports jb] [get_bd_pins VideoGen_0/jb]
   connect_bd_net -net VideoGen_0_jc [get_bd_ports jc] [get_bd_pins VideoGen_0/jc]
   connect_bd_net -net VideoGen_0_jd [get_bd_ports jd] [get_bd_pins VideoGen_0/jd]
-  connect_bd_net -net VideoGen_0_je [get_bd_ports je] [get_bd_pins VideoGen_0/je]
   connect_bd_net -net VideoGen_0_led [get_bd_ports led] [get_bd_pins VideoGen_0/led]
   connect_bd_net -net VideoGen_0_vsync_out [get_bd_pins VideoGen_0/vsync_out] [get_bd_pins rgb2dvi_0/vid_pVSync]
   connect_bd_net -net btn_1 [get_bd_ports btn] [get_bd_pins VideoGen_0/button]
@@ -236,7 +234,7 @@ proc create_root_design { parentCell } {
   connect_bd_net -net sensor_in_1 [get_bd_ports sensor_in] [get_bd_pins VideoGen_0/sensor_in]
   connect_bd_net -net sw_1 [get_bd_ports sw] [get_bd_pins VideoGen_0/sw]
   connect_bd_net -net sysclock_1 [get_bd_ports sysclock] [get_bd_pins clk_wiz_0/clk_in1]
-  connect_bd_net -net xlconstant_0_dout [get_bd_ports RST] [get_bd_pins VideoGen_0/RST] [get_bd_pins rgb2dvi_0/aRst]
+  connect_bd_net -net xlconstant_0_dout [get_bd_ports RST] [get_bd_pins VideoGen_0/RST] [get_bd_pins clk_wiz_0/reset] [get_bd_pins rgb2dvi_0/aRst]
 
   # Create address segments
 

@@ -33,7 +33,6 @@ module VideoGen(
     output reg[7:0] jb,
     output reg[7:0] jc,
     output reg[7:0] jd,
-    output reg[6:0] je,
     input  sensor_in,
     input cleardata,
     output reg[23:0] delayCounter,
@@ -91,7 +90,6 @@ always @(posedge CLK) begin
         jb <= 8'h0;
         jc <= 8'h0;
         jd <= 8'h0;
-        je <= 7'h0;
         led <= 4'h0;
         count_en <= 0;
     end
@@ -131,7 +129,7 @@ always @(posedge CLK) begin
         jb <= 8'h0;
         jc <= 8'h0;
         jd <= 8'h0;
-        je <= 7'h0;
+
         led <= 0;
     end
 end

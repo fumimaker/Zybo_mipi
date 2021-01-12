@@ -1,7 +1,7 @@
 {
   "design": {
     "design_info": {
-      "boundary_crc": "0x6D7A0830836FC18C",
+      "boundary_crc": "0x2A08AEAA06646FAD",
       "device": "xc7z020clg400-1",
       "name": "design_1",
       "synth_flow_mode": "Hierarchical",
@@ -79,11 +79,6 @@
         "left": "7",
         "right": "0"
       },
-      "je": {
-        "direction": "O",
-        "left": "6",
-        "right": "0"
-      },
       "sw": {
         "direction": "I",
         "left": "3",
@@ -147,7 +142,7 @@
             "value": "false"
           },
           "USE_RESET": {
-            "value": "false"
+            "value": "true"
           }
         }
       },
@@ -226,11 +221,6 @@
           "jd": {
             "direction": "O",
             "left": "7",
-            "right": "0"
-          },
-          "je": {
-            "direction": "O",
-            "left": "6",
             "right": "0"
           },
           "sensor_in": {
@@ -361,12 +351,6 @@
           "jd"
         ]
       },
-      "VideoGen_0_je": {
-        "ports": [
-          "VideoGen_0/je",
-          "je"
-        ]
-      },
       "sw_1": {
         "ports": [
           "sw",
@@ -383,6 +367,7 @@
         "ports": [
           "RST",
           "rgb2dvi_0/aRst",
+          "clk_wiz_0/reset",
           "VideoGen_0/RST"
         ]
       }

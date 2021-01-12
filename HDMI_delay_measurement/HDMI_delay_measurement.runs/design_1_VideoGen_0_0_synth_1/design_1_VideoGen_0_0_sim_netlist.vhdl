@@ -1,7 +1,7 @@
 -- Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
 -- --------------------------------------------------------------------------------
 -- Tool Version: Vivado v.2019.2 (win64) Build 2708876 Wed Nov  6 21:40:23 MST 2019
--- Date        : Tue Jan 12 03:07:29 2021
+-- Date        : Tue Jan 12 18:26:15 2021
 -- Host        : DESKTOP-5VC2SBS running 64-bit major release  (build 9200)
 -- Command     : write_vhdl -force -mode funcsim -rename_top decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix -prefix
 --               decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_ design_1_VideoGen_0_0_sim_netlist.vhdl
@@ -1746,7 +1746,6 @@ entity decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix is
     jb : out STD_LOGIC_VECTOR ( 7 downto 0 );
     jc : out STD_LOGIC_VECTOR ( 7 downto 0 );
     jd : out STD_LOGIC_VECTOR ( 7 downto 0 );
-    je : out STD_LOGIC_VECTOR ( 6 downto 0 );
     sensor_in : in STD_LOGIC;
     cleardata : in STD_LOGIC;
     delayCounter : out STD_LOGIC_VECTOR ( 23 downto 0 );
@@ -1802,13 +1801,6 @@ begin
   data_out(2) <= \^data_out\(0);
   data_out(1) <= \^data_out\(0);
   data_out(0) <= \^data_out\(0);
-  je(6) <= \<const0>\;
-  je(5) <= \<const0>\;
-  je(4) <= \<const0>\;
-  je(3) <= \<const0>\;
-  je(2) <= \<const0>\;
-  je(1) <= \<const0>\;
-  je(0) <= \<const0>\;
   led(3) <= \<const0>\;
   led(2 downto 0) <= \^led\(2 downto 0);
 GND: unisim.vcomponents.GND

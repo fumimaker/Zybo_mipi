@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
-<EDKSYSTEM EDWVERSION="1.2" TIMESTAMP="Tue Jan 12 03:06:47 2021" VIVADOVERSION="2019.2">
+<EDKSYSTEM EDWVERSION="1.2" TIMESTAMP="Tue Jan 12 23:40:26 2021" VIVADOVERSION="2019.2">
 
   <SYSTEMINFO ARCH="zynq" BOARD="digilentinc.com:zybo-z7-20:part0:1.0" DEVICE="7z020" NAME="design_1" PACKAGE="clg400" SPEEDGRADE="-1"/>
 
@@ -59,11 +59,6 @@
         <CONNECTION INSTANCE="VideoGen_0" PORT="jd"/>
       </CONNECTIONS>
     </PORT>
-    <PORT DIR="O" LEFT="6" NAME="je" RIGHT="0" SIGIS="undef" SIGNAME="VideoGen_0_je">
-      <CONNECTIONS>
-        <CONNECTION INSTANCE="VideoGen_0" PORT="je"/>
-      </CONNECTIONS>
-    </PORT>
     <PORT DIR="I" LEFT="3" NAME="sw" RIGHT="0" SIGIS="undef" SIGNAME="External_Ports_sw">
       <CONNECTIONS>
         <CONNECTION INSTANCE="VideoGen_0" PORT="sw"/>
@@ -77,6 +72,7 @@
     <PORT DIR="I" NAME="RST" SIGIS="undef" SIGNAME="External_Ports_RST">
       <CONNECTIONS>
         <CONNECTION INSTANCE="rgb2dvi_0" PORT="aRst"/>
+        <CONNECTION INSTANCE="clk_wiz_0" PORT="reset"/>
         <CONNECTION INSTANCE="VideoGen_0" PORT="RST"/>
       </CONNECTIONS>
     </PORT>
@@ -150,11 +146,6 @@
         <PORT DIR="O" LEFT="7" NAME="jd" RIGHT="0" SIGIS="undef" SIGNAME="VideoGen_0_jd">
           <CONNECTIONS>
             <CONNECTION INSTANCE="External_Ports" PORT="jd"/>
-          </CONNECTIONS>
-        </PORT>
-        <PORT DIR="O" LEFT="6" NAME="je" RIGHT="0" SIGIS="undef" SIGNAME="VideoGen_0_je">
-          <CONNECTIONS>
-            <CONNECTION INSTANCE="External_Ports" PORT="je"/>
           </CONNECTIONS>
         </PORT>
         <PORT DIR="I" NAME="sensor_in" SIGIS="undef" SIGNAME="External_Ports_sensor_in">
@@ -231,7 +222,7 @@
         <PARAMETER NAME="C_PHASESHIFT_MODE" VALUE="WAVEFORM"/>
         <PARAMETER NAME="C_SECONDARY_SOURCE" VALUE="Single_ended_clock_capable_pin"/>
         <PARAMETER NAME="C_CLKFB_IN_SIGNALING" VALUE="SINGLE"/>
-        <PARAMETER NAME="C_USE_RESET" VALUE="0"/>
+        <PARAMETER NAME="C_USE_RESET" VALUE="1"/>
         <PARAMETER NAME="C_RESET_LOW" VALUE="0"/>
         <PARAMETER NAME="C_USE_LOCKED" VALUE="0"/>
         <PARAMETER NAME="C_USE_INCLK_STOPPED" VALUE="0"/>
@@ -621,7 +612,7 @@
         <PARAMETER NAME="SUMMARY_STRINGS" VALUE="empty"/>
         <PARAMETER NAME="USE_LOCKED" VALUE="false"/>
         <PARAMETER NAME="CALC_DONE" VALUE="empty"/>
-        <PARAMETER NAME="USE_RESET" VALUE="false"/>
+        <PARAMETER NAME="USE_RESET" VALUE="true"/>
         <PARAMETER NAME="USE_POWER_DOWN" VALUE="false"/>
         <PARAMETER NAME="USE_STATUS" VALUE="false"/>
         <PARAMETER NAME="USE_FREEZE" VALUE="false"/>
@@ -753,6 +744,11 @@
         <PARAMETER NAME="EDK_IPTYPE" VALUE="PERIPHERAL"/>
       </PARAMETERS>
       <PORTS>
+        <PORT DIR="I" NAME="reset" SIGIS="rst" SIGNAME="External_Ports_RST">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="RST"/>
+          </CONNECTIONS>
+        </PORT>
         <PORT CLKFREQUENCY="125000000" DIR="I" NAME="clk_in1" SIGIS="clk" SIGNAME="External_Ports_sysclock">
           <CONNECTIONS>
             <CONNECTION INSTANCE="External_Ports" PORT="sysclock"/>

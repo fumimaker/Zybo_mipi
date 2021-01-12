@@ -1,7 +1,7 @@
 -- Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
 -- --------------------------------------------------------------------------------
 -- Tool Version: Vivado v.2019.2 (win64) Build 2708876 Wed Nov  6 21:40:23 MST 2019
--- Date        : Sun Jan 10 20:21:54 2021
+-- Date        : Mon Jan 11 19:28:51 2021
 -- Host        : DESKTOP-5VC2SBS running 64-bit major release  (build 9200)
 -- Command     : write_vhdl -force -mode funcsim -rename_top design_1_clk_wiz_0_0 -prefix
 --               design_1_clk_wiz_0_0_ design_1_clk_wiz_0_0_sim_netlist.vhdl
@@ -17,6 +17,7 @@ use UNISIM.VCOMPONENTS.ALL;
 entity design_1_clk_wiz_0_0_design_1_clk_wiz_0_0_clk_wiz is
   port (
     clk_out1 : out STD_LOGIC;
+    reset : in STD_LOGIC;
     clk_in1 : in STD_LOGIC
   );
 end design_1_clk_wiz_0_0_design_1_clk_wiz_0_0_clk_wiz;
@@ -157,7 +158,7 @@ mmcm_adv_inst: unisim.vcomponents.MMCME2_ADV
       PSEN => '0',
       PSINCDEC => '0',
       PWRDWN => '0',
-      RST => '0'
+      RST => reset
     );
 end STRUCTURE;
 library IEEE;
@@ -167,6 +168,7 @@ use UNISIM.VCOMPONENTS.ALL;
 entity design_1_clk_wiz_0_0 is
   port (
     clk_out1 : out STD_LOGIC;
+    reset : in STD_LOGIC;
     clk_in1 : in STD_LOGIC
   );
   attribute NotValidForBitStream : boolean;
@@ -178,6 +180,7 @@ begin
 inst: entity work.design_1_clk_wiz_0_0_design_1_clk_wiz_0_0_clk_wiz
      port map (
       clk_in1 => clk_in1,
-      clk_out1 => clk_out1
+      clk_out1 => clk_out1,
+      reset => reset
     );
 end STRUCTURE;

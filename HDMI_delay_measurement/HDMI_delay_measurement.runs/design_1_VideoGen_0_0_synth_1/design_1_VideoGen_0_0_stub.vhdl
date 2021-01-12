@@ -1,7 +1,7 @@
 -- Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
 -- --------------------------------------------------------------------------------
 -- Tool Version: Vivado v.2019.2 (win64) Build 2708876 Wed Nov  6 21:40:23 MST 2019
--- Date        : Tue Jan 12 03:07:29 2021
+-- Date        : Tue Jan 12 18:26:15 2021
 -- Host        : DESKTOP-5VC2SBS running 64-bit major release  (build 9200)
 -- Command     : write_vhdl -force -mode synth_stub -rename_top decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix -prefix
 --               decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_ design_1_VideoGen_0_0_stub.vhdl
@@ -26,7 +26,6 @@ entity decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix is
     jb : out STD_LOGIC_VECTOR ( 7 downto 0 );
     jc : out STD_LOGIC_VECTOR ( 7 downto 0 );
     jd : out STD_LOGIC_VECTOR ( 7 downto 0 );
-    je : out STD_LOGIC_VECTOR ( 6 downto 0 );
     sensor_in : in STD_LOGIC;
     cleardata : in STD_LOGIC;
     delayCounter : out STD_LOGIC_VECTOR ( 23 downto 0 );
@@ -42,7 +41,7 @@ architecture stub of decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix is
 attribute syn_black_box : boolean;
 attribute black_box_pad_pin : string;
 attribute syn_black_box of stub : architecture is true;
-attribute black_box_pad_pin of stub : architecture is "CLK,RST,data_out[23:0],hsync_out,vsync_out,de_out,sw[3:0],button,led[3:0],jb[7:0],jc[7:0],jd[7:0],je[6:0],sensor_in,cleardata,delayCounter[23:0],CounterX[10:0],CounterY[9:0],flg,count_en";
+attribute black_box_pad_pin of stub : architecture is "CLK,RST,data_out[23:0],hsync_out,vsync_out,de_out,sw[3:0],button,led[3:0],jb[7:0],jc[7:0],jd[7:0],sensor_in,cleardata,delayCounter[23:0],CounterX[10:0],CounterY[9:0],flg,count_en";
 attribute X_CORE_INFO : string;
 attribute X_CORE_INFO of stub : architecture is "VideoGen,Vivado 2019.2";
 begin

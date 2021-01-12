@@ -67,7 +67,6 @@ module design_1_VideoGen_0_0 (
   jb,
   jc,
   jd,
-  je,
   sensor_in,
   cleardata,
   delayCounter,
@@ -93,7 +92,6 @@ output wire [3 : 0] led;
 output wire [7 : 0] jb;
 output wire [7 : 0] jc;
 output wire [7 : 0] jd;
-output wire [6 : 0] je;
 input wire sensor_in;
 input wire cleardata;
 output wire [23 : 0] delayCounter;
@@ -115,7 +113,6 @@ output wire count_en;
     .jb(jb),
     .jc(jc),
     .jd(jd),
-    .je(je),
     .sensor_in(sensor_in),
     .cleardata(cleardata),
     .delayCounter(delayCounter),
