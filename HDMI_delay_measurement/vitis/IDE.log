@@ -1,0 +1,11 @@
+03:02:24 INFO  : Launching XSCT server: xsct.bat -n  -interactive C:\Github\Zybo_mipi\HDMI_delay_measurement\vitis\temp_xsdb_launch_script.tcl
+03:02:26 INFO  : XSCT server has started successfully.
+03:02:26 INFO  : Successfully done setting XSCT server connection channel  
+03:02:26 INFO  : plnx-install-location is set to ''
+03:02:26 INFO  : Successfully done query RDI_DATADIR 
+03:02:26 INFO  : Successfully done setting workspace for the tool. 
+03:02:27 INFO  : Registering command handlers for Vitis TCF services
+03:05:05 INFO  : Checking for BSP changes to sync application flags for project 'HDMI_measurement'...
+03:06:40 INFO  : Generated template bif file for HDMI_measurement_system
+03:06:56 INFO  : Invoking Bootgen: bootgen -image HDMI_measurement_system.bif -arch zynq -o C:/Github/Zybo_mipi/HDMI_delay_measurement/vitis/HDMI_measurement_system/_ide/bootimage/BOOT.bin
+03:06:58 INFO  : Bootgen command execution is done.
