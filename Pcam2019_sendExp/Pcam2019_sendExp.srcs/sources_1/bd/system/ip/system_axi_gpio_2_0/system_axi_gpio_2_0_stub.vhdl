@@ -1,11 +1,11 @@
 -- Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
 -- --------------------------------------------------------------------------------
 -- Tool Version: Vivado v.2019.2 (win64) Build 2708876 Wed Nov  6 21:40:23 MST 2019
--- Date        : Mon Dec 28 17:15:54 2020
+-- Date        : Sun Dec 27 00:59:44 2020
 -- Host        : DESKTOP-5VC2SBS running 64-bit major release  (build 9200)
--- Command     : write_vhdl -force -mode synth_stub
---               c:/Github/Zybo_mipi/Pcam2019_sendExp/Pcam2019_sendExp.srcs/sources_1/bd/system/ip/system_axi_gpio_2_0/system_axi_gpio_2_0_stub.vhdl
--- Design      : system_axi_gpio_2_0
+-- Command     : write_vhdl -force -mode synth_stub -rename_top system_axi_gpio_2_0 -prefix
+--               system_axi_gpio_2_0_ system_axi_gpio_0_3_stub.vhdl
+-- Design      : system_axi_gpio_0_3
 -- Purpose     : Stub declaration of top-level module interface
 -- Device      : xc7z020clg400-1
 -- --------------------------------------------------------------------------------
@@ -33,7 +33,7 @@ entity system_axi_gpio_2_0 is
     s_axi_rresp : out STD_LOGIC_VECTOR ( 1 downto 0 );
     s_axi_rvalid : out STD_LOGIC;
     s_axi_rready : in STD_LOGIC;
-    gpio_io_i : in STD_LOGIC_VECTOR ( 0 to 0 )
+    gpio_io_o : out STD_LOGIC_VECTOR ( 0 to 0 )
   );
 
 end system_axi_gpio_2_0;
@@ -42,7 +42,7 @@ architecture stub of system_axi_gpio_2_0 is
 attribute syn_black_box : boolean;
 attribute black_box_pad_pin : string;
 attribute syn_black_box of stub : architecture is true;
-attribute black_box_pad_pin of stub : architecture is "s_axi_aclk,s_axi_aresetn,s_axi_awaddr[8:0],s_axi_awvalid,s_axi_awready,s_axi_wdata[31:0],s_axi_wstrb[3:0],s_axi_wvalid,s_axi_wready,s_axi_bresp[1:0],s_axi_bvalid,s_axi_bready,s_axi_araddr[8:0],s_axi_arvalid,s_axi_arready,s_axi_rdata[31:0],s_axi_rresp[1:0],s_axi_rvalid,s_axi_rready,gpio_io_i[0:0]";
+attribute black_box_pad_pin of stub : architecture is "s_axi_aclk,s_axi_aresetn,s_axi_awaddr[8:0],s_axi_awvalid,s_axi_awready,s_axi_wdata[31:0],s_axi_wstrb[3:0],s_axi_wvalid,s_axi_wready,s_axi_bresp[1:0],s_axi_bvalid,s_axi_bready,s_axi_araddr[8:0],s_axi_arvalid,s_axi_arready,s_axi_rdata[31:0],s_axi_rresp[1:0],s_axi_rvalid,s_axi_rready,gpio_io_o[0:0]";
 attribute x_core_info : string;
 attribute x_core_info of stub : architecture is "axi_gpio,Vivado 2019.2";
 begin

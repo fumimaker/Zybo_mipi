@@ -1,7 +1,7 @@
 --Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
 ----------------------------------------------------------------------------------
 --Tool Version: Vivado v.2019.2 (win64) Build 2708876 Wed Nov  6 21:40:23 MST 2019
---Date        : Mon Dec 28 18:58:23 2020
+--Date        : Thu Jan 14 01:35:05 2021
 --Host        : DESKTOP-5VC2SBS running 64-bit major release  (build 9200)
 --Command     : generate_target system_wrapper.bd
 --Design      : system_wrapper
@@ -36,6 +36,7 @@ entity system_wrapper is
     FIXED_IO_ps_srstb : inout STD_LOGIC;
     RSTBTN : in STD_LOGIC;
     RSTLED : out STD_LOGIC;
+    arduino_led : in STD_LOGIC;
     cam_gpio_tri_io : inout STD_LOGIC_VECTOR ( 0 to 0 );
     cam_iic_scl_io : inout STD_LOGIC;
     cam_iic_sda_io : inout STD_LOGIC;
@@ -55,9 +56,8 @@ entity system_wrapper is
     jb_n : out STD_LOGIC_VECTOR ( 4 downto 1 );
     jb_p : out STD_LOGIC_VECTOR ( 4 downto 1 );
     jc_p : out STD_LOGIC_VECTOR ( 4 downto 1 );
-    memcpy : in STD_LOGIC;
-    recv : in STD_LOGIC;
-    udpled : out STD_LOGIC_VECTOR ( 0 to 0 )
+    udpled : out STD_LOGIC_VECTOR ( 0 to 0 );
+    update_mem_addr : out STD_LOGIC_VECTOR ( 0 to 0 )
   );
 end system_wrapper;
 
@@ -77,8 +77,6 @@ architecture STRUCTURE of system_wrapper is
     RSTLED : out STD_LOGIC;
     udpled : out STD_LOGIC_VECTOR ( 0 to 0 );
     framenum : out STD_LOGIC_VECTOR ( 1 downto 0 );
-    recv : in STD_LOGIC;
-    memcpy : in STD_LOGIC;
     DDR_cas_n : inout STD_LOGIC;
     DDR_cke : inout STD_LOGIC;
     DDR_ck_n : inout STD_LOGIC;
@@ -100,21 +98,23 @@ architecture STRUCTURE of system_wrapper is
     FIXED_IO_ps_srstb : inout STD_LOGIC;
     FIXED_IO_ps_clk : inout STD_LOGIC;
     FIXED_IO_ps_porb : inout STD_LOGIC;
-    hdmi_tx_clk_p : out STD_LOGIC;
-    hdmi_tx_clk_n : out STD_LOGIC;
-    hdmi_tx_data_p : out STD_LOGIC_VECTOR ( 2 downto 0 );
-    hdmi_tx_data_n : out STD_LOGIC_VECTOR ( 2 downto 0 );
     dphy_hs_clock_clk_p : in STD_LOGIC;
     dphy_hs_clock_clk_n : in STD_LOGIC;
-    cam_gpio_tri_i : in STD_LOGIC_VECTOR ( 0 to 0 );
-    cam_gpio_tri_o : out STD_LOGIC_VECTOR ( 0 to 0 );
-    cam_gpio_tri_t : out STD_LOGIC_VECTOR ( 0 to 0 );
     cam_iic_sda_i : in STD_LOGIC;
     cam_iic_sda_o : out STD_LOGIC;
     cam_iic_sda_t : out STD_LOGIC;
     cam_iic_scl_i : in STD_LOGIC;
     cam_iic_scl_o : out STD_LOGIC;
-    cam_iic_scl_t : out STD_LOGIC
+    cam_iic_scl_t : out STD_LOGIC;
+    hdmi_tx_clk_p : out STD_LOGIC;
+    hdmi_tx_clk_n : out STD_LOGIC;
+    hdmi_tx_data_p : out STD_LOGIC_VECTOR ( 2 downto 0 );
+    hdmi_tx_data_n : out STD_LOGIC_VECTOR ( 2 downto 0 );
+    cam_gpio_tri_i : in STD_LOGIC_VECTOR ( 0 to 0 );
+    cam_gpio_tri_o : out STD_LOGIC_VECTOR ( 0 to 0 );
+    cam_gpio_tri_t : out STD_LOGIC_VECTOR ( 0 to 0 );
+    arduino_led : in STD_LOGIC;
+    update_mem_addr : out STD_LOGIC_VECTOR ( 0 to 0 )
   );
   end component system;
   component IOBUF is
@@ -182,6 +182,7 @@ system_i: component system
       FIXED_IO_ps_srstb => FIXED_IO_ps_srstb,
       RSTBTN => RSTBTN,
       RSTLED => RSTLED,
+      arduino_led => arduino_led,
       cam_gpio_tri_i(0) => cam_gpio_tri_i_0(0),
       cam_gpio_tri_o(0) => cam_gpio_tri_o_0(0),
       cam_gpio_tri_t(0) => cam_gpio_tri_t_0(0),
@@ -207,8 +208,7 @@ system_i: component system
       jb_n(4 downto 1) => jb_n(4 downto 1),
       jb_p(4 downto 1) => jb_p(4 downto 1),
       jc_p(4 downto 1) => jc_p(4 downto 1),
-      memcpy => memcpy,
-      recv => recv,
-      udpled(0) => udpled(0)
+      udpled(0) => udpled(0),
+      update_mem_addr(0) => update_mem_addr(0)
     );
 end STRUCTURE;

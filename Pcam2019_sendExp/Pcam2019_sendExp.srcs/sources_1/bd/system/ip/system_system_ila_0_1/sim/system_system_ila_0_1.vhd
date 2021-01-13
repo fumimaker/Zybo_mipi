@@ -1,4 +1,4 @@
--- (c) Copyright 1995-2020 Xilinx, Inc. All rights reserved.
+-- (c) Copyright 1995-2021 Xilinx, Inc. All rights reserved.
 -- 
 -- This file contains confidential and proprietary information
 -- of Xilinx, Inc. and is protected under U.S. and
@@ -64,6 +64,7 @@ ENTITY system_system_ila_0_1 IS
     probe5 : IN STD_LOGIC_VECTOR(4 DOWNTO 1);
     probe6 : IN STD_LOGIC_VECTOR(0 DOWNTO 0);
     probe7 : IN STD_LOGIC_VECTOR(0 DOWNTO 0);
+    probe8 : IN STD_LOGIC_VECTOR(0 DOWNTO 0);
     SLOT_0_AXI_awaddr : IN STD_LOGIC_VECTOR(31 DOWNTO 0);
     SLOT_0_AXI_awlen : IN STD_LOGIC_VECTOR(3 DOWNTO 0);
     SLOT_0_AXI_awsize : IN STD_LOGIC_VECTOR(2 DOWNTO 0);
@@ -108,6 +109,7 @@ ARCHITECTURE system_system_ila_0_1_arch OF system_system_ila_0_1 IS
       probe5 : IN STD_LOGIC_VECTOR(4 DOWNTO 1);
       probe6 : IN STD_LOGIC_VECTOR(0 DOWNTO 0);
       probe7 : IN STD_LOGIC_VECTOR(0 DOWNTO 0);
+      probe8 : IN STD_LOGIC_VECTOR(0 DOWNTO 0);
       SLOT_0_AXI_awaddr : IN STD_LOGIC_VECTOR(31 DOWNTO 0);
       SLOT_0_AXI_awlen : IN STD_LOGIC_VECTOR(3 DOWNTO 0);
       SLOT_0_AXI_awsize : IN STD_LOGIC_VECTOR(2 DOWNTO 0);
@@ -183,6 +185,7 @@ BEGIN
       probe5 => probe5,
       probe6 => probe6,
       probe7 => probe7,
+      probe8 => probe8,
       SLOT_0_AXI_awaddr => SLOT_0_AXI_awaddr,
       SLOT_0_AXI_awlen => SLOT_0_AXI_awlen,
       SLOT_0_AXI_awsize => SLOT_0_AXI_awsize,

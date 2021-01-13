@@ -45,6 +45,7 @@ entity bd_1579_wrapper is
     probe5 : in STD_LOGIC_VECTOR ( 4 downto 1 );
     probe6 : in STD_LOGIC_VECTOR ( 0 to 0 );
     probe7 : in STD_LOGIC_VECTOR ( 0 to 0 );
+    probe8 : in STD_LOGIC_VECTOR ( 0 to 0 );
     resetn : in STD_LOGIC
   );
 end bd_1579_wrapper;
@@ -61,6 +62,7 @@ architecture STRUCTURE of bd_1579_wrapper is
     probe5 : in STD_LOGIC_VECTOR ( 4 downto 1 );
     probe6 : in STD_LOGIC_VECTOR ( 0 to 0 );
     probe7 : in STD_LOGIC_VECTOR ( 0 to 0 );
+    probe8 : in STD_LOGIC_VECTOR ( 0 to 0 );
     resetn : in STD_LOGIC;
     SLOT_0_AXI_araddr : in STD_LOGIC_VECTOR ( 31 downto 0 );
     SLOT_0_AXI_arcache : in STD_LOGIC_VECTOR ( 3 downto 0 );
@@ -128,6 +130,7 @@ bd_1579_i: component bd_1579
       probe5(4 downto 1) => probe5(4 downto 1),
       probe6(0) => probe6(0),
       probe7(0) => probe7(0),
+      probe8(0) => probe8(0),
       resetn => resetn
     );
 end STRUCTURE;
